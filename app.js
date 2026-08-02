@@ -220,12 +220,23 @@ document.addEventListener('DOMContentLoaded', () => {
   let activeCardEl = null;
   const timelineCol = document.querySelector('.timeline-column');
 
+  // On mobile (overflow-y:visible on .timeline-column), scroll happens on window
+  function getScrollTarget() {
+    const style = getComputedStyle(timelineCol);
+    const ov = style.overflowY;
+    return (ov === 'visible' || ov === '') ? window : timelineCol;
+  }
+  let currentScrollTarget = null;
+
   function setupObserver() {
-    if (!state.mapVisible) {
-      timelineCol.removeEventListener('scroll', onScroll);
-      return;
+    // Remove old listener
+    if (currentScrollTarget) {
+      currentScrollTarget.removeEventListener('scroll', onScroll);
+      currentScrollTarget = null;
     }
-    timelineCol.addEventListener('scroll', onScroll, { passive: true });
+    if (!state.mapVisible) return;
+    currentScrollTarget = getScrollTarget();
+    currentScrollTarget.addEventListener('scroll', onScroll, { passive: true });
     // Initial sync
     requestAnimationFrame(syncActiveEvent);
   }
@@ -245,18 +256,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = timeline.querySelectorAll('.event-card');
     if (!cards.length) return;
 
-    const colRect = timelineCol.getBoundingClientRect();
-    const scrollTop = timelineCol.scrollTop;
-    const scrollMax = timelineCol.scrollHeight - timelineCol.clientHeight;
+    // Determine scroll context: on mobile window scrolls, on desktop timelineCol scrolls
+    const isWindowScroll = (currentScrollTarget === window);
+    const viewportH = isWindowScroll ? window.innerHeight : timelineCol.clientHeight;
+    const scrollTop = isWindowScroll ? window.scrollY : timelineCol.scrollTop;
+    const scrollMax = isWindowScroll
+      ? document.documentElement.scrollHeight - window.innerHeight
+      : timelineCol.scrollHeight - timelineCol.clientHeight;
 
-    // Dynamic target line: starts at top, eases to 40% as user scrolls
-    // When scrollTop=0, target = colRect.top + small offset (pick first card)
-    // As scrollTop increases, target eases toward colRect.top + 40% of column height
-    const maxTargetOffset = colRect.height * 0.40;
-    const minTargetOffset = 40; // small offset from top
-    const scrollRatio = scrollMax > 0 ? Math.min(scrollTop / (colRect.height * 0.6), 1) : 0;
+    // Target line: a point in the viewport to match the "current" card against
+    const refTop = isWindowScroll ? 0 : timelineCol.getBoundingClientRect().top;
+    const maxTargetOffset = viewportH * 0.40;
+    const minTargetOffset = 40;
+    const scrollRatio = scrollMax > 0 ? Math.min(scrollTop / (viewportH * 0.6), 1) : 0;
     const targetOffset = minTargetOffset + (maxTargetOffset - minTargetOffset) * scrollRatio;
-    const targetY = colRect.top + targetOffset;
+    const targetY = refTop + targetOffset;
 
     let closest = null;
     let closestDist = Infinity;
@@ -328,7 +342,18 @@ document.addEventListener('DOMContentLoaded', () => {
       const card = mkEl('div', 'event-card');
       card.dataset.year = ev.year;
       card.dataset.eventId = ev.id;
-      card.onclick = () => openEventModal(ev.id);
+      card.onclick = () => {
+        // Update map to this event's year on click (important for mobile)
+        if (state.mapVisible) {
+          state.activeEventYear = ev.year;
+          renderMap(ev.year);
+          // Update active highlight
+          timeline.querySelectorAll('.event-card').forEach(c => c.classList.remove('active-event'));
+          card.classList.add('active-event');
+          activeCardEl = card;
+        }
+        openEventModal(ev.id);
+      };
 
       const yearEl = mkEl('div', 'event-year', ev.year + '年');
       const top = mkEl('div', 'event-top');
@@ -448,8 +473,8 @@ document.addEventListener('DOMContentLoaded', () => {
       state.mapVisible = !state.mapVisible;
       $('map-column').style.display = state.mapVisible ? '' : 'none';
       $('btn-toggle-map').classList.toggle('active', state.mapVisible);
-      if (state.mapVisible) { requestAnimationFrame(syncActiveEvent); setupObserver(); }
-      else { timelineCol.removeEventListener('scroll', onScroll); }
+      if (state.mapVisible) { requestAnimationFrame(syncActiveEvent); }
+      setupObserver();
     };
     $('btn-toggle-sidebar').onclick = () => {
       const isMobile = window.matchMedia('(max-width:900px)').matches;

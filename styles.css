@@ -295,9 +295,12 @@ button{font-family:inherit;cursor:pointer}
 /* ── Touch-friendly: disable hover effects on touch devices ── */
 @media(hover:none){
   .event-card:hover{transform:none;box-shadow:none;border-color:var(--border-subtle)}
-  .sidebar-char:hover{background:transparent;color:var(--text-dim)}
-  .filter-btn:hover{color:var(--text-dim);border-color:var(--border-subtle);background:transparent}
-  .era-tab:hover{color:var(--text-dim);background:var(--surface)}
+  .sidebar-char:hover:not(.selected){background:transparent;color:var(--text-dim)}
+  .filter-btn:hover:not(.active){color:var(--text-dim);border-color:var(--border-subtle);background:transparent}
+  /* Ensure .active filter buttons stay highlighted on touch */
+  .filter-btn.active{color:var(--text);border-color:var(--gold);background:var(--gold-dim)}
+  .era-tab:hover:not(.active){color:var(--text-dim);background:var(--surface)}
+  .era-tab.active{background:var(--gold);color:var(--bg);border-color:var(--gold)}
   .tag:hover{filter:none}
 }
 
