@@ -22,6 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
     renderTimeline();
     renderMap(184);
     bindEvents();
+    // Mobile: sidebar starts hidden (slid off-screen by CSS transform)
+    if (window.matchMedia('(max-width:900px)').matches) {
+      state.sidebarVisible = false;
+      $('btn-toggle-sidebar').classList.remove('active');
+    }
   }
 
   // ─── Era Navigation ───
@@ -94,6 +99,13 @@ document.addEventListener('DOMContentLoaded', () => {
           }
           updateSidebarSelection();
           renderTimeline();
+          // Auto-close sidebar on mobile after selection
+          if (window.matchMedia('(max-width:900px)').matches) {
+            sidebar.classList.remove('mobile-open');
+            $('sidebar-overlay').classList.remove('active');
+            $('btn-toggle-sidebar').classList.remove('active');
+            document.body.style.overflow = '';
+          }
         };
         item.oncontextmenu = (e) => {
           e.preventDefault();
@@ -440,9 +452,24 @@ document.addEventListener('DOMContentLoaded', () => {
       else { timelineCol.removeEventListener('scroll', onScroll); }
     };
     $('btn-toggle-sidebar').onclick = () => {
-      state.sidebarVisible = !state.sidebarVisible;
-      sidebar.style.display = state.sidebarVisible ? '' : 'none';
-      $('btn-toggle-sidebar').classList.toggle('active', state.sidebarVisible);
+      const isMobile = window.matchMedia('(max-width:900px)').matches;
+      if (isMobile) {
+        const open = sidebar.classList.toggle('mobile-open');
+        $('sidebar-overlay').classList.toggle('active', open);
+        $('btn-toggle-sidebar').classList.toggle('active', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      } else {
+        state.sidebarVisible = !state.sidebarVisible;
+        sidebar.style.display = state.sidebarVisible ? '' : 'none';
+        $('btn-toggle-sidebar').classList.toggle('active', state.sidebarVisible);
+      }
+    };
+    // Overlay click closes sidebar on mobile
+    $('sidebar-overlay').onclick = () => {
+      sidebar.classList.remove('mobile-open');
+      $('sidebar-overlay').classList.remove('active');
+      $('btn-toggle-sidebar').classList.remove('active');
+      document.body.style.overflow = '';
     };
     $('em-close').onclick = () => closeModal('event-modal');
     $('cm-close').onclick = () => closeModal('char-modal');
