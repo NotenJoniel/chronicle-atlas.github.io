@@ -3,111 +3,421 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>三国志演義＆正史 クロニクルタイムライン (184年〜280年)</title>
-  <meta name="description" content="三国志演義をベースにしたインタラクティブ・タイムライン。勢力図、人物図鑑、出来事を網羅するデータベース。">
-  <link rel="stylesheet" href="styles.css?v=3.8">
+  <title>Chronicle Atlas — 世界史クロニクルタイムライン</title>
+  <meta name="description" content="世界の歴史をインタラクティブなタイムラインで横断的に体験するデータベース。">
+  <style>
+    :root {
+      --bg: #0a0a10;
+      --surface: #12121a;
+      --surface-2: #1a1a24;
+      --text: #e4e0d8;
+      --text-dim: #908e88;
+      --gold: #c4a55a;
+      --gold-dim: rgba(196,165,90,.12);
+      --border: rgba(196,165,90,.15);
+      --border-subtle: rgba(255,255,255,.06);
+      --font: 'Segoe UI','Hiragino Sans','Meiryo',sans-serif;
+      --year-col: 64px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.5;font-size:14px}
+
+    /* ── Site Header ── */
+    .site-header{text-align:center;padding:28px 20px 18px;background:linear-gradient(180deg,rgba(10,10,16,1) 0%,rgba(10,10,16,.95) 100%)}
+    .banner-img{width:100%;max-width:540px;height:auto;border-radius:6px;filter:drop-shadow(0 2px 16px rgba(196,165,90,.18));animation:fadeIn .6s ease-out}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+    .tagline{color:var(--text-dim);font-size:.92rem;margin-top:10px;letter-spacing:.3px}
+
+    /* ── Navigation hint bar ── */
+    .nav-hint{display:flex;align-items:center;justify-content:center;gap:16px;padding:8px 16px;background:var(--surface);border-bottom:1px solid var(--border-subtle);font-size:.82rem;color:var(--text-dim);flex-wrap:wrap}
+    .nav-hint .jump-btn{padding:4px 12px;border-radius:12px;background:var(--gold-dim);border:1px solid var(--border);color:var(--gold);cursor:pointer;font-size:.78rem;font-family:inherit;transition:all .2s;text-decoration:none}
+    .nav-hint .jump-btn:hover{background:var(--gold);color:var(--bg)}
+    .nav-hint .jump-btn.active-link{border-color:var(--gold);box-shadow:0 0 6px rgba(196,165,90,.3)}
+
+    /* ── Timeline Wrapper ── */
+    .wt-wrapper{position:relative;overflow-x:auto;overflow-y:visible}
+
+    /* ── Sticky Region Headers ── */
+    .wt-region-header{display:flex;position:sticky;top:0;z-index:50;background:rgba(10,10,16,.97);backdrop-filter:blur(8px);border-bottom:2px solid var(--border);min-width:max-content}
+    .wt-year-label{width:var(--year-col);min-width:var(--year-col);padding:10px 6px;text-align:center;font-size:.78rem;color:var(--gold);font-weight:700;border-right:1px solid var(--border)}
+    .wt-region-name{flex:1;min-width:180px;padding:10px 14px;font-weight:700;font-size:.95rem;color:var(--text);border-right:1px solid var(--border-subtle);display:flex;align-items:center;gap:6px}
+    .wt-region-name .r-icon{font-size:1.1rem}
+    .wt-region-name.placeholder{color:var(--text-dim);opacity:.45;font-style:italic}
+
+    /* ── Timeline Grid ── */
+    .wt-grid{display:flex;position:relative;min-width:max-content}
+
+    /* Year column */
+    .wt-year-col{width:var(--year-col);min-width:var(--year-col);position:sticky;left:0;z-index:20;background:var(--bg);border-right:1px solid var(--border);flex-shrink:0}
+    .year-mark{position:absolute;right:8px;transform:translateY(-50%);font-size:.72rem;font-weight:600;white-space:nowrap}
+    .year-mark.century{color:var(--gold)}
+    .year-mark.half-century{color:var(--text-dim);font-weight:400;font-size:.65rem}
+
+    /* Region columns */
+    .wt-region-col{flex:1;min-width:180px;position:relative;border-right:1px solid var(--border-subtle)}
+
+    /* Century grid lines */
+    .grid-line{position:absolute;left:0;right:0;pointer-events:none;z-index:0}
+    .grid-line.century{height:1px;background:rgba(196,165,90,.08)}
+    .grid-line.half-century{height:1px;background:rgba(255,255,255,.025)}
+    .grid-line.major{height:1px;background:rgba(196,165,90,.18)}
+
+    /* ── Era Blocks ── */
+    .era-block{
+      position:absolute;left:5px;right:5px;
+      border-radius:5px;
+      display:flex;flex-direction:column;justify-content:center;align-items:center;
+      overflow:hidden;cursor:default;
+      transition:all .2s ease;
+      z-index:2;
+      border:1px solid rgba(255,255,255,.08);
+    }
+    .era-block::after{
+      content:'';position:absolute;inset:0;
+      background:linear-gradient(180deg,rgba(255,255,255,.06) 0%,transparent 40%,rgba(0,0,0,.15) 100%);
+      pointer-events:none;border-radius:inherit;
+    }
+    .era-block:hover{
+      filter:brightness(1.2);
+      transform:scaleX(1.02);
+      z-index:3;
+      box-shadow:0 2px 12px rgba(0,0,0,.5);
+    }
+    .era-block.linked{
+      cursor:pointer;
+      border:1.5px solid var(--gold);
+      box-shadow:0 0 12px rgba(196,165,90,.15);
+      animation:linkedPulse 3s ease-in-out infinite;
+    }
+    .era-block.linked:hover{
+      box-shadow:0 0 24px rgba(196,165,90,.35);
+      transform:scaleX(1.04);
+    }
+    @keyframes linkedPulse{
+      0%,100%{box-shadow:0 0 8px rgba(196,165,90,.15)}
+      50%{box-shadow:0 0 18px rgba(196,165,90,.3)}
+    }
+    .era-block .era-name{
+      font-weight:700;text-align:center;line-height:1.2;
+      position:relative;z-index:1;
+      text-shadow:0 1px 3px rgba(0,0,0,.5);
+      padding:0 4px;
+    }
+    .era-block .era-years{
+      font-size:.65rem;opacity:.7;margin-top:2px;
+      position:relative;z-index:1;
+      text-shadow:0 1px 2px rgba(0,0,0,.5);
+    }
+    .era-block .era-link-hint{
+      font-size:.65rem;color:var(--gold);margin-top:4px;
+      position:relative;z-index:1;
+      opacity:.8;
+    }
+    /* Very short era blocks: vertical text */
+    .era-block.compact .era-name{font-size:.7rem;writing-mode:vertical-rl;text-orientation:mixed;padding:2px 0}
+    .era-block.compact .era-years{display:none}
+    .era-block.compact .era-link-hint{display:none}
+    /* Coming soon era blocks */
+    .era-block.coming-soon{border:1.5px dashed rgba(255,255,255,.2);opacity:.65}
+    .era-block.coming-soon:hover{opacity:.85}
+    .era-block.coming-soon .era-badge{font-size:.6rem;margin-top:4px;padding:1px 8px;border-radius:8px;background:rgba(255,255,255,.1);color:var(--text-dim);position:relative;z-index:1}
+
+    /* ── Tooltip ── */
+    .era-tooltip{
+      position:fixed;z-index:100;
+      background:rgba(18,18,26,.96);
+      border:1px solid var(--border);
+      border-radius:6px;padding:10px 14px;
+      pointer-events:none;opacity:0;
+      transition:opacity .15s;
+      max-width:260px;
+      box-shadow:0 8px 24px rgba(0,0,0,.5);
+      font-size:.84rem;
+    }
+    .era-tooltip.visible{opacity:1}
+    .era-tooltip .tt-name{font-weight:700;color:var(--gold);margin-bottom:2px}
+    .era-tooltip .tt-years{color:var(--text-dim);font-size:.78rem}
+    .era-tooltip .tt-note{margin-top:4px;color:var(--text);font-size:.8rem;line-height:1.45}
+
+    /* ── Footer ── */
+    .site-footer{text-align:center;padding:40px 20px;color:var(--text-dim);font-size:.8rem;border-top:1px solid var(--border-subtle)}
+
+    /* ── Mobile ── */
+    @media(max-width:768px){
+      .site-header{padding:16px 12px 12px}
+      .banner-img{max-width:90%}
+      .tagline{font-size:.84rem}
+      .wt-region-name{min-width:140px;font-size:.85rem;padding:8px 10px}
+      .wt-region-col{min-width:140px}
+      .era-block{left:3px;right:3px}
+      .era-block .era-name{font-size:.78rem}
+    }
+    @media(max-width:480px){
+      :root{--year-col:50px}
+      .banner-img{max-width:100%}
+      .wt-region-name{min-width:120px;font-size:.8rem}
+      .wt-region-col{min-width:120px}
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Sticky Header -->
-  <div class="sticky-header">
-    <div class="header-row">
-      <h1>三国志演義＆正史 <span>クロニクルタイムライン</span></h1>
-      <div class="header-actions">
-        <button class="btn" id="btn-toggle-map">🗺️ 勢力図</button>
-        <button class="btn" id="btn-toggle-sidebar">👤 人物一覧</button>
-      </div>
-    </div>
-    <div class="era-nav" id="era-nav"></div>
-    <div class="controls-row">
-      <div id="faction-filters">
-        <button class="filter-btn active" data-faction="all">すべて</button>
-        <button class="filter-btn" data-faction="wei">魏</button>
-        <button class="filter-btn" data-faction="shu">蜀</button>
-        <button class="filter-btn" data-faction="wu">呉</button>
-        <button class="filter-btn" data-faction="other">群雄</button>
-        <button class="filter-btn" data-faction="jin">晋</button>
-      </div>
-      <div id="category-filters">
-        <button class="filter-btn active" data-cat="all">全種別</button>
-        <button class="filter-btn" data-cat="battle">⚔️ 戦い</button>
-        <button class="filter-btn" data-cat="politics">📜 政治</button>
-        <button class="filter-btn" data-cat="episode">🎭 逸話</button>
-        <button class="filter-btn" data-cat="death">💀 英雄の死</button>
-      </div>
-      <div class="search-box">
-        <input type="text" id="search-input" placeholder="検索（スペース区切りでOR検索）">
-      </div>
-    </div>
+  <!-- Site Header -->
+  <header class="site-header">
+    <img src="./Chronicle-atlas.png" alt="Chronicle Atlas" class="banner-img">
+    <p class="tagline">世界の歴史を横断的に体験するインタラクティブ・タイムライン</p>
+  </header>
+
+  <!-- Navigation Hint -->
+  <nav class="nav-hint" id="nav-hint">
+    <span>📍 クイックジャンプ:</span>
+    <!-- populated by JS -->
+  </nav>
+
+  <!-- World Timeline -->
+  <div class="wt-wrapper">
+    <div class="wt-region-header" id="wt-header"></div>
+    <div class="wt-grid" id="wt-grid"></div>
   </div>
 
-  <!-- Main Layout -->
-  <div class="main-layout">
-    <!-- Sidebar (Characters) -->
-    <div class="sidebar-overlay" id="sidebar-overlay"></div>
-    <aside class="sidebar" id="sidebar"></aside>
-
-    <!-- Content: Timeline + Map side by side -->
-    <div class="content-area" id="content-area">
-      <!-- Timeline (scrollable) -->
-      <div class="timeline-column">
-        <div class="timeline" id="timeline"></div>
-      </div>
-      <!-- Territory Map (sticky right panel) -->
-      <div class="map-column" id="map-column" style="display:none">
-        <div class="map-panel" id="map-panel">
-          <div class="map-title">🗺️ 勢力図 — <span id="map-era-label">全時代</span></div>
-          <div class="map-container">
-            <div class="map-grid" id="map-grid"></div>
-            <div class="map-legend" id="map-legend"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- Tooltip -->
+  <div class="era-tooltip" id="tooltip">
+    <div class="tt-name"></div>
+    <div class="tt-years"></div>
+    <div class="tt-note"></div>
   </div>
 
-  <!-- Event Detail Modal -->
-  <div class="modal-overlay" id="event-modal">
-    <div class="modal">
-      <div class="modal-head">
-        <div>
-          <h2 id="em-title"></h2>
-          <div class="sub"><span id="em-year"></span>年 — <span id="em-location"></span></div>
-        </div>
-        <button class="modal-close" id="em-close">&times;</button>
-      </div>
-      <div class="modal-body">
-        <div class="modal-section"><h3>📖 演義の展開</h3><p id="em-desc"></p></div>
-        <div class="modal-section" id="em-trivia-section"><h3>📜 正史との差分・豆知識</h3><div class="trivia-box"><p id="em-trivia"></p></div></div>
-        <div class="modal-section"><h3>👥 関連人物（クリックで詳細）</h3><div id="em-chars" class="event-chars"></div></div>
-      </div>
-    </div>
-  </div>
+  <footer class="site-footer">Chronicle Atlas © 2025 — 歴史の流れをひとつのキャンバスで</footer>
 
-  <!-- Character Detail Modal -->
-  <div class="modal-overlay" id="char-modal">
-    <div class="modal">
-      <div class="modal-head">
-        <div>
-          <h2 id="cm-name"></h2>
-          <div class="sub char-header-info">
-            <span id="cm-faction-tag" class="tag"></span>
-            <span id="cm-role"></span>
-            <span class="char-life" id="cm-life"></span>
-          </div>
-          <div class="reading-line" id="cm-reading"></div>
-        </div>
-        <button class="modal-close" id="cm-close">&times;</button>
-      </div>
-      <div class="modal-body">
-        <div class="modal-section"><h3>📖 人物伝（演義）</h3><p id="cm-desc"></p></div>
-        <div class="modal-section" id="cm-trivia-section"><h3>📜 正史評・豆知識</h3><div class="trivia-box"><p id="cm-trivia"></p></div></div>
-        <div class="modal-section"><h3>📅 関連する出来事（クリックで詳細）</h3><div id="cm-events" class="char-events-grid"></div></div>
-      </div>
-    </div>
-  </div>
+<script>
+/* =========================================================================
+   Chronicle Atlas — World Timeline Data & Renderer
+   ========================================================================= */
+(() => {
+  // ── Configuration ──
+  const START_YEAR = -800;
+  const END_YEAR   = 1920;
+  const PX_PER_YEAR = 3;
+  const TOTAL_PX = (END_YEAR - START_YEAR) * PX_PER_YEAR;
 
-  <script src="data.js?v=3.9"></script>
-  <script src="app.js?v=3.9"></script>
+  function yearToY(year) { return (year - START_YEAR) * PX_PER_YEAR; }
+  function fmtYear(y) { return y < 0 ? `BC${-y}` : `${y}`; }
+  function fmtYearJa(y) { return y < 0 ? `紀元前${-y}年` : `${y}年`; }
+
+  // ── Regions ──
+  const REGIONS = [
+    { id: 'china',  name: '中国',       icon: '🐉' },
+    { id: 'japan',  name: '日本',       icon: '⛩️' },
+    { id: 'europe', name: 'ヨーロッパ',  icon: '🏛️' },
+    { id: 'others', name: 'その他の地域', icon: '🌍', placeholder: true },
+  ];
+
+  // ── Era Data (sub-project targets only) ──
+  const ERAS = [
+    // ─── 中国 ───
+    { region:'china', name:'戦国時代',  start:-475, end:-221, color:'#7a3545',
+      note:'七雄が覇を競う合従連衡の時代。孫子・韓非子・屈原。秦の統一へ。',
+      comingSoon:true },
+    { region:'china', name:'三国時代',  start:220,  end:280,  color:'#b8963c',
+      note:'⚔️ 魏・蜀・呉の三国が覇を競う。劉備・曹操・孫権の時代。',
+      link:'./three-kingdoms/', linked:true },
+
+    // ─── 日本 ───
+    { region:'japan', name:'戦国時代',  start:1467, end:1615, color:'#5a6a2a',
+      note:'応仁の乱から大坂の陣まで。信長・秀吉・家康の天下統一。',
+      comingSoon:true },
+
+    // ─── ヨーロッパ ───
+    { region:'europe', name:'ローマ帝国', start:-27, end:476, color:'#5a2a5a',
+      note:'パクス・ロマーナからゲルマン民族の大移動まで。西洋文明の礎。',
+      comingSoon:true },
+    { region:'europe', name:'大航海時代〜ルネサンス', start:1453, end:1648, color:'#3a4a6a',
+      note:'コロンブスの新大陸発見。宗教改革。文芸復興の開花。',
+      comingSoon:true },
+  ];
+
+  // ── Quick Jump targets ──
+  const JUMPS = [
+    { label: '戦国時代（中国）', year: -475 },
+    { label: '三国時代 ⚔️', year: 180, highlight: true },
+    { label: '戦国時代（日本）', year: 1467 },
+  ];
+
+  // ── Render ──
+  const grid = document.getElementById('wt-grid');
+  const header = document.getElementById('wt-header');
+  const tooltip = document.getElementById('tooltip');
+  const navHint = document.getElementById('nav-hint');
+
+  function render() {
+    grid.style.height = TOTAL_PX + 'px';
+    renderHeader();
+    renderYearColumn();
+    renderRegionColumns();
+    renderGridLines();
+    renderNavHint();
+  }
+
+  function renderHeader() {
+    // Year label
+    const yl = el('div','wt-year-label','年代');
+    header.appendChild(yl);
+    // Region headers
+    REGIONS.forEach(r => {
+      const rn = el('div', 'wt-region-name' + (r.placeholder ? ' placeholder' : ''));
+      rn.innerHTML = `<span class="r-icon">${r.icon}</span> ${r.name}`;
+      header.appendChild(rn);
+    });
+  }
+
+  function renderYearColumn() {
+    const col = el('div','wt-year-col');
+    col.style.height = TOTAL_PX + 'px';
+    for (let y = START_YEAR; y <= END_YEAR; y += 50) {
+      const mark = el('div', y % 100 === 0 ? 'year-mark century' : 'year-mark half-century');
+      mark.style.top = yearToY(y) + 'px';
+      mark.textContent = fmtYear(y);
+      mark.id = 'y' + y;
+      col.appendChild(mark);
+    }
+    grid.appendChild(col);
+  }
+
+  function renderRegionColumns() {
+    REGIONS.forEach(r => {
+      const col = el('div','wt-region-col');
+      col.style.height = TOTAL_PX + 'px';
+      col.dataset.region = r.id;
+
+      if (r.placeholder) {
+        // placeholder message
+        const msg = el('div','');
+        msg.style.cssText = 'position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);color:var(--text-dim);opacity:.3;font-size:.85rem;text-align:center;writing-mode:vertical-rl;letter-spacing:4px';
+        msg.textContent = '準備中...';
+        col.appendChild(msg);
+      } else {
+        // Render era blocks for this region
+        const regionEras = ERAS.filter(e => e.region === r.id);
+        regionEras.forEach(era => {
+          const block = createEraBlock(era);
+          col.appendChild(block);
+        });
+      }
+      grid.appendChild(col);
+    });
+  }
+
+  function createEraBlock(era) {
+    const top = yearToY(era.start);
+    const height = (era.end - era.start) * PX_PER_YEAR;
+    const isCompact = height < 55;
+
+    const block = el('div', 'era-block' + (isCompact ? ' compact' : '') + (era.linked ? ' linked' : '') + (era.comingSoon ? ' coming-soon' : ''));
+    block.style.top = top + 'px';
+    block.style.height = height + 'px';
+    block.style.background = era.color;
+
+    // Era name
+    const name = el('div','era-name', era.name);
+    // Adjust font size based on block height
+    if (height < 40) {
+      name.style.fontSize = '.65rem';
+    } else if (height < 80) {
+      name.style.fontSize = '.78rem';
+    } else if (height > 200) {
+      name.style.fontSize = '1rem';
+    } else {
+      name.style.fontSize = '.88rem';
+    }
+    block.appendChild(name);
+
+    // Year range (only if not compact)
+    if (!isCompact) {
+      const years = el('div','era-years', `${fmtYear(era.start)} — ${fmtYear(era.end)}`);
+      block.appendChild(years);
+    }
+
+    // Link hint for linked eras
+    if (era.linked && !isCompact) {
+      const hint = el('div','era-link-hint','▶ 詳細タイムラインを見る');
+      block.appendChild(hint);
+    }
+    // Coming soon badge
+    if (era.comingSoon && !isCompact) {
+      const badge = el('div','era-badge','準備中');
+      block.appendChild(badge);
+    }
+
+    // Tooltip on hover
+    block.addEventListener('mouseenter', (e) => showTooltip(e, era));
+    block.addEventListener('mousemove', (e) => moveTooltip(e));
+    block.addEventListener('mouseleave', hideTooltip);
+
+    // Click to navigate
+    if (era.link) {
+      block.addEventListener('click', () => { window.location.href = era.link; });
+    }
+
+    return block;
+  }
+
+  function renderGridLines() {
+    // Create a container for grid lines that spans all region columns
+    const lines = el('div','');
+    lines.style.cssText = `position:absolute;top:0;left:var(--year-col);right:0;height:${TOTAL_PX}px;pointer-events:none;z-index:0`;
+
+    for (let y = START_YEAR; y <= END_YEAR; y += 50) {
+      const line = el('div', y % 500 === 0 ? 'grid-line major' : (y % 100 === 0 ? 'grid-line century' : 'grid-line half-century'));
+      line.style.top = yearToY(y) + 'px';
+      lines.appendChild(line);
+    }
+    grid.appendChild(lines);
+  }
+
+  function renderNavHint() {
+    JUMPS.forEach(j => {
+      const btn = el('button', 'jump-btn' + (j.highlight ? ' active-link' : ''), j.label);
+      btn.addEventListener('click', () => {
+        // Calculate the pixel position of this year in the grid
+        const gridTop = grid.getBoundingClientRect().top + window.scrollY;
+        const targetY = gridTop + yearToY(j.year) - 50; // 50px offset for sticky header
+        window.scrollTo({ top: targetY, behavior: 'smooth' });
+      });
+      navHint.appendChild(btn);
+    });
+  }
+
+  // ── Tooltip ──
+  function showTooltip(e, era) {
+    tooltip.querySelector('.tt-name').textContent = era.name;
+    tooltip.querySelector('.tt-years').textContent =
+      `${fmtYearJa(era.start)} 〜 ${fmtYearJa(era.end)}（${era.end - era.start}年間）`;
+    tooltip.querySelector('.tt-note').textContent = era.note || '';
+    tooltip.classList.add('visible');
+    moveTooltip(e);
+  }
+  function moveTooltip(e) {
+    const pad = 14;
+    let x = e.clientX + pad;
+    let y = e.clientY + pad;
+    if (x + 270 > window.innerWidth) x = e.clientX - 270;
+    if (y + 120 > window.innerHeight) y = e.clientY - 120;
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = y + 'px';
+  }
+  function hideTooltip() { tooltip.classList.remove('visible'); }
+
+  // ── Helpers ──
+  function el(tag, cls, text) {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text !== undefined) e.textContent = text;
+    return e;
+  }
+
+  render();
+})();
+</script>
 </body>
 </html>
