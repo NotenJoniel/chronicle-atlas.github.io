@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>戦国七雄 史実クロニクルタイムライン (BC475年〜BC221年)</title>
+  <meta name="description" content="中国の戦国時代（紀元前475年〜紀元前221年）の史実をインタラクティブなタイムラインで体験。戦国七雄の勢力図、人物図鑑、合従連衡から秦の天下統一まで。">
+  <link rel="stylesheet" href="styles.css?v=1.0">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <div class="sticky-header">
+    <div class="header-row">
+      <a href="../" class="back-to-atlas" title="Chronicle Atlas トップへ">← Atlas</a>
+      <h1>戦国七雄 史実 <span>クロニクルタイムライン</span></h1>
+      <div class="header-actions">
+        <button class="btn" id="btn-toggle-map">🗺️ 勢力図</button>
+        <button class="btn" id="btn-toggle-sidebar">👤 人物一覧</button>
+      </div>
+    </div>
+    <div class="era-nav" id="era-nav"></div>
+    <div class="controls-row">
+      <div id="faction-filters">
+        <button class="filter-btn active" data-faction="all">すべて</button>
+        <button class="filter-btn" data-faction="qin">秦</button>
+        <button class="filter-btn" data-faction="chu">楚</button>
+        <button class="filter-btn" data-faction="qi">斉</button>
+        <button class="filter-btn" data-faction="yan">燕</button>
+        <button class="filter-btn" data-faction="zhao">趙</button>
+        <button class="filter-btn" data-faction="wei">魏</button>
+        <button class="filter-btn" data-faction="han">韓</button>
+        <button class="filter-btn" data-faction="other">周・他</button>
+      </div>
+      <div id="category-filters">
+        <button class="filter-btn active" data-cat="all">全種別</button>
+        <button class="filter-btn" data-cat="battle">⚔️ 戦い</button>
+        <button class="filter-btn" data-cat="politics">📜 政治</button>
+        <button class="filter-btn" data-cat="diplomacy">🤝 合従連衡</button>
+        <button class="filter-btn" data-cat="episode">🎭 逸話</button>
+      </div>
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="検索（スペース区切りでOR検索）">
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Layout -->
+  <div class="main-layout">
+    <!-- Sidebar (Characters) -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <!-- Content: Timeline + Map side by side -->
+    <div class="content-area" id="content-area">
+      <!-- Timeline (scrollable) -->
+      <div class="timeline-column">
+        <div class="timeline" id="timeline"></div>
+      </div>
+      <!-- Territory Map (sticky right panel) -->
+      <div class="map-column" id="map-column" style="display:none">
+        <div class="map-panel" id="map-panel">
+          <div class="map-title">🗺️ 勢力図 — <span id="map-era-label">全時代</span></div>
+          <div class="map-container">
+            <div class="map-grid" id="map-grid"></div>
+            <div class="map-legend" id="map-legend"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Event Detail Modal -->
+  <div class="modal-overlay" id="event-modal">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <h2 id="em-title"></h2>
+          <div class="sub"><span id="em-year"></span> — <span id="em-location"></span></div>
+        </div>
+        <button class="modal-close" id="em-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section"><h3>📖 史実の記録</h3><p id="em-desc"></p></div>
+        <div class="modal-section" id="em-trivia-section"><h3>📜 補足・豆知識</h3><div class="trivia-box"><p id="em-trivia"></p></div></div>
+        <div class="modal-section"><h3>👥 関連人物（クリックで詳細）</h3><div id="em-chars" class="event-chars"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Character Detail Modal -->
+  <div class="modal-overlay" id="char-modal">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <h2 id="cm-name"></h2>
+          <div class="sub char-header-info">
+            <span id="cm-faction-tag" class="tag"></span>
+            <span id="cm-role"></span>
+            <span class="char-life" id="cm-life"></span>
+          </div>
+          <div class="reading-line" id="cm-reading"></div>
+        </div>
+        <button class="modal-close" id="cm-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section"><h3>📖 人物伝</h3><p id="cm-desc"></p></div>
+        <div class="modal-section" id="cm-trivia-section"><h3>📜 補足・豆知識</h3><div class="trivia-box"><p id="cm-trivia"></p></div></div>
+        <div class="modal-section"><h3>📅 関連する出来事（クリックで詳細）</h3><div id="cm-events" class="char-events-grid"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js?v=1.1"></script>
+  <script src="app.js?v=1.1"></script>
+</body>
+</html>
