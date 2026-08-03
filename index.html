@@ -142,6 +142,28 @@
     .era-tooltip .tt-years{color:var(--text-dim);font-size:.78rem}
     .era-tooltip .tt-note{margin-top:4px;color:var(--text);font-size:.8rem;line-height:1.45}
 
+    /* ── Dynasty Background Blocks ── */
+    .dynasty-block{
+      position:absolute;left:0;right:0;
+      z-index:1;
+      border-top:1px solid rgba(255,255,255,.1);
+      display:flex;
+      align-items:flex-start;
+      overflow:hidden;
+      pointer-events:none;
+    }
+    .dynasty-name{
+      writing-mode:vertical-rl;
+      font-size:.68rem;
+      color:rgba(255,255,255,.4);
+      padding:6px 2px 4px 2px;
+      letter-spacing:1px;
+      white-space:nowrap;
+      line-height:1;
+      user-select:none;
+    }
+    .dynasty-block:hover .dynasty-name{color:rgba(255,255,255,.7)}
+
     /* ── Footer ── */
     .site-footer{text-align:center;padding:40px 20px;color:var(--text-dim);font-size:.8rem;border-top:1px solid var(--border-subtle)}
 
@@ -221,7 +243,8 @@
     { region:'china', name:'戦国時代',  start:-475, end:-221, color:'#7a3545',
       note:'⚔️ 七雄が覇を競う合従連衡の時代。孫子・韓非子・屈原。秦の統一へ。',
       link:'./warring-states/', linked:true },
-    { region:'china', name:'楚漢戦争',  start:-209, end:-202, color:'#8a4a2a',
+    { region:'china', name:'楚漢戦争',  start:-230, end:-202, color:'#8a4a2a',
+      displayStart:-209, displayEnd:-202,
       note:'⚔️ 秦滅亡後の項羽vs劉邦。鴻門の会、四面楚歌、垓下の戦い。前漢成立へ。',
       link:'./chu-han/', linked:true },
     { region:'china', name:'三国時代',  start:220,  end:280,  color:'#b8963c',
@@ -248,6 +271,47 @@
     { label: '楚漢戦争 ⚔️', year: -209 },
     { label: '三国時代 ⚔️', year: 180, highlight: true },
     { label: '戦国時代（日本）', year: 1467 },
+  ];
+
+  // ── Dynasty / State background data ──
+  const DYNASTIES = [
+    // ─── 中国 ───
+    { region:'china', name:'春秋',    start:-770, end:-475, color:'rgba(90,53,53,.35)' },
+    { region:'china', name:'戦国',    start:-475, end:-221, color:'rgba(106,53,69,.30)' },
+    { region:'china', name:'秦',      start:-221, end:-206, color:'rgba(74,32,32,.50)' },
+    { region:'china', name:'前漢',    start:-202, end:8,    color:'rgba(90,64,32,.35)' },
+    { region:'china', name:'新',      start:8,    end:23,   color:'rgba(58,58,48,.40)' },
+    { region:'china', name:'後漢',    start:25,   end:220,  color:'rgba(90,64,32,.30)' },
+    { region:'china', name:'三国',    start:220,  end:280,  color:'rgba(74,58,32,.35)' },
+    { region:'china', name:'西晋',    start:265,  end:316,  color:'rgba(58,74,74,.35)' },
+    { region:'china', name:'東晋',    start:317,  end:420,  color:'rgba(58,74,74,.28)' },
+    { region:'china', name:'南北朝',  start:420,  end:589,  color:'rgba(58,58,74,.30)' },
+    { region:'china', name:'隋',      start:581,  end:618,  color:'rgba(74,58,58,.40)' },
+    { region:'china', name:'唐',      start:618,  end:907,  color:'rgba(90,74,32,.30)' },
+    { region:'china', name:'五代十国', start:907, end:960,  color:'rgba(58,58,58,.35)' },
+    { region:'china', name:'宋',      start:960,  end:1279, color:'rgba(74,74,32,.28)' },
+    { region:'china', name:'元',      start:1271, end:1368, color:'rgba(58,58,90,.30)' },
+    { region:'china', name:'明',      start:1368, end:1644, color:'rgba(90,58,32,.28)' },
+    { region:'china', name:'清',      start:1644, end:1912, color:'rgba(58,74,90,.28)' },
+    // ─── 日本 ───
+    { region:'japan', name:'弥生',    start:-300, end:250,  color:'rgba(58,74,58,.28)' },
+    { region:'japan', name:'古墳',    start:250,  end:538,  color:'rgba(74,74,58,.28)' },
+    { region:'japan', name:'飛鳥',    start:538,  end:710,  color:'rgba(74,58,74,.30)' },
+    { region:'japan', name:'奈良',    start:710,  end:794,  color:'rgba(90,74,58,.32)' },
+    { region:'japan', name:'平安',    start:794,  end:1185, color:'rgba(90,58,74,.25)' },
+    { region:'japan', name:'鎌倉',    start:1185, end:1333, color:'rgba(58,74,74,.30)' },
+    { region:'japan', name:'室町',    start:1336, end:1573, color:'rgba(74,74,58,.25)' },
+    { region:'japan', name:'安土桃山', start:1573, end:1603, color:'rgba(90,74,42,.35)' },
+    { region:'japan', name:'江戸',    start:1603, end:1868, color:'rgba(58,74,90,.25)' },
+    { region:'japan', name:'明治',    start:1868, end:1912, color:'rgba(74,58,58,.32)' },
+    // ─── ヨーロッパ ───
+    { region:'europe', name:'古代ギリシア', start:-800, end:-146, color:'rgba(58,58,90,.28)' },
+    { region:'europe', name:'ローマ共和政', start:-509, end:-27,  color:'rgba(74,58,58,.25)' },
+    { region:'europe', name:'ローマ帝国',   start:-27,  end:476,  color:'rgba(90,42,58,.25)' },
+    { region:'europe', name:'東ローマ',     start:395,  end:1453, color:'rgba(74,58,90,.20)' },
+    { region:'europe', name:'中世',         start:476,  end:1453, color:'rgba(58,58,58,.22)' },
+    { region:'europe', name:'ルネサンス〜近世', start:1453, end:1789, color:'rgba(58,74,74,.25)' },
+    { region:'europe', name:'近代',         start:1789, end:1920, color:'rgba(74,74,58,.22)' },
   ];
 
   // ── Render ──
@@ -303,7 +367,13 @@
         msg.textContent = '準備中...';
         col.appendChild(msg);
       } else {
-        // Render era blocks for this region
+        // Render dynasty background blocks first
+        const regionDynasties = DYNASTIES.filter(d => d.region === r.id);
+        regionDynasties.forEach(dyn => {
+          const dBlock = createDynastyBlock(dyn);
+          col.appendChild(dBlock);
+        });
+        // Render era blocks on top
         const regionEras = ERAS.filter(e => e.region === r.id);
         regionEras.forEach(era => {
           const block = createEraBlock(era);
@@ -338,9 +408,11 @@
     }
     block.appendChild(name);
 
-    // Year range (only if not compact)
+    // Year range (only if not compact) — use displayStart/displayEnd if available
     if (!isCompact) {
-      const years = el('div','era-years', `${fmtYear(era.start)} — ${fmtYear(era.end)}`);
+      const ds = era.displayStart ?? era.start;
+      const de = era.displayEnd ?? era.end;
+      const years = el('div','era-years', `${fmtYear(ds)} — ${fmtYear(de)}`);
       block.appendChild(years);
     }
 
@@ -365,6 +437,29 @@
       block.addEventListener('click', () => { window.location.href = era.link; });
     }
 
+    return block;
+  }
+
+  function createDynastyBlock(dyn) {
+    const clampedStart = Math.max(dyn.start, START_YEAR);
+    const clampedEnd = Math.min(dyn.end, END_YEAR);
+    const top = yearToY(clampedStart);
+    const height = (clampedEnd - clampedStart) * PX_PER_YEAR;
+
+    const block = el('div','dynasty-block');
+    block.style.top = top + 'px';
+    block.style.height = Math.max(height, 12) + 'px';
+    block.style.background = dyn.color;
+
+    const label = el('div','dynasty-name', dyn.name);
+    // Adjust font size for very short periods
+    if (height < 40) {
+      label.style.fontSize = '.55rem';
+      label.style.padding = '2px 1px';
+    } else if (height < 80) {
+      label.style.fontSize = '.62rem';
+    }
+    block.appendChild(label);
     return block;
   }
 
@@ -396,9 +491,11 @@
 
   // ── Tooltip ──
   function showTooltip(e, era) {
+    const ds = era.displayStart ?? era.start;
+    const de = era.displayEnd ?? era.end;
     tooltip.querySelector('.tt-name').textContent = era.name;
     tooltip.querySelector('.tt-years').textContent =
-      `${fmtYearJa(era.start)} 〜 ${fmtYearJa(era.end)}（${era.end - era.start}年間）`;
+      `${fmtYearJa(ds)} 〜 ${fmtYearJa(de)}（${de - ds}年間）`;
     tooltip.querySelector('.tt-note').textContent = era.note || '';
     tooltip.classList.add('visible');
     moveTooltip(e);
