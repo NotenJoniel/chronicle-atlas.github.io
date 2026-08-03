@@ -501,4 +501,97 @@ const TERRITORY_SNAPSHOTS = [
   }
 ];
 
-window.appData = { ERA_PHASES, FACTIONS, CATEGORIES, CHARACTERS, EVENTS, TERRITORY_SNAPSHOTS };
+// ==========================================
+// Wikipedia リンクマッピング
+// ==========================================
+const WIKI_LINKS = {
+  characters: {
+    // ── 秦 ──
+    c_qin_xiaogong: "孝公_(秦)",
+    c_shangyang: "商鞅",
+    c_zhangyi: "張儀",
+    c_baqi: "白起",
+    c_fansu: "范雎",
+    c_lvbuwei: "呂不韋",
+    c_yingzheng: "始皇帝",
+    c_lisi: "李斯",
+    c_wangjian: "王翦",
+    c_mengtian: "蒙恬",
+    c_qin_huiwen: "恵文王_(秦)",
+    c_qin_zhaoxiang: "昭襄王_(秦)",
+    c_laoai: "嫪毐",
+    // ── 楚 ──
+    c_chu_huaiwang: "懐王",
+    c_qunyuan: "屈原",
+    c_xiangyan: "項燕",
+    c_chunshenjun: "春申君",
+    // ── 斉 ──
+    c_qi_weiwang: "威王_(斉)",
+    c_sunbin: "孫臏",
+    c_tiandan: "田単",
+    c_mengchangjun: "孟嘗君",
+    c_zoujin: "鄒忌",
+    // ── 燕 ──
+    c_yan_zhaowang: "昭王_(燕)",
+    c_yuewi: "楽毅",
+    c_jingke: "荊軻",
+    c_taizidan: "太子丹",
+    // ── 趙 ──
+    c_zhao_wuling: "武霊王_(趙)",
+    c_lianpo: "廉頗",
+    c_linxiangru: "藺相如",
+    c_limu: "李牧",
+    c_pingyuanjun: "平原君",
+    c_zhaokuo: "趙括",
+    c_zhaosha: "趙奢",
+    // ── 魏 ──
+    c_wei_wenhou: "文侯_(魏)",
+    c_likai: "李悝",
+    c_wuqi: "呉起",
+    c_pangjuan: "龐涓",
+    c_xinlingjun: "信陵君",
+    c_ximenrbao: "西門豹",
+    // ── 韓 ──
+    c_hanfeizi: "韓非",
+    c_shenbugai: "申不害",
+    // ── その他 ──
+    c_suqin: "蘇秦",
+    c_mengzi: "孟子",
+    c_zhuangzi: "荘子",
+    c_sunwu: "孫武",
+    c_guiguzi: "鬼谷子",
+    c_zouyan: "鄒衍",
+    c_mozi: "墨子",
+    c_houying: "侯嬴",
+    c_maosui: "毛遂",
+    c_fanwuji: "樊於期"
+  },
+  events: {
+    e_sankabunsin: "三家分晋",
+    e_likai_henpo: "李悝",
+    e_goki_seiha: "呉起",
+    e_shouo_henpo: "商鞅",
+    e_nanmon_ki: "商鞅",
+    e_keiryo: "桂陵の戦い",
+    e_baryo: "馬陵の戦い",
+    e_choui_rengou: "張儀",
+    e_shokoku_ou: "戦国時代_(中国)",
+    e_gassho_rengou: "合従連衡",
+    e_iketsu: "伊闕の戦い",
+    e_en_sei: "楚",
+    e_chohei: "長平の戦い",
+    e_kofuku_kishya: "胡服騎射",
+    e_kanji_kan: "邯鄲の戦い",
+    e_sesshu_kyucho: "信陵君",
+    e_keimei_kuto: "孟嘗君",
+    e_kanpeki: "藺相如",
+    e_funkei_no_majiwari: "刎頸の交わり",
+    e_kakyu_kajiyo: "奇貨居くべし",
+    e_roai_ran: "嫪毐",
+    e_keika_ansatsu: "荊軻",
+    e_togo_senso: "秦の統一戦争",
+    e_tenka_toitsu: "始皇帝"
+  }
+};
+
+window.appData = { ERA_PHASES, FACTIONS, CATEGORIES, CHARACTERS, EVENTS, TERRITORY_SNAPSHOTS, WIKI_LINKS };

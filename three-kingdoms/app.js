@@ -264,13 +264,13 @@ document.addEventListener('DOMContentLoaded', () => {
       ? document.documentElement.scrollHeight - window.innerHeight
       : timelineCol.scrollHeight - timelineCol.clientHeight;
 
-    // Target line: a point in the viewport to match the "current" card against
+    // scrollProgress: 0 at top, 1 at bottom — used to slide the target line
+    const scrollProgress = scrollMax > 0 ? scrollTop / scrollMax : 0;
+
+    // The target line slides from near the top (margin 40px) to near the bottom
     const refTop = isWindowScroll ? 0 : timelineCol.getBoundingClientRect().top;
-    const maxTargetOffset = viewportH * 0.40;
-    const minTargetOffset = 40;
-    const scrollRatio = scrollMax > 0 ? Math.min(scrollTop / (viewportH * 0.6), 1) : 0;
-    const targetOffset = minTargetOffset + (maxTargetOffset - minTargetOffset) * scrollRatio;
-    const targetY = refTop + targetOffset;
+    const margin = 40;
+    const targetY = refTop + margin + (viewportH - margin * 2) * scrollProgress;
 
     let closest = null;
     let closestDist = Infinity;
@@ -388,6 +388,24 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(() => setupObserver());
   }
 
+  // ─── Wikipedia Link Helper ───
+  const WIKI_ICON_SVG = '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.09 13.119c-.936 1.932-2.217 4.548-2.853 5.728-.616 1.074-1.127.931-1.532.029-1.406-3.321-4.293-9.144-5.651-12.409-.251-.601-.441-.987-.619-1.139-.181-.15-.554-.24-1.122-.271C.103 5.033 0 4.982 0 4.898v-.455l.052-.045c.924-.005 5.401 0 5.401 0l.051.045v.434c0 .119-.075.176-.225.176l-.564.031c-.485.029-.727.164-.727.407 0 .2.11.566.329 1.124.665 1.606 2.716 6.378 3.713 8.69l.061-.006c.875-1.842 2.189-4.625 2.189-4.625s-.684-1.406-1.867-4.039c-.289-.637-.557-1.076-.804-1.315-.248-.24-.63-.371-1.146-.392-.127-.007-.19-.064-.19-.17v-.453l.049-.044h4.455l.051.044v.442c0 .128-.074.186-.222.186-.693.024-.856.143-.856.392 0 .119.078.357.236.714l1.72 3.695.063.009 1.72-3.591c.157-.353.236-.597.236-.733 0-.287-.269-.439-.806-.456-.158-.006-.237-.066-.237-.182v-.445l.049-.043s2.397-.007 3.498 0l.049.043v.457c0 .104-.074.161-.222.167-.741.049-1.218.395-1.89 1.665l-2.076 4.073 2.375 5.067.063.006c1.07-2.519 2.873-6.728 3.57-8.488.233-.578.35-.972.35-1.182 0-.322-.334-.49-1-.504-.128-.006-.192-.063-.192-.17v-.457l.049-.043s2.456-.005 3.41 0l.051.043v.457c0 .113-.072.17-.216.17-.471.02-.845.112-1.122.279-.278.164-.553.495-.826.99-.834 1.703-4.632 9.677-5.834 12.296-.59 1.018-1.108 1.078-1.533.045-.633-1.388-2.267-4.792-2.267-4.792z"/></svg>';
+
+  function renderWikiLink(containerEl, wikiTitle) {
+    containerEl.innerHTML = '';
+    if (!wikiTitle) return;
+    const url = 'https://ja.wikipedia.org/wiki/' + encodeURIComponent(wikiTitle);
+    const a = document.createElement('a');
+    a.className = 'wiki-link';
+    a.href = url;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.innerHTML = WIKI_ICON_SVG + ' Wikipedia';
+    a.title = `Wikipedia: ${wikiTitle}`;
+    a.onclick = e => e.stopPropagation();
+    containerEl.appendChild(a);
+  }
+
   // ─── Event Modal ───
   function openEventModal(eventId) {
     const ev = D.EVENTS.find(e => e.id === eventId);
@@ -399,6 +417,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const trivSec = $('em-trivia-section');
     if (ev.historyDiff) { $('em-trivia').textContent = ev.historyDiff; trivSec.style.display = ''; }
     else { trivSec.style.display = 'none'; }
+    // Wikipedia link
+    renderWikiLink($('em-wiki-link'), D.WIKI_LINKS?.events?.[ev.id]);
     const charsEl = $('em-chars');
     charsEl.innerHTML = '';
     ev.characters.forEach(cid => {
@@ -426,6 +446,8 @@ document.addEventListener('DOMContentLoaded', () => {
     $('cm-role').textContent = ch.role;
     $('cm-life').textContent = ch.life ? `（${ch.life}）` : '';
     $('cm-desc').textContent = ch.description;
+    // Wikipedia link
+    renderWikiLink($('cm-wiki-link'), D.WIKI_LINKS?.characters?.[ch.id]);
     const trivSec = $('cm-trivia-section');
     if (ch.historyTrivia) { $('cm-trivia').textContent = ch.historyTrivia; trivSec.style.display = ''; }
     else { trivSec.style.display = 'none'; }

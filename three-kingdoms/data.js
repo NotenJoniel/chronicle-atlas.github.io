@@ -533,14 +533,6 @@ const EVENTS = [
     historyDiff: "演義ではほぼ省略されるが、正史では司馬懿から司馬師への権力継承が魏の事実上の終焉を意味した。" },
 
   // ── 第十一章 ──
-  { id: "e_sobo_shigeki", phaseId: 11, year: 254, title: "司馬師の廃帝と毌丘倹の乱", category: "politics", historyOnly: true,
-    characters: ["c_sima_shi"], location: "洛陽 / 寿春",
-    description: "司馬師は皇帝・曹芳を「暗愚」として廃位し、曹髦（14歳）を新帝に擁立した。皇帝を廃立する権力を振るう司馬氏に対し、毌丘倹・文欽が寿春で反乱を起こすが鎮圧。しかし司馬師は戦中に眼病が悪化し、弟の司馬昭に後事を託して陣中で急死した。",
-    historyDiff: "演義ではほとんど描かれない重要事件。司馬師の短い治世だが、皇帝廃立という前例を作ったことで魏の皇帝権威は完全に形骸化した。" },
-  { id: "e_sobo_shigeki2", phaseId: 11, year: 260, title: "曹髦の反乱と弑逆事件", category: "politics", historyOnly: true,
-    characters: ["c_sima_zhao"], location: "洛陽",
-    description: "「司馬昭の心は路人も皆知る」——皇帝・曹髦は司馬昭の簒奪の意図を見抜き、自ら数百人の兵を率いて司馬昭の屋敷に突撃した。しかし司馬昭の部下・賈充の命で成済が曹髦を刺し殺す。皇帝が臣下に殺されるという前代未聞の事件に朝廷は震撼。司馬昭は成済に全責任を押し付けて処刑し、新帝・曹奐を擁立した。",
-    historyDiff: "正史でも詳細に記録された衝撃的事件。曹髦の行動は「暴虎馮河（無謀な蛮勇）」と評されるが、「座して殺されるより立って死ぬ」という気概は後世の同情を集めた。" },
   { id: "e_niku_no_hen", phaseId: 11, year: 250, title: "二宮の変（呉の後継者争い）", category: "politics",
     characters: ["c_sunquan", "c_luxun"], location: "建業",
     description: "晩年の孫権が後継者を明確にせず、皇子の孫和と孫覇が激しく対立。陸遜は太子派として進言したが孫権に詰問され憤死。多くの重臣が処刑・追放され呉は取り返しのつかないほど弱体化した。",
@@ -549,6 +541,14 @@ const EVENTS = [
     characters: ["c_jiangwei", "c_feiyi"], location: "雍州・涼州",
     description: "11度にわたる北伐。費禕の暗殺後は制約が外れ大規模化。洮西の戦いなど戦術的勝利もあったが蜀の国力を疲弊させた。",
     historyDiff: "正史でも軍略は評価されるが「功績は費用に見合わなかった」と批判。" },
+  { id: "e_sobo_shigeki", phaseId: 11, year: 254, title: "司馬師の廃帝と毌丘倹の乱", category: "politics", historyOnly: true,
+    characters: ["c_sima_shi"], location: "洛陽 / 寿春",
+    description: "司馬師は皇帝・曹芳を「暗愚」として廃位し、曹髦（14歳）を新帝に擁立した。皇帝を廃立する権力を振るう司馬氏に対し、毌丘倹・文欽が寿春で反乱を起こすが鎮圧。しかし司馬師は戦中に眼病が悪化し、弟の司馬昭に後事を託して陣中で急死した。",
+    historyDiff: "演義ではほとんど描かれない重要事件。司馬師の短い治世だが、皇帝廃立という前例を作ったことで魏の皇帝権威は完全に形骸化した。" },
+  { id: "e_sobo_shigeki2", phaseId: 11, year: 260, title: "曹髦の反乱と弑逆事件", category: "politics", historyOnly: true,
+    characters: ["c_sima_zhao"], location: "洛陽",
+    description: "「司馬昭の心は路人も皆知る」——皇帝・曹髦は司馬昭の簒奪の意図を見抜き、自ら数百人の兵を率いて司馬昭の屋敷に突撃した。しかし司馬昭の部下・賈充の命で成済が曹髦を刺し殺す。皇帝が臣下に殺されるという前代未聞の事件に朝廷は震撼。司馬昭は成済に全責任を押し付けて処刑し、新帝・曹奐を擁立した。",
+    historyDiff: "正史でも詳細に記録された衝撃的事件。曹髦の行動は「暴虎馮河（無謀な蛮勇）」と評されるが、「座して殺されるより立って死ぬ」という気概は後世の同情を集めた。" },
 
   // ── 第十二章 ──
   { id: "e_shoku_metsubou", phaseId: 12, year: 263, title: "蜀漢の滅亡", category: "battle",
@@ -840,4 +840,160 @@ const TERRITORY_SNAPSHOTS = [
   }
 ];
 
-window.appData = { ERA_PHASES, FACTIONS, CATEGORIES, CHARACTERS, EVENTS, TERRITORY_SNAPSHOTS };
+// ==========================================
+// Wikipedia リンクマッピング
+// キー: キャラクター/イベントID → 値: 日本語版Wikipedia記事タイトル
+// URL は app.js 側で https://ja.wikipedia.org/wiki/ + title で生成
+// ==========================================
+const WIKI_LINKS = {
+  characters: {
+    // ── 魏 ──
+    c_caocao: "曹操",
+    c_caopi: "曹丕",
+    c_caorui: "曹叡",
+    c_xunyu: "荀彧",
+    c_xunyou: "荀攸",
+    c_guojia: "郭嘉",
+    c_chengyu: "程昱",
+    c_jiaxu: "賈詡",
+    c_sima_yi: "司馬懿",
+    c_manpet: "満寵",
+    c_liuye: "劉曄",
+    c_zhongyao: "鍾繇",
+    c_caozhen: "曹真",
+    c_caoshuang: "曹爽",
+    c_xiahou_dun: "夏侯惇",
+    c_xiahou_yuan: "夏侯淵",
+    c_caoren: "曹仁",
+    c_caohong: "曹洪",
+    c_zhangliao: "張遼",
+    c_xuhuang: "徐晃",
+    c_zhanghe: "張郃",
+    c_yuejin: "楽進",
+    c_yuqin: "于禁",
+    c_xuzhu: "許褚",
+    c_dianwei: "典韋",
+    c_xiahouba: "夏侯覇",
+    c_dengai: "鄧艾",
+    c_zhonghui: "鍾会",
+    // ── 蜀 ──
+    c_liubei: "劉備",
+    c_liushan: "劉禅",
+    c_guanyu: "関羽",
+    c_zhangfei: "張飛",
+    c_zhugeliang: "諸葛亮",
+    c_zhaoyun: "趙雲",
+    c_machao: "馬超",
+    c_huangzhong: "黄忠",
+    c_weiyan: "魏延",
+    c_pangtong: "龐統",
+    c_fazheng: "法正",
+    c_jiangwei: "姜維",
+    c_xushu: "徐庶",
+    c_masu: "馬謖",
+    c_maliang: "馬良",
+    c_jiangwan: "蒋琬",
+    c_feiyi: "費禕",
+    c_guanping: "関平",
+    c_zhoucang: "周倉",
+    c_liaohua: "廖化",
+    c_wangping: "王平_(三国)",
+    c_madai: "馬岱",
+    // ── 呉 ──
+    c_sunjian: "孫堅",
+    c_sunce: "孫策",
+    c_sunquan: "孫権",
+    c_zhouyu: "周瑜",
+    c_lusu: "魯粛",
+    c_lumeng: "呂蒙",
+    c_luxun: "陸遜",
+    c_taishici: "太史慈",
+    c_ganning: "甘寧",
+    c_huanggai: "黄蓋",
+    c_chengpu: "程普",
+    c_zhoutai: "周泰",
+    c_dingfeng: "丁奉",
+    c_lingtong: "凌統",
+    c_luji: "陸抗",
+    c_zhangzhao: "張昭",
+    c_zhugejin: "諸葛瑾",
+    c_kanzi: "闞沢",
+    // ── 群雄・その他 ──
+    c_dongzhuo: "董卓",
+    c_lvbu: "呂布",
+    c_diaocan: "貂蝉",
+    c_yuanshao: "袁紹",
+    c_yuanshu: "袁術",
+    c_liubiao: "劉表",
+    c_gongsunzan: "公孫瓚",
+    c_taoqian: "陶謙",
+    c_zhangxiu: "張繡",
+    c_chenggong: "陳宮",
+    c_gaoshun: "高順",
+    c_yanliang: "顔良",
+    c_wenchou: "文醜",
+    c_tienfeng: "田豊",
+    c_jushou: "沮授",
+    c_wangyun: "王允",
+    c_zhangzhao_hy: "張角",
+    c_huatuo: "華佗",
+    c_yanyan: "厳顔",
+    c_menghe: "孟獲",
+    // ── 晋 ──
+    c_sima_shi: "司馬師",
+    c_sima_zhao: "司馬昭",
+    c_sima_yan: "司馬炎"
+  },
+  events: {
+    // ── 第一章 ──
+    e_taoyuan: "桃園の誓い",
+    e_kokinran: "黄巾の乱",
+    e_dongzhuo: "董卓",
+    // ── 第二章 ──
+    e_korokan: "虎牢関の戦い",
+    e_renkankeiry: "連環の計",
+    e_enjutsu_metsubou: "袁術",
+    // ── 第三章 ──
+    e_anjo: "宛城の戦い",
+    e_sunce_koto: "孫策",
+    e_kahi: "下邳の戦い",
+    e_gonsonzan_metsubou: "公孫瓚",
+    // ── 第四章 ──
+    e_hakuba_entsin: "白馬の戦い",
+    e_kanto: "官渡の戦い",
+    e_ensho_metsubou: "袁紹",
+    e_sanko: "三顧の礼",
+    // ── 第五章 ──
+    e_chohanka: "長坂の戦い",
+    e_sekiheki: "赤壁の戦い",
+    e_keishu_kofuku: "劉表",
+    // ── 第六章 ──
+    e_isui_sui: "潼関の戦い",
+    e_nyushu: "入蜀",
+    e_gasspi: "合肥の戦い",
+    e_teigunnzan: "定軍山の戦い",
+    // ── 第七章 ──
+    e_hanjyou_sui: "樊城の戦い",
+    e_hakui_toko: "樊城の戦い",
+    e_sousou_si: "曹操",
+    e_sangoku_teiritsu: "三国時代_(中国)",
+    // ── 第八章 ──
+    e_iryo: "夷陵の戦い",
+    // ── 第九章 ──
+    e_nanban: "諸葛亮南征",
+    e_suishihyo: "出師表",
+    e_gaitei: "街亭の戦い",
+    e_kujyo_kei: "空城計",
+    e_gojyogen: "五丈原の戦い",
+    // ── 第十章 ──
+    e_koheiryo: "高平陵の変",
+    // ── 第十一章 ──
+    e_niku_no_hen: "二宮の変",
+    e_sobo_shigeki2: "曹髦",
+    // ── 第十二章 ──
+    e_shoku_metsubou: "蜀漢",
+    e_togo: "呉_(三国)"
+  }
+};
+
+window.appData = { ERA_PHASES, FACTIONS, CATEGORIES, CHARACTERS, EVENTS, TERRITORY_SNAPSHOTS, WIKI_LINKS };

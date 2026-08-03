@@ -344,4 +344,71 @@ const TERRITORY_SNAPSHOTS = [
   }
 ];
 
-window.appData = { ERA_PHASES, FACTIONS, CATEGORIES, CHARACTERS, EVENTS, TERRITORY_SNAPSHOTS };
+// ==========================================
+// Wikipedia リンクマッピング
+// ==========================================
+const WIKI_LINKS = {
+  characters: {
+    // ── 漢（劉邦陣営） ──
+    c_liubang: "劉邦",
+    c_xiaohe: "蕭何",
+    c_zhangliang: "張良",
+    c_hanxin: "韓信",
+    c_caoshen: "曹参",
+    c_fankuai: "樊噲",
+    c_chenping: "陳平_(前漢)",
+    c_zhoub: "周勃",
+    c_liyiji: "酈食其",
+    c_pengue: "彭越",
+    c_yingbu: "英布",
+    c_guanying: "灌嬰",
+    c_suihe: "随何",
+    c_xiahouying: "夏侯嬰",
+    c_lusheng: "呂雉",
+    // ── 楚（項羽陣営） ──
+    c_xiangyu: "項籍",
+    c_fanzeng: "范増",
+    c_xiangliang: "項梁",
+    c_xiangbo: "項伯",
+    c_yuji: "虞美人_(様々)",
+    c_longju: "龍且",
+    c_jibu: "季布",
+    c_zhonglimei: "鍾離眜",
+    // ── 秦 ──
+    c_zhaogao: "趙高",
+    c_lisi_qin: "李斯",
+    c_huhai: "胡亥",
+    c_ziying: "子嬰",
+    c_zhanghan: "章邯",
+    // ── 群雄・その他 ──
+    c_chensheng: "陳勝",
+    c_wuguang: "呉広",
+    c_huaiwang2: "義帝",
+    c_songyi: "宋義",
+    c_zhanger: "張耳",
+    c_chenyu: "陳余",
+    c_tianrong: "田栄",
+    c_kuaitong: "蒯通"
+  },
+  events: {
+    e_shikoutei_si: "始皇帝",
+    e_lisi_shi: "李斯",
+    e_shikaroba: "趙高",
+    e_chinsho_ran: "陳勝・呉広の乱",
+    e_kohryo_kyohei: "項梁",
+    e_kaiwang_yoritsu: "義帝",
+    e_jokyo: "鉅鹿の戦い",
+    e_koomon: "鴻門の会",
+    e_saicho_haou: "項籍",
+    e_antochinso: "暗渡陳倉",
+    e_houjou: "彭城の戦い",
+    e_gessui_kansin: "韓信",
+    e_haisui_jin: "背水の陣",
+    e_rikan_hanzou: "陳平_(前漢)",
+    e_gaika: "垓下の戦い",
+    e_shimen_soka: "四面楚歌",
+    e_kanno_seiritsu: "前漢"
+  }
+};
+
+window.appData = { ERA_PHASES, FACTIONS, CATEGORIES, CHARACTERS, EVENTS, TERRITORY_SNAPSHOTS, WIKI_LINKS };
