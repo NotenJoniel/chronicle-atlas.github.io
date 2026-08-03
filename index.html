@@ -72,6 +72,7 @@
       transition:all .2s ease;
       z-index:2;
       border:1px solid rgba(255,255,255,.08);
+      min-height:18px;
     }
     .era-block::after{
       content:'';position:absolute;inset:0;
@@ -89,6 +90,7 @@
       border:1.5px solid var(--gold);
       box-shadow:0 0 12px rgba(196,165,90,.15);
       animation:linkedPulse 3s ease-in-out infinite;
+      z-index:4;
     }
     .era-block.linked:hover{
       box-shadow:0 0 24px rgba(196,165,90,.35);
@@ -219,6 +221,9 @@
     { region:'china', name:'戦国時代',  start:-475, end:-221, color:'#7a3545',
       note:'⚔️ 七雄が覇を競う合従連衡の時代。孫子・韓非子・屈原。秦の統一へ。',
       link:'./warring-states/', linked:true },
+    { region:'china', name:'楚漢戦争',  start:-209, end:-202, color:'#8a4a2a',
+      note:'⚔️ 秦滅亡後の項羽vs劉邦。鴻門の会、四面楚歌、垓下の戦い。前漢成立へ。',
+      link:'./chu-han/', linked:true },
     { region:'china', name:'三国時代',  start:220,  end:280,  color:'#b8963c',
       note:'⚔️ 魏・蜀・呉の三国が覇を競う。劉備・曹操・孫権の時代。',
       link:'./three-kingdoms/', linked:true },
@@ -240,6 +245,7 @@
   // ── Quick Jump targets ──
   const JUMPS = [
     { label: '戦国時代（中国）', year: -475 },
+    { label: '楚漢戦争 ⚔️', year: -209 },
     { label: '三国時代 ⚔️', year: 180, highlight: true },
     { label: '戦国時代（日本）', year: 1467 },
   ];
