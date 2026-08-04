@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>漢王朝 史実クロニクルタイムライン (BC202年〜AD220年)</title>
+  <meta name="description" content="前漢・新・後漢の約420年にわたる漢王朝の歴史をインタラクティブに探索。劉邦の建国から黄巾の乱まで、勢力図・人物図鑑・出来事を網羅するデータベース。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=1.0">
+</head>
+<body>
+  <div class="sticky-header">
+    <div class="header-row">
+      <a href="../" class="back-to-atlas">← Atlas</a>
+      <h1>🏯 漢王朝<span>BC202年〜AD220年</span></h1>
+      <div class="header-actions">
+        <button class="btn" id="btn-toggle-sidebar" title="人物一覧">👥 人物一覧</button>
+        <button class="btn" id="btn-toggle-map" title="勢力図を表示">🗺️ 勢力図</button>
+      </div>
+    </div>
+    <!-- Era Navigation -->
+    <div class="era-nav" id="era-nav"></div>
+    <!-- Filters -->
+    <div class="controls-row">
+      <div id="faction-filters"></div>
+      <div id="category-filters"></div>
+      <div class="search-box">
+        <input type="text" id="search" placeholder="🔍 人物・出来事を検索…">
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Layout -->
+  <div class="main-layout">
+    <!-- Sidebar (Characters) -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <!-- Content: Timeline + Map side by side -->
+    <div class="content-area">
+      <div class="timeline-column">
+        <div class="timeline" id="timeline"></div>
+      </div>
+
+      <!-- Territory Map (sticky right panel) -->
+      <div class="map-column" id="map-column" style="display:none">
+        <div class="map-panel" id="map-panel">
+          <div class="map-title">🗺️ 勢力図 ▸ <span id="map-year-badge">全体</span></div>
+          <div class="map-container">
+            <div class="map-grid" id="map-grid"></div>
+            <div class="map-legend" id="map-legend"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Event Modal -->
+  <div class="modal-overlay" id="event-modal">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <h2 id="em-title"></h2>
+          <div class="sub"><span id="em-year"></span> ▸ <span id="em-location"></span></div>
+        </div>
+        <div class="modal-head-actions">
+          <div id="em-wiki-link"></div>
+          <button class="modal-close" id="em-close">✕</button>
+        </div>
+      </div>
+      <div class="modal-section"><h3>概要</h3><p id="em-desc"></p></div>
+      <div class="modal-section" id="em-trivia-section"><h3>📖 エピソード</h3><div class="trivia-box"><p id="em-trivia"></p></div></div>
+      <div class="modal-section"><h3>関連人物</h3><div class="char-events-grid" id="em-chars"></div></div>
+    </div>
+  </div>
+
+  <!-- Character Modal -->
+  <div class="modal-overlay" id="char-modal">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <div class="char-header-info">
+            <h2 id="cm-name"></h2>
+            <span id="cm-faction-tag" class="tag"></span>
+            <span class="char-life" id="cm-life"></span>
+          </div>
+          <div class="reading-line" id="cm-reading"></div>
+          <div class="sub" id="cm-role"></div>
+        </div>
+        <div class="modal-head-actions">
+          <div id="cm-wiki-link"></div>
+          <button class="modal-close" id="cm-close">✕</button>
+        </div>
+      </div>
+      <div class="modal-section"><h3>人物紹介</h3><p id="cm-desc"></p></div>
+      <div class="modal-section" id="cm-trivia-section"><h3>📖 エピソード</h3><div class="trivia-box"><p id="cm-trivia"></p></div></div>
+      <div class="modal-section"><h3>関連する出来事</h3><div class="char-events-grid" id="cm-events"></div></div>
+    </div>
+  </div>
+  <script src="app.js?v=1.0"></script>
+</body>
+</html>
