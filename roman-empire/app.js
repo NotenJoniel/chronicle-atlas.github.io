@@ -4,7 +4,7 @@
  */
 document.addEventListener('DOMContentLoaded', () => {
   // Load data from centralized JSON
-  fetch('../data/timelines/roman-empire.json')
+  fetch(`../data/timelines/roman-empire.json?t=${Date.now()}`)
     .then(r => r.json())
     .then(raw => {
   const D = {
