@@ -19,6 +19,15 @@
       "subProjectDir": "chu-han"
     },
     {
+      "id": "han-dynasty",
+      "name": "漢王朝",
+      "region": "china",
+      "startYear": -202,
+      "endYear": 220,
+      "dataFile": "timelines/han-dynasty.json",
+      "subProjectDir": "han-dynasty"
+    },
+    {
       "id": "three-kingdoms",
       "name": "三国時代",
       "region": "china",
