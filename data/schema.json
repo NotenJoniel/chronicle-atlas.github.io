@@ -1,0 +1,138 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Chronicle Atlas Timeline Data",
+  "description": "共通スキーマ定義 — 全タイムラインのデータ構造を統一する型定義",
+  "type": "object",
+  "required": ["eraPhases", "factions", "categories", "characters", "events", "mapSnapshots", "wikiLinks"],
+  "properties": {
+    "eraPhases": {
+      "type": "array",
+      "description": "時代区分（章立て）",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "period", "startYear", "endYear"],
+        "properties": {
+          "id": { "type": "integer", "description": "時代ID（1始まりの連番）" },
+          "name": { "type": "string", "description": "時代の名称" },
+          "period": { "type": "string", "description": "表示用の期間文字列（例: 'BC475 — BC403'）" },
+          "startYear": { "type": "integer", "description": "開始年（紀元前は負数: -475）" },
+          "endYear": { "type": "integer", "description": "終了年（紀元前は負数: -403）" }
+        }
+      }
+    },
+    "factions": {
+      "type": "object",
+      "description": "勢力定義（キーが勢力ID）",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": { "type": "string", "description": "勢力ID（英小文字: qin, wei など）" },
+          "name": { "type": "string", "description": "勢力名" }
+        }
+      }
+    },
+    "categories": {
+      "type": "object",
+      "description": "カテゴリ定義（キーがカテゴリID）",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["id", "name", "icon"],
+        "properties": {
+          "id": { "type": "string", "description": "カテゴリID（英小文字: battle, politics など）" },
+          "name": { "type": "string", "description": "カテゴリ名" },
+          "icon": { "type": "string", "description": "絵文字アイコン" }
+        }
+      }
+    },
+    "characters": {
+      "type": "array",
+      "description": "人物一覧",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "faction", "role", "description"],
+        "properties": {
+          "id": { "type": "string", "description": "人物ID（c_ プレフィクス: c_qin_shihuang）" },
+          "name": { "type": "string", "description": "人物名" },
+          "reading": { "type": "string", "description": "読み仮名（任意）" },
+          "title": { "type": "string", "description": "別名・旧名（任意）" },
+          "faction": { "type": "string", "description": "所属勢力ID" },
+          "role": { "type": "string", "description": "役職・立場" },
+          "life": { "type": "string", "description": "生没年（例: 'BC259-BC210'）（任意）" },
+          "description": { "type": "string", "description": "人物紹介文" },
+          "historyTrivia": { "type": "string", "description": "エピソード・逸話（任意）" }
+        }
+      }
+    },
+    "events": {
+      "type": "array",
+      "description": "出来事一覧",
+      "items": {
+        "type": "object",
+        "required": ["id", "phaseId", "year", "title", "category", "characters", "location", "description"],
+        "properties": {
+          "id": { "type": "string", "description": "出来事ID（e_ プレフィクス: e_battle_changping）" },
+          "phaseId": { "type": "integer", "description": "所属する時代区分のID" },
+          "year": { "type": "integer", "description": "発生年（紀元前は負数: -260）" },
+          "title": { "type": "string", "description": "出来事のタイトル" },
+          "category": { "type": "string", "description": "カテゴリID" },
+          "characters": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "関連人物IDの配列"
+          },
+          "location": { "type": "string", "description": "発生場所" },
+          "description": { "type": "string", "description": "出来事の説明文" },
+          "historyTrivia": { "type": "string", "description": "エピソード・逸話（任意）" },
+          "certainty": {
+            "type": "string",
+            "enum": ["confirmed", "disputed", "approximate"],
+            "default": "confirmed",
+            "description": "年代の確度（任意、デフォルト: confirmed）"
+          }
+        }
+      }
+    },
+    "mapSnapshots": {
+      "type": "array",
+      "description": "勢力図スナップショット（年代順）",
+      "items": {
+        "type": "object",
+        "required": ["year", "label", "territories"],
+        "properties": {
+          "year": { "type": "integer", "description": "スナップショットの基準年" },
+          "label": { "type": "string", "description": "表示用ラベル" },
+          "territories": {
+            "type": "object",
+            "description": "領土定義（キーが領土ID）",
+            "additionalProperties": {
+              "type": "object",
+              "required": ["name", "lord", "faction"],
+              "properties": {
+                "name": { "type": "string", "description": "領土名" },
+                "lord": { "type": "string", "description": "支配者名" },
+                "faction": { "type": "string", "description": "勢力ID" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "wikiLinks": {
+      "type": "object",
+      "description": "Wikipedia記事リンク",
+      "properties": {
+        "characters": {
+          "type": "object",
+          "description": "人物IDをキー、Wikipedia記事タイトルを値",
+          "additionalProperties": { "type": "string" }
+        },
+        "events": {
+          "type": "object",
+          "description": "出来事IDをキー、Wikipedia記事タイトルを値",
+          "additionalProperties": { "type": "string" }
+        }
+      }
+    }
+  }
+}

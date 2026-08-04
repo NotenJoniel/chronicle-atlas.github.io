@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>日本の戦国時代 史実クロニクルタイムライン (1467年〜1615年)</title>
-  <meta name="description" content="応仁の乱から大坂の陣まで。日本の戦国時代の出来事・人物・勢力図をインタラクティブに体験するタイムライン。">
+  <title>日本の戦国時代 史実クロニクルタイムライン (1467年、E615年)</title>
+  <meta name="description" content="応仁�E乱から大坂�E陣まで。日本の戦国時代の出来事�E人物・勢力図をインタラクチE��ブに体験するタイムライン、E>
   <link rel="stylesheet" href="styles.css?v=1.0">
 </head>
 <body>
@@ -12,11 +12,11 @@
   <!-- Sticky Header -->
   <header class="sticky-header">
     <div class="header-row">
-      <a href="../" class="back-to-atlas">← Atlas</a>
-      <h1>⛩️ 日本の戦国時代<span>1467年〜1615年</span></h1>
+      <a href="../" class="back-to-atlas">ↁEAtlas</a>
+      <h1>⛩�E�E日本の戦国時代<span>1467年、E615年</span></h1>
       <div class="header-actions">
         <button class="btn" id="btn-toggle-sidebar" title="人物一覧">👥 人物一覧</button>
-        <button class="btn" id="btn-toggle-map" title="勢力図を表示">🗺️ 勢力図</button>
+        <button class="btn" id="btn-toggle-map" title="勢力図を表示">🗺�E�E勢力図</button>
       </div>
     </div>
     <!-- Era Navigation -->
@@ -25,7 +25,7 @@
     <div class="controls-row">
       <div id="faction-filters"></div>
       <div id="category-filters"></div>
-      <div class="search-box"><input type="text" id="search" placeholder="🔍 出来事・人物を検索…"></div>
+      <div class="search-box"><input type="text" id="search" placeholder="🔍 出来事�E人物を検索…"></div>
     </div>
   </header>
 
@@ -61,7 +61,7 @@
       <div class="modal-head">
         <div>
           <h2 id="em-title"></h2>
-          <div class="sub"><span id="em-year"></span> — <span id="em-location"></span></div>
+          <div class="sub"><span id="em-year"></span>  E<span id="em-location"></span></div>
         </div>
         <div class="modal-head-actions">
           <span id="em-wiki-link"></span>
@@ -69,9 +69,9 @@
         </div>
       </div>
       <div class="modal-body">
-        <div class="modal-section"><h3>📖 史実の記録</h3><p id="em-desc"></p></div>
-        <div class="modal-section" id="em-trivia-section"><h3>📜 補足・豆知識</h3><div class="trivia-box"><p id="em-trivia"></p></div></div>
-        <div class="modal-section"><h3>👥 関連人物（クリックで詳細）</h3><div id="em-chars" class="event-chars"></div></div>
+        <div class="modal-section"><h3>📖 史実�E記録</h3><p id="em-desc"></p></div>
+        <div class="modal-section" id="em-trivia-section"><h3>📜 補足・豁E��譁E/h3><div class="trivia-box"><p id="em-trivia"></p></div></div>
+        <div class="modal-section"><h3>👥 関連人物�E�クリチE��で詳細�E�E/h3><div id="em-chars" class="event-chars"></div></div>
       </div>
     </div>
   </div>
@@ -95,14 +95,13 @@
         </div>
       </div>
       <div class="modal-body">
-        <div class="modal-section"><h3>📖 人物伝</h3><p id="cm-desc"></p></div>
-        <div class="modal-section" id="cm-trivia-section"><h3>📜 補足・豆知識</h3><div class="trivia-box"><p id="cm-trivia"></p></div></div>
-        <div class="modal-section"><h3>📅 関連する出来事（クリックで詳細）</h3><div id="cm-events" class="char-events-grid"></div></div>
+        <div class="modal-section"><h3>📖 人物企E/h3><p id="cm-desc"></p></div>
+        <div class="modal-section" id="cm-trivia-section"><h3>📜 補足・豁E��譁E/h3><div class="trivia-box"><p id="cm-trivia"></p></div></div>
+        <div class="modal-section"><h3>📅 関連する出来事（クリチE��で詳細�E�E/h3><div id="cm-events" class="char-events-grid"></div></div>
       </div>
     </div>
   </div>
 
-  <script src="data.js?v=2.1"></script>
   <script src="app.js?v=1.1"></script>
 </body>
 </html>

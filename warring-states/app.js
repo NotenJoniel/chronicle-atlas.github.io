@@ -3,7 +3,21 @@
  * 史実ベース（演義/正史区分なし）/ 勢力図連動 / 人物相互リンク
  */
 document.addEventListener('DOMContentLoaded', () => {
-  const D = window.appData;
+  // Load data from centralized JSON
+  fetch('../data/timelines/warring-states.json')
+    .then(r => r.json())
+    .then(raw => {
+  const D = {
+    ERA_PHASES: raw.eraPhases,
+    FACTIONS: raw.factions,
+    CATEGORIES: raw.categories,
+    CHARACTERS: raw.characters,
+    EVENTS: raw.events,
+    MAP_SNAPSHOTS: raw.mapSnapshots,
+    TERRITORY_SNAPSHOTS: raw.mapSnapshots,
+    WIKI_LINKS: raw.wikiLinks
+  };
+  window.appData = D;
   const state = { era: null, faction: 'all', category: 'all', query: '', mapVisible: false, sidebarVisible: true, activeEventYear: null, prevMapKey: null, selectedChars: new Set() };
 
   const $ = id => document.getElementById(id);
@@ -512,6 +526,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (text !== undefined) el.textContent = text;
     return el;
   }
-
   init();
+    }).catch(err => {
+      console.error('データの読み込みに失敗しました:', err);
+      document.getElementById('timeline').innerHTML = '<div class="no-results">データの読み込みに失敗しました。ページを再読み込みしてください。</div>';
+    });
 });

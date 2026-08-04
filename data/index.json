@@ -1,0 +1,49 @@
+{
+  "timelines": [
+    {
+      "id": "warring-states",
+      "name": "中国戦国時代",
+      "region": "china",
+      "startYear": -475,
+      "endYear": -221,
+      "dataFile": "timelines/warring-states.json",
+      "subProjectDir": "warring-states"
+    },
+    {
+      "id": "chu-han",
+      "name": "楚漢戦争",
+      "region": "china",
+      "startYear": -209,
+      "endYear": -202,
+      "dataFile": "timelines/chu-han.json",
+      "subProjectDir": "chu-han"
+    },
+    {
+      "id": "three-kingdoms",
+      "name": "三国時代",
+      "region": "china",
+      "startYear": 184,
+      "endYear": 280,
+      "dataFile": "timelines/three-kingdoms.json",
+      "subProjectDir": "three-kingdoms"
+    },
+    {
+      "id": "sengoku-japan",
+      "name": "日本の戦国時代",
+      "region": "japan",
+      "startYear": 1467,
+      "endYear": 1615,
+      "dataFile": "timelines/sengoku-japan.json",
+      "subProjectDir": "sengoku-japan"
+    },
+    {
+      "id": "roman-empire",
+      "name": "ローマ帝国",
+      "region": "europe",
+      "startYear": -27,
+      "endYear": 476,
+      "dataFile": "timelines/roman-empire.json",
+      "subProjectDir": "roman-empire"
+    }
+  ]
+}
