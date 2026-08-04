@@ -138,15 +138,15 @@
       "name": "政治・外交",
       "icon": "📜"
     },
-    "diplomacy": {
-      "id": "diplomacy",
-      "name": "合従連衡",
-      "icon": "🤝"
-    },
     "episode": {
       "id": "episode",
       "name": "人物・逸話",
       "icon": "🎭"
+    },
+    "death": {
+      "id": "death",
+      "name": "英雄の死",
+      "icon": "💀"
     }
   },
   "characters": [
@@ -876,7 +876,7 @@
       "phaseId": 5,
       "year": -333,
       "title": "蘇秦の合従策",
-      "category": "diplomacy",
+      "category": "politics",
       "characters": [
         "c_suqin"
       ],
@@ -889,7 +889,7 @@
       "phaseId": 5,
       "year": -328,
       "title": "張儀の連衡策と楚の騙し討ち",
-      "category": "diplomacy",
+      "category": "politics",
       "characters": [
         "c_zhangyi",
         "c_chu_huaiwang",

@@ -65,11 +65,23 @@ function validateTimeline(filename) {
 
   // ── 4. categories ──
   const categoryIds = new Set();
+  const UNIFIED_CATEGORIES = ['battle', 'politics', 'episode', 'death'];
   if (data.categories && typeof data.categories === 'object') {
     for (const [key, val] of Object.entries(data.categories)) {
       categoryIds.add(key);
       if (typeof val.name !== 'string') error(filename, `categories["${key}"]: name must be string`);
       if (typeof val.icon !== 'string') error(filename, `categories["${key}"]: icon must be string`);
+    }
+    // Check unified categories
+    for (const uc of UNIFIED_CATEGORIES) {
+      if (!categoryIds.has(uc)) {
+        error(filename, `categories: missing unified category "${uc}"`);
+      }
+    }
+    for (const key of categoryIds) {
+      if (!UNIFIED_CATEGORIES.includes(key)) {
+        error(filename, `categories: non-standard category "${key}" (allowed: ${UNIFIED_CATEGORIES.join(', ')})`);
+      }
     }
     ok(`categories: ${categoryIds.size} categories`);
   }

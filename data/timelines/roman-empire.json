@@ -100,10 +100,10 @@
       "name": "人物・逸話",
       "icon": "🎭"
     },
-    "culture": {
-      "id": "culture",
-      "name": "文化・建築",
-      "icon": "🏛️"
+    "death": {
+      "id": "death",
+      "name": "英雄の死",
+      "icon": "💀"
     }
   },
   "characters": [
@@ -624,7 +624,7 @@
       "phaseId": 2,
       "year": 80,
       "title": "コロッセウム完成",
-      "category": "culture",
+      "category": "episode",
       "location": "ローマ",
       "characters": [
         "c_titus"
@@ -676,7 +676,7 @@
       "phaseId": 3,
       "year": 122,
       "title": "ハドリアヌスの長城建設",
-      "category": "culture",
+      "category": "episode",
       "location": "ブリタニア北部",
       "characters": [
         "c_hadrian"
@@ -689,7 +689,7 @@
       "phaseId": 3,
       "year": 125,
       "title": "パンテオンの再建",
-      "category": "culture",
+      "category": "episode",
       "location": "ローマ",
       "characters": [
         "c_hadrian"
