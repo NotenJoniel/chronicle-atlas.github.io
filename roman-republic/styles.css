@@ -1,0 +1,219 @@
+/* ═══════════════════════════════════════════════
+   Roman Republic Chronicle Timeline — Theme v1.0
+   BC509 – BC27  共和政ローマの480年
+   ═══════════════════════════════════════════════ */
+
+/* ─ Base Palette ─ */
+:root{
+  --bg:#0d0f14;--surface:#171a22;--surface-2:#1f222c;--surface-3:#2a2e38;
+  --border-subtle:rgba(200,170,120,.12);--text:#e8e4d8;--text-dim:#a09888;
+  --gold:#c9a84c;--gold-dim:rgba(201,168,76,.18);
+  /* Faction Colors */
+  --roma:#5a2a5a;--roma-light:#9a5a9a;
+  --populares:#8B1A1A;--populares-light:#CD5C5C;
+  --carthage:#2E6B57;--carthage-light:#5FAF8F;
+  --greece:#3a4a8a;--greece-light:#6a7aba;
+  --rebels:#B8860B;--rebels-light:#DAA520;
+  --gallia:#556B2F;--gallia-light:#8FBB4F;
+  --other:#5A6072;--other-light:#8A90A2;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans JP','Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+::selection{background:var(--roma);color:#fff}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--surface-3);border-radius:3px}
+
+/* ─ Header ─ */
+.sticky-header{position:sticky;top:0;z-index:100;background:linear-gradient(180deg,var(--bg) 60%,transparent);padding:10px 20px 6px;backdrop-filter:blur(12px)}
+.header-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.header-row h1{font-size:1.35rem;color:var(--gold);white-space:nowrap}
+.header-row h1 span{font-size:.78rem;color:var(--text-dim);margin-left:8px;font-weight:400}
+.back-to-atlas{color:var(--text-dim);text-decoration:none;font-size:.85rem;padding:4px 10px;border:1px solid var(--border-subtle);border-radius:6px;transition:.2s}
+.back-to-atlas:hover{color:var(--gold);border-color:var(--gold)}
+.header-actions{margin-left:auto;display:flex;gap:6px}
+.btn{background:var(--surface-2);border:1px solid var(--border-subtle);color:var(--text-dim);padding:5px 12px;border-radius:6px;cursor:pointer;font-size:.82rem;transition:.2s}
+.btn:hover,.btn.active{background:var(--surface-3);color:var(--gold);border-color:var(--gold)}
+
+/* ─ Era Nav ─ */
+.era-nav{display:flex;gap:4px;overflow-x:auto;padding:8px 0 4px;scrollbar-width:none}
+.era-nav::-webkit-scrollbar{display:none}
+.era-tab{white-space:nowrap;padding:5px 14px;border-radius:999px;font-size:.82rem;color:var(--text-dim);cursor:pointer;border:1px solid transparent;transition:.2s;flex-shrink:0}
+.era-tab:hover{color:var(--text);background:var(--surface-2)}
+.era-tab.active{background:var(--gold-dim);color:var(--gold);border-color:var(--gold)}
+
+/* ─ Controls Row ─ */
+.controls-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:4px 0}
+.controls-row>div{display:flex;gap:4px;flex-wrap:wrap}
+.filter-btn{background:none;border:1px solid var(--border-subtle);color:var(--text-dim);padding:3px 10px;border-radius:999px;font-size:.78rem;cursor:pointer;transition:.2s;white-space:nowrap}
+.filter-btn:hover{color:var(--text);border-color:var(--text-dim)}
+.filter-btn.active{background:var(--gold-dim);color:var(--gold);border-color:var(--gold)}
+.search-box{margin-left:auto}
+.search-box input{background:var(--surface-2);border:1px solid var(--border-subtle);color:var(--text);padding:4px 12px;border-radius:6px;font-size:.82rem;width:180px;transition:border .2s}
+.search-box input:focus{outline:none;border-color:var(--gold)}
+
+/* ─ Main Layout: sidebar(fixed) | timeline(flex) | map(fixed) ─ */
+.main-layout{display:flex;height:calc(100vh - 140px);overflow:hidden}
+.sidebar{width:260px;min-width:260px;background:var(--surface);border-right:1px solid var(--border-subtle);overflow-y:auto;flex-shrink:0;scrollbar-width:thin;scrollbar-color:var(--surface-3) transparent}
+.sidebar::-webkit-scrollbar{width:4px}
+.sidebar::-webkit-scrollbar-thumb{background:var(--surface-3);border-radius:2px}
+.sidebar-overlay{display:none}
+.content-area{flex:1;display:flex;gap:0;min-width:0;overflow:hidden}
+.timeline-column{flex:1;min-width:0;padding:8px 18px 40px;overflow-y:auto}
+
+/* sidebar internals */
+.sidebar-clear-bar{display:none;align-items:center;justify-content:space-between;padding:5px 8px;margin-bottom:6px;background:var(--gold-dim);border:1px solid var(--gold);border-radius:6px;font-size:.78rem;color:var(--gold)}
+.clear-char-filter{background:none;border:none;color:var(--gold);cursor:pointer;font-size:.78rem}
+.sidebar-section{margin-bottom:2px}
+.sidebar-header{display:flex;justify-content:space-between;align-items:center;padding:6px 8px;cursor:pointer;font-size:.82rem;font-weight:700;color:var(--text-dim);border-radius:4px;transition:.15s;user-select:none}
+.sidebar-header:hover{background:var(--surface-2);color:var(--text)}
+.sidebar-header.collapsed .arrow{transform:rotate(-90deg)}
+.sidebar-header .arrow{transition:transform .2s;font-size:.7rem}
+.sidebar-list.hidden{display:none}
+.sidebar-char{display:flex;align-items:center;gap:6px;padding:4px 8px 4px 16px;font-size:.82rem;cursor:pointer;border-radius:4px;transition:.15s;color:var(--text-dim)}
+.sidebar-char:hover{background:var(--surface-2);color:var(--text)}
+.sidebar-char.selected{background:var(--gold-dim);color:var(--gold)}
+.sidebar-char .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.sidebar-char .reading{font-size:.72rem;color:var(--text-dim);margin-left:2px}
+
+/* ─ Sticky Territory Map ─ */
+.map-column{width:480px;flex-shrink:0;padding:8px 0 8px 8px;overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:var(--surface-3) transparent}
+.map-column::-webkit-scrollbar{width:4px}
+.map-column::-webkit-scrollbar-thumb{background:var(--surface-3);border-radius:2px}
+
+.map-panel{background:var(--surface);border:1px solid var(--border-subtle);border-radius:8px 0 0 8px;padding:14px 12px;position:sticky;top:110px}
+.map-title{font-size:1.1rem;color:var(--gold);margin-bottom:12px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.map-title .map-year-badge{background:var(--gold-dim);border:1px solid var(--gold);padding:2px 10px;border-radius:999px;font-size:.78rem}
+.map-container{display:flex;flex-direction:column;gap:10px;width:100%;max-width:100%}
+.map-grid{display:grid;gap:3px;width:100%;max-width:100%}
+.map-cell{border-radius:4px;padding:10px 4px;text-align:center;font-size:.92rem;line-height:1.3;transition:background .4s,border-color .4s;border:2px solid transparent;cursor:default;overflow:hidden}
+.map-cell.map-empty{background:rgba(255,255,255,.02);border-color:rgba(255,255,255,.03);cursor:default}
+.map-cell.changed{animation:cellPulse .6s ease-out}
+@keyframes cellPulse{0%{box-shadow:inset 0 0 12px rgba(255,255,200,.5)}100%{box-shadow:none}}
+.map-cell .cell-name{font-weight:700;margin-bottom:2px;font-size:1rem}
+.map-cell .cell-lord{font-size:.82rem;opacity:.85;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.map-legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.88rem}
+.map-legend-item{display:flex;align-items:center;gap:8px}
+.map-legend-swatch{width:14px;height:14px;border-radius:3px;flex-shrink:0}
+
+/* Map faction colors */
+.map-han{background:var(--han);border-color:var(--han-light) !important}
+.map-xiongnu{background:var(--xiongnu);border-color:var(--xiongnu-light) !important}
+.map-xin{background:var(--xin);border-color:var(--xin-light) !important}
+.map-rebels{background:var(--rebels);border-color:var(--rebels-light) !important}
+.map-warlords{background:var(--warlords);border-color:var(--warlords-light) !important}
+.map-foreign{background:var(--foreign);border-color:var(--foreign-light) !important}
+.map-vassal{background:var(--vassal);border-color:var(--vassal-light) !important}
+.map-other{background:var(--other);border-color:var(--other-light) !important}
+
+/* ─ Timeline ─ */
+.timeline{display:flex;flex-direction:column;gap:10px}
+.no-results{text-align:center;color:var(--text-dim);padding:40px 0;font-size:.95rem}
+.event-card{background:var(--surface);border:1px solid var(--border-subtle);border-radius:8px;padding:14px 16px;cursor:pointer;transition:border .2s,box-shadow .2s}
+.event-card:hover{border-color:var(--gold);box-shadow:0 0 12px rgba(201,168,76,.08)}
+.event-card.active-event{border-color:var(--gold);box-shadow:0 0 16px rgba(201,168,76,.15)}
+.event-year{font-size:.78rem;color:var(--gold);margin-bottom:4px;font-weight:600}
+.event-top{display:flex;align-items:center;gap:6px;margin-bottom:6px;flex-wrap:wrap}
+.event-icon{font-size:1rem}
+.event-title{font-weight:700;font-size:1rem;flex:1}
+.event-cat{font-size:.72rem;color:var(--text-dim);background:var(--surface-2);padding:2px 8px;border-radius:999px;white-space:nowrap}
+.event-desc{font-size:.85rem;color:var(--text-dim);line-height:1.6;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.event-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px}
+.event-location{font-size:.78rem;color:var(--text-dim)}
+.event-chars{display:flex;flex-wrap:wrap;gap:4px}
+
+/* Tags */
+.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:.78rem;cursor:pointer;transition:.15s;border:1px solid transparent}
+.tag:hover{filter:brightness(1.2)}
+.tag-roma{background:var(--roma);color:#e8d8f8}
+.tag-populares{background:var(--populares);color:#f8d8d8}
+.tag-carthage{background:var(--carthage);color:#d8f8e8}
+.tag-greece{background:var(--greece);color:#d8e8f8}
+.tag-rebels{background:var(--rebels);color:#f8f0d0}
+.tag-gallia{background:var(--gallia);color:#e8f8d0}
+.tag-other{background:var(--other);color:#d8dce8}
+.tag-event{background:var(--surface-2);color:var(--text-dim);border-color:var(--border-subtle)}
+.tag-event:hover{color:var(--gold);border-color:var(--gold)}
+
+/* Map faction colors */
+.map-roma{background:var(--roma)}
+.map-populares{background:var(--populares)}
+.map-carthage{background:var(--carthage)}
+.map-greece{background:var(--greece)}
+.map-rebels{background:var(--rebels)}
+.map-gallia{background:var(--gallia)}
+.map-other{background:var(--other)}
+.map-empty{background:transparent;border:1px dashed var(--border-subtle)}
+
+/* ─ Modals ─ */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:200;display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px)}
+.modal-overlay.active{display:flex}
+.modal{background:var(--surface);border:1px solid var(--border-subtle);border-radius:12px;max-width:640px;width:100%;max-height:85vh;overflow-y:auto;padding:24px;position:relative}
+.modal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:16px}
+.modal-head h2{font-size:1.2rem;color:var(--gold)}
+.modal-head .sub{font-size:.82rem;color:var(--text-dim);margin-top:4px}
+.modal-head-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.modal-close{background:none;border:none;color:var(--text-dim);font-size:1.4rem;cursor:pointer;padding:2px 6px;border-radius:4px;transition:.15s}
+.modal-close:hover{color:var(--text);background:var(--surface-2)}
+.modal-section{margin-bottom:16px}
+.modal-section h3{font-size:.92rem;color:var(--gold);margin-bottom:8px;border-bottom:1px solid var(--border-subtle);padding-bottom:4px}
+.modal-section p{font-size:.88rem;color:var(--text-dim);line-height:1.7}
+.trivia-box{background:var(--surface-2);border-left:3px solid var(--gold);padding:10px 14px;border-radius:0 6px 6px 0}
+.trivia-box p{font-size:.84rem;line-height:1.6}
+.char-events-grid{display:flex;flex-wrap:wrap;gap:4px}
+.char-header-info{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.char-life{font-size:.78rem;color:var(--text-dim)}
+.reading-line{font-size:.78rem;color:var(--text-dim);margin-top:2px}
+
+/* Wikipedia Link */
+.wiki-link{display:inline-flex;align-items:center;gap:4px;color:var(--text-dim);text-decoration:none;font-size:.82rem;padding:4px 10px;border:1px solid var(--border-subtle);border-radius:6px;transition:.2s;white-space:nowrap}
+.wiki-link:hover{color:#fff;border-color:#fff;background:rgba(255,255,255,.08)}
+.wiki-link svg{width:14px;height:14px;fill:currentColor}
+
+/* ═══ Responsive ═══ */
+@media(max-width:1200px){
+  .main-layout{flex-direction:column;height:auto;overflow:visible}
+  .content-area{flex-direction:column;overflow:visible}
+  .sidebar{width:200px}
+  .map-column{width:100%;flex-shrink:1;padding:12px;overflow-y:visible}
+  .map-panel{position:static}
+  .timeline-column{padding:8px 14px 30px;overflow-y:visible}
+  /* Map grid: smaller cells */
+  .map-cell{padding:8px 3px;font-size:.82rem}
+  .map-cell .cell-name{font-size:.88rem}
+  .map-cell .cell-lord{font-size:.74rem}
+}
+@media(max-width:900px){
+  .sticky-header{padding:8px 12px 4px}
+  .header-row h1{font-size:1.1rem}
+  .sidebar{position:fixed;left:0;top:0;bottom:0;width:260px;z-index:150;background:var(--bg);transform:translateX(-100%);transition:transform .3s;padding-top:60px}
+  .sidebar.mobile-open{transform:translateX(0)}
+  .sidebar-overlay{display:block;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:140;opacity:0;pointer-events:none;transition:opacity .3s}
+  .sidebar-overlay.active{opacity:1;pointer-events:auto}
+  .timeline-column{padding:8px 10px 30px}
+  /* Map */
+  .map-panel{border-radius:8px;padding:10px}
+  .map-title{font-size:.95rem;margin-bottom:8px}
+  .map-grid{gap:2px}
+  .map-cell{padding:6px 2px;font-size:.75rem;border-radius:3px}
+  .map-cell .cell-name{font-size:.8rem;margin-bottom:1px}
+  .map-cell .cell-lord{font-size:.68rem}
+  .map-legend{gap:4px 10px;font-size:.78rem}
+  .map-legend-swatch{width:11px;height:11px}
+  .controls-row{gap:4px}
+  .filter-btn{padding:2px 7px;font-size:.72rem}
+  .search-box input{width:140px;font-size:.78rem}
+  .era-tab{padding:4px 10px;font-size:.76rem}
+  .modal{padding:16px;max-width:95vw}
+}
+@media(max-width:480px){
+  .header-row h1{font-size:.95rem}
+  .header-row h1 span{display:none}
+  .btn{padding:4px 8px;font-size:.75rem}
+  .event-card{padding:10px 12px}
+  .event-title{font-size:.9rem}
+  .event-desc{font-size:.8rem}
+  .map-cell{padding:4px 1px;font-size:.68rem}
+  .map-cell .cell-name{font-size:.72rem}
+  .map-cell .cell-lord{font-size:.62rem}
+}
