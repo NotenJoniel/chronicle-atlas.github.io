@@ -231,8 +231,8 @@
 
   // ── Regions ──
   const REGIONS = [
-    { id: 'china',  name: '中国',       icon: '🐉' },
     { id: 'japan',  name: '日本',       icon: '⛩️' },
+    { id: 'china',  name: '中国',       icon: '🐉' },
     { id: 'europe', name: 'ヨーロッパ',  icon: '🏛️' },
     { id: 'others', name: 'その他の地域', icon: '🌍', placeholder: true },
   ];
@@ -260,6 +260,9 @@
       link:'./sengoku-japan/', linked:true },
 
     // ─── ヨーロッパ ───
+    { region:'europe', name:'共和政ローマ', start:-509, end:-27, color:'#6a3a3a',
+      link:'./roman-republic/', linked:true,
+      note:'ポエニ戦争、グラックス兄弟、カエサル。共和政の理想と崩壊。' },
     { region:'europe', name:'ローマ帝国', start:-27, end:476, color:'#5a2a5a',
       link:'./roman-empire/', linked:true,
       note:'パクス・ロマーナからゲルマン民族の大移動まで。西洋文明の礎。' },

@@ -53,6 +53,15 @@
       "endYear": 476,
       "dataFile": "timelines/roman-empire.json",
       "subProjectDir": "roman-empire"
+    },
+    {
+      "id": "roman-republic",
+      "name": "共和政ローマ",
+      "region": "europe",
+      "startYear": -509,
+      "endYear": -27,
+      "dataFile": "timelines/roman-republic.json",
+      "subProjectDir": "roman-republic"
     }
   ]
 }
