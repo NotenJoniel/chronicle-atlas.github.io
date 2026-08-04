@@ -5,27 +5,30 @@
 
 ---
 
-## ⚠️ 最重要方針：論理的統合 + 物理的分割
+## ✅ 最重要方針：論理的統合 + 物理的分割 【実施済み 2026-08-04】
 
 **「1つのデータベースにまとめる」≠「1つのファイルにまとめる」**
 
-現在のサブプロジェクト方式（各ディレクトリに `data.js` を置く増殖パターン）は維持する。
-やるべきことは**スキーマ（フィールド名・構造の取り決め）の共通化**であり、ファイルの物理統合ではない。
+現在のサブプロジェクト方式（各ディレクトリに `app.js` + `styles.css` + `index.html`）は維持。
+データは `data/timelines/*.json` に統一スキーマで格納。各 `app.js` は `fetch` で読み込む。
 
-### 目標ディレクトリ構造（将来像）
+### 現在のディレクトリ構造
 
 ```
 data/
-  schema.json          ← 共通の型定義（小さい。これが「統合」の実体）
-  index.json           ← 各タイムラインのメタ情報だけ（ID・名称・期間・件数）
+  schema.json          ← 共通の型定義（JSON Schema）
+  index.json           ← 各タイムラインのメタ情報
   timelines/
-    china-warring-states.json
+    warring-states.json
     chu-han.json
-    han.json
     three-kingdoms.json
-    rome-empire.json
-    japan-sengoku.json
+    sengoku-japan.json
+    roman-empire.json
 ```
+
+### 統一済みフィールド名（camelCase）
+`eraPhases`, `factions`, `categories`, `characters`, `events`, `mapSnapshots`, `wikiLinks`
+- 旧 `TERRITORY_SNAPSHOTS` / `MAP_SNAPSHOTS` → `mapSnapshots` に統一済み
 
 ### なぜこの構造か
 
@@ -33,11 +36,11 @@ data/
 - **機能の恩恵はスキーマ単位**: 全ファイルが同じフィールド名で書かれているので、横串ビューはビルド時にマージするだけで成立。
 - **コスト感の実数**: 出来事1件 ≒ 250〜400トークン。150件で4〜6万トークン。1ファイル200〜300件を超えたら期間で分割（例: `han-western.json` / `han-eastern.json`）。
 
-### 🚨 最大の警戒対象：スキーマドリフト
+### 🚨 引き続きの警戒対象：スキーマドリフト
 
-サブプロジェクトを独立に増やすと、あるタイムラインは `year`、別のは `date`、また別のは `年代` のように**微妙に違う形で書かれていく**。個別に見れば全部正しく動くが、横串ビューを作ろうとした瞬間に破綻する。20本溜まってからの移行は「全ファイルを読んで直す」コンテキスト爆発そのもの。
+新規タイムライン追加時は必ず `data/schema.json` と既存JSONファイルのフィールド名を参照すること。
 
-**→ 先にスキーマを決めておくことが、将来の大規模リファクタを回避する投資。**
+**→ スキーマを共有することが、将来の大規模リファクタを回避する投資。**
 
 ---
 
@@ -137,11 +140,12 @@ data/
 | ローマ帝国 | `roman-empire/` | BC27–AD476 | ヨーロッパ |
 
 ### 共通アーキテクチャ（現行）
-- 各サブプロジェクトは `data.js` + `app.js` + `styles.css` + `index.html` の4ファイル構成
-- `data.js` が `window.appData` にデータをエクスポートし、`app.js` が参照
+- 各サブプロジェクトは `app.js` + `styles.css` + `index.html` の3ファイル構成
+- データは `data/timelines/<name>.json` に統一スキーマ（camelCase）で格納
+- `app.js` が `fetch('../data/timelines/<name>.json')` でデータを読み込み、旧キー名にマッピングして使用
 - トップページ `index.html` のデータ配列で `link` / `linked:true` を設定してリンク有効化
 - 勢力図は `main-layout` の `height:calc(100vh - 140px); overflow:hidden` + 各カラム独立スクロールで実現
-- **新規サブプロジェクト作成時は、既存の動作済みプロジェクトのコードをテンプレートとして忠実に参照すること**
+- **新規サブプロジェクト作成時は、`data/schema.json` と既存プロジェクトのコードをテンプレートとして参照すること**
 
 ---
 
