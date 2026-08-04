@@ -1,2 +1,5 @@
+url: "https://notenjoniel.github.io"
+baseurl: "/chronicle-atlas.github.io"
+
 plugins:
   - jekyll-sitemap
