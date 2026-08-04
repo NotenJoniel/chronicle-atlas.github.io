@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ローマ帝国 史実クロニクルタイムライン (BC27年〜AD476年)</title>
-  <meta name="description" content="アウグストゥスの即位から西ローマ帝国の滁E��まで。パクス・ロマ�Eナ、五賢帝、ゲルマン民族大移動を辿るインタラクチE��ブ年表、E>
+  <meta name="description" content="アウグストゥスの即位から西ローマ帝国の滅亡まで。パクス・ロマーナ、五賢帝、ゲルマン民族大移動を辿るインタラクティブ年表。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=1.0">
@@ -12,11 +12,11 @@
 <body>
   <div class="sticky-header">
     <div class="header-row">
-      <a href="../" class="back-to-atlas">ↁEAtlas</a>
-      <h1>🏛�E�Eローマ帝国<span>BC27年〜AD476年</span></h1>
+      <a href="../" class="back-to-atlas">← Atlas</a>
+      <h1>🏛️ ローマ帝国<span>BC27年〜AD476年</span></h1>
       <div class="header-actions">
         <button class="btn" id="btn-toggle-sidebar" title="人物一覧">👥 人物一覧</button>
-        <button class="btn" id="btn-toggle-map" title="勢力図を表示">🗺�E�E勢力図</button>
+        <button class="btn" id="btn-toggle-map" title="勢力図を表示">🗺️ 勢力図</button>
       </div>
     </div>
     <!-- Era Navigation -->
@@ -46,7 +46,7 @@
       <!-- Territory Map (sticky right panel) -->
       <div class="map-column" id="map-column" style="display:none">
         <div class="map-panel" id="map-panel">
-          <div class="map-title">🗺�E�E勢力図 ▸ <span id="map-year-badge">全佁E/span></div>
+          <div class="map-title">🗺️ 勢力図 ▸ <span id="map-year-badge">全体</span></div>
           <div class="map-container">
             <div class="map-grid" id="map-grid"></div>
             <div class="map-legend" id="map-legend"></div>
@@ -66,11 +66,11 @@
         </div>
         <div class="modal-head-actions">
           <div id="em-wiki-link"></div>
-          <button class="modal-close" id="em-close">✁E/button>
+          <button class="modal-close" id="em-close">✕</button>
         </div>
       </div>
-      <div class="modal-section"><h3>概要E/h3><p id="em-desc"></p></div>
-      <div class="modal-section" id="em-trivia-section"><h3>📖 エピソーチE/h3><div class="trivia-box"><p id="em-trivia"></p></div></div>
+      <div class="modal-section"><h3>概要</h3><p id="em-desc"></p></div>
+      <div class="modal-section" id="em-trivia-section"><h3>📖 エピソード</h3><div class="trivia-box"><p id="em-trivia"></p></div></div>
       <div class="modal-section"><h3>関連人物</h3><div class="char-events-grid" id="em-chars"></div></div>
     </div>
   </div>
@@ -90,15 +90,14 @@
         </div>
         <div class="modal-head-actions">
           <div id="cm-wiki-link"></div>
-          <button class="modal-close" id="cm-close">✁E/button>
+          <button class="modal-close" id="cm-close">✕</button>
         </div>
       </div>
-      <div class="modal-section"><h3>人物紹仁E/h3><p id="cm-desc"></p></div>
-      <div class="modal-section" id="cm-trivia-section"><h3>📖 エピソーチE/h3><div class="trivia-box"><p id="cm-trivia"></p></div></div>
-      <div class="modal-section"><h3>関連する出来亁E/h3><div class="char-events-grid" id="cm-events"></div></div>
+      <div class="modal-section"><h3>人物紹介</h3><p id="cm-desc"></p></div>
+      <div class="modal-section" id="cm-trivia-section"><h3>📖 エピソード</h3><div class="trivia-box"><p id="cm-trivia"></p></div></div>
+      <div class="modal-section"><h3>関連する出来事</h3><div class="char-events-grid" id="cm-events"></div></div>
     </div>
   </div>
-
   <script src="app.js?v=1.0"></script>
 </body>
 </html>

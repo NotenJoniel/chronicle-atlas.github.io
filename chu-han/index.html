@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>楚漢戦亁E史実クロニクルタイムライン (BC210年〜BC202年)</title>
-  <meta name="description" content="秦末の農民反乱から頁E��vs劉邦の楚漢戦争、前漢成立までをインタラクチE��ブなタイムラインで体験。鉅鹿の戦ぁE��E��門の会、垓下�E戦ぁE��四面楚歌、E>
+  <title>楚漢戦争 史実クロニクルタイムライン (BC210年〜BC202年)</title>
+  <meta name="description" content="秦末の農民反乱から項羽vs劉邦の楚漢戦争、前漢成立までをインタラクティブなタイムラインで体験。鉅鹿の戦い、鴻門の会、垓下の戦い、四面楚歌。">
   <link rel="stylesheet" href="styles.css?v=1.0">
 </head>
 <body>
@@ -12,10 +12,10 @@
   <!-- Sticky Header -->
   <div class="sticky-header">
     <div class="header-row">
-      <a href="../" class="back-to-atlas" title="Chronicle Atlas トップへ">ↁEAtlas</a>
-      <h1>楚漢戦亁E史宁E<span>クロニクルタイムライン</span></h1>
+      <a href="../" class="back-to-atlas" title="Chronicle Atlas トップへ">← Atlas</a>
+      <h1>楚漢戦争 史実 <span>クロニクルタイムライン</span></h1>
       <div class="header-actions">
-        <button class="btn" id="btn-toggle-map">🗺�E�E勢力図</button>
+        <button class="btn" id="btn-toggle-map">🗺️ 勢力図</button>
         <button class="btn" id="btn-toggle-sidebar">👤 人物一覧</button>
       </div>
     </div>
@@ -24,20 +24,20 @@
       <div id="faction-filters">
         <button class="filter-btn active" data-faction="all">すべて</button>
         <button class="filter-btn" data-faction="qin">秦</button>
-        <button class="filter-btn" data-faction="chu">楚（頁E���E�E/button>
-        <button class="filter-btn" data-faction="han">漢�E�劉邦�E�E/button>
-        <button class="filter-btn" data-faction="rebels">群雁E/button>
-        <button class="filter-btn" data-faction="other">そ�E仁E/button>
+        <button class="filter-btn" data-faction="chu">楚（項羽）</button>
+        <button class="filter-btn" data-faction="han">漢（劉邦）</button>
+        <button class="filter-btn" data-faction="rebels">群雄</button>
+        <button class="filter-btn" data-faction="other">その他</button>
       </div>
       <div id="category-filters">
         <button class="filter-btn active" data-cat="all">全種別</button>
-        <button class="filter-btn" data-cat="battle">⚔︁E戦ぁE/button>
+        <button class="filter-btn" data-cat="battle">⚔️ 戦い</button>
         <button class="filter-btn" data-cat="politics">📜 政治</button>
         <button class="filter-btn" data-cat="scheme">🎯 謀略</button>
         <button class="filter-btn" data-cat="episode">🎭 逸話</button>
       </div>
       <div class="search-box">
-        <input type="text" id="search-input" placeholder="検索�E�スペ�Eス区刁E��でOR検索�E�E>
+        <input type="text" id="search-input" placeholder="検索（スペース区切りでOR検索）">
       </div>
     </div>
   </div>
@@ -57,7 +57,7 @@
       <!-- Territory Map (sticky right panel) -->
       <div class="map-column" id="map-column" style="display:none">
         <div class="map-panel" id="map-panel">
-          <div class="map-title">🗺�E�E勢力図  E<span id="map-era-label">全時代</span></div>
+          <div class="map-title">🗺️ 勢力図 — <span id="map-era-label">全時代</span></div>
           <div class="map-container">
             <div class="map-grid" id="map-grid"></div>
             <div class="map-legend" id="map-legend"></div>
@@ -73,7 +73,7 @@
       <div class="modal-head">
         <div>
           <h2 id="em-title"></h2>
-          <div class="sub"><span id="em-year"></span>  E<span id="em-location"></span></div>
+          <div class="sub"><span id="em-year"></span> — <span id="em-location"></span></div>
         </div>
         <div class="modal-head-actions">
           <span id="em-wiki-link"></span>
@@ -81,9 +81,9 @@
         </div>
       </div>
       <div class="modal-body">
-        <div class="modal-section"><h3>📖 史実�E記録</h3><p id="em-desc"></p></div>
-        <div class="modal-section" id="em-trivia-section"><h3>📜 補足・豁E��譁E/h3><div class="trivia-box"><p id="em-trivia"></p></div></div>
-        <div class="modal-section"><h3>👥 関連人物�E�クリチE��で詳細�E�E/h3><div id="em-chars" class="event-chars"></div></div>
+        <div class="modal-section"><h3>📖 史実の記録</h3><p id="em-desc"></p></div>
+        <div class="modal-section" id="em-trivia-section"><h3>📜 補足・豆知識</h3><div class="trivia-box"><p id="em-trivia"></p></div></div>
+        <div class="modal-section"><h3>👥 関連人物（クリックで詳細）</h3><div id="em-chars" class="event-chars"></div></div>
       </div>
     </div>
   </div>
@@ -107,13 +107,12 @@
         </div>
       </div>
       <div class="modal-body">
-        <div class="modal-section"><h3>📖 人物企E/h3><p id="cm-desc"></p></div>
-        <div class="modal-section" id="cm-trivia-section"><h3>📜 補足・豁E��譁E/h3><div class="trivia-box"><p id="cm-trivia"></p></div></div>
-        <div class="modal-section"><h3>📅 関連する出来事（クリチE��で詳細�E�E/h3><div id="cm-events" class="char-events-grid"></div></div>
+        <div class="modal-section"><h3>📖 人物伝</h3><p id="cm-desc"></p></div>
+        <div class="modal-section" id="cm-trivia-section"><h3>📜 補足・豆知識</h3><div class="trivia-box"><p id="cm-trivia"></p></div></div>
+        <div class="modal-section"><h3>📅 関連する出来事（クリックで詳細）</h3><div id="cm-events" class="char-events-grid"></div></div>
       </div>
     </div>
   </div>
-
   <script src="app.js?v=1.1"></script>
 </body>
 </html>
