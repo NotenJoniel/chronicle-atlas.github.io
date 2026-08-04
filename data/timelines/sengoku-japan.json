@@ -132,10 +132,10 @@
       "name": "人物・逸話",
       "icon": "🎭"
     },
-    "castle": {
-      "id": "castle",
-      "name": "城・築城",
-      "icon": "🏯"
+    "death": {
+      "id": "death",
+      "name": "英雄の死",
+      "icon": "💀"
     }
   },
   "characters": [
@@ -723,7 +723,7 @@
       "phaseId": 1,
       "year": 1495,
       "title": "小田原城奪取",
-      "category": "castle",
+      "category": "episode",
       "location": "相模国・小田原城",
       "characters": [
         "c_soun"
@@ -1191,7 +1191,7 @@
       "phaseId": 5,
       "year": 1579,
       "title": "安土城天主完成",
-      "category": "castle",
+      "category": "episode",
       "location": "近江国・安土山",
       "characters": [
         "c_nobunaga"

@@ -125,12 +125,12 @@
     },
     "politics": {
       "id": "politics",
-      "name": "政治・事件",
+      "name": "政治・外交",
       "icon": "📜"
     },
     "episode": {
       "id": "episode",
-      "name": "逸話・名場面",
+      "name": "人物・逸話",
       "icon": "🎭"
     },
     "death": {

@@ -95,15 +95,15 @@
       "name": "政治・外交",
       "icon": "📜"
     },
-    "scheme": {
-      "id": "scheme",
-      "name": "謀略・駆け引き",
-      "icon": "🎯"
-    },
     "episode": {
       "id": "episode",
       "name": "人物・逸話",
       "icon": "🎭"
+    },
+    "death": {
+      "id": "death",
+      "name": "英雄の死",
+      "icon": "💀"
     }
   },
   "characters": [
@@ -540,7 +540,7 @@
       "phaseId": 1,
       "year": -208,
       "title": "指鹿為馬（趙高の権力掌握）",
-      "category": "scheme",
+      "category": "politics",
       "characters": [
         "c_zhaogao",
         "c_huhai"
@@ -688,7 +688,7 @@
       "phaseId": 5,
       "year": -206,
       "title": "鴻門の会",
-      "category": "scheme",
+      "category": "politics",
       "characters": [
         "c_xiangyu",
         "c_liubang",
@@ -737,7 +737,7 @@
       "phaseId": 6,
       "year": -206,
       "title": "義帝の暗殺",
-      "category": "scheme",
+      "category": "politics",
       "characters": [
         "c_xiangyu",
         "c_huaiwang2",
@@ -811,7 +811,7 @@
       "phaseId": 7,
       "year": -204,
       "title": "范増の失脚と死（陳平の離間の計）",
-      "category": "scheme",
+      "category": "politics",
       "characters": [
         "c_fanzeng",
         "c_xiangyu",
@@ -842,7 +842,7 @@
       "phaseId": 7,
       "year": -203,
       "title": "韓信の斉王自立要求",
-      "category": "scheme",
+      "category": "politics",
       "characters": [
         "c_hanxin",
         "c_liubang",
