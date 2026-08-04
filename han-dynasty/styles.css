@@ -98,16 +98,14 @@ body{font-family:'Noto Sans JP','Segoe UI',sans-serif;background:var(--bg);color
 .map-legend-swatch{width:14px;height:14px;border-radius:3px;flex-shrink:0}
 
 /* Map faction colors */
-.map-julio{background:var(--julio);border-color:var(--julio-light) !important}
-.map-flavian{background:var(--flavian);border-color:var(--flavian-light) !important}
-.map-antonine{background:var(--antonine);border-color:var(--antonine-light) !important}
-.map-severan{background:var(--severan);border-color:var(--severan-light) !important}
-.map-constantine{background:var(--constantine);border-color:var(--constantine-light) !important}
-.map-barbarian{background:var(--barbarian);border-color:var(--barbarian-light) !important}
-.map-eastern{background:var(--eastern);border-color:var(--eastern-light) !important}
+.map-han{background:var(--han);border-color:var(--han-light) !important}
+.map-xiongnu{background:var(--xiongnu);border-color:var(--xiongnu-light) !important}
+.map-xin{background:var(--xin);border-color:var(--xin-light) !important}
+.map-rebels{background:var(--rebels);border-color:var(--rebels-light) !important}
+.map-warlords{background:var(--warlords);border-color:var(--warlords-light) !important}
+.map-foreign{background:var(--foreign);border-color:var(--foreign-light) !important}
+.map-vassal{background:var(--vassal);border-color:var(--vassal-light) !important}
 .map-other{background:var(--other);border-color:var(--other-light) !important}
-.map-roma{background:#5a2a5a;border-color:#9a5a9a !important}
-.map-contested{background:#5a5a3a;border-color:#9a9a6a !important}
 
 /* ─ Timeline ─ */
 .timeline{display:flex;flex-direction:column;gap:10px}

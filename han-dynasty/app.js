@@ -4,7 +4,7 @@
  */
 document.addEventListener('DOMContentLoaded', () => {
   // Load data from centralized JSON
-  fetch('../data/timelines/han-dynasty.json')
+  fetch('../data/timelines/han-dynasty.json?v=2')
     .then(r => r.json())
     .then(raw => {
   const D = {
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     sidebar.appendChild(clearBar);
 
-    const factionOrder = ['julio', 'flavian', 'antonine', 'severan', 'constantine', 'barbarian', 'eastern', 'other'];
+    const factionOrder = ['han', 'xiongnu', 'xin', 'rebels', 'warlords', 'foreign', 'vassal', 'other'];
     factionOrder.forEach(fid => {
       const chars = D.CHARACTERS.filter(c => c.faction === fid);
       if (!chars.length) return;
@@ -223,15 +223,14 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderMapLegend(snap) {
     mapLegend.innerHTML = '';
     const ALL_FACTIONS = [
-      { faction: 'julio', cls: 'map-julio', label: 'ユリウス・クラウディウス朝' },
-      { faction: 'flavian', cls: 'map-flavian', label: 'フラウィウス朝' },
-      { faction: 'antonine', cls: 'map-antonine', label: 'ネルウァ・アントニヌス朝' },
-      { faction: 'severan', cls: 'map-severan', label: 'セウェルス朝' },
-      { faction: 'constantine', cls: 'map-constantine', label: 'コンスタンティヌス朝' },
-      { faction: 'barbarian', cls: 'map-barbarian', label: '蛮族' },
-      { faction: 'eastern', cls: 'map-eastern', label: '東方勢力' },
+      { faction: 'han', cls: 'map-han', label: '漢（皇室）' },
+      { faction: 'xiongnu', cls: 'map-xiongnu', label: '匈奴' },
+      { faction: 'xin', cls: 'map-xin', label: '新' },
+      { faction: 'rebels', cls: 'map-rebels', label: '反乱勢力' },
+      { faction: 'warlords', cls: 'map-warlords', label: '群雄' },
+      { faction: 'foreign', cls: 'map-foreign', label: '外国・西域' },
+      { faction: 'vassal', cls: 'map-vassal', label: '諸侯王' },
       { faction: 'other', cls: 'map-other', label: 'その他' },
-      { faction: 'contested', cls: 'map-contested', label: '係争中' },
     ];
     const activeFactions = new Set();
     if (snap && snap.territories) {
