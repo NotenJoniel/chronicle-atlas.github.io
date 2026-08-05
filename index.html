@@ -399,10 +399,11 @@
           const dBlock = createDynastyBlock(dyn);
           col.appendChild(dBlock);
         });
-        // Render era blocks on top
+        // Render era blocks on top（重なる期間は横に並べる。世界史年表の
+        // 「ヨーロッパ」列内で国・時代ごとに小列が並ぶ表現と同じ考え方）
         const regionEras = ERAS.filter(e => e.region === r.id);
-        regionEras.forEach(era => {
-          const block = createEraBlock(era);
+        layoutEraLanes(regionEras).forEach(({ era, lane, laneCount }) => {
+          const block = createEraBlock(era, lane, laneCount);
           col.appendChild(block);
         });
       }
@@ -410,7 +411,37 @@
     });
   }
 
-  function createEraBlock(era) {
+  // 同じ地域列内で時代が重なる場合、カレンダーアプリの予定表示と同じ発想で
+  // 横に並べる（compare/compare.jsのlayoutCardsと同じクラスタ単位のレーン方式）。
+  // 重なりが無い大半のケースではlaneCount===1のままなので、既存の見た目に影響しない。
+  // 重なり判定は displayStart/displayEnd（無ければ start/end）を使う。楚漢戦争の
+  // ようにブロックを視認しやすくするため実際の年より広めに描画しているケースで、
+  // その描画上の余白だけが原因で隣接ブロックまで不要にレーン分割されるのを防ぐため。
+  function layoutEraLanes(eras) {
+    const key = e => ({ s: e.displayStart ?? e.start, en: e.displayEnd ?? e.end });
+    const sorted = [...eras].sort((a, b) => key(a).s - key(b).s);
+    const laneEnds = [];
+    const laid = [];
+    const clusters = [];
+    let clusterStart = 0;
+    sorted.forEach(era => {
+      const { s, en } = key(era);
+      if (laneEnds.length > 0 && Math.max(...laneEnds) <= s) {
+        clusters.push({ start: clusterStart, end: laid.length, laneCount: laneEnds.length });
+        laneEnds.length = 0;
+        clusterStart = laid.length;
+      }
+      let lane = laneEnds.findIndex(end => end <= s);
+      if (lane === -1) { lane = laneEnds.length; laneEnds.push(en); }
+      else { laneEnds[lane] = en; }
+      laid.push({ era, lane });
+    });
+    if (laneEnds.length > 0) clusters.push({ start: clusterStart, end: laid.length, laneCount: laneEnds.length });
+    clusters.forEach(c => { for (let i = c.start; i < c.end; i++) laid[i].laneCount = c.laneCount; });
+    return laid;
+  }
+
+  function createEraBlock(era, lane, laneCount) {
     const top = yearToY(era.start);
     const height = (era.end - era.start) * PX_PER_YEAR;
     const isCompact = height < 55;
@@ -419,6 +450,12 @@
     block.style.top = top + 'px';
     block.style.height = height + 'px';
     block.style.background = era.color;
+    if (laneCount > 1) {
+      const laneWidthPct = 100 / laneCount;
+      block.style.left = `calc(${lane * laneWidthPct}% + 2px)`;
+      block.style.right = 'auto';
+      block.style.width = `calc(${laneWidthPct}% - 4px)`;
+    }
 
     // Era name
     const name = el('div','era-name', era.name);
