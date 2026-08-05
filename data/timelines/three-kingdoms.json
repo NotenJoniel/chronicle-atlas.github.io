@@ -86,6 +86,11 @@
     }
   ],
   "factions": {
+    "han": {
+      "id": "han",
+      "name": "漢",
+      "colorClass": "faction-han"
+    },
     "wei": {
       "id": "wei",
       "name": "魏",
@@ -101,6 +106,30 @@
       "name": "呉",
       "colorClass": "faction-wu"
     },
+    "ensho": {
+      "id": "ensho",
+      "name": "袁紹",
+      "mapOnly": true,
+      "colorClass": "faction-ensho"
+    },
+    "dongzhuo": {
+      "id": "dongzhuo",
+      "name": "董卓",
+      "mapOnly": true,
+      "colorClass": "faction-dongzhuo"
+    },
+    "liubiao": {
+      "id": "liubiao",
+      "name": "劉表",
+      "mapOnly": true,
+      "colorClass": "faction-liubiao"
+    },
+    "liuzhang": {
+      "id": "liuzhang",
+      "name": "劉璋",
+      "mapOnly": true,
+      "colorClass": "faction-liuzhang"
+    },
     "other": {
       "id": "other",
       "name": "群雄",
@@ -111,10 +140,11 @@
       "name": "晋",
       "colorClass": "faction-jin"
     },
-    "han": {
-      "id": "han",
-      "name": "漢",
-      "colorClass": "faction-han"
+    "contested": {
+      "id": "contested",
+      "name": "係争地",
+      "mapOnly": true,
+      "colorClass": "faction-contested"
     }
   },
   "categories": {

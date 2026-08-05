@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderEraNav();
     renderSidebar();
     renderTimeline();
-    renderMap(184);
+    renderMap(D.MAP_SNAPSHOTS[0].year);
     bindEvents();
     // Mobile: sidebar starts hidden (slid off-screen by CSS transform)
     if (window.matchMedia('(max-width:900px)').matches) {
@@ -81,14 +81,14 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     sidebar.appendChild(clearBar);
 
-    const factionOrder = ['wei', 'shu', 'wu', 'other', 'han', 'jin'];
-    const factionNames = { wei: '魏', shu: '蜀', wu: '呉', other: '群雄・その他', han: '漢', jin: '晋' };
+    const factionOrder = Object.keys(D.FACTIONS);
     factionOrder.forEach(fid => {
       const chars = D.CHARACTERS.filter(c => c.faction === fid);
       if (!chars.length) return;
       const section = mkEl('div', 'sidebar-section');
       const header = mkEl('div', 'sidebar-header');
-      header.innerHTML = `<span>${factionNames[fid] || fid}（${chars.length}）</span><span class="arrow">▼</span>`;
+      const fName = D.FACTIONS[fid]?.name || fid;
+      header.innerHTML = `<span>${fName}（${chars.length}）</span><span class="arrow">▼</span>`;
       let collapsed = false;
       const list = mkEl('div', 'sidebar-list');
       header.onclick = () => { collapsed = !collapsed; list.classList.toggle('hidden', collapsed); header.classList.toggle('collapsed', collapsed); };
@@ -204,19 +204,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderMapLegend(snap) {
     mapLegend.innerHTML = '';
-    const ALL_FACTIONS = [
-      { faction: 'han', cls: 'map-han', label: '漢（朝廷）' },
-      { faction: 'wei', cls: 'map-wei', label: '魏（曹操）' },
-      { faction: 'shu', cls: 'map-shu', label: '蜀（劉備）' },
-      { faction: 'wu', cls: 'map-wu', label: '呉（孫権）' },
-      { faction: 'ensho', cls: 'map-ensho', label: '袁紹' },
-      { faction: 'dongzhuo', cls: 'map-dongzhuo', label: '董卓' },
-      { faction: 'liubiao', cls: 'map-liubiao', label: '劉表' },
-      { faction: 'liuzhang', cls: 'map-liuzhang', label: '劉璋' },
-      { faction: 'other', cls: 'map-other', label: '群雄' },
-      { faction: 'jin', cls: 'map-jin', label: '晋（司馬氏）' },
-      { faction: 'contested', cls: 'map-contested', label: '係争地' },
-    ];
+    const ALL_FACTIONS = Object.keys(D.FACTIONS).map(fid => ({
+      faction: fid, cls: 'map-' + fid, label: D.FACTIONS[fid].name
+    }));
     // Collect factions present in this snapshot
     const activeFactions = new Set();
     if (snap && snap.territories) {

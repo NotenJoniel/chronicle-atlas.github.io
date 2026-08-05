@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCategoryFilters();
     renderSidebar();
     renderTimeline();
-    renderMap(1467);
+    renderMap(D.MAP_SNAPSHOTS[0].year);
     bindEvents();
     // Mobile: sidebar starts hidden (slid off-screen by CSS transform)
     if (window.matchMedia('(max-width:900px)').matches) {
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const allBtn = mkEl('button', 'filter-btn active', '全勢力');
     allBtn.dataset.faction = 'all';
     container.appendChild(allBtn);
-    Object.values(D.FACTIONS).forEach(f => {
+    Object.values(D.FACTIONS).filter(f => !f.mapOnly).forEach(f => {
       const btn = mkEl('button', 'filter-btn', f.name);
       btn.dataset.faction = f.id;
       container.appendChild(btn);
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     sidebar.appendChild(clearBar);
 
-    const factionOrder = ['oda', 'takeda', 'uesugi', 'tokugawa', 'toyotomi', 'hojo', 'mori', 'shimazu', 'date', 'other'];
+    const factionOrder = Object.keys(D.FACTIONS);
     factionOrder.forEach(fid => {
       const chars = D.CHARACTERS.filter(c => c.faction === fid);
       if (!chars.length) return;
@@ -225,19 +225,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderMapLegend(snap) {
     mapLegend.innerHTML = '';
-    const ALL_FACTIONS = [
-      { faction: 'oda', cls: 'map-oda', label: '織田家' },
-      { faction: 'takeda', cls: 'map-takeda', label: '武田家' },
-      { faction: 'uesugi', cls: 'map-uesugi', label: '上杉家' },
-      { faction: 'tokugawa', cls: 'map-tokugawa', label: '徳川家' },
-      { faction: 'toyotomi', cls: 'map-toyotomi', label: '豊臣家' },
-      { faction: 'hojo', cls: 'map-hojo', label: '北条家' },
-      { faction: 'mori', cls: 'map-mori', label: '毛利家' },
-      { faction: 'shimazu', cls: 'map-shimazu', label: '島津家' },
-      { faction: 'date', cls: 'map-date', label: '伊達家' },
-      { faction: 'other', cls: 'map-other', label: 'その他' },
-      { faction: 'contested', cls: 'map-contested', label: '係争中' },
-    ];
+    const ALL_FACTIONS = Object.keys(D.FACTIONS).map(fid => ({
+      faction: fid, cls: 'map-' + fid, label: D.FACTIONS[fid].name
+    }));
     const activeFactions = new Set();
     if (snap && snap.territories) {
       Object.values(snap.territories).forEach(t => activeFactions.add(t.faction));

@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCategoryFilters();
     renderSidebar();
     renderTimeline();
-    renderMap(-27);
+    renderMap(D.MAP_SNAPSHOTS[0].year);
     bindEvents();
     if (window.matchMedia('(max-width:900px)').matches) {
       state.sidebarVisible = false;
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const allBtn = mkEl('button', 'filter-btn active', '全勢力');
     allBtn.dataset.faction = 'all';
     container.appendChild(allBtn);
-    Object.values(D.FACTIONS).forEach(f => {
+    Object.values(D.FACTIONS).filter(f => !f.mapOnly).forEach(f => {
       const btn = mkEl('button', 'filter-btn', f.name);
       btn.dataset.faction = f.id;
       container.appendChild(btn);
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     sidebar.appendChild(clearBar);
 
-    const factionOrder = ['julio', 'flavian', 'antonine', 'severan', 'constantine', 'barbarian', 'eastern', 'other'];
+    const factionOrder = Object.keys(D.FACTIONS);
     factionOrder.forEach(fid => {
       const chars = D.CHARACTERS.filter(c => c.faction === fid);
       if (!chars.length) return;
@@ -222,17 +222,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderMapLegend(snap) {
     mapLegend.innerHTML = '';
-    const ALL_FACTIONS = [
-      { faction: 'julio', cls: 'map-julio', label: 'ユリウス・クラウディウス朝' },
-      { faction: 'flavian', cls: 'map-flavian', label: 'フラウィウス朝' },
-      { faction: 'antonine', cls: 'map-antonine', label: 'ネルウァ・アントニヌス朝' },
-      { faction: 'severan', cls: 'map-severan', label: 'セウェルス朝' },
-      { faction: 'constantine', cls: 'map-constantine', label: 'コンスタンティヌス朝' },
-      { faction: 'barbarian', cls: 'map-barbarian', label: '蛮族' },
-      { faction: 'eastern', cls: 'map-eastern', label: '東方勢力' },
-      { faction: 'other', cls: 'map-other', label: 'その他' },
-      { faction: 'contested', cls: 'map-contested', label: '係争中' },
-    ];
+    const ALL_FACTIONS = Object.keys(D.FACTIONS).map(fid => ({
+      faction: fid, cls: 'map-' + fid, label: D.FACTIONS[fid].name
+    }));
     const activeFactions = new Set();
     if (snap && snap.territories) {
       Object.values(snap.territories).forEach(t => activeFactions.add(t.faction));
