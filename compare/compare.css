@@ -1,0 +1,82 @@
+/* ═══════════════════════════════════════════════
+   Chronicle Atlas — 同時代比較ビュー 専用スタイル
+   モーダル・タグ等の基礎スタイルは shared/timeline-core.css を流用。
+   ここでは比較ビュー固有のレイアウト（列・年軸・カード衝突配置）のみ定義する。
+   ═══════════════════════════════════════════════ */
+
+:root{
+  --bg:#0d0f14;--surface:#171a22;--surface-2:#1f222c;--surface-3:#2a2e38;
+  --border-subtle:rgba(200,170,120,.12);--text:#e8e4d8;--text-dim:#a09888;
+  --gold:#c9a84c;--gold-dim:rgba(201,168,76,.18);
+  --font:'Noto Sans JP','Segoe UI',sans-serif;
+}
+
+body{background:var(--bg)}
+
+.sticky-header{position:sticky;top:0;z-index:100;background:linear-gradient(180deg,var(--bg) 60%,transparent);padding:10px 20px 6px;backdrop-filter:blur(12px)}
+.header-row{display:flex;align-items:center;gap:14px}
+.header-row h1{font-size:1.3rem;color:var(--gold)}
+
+/* ─ Selection screen ─ */
+.selection-screen{max-width:640px;margin:20px auto;padding:0 20px 60px}
+.selection-intro{color:var(--text-dim);font-size:.92rem;line-height:1.7;margin-bottom:20px}
+.selection-list{display:flex;flex-direction:column;gap:8px;margin-bottom:20px}
+.selection-item{display:flex;align-items:center;gap:12px;padding:12px 14px;background:var(--surface);border:1px solid var(--border-subtle);border-radius:8px;cursor:pointer;transition:.15s}
+.selection-item:hover{border-color:var(--gold)}
+.selection-item.checked{background:var(--gold-dim);border-color:var(--gold)}
+.selection-item.disabled{opacity:.35;cursor:not-allowed}
+.selection-item input{width:16px;height:16px;flex-shrink:0}
+.selection-item .si-name{font-weight:700;font-size:.95rem}
+.selection-item .si-years{font-size:.78rem;color:var(--text-dim);margin-left:auto}
+.selection-item .si-region{font-size:.72rem;color:var(--text-dim);background:var(--surface-2);padding:2px 8px;border-radius:999px}
+.btn-primary{display:block;width:100%;padding:12px;background:var(--gold);color:#1a1a1a;font-weight:700;font-size:.95rem;border:none;border-radius:8px;cursor:pointer;transition:.15s}
+.btn-primary:disabled{background:var(--surface-3);color:var(--text-dim);cursor:not-allowed}
+.btn-primary:not(:disabled):hover{filter:brightness(1.1)}
+.selection-count{text-align:center;color:var(--text-dim);font-size:.82rem;margin-bottom:10px}
+
+/* ─ Compare view toolbar ─ */
+.compare-toolbar{display:flex;align-items:center;gap:16px;padding:6px 20px;flex-wrap:wrap}
+.back-link{color:var(--text-dim);font-size:.85rem;text-decoration:none;padding:4px 10px;border:1px solid var(--border-subtle);border-radius:6px;transition:.2s}
+.back-link:hover{color:var(--gold);border-color:var(--gold)}
+.compare-category-filters{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+
+.overlap-banner{margin:0 20px 10px;padding:8px 14px;border-radius:6px;font-size:.82rem;line-height:1.6}
+.overlap-banner.warn{background:rgba(180,80,40,.15);border:1px solid rgba(200,110,60,.4);color:#e0a878}
+.overlap-banner.info{background:var(--gold-dim);border:1px solid var(--gold);color:var(--gold)}
+
+/* ─ Compare grid: column = timeline, shared vertical year axis ─ */
+.compare-wrapper{overflow-x:auto;padding:0 20px 60px}
+.cmp-header{display:flex;position:sticky;top:56px;z-index:50;background:rgba(13,15,20,.97);backdrop-filter:blur(8px);border-bottom:2px solid var(--border-subtle);min-width:max-content}
+.cmp-year-label{width:70px;min-width:70px;padding:10px 6px;text-align:center;font-size:.78rem;color:var(--gold);font-weight:700;border-right:1px solid var(--border-subtle)}
+.cmp-region-name{width:380px;min-width:380px;padding:10px 14px;border-right:1px solid var(--border-subtle)}
+.cmp-region-name .rn-title{font-weight:700;font-size:.95rem;color:var(--text)}
+.cmp-region-name .rn-sub{font-size:.72rem;color:var(--text-dim);margin-top:2px}
+.cmp-region-name select{margin-top:6px;width:100%;background:var(--surface-2);border:1px solid var(--border-subtle);color:var(--text);padding:3px 8px;border-radius:4px;font-size:.76rem}
+
+.cmp-grid{display:flex;position:relative;min-width:max-content}
+.cmp-year-col{width:70px;min-width:70px;position:sticky;left:0;z-index:20;background:var(--bg);border-right:1px solid var(--border-subtle);flex-shrink:0}
+.cmp-year-mark{position:absolute;right:8px;transform:translateY(-50%);font-size:.7rem;color:var(--text-dim);white-space:nowrap}
+.cmp-year-mark.century{color:var(--gold);font-weight:600}
+
+.cmp-col{width:380px;min-width:380px;position:relative;border-right:1px solid var(--border-subtle)}
+.cmp-out-of-range{position:absolute;left:0;right:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.015),rgba(255,255,255,.015) 8px,transparent 8px,transparent 16px);pointer-events:none}
+.cmp-overlap-band{position:absolute;left:0;right:0;background:rgba(201,168,76,.06);border-top:1px dashed var(--gold-dim);border-bottom:1px dashed var(--gold-dim);pointer-events:none;z-index:1}
+
+.cmp-card{position:absolute;left:8px;right:8px;background:var(--surface);border:1px solid var(--border-subtle);border-left:3px solid var(--gold);border-radius:6px;padding:6px 10px;cursor:pointer;transition:border-color .15s,box-shadow .15s;overflow:hidden}
+.cmp-card:hover{border-color:var(--gold);box-shadow:0 0 10px rgba(201,168,76,.15)}
+.cmp-card .cc-top{display:flex;align-items:center;gap:5px;font-size:.68rem;color:var(--text-dim)}
+.cmp-card .cc-year{font-weight:700;color:var(--gold)}
+.cmp-card .cc-title{font-size:.85rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+.cmp-card.dimmed{opacity:.2;pointer-events:none}
+
+.cmp-connector{position:absolute;left:0;width:8px;border-left:1px dashed rgba(201,168,76,.4);pointer-events:none}
+
+.cmp-grid-line{position:absolute;left:0;right:0;height:1px;background:rgba(255,255,255,.03);pointer-events:none;z-index:0}
+.cmp-grid-line.major{background:rgba(201,168,76,.08)}
+
+/* ═══ Responsive ═══ */
+@media(max-width:768px){
+  .cmp-region-name,.cmp-col{width:300px;min-width:300px}
+  .header-row h1{font-size:1.05rem}
+  .selection-screen{padding:0 14px 40px}
+}
