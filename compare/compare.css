@@ -84,7 +84,7 @@ body{background:var(--bg);display:flex;flex-direction:column;overflow:hidden;mar
 .cmp-grid-scroll::-webkit-scrollbar-thumb{background:var(--surface-3);border-radius:8px;border:3px solid var(--bg)}
 .cmp-grid-scroll::-webkit-scrollbar-thumb:hover{background:var(--gold-dim)}
 .cmp-year-label{width:70px;min-width:70px;padding:10px 6px;text-align:center;font-size:.78rem;color:var(--gold);font-weight:700;border-right:1px solid var(--border-subtle)}
-.cmp-region-name{width:540px;min-width:540px;padding:10px 14px;border-right:1px solid var(--border-subtle)}
+.cmp-region-name{width:640px;min-width:640px;padding:10px 14px;border-right:1px solid var(--border-subtle)}
 .cmp-region-name .rn-title{font-weight:700;font-size:.95rem;color:var(--text)}
 .cmp-region-name .rn-sub{font-size:.72rem;color:var(--text-dim);margin-top:2px}
 .cmp-region-name select{margin-top:6px;width:100%;background:var(--surface-2);border:1px solid var(--border-subtle);color:var(--text);padding:3px 8px;border-radius:4px;font-size:.76rem}
@@ -94,7 +94,7 @@ body{background:var(--bg);display:flex;flex-direction:column;overflow:hidden;mar
 .cmp-year-mark{position:absolute;right:8px;transform:translateY(-50%);font-size:.7rem;color:var(--text-dim);white-space:nowrap}
 .cmp-year-mark.century{color:var(--gold);font-weight:600}
 
-.cmp-col{width:540px;min-width:540px;position:relative;border-right:1px solid var(--border-subtle)}
+.cmp-col{width:640px;min-width:640px;position:relative;border-right:1px solid var(--border-subtle)}
 .cmp-out-of-range{position:absolute;left:0;right:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.015),rgba(255,255,255,.015) 8px,transparent 8px,transparent 16px);pointer-events:none}
 .cmp-overlap-band{position:absolute;left:0;right:0;background:rgba(201,168,76,.06);border-top:1px dashed var(--gold-dim);border-bottom:1px dashed var(--gold-dim);pointer-events:none;z-index:1}
 
@@ -111,7 +111,7 @@ body{background:var(--bg);display:flex;flex-direction:column;overflow:hidden;mar
 
 /* ═══ Responsive ═══ */
 @media(max-width:768px){
-  .cmp-region-name,.cmp-col{width:380px;min-width:380px}
+  .cmp-region-name,.cmp-col{width:420px;min-width:420px}
   .header-row h1{font-size:1.05rem}
   .selection-screen{padding:0 14px 40px}
 }
