@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     scrollEl.addEventListener('mousedown', (e) => {
       if (e.button !== 0) return;
+      e.preventDefault(); // ドラッグ中にテキスト範囲選択が始まってしまうのを防ぐ
       isDown = true;
       dragged = false;
       startX = e.clientX;
