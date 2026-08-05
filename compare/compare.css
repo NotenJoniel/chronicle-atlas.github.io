@@ -11,14 +11,21 @@
   --font:'Noto Sans JP','Segoe UI',sans-serif;
 }
 
-body{background:var(--bg)}
+/* ページ全体をビューポート内に固定し(overflow:hidden)、比較ビューでは
+   #cmp-grid-scroll だけが縦横に独立スクロールする領域になるようにする。
+   これにより「ウィンドウ全体のスクロールバー」と「内側エリアのスクロールバー」が
+   二重に出る問題、および横スクロールバーがコンテンツ最下部にしか現れず実質
+   使えない問題を、どちらも構造から解消する。sticky-header等はもう
+   position:sticky にする必要がない(常にflexboxで所定の場所に収まるため)。 */
+html,body{height:100%}
+body{background:var(--bg);display:flex;flex-direction:column;overflow:hidden;margin:0}
 
-.sticky-header{position:sticky;top:0;z-index:100;background:linear-gradient(180deg,var(--bg) 60%,transparent);padding:10px 20px 6px;backdrop-filter:blur(12px)}
+.sticky-header{flex-shrink:0;background:linear-gradient(180deg,var(--bg) 60%,transparent);padding:10px 20px 6px;backdrop-filter:blur(12px)}
 .header-row{display:flex;align-items:center;gap:14px}
 .header-row h1{font-size:1.3rem;color:var(--gold)}
 
 /* ─ Selection screen ─ */
-.selection-screen{max-width:640px;margin:20px auto;padding:0 20px 60px}
+.selection-screen{max-width:640px;margin:20px auto;padding:0 20px 60px;flex:1;min-height:0;overflow-y:auto}
 .selection-intro{color:var(--text-dim);font-size:.92rem;line-height:1.7;margin-bottom:20px}
 .selection-list{display:flex;flex-direction:column;gap:8px;margin-bottom:20px}
 .selection-item{display:flex;align-items:center;gap:12px;padding:12px 14px;background:var(--surface);border:1px solid var(--border-subtle);border-radius:8px;cursor:pointer;transition:.15s}
@@ -34,15 +41,17 @@ body{background:var(--bg)}
 .btn-primary:not(:disabled):hover{filter:brightness(1.1)}
 .selection-count{text-align:center;color:var(--text-dim);font-size:.82rem;margin-bottom:10px}
 
-/* ─ Compare view toolbar (常時表示: .sticky-header の直下にスタック) ─ */
-.compare-toolbar{display:flex;align-items:center;gap:16px;padding:6px 20px;flex-wrap:wrap;position:sticky;top:50px;z-index:90;background:var(--bg);border-bottom:1px solid var(--border-subtle)}
+/* ─ Compare view: 全体をflex columnにし、cmp-grid-scrollだけがflex:1で残り全部を使う ─ */
+.compare-view{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
+
+.compare-toolbar{display:flex;align-items:center;gap:16px;padding:6px 20px;flex-wrap:wrap;flex-shrink:0;background:var(--bg);border-bottom:1px solid var(--border-subtle)}
 .back-link{color:var(--text-dim);font-size:.85rem;text-decoration:none;padding:4px 10px;border:1px solid var(--border-subtle);border-radius:6px;transition:.2s}
 .back-link:hover{color:var(--gold);border-color:var(--gold)}
 .compare-category-filters{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
 .compare-search-box input{background:var(--surface-2);border:1px solid var(--border-subtle);color:var(--text);padding:4px 12px;border-radius:6px;font-size:.82rem;width:200px;transition:border .2s}
 .compare-search-box input:focus{outline:none;border-color:var(--gold)}
 
-.chips-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 20px;position:sticky;top:94px;z-index:85;background:var(--bg);border-bottom:1px solid var(--border-subtle)}
+.chips-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 20px;flex-shrink:0;background:var(--bg);border-bottom:1px solid var(--border-subtle);position:relative}
 .chips-label{font-size:.8rem;color:var(--text-dim)}
 .selected-chips{display:flex;gap:6px;flex-wrap:wrap}
 .chip{display:flex;align-items:center;gap:6px;padding:4px 6px 4px 12px;background:var(--surface-2);border:1px solid var(--border-subtle);border-radius:999px;font-size:.82rem;color:var(--text)}
@@ -56,21 +65,18 @@ body{background:var(--bg)}
 .add-picker-item:hover{background:var(--surface-2);color:var(--gold)}
 .add-picker-item .api-years{color:var(--text-dim);font-size:.76rem}
 
-.overlap-banner{margin:0 20px 10px;padding:8px 14px;border-radius:6px;font-size:.82rem;line-height:1.6}
+.overlap-banner{margin:0 20px 10px;padding:8px 14px;border-radius:6px;font-size:.82rem;line-height:1.6;flex-shrink:0}
 .overlap-banner.warn{background:rgba(180,80,40,.15);border:1px solid rgba(200,110,60,.4);color:#e0a878}
 .overlap-banner.info{background:var(--gold-dim);border:1px solid var(--gold);color:var(--gold)}
 
 /* ─ Compare grid: column = timeline, shared vertical year axis ─
-   cmp-header(列見出し)は position:sticky で常時表示させたいが、水平スクロール用の
-   overflow-x:auto を持つ祖先の中では sticky が機能しない（CSS仕様）。そのため
-   ヘッダーとグリッド本体を別々のコンテナに分離し、水平スクロールはJSで同期する。 */
-.compare-wrapper{padding:0 20px 20px}
-.cmp-header{display:flex;position:sticky;top:142px;z-index:50;background:rgba(13,15,20,.97);backdrop-filter:blur(8px);border-bottom:2px solid var(--border-subtle);overflow-x:hidden}
-/* cmp-grid-scroll 自身を「縦横ともスクロールする、画面内に収まる領域」にする。
-   こうしないと横スクロールバーがコンテンツ最下部（1万px超）にしか現れず、実質使えない。
-   縦スクロールはページ全体ではなくこの領域内で完結し、上部のsticky群の高さ(142px)を引いた
-   残り画面いっぱいを使う。 */
-.cmp-grid-scroll{overflow:auto;max-height:calc(100vh - 142px);border-bottom:1px solid var(--border-subtle)}
+   compare-view が flex column なので、cmp-header は普通にflexの子として並べるだけで
+   「常に見える」状態が保証される(position:stickyは不要)。cmp-grid-scrollだけが
+   flex:1で残りの高さ全部を使い、縦横に独立スクロールする唯一の領域になる。 */
+.compare-wrapper{padding:0 20px;flex:1;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+.cmp-header{display:flex;flex-shrink:0;background:rgba(13,15,20,.97);border-bottom:2px solid var(--border-subtle);overflow-x:hidden}
+.cmp-grid-scroll{flex:1;min-height:0;overflow:auto;border-bottom:1px solid var(--border-subtle);cursor:grab}
+.cmp-grid-scroll.grabbing{cursor:grabbing}
 /* スクロールバーを太く・掴みやすくする（デフォルトの6pxは細すぎてマウスで選択しづらいとの指摘） */
 .cmp-grid-scroll{scrollbar-width:auto;scrollbar-color:var(--surface-3) var(--bg)}
 .cmp-grid-scroll::-webkit-scrollbar{width:16px;height:16px}

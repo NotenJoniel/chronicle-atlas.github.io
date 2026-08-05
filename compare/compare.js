@@ -30,10 +30,53 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       selectionScreen.style.display = 'none';
       compareView.style.display = '';
+      enableGrabToPan(document.getElementById('cmp-grid-scroll'));
       const timelines = await loadTimelines(allMetaList, uniqueIds);
       renderCompareView(timelines);
     }
     window.addEventListener('popstate', () => location.reload());
+  }
+
+  // 左クリック長押し+ドラッグで画面をつかんで移動できるようにする(横スクロールバーが
+  // 掴みにくいという指摘への追加対応)。実際にドラッグした場合のみ、直後のclickイベントを
+  // 抑制してカードのモーダルが誤って開かないようにする。
+  function enableGrabToPan(scrollEl) {
+    let isDown = false, dragged = false, startX = 0, startY = 0, startLeft = 0, startTop = 0;
+    const DRAG_THRESHOLD = 4;
+
+    scrollEl.addEventListener('mousedown', (e) => {
+      if (e.button !== 0) return;
+      isDown = true;
+      dragged = false;
+      startX = e.clientX;
+      startY = e.clientY;
+      startLeft = scrollEl.scrollLeft;
+      startTop = scrollEl.scrollTop;
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      const dx = e.clientX - startX;
+      const dy = e.clientY - startY;
+      if (!dragged && (Math.abs(dx) > DRAG_THRESHOLD || Math.abs(dy) > DRAG_THRESHOLD)) {
+        dragged = true;
+        scrollEl.classList.add('grabbing');
+      }
+      if (dragged) {
+        scrollEl.scrollLeft = startLeft - dx;
+        scrollEl.scrollTop = startTop - dy;
+      }
+    });
+
+    window.addEventListener('mouseup', () => {
+      if (dragged) {
+        const suppressClick = (e) => { e.stopPropagation(); e.preventDefault(); };
+        scrollEl.addEventListener('click', suppressClick, { capture: true, once: true });
+        scrollEl.classList.remove('grabbing');
+      }
+      isDown = false;
+      dragged = false;
+    });
   }
 
   // ─── Selection screen ───
