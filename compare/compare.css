@@ -39,6 +39,22 @@ body{background:var(--bg)}
 .back-link{color:var(--text-dim);font-size:.85rem;text-decoration:none;padding:4px 10px;border:1px solid var(--border-subtle);border-radius:6px;transition:.2s}
 .back-link:hover{color:var(--gold);border-color:var(--gold)}
 .compare-category-filters{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+.compare-search-box input{background:var(--surface-2);border:1px solid var(--border-subtle);color:var(--text);padding:4px 12px;border-radius:6px;font-size:.82rem;width:200px;transition:border .2s}
+.compare-search-box input:focus{outline:none;border-color:var(--gold)}
+
+.chips-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:0 20px 10px;position:relative}
+.chips-label{font-size:.8rem;color:var(--text-dim)}
+.selected-chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{display:flex;align-items:center;gap:6px;padding:4px 6px 4px 12px;background:var(--surface-2);border:1px solid var(--border-subtle);border-radius:999px;font-size:.82rem;color:var(--text)}
+.chip .chip-remove{background:none;border:none;color:var(--text-dim);cursor:pointer;font-size:.9rem;padding:2px 6px;border-radius:50%;line-height:1;transition:.15s}
+.chip .chip-remove:hover{color:#fff;background:rgba(200,80,60,.4)}
+.chip .chip-remove:disabled{opacity:.25;cursor:not-allowed}
+.chip-add-btn{padding:4px 12px;background:none;border:1px dashed var(--gold);color:var(--gold);border-radius:999px;font-size:.82rem;cursor:pointer;transition:.15s}
+.chip-add-btn:hover{background:var(--gold-dim)}
+.add-picker{position:absolute;top:100%;left:20px;z-index:60;background:var(--surface);border:1px solid var(--border-subtle);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.5);padding:6px;min-width:260px;max-height:280px;overflow-y:auto}
+.add-picker-item{padding:8px 10px;border-radius:6px;cursor:pointer;font-size:.85rem;display:flex;justify-content:space-between;gap:10px;transition:.15s}
+.add-picker-item:hover{background:var(--surface-2);color:var(--gold)}
+.add-picker-item .api-years{color:var(--text-dim);font-size:.76rem}
 
 .overlap-banner{margin:0 20px 10px;padding:8px 14px;border-radius:6px;font-size:.82rem;line-height:1.6}
 .overlap-banner.warn{background:rgba(180,80,40,.15);border:1px solid rgba(200,110,60,.4);color:#e0a878}

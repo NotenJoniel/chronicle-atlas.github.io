@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const MIN_SEL = 2, MAX_SEL = 3;
   let selected = new Set();
+  let allMetaList = [];
+  const loadedCache = {}; // id -> loaded timeline object (avoids re-fetching on add/remove)
 
   function parseSelection() {
     const params = new URLSearchParams(location.search);
@@ -19,18 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function boot() {
     const indexData = await fetch(`../data/index.json?t=${Date.now()}`).then(r => r.json());
-    const metaList = indexData.timelines;
-    const ids = parseSelection().filter(id => metaList.some(m => m.id === id));
+    allMetaList = indexData.timelines;
+    const ids = parseSelection().filter(id => allMetaList.some(m => m.id === id));
     const uniqueIds = [...new Set(ids)];
 
     if (uniqueIds.length < MIN_SEL || uniqueIds.length > MAX_SEL) {
-      renderSelectionScreen(metaList, uniqueIds);
+      renderSelectionScreen(allMetaList, uniqueIds);
     } else {
       selectionScreen.style.display = 'none';
       compareView.style.display = '';
-      const timelines = await loadTimelines(metaList, uniqueIds);
+      const timelines = await loadTimelines(allMetaList, uniqueIds);
       renderCompareView(timelines);
     }
+    window.addEventListener('popstate', () => location.reload());
   }
 
   // ─── Selection screen ───
@@ -79,12 +82,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ─── Data loading ───
   async function loadTimelines(metaList, ids) {
-    return Promise.all(ids.map(async id => {
-      const meta = metaList.find(m => m.id === id);
-      const raw = await fetch(`../data/${meta.dataFile}?t=${Date.now()}`).then(r => r.json());
-      const events = [...raw.events].sort((a, b) => a.year - b.year);
-      return { id, meta, raw, events, characters: raw.characters, factions: raw.factions, categories: raw.categories };
-    }));
+    return Promise.all(ids.map(id => loadOneTimeline(metaList, id)));
+  }
+
+  async function loadOneTimeline(metaList, id) {
+    if (loadedCache[id]) return loadedCache[id];
+    const meta = metaList.find(m => m.id === id);
+    const raw = await fetch(`../data/${meta.dataFile}?t=${Date.now()}`).then(r => r.json());
+    const events = [...raw.events].sort((a, b) => a.year - b.year);
+    const obj = { id, meta, raw, events, characters: raw.characters, factions: raw.factions, categories: raw.categories };
+    loadedCache[id] = obj;
+    return obj;
   }
 
   // ─── Axis / layout math ───
@@ -123,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ─── Render compare view ───
-  let axis, timelinesData, activeCategory = 'all';
+  let axis, timelinesData, activeCategory = 'all', searchQuery = '';
   const factionByTimeline = {};
 
   function renderCompareView(timelines) {
@@ -133,8 +141,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function yearToY(year) { return (year - axis.unionStart) * axis.pxPerYear; }
 
+    renderSelectedChips();
     renderOverlapBanner();
     renderCategoryFilters(timelines);
+    bindSearchBox();
     renderGrid(timelines, yearToY);
 
     if (axis.hasOverlap) {
@@ -145,6 +155,75 @@ document.addEventListener('DOMContentLoaded', () => {
         wrapper.scrollTop = 0;
         window.scrollTo({ top: wrapper.getBoundingClientRect().top + window.scrollY + midY - 200, behavior: 'instant' });
       });
+    }
+  }
+
+  // ─── Dynamic timeline selection (add/remove without leaving the page) ───
+  function updateUrl(ids) {
+    history.pushState(null, '', `?t=${ids.join(',')}`);
+  }
+
+  async function removeTimelineFromView(id) {
+    if (timelinesData.length <= MIN_SEL) return; // ボタン側でも無効化しているが二重防御
+    const nextIds = timelinesData.filter(t => t.id !== id).map(t => t.id);
+    updateUrl(nextIds);
+    renderCompareView(timelinesData.filter(t => t.id !== id));
+  }
+
+  async function addTimelineToView(id) {
+    if (timelinesData.length >= MAX_SEL) return;
+    const added = await loadOneTimeline(allMetaList, id);
+    const nextTimelines = [...timelinesData, added];
+    updateUrl(nextTimelines.map(t => t.id));
+    closeAddPicker();
+    renderCompareView(nextTimelines);
+  }
+
+  function closeAddPicker() {
+    const picker = document.getElementById('add-picker');
+    picker.style.display = 'none';
+    picker.innerHTML = '';
+  }
+
+  function toggleAddPicker() {
+    const picker = document.getElementById('add-picker');
+    if (picker.style.display !== 'none') { closeAddPicker(); return; }
+    const selectedIds = new Set(timelinesData.map(t => t.id));
+    const candidates = allMetaList.filter(m => !selectedIds.has(m.id));
+    picker.innerHTML = '';
+    candidates.forEach(m => {
+      const item = mkEl('div', 'add-picker-item');
+      item.innerHTML = `<span>${m.name}</span><span class="api-years">${fmtYear(m.startYear)}〜${fmtYear(m.endYear)}</span>`;
+      item.onclick = () => addTimelineToView(m.id);
+      picker.appendChild(item);
+    });
+    picker.style.display = '';
+  }
+  document.addEventListener('click', (e) => {
+    const picker = document.getElementById('add-picker');
+    if (picker.style.display !== 'none' && !picker.contains(e.target) && e.target.id !== 'chip-add-btn') {
+      closeAddPicker();
+    }
+  });
+
+  function renderSelectedChips() {
+    const container = document.getElementById('selected-chips');
+    container.innerHTML = '';
+    timelinesData.forEach(t => {
+      const chip = mkEl('div', 'chip');
+      const label = mkEl('span', '', t.meta.name);
+      const removeBtn = mkEl('button', 'chip-remove', '✕');
+      removeBtn.disabled = timelinesData.length <= MIN_SEL;
+      removeBtn.title = removeBtn.disabled ? `最低${MIN_SEL}個は必要です` : `${t.meta.name}を比較から外す`;
+      removeBtn.onclick = () => removeTimelineFromView(t.id);
+      chip.append(label, removeBtn);
+      container.appendChild(chip);
+    });
+    if (timelinesData.length < MAX_SEL) {
+      const addBtn = mkEl('button', 'chip-add-btn', '+ 追加');
+      addBtn.id = 'chip-add-btn';
+      addBtn.onclick = (e) => { e.stopPropagation(); toggleAddPicker(); };
+      container.appendChild(addBtn);
     }
   }
 
@@ -185,13 +264,36 @@ document.addEventListener('DOMContentLoaded', () => {
     applyFilters();
   }
 
+  function bindSearchBox() {
+    const input = document.getElementById('compare-search');
+    input.value = searchQuery;
+    let timer;
+    input.oninput = (e) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => { searchQuery = e.target.value.trim(); applyFilters(); }, 250);
+    };
+  }
+
+  function matchesQuery(t, ev, chars) {
+    if (!searchQuery) return true;
+    const keywords = searchQuery.toLowerCase().split(/\s+/).filter(Boolean);
+    return keywords.some(q => {
+      const inTitle = ev.title.toLowerCase().includes(q);
+      const inDesc = ev.description.toLowerCase().includes(q);
+      const inLoc = ev.location.toLowerCase().includes(q);
+      const inChar = chars.some(ch => ch.name.includes(q) || (ch.title && ch.title.includes(q)) || (ch.reading && ch.reading.toLowerCase().includes(q)));
+      return inTitle || inDesc || inLoc || inChar;
+    });
+  }
+
   function applyFilters() {
     document.querySelectorAll('.cmp-card').forEach(card => {
       const matchCat = activeCategory === 'all' || card.dataset.category === activeCategory;
       const tId = card.dataset.timeline;
       const fac = factionByTimeline[tId];
       const matchFaction = fac === 'all' || card.dataset.factions.split(',').includes(fac);
-      card.classList.toggle('dimmed', !(matchCat && matchFaction));
+      const matchQuery = matchesQuery(card._timeline, card._event, card._chars);
+      card.classList.toggle('dimmed', !(matchCat && matchFaction && matchQuery));
     });
   }
 
@@ -281,6 +383,9 @@ document.addEventListener('DOMContentLoaded', () => {
         card.dataset.eventId = ev.id;
         const chars = (ev.characters || []).map(cid => t.characters.find(c => c.id === cid)).filter(Boolean);
         card.dataset.factions = chars.map(c => c.faction).join(',');
+        card._timeline = t;
+        card._event = ev;
+        card._chars = chars;
         const firstFaction = chars.length ? t.factions[chars[0].faction] : null;
         if (firstFaction && firstFaction.color) card.style.borderLeftColor = firstFaction.color;
 
@@ -319,6 +424,23 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ─── Modal ───
+  const WIKI_ICON_SVG = '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.09 13.119c-.936 1.932-2.217 4.548-2.853 5.728-.616 1.074-1.127.931-1.532.029-1.406-3.321-4.293-9.144-5.651-12.409-.251-.601-.441-.987-.619-1.139-.181-.15-.554-.24-1.122-.271C.103 5.033 0 4.982 0 4.898v-.455l.052-.045c.924-.005 5.401 0 5.401 0l.051.045v.434c0 .119-.075.176-.225.176l-.564.031c-.485.029-.727.164-.727.407 0 .2.11.566.329 1.124.665 1.606 2.716 6.378 3.713 8.69l.061-.006c.875-1.842 2.189-4.625 2.189-4.625s-.684-1.406-1.867-4.039c-.289-.637-.557-1.076-.804-1.315-.248-.24-.63-.371-1.146-.392-.127-.007-.19-.064-.19-.17v-.453l.049-.044h4.455l.051.044v.442c0 .128-.074.186-.222.186-.693.024-.856.143-.856.392 0 .119.078.357.236.714l1.72 3.695.063.009 1.72-3.591c.157-.353.236-.597.236-.733 0-.287-.269-.439-.806-.456-.158-.006-.237-.066-.237-.182v-.445l.049-.043s2.397-.007 3.498 0l.049.043v.457c0 .104-.074.161-.222.167-.741.049-1.218.395-1.89 1.665l-2.076 4.073 2.375 5.067.063.006c1.07-2.519 2.873-6.728 3.57-8.488.233-.578.35-.972.35-1.182 0-.322-.334-.49-1-.504-.128-.006-.192-.063-.192-.17v-.457l.049-.043s2.456-.005 3.41 0l.051.043v.457c0 .113-.072.17-.216.17-.471.02-.845.112-1.122.279-.278.164-.553.495-.826.99-.834 1.703-4.632 9.677-5.834 12.296-.59 1.018-1.108 1.078-1.533.045-.633-1.388-2.267-4.792-2.267-4.792z"/></svg>';
+
+  function renderWikiLink(containerEl, wikiTitle) {
+    containerEl.innerHTML = '';
+    if (!wikiTitle) return;
+    const url = 'https://ja.wikipedia.org/wiki/' + encodeURIComponent(wikiTitle);
+    const a = document.createElement('a');
+    a.className = 'wiki-link';
+    a.href = url;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    a.innerHTML = WIKI_ICON_SVG + ' Wikipedia';
+    a.title = `Wikipedia: ${wikiTitle}`;
+    a.onclick = e => e.stopPropagation();
+    containerEl.appendChild(a);
+  }
+
   function openEventModal(t, ev) {
     document.getElementById('em-title').textContent = ev.title;
     document.getElementById('em-timeline-badge').textContent = t.meta.name;
@@ -333,6 +455,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const link = document.getElementById('em-view-link');
     link.href = `../${t.meta.subProjectDir}/index.html#${ev.id}`;
 
+    renderWikiLink(document.getElementById('em-wiki-link'), t.raw.wikiLinks?.events?.[ev.id]);
+
     const charsEl = document.getElementById('em-chars');
     charsEl.innerHTML = '';
     (ev.characters || []).forEach(cid => {
@@ -341,18 +465,59 @@ document.addEventListener('DOMContentLoaded', () => {
       const tag = mkEl('span', 'tag', ch.name);
       const f = t.factions[ch.faction];
       if (f && f.color) { tag.style.background = f.color; tag.style.color = pickTextColor(f.color); }
+      tag.onclick = () => { closeModal('event-modal'); openCharModal(t, ch); };
       charsEl.appendChild(tag);
     });
 
     document.getElementById('event-modal').classList.add('active');
     document.body.style.overflow = 'hidden';
   }
-  function closeModal() {
-    document.getElementById('event-modal').classList.remove('active');
+
+  function openCharModal(t, ch) {
+    document.getElementById('cm-name').textContent = ch.name;
+    const rl = document.getElementById('cm-reading');
+    if (ch.reading) { rl.textContent = ch.reading + (ch.title ? `　別名: ${ch.title}` : ''); rl.style.display = ''; }
+    else { rl.style.display = 'none'; }
+    const ftag = document.getElementById('cm-faction-tag');
+    ftag.textContent = t.factions[ch.faction]?.name || ch.faction;
+    ftag.className = 'tag';
+    const f = t.factions[ch.faction];
+    if (f && f.color) { ftag.style.background = f.color; ftag.style.color = pickTextColor(f.color); }
+    document.getElementById('cm-role').textContent = ch.role;
+    document.getElementById('cm-life').textContent = ch.life ? `（${ch.life}）` : '';
+    document.getElementById('cm-desc').textContent = ch.description;
+    renderWikiLink(document.getElementById('cm-wiki-link'), t.raw.wikiLinks?.characters?.[ch.id]);
+
+    const trivSec = document.getElementById('cm-trivia-section');
+    if (ch.historyTrivia) { document.getElementById('cm-trivia').textContent = ch.historyTrivia; trivSec.style.display = ''; }
+    else { trivSec.style.display = 'none'; }
+
+    const eventsEl = document.getElementById('cm-events');
+    eventsEl.innerHTML = '';
+    const related = t.events.filter(ev => (ev.characters || []).includes(ch.id));
+    if (related.length) {
+      related.forEach(ev => {
+        const tag = mkEl('span', 'tag tag-event', `${fmtYearJa(ev.year)}　${ev.title}`);
+        tag.onclick = () => { closeModal('char-modal'); openEventModal(t, ev); };
+        eventsEl.appendChild(tag);
+      });
+    } else {
+      eventsEl.innerHTML = '<span style="color:var(--text-dim);font-size:.85rem">関連する出来事はまだ登録されていません</span>';
+    }
+
+    document.getElementById('char-modal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal(id) {
+    if (id) { document.getElementById(id).classList.remove('active'); }
+    else { document.getElementById('event-modal').classList.remove('active'); document.getElementById('char-modal').classList.remove('active'); }
     document.body.style.overflow = '';
   }
-  document.getElementById('em-close').onclick = closeModal;
-  document.getElementById('event-modal').onclick = e => { if (e.target.id === 'event-modal') closeModal(); };
+  document.getElementById('em-close').onclick = () => closeModal('event-modal');
+  document.getElementById('cm-close').onclick = () => closeModal('char-modal');
+  document.getElementById('event-modal').onclick = e => { if (e.target.id === 'event-modal') closeModal('event-modal'); };
+  document.getElementById('char-modal').onclick = e => { if (e.target.id === 'char-modal') closeModal('char-modal'); };
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
   function pickTextColor(hex) {

@@ -28,6 +28,14 @@
     <div class="compare-toolbar">
       <a href="index.html" id="btn-back-to-selection" class="back-link">← 選び直す</a>
       <div id="category-filters" class="compare-category-filters"></div>
+      <div class="compare-search-box">
+        <input type="text" id="compare-search" placeholder="🔍 出来事・人物を検索…">
+      </div>
+    </div>
+    <div class="chips-row">
+      <span class="chips-label">比較中:</span>
+      <div id="selected-chips" class="selected-chips"></div>
+      <div id="add-picker" class="add-picker" style="display:none"></div>
     </div>
     <div id="overlap-banner" class="overlap-banner" style="display:none"></div>
     <div class="compare-wrapper" id="compare-wrapper">
@@ -45,13 +53,38 @@
           <div class="sub"><span id="em-timeline-badge"></span> ▸ <span id="em-year"></span> ▸ <span id="em-location"></span></div>
         </div>
         <div class="modal-head-actions">
+          <div id="em-wiki-link"></div>
           <a id="em-view-link" class="wiki-link" target="_blank" rel="noopener">元の年表で見る</a>
           <button class="modal-close" id="em-close">✕</button>
         </div>
       </div>
       <div class="modal-section"><h3>概要</h3><p id="em-desc"></p></div>
       <div class="modal-section" id="em-trivia-section"><h3>📖 エピソード</h3><div class="trivia-box"><p id="em-trivia"></p></div></div>
-      <div class="modal-section"><h3>関連人物</h3><div class="char-events-grid" id="em-chars"></div></div>
+      <div class="modal-section"><h3>関連人物（クリックで詳細）</h3><div class="char-events-grid" id="em-chars"></div></div>
+    </div>
+  </div>
+
+  <!-- Character Modal -->
+  <div class="modal-overlay" id="char-modal">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <div class="char-header-info">
+            <h2 id="cm-name"></h2>
+            <span id="cm-faction-tag" class="tag"></span>
+            <span class="char-life" id="cm-life"></span>
+          </div>
+          <div class="reading-line" id="cm-reading"></div>
+          <div class="sub" id="cm-role"></div>
+        </div>
+        <div class="modal-head-actions">
+          <div id="cm-wiki-link"></div>
+          <button class="modal-close" id="cm-close">✕</button>
+        </div>
+      </div>
+      <div class="modal-section"><h3>人物紹介</h3><p id="cm-desc"></p></div>
+      <div class="modal-section" id="cm-trivia-section"><h3>📖 エピソード</h3><div class="trivia-box"><p id="cm-trivia"></p></div></div>
+      <div class="modal-section"><h3>関連する出来事（クリックで詳細）</h3><div class="char-events-grid" id="cm-events"></div></div>
     </div>
   </div>
 
