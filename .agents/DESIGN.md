@@ -171,15 +171,15 @@ NOになる変更（時代名や勢力IDをコードに直書きする等）は�
 
 | 層 | 状態 | 評価 |
 |---|---|---|
-| ① データ層 | 7本すべて統一スキーマ、`validate.js` 全パス（0 errors / 0 warnings） | ✅ **横串ビューの前提を満たしている** |
-| ② 契約層 | `schema.json` + `validate.js` が機能。カテゴリ4種の強制も実装済み | ✅ 良好 |
-| ③ 描画層 | **7本の `app.js` が約95%同一のコピー**。時代固有の設定がコードに埋まっている | ❌ **ここが唯一のボトルネック** |
+| ① データ層 | 7本すべて統一スキーマ、`validate.js` 全パス（0 errors / 2 warnings=意図的なID重複） | ✅ **横串ビューの前提を満たしている** |
+| ② 契約層 | `schema.json` + `validate.js` が機能。カテゴリ4種の強制、meta必須項目、色形式、mapLayout整合性も検証済み | ✅ 良好 |
+| ③ 描画層 | `shared/timeline-core.js` + `shared/timeline-core.css` に統合済み。タイムラインIDでの分岐なし | ✅ **G3完了(2026-08-05)** |
 
 ---
 
 ## 7. 横串ビューまでのギャップ（優先度順）
 
-現状、**データ層は準備完了。残る障害はすべて描画層と識別子にある。**
+現状、**データ層・描画層ともに準備完了。残る障害はG4（横串用ダイジェスト生成）とコンテンツ拡充。**
 
 ### ✅ G1. IDのグローバル一意化 【対応済み 2026-08-05】
 
@@ -193,26 +193,34 @@ DUP char:  c_cleopatra   … 同上
 - `validate.js` に**横断重複チェックを追加済み**（`node data/validate.js` 実行時、`📋 Cross-file ID uniqueness` セクションに warning として出力される。境界年代の意図的な重複が正当なケースのため、エラーではなく警告扱い）。
 - **横串マージ時の名前空間化規約**: 横串ビュー等でタイムラインをマージする処理を実装する際は、キーを必ず `${timelineId}::${localId}`（例: `roman-empire::e_actium`）の形で名前空間化すること。個別ファイル内のIDはそのまま維持し、マージ層でのみ変換する。JSON内部のIDを `roman-empire/e_actium` のようにファイル側で書き換える必要はない。
 
-### 🟠 G2. 時代固有の設定をコードからデータへ 【一部対応済み 2026-08-05】
+### ✅ G2. 時代固有の設定をコードからデータへ 【完了 2026-08-05】
 
-現在 `app.js` / `styles.css` に埋まっている「データであるべきもの」：
+`app.js` / `styles.css` に埋まっていた「データであるべきもの」はすべてデータ層に移した：
 
-| 埋まっているもの | 現状の場所 | あるべき場所 | 状態 |
-|---|---|---|---|
-| 勢力の表示順 `factionOrder` | 各 `app.js` に配列直書き | `factions{}` のJSON宣言順から導出 | ✅ 対応済み |
-| 勢力図の凡例ラベル | 各 `app.js` に配列直書き | `factions[].name` を使う | ✅ 対応済み |
-| 初期表示年 `renderMap(-200)` | 各 `app.js` に直書き | `mapSnapshots[0].year` から導出 | ✅ 対応済み |
-| 勢力の色（`.map-roma` 等） | 各 `styles.css` にクラス定義 | `factions[].color` | ⬜ 未対応（G3で扱う） |
+| 埋まっていたもの | 移行先 |
+|---|---|
+| 勢力の表示順 `factionOrder` | `factions{}` のJSON宣言順から導出 |
+| 勢力図の凡例ラベル | `factions[].name` |
+| 初期表示年 `renderMap(-200)` | `mapSnapshots[0].year` |
+| 勢力の色（`.map-roma` 等のCSSクラス） | `factions[].color` / `colorLight`（JSがインラインstyleで適用） |
+| three-kingdomsの地図固定レイアウト（`MAP_LAYOUT`） | `meta.mapLayout` |
+| 地図の列数計算式（3パターンあった） | `meta.mapColumnRules` |
+| 旧世代3本の静的フィルタボタン（`index.html`直書き） | 全7本で`renderFactionFilters()`/`renderCategoryFilters()`による動的生成に統一 |
+| ヘッダー文言・検索placeholder・モーダル見出し等 | `meta.title`/`headerTitle`/`searchPlaceholder`/`descLabel`等 |
 
-- 併せて、地図専用の疑似勢力（董卓・袁紹・劉表・劉璋・係争地など、人物には紐付かず地図上のみで使われる勢力）を `mapOnly:true` フラグ付きで `factions{}` に正式登録し、凡例から消える回帰を防止した。
-- **残タスク**: 色のデータ化に加えて、`three-kingdoms/app.js` の地図固定レイアウト配列（`MAP_LAYOUT`）と、旧世代3本（warring-states/chu-han/three-kingdoms）の `index.html` 静的フィルタボタンも「時代固有値のコード直書き」として残っている。詳細は `.agents/BACKLOG.md` の該当項目を参照。G3着手時にまとめて解消する。
-- **これを済ませると、③の問い（時代を知らないコードで描けるか）がYESになる。**
+地図専用の疑似勢力（董卓・袁紹・劉表・劉璋・係争地など）は `mapOnly:true` フラグ付きで `factions{}` に正式登録済み。G3のタイミングでまとめて実施。
 
-### 🟠 G3. 描画層の重複解消
+### ✅ G3. 描画層の重複解消 【完了 2026-08-05】
 
-- 7本の `app.js`（各約23KB）が95%同一。**1本直すと7回直す必要がある**状態。
-- G2 完了後、差分は消えるので **共通の `shared/timeline-core.js` に統合**できる。
-- 横串ビューは、この共通コアを別のレイアウトで呼ぶだけで済むようになる。
+7本の `app.js`（各527〜557行、実質95%同一）と `styles.css` を統合した。
+
+- **`shared/timeline-core.js`**: 全7本を駆動する単一エンジン。`body[data-timeline]` からタイムラインIDを読み、`data/timelines/<id>.json` を fetch して描画する。**タイムラインIDによる分岐は一切持たない** — `meta.mapLayout`/`mapColumnRules`/`historyDiff`/`historyOnly` 等、データの有無だけで挙動が変わる設計（③の判断基準を満たす）
+- **`shared/timeline-core.css`**: 構造・レイアウト・モーダル・アニメーションを統一。ただし `.timeline`/`.event-card` の見た目（rail型＝左レール+ドット／flat型＝フラットカード）は `body[data-layout]` で切り替える2バリアントとして両方保持（時代ごとの意図的な個性として維持、統一しない）
+- **`<name>/theme.css`**: 各タイムライン固有の配色（`--bg`/`--gold`等の基本テーマ変数）のみを残す。勢力色はテーマ変数ではなくJSONの`factions[].color`から直接インラインstyleで適用するため、`.map-<fid>`/`.tag-<fid>`というCSS変数駆動クラスは全廃した
+- 各 `<name>/app.js` は削除。`<name>/index.html` が `shared/timeline-core.js` を直接読み込む
+- three-kingdoms固有だった「正史/演義」表示機能（`historyOnly`バッジ、`historyDiff`セクション）は、特定タイムラインへの分岐ではなく「データにあれば汎用的に表示する」オプション機能として実装 — 将来他タイムラインでも使える
+- 移行に伴い、three-kingdoms.jsonのevents配列にあった3箇所の年代順崩れ（ソート処理が無かったため）と、`syncActiveEvent`のyear=0無反応バグを修正
+- Playwrightで7本すべてを検証（初期表示・フィルタ・検索・モーダル・地図・レイアウトバリアント・historyOnly/historyDiff）、コンソールエラー無し、イベント件数もデータと完全一致
 
 ### 🟠 G4. 横串用ダイジェストのビルド生成
 
@@ -276,4 +284,4 @@ DUP char:  c_cleopatra   … 同上
 
 ---
 
-*最終更新: 2026-08-05 — 実測値（7タイムライン / validate全パス / ID衝突2件）に基づく*
+*最終更新: 2026-08-05 — G3完了（shared/timeline-core.js統合）を反映*
