@@ -192,11 +192,28 @@ document.addEventListener('DOMContentLoaded', () => {
   // 縦位置のズレ(実際の年からどんどん下にずれていく現象)が起きないようにする。
   // 各レーンは「そのレーンで最後に置いたカードの下端」を覚えておき、置けるレーンが
   // 無ければ新しいレーンを増やす(上限MAX_LANESまで)。それでも足りない極端な密集は
-  // 最も早く空くレーンに詰める(そのケースのみ真の年から多少ズレうる)。
+  // 最も早く空くレーンに詰める(そのケースのみ真の年からズレうる)。
+  //
+  // カード幅は列全体で一律のレーン数で割るのではなく、実際に重なっている
+  // グループ(クラスタ)単位でローカルに計算する(カレンダーアプリの重なり
+  // 表示と同じ考え方)。そうしないと、離れた場所で4レーン必要になった影響で
+  // 実際は1件しかないカードまで幅1/4に狭められてしまう。
   function layoutCards(events, yearToY) {
     const laneBottoms = [];
-    const laid = events.map(ev => {
+    const laid = [];
+    const clusters = [];
+    let clusterStart = 0;
+
+    events.forEach(ev => {
       const idealTop = yearToY(ev.year);
+      // 現在追跡中のどのレーンもこのカードより上で完結していれば、直前までの
+      // 重なりグループは終了している → 新しいクラスタとしてレーン数をリセット
+      if (laneBottoms.length > 0 && Math.max(...laneBottoms) + CARD_GAP <= idealTop) {
+        clusters.push({ start: clusterStart, end: laid.length, laneCount: laneBottoms.length });
+        laneBottoms.length = 0;
+        clusterStart = laid.length;
+      }
+
       let lane = laneBottoms.findIndex(bottom => bottom + CARD_GAP <= idealTop);
       if (lane === -1) {
         if (laneBottoms.length < MAX_LANES) {
@@ -208,9 +225,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       const top = Math.max(idealTop, laneBottoms[lane] + CARD_GAP);
       laneBottoms[lane] = top + CARD_HEIGHT;
-      return { ev, top, idealTop, lane };
+      laid.push({ ev, top, idealTop, lane });
     });
-    return { laid, laneCount: Math.max(1, laneBottoms.length) };
+    if (laneBottoms.length > 0) clusters.push({ start: clusterStart, end: laid.length, laneCount: laneBottoms.length });
+
+    clusters.forEach(c => {
+      for (let i = c.start; i < c.end; i++) laid[i].clusterLaneCount = c.laneCount;
+    });
+
+    const laneCount = Math.max(1, ...clusters.map(c => c.laneCount));
+    return { laid, laneCount };
   }
 
   // ─── Render compare view ───
@@ -438,7 +462,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // columns
-    columnLayouts.forEach(({ t, laid, laneCount }) => {
+    columnLayouts.forEach(({ t, laid }) => {
       const col = mkEl('div', 'cmp-col');
       col.style.height = totalPx + 'px';
 
@@ -456,9 +480,9 @@ document.addEventListener('DOMContentLoaded', () => {
         col.appendChild(band);
       }
 
-      const laneWidthPct = 100 / laneCount;
-      laid.forEach(({ ev, top, lane }) => {
+      laid.forEach(({ ev, top, lane, clusterLaneCount }) => {
         const card = mkEl('div', 'cmp-card');
+        const laneWidthPct = 100 / clusterLaneCount;
         card.style.top = top + 'px';
         card.style.left = `calc(${lane * laneWidthPct}% + 4px)`;
         card.style.width = `calc(${laneWidthPct}% - 8px)`;
