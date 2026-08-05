@@ -40,11 +40,37 @@ function validateTimeline(filename) {
   }
 
   // ── 1. Required top-level keys ──
-  const requiredKeys = ['eraPhases', 'factions', 'categories', 'characters', 'events', 'mapSnapshots', 'wikiLinks'];
+  const requiredKeys = ['meta', 'eraPhases', 'factions', 'categories', 'characters', 'events', 'mapSnapshots', 'wikiLinks'];
   for (const key of requiredKeys) {
     if (!(key in data)) {
       error(filename, `Missing required key: "${key}"`);
     }
+  }
+
+  // ── 1b. meta ──
+  if (data.meta && typeof data.meta === 'object') {
+    const m = data.meta;
+    for (const key of ['title', 'description', 'headerTitle']) {
+      if (typeof m[key] !== 'string' || !m[key]) {
+        error(filename, `meta.${key} is required and must be a non-empty string`);
+      }
+    }
+    if (m.layoutStyle !== undefined && !['rail', 'flat'].includes(m.layoutStyle)) {
+      error(filename, `meta.layoutStyle must be "rail" or "flat", got "${m.layoutStyle}"`);
+    }
+    if (m.mapColumnRules !== undefined) {
+      if (!Array.isArray(m.mapColumnRules)) {
+        error(filename, `meta.mapColumnRules must be an array`);
+      } else {
+        m.mapColumnRules.forEach((rule, i) => {
+          if (typeof rule.cols !== 'number') error(filename, `meta.mapColumnRules[${i}]: cols must be a number`);
+        });
+      }
+    }
+    if (m.mapLayout !== undefined && !Array.isArray(m.mapLayout)) {
+      error(filename, `meta.mapLayout must be a 2D array`);
+    }
+    ok(`meta: "${m.title}"`);
   }
 
   // ── 2. eraPhases ──
@@ -64,9 +90,16 @@ function validateTimeline(filename) {
   // ── 3. factions ──
   const factionIds = new Set();
   if (data.factions && typeof data.factions === 'object') {
+    const hexColor = /^#[0-9a-fA-F]{6}$/;
     for (const [key, val] of Object.entries(data.factions)) {
       factionIds.add(key);
       if (typeof val.name !== 'string') error(filename, `factions["${key}"]: name must be string`);
+      if (val.color !== undefined && !hexColor.test(val.color)) {
+        error(filename, `factions["${key}"]: color "${val.color}" must be #rrggbb format`);
+      }
+      if (val.colorLight !== undefined && !hexColor.test(val.colorLight)) {
+        error(filename, `factions["${key}"]: colorLight "${val.colorLight}" must be #rrggbb format`);
+      }
     }
     ok(`factions: ${factionIds.size} factions`);
   }
@@ -142,18 +175,50 @@ function validateTimeline(filename) {
         }
       }
       if (typeof ev.description !== 'string') error(filename, `events["${ev.id}"]: description must be string`);
+      if (ev.historyDiff !== undefined && typeof ev.historyDiff !== 'string') {
+        error(filename, `events["${ev.id}"]: historyDiff must be string`);
+      }
+      if (ev.historyOnly !== undefined && typeof ev.historyOnly !== 'boolean') {
+        error(filename, `events["${ev.id}"]: historyOnly must be boolean`);
+      }
     }
     ok(`events: ${data.events.length} events`);
   }
 
   // ── 7. mapSnapshots ──
+  const allTerritoryIds = new Set();
   if (Array.isArray(data.mapSnapshots)) {
     for (const snap of data.mapSnapshots) {
       if (typeof snap.year !== 'number') error(filename, `mapSnapshots: year must be number`);
       if (typeof snap.label !== 'string') error(filename, `mapSnapshots: label must be string`);
       if (typeof snap.territories !== 'object') error(filename, `mapSnapshots[${snap.year}]: territories must be object`);
+      else {
+        for (const [provId, t] of Object.entries(snap.territories)) {
+          allTerritoryIds.add(provId);
+          if (t.faction !== 'empty' && !factionIds.has(t.faction)) {
+            error(filename, `mapSnapshots[${snap.year}].territories["${provId}"]: faction "${t.faction}" not in factions (use "empty" for blank cells)`);
+          }
+        }
+      }
     }
     ok(`mapSnapshots: ${data.mapSnapshots.length} snapshots`);
+  }
+
+  // ── 7b. meta.mapLayout integrity (province IDs must appear in at least one snapshot) ──
+  if (data.meta && Array.isArray(data.meta.mapLayout)) {
+    const layoutIds = new Set();
+    for (const row of data.meta.mapLayout) {
+      if (!Array.isArray(row)) continue;
+      for (const provId of row) {
+        if (provId) layoutIds.add(provId);
+      }
+    }
+    for (const provId of layoutIds) {
+      if (!allTerritoryIds.has(provId)) {
+        error(filename, `meta.mapLayout: province "${provId}" never appears in any mapSnapshots.territories`);
+      }
+    }
+    ok(`meta.mapLayout: ${layoutIds.size} provinces referenced`);
   }
 
   // ── 8. wikiLinks ──

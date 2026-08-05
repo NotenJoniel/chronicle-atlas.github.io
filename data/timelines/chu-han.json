@@ -1,4 +1,25 @@
 {
+  "meta": {
+    "title": "楚漢戦争 史実クロニクルタイムライン (BC210年〜BC202年)",
+    "description": "秦末の農民反乱から項羽vs劉邦の楚漢戦争、前漢成立までをインタラクティブなタイムラインで体験。鉅鹿の戦い、鴻門の会、垓下の戦い、四面楚歌。",
+    "headerTitle": "楚漢戦争 史実",
+    "headerSubtitle": "クロニクルタイムライン",
+    "searchPlaceholder": "検索（スペース区切りでOR検索）",
+    "mapTitleIcon": "🗺️",
+    "mapTitleLabel": "勢力図",
+    "characterTitleLabel": "字",
+    "descLabel": "📖 史実の記録",
+    "charDescLabel": "📖 人物伝",
+    "relatedCharsLabel": "👥 関連人物（クリックで詳細）",
+    "relatedEventsLabel": "📅 関連する出来事（クリックで詳細）",
+    "triviaLabel": "📜 補足・豆知識",
+    "layoutStyle": "rail",
+    "mapColumnRules": [
+      { "maxCount": 4, "cols": 2 },
+      { "maxCount": 6, "cols": 3 },
+      { "cols": 4 }
+    ]
+  },
   "eraPhases": [
     {
       "id": 1,
@@ -61,27 +82,32 @@
     "qin": {
       "id": "qin",
       "name": "秦",
-      "colorClass": "faction-qin"
+      "color": "#3a1a1a",
+      "colorLight": "#8a4444"
     },
     "chu": {
       "id": "chu",
       "name": "楚（項羽）",
-      "colorClass": "faction-chu"
+      "color": "#7a1a3a",
+      "colorLight": "#cc4466"
     },
     "han": {
       "id": "han",
       "name": "漢（劉邦）",
-      "colorClass": "faction-han"
+      "color": "#8a5a1a",
+      "colorLight": "#d4a844"
     },
     "rebels": {
       "id": "rebels",
       "name": "群雄",
-      "colorClass": "faction-rebels"
+      "color": "#3a4a5a",
+      "colorLight": "#7a9ab8"
     },
     "other": {
       "id": "other",
       "name": "その他",
-      "colorClass": "faction-other"
+      "color": "#4a4a3a",
+      "colorLight": "#8a8a6a"
     }
   },
   "categories": {

@@ -1,4 +1,21 @@
 {
+  "meta": {
+    "title": "共和政ローマ 史実クロニクルタイムライン (BC509年〜BC27年)",
+    "description": "王政廃止からアウグストゥスの帝政開始まで約480年。ポエニ戦争、グラックス兄弟、カエサルまで、共和政ローマの興亡をインタラクティブに探索。",
+    "headerIcon": "🏛️",
+    "headerTitle": "共和政ローマ",
+    "headerSubtitle": "BC509年〜BC27年",
+    "searchPlaceholder": "🔍 人物・出来事を検索…",
+    "mapTitleIcon": "🗺️",
+    "mapTitleLabel": "勢力図",
+    "characterTitleLabel": "別名",
+    "descLabel": "概要",
+    "charDescLabel": "人物紹介",
+    "relatedCharsLabel": "関連人物",
+    "relatedEventsLabel": "関連する出来事",
+    "triviaLabel": "📖 エピソード",
+    "layoutStyle": "flat"
+  },
   "eraPhases": [
     {
       "id": 1,
@@ -74,31 +91,45 @@
   "factions": {
     "roma": {
       "id": "roma",
-      "name": "ローマ（元老院）"
+      "name": "ローマ（元老院）",
+      "color": "#5a2a5a",
+      "colorLight": "#9a5a9a"
     },
     "populares": {
       "id": "populares",
-      "name": "ポプラレス（民衆派）"
+      "name": "ポプラレス（民衆派）",
+      "color": "#8B1A1A",
+      "colorLight": "#CD5C5C"
     },
     "carthage": {
       "id": "carthage",
-      "name": "カルタゴ"
+      "name": "カルタゴ",
+      "color": "#2E6B57",
+      "colorLight": "#5FAF8F"
     },
     "greece": {
       "id": "greece",
-      "name": "ギリシア・マケドニア"
+      "name": "ギリシア・マケドニア",
+      "color": "#3a4a8a",
+      "colorLight": "#6a7aba"
     },
     "rebels": {
       "id": "rebels",
-      "name": "反乱勢力"
+      "name": "反乱勢力",
+      "color": "#B8860B",
+      "colorLight": "#DAA520"
     },
     "gallia": {
       "id": "gallia",
-      "name": "ガリア・蛮族"
+      "name": "ガリア・蛮族",
+      "color": "#556B2F",
+      "colorLight": "#8FBB4F"
     },
     "other": {
       "id": "other",
-      "name": "その他"
+      "name": "その他",
+      "color": "#5A6072",
+      "colorLight": "#8A90A2"
     }
   },
   "categories": {

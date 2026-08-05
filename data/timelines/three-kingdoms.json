@@ -1,4 +1,28 @@
 {
+  "meta": {
+    "title": "三国志演義＆正史 クロニクルタイムライン (184年〜280年)",
+    "description": "三国志演義をベースにしたインタラクティブ・タイムライン。勢力図、人物図鑑、出来事を網羅するデータベース。",
+    "headerTitle": "三国志演義＆正史",
+    "headerSubtitle": "クロニクルタイムライン",
+    "searchPlaceholder": "検索（スペース区切りでOR検索）",
+    "mapTitleIcon": "🗺️",
+    "mapTitleLabel": "勢力図",
+    "characterTitleLabel": "字",
+    "descLabel": "📖 演義の展開",
+    "charDescLabel": "📖 人物伝（演義）",
+    "relatedCharsLabel": "👥 関連人物（クリックで詳細）",
+    "relatedEventsLabel": "📅 関連する出来事（クリックで詳細）",
+    "triviaLabel": "📜 正史評・豆知識",
+    "historyDiffLabel": "📜 正史との差分・豆知識",
+    "historyOnlyBadgeLabel": "正史",
+    "layoutStyle": "rail",
+    "mapLayout": [
+      ["liangzhou", "bingzhou", null, "youzhou", null],
+      [null, "sili", "jizhou", "qingzhou", null],
+      ["yizhou", null, "jingzhou", "yanzhou", "xuzhou"],
+      [null, "jiaozhou", "yuzhou", "yangzhou", null]
+    ]
+  },
   "eraPhases": [
     {
       "id": 1,
@@ -89,62 +113,73 @@
     "han": {
       "id": "han",
       "name": "漢",
-      "colorClass": "faction-han"
+      "color": "#6a6a3a",
+      "colorLight": "#aaa86a"
     },
     "wei": {
       "id": "wei",
       "name": "魏",
-      "colorClass": "faction-wei"
+      "color": "#2a4a78",
+      "colorLight": "#4a7ac8"
     },
     "shu": {
       "id": "shu",
       "name": "蜀",
-      "colorClass": "faction-shu"
+      "color": "#2a6a3e",
+      "colorLight": "#4aaa6e"
     },
     "wu": {
       "id": "wu",
       "name": "呉",
-      "colorClass": "faction-wu"
+      "color": "#8a2a2a",
+      "colorLight": "#cc4444"
     },
     "ensho": {
       "id": "ensho",
       "name": "袁紹",
       "mapOnly": true,
-      "colorClass": "faction-ensho"
+      "color": "#1a5a6a",
+      "colorLight": "#3aa8b8"
     },
     "dongzhuo": {
       "id": "dongzhuo",
       "name": "董卓",
       "mapOnly": true,
-      "colorClass": "faction-dongzhuo"
+      "color": "#7a1a2a",
+      "colorLight": "#c84a5a"
     },
     "liubiao": {
       "id": "liubiao",
       "name": "劉表",
       "mapOnly": true,
-      "colorClass": "faction-liubiao"
+      "color": "#5a4a1a",
+      "colorLight": "#a89a4a"
     },
     "liuzhang": {
       "id": "liuzhang",
       "name": "劉璋",
       "mapOnly": true,
-      "colorClass": "faction-liuzhang"
+      "color": "#3a5a3a",
+      "colorLight": "#6a9a6a"
     },
     "other": {
       "id": "other",
       "name": "群雄",
-      "colorClass": "faction-other"
+      "color": "#5a3a6a",
+      "colorLight": "#9a6aaa"
     },
     "jin": {
       "id": "jin",
       "name": "晋",
-      "colorClass": "faction-jin"
+      "color": "#7a5a1a",
+      "colorLight": "#bba844"
     },
     "contested": {
       "id": "contested",
       "name": "係争地",
       "mapOnly": true,
-      "colorClass": "faction-contested"
+      "color": "#5a5a5a",
+      "colorLight": "#888888"
     }
   },
   "categories": {

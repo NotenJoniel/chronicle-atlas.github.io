@@ -1,4 +1,25 @@
 {
+  "meta": {
+    "title": "戦国七雄 史実クロニクルタイムライン (BC475年〜BC221年)",
+    "description": "中国の戦国時代（紀元前475年〜紀元前221年）の史実をインタラクティブなタイムラインで体験。戦国七雄の勢力図、人物図鑑、合従連衡から秦の天下統一まで。",
+    "headerTitle": "戦国七雄 史実",
+    "headerSubtitle": "クロニクルタイムライン",
+    "searchPlaceholder": "検索（スペース区切りでOR検索）",
+    "mapTitleIcon": "🗺️",
+    "mapTitleLabel": "勢力図",
+    "characterTitleLabel": "字",
+    "descLabel": "📖 史実の記録",
+    "charDescLabel": "📖 人物伝",
+    "relatedCharsLabel": "👥 関連人物（クリックで詳細）",
+    "relatedEventsLabel": "📅 関連する出来事（クリックで詳細）",
+    "triviaLabel": "📜 補足・豆知識",
+    "layoutStyle": "rail",
+    "mapColumnRules": [
+      { "maxCount": 4, "cols": 2 },
+      { "maxCount": 6, "cols": 3 },
+      { "cols": 4 }
+    ]
+  },
   "eraPhases": [
     {
       "id": 1,
@@ -89,42 +110,50 @@
     "qin": {
       "id": "qin",
       "name": "秦",
-      "colorClass": "faction-qin"
+      "color": "#8a2a1a",
+      "colorLight": "#cc5544"
     },
     "chu": {
       "id": "chu",
       "name": "楚",
-      "colorClass": "faction-chu"
+      "color": "#5a2a6a",
+      "colorLight": "#9a5ab8"
     },
     "qi": {
       "id": "qi",
       "name": "斉",
-      "colorClass": "faction-qi"
+      "color": "#1a4a7a",
+      "colorLight": "#4a88cc"
     },
     "yan": {
       "id": "yan",
       "name": "燕",
-      "colorClass": "faction-yan"
+      "color": "#3a4a5a",
+      "colorLight": "#7a9ab8"
     },
     "zhao": {
       "id": "zhao",
       "name": "趙",
-      "colorClass": "faction-zhao"
+      "color": "#2a5a3a",
+      "colorLight": "#4aaa6e"
     },
     "wei": {
       "id": "wei",
       "name": "魏",
-      "colorClass": "faction-wei"
+      "color": "#7a5a1a",
+      "colorLight": "#bba844"
     },
     "han": {
       "id": "han",
       "name": "韓",
-      "colorClass": "faction-han"
+      "color": "#5a3a2a",
+      "colorLight": "#a87a5a"
     },
     "other": {
       "id": "other",
       "name": "周・その他",
-      "colorClass": "faction-other"
+      "color": "#5a5a3a",
+      "colorLight": "#9a9a6a"
     }
   },
   "categories": {
