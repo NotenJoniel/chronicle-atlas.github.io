@@ -167,6 +167,10 @@
     /* ── Footer ── */
     .site-footer{text-align:center;padding:40px 20px;color:var(--text-dim);font-size:.8rem;border-top:1px solid var(--border-subtle)}
 
+    /* ── Version badge ── */
+    .version-badge{position:fixed;right:10px;bottom:8px;font-size:.68rem;color:var(--text-dim);opacity:.4;letter-spacing:.3px;z-index:5;transition:opacity .2s;cursor:default}
+    .version-badge:hover{opacity:.85}
+
     /* ── Mobile ── */
     @media(max-width:768px){
       .site-header{padding:16px 12px 12px}
@@ -213,6 +217,18 @@
   </div>
 
   <footer class="site-footer">Chronicle Atlas © 2025 — 歴史の流れをひとつのキャンバスで</footer>
+
+  <div class="version-badge" id="version-badge"></div>
+  <script>
+    fetch(`data/version.json?t=${Date.now()}`)
+      .then(r => r.json())
+      .then(v => {
+        const el = document.getElementById('version-badge');
+        el.textContent = `v${v.version}`;
+        el.title = `最終更新: ${v.updatedAt}${v.note ? ' — ' + v.note : ''}`;
+      })
+      .catch(() => {});
+  </script>
 
 <script>
 /* =========================================================================

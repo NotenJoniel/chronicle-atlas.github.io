@@ -189,6 +189,24 @@ if (fs.existsSync(indexPath)) {
   }
 }
 
+// Validate version.json
+const versionPath = path.join(DATA_DIR, 'version.json');
+if (fs.existsSync(versionPath)) {
+  console.log('\n📋 version.json');
+  try {
+    const v = JSON.parse(fs.readFileSync(versionPath, 'utf-8'));
+    if (!/^\d+\.\d+\.\d+$/.test(v.version || '')) {
+      error('version.json', `version "${v.version}" は "x.y.z" 形式（例: 1.2.0）で書くこと`);
+    } else if (!/^\d{4}-\d{2}-\d{2}$/.test(v.updatedAt || '')) {
+      error('version.json', `updatedAt "${v.updatedAt}" は "YYYY-MM-DD" 形式で書くこと`);
+    } else {
+      ok(`version.json: v${v.version} (${v.updatedAt})`);
+    }
+  } catch (e) {
+    error('version.json', `Parse error: ${e.message}`);
+  }
+}
+
 // Validate all timeline files
 const files = fs.readdirSync(TIMELINES_DIR).filter(f => f.endsWith('.json'));
 for (const file of files) {
