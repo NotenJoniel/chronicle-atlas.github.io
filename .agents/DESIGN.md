@@ -208,7 +208,7 @@ DUP char:  c_cleopatra   … 同上
 | 旧世代3本の静的フィルタボタン（`index.html`直書き） | 全7本で`renderFactionFilters()`/`renderCategoryFilters()`による動的生成に統一 |
 | ヘッダー文言・検索placeholder・モーダル見出し等 | `meta.title`/`headerTitle`/`searchPlaceholder`/`descLabel`等 |
 
-地図専用の疑似勢力（董卓・袁紹・劉表・劉璋・係争地など）は `mapOnly:true` フラグ付きで `factions{}` に正式登録済み。G3のタイミングでまとめて実施。
+地図専用の疑似勢力（董卓・袁紹・劉表・劉璋・係争地など）は `mapOnly:true` フラグ付きで `factions{}` に正式登録済み（G1/G2の時点で対応済み）。G3の共通コードはこのデータをそのまま活用し、`renderFactionFilters` では `mapOnly` 勢力を除外して勢力フィルタボタンには出さないようにしている。
 
 ### ✅ G3. 描画層の重複解消 【完了 2026-08-05】
 
