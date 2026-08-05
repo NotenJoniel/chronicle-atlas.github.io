@@ -34,15 +34,15 @@ body{background:var(--bg)}
 .btn-primary:not(:disabled):hover{filter:brightness(1.1)}
 .selection-count{text-align:center;color:var(--text-dim);font-size:.82rem;margin-bottom:10px}
 
-/* ─ Compare view toolbar ─ */
-.compare-toolbar{display:flex;align-items:center;gap:16px;padding:6px 20px;flex-wrap:wrap}
+/* ─ Compare view toolbar (常時表示: .sticky-header の直下にスタック) ─ */
+.compare-toolbar{display:flex;align-items:center;gap:16px;padding:6px 20px;flex-wrap:wrap;position:sticky;top:50px;z-index:90;background:var(--bg);border-bottom:1px solid var(--border-subtle)}
 .back-link{color:var(--text-dim);font-size:.85rem;text-decoration:none;padding:4px 10px;border:1px solid var(--border-subtle);border-radius:6px;transition:.2s}
 .back-link:hover{color:var(--gold);border-color:var(--gold)}
 .compare-category-filters{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
 .compare-search-box input{background:var(--surface-2);border:1px solid var(--border-subtle);color:var(--text);padding:4px 12px;border-radius:6px;font-size:.82rem;width:200px;transition:border .2s}
 .compare-search-box input:focus{outline:none;border-color:var(--gold)}
 
-.chips-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:0 20px 10px;position:relative}
+.chips-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 20px;position:sticky;top:94px;z-index:85;background:var(--bg);border-bottom:1px solid var(--border-subtle)}
 .chips-label{font-size:.8rem;color:var(--text-dim)}
 .selected-chips{display:flex;gap:6px;flex-wrap:wrap}
 .chip{display:flex;align-items:center;gap:6px;padding:4px 6px 4px 12px;background:var(--surface-2);border:1px solid var(--border-subtle);border-radius:999px;font-size:.82rem;color:var(--text)}
@@ -60,9 +60,13 @@ body{background:var(--bg)}
 .overlap-banner.warn{background:rgba(180,80,40,.15);border:1px solid rgba(200,110,60,.4);color:#e0a878}
 .overlap-banner.info{background:var(--gold-dim);border:1px solid var(--gold);color:var(--gold)}
 
-/* ─ Compare grid: column = timeline, shared vertical year axis ─ */
-.compare-wrapper{overflow-x:auto;padding:0 20px 60px}
-.cmp-header{display:flex;position:sticky;top:56px;z-index:50;background:rgba(13,15,20,.97);backdrop-filter:blur(8px);border-bottom:2px solid var(--border-subtle);min-width:max-content}
+/* ─ Compare grid: column = timeline, shared vertical year axis ─
+   cmp-header(列見出し)は position:sticky で常時表示させたいが、水平スクロール用の
+   overflow-x:auto を持つ祖先の中では sticky が機能しない（CSS仕様）。そのため
+   ヘッダーとグリッド本体を別々のコンテナに分離し、水平スクロールはJSで同期する。 */
+.compare-wrapper{padding:0 20px 60px}
+.cmp-header{display:flex;position:sticky;top:142px;z-index:50;background:rgba(13,15,20,.97);backdrop-filter:blur(8px);border-bottom:2px solid var(--border-subtle);overflow-x:hidden}
+.cmp-grid-scroll{overflow-x:auto}
 .cmp-year-label{width:70px;min-width:70px;padding:10px 6px;text-align:center;font-size:.78rem;color:var(--gold);font-weight:700;border-right:1px solid var(--border-subtle)}
 .cmp-region-name{width:380px;min-width:380px;padding:10px 14px;border-right:1px solid var(--border-subtle)}
 .cmp-region-name .rn-title{font-weight:700;font-size:.95rem;color:var(--text)}

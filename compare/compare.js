@@ -420,7 +420,17 @@ document.addEventListener('DOMContentLoaded', () => {
       grid.appendChild(band);
     }
 
+    bindHeaderScrollSync();
     applyFilters();
+  }
+
+  // cmp-header は sticky にするため水平スクロールを持てない(overflow-x:hidden)。
+  // 実際に横スクロールするのは cmp-grid-scroll 側なので、その scrollLeft を
+  // ヘッダーへ同期させることで見た目上は一緒にスクロールしているように見せる。
+  function bindHeaderScrollSync() {
+    const scrollEl = document.getElementById('cmp-grid-scroll');
+    const header = document.getElementById('cmp-header');
+    scrollEl.onscroll = () => { header.scrollLeft = scrollEl.scrollLeft; };
   }
 
   // ─── Modal ───
