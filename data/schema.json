@@ -28,7 +28,8 @@
         "required": ["id", "name"],
         "properties": {
           "id": { "type": "string", "description": "勢力ID（英小文字: qin, wei など）" },
-          "name": { "type": "string", "description": "勢力名" }
+          "name": { "type": "string", "description": "勢力名" },
+          "mapOnly": { "type": "boolean", "description": "地図の勢力図でのみ使用し、人物は所属しない疑似勢力（任意）" }
         }
       }
     },

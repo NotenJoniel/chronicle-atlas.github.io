@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderEraNav();
     renderSidebar();
     renderTimeline();
-    renderMap(-475);
+    renderMap(D.MAP_SNAPSHOTS[0].year);
     bindEvents();
     // Mobile: sidebar starts hidden (slid off-screen by CSS transform)
     if (window.matchMedia('(max-width:900px)').matches) {
@@ -83,14 +83,14 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     sidebar.appendChild(clearBar);
 
-    const factionOrder = ['qin', 'chu', 'qi', 'yan', 'zhao', 'wei', 'han', 'other'];
-    const factionNames = { qin: '秦', chu: '楚', qi: '斉', yan: '燕', zhao: '趙', wei: '魏', han: '韓', other: '周・その他' };
+    const factionOrder = Object.keys(D.FACTIONS);
     factionOrder.forEach(fid => {
       const chars = D.CHARACTERS.filter(c => c.faction === fid);
       if (!chars.length) return;
       const section = mkEl('div', 'sidebar-section');
       const header = mkEl('div', 'sidebar-header');
-      header.innerHTML = `<span>${factionNames[fid] || fid}（${chars.length}）</span><span class="arrow">▼</span>`;
+      const fName = D.FACTIONS[fid]?.name || fid;
+      header.innerHTML = `<span>${fName}（${chars.length}）</span><span class="arrow">▼</span>`;
       let collapsed = false;
       const list = mkEl('div', 'sidebar-list');
       header.onclick = () => { collapsed = !collapsed; list.classList.toggle('hidden', collapsed); header.classList.toggle('collapsed', collapsed); };
@@ -195,16 +195,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderMapLegend(snap) {
     mapLegend.innerHTML = '';
-    const ALL_FACTIONS = [
-      { faction: 'qin', cls: 'map-qin', label: '秦' },
-      { faction: 'chu', cls: 'map-chu', label: '楚' },
-      { faction: 'qi', cls: 'map-qi', label: '斉' },
-      { faction: 'yan', cls: 'map-yan', label: '燕' },
-      { faction: 'zhao', cls: 'map-zhao', label: '趙' },
-      { faction: 'wei', cls: 'map-wei', label: '魏' },
-      { faction: 'han', cls: 'map-han', label: '韓' },
-      { faction: 'other', cls: 'map-other', label: '周・その他' },
-    ];
+    const ALL_FACTIONS = Object.keys(D.FACTIONS).map(fid => ({
+      faction: fid, cls: 'map-' + fid, label: D.FACTIONS[fid].name
+    }));
     const activeFactions = new Set();
     if (snap && snap.territories) {
       Object.values(snap.territories).forEach(t => activeFactions.add(t.faction));

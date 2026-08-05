@@ -17,6 +17,14 @@ function error(file, msg) { totalErrors++; console.error(`  ❌ ${file}: ${msg}`
 function warn(file, msg) { totalWarnings++; console.warn(`  ⚠️  ${file}: ${msg}`); }
 function ok(msg) { console.log(`  ✅ ${msg}`); }
 
+// ── Cross-file ID uniqueness registries ──
+const eventIdRegistry = new Map();  // id -> [filename, ...]
+const charIdRegistry = new Map();
+function registerId(registry, id, filename) {
+  if (!registry.has(id)) registry.set(id, []);
+  registry.get(id).push(filename);
+}
+
 // ── Validate a single timeline JSON ──
 function validateTimeline(filename) {
   const filePath = path.join(TIMELINES_DIR, filename);
@@ -93,6 +101,7 @@ function validateTimeline(filename) {
       if (typeof ch.id !== 'string') { error(filename, `characters: id must be string`); continue; }
       if (charIds.has(ch.id)) error(filename, `characters: duplicate id "${ch.id}"`);
       charIds.add(ch.id);
+      registerId(charIdRegistry, ch.id, filename);
 
       if (typeof ch.name !== 'string') error(filename, `characters["${ch.id}"]: name must be string`);
       if (typeof ch.faction !== 'string') error(filename, `characters["${ch.id}"]: faction must be string`);
@@ -113,6 +122,7 @@ function validateTimeline(filename) {
       if (typeof ev.id !== 'string') { error(filename, `events: id must be string`); continue; }
       if (eventIds.has(ev.id)) error(filename, `events: duplicate id "${ev.id}"`);
       eventIds.add(ev.id);
+      registerId(eventIdRegistry, ev.id, filename);
 
       if (typeof ev.year !== 'number') error(filename, `events["${ev.id}"]: year must be number`);
       if (typeof ev.title !== 'string') error(filename, `events["${ev.id}"]: title must be string`);
@@ -183,6 +193,15 @@ if (fs.existsSync(indexPath)) {
 const files = fs.readdirSync(TIMELINES_DIR).filter(f => f.endsWith('.json'));
 for (const file of files) {
   validateTimeline(file);
+}
+
+// ── Cross-file ID uniqueness ──
+console.log('\n📋 Cross-file ID uniqueness');
+for (const [id, fs_] of eventIdRegistry) {
+  if (fs_.length > 1) warn('cross-file', `event "${id}": ${fs_.join(' と ')} で重複`);
+}
+for (const [id, fs_] of charIdRegistry) {
+  if (fs_.length > 1) warn('cross-file', `character "${id}": ${fs_.join(' と ')} で重複`);
 }
 
 // ── Summary ──

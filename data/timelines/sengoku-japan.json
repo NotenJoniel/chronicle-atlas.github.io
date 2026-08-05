@@ -114,6 +114,12 @@
       "id": "other",
       "name": "その他",
       "colorClass": "faction-other"
+    },
+    "contested": {
+      "id": "contested",
+      "name": "係争中",
+      "mapOnly": true,
+      "colorClass": "faction-contested"
     }
   },
   "categories": {

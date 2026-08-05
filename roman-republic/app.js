@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCategoryFilters();
     renderSidebar();
     renderTimeline();
-    renderMap(-200);
+    renderMap(D.MAP_SNAPSHOTS[0].year);
     bindEvents();
     if (window.matchMedia('(max-width:900px)').matches) {
       state.sidebarVisible = false;
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     sidebar.appendChild(clearBar);
 
-    const factionOrder = ['roma', 'populares', 'carthage', 'greece', 'rebels', 'gallia', 'other'];
+    const factionOrder = Object.keys(D.FACTIONS);
     factionOrder.forEach(fid => {
       const chars = D.CHARACTERS.filter(c => c.faction === fid);
       if (!chars.length) return;
@@ -222,15 +222,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderMapLegend(snap) {
     mapLegend.innerHTML = '';
-    const ALL_FACTIONS = [
-      { faction: 'roma', cls: 'map-roma', label: 'ローマ（元老院）' },
-      { faction: 'populares', cls: 'map-populares', label: 'ポプラレス（民衆派）' },
-      { faction: 'carthage', cls: 'map-carthage', label: 'カルタゴ' },
-      { faction: 'greece', cls: 'map-greece', label: 'ギリシア・マケドニア' },
-      { faction: 'rebels', cls: 'map-rebels', label: '反乱勢力' },
-      { faction: 'gallia', cls: 'map-gallia', label: 'ガリア・蛮族' },
-      { faction: 'other', cls: 'map-other', label: 'その他' },
-    ];
+    const ALL_FACTIONS = Object.keys(D.FACTIONS).map(fid => ({
+      faction: fid, cls: 'map-' + fid, label: D.FACTIONS[fid].name
+    }));
     const activeFactions = new Set();
     if (snap && snap.territories) {
       Object.values(snap.territories).forEach(t => activeFactions.add(t.faction));

@@ -82,6 +82,11 @@
     "other": {
       "id": "other",
       "name": "その他"
+    },
+    "contested": {
+      "id": "contested",
+      "name": "係争中",
+      "mapOnly": true
     }
   },
   "categories": {
