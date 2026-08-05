@@ -1,0 +1,14 @@
+/* 日本の戦国時代 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg: #111114;
+  --surface: #1a1a1f;
+  --surface-2: #222228;
+  --surface-3: #2c2c34;
+  --text: #e4e0d8;
+  --text-dim: #908e88;
+  --gold: #c4a55a;
+  --gold-dim: rgba(196,165,90,.15);
+  --border: rgba(196,165,90,.18);
+  --border-subtle: rgba(255,255,255,.06);
+  --font: 'Segoe UI','Hiragino Sans','Meiryo',sans-serif;
+}
