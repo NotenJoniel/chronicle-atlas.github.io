@@ -62,6 +62,15 @@
       "endYear": -27,
       "dataFile": "timelines/roman-republic.json",
       "subProjectDir": "roman-republic"
+    },
+    {
+      "id": "ancient-greece",
+      "name": "古代ギリシア",
+      "region": "europe",
+      "startYear": -800,
+      "endYear": -323,
+      "dataFile": "timelines/ancient-greece.json",
+      "subProjectDir": "ancient-greece"
     }
   ]
 }

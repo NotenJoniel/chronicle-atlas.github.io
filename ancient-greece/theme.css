@@ -1,0 +1,6 @@
+/* 古代ギリシア — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#0d0f16;--surface:#171a24;--surface-2:#1f2430;--surface-3:#2a3040;
+  --border-subtle:rgba(140,170,200,.12);--text:#e4e6ec;--text-dim:#8f97a8;
+  --gold:#7a9dc9;--gold-dim:rgba(122,157,201,.18);
+}
