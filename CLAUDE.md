@@ -27,6 +27,18 @@
 - **停止**: `tools\stop-serve.bat` を実行、またはサーバーのコンソールウィンドウを閉じる / Ctrl+C
 - ポートを変えたい場合は引数で指定可（例: `tools\serve.bat 8080`）。`stop-serve.bat` も同じポート番号を渡すこと
 
+## バージョン表示（必須）
+
+トップページ右下に `data/version.json` から読み込んだバージョンを小さく表示している。
+**データやコードに実質的な変更を加えたら、コミット前に必ず `data/version.json` を更新すること**（ビルドステップが無い静的サイトなので、更新を忘れると表示が古いまま止まる）。
+
+- `version`: `x.y.z` 形式（`node data/validate.js` が書式を検証する）
+  - **patch**（`x.y.+1`）: バグ修正・データの軽微な修正・リファクタ・ツール追加
+  - **minor**（`x.+1.0`）: 新規タイムライン追加・目立つ機能追加
+  - **major**（`+1.0.0`）: スキーマを破壊する変更・根本的な作り直し（滅多に上げない。上げる前にユーザーに確認する）
+- `updatedAt`: `YYYY-MM-DD` 形式
+- `note`: 何を変えたかの一言（省略可、フッターのツールチップに表示される）
+
 ## Git運用（必須）
 
 `main` = 本番デプロイ（GitHub Pages）
@@ -43,6 +55,7 @@
 data/
   schema.json          共通スキーマ（型定義）
   index.json           タイムライン一覧（メタ情報）
+  version.json         トップページ右下のバージョン表示（更新ルールは上記参照）
   validate.js          バリデーション: node data/validate.js
   timelines/*.json     各時代のデータ（7本）
 <timeline-id>/         サブプロジェクト: app.js + styles.css + index.html
