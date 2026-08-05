@@ -1,4 +1,21 @@
 {
+  "meta": {
+    "title": "ローマ帝国 史実クロニクルタイムライン (BC27年〜AD476年)",
+    "description": "アウグストゥスの即位から西ローマ帝国の滅亡まで。パクス・ロマーナ、五賢帝、ゲルマン民族大移動を辿るインタラクティブ年表。",
+    "headerIcon": "🏛️",
+    "headerTitle": "ローマ帝国",
+    "headerSubtitle": "BC27年〜AD476年",
+    "searchPlaceholder": "🔍 人物・出来事を検索…",
+    "mapTitleIcon": "🗺️",
+    "mapTitleLabel": "勢力図",
+    "characterTitleLabel": "別名",
+    "descLabel": "概要",
+    "charDescLabel": "人物紹介",
+    "relatedCharsLabel": "関連人物",
+    "relatedEventsLabel": "関連する出来事",
+    "triviaLabel": "📖 エピソード",
+    "layoutStyle": "flat"
+  },
   "eraPhases": [
     {
       "id": 1,
@@ -53,40 +70,58 @@
   "factions": {
     "julio": {
       "id": "julio",
-      "name": "ユリウス・クラウディウス朝"
+      "name": "ユリウス・クラウディウス朝",
+      "color": "#6B3FA0",
+      "colorLight": "#9B6FD0"
     },
     "flavian": {
       "id": "flavian",
-      "name": "フラウィウス朝"
+      "name": "フラウィウス朝",
+      "color": "#8B1A1A",
+      "colorLight": "#CD5C5C"
     },
     "antonine": {
       "id": "antonine",
-      "name": "ネルウァ・アントニヌス朝"
+      "name": "ネルウァ・アントニヌス朝",
+      "color": "#B8860B",
+      "colorLight": "#DAA520"
     },
     "severan": {
       "id": "severan",
-      "name": "セウェルス朝"
+      "name": "セウェルス朝",
+      "color": "#2E6B57",
+      "colorLight": "#5FAF8F"
     },
     "constantine": {
       "id": "constantine",
-      "name": "コンスタンティヌス朝"
+      "name": "コンスタンティヌス朝",
+      "color": "#2B4F9E",
+      "colorLight": "#6B8FDE"
     },
     "barbarian": {
       "id": "barbarian",
-      "name": "蛮族"
+      "name": "蛮族",
+      "color": "#556B2F",
+      "colorLight": "#8FBB4F"
     },
     "eastern": {
       "id": "eastern",
-      "name": "東方勢力"
+      "name": "東方勢力",
+      "color": "#CD7F32",
+      "colorLight": "#DAA060"
     },
     "other": {
       "id": "other",
-      "name": "その他"
+      "name": "その他",
+      "color": "#5A6072",
+      "colorLight": "#8A90A2"
     },
     "contested": {
       "id": "contested",
       "name": "係争中",
-      "mapOnly": true
+      "mapOnly": true,
+      "color": "#5a5a3a",
+      "colorLight": "#9a9a6a"
     }
   },
   "categories": {

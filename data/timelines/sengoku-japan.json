@@ -1,4 +1,26 @@
 {
+  "meta": {
+    "title": "日本の戦国時代 史実クロニクルタイムライン (1467年〜1615年)",
+    "description": "応仁の乱から大坂の陣まで。日本の戦国時代の出来事・人物・勢力図をインタラクティブに体験するタイムライン。",
+    "headerIcon": "⛩️",
+    "headerTitle": "日本の戦国時代",
+    "headerSubtitle": "1467年〜1615年",
+    "searchPlaceholder": "🔍 出来事・人物を検索…",
+    "mapTitleIcon": "🗾",
+    "mapTitleLabel": "勢力図",
+    "characterTitleLabel": "旧名",
+    "descLabel": "📖 史実の記録",
+    "charDescLabel": "📖 人物伝",
+    "relatedCharsLabel": "👥 関連人物（クリックで詳細）",
+    "relatedEventsLabel": "📅 関連する出来事（クリックで詳細）",
+    "triviaLabel": "📜 補足・豆知識",
+    "layoutStyle": "rail",
+    "mapColumnRules": [
+      { "maxCount": 4, "cols": 2 },
+      { "maxCount": 6, "cols": 3 },
+      { "cols": 3 }
+    ]
+  },
   "eraPhases": [
     {
       "id": 1,
@@ -68,58 +90,69 @@
     "oda": {
       "id": "oda",
       "name": "織田家",
-      "colorClass": "faction-oda"
+      "color": "#8a2a1a",
+      "colorLight": "#cc4a3a"
     },
     "takeda": {
       "id": "takeda",
       "name": "武田家",
-      "colorClass": "faction-takeda"
+      "color": "#1a3a6a",
+      "colorLight": "#4a7acc"
     },
     "uesugi": {
       "id": "uesugi",
       "name": "上杉家",
-      "colorClass": "faction-uesugi"
+      "color": "#4a5a6a",
+      "colorLight": "#8aaabe"
     },
     "tokugawa": {
       "id": "tokugawa",
       "name": "徳川家",
-      "colorClass": "faction-tokugawa"
+      "color": "#3a5a2a",
+      "colorLight": "#6aaa4a"
     },
     "toyotomi": {
       "id": "toyotomi",
       "name": "豊臣家",
-      "colorClass": "faction-toyotomi"
+      "color": "#7a5a1a",
+      "colorLight": "#bba844"
     },
     "hojo": {
       "id": "hojo",
       "name": "北条家",
-      "colorClass": "faction-hojo"
+      "color": "#2a4a5a",
+      "colorLight": "#5a9aaa"
     },
     "mori": {
       "id": "mori",
       "name": "毛利家",
-      "colorClass": "faction-mori"
+      "color": "#2a5a4a",
+      "colorLight": "#4aaa8a"
     },
     "shimazu": {
       "id": "shimazu",
       "name": "島津家",
-      "colorClass": "faction-shimazu"
+      "color": "#5a2a4a",
+      "colorLight": "#9a5a8a"
     },
     "date": {
       "id": "date",
       "name": "伊達家",
-      "colorClass": "faction-date"
+      "color": "#4a2a6a",
+      "colorLight": "#8a5aaa"
     },
     "other": {
       "id": "other",
       "name": "その他",
-      "colorClass": "faction-other"
+      "color": "#5a5a5a",
+      "colorLight": "#8a8a8a"
     },
     "contested": {
       "id": "contested",
       "name": "係争中",
       "mapOnly": true,
-      "colorClass": "faction-contested"
+      "color": "#5a5a3a",
+      "colorLight": "#9a9a6a"
     }
   },
   "categories": {

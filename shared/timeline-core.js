@@ -1,13 +1,27 @@
 /**
- * 共和政ローマ 史実クロニクルタイムライン v1.0
- * 史実ベース — 王政廃止から帝政開始まで (BC509–BC27)
+ * Chronicle Atlas — 共通タイムラインエンジン
+ * 全サブプロジェクト共通。タイムラインごとの差異はすべて data/timelines/<id>.json の
+ * meta/factions[].color 等から読み取る。このファイルにタイムラインIDでの分岐を書かないこと。
  */
 document.addEventListener('DOMContentLoaded', () => {
-  // Load data from centralized JSON
-  fetch(`../data/timelines/roman-republic.json?t=${Date.now()}`)
+  const timelineId = document.body.dataset.timeline;
+  if (!timelineId) { console.error('body[data-timeline] がありません'); return; }
+
+  fetch(`../data/timelines/${timelineId}.json?t=${Date.now()}`)
     .then(r => r.json())
-    .then(raw => {
+    .then(raw => bootstrap(timelineId, raw))
+    .catch(err => {
+      console.error('データの読み込みに失敗しました:', err);
+      const el = document.getElementById('timeline');
+      if (el) el.innerHTML = '<div class="no-results">データの読み込みに失敗しました。ページを再読み込みしてください。</div>';
+    });
+
+  function bootstrap(timelineId, raw) {
+  const DEFAULT_MAP_COLUMN_RULES = [{ maxCount: 4, cols: 2 }, { maxCount: 9, cols: 3 }, { cols: 4 }];
+
   const D = {
+    TIMELINE_ID: timelineId,
+    META: raw.meta || {},
     ERA_PHASES: raw.eraPhases,
     FACTIONS: raw.factions,
     CATEGORIES: raw.categories,
@@ -18,6 +32,25 @@ document.addEventListener('DOMContentLoaded', () => {
     WIKI_LINKS: raw.wikiLinks
   };
   window.appData = D;
+
+  // meta既定値
+  const META = D.META;
+  const mapTitleLabel = META.mapTitleLabel || '勢力図';
+  const characterTitleLabel = META.characterTitleLabel || '別名';
+  const descLabel = META.descLabel || '概要';
+  const charDescLabel = META.charDescLabel || '人物紹介';
+  const relatedCharsLabel = META.relatedCharsLabel || '関連人物';
+  const relatedEventsLabel = META.relatedEventsLabel || '関連する出来事';
+  const triviaLabel = META.triviaLabel || '📖 エピソード';
+  const historyDiffLabel = META.historyDiffLabel || '📜 差分・豆知識';
+  const historyOnlyBadgeLabel = META.historyOnlyBadgeLabel || '正史';
+  const mapColumnRules = Array.isArray(META.mapColumnRules) && META.mapColumnRules.length
+    ? META.mapColumnRules : DEFAULT_MAP_COLUMN_RULES;
+
+  if (META.layoutStyle && document.body.dataset.layout && META.layoutStyle !== document.body.dataset.layout) {
+    console.warn(`meta.layoutStyle ("${META.layoutStyle}") と body[data-layout] ("${document.body.dataset.layout}") が一致していません`);
+  }
+
   const state = { era: null, faction: 'all', category: 'all', query: '', mapVisible: false, sidebarVisible: true, activeEventYear: null, prevMapKey: null, selectedChars: new Set() };
 
   const $ = id => document.getElementById(id);
@@ -29,10 +62,44 @@ document.addEventListener('DOMContentLoaded', () => {
   const mapYearBadge = $('map-year-badge');
   const searchInput = $('search');
 
-  function fmtYear(y) { return y < 0 ? `BC${-y}` : `AD${y}`; }
   function fmtYearJa(y) { return y < 0 ? `紀元前${-y}年` : `${y}年`; }
 
+  // ─── Color helpers ───
+  function hexToRgb(hex) {
+    const m = /^#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(hex || '');
+    return m ? [parseInt(m[1], 16), parseInt(m[2], 16), parseInt(m[3], 16)] : [90, 90, 90];
+  }
+  function pickTextColor(hex) {
+    const [r, g, b] = hexToRgb(hex);
+    const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+    return luminance > 0.55 ? '#1a1a1a' : '#ffffff';
+  }
+  function applyFactionSwatch(el, fid) {
+    const f = D.FACTIONS[fid];
+    const color = f?.color || '#5a5a5a';
+    el.style.background = color;
+    el.style.color = pickTextColor(color);
+  }
+
   function init() {
+    if (META.headerIcon || META.headerTitle) {
+      const h1 = $('page-h1');
+      if (h1) {
+        h1.innerHTML = '';
+        if (META.headerIcon) h1.appendChild(document.createTextNode(META.headerIcon + ' '));
+        h1.appendChild(document.createTextNode(META.headerTitle || ''));
+        if (META.headerSubtitle) {
+          const span = document.createElement('span');
+          span.textContent = META.headerSubtitle;
+          h1.appendChild(span);
+        }
+      }
+    }
+    if (searchInput && META.searchPlaceholder) searchInput.placeholder = META.searchPlaceholder;
+    const mapTitleTextEl = $('map-title-text');
+    if (mapTitleTextEl) mapTitleTextEl.textContent = [META.mapTitleIcon, mapTitleLabel].filter(Boolean).join(' ');
+    setModalLabels();
+
     renderEraNav();
     renderFactionFilters();
     renderCategoryFilters();
@@ -44,6 +111,17 @@ document.addEventListener('DOMContentLoaded', () => {
       state.sidebarVisible = false;
       $('btn-toggle-sidebar').classList.remove('active');
     }
+  }
+
+  function setModalLabels() {
+    const set = (id, text) => { const el = $(id); if (el) el.textContent = text; };
+    set('em-desc-label', descLabel);
+    set('em-trivia-label', triviaLabel);
+    set('em-diff-label', historyDiffLabel);
+    set('em-chars-label', relatedCharsLabel);
+    set('cm-desc-label', charDescLabel);
+    set('cm-trivia-label', triviaLabel);
+    set('cm-events-label', relatedEventsLabel);
   }
 
   // ─── Era Navigation ───
@@ -76,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const allBtn = mkEl('button', 'filter-btn active', '全勢力');
     allBtn.dataset.faction = 'all';
     container.appendChild(allBtn);
-    Object.values(D.FACTIONS).forEach(f => {
+    Object.values(D.FACTIONS).filter(f => !f.mapOnly).forEach(f => {
       const btn = mkEl('button', 'filter-btn', f.name);
       btn.dataset.faction = f.id;
       container.appendChild(btn);
@@ -125,8 +203,12 @@ document.addEventListener('DOMContentLoaded', () => {
       chars.forEach(c => {
         const item = mkEl('div', 'sidebar-char');
         item.dataset.charId = c.id;
+        const dot = mkEl('span', 'dot');
+        applyFactionSwatch(dot, fid);
         const r = c.reading ? `<span class="reading">${c.reading}</span>` : '';
-        item.innerHTML = `<span class="dot" style="background:var(--${fid}-light,var(--other-light))"></span>${c.name} ${r}`;
+        item.appendChild(dot);
+        item.appendChild(document.createTextNode(' ' + c.name + ' '));
+        if (r) item.insertAdjacentHTML('beforeend', r);
         if (state.selectedChars.has(c.id)) item.classList.add('selected');
         item.onclick = (e) => {
           if (e.ctrlKey || e.metaKey) {
@@ -178,6 +260,28 @@ document.addEventListener('DOMContentLoaded', () => {
     return best || D.MAP_SNAPSHOTS[0];
   }
 
+  function computeColumns(count) {
+    for (const rule of mapColumnRules) {
+      if (rule.maxCount === undefined || count <= rule.maxCount) return rule.cols;
+    }
+    return mapColumnRules[mapColumnRules.length - 1].cols;
+  }
+
+  // タイムラインの存在を知らない: メタに mapLayout があれば固定グリッド、無ければ動的列数計算
+  function getMapCells(snap) {
+    if (Array.isArray(META.mapLayout) && META.mapLayout.length) {
+      const cells = [];
+      META.mapLayout.forEach(row => {
+        row.forEach(provId => {
+          cells.push({ provId, territory: provId ? snap.territories[provId] : null });
+        });
+      });
+      return { cells, cols: META.mapLayout[0]?.length || 1, rows: META.mapLayout.length, fixed: true };
+    }
+    const entries = Object.entries(snap.territories).map(([provId, territory]) => ({ provId, territory }));
+    return { cells: entries, cols: computeColumns(entries.length), rows: null, fixed: false };
+  }
+
   function renderMap(year) {
     const snap = getSnapshotForYear(year);
     if (!snap) return;
@@ -185,26 +289,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevKey = state.prevMapKey;
     state.prevMapKey = mapKey;
 
-    mapYearBadge.textContent = `${snap.label}（${fmtYearJa(snap.year)}〜）`;
+    if (mapYearBadge) mapYearBadge.textContent = `${snap.label}（${fmtYearJa(snap.year)}〜）`;
 
     const prevSnap = prevKey !== null ? getSnapshotForYear(prevKey) : null;
 
     mapGrid.innerHTML = '';
-    const territories = Object.entries(snap.territories);
-    const count = territories.length;
-    // 4 columns for Roman Empire geography
-    const cols = count <= 4 ? 2 : count <= 9 ? 3 : 4;
+    const { cells, cols, rows } = getMapCells(snap);
     mapGrid.style.gridTemplateColumns = `repeat(${cols}, minmax(0, 1fr))`;
+    mapGrid.style.gridTemplateRows = rows ? `repeat(${rows}, auto)` : '';
 
-    territories.forEach(([provId, prov]) => {
+    cells.forEach(({ provId, territory: prov }) => {
       const cell = mkEl('div', 'map-cell');
-      // 空セル（海・空白）
-      if (prov.faction === 'empty') {
+      if (!prov || prov.faction === 'empty') {
         cell.classList.add('map-empty');
         mapGrid.appendChild(cell);
         return;
       }
-      cell.classList.add('map-' + prov.faction);
+      applyFactionSwatch(cell, prov.faction);
       cell.innerHTML = `<div class="cell-name">${prov.name}</div><div class="cell-lord">${prov.lord}</div>`;
       cell.title = `${prov.name}：${prov.lord}`;
 
@@ -222,16 +323,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderMapLegend(snap) {
     mapLegend.innerHTML = '';
-    const ALL_FACTIONS = Object.keys(D.FACTIONS).map(fid => ({
-      faction: fid, cls: 'map-' + fid, label: D.FACTIONS[fid].name
-    }));
     const activeFactions = new Set();
     if (snap && snap.territories) {
-      Object.values(snap.territories).forEach(t => activeFactions.add(t.faction));
+      Object.values(snap.territories).forEach(t => { if (t.faction !== 'empty') activeFactions.add(t.faction); });
     }
-    ALL_FACTIONS.filter(f => activeFactions.has(f.faction)).forEach(l => {
+    Object.keys(D.FACTIONS).filter(fid => activeFactions.has(fid)).forEach(fid => {
       const item = mkEl('div', 'map-legend-item');
-      item.innerHTML = `<div class="map-legend-swatch ${l.cls}"></div><span>${l.label}</span>`;
+      const swatch = mkEl('div', 'map-legend-swatch');
+      swatch.style.background = D.FACTIONS[fid]?.color || '#5a5a5a';
+      const label = mkEl('span', '', D.FACTIONS[fid]?.name || fid);
+      item.appendChild(swatch);
+      item.appendChild(label);
       mapLegend.appendChild(item);
     });
   }
@@ -374,6 +476,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const title = mkEl('span', 'event-title', ev.title);
       const cat = mkEl('span', 'event-cat', D.CATEGORIES[ev.category]?.name || '');
       top.append(icon, title, cat);
+      if (ev.historyOnly) {
+        top.appendChild(mkEl('span', 'event-source history-only', historyOnlyBadgeLabel));
+      }
 
       const desc = mkEl('p', 'event-desc', ev.description);
       const bottom = mkEl('div', 'event-bottom');
@@ -382,7 +487,8 @@ document.addEventListener('DOMContentLoaded', () => {
       ev.characters.slice(0, 4).forEach(cid => {
         const ch = D.CHARACTERS.find(c => c.id === cid);
         if (ch) {
-          const t = mkEl('span', `tag tag-${ch.faction}`, ch.name);
+          const t = mkEl('span', 'tag', ch.name);
+          applyFactionSwatch(t, ch.faction);
           t.onclick = e => { e.stopPropagation(); openCharModal(ch.id); };
           chars.appendChild(t);
         }
@@ -418,13 +524,21 @@ document.addEventListener('DOMContentLoaded', () => {
   function openEventModal(eventId) {
     const ev = D.EVENTS.find(e => e.id === eventId);
     if (!ev) return;
-    $('em-title').textContent = ev.title;
+    $('em-title').textContent = ev.title + (ev.historyOnly ? `【${historyOnlyBadgeLabel}】` : '');
     $('em-year').textContent = fmtYearJa(ev.year);
     $('em-location').textContent = ev.location;
     $('em-desc').textContent = ev.description;
+
     const trivSec = $('em-trivia-section');
     if (ev.historyTrivia) { $('em-trivia').textContent = ev.historyTrivia; trivSec.style.display = ''; }
     else { trivSec.style.display = 'none'; }
+
+    const diffSec = $('em-diff-section');
+    if (diffSec) {
+      if (ev.historyDiff) { $('em-diff').textContent = ev.historyDiff; diffSec.style.display = ''; }
+      else { diffSec.style.display = 'none'; }
+    }
+
     renderWikiLink($('em-wiki-link'), D.WIKI_LINKS?.events?.[ev.id]);
     const charsEl = $('em-chars');
     charsEl.innerHTML = '';
@@ -432,7 +546,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const ch = D.CHARACTERS.find(c => c.id === cid);
       if (!ch) return;
       const label = ch.reading ? `${ch.name}（${ch.reading}）` : `${ch.name}（${ch.title || ''}）`;
-      const t = mkEl('span', `tag tag-${ch.faction}`, label);
+      const t = mkEl('span', 'tag', label);
+      applyFactionSwatch(t, ch.faction);
       t.onclick = () => { closeModal('event-modal'); openCharModal(ch.id); };
       charsEl.appendChild(t);
     });
@@ -445,11 +560,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!ch) return;
     $('cm-name').textContent = ch.name;
     const rl = $('cm-reading');
-    if (ch.reading) { rl.textContent = ch.reading + (ch.title ? `　別名: ${ch.title}` : ''); rl.style.display = ''; }
+    if (ch.reading) { rl.textContent = ch.reading + (ch.title ? `　${characterTitleLabel}: ${ch.title}` : ''); rl.style.display = ''; }
     else { rl.style.display = 'none'; }
     const ftag = $('cm-faction-tag');
     ftag.textContent = D.FACTIONS[ch.faction]?.name || ch.faction;
-    ftag.className = `tag tag-${ch.faction}`;
+    ftag.className = 'tag';
+    applyFactionSwatch(ftag, ch.faction);
     $('cm-role').textContent = ch.role;
     $('cm-life').textContent = ch.life ? `（${ch.life}）` : '';
     $('cm-desc').textContent = ch.description;
@@ -462,14 +578,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const related = D.EVENTS.filter(ev => ev.characters.includes(charId));
     if (related.length) {
       const label = mkEl('div', ''); label.style.cssText = 'font-size:.82rem;color:var(--text-dim);margin-bottom:6px;width:100%';
-      label.textContent = `関連する出来事（${related.length}件）`; eventsEl.appendChild(label);
+      label.textContent = `${relatedEventsLabel}（${related.length}件）`; eventsEl.appendChild(label);
       related.forEach(ev => {
-        const t = mkEl('span', 'tag tag-event', `${fmtYearJa(ev.year)}　${ev.title}`);
+        const hb = ev.historyOnly ? `　【${historyOnlyBadgeLabel}】` : '';
+        const t = mkEl('span', 'tag tag-event', `${fmtYearJa(ev.year)}　${ev.title}${hb}`);
         t.onclick = () => { closeModal('char-modal'); openEventModal(ev.id); };
         eventsEl.appendChild(t);
       });
     } else {
-      eventsEl.innerHTML = '<span style="color:var(--text-dim);font-size:.85rem">関連する出来事はまだ登録されていません</span>';
+      eventsEl.innerHTML = `<span style="color:var(--text-dim);font-size:.85rem">${relatedEventsLabel}はまだ登録されていません</span>`;
     }
     showModal('char-modal');
   }
@@ -537,9 +654,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (text !== undefined) el.textContent = text;
     return el;
   }
+
   init();
-    }).catch(err => {
-      console.error('データの読み込みに失敗しました:', err);
-      document.getElementById('timeline').innerHTML = '<div class="no-results">データの読み込みに失敗しました。ページを再読み込みしてください。</div>';
-    });
+  }
 });

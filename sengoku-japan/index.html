@@ -5,47 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>日本の戦国時代 史実クロニクルタイムライン (1467年〜1615年)</title>
   <meta name="description" content="応仁の乱から大坂の陣まで。日本の戦国時代の出来事・人物・勢力図をインタラクティブに体験するタイムライン。">
-  <link rel="stylesheet" href="styles.css?v=1.0">
+  <link rel="stylesheet" href="../shared/timeline-core.css?v=1">
+  <link rel="stylesheet" href="theme.css?v=1">
 </head>
-<body>
-
-  <!-- Sticky Header -->
-  <header class="sticky-header">
+<body data-timeline="sengoku-japan" data-layout="rail">
+  <div class="sticky-header">
     <div class="header-row">
       <a href="../" class="back-to-atlas">← Atlas</a>
-      <h1>⛩️ 日本の戦国時代<span>1467年〜1615年</span></h1>
+      <h1 id="page-h1"></h1>
       <div class="header-actions">
         <button class="btn" id="btn-toggle-sidebar" title="人物一覧">👥 人物一覧</button>
         <button class="btn" id="btn-toggle-map" title="勢力図を表示">🗺️ 勢力図</button>
       </div>
     </div>
-    <!-- Era Navigation -->
-    <nav class="era-nav" id="era-nav"></nav>
-    <!-- Filters + Search -->
+    <div class="era-nav" id="era-nav"></div>
     <div class="controls-row">
       <div id="faction-filters"></div>
       <div id="category-filters"></div>
-      <div class="search-box"><input type="text" id="search" placeholder="🔍 出来事・人物を検索…"></div>
+      <div class="search-box">
+        <input type="text" id="search" placeholder="">
+      </div>
     </div>
-  </header>
+  </div>
 
-  <!-- Sidebar Overlay (mobile) -->
-  <div class="sidebar-overlay" id="sidebar-overlay"></div>
-
-  <!-- Main Layout -->
   <div class="main-layout">
-    <!-- Sidebar -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
     <aside class="sidebar" id="sidebar"></aside>
-    <!-- Content Area -->
+
     <div class="content-area">
-      <!-- Timeline -->
       <div class="timeline-column">
         <div class="timeline" id="timeline"></div>
       </div>
-      <!-- Map Column (hidden by default) -->
+
       <div class="map-column" id="map-column" style="display:none">
-        <div class="map-panel">
-          <div class="map-title">🗾 勢力図 <span class="map-year-badge" id="map-year-badge"></span></div>
+        <div class="map-panel" id="map-panel">
+          <div class="map-title"><span id="map-title-text"></span> <span class="map-year-badge" id="map-year-badge"></span></div>
           <div class="map-container">
             <div class="map-grid" id="map-grid"></div>
             <div class="map-legend" id="map-legend"></div>
@@ -55,52 +49,49 @@
     </div>
   </div>
 
-  <!-- Event Detail Modal -->
+  <!-- Event Modal -->
   <div class="modal-overlay" id="event-modal">
     <div class="modal">
       <div class="modal-head">
         <div>
           <h2 id="em-title"></h2>
-          <div class="sub"><span id="em-year"></span> — <span id="em-location"></span></div>
+          <div class="sub"><span id="em-year"></span> ▸ <span id="em-location"></span></div>
         </div>
         <div class="modal-head-actions">
-          <span id="em-wiki-link"></span>
-          <button class="modal-close" id="em-close">&times;</button>
+          <div id="em-wiki-link"></div>
+          <button class="modal-close" id="em-close">✕</button>
         </div>
       </div>
-      <div class="modal-body">
-        <div class="modal-section"><h3>📖 史実の記録</h3><p id="em-desc"></p></div>
-        <div class="modal-section" id="em-trivia-section"><h3>📜 補足・豆知識</h3><div class="trivia-box"><p id="em-trivia"></p></div></div>
-        <div class="modal-section"><h3>👥 関連人物（クリックで詳細）</h3><div id="em-chars" class="event-chars"></div></div>
-      </div>
+      <div class="modal-section"><h3 id="em-desc-label"></h3><p id="em-desc"></p></div>
+      <div class="modal-section" id="em-trivia-section"><h3 id="em-trivia-label"></h3><div class="trivia-box"><p id="em-trivia"></p></div></div>
+      <div class="modal-section" id="em-diff-section"><h3 id="em-diff-label"></h3><div class="trivia-box"><p id="em-diff"></p></div></div>
+      <div class="modal-section"><h3 id="em-chars-label"></h3><div class="char-events-grid" id="em-chars"></div></div>
     </div>
   </div>
 
-  <!-- Character Detail Modal -->
+  <!-- Character Modal -->
   <div class="modal-overlay" id="char-modal">
     <div class="modal">
       <div class="modal-head">
         <div>
-          <h2 id="cm-name"></h2>
-          <div class="sub char-header-info">
+          <div class="char-header-info">
+            <h2 id="cm-name"></h2>
             <span id="cm-faction-tag" class="tag"></span>
-            <span id="cm-role"></span>
             <span class="char-life" id="cm-life"></span>
           </div>
           <div class="reading-line" id="cm-reading"></div>
+          <div class="sub" id="cm-role"></div>
         </div>
         <div class="modal-head-actions">
-          <span id="cm-wiki-link"></span>
-          <button class="modal-close" id="cm-close">&times;</button>
+          <div id="cm-wiki-link"></div>
+          <button class="modal-close" id="cm-close">✕</button>
         </div>
       </div>
-      <div class="modal-body">
-        <div class="modal-section"><h3>📖 人物伝</h3><p id="cm-desc"></p></div>
-        <div class="modal-section" id="cm-trivia-section"><h3>📜 補足・豆知識</h3><div class="trivia-box"><p id="cm-trivia"></p></div></div>
-        <div class="modal-section"><h3>📅 関連する出来事（クリックで詳細）</h3><div id="cm-events" class="char-events-grid"></div></div>
-      </div>
+      <div class="modal-section"><h3 id="cm-desc-label"></h3><p id="cm-desc"></p></div>
+      <div class="modal-section" id="cm-trivia-section"><h3 id="cm-trivia-label"></h3><div class="trivia-box"><p id="cm-trivia"></p></div></div>
+      <div class="modal-section"><h3 id="cm-events-label"></h3><div class="char-events-grid" id="cm-events"></div></div>
     </div>
   </div>
-  <script src="app.js?v=1.1"></script>
+  <script src="../shared/timeline-core.js?v=1"></script>
 </body>
 </html>

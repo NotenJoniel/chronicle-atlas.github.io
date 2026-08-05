@@ -3,8 +3,57 @@
   "title": "Chronicle Atlas Timeline Data",
   "description": "共通スキーマ定義 — 全タイムラインのデータ構造を統一する型定義",
   "type": "object",
-  "required": ["eraPhases", "factions", "categories", "characters", "events", "mapSnapshots", "wikiLinks"],
+  "required": ["meta", "eraPhases", "factions", "categories", "characters", "events", "mapSnapshots", "wikiLinks"],
   "properties": {
+    "meta": {
+      "type": "object",
+      "description": "表示用メタ情報。時代固有の文言・表示設定はすべてここに集約する（共通描画コードがタイムラインの存在を知らずに描けるようにするため）",
+      "required": ["title", "description", "headerTitle"],
+      "properties": {
+        "title": { "type": "string", "description": "<title>タグの内容" },
+        "description": { "type": "string", "description": "meta descriptionの内容" },
+        "headerIcon": { "type": "string", "description": "h1先頭の絵文字（任意）" },
+        "headerTitle": { "type": "string", "description": "h1の主題文言" },
+        "headerSubtitle": { "type": "string", "description": "h1右側のサブ文言（期間表示など、任意）" },
+        "searchPlaceholder": { "type": "string", "description": "検索ボックスのplaceholder（任意）" },
+        "mapTitleIcon": { "type": "string", "description": "勢力図パネル見出しの絵文字（任意）" },
+        "mapTitleLabel": { "type": "string", "default": "勢力図", "description": "勢力図パネルの見出し文言（任意）" },
+        "characterTitleLabel": { "type": "string", "default": "別名", "description": "人物モーダルの別名欄ラベル（字/別名/旧名等、任意）" },
+        "descLabel": { "type": "string", "default": "概要", "description": "出来事モーダルの説明文見出し（任意）" },
+        "charDescLabel": { "type": "string", "default": "人物紹介", "description": "人物モーダルの説明文見出し（任意）" },
+        "relatedCharsLabel": { "type": "string", "default": "関連人物", "description": "出来事モーダルの関連人物セクション見出し（任意）" },
+        "relatedEventsLabel": { "type": "string", "default": "関連する出来事", "description": "人物モーダルの関連出来事セクション見出し（任意）" },
+        "triviaLabel": { "type": "string", "default": "📖 エピソード", "description": "historyTriviaセクションの見出し（任意）" },
+        "historyDiffLabel": { "type": "string", "default": "📜 差分・豆知識", "description": "historyDiffセクションの見出し（任意機能）" },
+        "historyOnlyBadgeLabel": { "type": "string", "default": "正史", "description": "historyOnlyバッジの文言（任意機能）" },
+        "layoutStyle": {
+          "type": "string",
+          "enum": ["rail", "flat"],
+          "default": "flat",
+          "description": "タイムラインの見た目バリアント（railは左レール+ドット型、flatはフラットカード型）"
+        },
+        "mapColumnRules": {
+          "type": "array",
+          "description": "勢力図の領土数に応じた列数ルール（先頭から評価し、maxCount以下なら採用。未設定ならcatch-all。全体を省略した場合は既定値[{maxCount:4,cols:2},{maxCount:9,cols:3},{cols:4}]を使う）",
+          "items": {
+            "type": "object",
+            "required": ["cols"],
+            "properties": {
+              "maxCount": { "type": "integer", "description": "この列数を適用する領土数の上限（省略時はそれ以降すべてに適用するcatch-all）" },
+              "cols": { "type": "integer" }
+            }
+          }
+        },
+        "mapLayout": {
+          "type": "array",
+          "description": "固定グリッドで地図を描く場合の行×列配置（省略時は動的列数計算にフォールバック）",
+          "items": {
+            "type": "array",
+            "items": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
     "eraPhases": {
       "type": "array",
       "description": "時代区分（章立て）",
@@ -29,7 +78,9 @@
         "properties": {
           "id": { "type": "string", "description": "勢力ID（英小文字: qin, wei など）" },
           "name": { "type": "string", "description": "勢力名" },
-          "mapOnly": { "type": "boolean", "description": "地図の勢力図でのみ使用し、人物は所属しない疑似勢力（任意）" }
+          "mapOnly": { "type": "boolean", "description": "地図の勢力図でのみ使用し、人物は所属しない疑似勢力（任意）" },
+          "color": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$", "description": "勢力の基本色（例: #8B1A1A）" },
+          "colorLight": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$", "description": "勢力の明色（枠線・ドット等に使用、例: #CD5C5C）" }
         }
       }
     },
@@ -85,6 +136,8 @@
           "location": { "type": "string", "description": "発生場所" },
           "description": { "type": "string", "description": "出来事の説明文" },
           "historyTrivia": { "type": "string", "description": "エピソード・逸話（任意）" },
+          "historyDiff": { "type": "string", "description": "任意: 別の記述（演義と正史の差分等）に基づくトリビア。historyTriviaとは独立して共存できる" },
+          "historyOnly": { "type": "boolean", "description": "任意: 特定の典拠にのみ記載される出来事であることを示すバッジ表示フラグ" },
           "certainty": {
             "type": "string",
             "enum": ["confirmed", "disputed", "approximate"],

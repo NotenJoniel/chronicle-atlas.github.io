@@ -1,4 +1,21 @@
 {
+  "meta": {
+    "title": "漢王朝 史実クロニクルタイムライン (BC202年〜AD220年)",
+    "description": "前漢・新・後漢の約420年にわたる漢王朝の歴史をインタラクティブに探索。劉邦の建国から黄巾の乱まで、勢力図・人物図鑑・出来事を網羅するデータベース。",
+    "headerIcon": "🏯",
+    "headerTitle": "漢王朝",
+    "headerSubtitle": "BC202年〜AD220年",
+    "searchPlaceholder": "🔍 人物・出来事を検索…",
+    "mapTitleIcon": "🗺️",
+    "mapTitleLabel": "勢力図",
+    "characterTitleLabel": "別名",
+    "descLabel": "概要",
+    "charDescLabel": "人物紹介",
+    "relatedCharsLabel": "関連人物",
+    "relatedEventsLabel": "関連する出来事",
+    "triviaLabel": "📖 エピソード",
+    "layoutStyle": "flat"
+  },
   "eraPhases": [
     {
       "id": 1,
@@ -74,31 +91,45 @@
   "factions": {
     "han": {
       "id": "han",
-      "name": "漢（皇室）"
+      "name": "漢（皇室）",
+      "color": "#8B1A1A",
+      "colorLight": "#CD5C5C"
     },
     "xiongnu": {
       "id": "xiongnu",
-      "name": "匈奴"
+      "name": "匈奴",
+      "color": "#556B2F",
+      "colorLight": "#8FBB4F"
     },
     "xin": {
       "id": "xin",
-      "name": "新"
+      "name": "新",
+      "color": "#4A3A7A",
+      "colorLight": "#7A6AB0"
     },
     "rebels": {
       "id": "rebels",
-      "name": "反乱勢力"
+      "name": "反乱勢力",
+      "color": "#B8860B",
+      "colorLight": "#DAA520"
     },
     "warlords": {
       "id": "warlords",
-      "name": "群雄"
+      "name": "群雄",
+      "color": "#5A6072",
+      "colorLight": "#8A90A2"
     },
     "foreign": {
       "id": "foreign",
-      "name": "外国・西域"
+      "name": "外国・西域",
+      "color": "#2E6B57",
+      "colorLight": "#5FAF8F"
     },
     "vassal": {
       "id": "vassal",
-      "name": "諸侯王"
+      "name": "諸侯王",
+      "color": "#6B5A3A",
+      "colorLight": "#A09060"
     }
   },
   "categories": {
