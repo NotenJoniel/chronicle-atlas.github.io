@@ -90,7 +90,16 @@ data/
 - **方針**: 董卓・呂布・袁紹・袁術・劉表・公孫瓚をそれぞれ独立した `factions{}` エントリに昇格させ、人物データの `faction` 値も更新。サイドバーの勢力別セクション・勢力フィルタ・タグ色分けが自動的に個別表示されるようにする
 - **注意**: これは2026-08-05のG1/G2改修（`.agents/DESIGN.md` G1/G2）でスコープ外とした。地図専用の疑似勢力（`mapOnly:true`）としては既に `dongzhuo`/`ensho`/`liubiao`/`liuzhang` が `factions{}` に登録済みなので、そこから `mapOnly` を外して人物にも紐付ける形が実装の起点になる
 
-### 8. JavaScript描画によるSEO問題
+### 8. G2残項目：時代固有設定のデータ層移行（続き）
+- **現状**: 2026-08-05のG1/G2改修で `factionOrder`・凡例ラベル・初期表示年はデータ駆動化済み（`.agents/DESIGN.md` G2参照）。地図専用の疑似勢力（董卓・袁紹・劉表・劉璋・係争地）も `mapOnly:true` で `factions{}` に正式登録済み
+- **残っている項目**:
+  - **勢力の色**: 各 `styles.css` の `--roma` 等のCSS変数・`.map-roma` 等のクラス定義がハードコードのまま。`factions[].color` へのデータ化が未対応
+  - **three-kingdomsの地図レイアウト**: `three-kingdoms/app.js` の中国地図固定レイアウト配列（`MAP_LAYOUT`、5×4グリッド）が他6本の「件数から動的に列数計算」方式と異なる構造のまま
+  - **旧世代3本の静的フィルタボタン**: `warring-states`/`chu-han`/`three-kingdoms` の `index.html` は勢力・カテゴリフィルタボタンが静的ハードコード。新世代4本（`han-dynasty`/`sengoku-japan`/`roman-republic`/`roman-empire`）は `renderFactionFilters()`/`renderCategoryFilters()` で動的生成済みだが未統一
+- **方針**: G3（描画層の重複解消・`shared/timeline-core.js` への統合）着手時にまとめて対応する。7本の `app.js` が95%同一コードである状態を解消するタイミングで、色・地図レイアウト・フィルタボタン生成方式も同時に揃えるのが差分最小
+- **補足**: `validate.js` に `mapSnapshots[].territories[].faction` が `factions{}` に存在するかを検証するチェックを追加すると、今回発見したような疑似勢力の登録漏れを機械的に防げる（今回は実害を手動確認して `mapOnly` 登録で解消したが、再発防止策としては未実装）
+
+### 9. JavaScript描画によるSEO問題
 - **現状**: タイムラインの中身はJS描画のため、HTMLソースに含まれない
 - **影響**: 検索エンジンのクローラ、SNSカード生成、外部ツールからの参照で年表データが「無いもの」として扱われる
 - **対策案**:
@@ -167,6 +176,6 @@ data/
 
 ---
 
-*最終更新: 2026-08-04*
+*最終更新: 2026-08-05*
 
 

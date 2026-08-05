@@ -193,17 +193,19 @@ DUP char:  c_cleopatra   … 同上
 - `validate.js` に**横断重複チェックを追加済み**（`node data/validate.js` 実行時、`📋 Cross-file ID uniqueness` セクションに warning として出力される。境界年代の意図的な重複が正当なケースのため、エラーではなく警告扱い）。
 - **横串マージ時の名前空間化規約**: 横串ビュー等でタイムラインをマージする処理を実装する際は、キーを必ず `${timelineId}::${localId}`（例: `roman-empire::e_actium`）の形で名前空間化すること。個別ファイル内のIDはそのまま維持し、マージ層でのみ変換する。JSON内部のIDを `roman-empire/e_actium` のようにファイル側で書き換える必要はない。
 
-### 🔴 G2. 時代固有の設定をコードからデータへ
+### 🟠 G2. 時代固有の設定をコードからデータへ 【一部対応済み 2026-08-05】
 
 現在 `app.js` / `styles.css` に埋まっている「データであるべきもの」：
 
-| 埋まっているもの | 現状の場所 | あるべき場所 |
-|---|---|---|
-| 勢力の表示順 `factionOrder` | 各 `app.js` に配列直書き | `factions[].order` |
-| 勢力図の凡例ラベル | 各 `app.js` に配列直書き | `factions[].name` を使う |
-| 勢力の色（`.map-roma` 等） | 各 `styles.css` にクラス定義 | `factions[].color` |
-| 初期表示年 `renderMap(-200)` | 各 `app.js` に直書き | `mapSnapshots[0].year` から導出 |
+| 埋まっているもの | 現状の場所 | あるべき場所 | 状態 |
+|---|---|---|---|
+| 勢力の表示順 `factionOrder` | 各 `app.js` に配列直書き | `factions{}` のJSON宣言順から導出 | ✅ 対応済み |
+| 勢力図の凡例ラベル | 各 `app.js` に配列直書き | `factions[].name` を使う | ✅ 対応済み |
+| 初期表示年 `renderMap(-200)` | 各 `app.js` に直書き | `mapSnapshots[0].year` から導出 | ✅ 対応済み |
+| 勢力の色（`.map-roma` 等） | 各 `styles.css` にクラス定義 | `factions[].color` | ⬜ 未対応（G3で扱う） |
 
+- 併せて、地図専用の疑似勢力（董卓・袁紹・劉表・劉璋・係争地など、人物には紐付かず地図上のみで使われる勢力）を `mapOnly:true` フラグ付きで `factions{}` に正式登録し、凡例から消える回帰を防止した。
+- **残タスク**: 色のデータ化に加えて、`three-kingdoms/app.js` の地図固定レイアウト配列（`MAP_LAYOUT`）と、旧世代3本（warring-states/chu-han/three-kingdoms）の `index.html` 静的フィルタボタンも「時代固有値のコード直書き」として残っている。詳細は `.agents/BACKLOG.md` の該当項目を参照。G3着手時にまとめて解消する。
 - **これを済ませると、③の問い（時代を知らないコードで描けるか）がYESになる。**
 
 ### 🟠 G3. 描画層の重複解消
