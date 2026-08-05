@@ -64,11 +64,21 @@ body{background:var(--bg)}
    cmp-header(列見出し)は position:sticky で常時表示させたいが、水平スクロール用の
    overflow-x:auto を持つ祖先の中では sticky が機能しない（CSS仕様）。そのため
    ヘッダーとグリッド本体を別々のコンテナに分離し、水平スクロールはJSで同期する。 */
-.compare-wrapper{padding:0 20px 60px}
+.compare-wrapper{padding:0 20px 20px}
 .cmp-header{display:flex;position:sticky;top:142px;z-index:50;background:rgba(13,15,20,.97);backdrop-filter:blur(8px);border-bottom:2px solid var(--border-subtle);overflow-x:hidden}
-.cmp-grid-scroll{overflow-x:auto}
+/* cmp-grid-scroll 自身を「縦横ともスクロールする、画面内に収まる領域」にする。
+   こうしないと横スクロールバーがコンテンツ最下部（1万px超）にしか現れず、実質使えない。
+   縦スクロールはページ全体ではなくこの領域内で完結し、上部のsticky群の高さ(142px)を引いた
+   残り画面いっぱいを使う。 */
+.cmp-grid-scroll{overflow:auto;max-height:calc(100vh - 142px);border-bottom:1px solid var(--border-subtle)}
+/* スクロールバーを太く・掴みやすくする（デフォルトの6pxは細すぎてマウスで選択しづらいとの指摘） */
+.cmp-grid-scroll{scrollbar-width:auto;scrollbar-color:var(--surface-3) var(--bg)}
+.cmp-grid-scroll::-webkit-scrollbar{width:16px;height:16px}
+.cmp-grid-scroll::-webkit-scrollbar-track{background:var(--bg)}
+.cmp-grid-scroll::-webkit-scrollbar-thumb{background:var(--surface-3);border-radius:8px;border:3px solid var(--bg)}
+.cmp-grid-scroll::-webkit-scrollbar-thumb:hover{background:var(--gold-dim)}
 .cmp-year-label{width:70px;min-width:70px;padding:10px 6px;text-align:center;font-size:.78rem;color:var(--gold);font-weight:700;border-right:1px solid var(--border-subtle)}
-.cmp-region-name{width:380px;min-width:380px;padding:10px 14px;border-right:1px solid var(--border-subtle)}
+.cmp-region-name{width:460px;min-width:460px;padding:10px 14px;border-right:1px solid var(--border-subtle)}
 .cmp-region-name .rn-title{font-weight:700;font-size:.95rem;color:var(--text)}
 .cmp-region-name .rn-sub{font-size:.72rem;color:var(--text-dim);margin-top:2px}
 .cmp-region-name select{margin-top:6px;width:100%;background:var(--surface-2);border:1px solid var(--border-subtle);color:var(--text);padding:3px 8px;border-radius:4px;font-size:.76rem}
@@ -78,16 +88,16 @@ body{background:var(--bg)}
 .cmp-year-mark{position:absolute;right:8px;transform:translateY(-50%);font-size:.7rem;color:var(--text-dim);white-space:nowrap}
 .cmp-year-mark.century{color:var(--gold);font-weight:600}
 
-.cmp-col{width:380px;min-width:380px;position:relative;border-right:1px solid var(--border-subtle)}
+.cmp-col{width:460px;min-width:460px;position:relative;border-right:1px solid var(--border-subtle)}
 .cmp-out-of-range{position:absolute;left:0;right:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.015),rgba(255,255,255,.015) 8px,transparent 8px,transparent 16px);pointer-events:none}
 .cmp-overlap-band{position:absolute;left:0;right:0;background:rgba(201,168,76,.06);border-top:1px dashed var(--gold-dim);border-bottom:1px dashed var(--gold-dim);pointer-events:none;z-index:1}
 
 /* left/width はレーン数に応じてJSがインラインstyleで設定する（同時期に重なる出来事を横並びにするため） */
-.cmp-card{position:absolute;background:var(--surface);border:1px solid var(--border-subtle);border-left:3px solid var(--gold);border-radius:6px;padding:5px 8px;cursor:pointer;transition:border-color .15s,box-shadow .15s;overflow:hidden}
+.cmp-card{position:absolute;background:var(--surface);border:1px solid var(--border-subtle);border-left:3px solid var(--gold);border-radius:6px;padding:6px 9px;cursor:pointer;transition:border-color .15s,box-shadow .15s;overflow:hidden}
 .cmp-card:hover{border-color:var(--gold);box-shadow:0 0 10px rgba(201,168,76,.15);z-index:5}
-.cmp-card .cc-top{display:flex;align-items:center;gap:5px;font-size:.66rem;color:var(--text-dim)}
+.cmp-card .cc-top{display:flex;align-items:center;gap:5px;font-size:.7rem;color:var(--text-dim)}
 .cmp-card .cc-year{font-weight:700;color:var(--gold)}
-.cmp-card .cc-title{font-size:.82rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+.cmp-card .cc-title{font-size:.86rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}
 .cmp-card.dimmed{opacity:.2;pointer-events:none}
 
 .cmp-grid-line{position:absolute;left:0;right:0;height:1px;background:rgba(255,255,255,.03);pointer-events:none;z-index:0}
@@ -95,7 +105,7 @@ body{background:var(--bg)}
 
 /* ═══ Responsive ═══ */
 @media(max-width:768px){
-  .cmp-region-name,.cmp-col{width:300px;min-width:300px}
+  .cmp-region-name,.cmp-col{width:340px;min-width:340px}
   .header-row h1{font-size:1.05rem}
   .selection-screen{padding:0 14px 40px}
 }

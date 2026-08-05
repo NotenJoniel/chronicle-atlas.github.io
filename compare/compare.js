@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function computePxPerYear(spanYears) {
-    const MIN_PX = 0.6, MAX_PX = 12, TARGET_TOTAL_PX = 6000;
+    const MIN_PX = 0.8, MAX_PX = 22, TARGET_TOTAL_PX = 12000;
     return Math.min(MAX_PX, Math.max(MIN_PX, TARGET_TOTAL_PX / spanYears));
   }
 
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return 1000;
   }
 
-  const CARD_HEIGHT = 46, CARD_GAP = 5, MAX_LANES = 4;
+  const CARD_HEIGHT = 54, CARD_GAP = 6, MAX_LANES = 4;
 
   // 同時期に重なる出来事はカレンダーアプリの予定と同じ発想で「横に並べる」ことで
   // 縦位置のズレ(実際の年からどんどん下にずれていく現象)が起きないようにする。
@@ -164,11 +164,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (axis.hasOverlap) {
       requestAnimationFrame(() => {
-        const wrapper = document.getElementById('compare-wrapper');
+        const scrollEl = document.getElementById('cmp-grid-scroll');
         const midY = yearToY((axis.overlapStart + axis.overlapEnd) / 2);
-        const headerH = document.getElementById('cmp-header').offsetHeight;
-        wrapper.scrollTop = 0;
-        window.scrollTo({ top: wrapper.getBoundingClientRect().top + window.scrollY + midY - 200, behavior: 'instant' });
+        scrollEl.scrollTop = Math.max(0, midY - scrollEl.clientHeight / 2);
       });
     }
   }
