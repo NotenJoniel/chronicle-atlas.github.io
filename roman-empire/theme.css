@@ -1,0 +1,6 @@
+/* ローマ帝国 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#0f0d14;--surface:#1a1722;--surface-2:#221f2c;--surface-3:#2e2a38;
+  --border-subtle:rgba(180,160,200,.12);--text:#e8e2f0;--text-dim:#9a93a8;
+  --gold:#c9a84c;--gold-dim:rgba(201,168,76,.18);
+}
