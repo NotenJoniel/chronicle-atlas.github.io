@@ -147,13 +147,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const overlapEnd = Math.min(...timelines.map(t => t.meta.endYear));
     const hasOverlap = overlapStart < overlapEnd;
     const spanYears = Math.max(1, unionEnd - unionStart);
-    const pxPerYear = computePxPerYear(spanYears);
+    // 選択範囲全体の長さから決まる基準スケールと、個々のタイムライン内の
+    // 局所的な密集度から必要になる最低スケールの、大きい方を採用する。
+    // 全体スパンだけで決めると(例: ローマ帝国のような長期間のものと組み合わせた場合)
+    // 戦国日本のような短期間に出来事が密集するタイムラインが過剰に圧縮されてしまうため。
+    const pxPerYear = Math.max(computePxPerYear(spanYears), computeDensityPxPerYear(timelines));
     return { unionStart, unionEnd, overlapStart, overlapEnd, hasOverlap, spanYears, pxPerYear };
   }
 
   function computePxPerYear(spanYears) {
-    const MIN_PX = 0.8, MAX_PX = 22, TARGET_TOTAL_PX = 12000;
+    const MIN_PX = 0.8, MAX_PX = 24, TARGET_TOTAL_PX = 12000;
     return Math.min(MAX_PX, Math.max(MIN_PX, TARGET_TOTAL_PX / spanYears));
+  }
+
+  // 各タイムラインの出来事を実際にレーン配置してみて、大半のカードが単独レーンに
+  // 収まるスケールを二分探索で求める(同一年に複数件が重なる真の密集ピークは
+  // スケールを上げても解消しないので、そこだけはレーンで吸収させれば十分)。
+  function computeDensityPxPerYear(timelines) {
+    const DENSITY_MAX_PX = 48, OVERFLOW_TARGET = 0.2;
+    let needed = 0;
+    for (const t of timelines) {
+      if (t.events.length < 2) continue;
+      let lo = 0.5, hi = DENSITY_MAX_PX;
+      for (let i = 0; i < 14; i++) {
+        const mid = (lo + hi) / 2;
+        const { laid } = layoutCards(t.events, y => y * mid);
+        const overflowRatio = laid.filter(c => c.lane > 0).length / laid.length;
+        if (overflowRatio > OVERFLOW_TARGET) lo = mid; else hi = mid;
+      }
+      needed = Math.max(needed, hi);
+    }
+    return needed;
   }
 
   function computeYearStep(spanYears) {
@@ -162,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return 1000;
   }
 
-  const CARD_HEIGHT = 54, CARD_GAP = 6, MAX_LANES = 4;
+  const CARD_HEIGHT = 58, CARD_GAP = 8, MAX_LANES = 4;
 
   // 同時期に重なる出来事はカレンダーアプリの予定と同じ発想で「横に並べる」ことで
   // 縦位置のズレ(実際の年からどんどん下にずれていく現象)が起きないようにする。
