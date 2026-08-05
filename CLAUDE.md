@@ -19,6 +19,14 @@
 - データ変更後は必ず `node data/validate.js` で **0 errors** を確認する
 - 時代固有の値をコードに直書きしない（「他の時代では違う値になるもの」はすべてデータ層）
 
+## ローカルでブラウザ確認する
+
+静的サイトだが `fetch` でJSONを読むため `file://` では動かない。ローカルHTTPサーバーが必要。
+
+- **起動**: `tools\serve.bat` をダブルクリック（または実行）→ ブラウザが自動で `http://localhost:8420/index.html` を開く
+- **停止**: `tools\stop-serve.bat` を実行、またはサーバーのコンソールウィンドウを閉じる / Ctrl+C
+- ポートを変えたい場合は引数で指定可（例: `tools\serve.bat 8080`）。`stop-serve.bat` も同じポート番号を渡すこと
+
 ## Git運用（必須）
 
 `main` = 本番デプロイ（GitHub Pages）
