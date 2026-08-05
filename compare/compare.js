@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const selectionList = document.getElementById('selection-list');
   const btnStart = document.getElementById('btn-start-compare');
 
-  const MIN_SEL = 2, MAX_SEL = 3;
+  const MIN_SEL = 2, MAX_SEL = 4;
   let selected = new Set();
   let allMetaList = [];
   const loadedCache = {}; // id -> loaded timeline object (avoids re-fetching on add/remove)
@@ -118,16 +118,31 @@ document.addEventListener('DOMContentLoaded', () => {
     return 1000;
   }
 
-  const CARD_HEIGHT = 50, CARD_GAP = 6;
+  const CARD_HEIGHT = 46, CARD_GAP = 5, MAX_LANES = 4;
 
+  // 同時期に重なる出来事はカレンダーアプリの予定と同じ発想で「横に並べる」ことで
+  // 縦位置のズレ(実際の年からどんどん下にずれていく現象)が起きないようにする。
+  // 各レーンは「そのレーンで最後に置いたカードの下端」を覚えておき、置けるレーンが
+  // 無ければ新しいレーンを増やす(上限MAX_LANESまで)。それでも足りない極端な密集は
+  // 最も早く空くレーンに詰める(そのケースのみ真の年から多少ズレうる)。
   function layoutCards(events, yearToY) {
-    let cursorBottom = -Infinity;
-    return events.map(ev => {
+    const laneBottoms = [];
+    const laid = events.map(ev => {
       const idealTop = yearToY(ev.year);
-      const top = Math.max(idealTop, cursorBottom + CARD_GAP);
-      cursorBottom = top + CARD_HEIGHT;
-      return { ev, top, idealTop, offset: top - idealTop };
+      let lane = laneBottoms.findIndex(bottom => bottom + CARD_GAP <= idealTop);
+      if (lane === -1) {
+        if (laneBottoms.length < MAX_LANES) {
+          lane = laneBottoms.length;
+          laneBottoms.push(-Infinity);
+        } else {
+          lane = laneBottoms.indexOf(Math.min(...laneBottoms));
+        }
+      }
+      const top = Math.max(idealTop, laneBottoms[lane] + CARD_GAP);
+      laneBottoms[lane] = top + CARD_HEIGHT;
+      return { ev, top, idealTop, lane };
     });
+    return { laid, laneCount: Math.max(1, laneBottoms.length) };
   }
 
   // ─── Render compare view ───
@@ -327,11 +342,11 @@ document.addEventListener('DOMContentLoaded', () => {
       rn.appendChild(sel);
       header.appendChild(rn);
 
-      // laid-out cards
-      const laid = layoutCards(t.events, yearToY);
+      // laid-out cards (レーン式: 同時期の重なりは横並びにするため縦のズレが生じない)
+      const { laid, laneCount } = layoutCards(t.events, yearToY);
       const localBottom = laid.length ? Math.max(...laid.map(l => l.top + CARD_HEIGHT)) : 0;
       maxBottom = Math.max(maxBottom, localBottom);
-      columnLayouts.push({ t, laid });
+      columnLayouts.push({ t, laid, laneCount });
     });
 
     const totalPx = maxBottom + 20;
@@ -357,7 +372,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // columns
-    columnLayouts.forEach(({ t, laid }) => {
+    columnLayouts.forEach(({ t, laid, laneCount }) => {
       const col = mkEl('div', 'cmp-col');
       col.style.height = totalPx + 'px';
 
@@ -375,9 +390,12 @@ document.addEventListener('DOMContentLoaded', () => {
         col.appendChild(band);
       }
 
-      laid.forEach(({ ev, top, offset }) => {
+      const laneWidthPct = 100 / laneCount;
+      laid.forEach(({ ev, top, lane }) => {
         const card = mkEl('div', 'cmp-card');
         card.style.top = top + 'px';
+        card.style.left = `calc(${lane * laneWidthPct}% + 4px)`;
+        card.style.width = `calc(${laneWidthPct}% - 8px)`;
         card.dataset.timeline = t.id;
         card.dataset.category = ev.category;
         card.dataset.eventId = ev.id;
@@ -398,14 +416,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         card.onclick = () => openEventModal(t, ev);
         col.appendChild(card);
-
-        if (Math.abs(offset) > 8) {
-          const conn = mkEl('div', 'cmp-connector');
-          const connTop = Math.min(top, top - offset);
-          conn.style.top = connTop + 'px';
-          conn.style.height = Math.abs(offset) + 'px';
-          col.appendChild(conn);
-        }
       });
 
       grid.appendChild(col);

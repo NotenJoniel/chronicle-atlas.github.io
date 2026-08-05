@@ -82,14 +82,13 @@ body{background:var(--bg)}
 .cmp-out-of-range{position:absolute;left:0;right:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.015),rgba(255,255,255,.015) 8px,transparent 8px,transparent 16px);pointer-events:none}
 .cmp-overlap-band{position:absolute;left:0;right:0;background:rgba(201,168,76,.06);border-top:1px dashed var(--gold-dim);border-bottom:1px dashed var(--gold-dim);pointer-events:none;z-index:1}
 
-.cmp-card{position:absolute;left:8px;right:8px;background:var(--surface);border:1px solid var(--border-subtle);border-left:3px solid var(--gold);border-radius:6px;padding:6px 10px;cursor:pointer;transition:border-color .15s,box-shadow .15s;overflow:hidden}
-.cmp-card:hover{border-color:var(--gold);box-shadow:0 0 10px rgba(201,168,76,.15)}
-.cmp-card .cc-top{display:flex;align-items:center;gap:5px;font-size:.68rem;color:var(--text-dim)}
+/* left/width はレーン数に応じてJSがインラインstyleで設定する（同時期に重なる出来事を横並びにするため） */
+.cmp-card{position:absolute;background:var(--surface);border:1px solid var(--border-subtle);border-left:3px solid var(--gold);border-radius:6px;padding:5px 8px;cursor:pointer;transition:border-color .15s,box-shadow .15s;overflow:hidden}
+.cmp-card:hover{border-color:var(--gold);box-shadow:0 0 10px rgba(201,168,76,.15);z-index:5}
+.cmp-card .cc-top{display:flex;align-items:center;gap:5px;font-size:.66rem;color:var(--text-dim)}
 .cmp-card .cc-year{font-weight:700;color:var(--gold)}
-.cmp-card .cc-title{font-size:.85rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+.cmp-card .cc-title{font-size:.82rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
 .cmp-card.dimmed{opacity:.2;pointer-events:none}
-
-.cmp-connector{position:absolute;left:0;width:8px;border-left:1px dashed rgba(201,168,76,.4);pointer-events:none}
 
 .cmp-grid-line{position:absolute;left:0;right:0;height:1px;background:rgba(255,255,255,.03);pointer-events:none;z-index:0}
 .cmp-grid-line.major{background:rgba(201,168,76,.08)}
