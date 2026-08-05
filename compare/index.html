@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>同時代比較 — Chronicle Atlas</title>
+  <meta name="description" content="複数の文明・時代を同じ年表軸に並べて、同時代に何が起きていたかを比較する。">
+  <link rel="stylesheet" href="../shared/timeline-core.css?v=1">
+  <link rel="stylesheet" href="compare.css?v=1">
+</head>
+<body>
+  <div class="sticky-header">
+    <div class="header-row">
+      <a href="../" class="back-to-atlas">← Atlas</a>
+      <h1>🔀 同時代比較</h1>
+    </div>
+  </div>
+
+  <!-- Selection screen -->
+  <div id="selection-screen" class="selection-screen">
+    <p class="selection-intro">比較したいタイムラインを<strong>2〜4個</strong>選んでください。同じ年表軸の上に並べて、同時代に何が起きていたかを見比べられます。</p>
+    <div id="selection-list" class="selection-list"></div>
+    <button id="btn-start-compare" class="btn-primary" disabled>比較する</button>
+  </div>
+
+  <!-- Compare view -->
+  <div id="compare-view" class="compare-view" style="display:none">
+    <div class="compare-toolbar">
+      <a href="index.html" id="btn-back-to-selection" class="back-link">← 選び直す</a>
+      <div id="category-filters" class="compare-category-filters"></div>
+      <div class="compare-search-box">
+        <input type="text" id="compare-search" placeholder="🔍 出来事・人物を検索…">
+      </div>
+    </div>
+    <div class="chips-row">
+      <span class="chips-label">比較中:</span>
+      <div id="selected-chips" class="selected-chips"></div>
+      <div id="add-picker" class="add-picker" style="display:none"></div>
+    </div>
+    <div id="overlap-banner" class="overlap-banner" style="display:none"></div>
+    <div class="compare-wrapper" id="compare-wrapper">
+      <div class="cmp-header" id="cmp-header"></div>
+      <div class="cmp-grid-scroll" id="cmp-grid-scroll">
+        <div class="cmp-grid" id="cmp-grid"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Event Modal (shared/timeline-core.css classes reused) -->
+  <div class="modal-overlay" id="event-modal">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <h2 id="em-title"></h2>
+          <div class="sub"><span id="em-timeline-badge"></span> ▸ <span id="em-year"></span> ▸ <span id="em-location"></span></div>
+        </div>
+        <div class="modal-head-actions">
+          <div id="em-wiki-link"></div>
+          <a id="em-view-link" class="wiki-link" target="_blank" rel="noopener">元の年表で見る</a>
+          <button class="modal-close" id="em-close">✕</button>
+        </div>
+      </div>
+      <div class="modal-section"><h3>概要</h3><p id="em-desc"></p></div>
+      <div class="modal-section" id="em-trivia-section"><h3>📖 エピソード</h3><div class="trivia-box"><p id="em-trivia"></p></div></div>
+      <div class="modal-section"><h3>関連人物（クリックで詳細）</h3><div class="char-events-grid" id="em-chars"></div></div>
+    </div>
+  </div>
+
+  <!-- Character Modal -->
+  <div class="modal-overlay" id="char-modal">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <div class="char-header-info">
+            <h2 id="cm-name"></h2>
+            <span id="cm-faction-tag" class="tag"></span>
+            <span class="char-life" id="cm-life"></span>
+          </div>
+          <div class="reading-line" id="cm-reading"></div>
+          <div class="sub" id="cm-role"></div>
+        </div>
+        <div class="modal-head-actions">
+          <div id="cm-wiki-link"></div>
+          <button class="modal-close" id="cm-close">✕</button>
+        </div>
+      </div>
+      <div class="modal-section"><h3>人物紹介</h3><p id="cm-desc"></p></div>
+      <div class="modal-section" id="cm-trivia-section"><h3>📖 エピソード</h3><div class="trivia-box"><p id="cm-trivia"></p></div></div>
+      <div class="modal-section"><h3>関連する出来事（クリックで詳細）</h3><div class="char-events-grid" id="cm-events"></div></div>
+    </div>
+  </div>
+
+  <script src="compare.js?v=1"></script>
+</body>
+</html>

@@ -111,6 +111,20 @@ document.addEventListener('DOMContentLoaded', () => {
       state.sidebarVisible = false;
       $('btn-toggle-sidebar').classList.remove('active');
     }
+    handleDeepLink();
+  }
+
+  // ─── Deep link (#e_xxx / #c_xxx) ───
+  // 比較ビュー等の外部ページから特定の出来事/人物へ直接リンクするためのオプトイン機能。
+  // ハッシュが無ければ何もしないため、通常アクセスには一切影響しない。
+  function handleDeepLink() {
+    const hash = location.hash.slice(1);
+    if (!hash) return;
+    if (hash.startsWith('e_') && D.EVENTS.some(e => e.id === hash)) {
+      openEventModal(hash);
+    } else if (hash.startsWith('c_') && D.CHARACTERS.some(c => c.id === hash)) {
+      openCharModal(hash);
+    }
   }
 
   function setModalLabels() {
