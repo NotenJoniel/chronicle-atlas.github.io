@@ -147,13 +147,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const overlapEnd = Math.min(...timelines.map(t => t.meta.endYear));
     const hasOverlap = overlapStart < overlapEnd;
     const spanYears = Math.max(1, unionEnd - unionStart);
-    const pxPerYear = computePxPerYear(spanYears);
+    // 選択範囲全体の長さから決まる基準スケールと、個々のタイムライン内の
+    // 局所的な密集度から必要になる最低スケールの、大きい方を採用する。
+    // 全体スパンだけで決めると(例: ローマ帝国のような長期間のものと組み合わせた場合)
+    // 戦国日本のような短期間に出来事が密集するタイムラインが過剰に圧縮されてしまうため。
+    const pxPerYear = Math.max(computePxPerYear(spanYears), computeDensityPxPerYear(timelines));
     return { unionStart, unionEnd, overlapStart, overlapEnd, hasOverlap, spanYears, pxPerYear };
   }
 
   function computePxPerYear(spanYears) {
-    const MIN_PX = 0.8, MAX_PX = 22, TARGET_TOTAL_PX = 12000;
+    const MIN_PX = 0.8, MAX_PX = 24, TARGET_TOTAL_PX = 12000;
     return Math.min(MAX_PX, Math.max(MIN_PX, TARGET_TOTAL_PX / spanYears));
+  }
+
+  // 各タイムラインの出来事を実際にレーン配置してみて、大半のカードが単独レーンに
+  // 収まるスケールを二分探索で求める(同一年に複数件が重なる真の密集ピークは
+  // スケールを上げても解消しないので、そこだけはレーンで吸収させれば十分)。
+  function computeDensityPxPerYear(timelines) {
+    const DENSITY_MAX_PX = 48, OVERFLOW_TARGET = 0.2;
+    let needed = 0;
+    for (const t of timelines) {
+      if (t.events.length < 2) continue;
+      let lo = 0.5, hi = DENSITY_MAX_PX;
+      for (let i = 0; i < 14; i++) {
+        const mid = (lo + hi) / 2;
+        const { laid } = layoutCards(t.events, y => y * mid);
+        const overflowRatio = laid.filter(c => c.lane > 0).length / laid.length;
+        if (overflowRatio > OVERFLOW_TARGET) lo = mid; else hi = mid;
+      }
+      needed = Math.max(needed, hi);
+    }
+    return needed;
   }
 
   function computeYearStep(spanYears) {
@@ -162,17 +186,34 @@ document.addEventListener('DOMContentLoaded', () => {
     return 1000;
   }
 
-  const CARD_HEIGHT = 54, CARD_GAP = 6, MAX_LANES = 4;
+  const CARD_HEIGHT = 58, CARD_GAP = 8, MAX_LANES = 4;
 
   // 同時期に重なる出来事はカレンダーアプリの予定と同じ発想で「横に並べる」ことで
   // 縦位置のズレ(実際の年からどんどん下にずれていく現象)が起きないようにする。
   // 各レーンは「そのレーンで最後に置いたカードの下端」を覚えておき、置けるレーンが
   // 無ければ新しいレーンを増やす(上限MAX_LANESまで)。それでも足りない極端な密集は
-  // 最も早く空くレーンに詰める(そのケースのみ真の年から多少ズレうる)。
+  // 最も早く空くレーンに詰める(そのケースのみ真の年からズレうる)。
+  //
+  // カード幅は列全体で一律のレーン数で割るのではなく、実際に重なっている
+  // グループ(クラスタ)単位でローカルに計算する(カレンダーアプリの重なり
+  // 表示と同じ考え方)。そうしないと、離れた場所で4レーン必要になった影響で
+  // 実際は1件しかないカードまで幅1/4に狭められてしまう。
   function layoutCards(events, yearToY) {
     const laneBottoms = [];
-    const laid = events.map(ev => {
+    const laid = [];
+    const clusters = [];
+    let clusterStart = 0;
+
+    events.forEach(ev => {
       const idealTop = yearToY(ev.year);
+      // 現在追跡中のどのレーンもこのカードより上で完結していれば、直前までの
+      // 重なりグループは終了している → 新しいクラスタとしてレーン数をリセット
+      if (laneBottoms.length > 0 && Math.max(...laneBottoms) + CARD_GAP <= idealTop) {
+        clusters.push({ start: clusterStart, end: laid.length, laneCount: laneBottoms.length });
+        laneBottoms.length = 0;
+        clusterStart = laid.length;
+      }
+
       let lane = laneBottoms.findIndex(bottom => bottom + CARD_GAP <= idealTop);
       if (lane === -1) {
         if (laneBottoms.length < MAX_LANES) {
@@ -184,9 +225,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       const top = Math.max(idealTop, laneBottoms[lane] + CARD_GAP);
       laneBottoms[lane] = top + CARD_HEIGHT;
-      return { ev, top, idealTop, lane };
+      laid.push({ ev, top, idealTop, lane });
     });
-    return { laid, laneCount: Math.max(1, laneBottoms.length) };
+    if (laneBottoms.length > 0) clusters.push({ start: clusterStart, end: laid.length, laneCount: laneBottoms.length });
+
+    clusters.forEach(c => {
+      for (let i = c.start; i < c.end; i++) laid[i].clusterLaneCount = c.laneCount;
+    });
+
+    const laneCount = Math.max(1, ...clusters.map(c => c.laneCount));
+    return { laid, laneCount };
   }
 
   // ─── Render compare view ───
@@ -414,7 +462,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // columns
-    columnLayouts.forEach(({ t, laid, laneCount }) => {
+    columnLayouts.forEach(({ t, laid }) => {
       const col = mkEl('div', 'cmp-col');
       col.style.height = totalPx + 'px';
 
@@ -432,9 +480,9 @@ document.addEventListener('DOMContentLoaded', () => {
         col.appendChild(band);
       }
 
-      const laneWidthPct = 100 / laneCount;
-      laid.forEach(({ ev, top, lane }) => {
+      laid.forEach(({ ev, top, lane, clusterLaneCount }) => {
         const card = mkEl('div', 'cmp-card');
+        const laneWidthPct = 100 / clusterLaneCount;
         card.style.top = top + 'px';
         card.style.left = `calc(${lane * laneWidthPct}% + 4px)`;
         card.style.width = `calc(${laneWidthPct}% - 8px)`;
