@@ -1,0 +1,6 @@
+/* 漢王朝 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#0d0f14;--surface:#171a22;--surface-2:#1f222c;--surface-3:#2a2e38;
+  --border-subtle:rgba(200,170,120,.12);--text:#e8e4d8;--text-dim:#a09888;
+  --gold:#c9a84c;--gold-dim:rgba(201,168,76,.18);
+}
