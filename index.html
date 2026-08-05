@@ -68,12 +68,19 @@
       position:absolute;left:22px;right:5px;
       border-radius:5px;
       display:flex;flex-direction:column;justify-content:center;align-items:center;
-      overflow:hidden;cursor:default;
+      cursor:default;
       transition:all .2s ease;
       z-index:2;
       border:1px solid rgba(255,255,255,.08);
       min-height:18px;
     }
+    /* compact(短期間)ブロックはラベルがブロック自身(=labelWrap)なので、
+       ここだけ overflow:hidden で縦書きテキストのはみ出しをクリップする。
+       非compactブロックは overflow:hidden を持たせると、子の .era-block-label が
+       position:sticky で追従しなくなる(overflow:hidden な祖先はスクロールコンテナ
+       とみなされ、実際にはスクロールしないその祖先を基準にオフセット計算されて
+       しまうため)ので、あえて付けない。 */
+    .era-block.compact{overflow:hidden}
     .era-block::after{
       content:'';position:absolute;inset:0;
       background:linear-gradient(180deg,rgba(255,255,255,.06) 0%,transparent 40%,rgba(0,0,0,.15) 100%);
@@ -99,6 +106,18 @@
     @keyframes linkedPulse{
       0%,100%{box-shadow:0 0 8px rgba(196,165,90,.15)}
       50%{box-shadow:0 0 18px rgba(196,165,90,.3)}
+    }
+    /* ブロックが画面より縦に長い場合でも、範囲内にいる間はラベル一式が
+       ヘッダー直下に貼り付いて常に見えるようにする(中央までスクロールしないと
+       時代名が見えない問題への対応)。短いブロックでは通常時とほぼ同じ見た目。
+       .wt-wrapper が横スクロール対応で overflow-x:auto を持っており、それだけで
+       スクロールコンテナ扱いになって position:sticky が効かなくなるため、
+       ここは position:absolute + JSでのスクロール追従(updateEraLabelPositions)
+       で同等の見た目を実現している。 */
+    .era-block-label{
+      position:absolute;top:0;left:0;right:0;
+      display:flex;flex-direction:column;align-items:center;
+      padding:6px 4px;
     }
     .era-block .era-name{
       font-weight:700;text-align:center;line-height:1.2;
@@ -277,6 +296,9 @@
       link:'./sengoku-japan/', linked:true },
 
     // ─── ヨーロッパ ───
+    { region:'europe', name:'古代ギリシア', start:-800, end:-323, color:'#2e5a8a',
+      link:'./ancient-greece/', linked:true,
+      note:'🏺 ポリスの成立からアレクサンドロス即位まで。ペルシア戦争、ペロポネソス戦争、アテナイとスパルタの覇権争い。' },
     { region:'europe', name:'共和政ローマ', start:-509, end:-27, color:'#6a3a3a',
       link:'./roman-republic/', linked:true,
       note:'ポエニ戦争、グラックス兄弟、カエサル。共和政の理想と崩壊。' },
@@ -342,15 +364,38 @@
   const header = document.getElementById('wt-header');
   const tooltip = document.getElementById('tooltip');
   const navHint = document.getElementById('nav-hint');
+  const eraLabelEntries = []; // { block, label } — 縦長ブロックのラベルをスクロール追従させる対象
 
   function render() {
     grid.style.height = TOTAL_PX + 'px';
+    eraLabelEntries.length = 0;
     renderHeader();
     renderYearColumn();
     renderRegionColumns();
     renderGridLines();
     renderNavHint();
+    updateEraLabelPositions();
   }
+
+  // ブロックが画面より縦に長い時代でも、範囲内にいる間はラベル一式(名前・年代・
+  // リンク案内)が画面上部付近に留まって見えるようにする(中央までスクロールしないと
+  // 時代名が見えない問題への対応)。position:sticky で実現できないのは、
+  // .wt-wrapper が横スクロール対応の overflow-x:auto を持つせいでスクロール
+  // コンテナ扱いになり、sticky の基準がウィンドウではなくその(実際にはスクロール
+  // しない)要素になってしまうため。
+  // 注: .wt-region-header 自身も同じ理由で sticky が効いていない(別問題)ため、
+  // ここではヘッダーの「実際の表示位置」ではなく「高さ」だけを目安の余白として使う。
+  function updateEraLabelPositions() {
+    const stickyLine = header.offsetHeight;
+    for (const { block, label } of eraLabelEntries) {
+      const rect = block.getBoundingClientRect();
+      const maxTop = Math.max(rect.height - label.offsetHeight, 0);
+      const top = Math.min(Math.max(stickyLine - rect.top, 0), maxTop);
+      label.style.top = top + 'px';
+    }
+  }
+  window.addEventListener('scroll', () => requestAnimationFrame(updateEraLabelPositions), { passive: true });
+  window.addEventListener('resize', () => requestAnimationFrame(updateEraLabelPositions));
 
   function renderHeader() {
     // Year label
@@ -396,10 +441,11 @@
           const dBlock = createDynastyBlock(dyn);
           col.appendChild(dBlock);
         });
-        // Render era blocks on top
+        // Render era blocks on top（重なる期間は横に並べる。世界史年表の
+        // 「ヨーロッパ」列内で国・時代ごとに小列が並ぶ表現と同じ考え方）
         const regionEras = ERAS.filter(e => e.region === r.id);
-        regionEras.forEach(era => {
-          const block = createEraBlock(era);
+        layoutEraLanes(regionEras).forEach(({ era, lane, laneCount }) => {
+          const block = createEraBlock(era, lane, laneCount);
           col.appendChild(block);
         });
       }
@@ -407,7 +453,37 @@
     });
   }
 
-  function createEraBlock(era) {
+  // 同じ地域列内で時代が重なる場合、カレンダーアプリの予定表示と同じ発想で
+  // 横に並べる（compare/compare.jsのlayoutCardsと同じクラスタ単位のレーン方式）。
+  // 重なりが無い大半のケースではlaneCount===1のままなので、既存の見た目に影響しない。
+  // 重なり判定は displayStart/displayEnd（無ければ start/end）を使う。楚漢戦争の
+  // ようにブロックを視認しやすくするため実際の年より広めに描画しているケースで、
+  // その描画上の余白だけが原因で隣接ブロックまで不要にレーン分割されるのを防ぐため。
+  function layoutEraLanes(eras) {
+    const key = e => ({ s: e.displayStart ?? e.start, en: e.displayEnd ?? e.end });
+    const sorted = [...eras].sort((a, b) => key(a).s - key(b).s);
+    const laneEnds = [];
+    const laid = [];
+    const clusters = [];
+    let clusterStart = 0;
+    sorted.forEach(era => {
+      const { s, en } = key(era);
+      if (laneEnds.length > 0 && Math.max(...laneEnds) <= s) {
+        clusters.push({ start: clusterStart, end: laid.length, laneCount: laneEnds.length });
+        laneEnds.length = 0;
+        clusterStart = laid.length;
+      }
+      let lane = laneEnds.findIndex(end => end <= s);
+      if (lane === -1) { lane = laneEnds.length; laneEnds.push(en); }
+      else { laneEnds[lane] = en; }
+      laid.push({ era, lane });
+    });
+    if (laneEnds.length > 0) clusters.push({ start: clusterStart, end: laid.length, laneCount: laneEnds.length });
+    clusters.forEach(c => { for (let i = c.start; i < c.end; i++) laid[i].laneCount = c.laneCount; });
+    return laid;
+  }
+
+  function createEraBlock(era, lane, laneCount) {
     const top = yearToY(era.start);
     const height = (era.end - era.start) * PX_PER_YEAR;
     const isCompact = height < 55;
@@ -416,6 +492,26 @@
     block.style.top = top + 'px';
     block.style.height = height + 'px';
     block.style.background = era.color;
+    if (laneCount > 1) {
+      // 通常の左22px余白(.era-block の left)は、そこに表示される時代背景
+      // (DYNASTIES)の隅ラベルを隠さないための隙間なので、レーン分割時も
+      // その余白は保ったまま、残り幅をレーン数で均等分割する。
+      const laneFrac = lane / laneCount;
+      const widthFrac = 1 / laneCount;
+      block.style.left = `calc(22px + (100% - 27px) * ${laneFrac} + 2px)`;
+      block.style.right = 'auto';
+      block.style.width = `calc((100% - 27px) * ${widthFrac} - 4px)`;
+    }
+
+    // ラベル一式(名前・年代・リンク案内)はラッパーにまとめ、updateEraLabelPositions()
+    // でスクロール位置に応じて top を調整することで、ブロックが画面より縦に長い場合
+    // (古代ギリシアなど数百年規模)でも範囲内にいる間はヘッダー直下に見え続けるように
+    // する。短いブロックでは常にラベルがブロック上端付近に来る(通常時とほぼ同じ見た目)。
+    const labelWrap = isCompact ? block : el('div', 'era-block-label');
+    if (!isCompact) {
+      block.appendChild(labelWrap);
+      eraLabelEntries.push({ block, label: labelWrap });
+    }
 
     // Era name
     const name = el('div','era-name', era.name);
@@ -429,25 +525,25 @@
     } else {
       name.style.fontSize = '.88rem';
     }
-    block.appendChild(name);
+    labelWrap.appendChild(name);
 
     // Year range (only if not compact) — use displayStart/displayEnd if available
     if (!isCompact) {
       const ds = era.displayStart ?? era.start;
       const de = era.displayEnd ?? era.end;
       const years = el('div','era-years', `${fmtYear(ds)} — ${fmtYear(de)}`);
-      block.appendChild(years);
+      labelWrap.appendChild(years);
     }
 
     // Link hint for linked eras
     if (era.linked && !isCompact) {
       const hint = el('div','era-link-hint','▶ 詳細タイムラインを見る');
-      block.appendChild(hint);
+      labelWrap.appendChild(hint);
     }
     // Coming soon badge
     if (era.comingSoon && !isCompact) {
       const badge = el('div','era-badge','準備中');
-      block.appendChild(badge);
+      labelWrap.appendChild(badge);
     }
 
     // Tooltip on hover
