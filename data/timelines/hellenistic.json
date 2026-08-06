@@ -14,7 +14,12 @@
     "relatedCharsLabel": "関連人物",
     "relatedEventsLabel": "関連する出来事",
     "triviaLabel": "📖 エピソード",
-    "layoutStyle": "flat"
+    "layoutStyle": "flat",
+    "mapLayout": [
+      ["rome_italy", "macedonia", "asia_minor", null, null, null],
+      [null, null, "syria_levant", "mesopotamia", "persia_proper", "bactria_east"],
+      [null, null, "judea", "egypt", null, null]
+    ]
   },
   "eraPhases": [
     { "id": 1, "name": "第一章：マケドニアの覇権とペルシア遠征", "period": "BC336年 〜 BC330年", "startYear": -336, "endYear": -330 },

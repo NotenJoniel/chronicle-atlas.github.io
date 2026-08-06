@@ -323,6 +323,14 @@ DESIGN.md §7 冒頭で「①トップページの拡張（俯瞰レベル）」
 6. トップ `index.html` にリンクを追加（`link` / `linked:true`）
 7. `develop` にコミット → ブラウザで確認 → **ユーザー承認後**に `main`
 
+### 10-1. `mapSnapshots`（勢力図）を作るときの2原則【2026-08-07 追記】
+
+12本の勢力図を実地理と照合したところ、多くが `territories` の記述順＝動的グリッドの並び順（`meta.mapColumnRules` の列数で機械的に折り返すだけ）になっており、実際の地理的位置関係と無関係だった。今後は以下を徹底する。
+
+**① 位置は `meta.mapLayout` で明示指定する。** `territories` のオブジェクト順に暗黙で頼らない（読む人が「なぜこの並び順か」を書いた本人以外に説明できない）。`mapLayout` は行×列の2次元配列（`null`で空白セル）で、対象地域の実際の地理（北→南を行、西→東を列に対応させるのが基本形）に合わせて設計する。`three-kingdoms.json`（中国13州）が最初の実装例、`warring-states.json`／`chu-han.json`／`han-dynasty.json`／`ancient-greece.json`／`hellenistic.json`／`age-of-exploration.json`／`mongol-empire.json`／`golden-horde.json`／`genpei-war.json` も同方式。`roman-republic.json`／`roman-empire.json`／`sengoku-japan.json` は`_e1`等の空白ダミーIDを使ったダミー行埋め＋一定の列数運用で、結果的に西→東の並びが保たれている実装済み例（新規追加時は素直に`mapLayout`を使う方が保守しやすい）。
+
+**② 勢力が滅んだら、そのマスは消さずに征服した勢力の色へ塗り替える。** 同じ領土IDを全スナップショットに残したまま `faction`（と`lord`）だけを征服者のものへ更新する。**マスを`territories`から削除して空白にしない。** 削除すると「負けた勢力から消えていき、最後に小さな1マスだけ残る」形になり、統一の広がりが伝わらない（実際の面積拡大を表現できないため）。`mongol-empire.json`／`sengoku-japan.json`／`three-kingdoms.json` は最初からこの方式で正しく実装されていた。`warring-states.json`（戦国七雄→秦の統一）と`chu-han.json`（群雄割拠→漢の統一）は、当初この原則に反して消滅した勢力のマスを削除していたため、2026-08-07に全滅亡国を征服者の色へ塗り替える形に修正した。
+
 ---
 
-*最終更新: 2026-08-07 — 新規タイムライン「源平合戦」（`genpei-war`、1156–1189年）を追加。日本史拡充ロードマップの第一弾として、保元の乱〜奥州藤原氏滅亡を時代区分をまたいで一本化し、region:"japan"に配置*
+*最終更新: 2026-08-07 — 全13本の勢力図（`mapSnapshots`）の位置関係を実地理に合わせて修正し、`warring-states`/`chu-han`は滅亡国のマスを削除せず征服者の色に塗り替える方式に変更。§10-1に今後の2原則を追記*

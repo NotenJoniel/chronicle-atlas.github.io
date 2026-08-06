@@ -14,7 +14,14 @@
     "relatedCharsLabel": "関連人物",
     "relatedEventsLabel": "関連する出来事",
     "triviaLabel": "📖 エピソード",
-    "layoutStyle": "flat"
+    "layoutStyle": "flat",
+    "mapLayout": [
+      [null, "novgorod", null],
+      ["lithuania_terr", "rus_northeast", null],
+      ["rus_southwest", "sarai_core", "kazan_terr"],
+      [null, "crimea", "astrakhan_terr"],
+      [null, null, "timurid_terr"]
+    ]
   },
   "eraPhases": [
     { "id": 1, "name": "第一章：バトゥの西征とルーシ征服", "period": "1237年 〜 1242年", "startYear": 1237, "endYear": 1242 },

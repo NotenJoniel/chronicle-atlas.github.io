@@ -14,7 +14,16 @@
     "relatedCharsLabel": "関連人物",
     "relatedEventsLabel": "関連する出来事",
     "triviaLabel": "📖 エピソード",
-    "layoutStyle": "flat"
+    "layoutStyle": "flat",
+    "mapLayout": [
+      [null, null, "macedonia", null],
+      [null, null, "thessaly", null],
+      [null, null, "boeotia", "attica"],
+      [null, "corinth", null, "aegean_islands"],
+      [null, "messenia", "argos", "ionia"],
+      [null, "laconia", null, null],
+      ["sicily", null, null, null]
+    ]
   },
   "eraPhases": [
     { "id": 1, "name": "第一章：ポリスの成立とアルカイック期", "period": "BC800年 〜 BC594年", "startYear": -800, "endYear": -594 },

@@ -15,10 +15,11 @@
     "relatedEventsLabel": "📅 関連する出来事（クリックで詳細）",
     "triviaLabel": "📜 補足・豆知識",
     "layoutStyle": "rail",
-    "mapColumnRules": [
-      { "maxCount": 4, "cols": 2 },
-      { "maxCount": 6, "cols": 3 },
-      { "cols": 3 }
+    "mapLayout": [
+      [null, "oshu", null],
+      ["shinano_hokuriku", null, null],
+      ["kyoto", null, "izu_kanto"],
+      ["saigoku", null, null]
     ]
   },
   "eraPhases": [

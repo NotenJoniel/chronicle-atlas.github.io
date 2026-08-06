@@ -14,7 +14,12 @@
     "relatedCharsLabel": "関連人物",
     "relatedEventsLabel": "関連する出来事",
     "triviaLabel": "📖 エピソード",
-    "layoutStyle": "flat"
+    "layoutStyle": "flat",
+    "mapLayout": [
+      ["rus_europe", null, null, "mongolia", null],
+      ["baghdad_terr", "khwarazm_terr", "central_asia", "xixia_terr", "north_china"],
+      [null, null, null, null, "south_china"]
+    ]
   },
   "eraPhases": [
     { "id": 1, "name": "第一章：モンゴル高原の統一", "period": "1189年 〜 1206年", "startYear": 1189, "endYear": 1206 },

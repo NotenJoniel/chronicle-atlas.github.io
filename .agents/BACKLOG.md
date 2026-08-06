@@ -106,6 +106,11 @@ data/
   - 最低限: 各タイムラインページに主要テキストをサーバー側で埋め込む
 - **追加施策**: 個々の出来事にアンカーリンク（例: `/three-kingdoms#red-cliffs`）を振る → 共有性と検索流入が大幅改善
 
+### ✅ 10. 勢力図（mapSnapshots）の位置関係・征服表現の修正 【解決済み 2026-08-07】
+- **経緯**: ユーザーから「源平合戦の勢力図の位置関係が実際の地理と違うのでは」との指摘 → 全13本を再点検したところ、`three-kingdoms`/`sengoku-japan`/`mongol-empire`/`roman-republic`/`roman-empire`以外の8本で、`territories`のJSON記述順＝動的グリッド表示順になっており、実地理と無関係な並びだった。加えて`warring-states`と`chu-han`は、滅亡した勢力のマスを`territories`から削除する実装になっており、「秦以外がどんどん消えて最後に小さい秦だけが残る」（ユーザーの言葉）形になっていて、統一に向かう勢力拡大が視覚的に伝わらない問題も判明した
+- **対応**: 全13本に`meta.mapLayout`（行×列の固定グリッド、`null`で空白）を導入orより地理精度の高い設計に見直し。`warring-states`・`chu-han`は滅亡した勢力のマスを削除せず、征服した勢力の`faction`/`lord`に書き換える方式へ変更（`mongol-empire`/`sengoku-japan`/`three-kingdoms`は元々この方式で正しく実装済みだった）
+- 今後の新規タイムライン追加時の指針は `.agents/DESIGN.md` §10-1 に集約した
+
 ---
 
 ## 🟢 コンテンツ拡充ロードマップ（優先度順）
