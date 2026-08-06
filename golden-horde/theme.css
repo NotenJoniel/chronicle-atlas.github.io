@@ -1,0 +1,6 @@
+/* ジョチ・ウルス（キプチャク・ハン国） — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#0c1420;--surface:#131d2b;--surface-2:#1c2a3d;--surface-3:#25374f;
+  --border-subtle:rgba(180,200,220,.12);--text:#dfe6ee;--text-dim:#8a97a8;
+  --gold:#b8933f;--gold-dim:rgba(184,147,63,.18);
+}

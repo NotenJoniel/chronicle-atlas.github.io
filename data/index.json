@@ -98,6 +98,15 @@
       "endYear": 1368,
       "dataFile": "timelines/mongol-empire.json",
       "subProjectDir": "mongol-empire"
+    },
+    {
+      "id": "golden-horde",
+      "name": "ジョチ・ウルス（キプチャク・ハン国）",
+      "region": "europe",
+      "startYear": 1237,
+      "endYear": 1502,
+      "dataFile": "timelines/golden-horde.json",
+      "subProjectDir": "golden-horde"
     }
   ]
 }
