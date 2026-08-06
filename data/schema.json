@@ -102,7 +102,7 @@
       "description": "人物一覧",
       "items": {
         "type": "object",
-        "required": ["id", "name", "faction", "role", "description"],
+        "required": ["id", "name", "faction", "field", "role", "description"],
         "properties": {
           "id": { "type": "string", "description": "人物ID（c_ プレフィクス: c_qin_shihuang）" },
           "name": { "type": "string", "description": "人物名" },
@@ -112,7 +112,12 @@
           "role": { "type": "string", "description": "役職・立場" },
           "life": { "type": "string", "description": "生没年（例: 'BC259-BC210'）（任意）" },
           "description": { "type": "string", "description": "人物紹介文" },
-          "historyTrivia": { "type": "string", "description": "エピソード・逸話（任意）" }
+          "historyTrivia": { "type": "string", "description": "エピソード・逸話（任意）" },
+          "field": {
+            "type": "string",
+            "enum": ["governance", "military", "administration", "thought", "scholarship", "arts", "commerce", "other"],
+            "description": "分野（社会における機能で分類。1人1タグ。otherは公的機能を持たず物語的文脈でのみ記録される人物に限定（判断に迷った場合の逃げ道にしない）。判断基準は .agents/FIELD_TAXONOMY.md を参照"
+          }
         }
       }
     },

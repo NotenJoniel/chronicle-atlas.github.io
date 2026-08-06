@@ -71,6 +71,15 @@
       "endYear": -323,
       "dataFile": "timelines/ancient-greece.json",
       "subProjectDir": "ancient-greece"
+    },
+    {
+      "id": "hellenistic",
+      "name": "ヘレニズム世界",
+      "region": "europe",
+      "startYear": -336,
+      "endYear": -30,
+      "dataFile": "timelines/hellenistic.json",
+      "subProjectDir": "hellenistic"
     }
   ]
 }

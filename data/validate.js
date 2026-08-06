@@ -107,6 +107,7 @@ function validateTimeline(filename) {
   // ── 4. categories ──
   const categoryIds = new Set();
   const UNIFIED_CATEGORIES = ['battle', 'politics', 'episode', 'death'];
+  const VALID_FIELDS = ['governance', 'military', 'administration', 'thought', 'scholarship', 'arts', 'commerce', 'other'];
   if (data.categories && typeof data.categories === 'object') {
     for (const [key, val] of Object.entries(data.categories)) {
       categoryIds.add(key);
@@ -143,6 +144,12 @@ function validateTimeline(filename) {
       }
       if (typeof ch.role !== 'string') error(filename, `characters["${ch.id}"]: role must be string`);
       if (typeof ch.description !== 'string') error(filename, `characters["${ch.id}"]: description must be string`);
+      // field はフェーズB（全ファイル展開）完了により必須化。判断基準は .agents/FIELD_TAXONOMY.md
+      if (ch.field === undefined) {
+        error(filename, `characters["${ch.id}"]: field is required (see .agents/FIELD_TAXONOMY.md)`);
+      } else if (!VALID_FIELDS.includes(ch.field)) {
+        error(filename, `characters["${ch.id}"]: field "${ch.field}" not in ${VALID_FIELDS.join(', ')}`);
+      }
     }
     ok(`characters: ${data.characters.length} characters`);
   }

@@ -276,17 +276,17 @@
   // ── Era Data (sub-project targets only) ──
   const ERAS = [
     // ─── 中国 ───
-    { region:'china', name:'戦国時代',  start:-475, end:-221, color:'#7a3545',
+    { region:'china', name:'戦国時代',  start:-475, end:-221, color:'#7a3545', lineage:'china-main',
       note:'⚔️ 七雄が覇を競う合従連衡の時代。孫子・韓非子・屈原。秦の統一へ。',
       link:'./warring-states/', linked:true },
-    { region:'china', name:'楚漢戦争',  start:-230, end:-202, color:'#8a4a2a',
+    { region:'china', name:'楚漢戦争',  start:-230, end:-202, color:'#8a4a2a', lineage:'china-main',
       displayStart:-209, displayEnd:-202,
       note:'⚔️ 秦滅亡後の項羽vs劉邦。鴻門の会、四面楚歌、垓下の戦い。前漢成立へ。',
       link:'./chu-han/', linked:true },
-    { region:'china', name:'漢王朝',    start:-202, end:220,  color:'#8B1A1A',
+    { region:'china', name:'漢王朝',    start:-202, end:220,  color:'#8B1A1A', lineage:'china-main',
       note:'🏯 前漢・新・後漢の約420年。劉邦の建国から黄巾の乱まで。武帝の匈奴遠征、シルクロード開拓。',
       link:'./han-dynasty/', linked:true },
-    { region:'china', name:'三国時代',  start:220,  end:280,  color:'#b8963c',
+    { region:'china', name:'三国時代',  start:220,  end:280,  color:'#b8963c', lineage:'china-main',
       note:'⚔️ 魏・蜀・呉の三国が覇を競う。劉備・曹操・孫権の時代。',
       link:'./three-kingdoms/', linked:true },
 
@@ -296,13 +296,16 @@
       link:'./sengoku-japan/', linked:true },
 
     // ─── ヨーロッパ ───
-    { region:'europe', name:'古代ギリシア', start:-800, end:-323, color:'#2e5a8a',
+    { region:'europe', name:'古代ギリシア', start:-800, end:-336, color:'#2e5a8a', lineage:'greece',
       link:'./ancient-greece/', linked:true,
-      note:'🏺 ポリスの成立からアレクサンドロス即位まで。ペルシア戦争、ペロポネソス戦争、アテナイとスパルタの覇権争い。' },
-    { region:'europe', name:'共和政ローマ', start:-509, end:-27, color:'#6a3a3a',
+      note:'🏺 ポリスの成立からアレクサンドロス即位まで。ペルシア戦争、ペロポネソス戦争、アテナイとスパルタの覇権争い。（詳細タイムラインはBC323年のアレクサンドロス没年まで収録）' },
+    { region:'europe', name:'ヘレニズム世界', start:-336, end:-30, color:'#7a4a9a', lineage:'greece',
+      link:'./hellenistic/', linked:true,
+      note:'☀️ アレクサンドロスの東征からディアドコイ戦争、プトレマイオス朝の終焉まで。ギリシアと東方が融合した世界。' },
+    { region:'europe', name:'共和政ローマ', start:-509, end:-27, color:'#6a3a3a', lineage:'rome',
       link:'./roman-republic/', linked:true,
       note:'ポエニ戦争、グラックス兄弟、カエサル。共和政の理想と崩壊。' },
-    { region:'europe', name:'ローマ帝国', start:-27, end:476, color:'#5a2a5a',
+    { region:'europe', name:'ローマ帝国', start:-27, end:476, color:'#5a2a5a', lineage:'rome',
       link:'./roman-empire/', linked:true,
       note:'パクス・ロマーナからゲルマン民族の大移動まで。西洋文明の礎。' },
     { region:'europe', name:'大航海時代〜ルネサンス', start:1453, end:1648, color:'#3a4a6a',
@@ -463,6 +466,7 @@
     const key = e => ({ s: e.displayStart ?? e.start, en: e.displayEnd ?? e.end });
     const sorted = [...eras].sort((a, b) => key(a).s - key(b).s);
     const laneEnds = [];
+    const laneLineage = []; // 各レーンに直前まで入っていた時代の lineage（系統）
     const laid = [];
     const clusters = [];
     let clusterStart = 0;
@@ -471,11 +475,18 @@
       if (laneEnds.length > 0 && Math.max(...laneEnds) <= s) {
         clusters.push({ start: clusterStart, end: laid.length, laneCount: laneEnds.length });
         laneEnds.length = 0;
+        laneLineage.length = 0;
         clusterStart = laid.length;
       }
-      let lane = laneEnds.findIndex(end => end <= s);
+      // 同じ lineage（例: 古代ギリシア→ヘレニズム世界）の時代は、そのレーンが空いていれば
+      // 同じレーンを引き継ぐ。これにより地域の縦の流れが視覚的に繋がって見える。
+      let lane = era.lineage != null
+        ? laneEnds.findIndex((end, i) => end <= s && laneLineage[i] === era.lineage)
+        : -1;
+      if (lane === -1) lane = laneEnds.findIndex(end => end <= s);
       if (lane === -1) { lane = laneEnds.length; laneEnds.push(en); }
       else { laneEnds[lane] = en; }
+      laneLineage[lane] = era.lineage;
       laid.push({ era, lane });
     });
     if (laneEnds.length > 0) clusters.push({ start: clusterStart, end: laid.length, laneCount: laneEnds.length });

@@ -283,7 +283,8 @@ DUP char:  c_cleopatra   … 同上
 2. `data/timelines/<id>.json` を統一スキーマで作成
    - カテゴリは `battle` / `politics` / `episode` / `death` の4つのみ
    - 年は整数、紀元前は負数
-   - IDは既存7本と衝突しないこと（§7 G1）
+   - IDは既存タイムラインと衝突しないこと（§7 G1）
+   - `characters[].field`（統治/軍事/行政/思想/学術/芸術/経済の機能7分類＋公的機能を持たない人物用の`other`、必須）を全員に付与する。判断基準は `.agents/FIELD_TAXONOMY.md` を参照
 3. `data/index.json` に登録（`id` / `name` / `region` / `startYear` / `endYear` / `dataFile` / `subProjectDir`）
 4. `node data/validate.js` を実行し、**0 errors** を確認
 5. サブプロジェクトのディレクトリを作成（既存プロジェクトをテンプレートとして参照）
