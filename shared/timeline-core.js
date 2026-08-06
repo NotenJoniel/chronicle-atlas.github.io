@@ -18,6 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function bootstrap(timelineId, raw) {
   const DEFAULT_MAP_COLUMN_RULES = [{ maxCount: 4, cols: 2 }, { maxCount: 9, cols: 3 }, { cols: 4 }];
+  // characters[].field の表示名。全時代共通の固定8分類のため、データ層ではなくここで定義する
+  // （判断基準: .agents/FIELD_TAXONOMY.md）。otherは「公的機能を持たない人物」の受け皿であり
+  // 表示上は分野行を出さない（ラベルなし=undefined）。
+  const FIELD_LABELS = {
+    governance: '統治', military: '軍事', administration: '行政・法',
+    thought: '思想・信仰', scholarship: '学術・技術', arts: '芸術', commerce: '経済・交易'
+  };
 
   const D = {
     TIMELINE_ID: timelineId,
@@ -577,7 +584,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (ch.reading) { rl.textContent = ch.reading + (ch.title ? `　${characterTitleLabel}: ${ch.title}` : ''); rl.style.display = ''; }
     else { rl.style.display = 'none'; }
     const ftag = $('cm-faction-tag');
-    ftag.textContent = D.FACTIONS[ch.faction]?.name || ch.faction;
+    const factionName = D.FACTIONS[ch.faction]?.name || ch.faction;
+    const fieldLabel = FIELD_LABELS[ch.field];
+    ftag.textContent = fieldLabel ? `${factionName} ／ ${fieldLabel}` : factionName;
     ftag.className = 'tag';
     applyFactionSwatch(ftag, ch.faction);
     $('cm-role').textContent = ch.role;

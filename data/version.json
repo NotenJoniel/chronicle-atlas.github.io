@@ -1,5 +1,5 @@
 {
-  "version": "1.4.0",
+  "version": "1.4.1",
   "updatedAt": "2026-08-06",
-  "note": "人物の分野タグ(field)を全9タイムライン393人に付与しfield必須化(フェーズB完了)。公的機能を持たない人物向けにother分類を追加(4名をartsから付け替え)。判断基準を.agents/FIELD_TAXONOMY.mdに記録"
+  "note": "人物モーダルに分野(field)を表示（勢力タグに「／ 分野名」を追記）。otherの人物は分野を表示しない"
 }
