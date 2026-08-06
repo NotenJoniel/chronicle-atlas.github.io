@@ -275,12 +275,22 @@ document.addEventListener('DOMContentLoaded', () => {
         item.dataset.charId = c.id;
         const dot = mkEl('span', 'dot');
         applyFactionSwatch(dot, c.faction);
-        const r = c.reading ? `<span class="reading">${c.reading}</span>` : '';
         item.appendChild(dot);
-        item.appendChild(document.createTextNode(' ' + c.name + ' '));
-        if (r) item.insertAdjacentHTML('beforeend', r);
+        // 名前＋読みは1行に収まらない場合だけ省略記号にする（折り返しは行わない）。
+        // readingがnameと同一（表音文字の時代で頻出）なら、二重表示を避けて出さない。
+        const nameBlock = mkEl('span', 'name-block');
+        nameBlock.appendChild(document.createTextNode(c.name));
+        if (c.reading && c.reading !== c.name) {
+          nameBlock.appendChild(mkEl('span', 'reading', ' ' + c.reading));
+        }
+        nameBlock.title = c.reading && c.reading !== c.name ? `${c.name}（${c.reading}）` : c.name;
+        item.appendChild(nameBlock);
         const axis = axisLabel(c);
-        if (axis) item.appendChild(mkEl('span', 'axis-label', axis));
+        if (axis) {
+          const axisEl = mkEl('span', 'axis-label', axis);
+          axisEl.title = axis;
+          item.appendChild(axisEl);
+        }
         if (state.selectedChars.has(c.id)) item.classList.add('selected');
         item.onclick = (e) => {
           if (e.ctrlKey || e.metaKey) {
