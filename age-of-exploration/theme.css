@@ -1,0 +1,6 @@
+/* 大航海時代・宗教改革 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#0a0f16;--surface:#131c28;--surface-2:#1b2836;--surface-3:#253547;
+  --border-subtle:rgba(120,160,190,.12);--text:#e2e8ec;--text-dim:#8a97a3;
+  --gold:#c98a4c;--gold-dim:rgba(201,138,76,.18);
+}

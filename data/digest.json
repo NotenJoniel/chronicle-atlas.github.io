@@ -8189,6 +8189,989 @@
           "colorLight": "#8A90A2"
         }
       }
+    },
+    "age-of-exploration": {
+      "events": [
+        {
+          "id": "e_fall_constantinople",
+          "year": 1453,
+          "title": "コンスタンティノープル陥落",
+          "category": "battle",
+          "location": "コンスタンティノープル"
+        },
+        {
+          "id": "e_henry_navigator_death",
+          "year": 1460,
+          "title": "エンリケ航海王子の死",
+          "category": "death",
+          "location": "サグレス",
+          "color": "#0f5c4c",
+          "characters": [
+            "c_henry_navigator"
+          ]
+        },
+        {
+          "id": "e_dias_cape",
+          "year": 1488,
+          "title": "ディアス、喜望峰に到達",
+          "category": "episode",
+          "location": "喜望峰",
+          "color": "#0f5c4c",
+          "characters": [
+            "c_dias"
+          ]
+        },
+        {
+          "id": "e_granada_fall",
+          "year": 1492,
+          "title": "グラナダ陥落とレコンキスタ完了",
+          "category": "politics",
+          "location": "グラナダ",
+          "color": "#8a2a1a",
+          "characters": [
+            "c_isabella",
+            "c_ferdinand_aragon"
+          ]
+        },
+        {
+          "id": "e_columbus_landfall",
+          "year": 1492,
+          "title": "コロンブス、新大陸に到達",
+          "category": "politics",
+          "location": "サンサルバドル島（カリブ海）",
+          "color": "#8a2a1a",
+          "characters": [
+            "c_columbus"
+          ]
+        },
+        {
+          "id": "e_tordesillas",
+          "year": 1494,
+          "title": "トルデシリャス条約",
+          "category": "politics",
+          "location": "トルデシリャス"
+        },
+        {
+          "id": "e_da_gama_india",
+          "year": 1498,
+          "title": "ヴァスコ・ダ・ガマ、インド航路開拓",
+          "category": "politics",
+          "location": "カリカット（インド）",
+          "color": "#0f5c4c",
+          "characters": [
+            "c_da_gama"
+          ]
+        },
+        {
+          "id": "e_cabral_brazil",
+          "year": 1500,
+          "title": "カブラル、ブラジルに漂着",
+          "category": "episode",
+          "location": "ブラジル沿岸",
+          "color": "#0f5c4c",
+          "characters": [
+            "c_cabral"
+          ]
+        },
+        {
+          "id": "e_vespucci_new_world",
+          "year": 1502,
+          "title": "ヴェスプッチ、「新大陸」を指摘",
+          "category": "episode",
+          "location": "南米大陸沿岸",
+          "color": "#8a2a1a",
+          "characters": [
+            "c_vespucci"
+          ]
+        },
+        {
+          "id": "e_luther_95theses",
+          "year": 1517,
+          "title": "ルターの九十五カ条の論題",
+          "category": "episode",
+          "location": "ヴィッテンベルク",
+          "color": "#3a4a5c",
+          "characters": [
+            "c_luther"
+          ]
+        },
+        {
+          "id": "e_charles_v_election",
+          "year": 1519,
+          "title": "カルロス1世、神聖ローマ皇帝に選出",
+          "category": "politics",
+          "location": "フランクフルト",
+          "color": "#5a2a4a",
+          "characters": [
+            "c_charles_v",
+            "c_fugger"
+          ]
+        },
+        {
+          "id": "e_cortes_mexico",
+          "year": 1519,
+          "title": "コルテス、メキシコに上陸",
+          "category": "battle",
+          "location": "メキシコ湾岸",
+          "color": "#5a2a4a",
+          "characters": [
+            "c_cortes",
+            "c_moctezuma"
+          ]
+        },
+        {
+          "id": "e_magellan_departure",
+          "year": 1519,
+          "title": "マゼラン艦隊、世界周航へ出航",
+          "category": "episode",
+          "location": "サンルーカル・デ・バラメダ",
+          "color": "#5a2a4a",
+          "characters": [
+            "c_magellan",
+            "c_elcano"
+          ]
+        },
+        {
+          "id": "e_diet_of_worms",
+          "year": 1521,
+          "title": "ヴォルムス帝国議会",
+          "category": "politics",
+          "location": "ヴォルムス",
+          "color": "#3a4a5c",
+          "characters": [
+            "c_luther",
+            "c_charles_v"
+          ]
+        },
+        {
+          "id": "e_tenochtitlan_fall",
+          "year": 1521,
+          "title": "テノチティトラン陥落、アステカ帝国滅亡",
+          "category": "battle",
+          "location": "テノチティトラン",
+          "color": "#5a2a4a",
+          "characters": [
+            "c_cortes"
+          ]
+        },
+        {
+          "id": "e_magellan_death",
+          "year": 1521,
+          "title": "マゼラン、マクタン島で戦死",
+          "category": "death",
+          "location": "マクタン島（フィリピン）",
+          "color": "#5a2a4a",
+          "characters": [
+            "c_magellan"
+          ]
+        },
+        {
+          "id": "e_victoria_return",
+          "year": 1522,
+          "title": "ビクトリア号帰還、世界周航達成",
+          "category": "episode",
+          "location": "サンルーカル・デ・バラメダ",
+          "color": "#5a2a4a",
+          "characters": [
+            "c_elcano"
+          ]
+        },
+        {
+          "id": "e_peasants_war",
+          "year": 1524,
+          "title": "ドイツ農民戦争勃発",
+          "category": "battle",
+          "location": "南西ドイツ各地",
+          "color": "#3a4a5c",
+          "characters": [
+            "c_muntzer",
+            "c_luther"
+          ]
+        },
+        {
+          "id": "e_luther_marriage",
+          "year": 1525,
+          "title": "ルターの結婚",
+          "category": "episode",
+          "location": "ヴィッテンベルク",
+          "color": "#3a4a5c",
+          "characters": [
+            "c_luther"
+          ]
+        },
+        {
+          "id": "e_vienna_siege_1529",
+          "year": 1529,
+          "title": "第一次ウィーン包囲",
+          "category": "battle",
+          "location": "ウィーン",
+          "color": "#1a5c3a",
+          "characters": [
+            "c_suleiman"
+          ]
+        },
+        {
+          "id": "e_zwingli_death",
+          "year": 1531,
+          "title": "ツヴィングリ、カッペルの戦いで戦死",
+          "category": "death",
+          "location": "カッペル（スイス）",
+          "color": "#3a4a5c",
+          "characters": [
+            "c_zwingli"
+          ]
+        },
+        {
+          "id": "e_pizarro_inca",
+          "year": 1532,
+          "title": "ピサロ、インカ皇帝アタワルパを捕縛",
+          "category": "battle",
+          "location": "カハマルカ",
+          "color": "#5a2a4a",
+          "characters": [
+            "c_pizarro",
+            "c_atahualpa"
+          ]
+        },
+        {
+          "id": "e_atahualpa_execution",
+          "year": 1533,
+          "title": "アタワルパ処刑、インカ帝国滅亡",
+          "category": "death",
+          "location": "カハマルカ",
+          "color": "#5a2a4a",
+          "characters": [
+            "c_pizarro",
+            "c_atahualpa"
+          ]
+        },
+        {
+          "id": "e_act_of_supremacy",
+          "year": 1534,
+          "title": "首長法（国王至上法）とイギリス国教会成立",
+          "category": "politics",
+          "location": "イングランド",
+          "color": "#6b1420",
+          "characters": [
+            "c_henry_viii",
+            "c_cromwell_thomas"
+          ]
+        },
+        {
+          "id": "e_jesuits_founded",
+          "year": 1534,
+          "title": "イエズス会創設",
+          "category": "politics",
+          "location": "パリ",
+          "color": "#7a5c1a",
+          "characters": [
+            "c_loyola",
+            "c_xavier"
+          ]
+        },
+        {
+          "id": "e_calvin_geneva",
+          "year": 1536,
+          "title": "カルヴァン『キリスト教綱要』刊行、ジュネーヴ改革開始",
+          "category": "episode",
+          "location": "ジュネーヴ",
+          "color": "#3a4a5c",
+          "characters": [
+            "c_calvin"
+          ]
+        },
+        {
+          "id": "e_tyndale_execution",
+          "year": 1536,
+          "title": "ティンダル処刑",
+          "category": "death",
+          "location": "フィルフォルデ（現ベルギー）",
+          "color": "#3a4a5c",
+          "characters": [
+            "c_tyndale"
+          ]
+        },
+        {
+          "id": "e_council_of_trent_start",
+          "year": 1545,
+          "title": "トリエント公会議開幕",
+          "category": "politics",
+          "location": "トリエント",
+          "color": "#7a5c1a",
+          "characters": [
+            "c_pope_paul3"
+          ]
+        },
+        {
+          "id": "e_muhlberg",
+          "year": 1547,
+          "title": "ミュールベルクの戦い",
+          "category": "battle",
+          "location": "ミュールベルク",
+          "color": "#5a2a4a",
+          "characters": [
+            "c_charles_v"
+          ]
+        },
+        {
+          "id": "e_xavier_japan",
+          "year": 1549,
+          "title": "ザビエル、日本に上陸",
+          "category": "episode",
+          "location": "鹿児島",
+          "color": "#7a5c1a",
+          "characters": [
+            "c_xavier"
+          ]
+        },
+        {
+          "id": "e_xavier_death",
+          "year": 1552,
+          "title": "ザビエルの死",
+          "category": "death",
+          "location": "上川島（広東沖）",
+          "color": "#7a5c1a",
+          "characters": [
+            "c_xavier"
+          ]
+        },
+        {
+          "id": "e_augsburg_peace",
+          "year": 1555,
+          "title": "アウクスブルクの宗教和議",
+          "category": "politics",
+          "location": "アウクスブルク",
+          "color": "#5a2a4a",
+          "characters": [
+            "c_charles_v"
+          ]
+        },
+        {
+          "id": "e_charles_v_abdication",
+          "year": 1556,
+          "title": "カール5世の退位",
+          "category": "politics",
+          "location": "ブリュッセル",
+          "color": "#5a2a4a",
+          "characters": [
+            "c_charles_v",
+            "c_philip_ii_spain"
+          ]
+        },
+        {
+          "id": "e_elizabeth_accession",
+          "year": 1558,
+          "title": "エリザベス1世即位",
+          "category": "politics",
+          "location": "ロンドン",
+          "color": "#6b1420",
+          "characters": [
+            "c_elizabeth_i"
+          ]
+        },
+        {
+          "id": "e_knox_scotland",
+          "year": 1560,
+          "title": "ノックス、スコットランド宗教改革を主導",
+          "category": "politics",
+          "location": "エディンバラ",
+          "color": "#3a4a5c",
+          "characters": [
+            "c_knox"
+          ]
+        },
+        {
+          "id": "e_french_wars_religion_start",
+          "year": 1562,
+          "title": "フランス宗教戦争勃発",
+          "category": "battle",
+          "location": "ヴァシー",
+          "color": "#3a4a5c",
+          "characters": [
+            "c_coligny",
+            "c_catherine_medici"
+          ]
+        },
+        {
+          "id": "e_council_of_trent_end",
+          "year": 1563,
+          "title": "トリエント公会議閉幕",
+          "category": "politics",
+          "location": "トリエント"
+        },
+        {
+          "id": "e_dutch_revolt_start",
+          "year": 1568,
+          "title": "オランダ独立戦争（八十年戦争）勃発",
+          "category": "battle",
+          "location": "ネーデルラント",
+          "color": "#b5651a",
+          "characters": [
+            "c_william_orange",
+            "c_alba"
+          ]
+        },
+        {
+          "id": "e_lepanto",
+          "year": 1571,
+          "title": "レパントの海戦",
+          "category": "battle",
+          "location": "レパント沖（コリント湾）",
+          "color": "#5a2a4a",
+          "characters": [
+            "c_don_juan_austria"
+          ]
+        },
+        {
+          "id": "e_st_bartholomew",
+          "year": 1572,
+          "title": "サン・バルテルミの虐殺",
+          "category": "death",
+          "location": "パリ",
+          "color": "#3a4a5c",
+          "characters": [
+            "c_coligny",
+            "c_catherine_medici"
+          ]
+        },
+        {
+          "id": "e_union_utrecht",
+          "year": 1579,
+          "title": "ユトレヒト同盟",
+          "category": "politics",
+          "location": "ユトレヒト",
+          "color": "#b5651a",
+          "characters": [
+            "c_william_orange"
+          ]
+        },
+        {
+          "id": "e_iberian_union",
+          "year": 1580,
+          "title": "スペイン・ポルトガル同君連合成立",
+          "category": "politics",
+          "location": "リスボン",
+          "color": "#5a2a4a",
+          "characters": [
+            "c_philip_ii_spain"
+          ]
+        },
+        {
+          "id": "e_william_orange_assassination",
+          "year": 1584,
+          "title": "オラニエ公ウィレム暗殺",
+          "category": "death",
+          "location": "デルフト",
+          "color": "#b5651a",
+          "characters": [
+            "c_william_orange"
+          ]
+        },
+        {
+          "id": "e_mary_stuart_execution",
+          "year": 1587,
+          "title": "メアリー・ステュアート処刑",
+          "category": "death",
+          "location": "フォザリンゲイ城",
+          "color": "#1e3a6a",
+          "characters": [
+            "c_mary_stuart",
+            "c_elizabeth_i"
+          ]
+        },
+        {
+          "id": "e_spanish_armada",
+          "year": 1588,
+          "title": "スペイン無敵艦隊の敗北",
+          "category": "battle",
+          "location": "イギリス海峡",
+          "color": "#5a2a4a",
+          "characters": [
+            "c_philip_ii_spain",
+            "c_elizabeth_i",
+            "c_drake"
+          ]
+        },
+        {
+          "id": "e_henry_iv_accession",
+          "year": 1589,
+          "title": "アンリ4世即位とブルボン朝成立",
+          "category": "politics",
+          "location": "フランス",
+          "color": "#1e3a6a",
+          "characters": [
+            "c_henry_iv"
+          ]
+        },
+        {
+          "id": "e_edict_of_nantes",
+          "year": 1598,
+          "title": "ナントの勅令",
+          "category": "politics",
+          "location": "ナント",
+          "color": "#1e3a6a",
+          "characters": [
+            "c_henry_iv"
+          ]
+        },
+        {
+          "id": "e_east_india_company",
+          "year": 1600,
+          "title": "イギリス東インド会社設立",
+          "category": "politics",
+          "location": "ロンドン",
+          "color": "#6b1420",
+          "characters": [
+            "c_elizabeth_i"
+          ]
+        },
+        {
+          "id": "e_voc_founded",
+          "year": 1602,
+          "title": "オランダ東インド会社設立",
+          "category": "politics",
+          "location": "アムステルダム"
+        },
+        {
+          "id": "e_henry_iv_assassination",
+          "year": 1610,
+          "title": "アンリ4世暗殺",
+          "category": "death",
+          "location": "パリ",
+          "color": "#1e3a6a",
+          "characters": [
+            "c_henry_iv"
+          ]
+        },
+        {
+          "id": "e_defenestration_prague",
+          "year": 1618,
+          "title": "プラハ窓外投擲事件",
+          "category": "episode",
+          "location": "プラハ城",
+          "color": "#5a2a4a",
+          "characters": [
+            "c_ferdinand2_hre"
+          ]
+        },
+        {
+          "id": "e_white_mountain",
+          "year": 1620,
+          "title": "白山の戦い",
+          "category": "battle",
+          "location": "プラハ郊外・白山",
+          "color": "#5a2a4a",
+          "characters": [
+            "c_ferdinand2_hre"
+          ]
+        },
+        {
+          "id": "e_gustavus_intervention",
+          "year": 1630,
+          "title": "グスタフ・アドルフ、ドイツに上陸",
+          "category": "battle",
+          "location": "ポンメルン（バルト海沿岸）",
+          "color": "#3a4a5c",
+          "characters": [
+            "c_gustavus_adolphus"
+          ]
+        },
+        {
+          "id": "e_lutzen",
+          "year": 1632,
+          "title": "リュッツェンの戦いとグスタフ・アドルフの戦死",
+          "category": "death",
+          "location": "リュッツェン",
+          "color": "#3a4a5c",
+          "characters": [
+            "c_gustavus_adolphus",
+            "c_wallenstein"
+          ]
+        },
+        {
+          "id": "e_wallenstein_assassination",
+          "year": 1634,
+          "title": "ヴァレンシュタイン暗殺",
+          "category": "death",
+          "location": "エゲル（現チェコ・ヘプ）",
+          "color": "#5a2a4a",
+          "characters": [
+            "c_wallenstein"
+          ]
+        },
+        {
+          "id": "e_peace_of_westphalia",
+          "year": 1648,
+          "title": "ウェストファリア条約",
+          "category": "politics",
+          "location": "ミュンスター／オスナブリュック"
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_henry_navigator",
+          "name": "エンリケ航海王子",
+          "reading": "エンリケこうかいおうじ",
+          "faction": "portugal",
+          "field": "administration"
+        },
+        {
+          "id": "c_dias",
+          "name": "バルトロメウ・ディアス",
+          "reading": "バルトロメウディアス",
+          "faction": "portugal",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_columbus",
+          "name": "クリストファー・コロンブス",
+          "reading": "クリストファーコロンブス",
+          "faction": "spain",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_da_gama",
+          "name": "ヴァスコ・ダ・ガマ",
+          "reading": "ヴァスコダガマ",
+          "faction": "portugal",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_cabral",
+          "name": "ペドロ・アルヴァレス・カブラル",
+          "reading": "ペドロアルヴァレスカブラル",
+          "faction": "portugal",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_vespucci",
+          "name": "アメリゴ・ヴェスプッチ",
+          "reading": "アメリゴヴェスプッチ",
+          "faction": "spain",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_magellan",
+          "name": "フェルディナンド・マゼラン",
+          "reading": "フェルディナンドマゼラン",
+          "faction": "habsburg",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_elcano",
+          "name": "フアン・セバスティアン・エルカーノ",
+          "reading": "フアンセバスティアンエルカーノ",
+          "faction": "habsburg",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_cortes",
+          "name": "エルナン・コルテス",
+          "reading": "エルナンコルテス",
+          "faction": "habsburg",
+          "field": "military"
+        },
+        {
+          "id": "c_moctezuma",
+          "name": "モクテスマ2世",
+          "reading": "モクテスマにせい",
+          "faction": "other",
+          "field": "governance"
+        },
+        {
+          "id": "c_pizarro",
+          "name": "フランシスコ・ピサロ",
+          "reading": "フランシスコピサロ",
+          "faction": "habsburg",
+          "field": "military"
+        },
+        {
+          "id": "c_atahualpa",
+          "name": "アタワルパ",
+          "reading": "アタワルパ",
+          "faction": "other",
+          "field": "governance"
+        },
+        {
+          "id": "c_luther",
+          "name": "マルティン・ルター",
+          "reading": "マルティンルター",
+          "faction": "protestant",
+          "field": "thought"
+        },
+        {
+          "id": "c_melanchthon",
+          "name": "フィリップ・メランヒトン",
+          "reading": "フィリップメランヒトン",
+          "faction": "protestant",
+          "field": "thought"
+        },
+        {
+          "id": "c_zwingli",
+          "name": "フルドリッヒ・ツヴィングリ",
+          "reading": "フルドリッヒツヴィングリ",
+          "faction": "protestant",
+          "field": "thought"
+        },
+        {
+          "id": "c_calvin",
+          "name": "ジャン・カルヴァン",
+          "reading": "ジャンカルヴァン",
+          "faction": "protestant",
+          "field": "thought"
+        },
+        {
+          "id": "c_muntzer",
+          "name": "トマス・ミュンツァー",
+          "reading": "トマスミュンツァー",
+          "faction": "protestant",
+          "field": "military"
+        },
+        {
+          "id": "c_tyndale",
+          "name": "ウィリアム・ティンダル",
+          "reading": "ウィリアムティンダル",
+          "faction": "protestant",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_knox",
+          "name": "ジョン・ノックス",
+          "reading": "ジョンノックス",
+          "faction": "protestant",
+          "field": "thought"
+        },
+        {
+          "id": "c_coligny",
+          "name": "ガスパール・ド・コリニー",
+          "reading": "ガスパールドコリニー",
+          "faction": "protestant",
+          "field": "military"
+        },
+        {
+          "id": "c_durer",
+          "name": "アルブレヒト・デューラー",
+          "reading": "アルブレヒトデューラー",
+          "faction": "protestant",
+          "field": "arts"
+        },
+        {
+          "id": "c_loyola",
+          "name": "イグナティウス・デ・ロヨラ",
+          "reading": "イグナティウスデロヨラ",
+          "faction": "catholic_church",
+          "field": "thought"
+        },
+        {
+          "id": "c_xavier",
+          "name": "フランシスコ・ザビエル",
+          "reading": "フランシスコザビエル",
+          "faction": "catholic_church",
+          "field": "thought"
+        },
+        {
+          "id": "c_pope_paul3",
+          "name": "パウルス3世",
+          "reading": "パウルスさんせい",
+          "faction": "catholic_church",
+          "field": "governance"
+        },
+        {
+          "id": "c_isabella",
+          "name": "イサベル1世",
+          "reading": "イサベルいっせい",
+          "faction": "spain",
+          "field": "governance"
+        },
+        {
+          "id": "c_ferdinand_aragon",
+          "name": "フェルナンド2世",
+          "reading": "フェルナンドにせい",
+          "faction": "spain",
+          "field": "governance"
+        },
+        {
+          "id": "c_charles_v",
+          "name": "カルロス1世（カール5世）",
+          "reading": "カルロスいっせい",
+          "faction": "habsburg",
+          "field": "governance"
+        },
+        {
+          "id": "c_philip_ii_spain",
+          "name": "フェリペ2世",
+          "reading": "フェリペにせい",
+          "faction": "habsburg",
+          "field": "governance"
+        },
+        {
+          "id": "c_ferdinand2_hre",
+          "name": "フェルディナント2世",
+          "reading": "フェルディナントにせい",
+          "faction": "habsburg",
+          "field": "governance"
+        },
+        {
+          "id": "c_alba",
+          "name": "アルバ公フェルナンド",
+          "reading": "アルバこうフェルナンド",
+          "faction": "habsburg",
+          "field": "military"
+        },
+        {
+          "id": "c_don_juan_austria",
+          "name": "ドン・フアン・デ・アウストリア",
+          "reading": "ドンフアンデアウストリア",
+          "faction": "habsburg",
+          "field": "military"
+        },
+        {
+          "id": "c_fugger",
+          "name": "ヤコブ・フッガー",
+          "reading": "ヤコブフッガー",
+          "faction": "habsburg",
+          "field": "commerce"
+        },
+        {
+          "id": "c_wallenstein",
+          "name": "アルブレヒト・フォン・ヴァレンシュタイン",
+          "reading": "アルブレヒトフォンヴァレンシュタイン",
+          "faction": "habsburg",
+          "field": "military"
+        },
+        {
+          "id": "c_gustavus_adolphus",
+          "name": "グスタフ2世アドルフ",
+          "reading": "グスタフにせいアドルフ",
+          "faction": "protestant",
+          "field": "governance"
+        },
+        {
+          "id": "c_catherine_medici",
+          "name": "カトリーヌ・ド・メディシス",
+          "reading": "カトリーヌドメディシス",
+          "faction": "france",
+          "field": "governance"
+        },
+        {
+          "id": "c_henry_iv",
+          "name": "アンリ4世",
+          "reading": "アンリよんせい",
+          "faction": "france",
+          "field": "governance"
+        },
+        {
+          "id": "c_mary_stuart",
+          "name": "メアリー・ステュアート",
+          "reading": "メアリーステュアート",
+          "faction": "france",
+          "field": "governance"
+        },
+        {
+          "id": "c_henry_viii",
+          "name": "ヘンリー8世",
+          "reading": "ヘンリーはっせい",
+          "faction": "england",
+          "field": "governance"
+        },
+        {
+          "id": "c_elizabeth_i",
+          "name": "エリザベス1世",
+          "reading": "エリザベスいっせい",
+          "faction": "england",
+          "field": "governance"
+        },
+        {
+          "id": "c_cromwell_thomas",
+          "name": "トマス・クロムウェル",
+          "reading": "トマスクロムウェル",
+          "faction": "england",
+          "field": "administration"
+        },
+        {
+          "id": "c_drake",
+          "name": "フランシス・ドレイク",
+          "reading": "フランシスドレイク",
+          "faction": "england",
+          "field": "military"
+        },
+        {
+          "id": "c_william_orange",
+          "name": "オラニエ公ウィレム1世",
+          "reading": "オラニエこうウィレムいっせい",
+          "faction": "netherlands",
+          "field": "governance"
+        },
+        {
+          "id": "c_suleiman",
+          "name": "スレイマン1世",
+          "reading": "スレイマンいっせい",
+          "faction": "ottoman",
+          "field": "governance"
+        }
+      ],
+      "factions": {
+        "portugal": {
+          "id": "portugal",
+          "name": "ポルトガル王国",
+          "color": "#0f5c4c",
+          "colorLight": "#3a9c85"
+        },
+        "spain": {
+          "id": "spain",
+          "name": "スペイン（カスティーリャ＝アラゴン）",
+          "color": "#8a2a1a",
+          "colorLight": "#c0603f"
+        },
+        "habsburg": {
+          "id": "habsburg",
+          "name": "ハプスブルク家（スペイン・神聖ローマ帝国）",
+          "color": "#5a2a4a",
+          "colorLight": "#95588a"
+        },
+        "protestant": {
+          "id": "protestant",
+          "name": "宗教改革派（プロテスタント）",
+          "color": "#3a4a5c",
+          "colorLight": "#6d8299"
+        },
+        "catholic_church": {
+          "id": "catholic_church",
+          "name": "カトリック教会（教皇庁）",
+          "color": "#7a5c1a",
+          "colorLight": "#b8944a"
+        },
+        "france": {
+          "id": "france",
+          "name": "フランス王国",
+          "color": "#1e3a6a",
+          "colorLight": "#4a72ab"
+        },
+        "england": {
+          "id": "england",
+          "name": "イングランド王国",
+          "color": "#6b1420",
+          "colorLight": "#a8455a"
+        },
+        "netherlands": {
+          "id": "netherlands",
+          "name": "ネーデルラント連邦共和国",
+          "color": "#b5651a",
+          "colorLight": "#e0954a"
+        },
+        "ottoman": {
+          "id": "ottoman",
+          "name": "オスマン帝国",
+          "color": "#1a5c3a",
+          "colorLight": "#4a9c6a"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#5A6072",
+          "colorLight": "#8A90A2"
+        }
+      }
     }
   }
 }

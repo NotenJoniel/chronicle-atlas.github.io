@@ -80,6 +80,15 @@
       "endYear": -30,
       "dataFile": "timelines/hellenistic.json",
       "subProjectDir": "hellenistic"
+    },
+    {
+      "id": "age-of-exploration",
+      "name": "大航海時代・宗教改革",
+      "region": "europe",
+      "startYear": 1453,
+      "endYear": 1648,
+      "dataFile": "timelines/age-of-exploration.json",
+      "subProjectDir": "age-of-exploration"
     }
   ]
 }
