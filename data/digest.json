@@ -10245,6 +10245,893 @@
           "colorLight": "#8A90A2"
         }
       }
+    },
+    "golden-horde": {
+      "events": [
+        {
+          "id": "e_gh_ryazan_sack",
+          "year": 1237,
+          "title": "リャザン攻略、征服の始まり",
+          "category": "battle",
+          "location": "リャザン（現ロシア）",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_batu"
+          ]
+        },
+        {
+          "id": "e_gh_vladimir_sit",
+          "year": 1238,
+          "title": "ウラジーミル陥落とシチ川の戦い",
+          "category": "battle",
+          "location": "ウラジーミル／シチ川"
+        },
+        {
+          "id": "e_gh_novgorod_spared",
+          "year": 1238,
+          "title": "ノヴゴロドの危機一髪",
+          "category": "episode",
+          "location": "イグナチ・クレスト（ノヴゴロド公国南方）"
+        },
+        {
+          "id": "e_gh_southern_campaign",
+          "year": 1239,
+          "title": "ペレヤスラヴリ・チェルニゴフ攻略",
+          "category": "battle",
+          "location": "ペレヤスラヴリ／チェルニゴフ"
+        },
+        {
+          "id": "e_gh_kiev_fall",
+          "year": 1240,
+          "title": "キエフ陥落",
+          "category": "battle",
+          "location": "キエフ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_batu"
+          ]
+        },
+        {
+          "id": "e_gh_galicia_volhynia",
+          "year": 1241,
+          "title": "ガーリチ・ヴォルィーニ制圧",
+          "category": "battle",
+          "location": "ガーリチ・ヴォルィーニ",
+          "color": "#4a1a3a",
+          "characters": [
+            "c_daniil_galitsky"
+          ]
+        },
+        {
+          "id": "e_gh_europe_withdrawal",
+          "year": 1242,
+          "title": "ポーランド・ハンガリーへの遠征と全軍撤退",
+          "category": "politics",
+          "location": "ポーランド／ハンガリー",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_batu"
+          ]
+        },
+        {
+          "id": "e_gh_sarai_founding",
+          "year": 1242,
+          "title": "サライ建設、ジョチ・ウルスの確立",
+          "category": "politics",
+          "location": "ヴォルガ川下流",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_batu"
+          ]
+        },
+        {
+          "id": "e_gh_nevsky_west_victories",
+          "year": 1240,
+          "title": "ネヴァ川の戦いと氷上の戦い",
+          "category": "battle",
+          "location": "ネヴァ川／チュド湖",
+          "color": "#4a1a3a",
+          "characters": [
+            "c_alexander_nevsky"
+          ]
+        },
+        {
+          "id": "e_gh_yaroslav_yarlyk",
+          "year": 1243,
+          "title": "初のヤルルィク（統治認可状）授与",
+          "category": "politics",
+          "location": "サライ"
+        },
+        {
+          "id": "e_gh_nevsky_karakorum",
+          "year": 1247,
+          "title": "ネフスキー、カラコルムへの大旅行",
+          "category": "episode",
+          "location": "カラコルム（モンゴル高原）",
+          "color": "#4a1a3a",
+          "characters": [
+            "c_alexander_nevsky"
+          ]
+        },
+        {
+          "id": "e_gh_nevsky_vladimir_grand_prince",
+          "year": 1252,
+          "title": "ネフスキー、ウラジーミル大公に即位",
+          "category": "politics",
+          "location": "ウラジーミル",
+          "color": "#4a1a3a",
+          "characters": [
+            "c_alexander_nevsky"
+          ]
+        },
+        {
+          "id": "e_gh_sartaq_reign",
+          "year": 1256,
+          "title": "サルタク、短い治世とネストリウス派への好意",
+          "category": "episode",
+          "location": "サライ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_sartaq"
+          ]
+        },
+        {
+          "id": "e_gh_berke_islam",
+          "year": 1257,
+          "title": "ベルケ即位、チンギス家初のイスラム教徒ハンに",
+          "category": "politics",
+          "location": "サライ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_berke"
+          ]
+        },
+        {
+          "id": "e_gh_novgorod_census_revolt",
+          "year": 1259,
+          "title": "ノヴゴロドの人口調査と反発",
+          "category": "episode",
+          "location": "ノヴゴロド",
+          "color": "#4a1a3a",
+          "characters": [
+            "c_alexander_nevsky"
+          ]
+        },
+        {
+          "id": "e_gh_burundai_campaign",
+          "year": 1259,
+          "title": "ブルンダイの大遠征、ガーリチ・ヴォルィーニの城壁破却",
+          "category": "battle",
+          "location": "ガーリチ・ヴォルィーニ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_burundai",
+            "c_daniil_galitsky"
+          ]
+        },
+        {
+          "id": "e_gh_berke_hulagu_war",
+          "year": 1262,
+          "title": "ベルケ・フレグ戦争",
+          "category": "battle",
+          "location": "カフカス山脈",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_berke"
+          ]
+        },
+        {
+          "id": "e_gh_nevsky_death",
+          "year": 1263,
+          "title": "ネフスキーの死",
+          "category": "death",
+          "location": "ゴロデツ",
+          "color": "#4a1a3a",
+          "characters": [
+            "c_alexander_nevsky"
+          ]
+        },
+        {
+          "id": "e_gh_berke_death",
+          "year": 1266,
+          "title": "ベルケの死",
+          "category": "death",
+          "location": "カフカス方面",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_berke"
+          ]
+        },
+        {
+          "id": "e_gh_nogai_rise",
+          "year": 1270,
+          "title": "ノガイ、西方の実力者として台頭",
+          "category": "politics",
+          "location": "黒海北岸",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_nogai"
+          ]
+        },
+        {
+          "id": "e_gh_nogai_byzantine_marriage",
+          "year": 1272,
+          "title": "ノガイ、ビザンツ皇女と婚姻",
+          "category": "episode",
+          "location": "コンスタンティノープル／黒海北岸",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_nogai"
+          ]
+        },
+        {
+          "id": "e_gh_nogai_rus_intervention",
+          "year": 1283,
+          "title": "ノガイ、ルーシ諸公の内紛に介入",
+          "category": "politics",
+          "location": "ルーシ諸公国",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_nogai"
+          ]
+        },
+        {
+          "id": "e_gh_tokta_enthronement",
+          "year": 1291,
+          "title": "トクタ、ノガイの後ろ盾で即位",
+          "category": "politics",
+          "location": "サライ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_tokta",
+            "c_nogai"
+          ]
+        },
+        {
+          "id": "e_gh_tokta_nogai_conflict",
+          "year": 1296,
+          "title": "トクタとノガイの対立表面化",
+          "category": "politics",
+          "location": "サライ／黒海北岸",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_tokta",
+            "c_nogai"
+          ]
+        },
+        {
+          "id": "e_gh_kagamlyk_battle",
+          "year": 1299,
+          "title": "カガムリク川の戦い、ノガイの死",
+          "category": "death",
+          "location": "カガムリク川（現ウクライナ）",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_tokta",
+            "c_nogai"
+          ]
+        },
+        {
+          "id": "e_gh_uzbek_enthronement",
+          "year": 1313,
+          "title": "ウズベク、ハンに即位しイスラム教を国教化",
+          "category": "politics",
+          "location": "サライ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_uzbek_khan"
+          ]
+        },
+        {
+          "id": "e_gh_mikhail_tver_execution",
+          "year": 1318,
+          "title": "ミハイル（トヴェリ公）の処刑",
+          "category": "death",
+          "location": "サライ",
+          "color": "#4a1a3a",
+          "characters": [
+            "c_mikhail_tver"
+          ]
+        },
+        {
+          "id": "e_gh_tver_uprising_1327",
+          "year": 1327,
+          "title": "トヴェリ蜂起とイヴァン1世の鎮圧協力",
+          "category": "battle",
+          "location": "トヴェリ",
+          "color": "#8a1a1a",
+          "characters": [
+            "c_ivan_kalita"
+          ]
+        },
+        {
+          "id": "e_gh_sarai_prosperity",
+          "year": 1330,
+          "title": "サライの繁栄、ヴォルガ交易の最盛期",
+          "category": "episode",
+          "location": "サライ"
+        },
+        {
+          "id": "e_gh_ibn_battuta_visit",
+          "year": 1334,
+          "title": "イブン・バットゥータ、サライを訪問",
+          "category": "episode",
+          "location": "サライ",
+          "color": "#5A6072",
+          "characters": [
+            "c_ibn_battuta",
+            "c_uzbek_khan"
+          ]
+        },
+        {
+          "id": "e_gh_janibeg_enthronement",
+          "year": 1342,
+          "title": "ジャニベク即位",
+          "category": "politics",
+          "location": "サライ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_janibeg"
+          ]
+        },
+        {
+          "id": "e_gh_caffa_siege_plague",
+          "year": 1346,
+          "title": "カッファ包囲戦とペストの伝播",
+          "category": "battle",
+          "location": "カッファ（現フェオドシヤ）",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_janibeg"
+          ]
+        },
+        {
+          "id": "e_gh_janibeg_death",
+          "year": 1357,
+          "title": "ジャニベクの死、大動乱の始まり",
+          "category": "death",
+          "location": "サライ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_janibeg"
+          ]
+        },
+        {
+          "id": "e_gh_velikaya_zamyatnya",
+          "year": 1359,
+          "title": "大動乱（ヴェリカヤ・ザムャートニャ）始まる",
+          "category": "politics",
+          "location": "サライ"
+        },
+        {
+          "id": "e_gh_mamai_power",
+          "year": 1361,
+          "title": "ママイ、西方分王国の実権を掌握",
+          "category": "politics",
+          "location": "ジョチ・ウルス西部",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_mamai"
+          ]
+        },
+        {
+          "id": "e_gh_moscow_rise_dmitry",
+          "year": 1362,
+          "title": "ドミトリー、モスクワ大公に",
+          "category": "politics",
+          "location": "モスクワ",
+          "color": "#8a1a1a",
+          "characters": [
+            "c_dmitry_donskoy"
+          ]
+        },
+        {
+          "id": "e_gh_blue_waters",
+          "year": 1362,
+          "title": "ブルー・ウォーターズの戦い",
+          "category": "battle",
+          "location": "シニー・ヴォディ（現ウクライナ）",
+          "color": "#1a3a5a",
+          "characters": [
+            "c_olgierd"
+          ]
+        },
+        {
+          "id": "e_gh_mamai_tribute_demand",
+          "year": 1374,
+          "title": "ママイ、貢納増額を要求",
+          "category": "politics",
+          "location": "モスクワ／サライ",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_mamai",
+            "c_dmitry_donskoy"
+          ]
+        },
+        {
+          "id": "e_gh_vozha_river",
+          "year": 1378,
+          "title": "ヴォジャ川の戦い",
+          "category": "battle",
+          "location": "ヴォジャ川",
+          "color": "#8a1a1a",
+          "characters": [
+            "c_dmitry_donskoy"
+          ]
+        },
+        {
+          "id": "e_gh_kulikovo",
+          "year": 1380,
+          "title": "クリコヴォの戦い",
+          "category": "battle",
+          "location": "クリコヴォ野（ドン川上流）",
+          "color": "#8a1a1a",
+          "characters": [
+            "c_dmitry_donskoy",
+            "c_mamai",
+            "c_vladimir_the_bold",
+            "c_sergius_radonezh"
+          ]
+        },
+        {
+          "id": "e_gh_mamai_death",
+          "year": 1380,
+          "title": "ママイの没落と死",
+          "category": "death",
+          "location": "カッファ",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_mamai",
+            "c_tokhtamysh"
+          ]
+        },
+        {
+          "id": "e_gh_tokhtamysh_reunification",
+          "year": 1381,
+          "title": "トクタミシュ、ジョチ・ウルスを再統一",
+          "category": "politics",
+          "location": "サライ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_tokhtamysh"
+          ]
+        },
+        {
+          "id": "e_gh_moscow_sack_1382",
+          "year": 1382,
+          "title": "トクタミシュ、モスクワを急襲・焼き討ち",
+          "category": "battle",
+          "location": "モスクワ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_tokhtamysh",
+            "c_dmitry_donskoy"
+          ]
+        },
+        {
+          "id": "e_gh_tokhtamysh_timur_break",
+          "year": 1385,
+          "title": "トクタミシュ、ティムールと対立",
+          "category": "politics",
+          "location": "アゼルバイジャン方面",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_tokhtamysh",
+            "c_timur"
+          ]
+        },
+        {
+          "id": "e_gh_kondurcha_river",
+          "year": 1391,
+          "title": "コンドゥルチャ河畔の戦い",
+          "category": "battle",
+          "location": "コンドゥルチャ川（現ロシア）",
+          "color": "#5a1a1a",
+          "characters": [
+            "c_timur",
+            "c_tokhtamysh"
+          ]
+        },
+        {
+          "id": "e_gh_terek_river",
+          "year": 1395,
+          "title": "テレク河畔の戦いとサライ破壊",
+          "category": "battle",
+          "location": "テレク川／サライ",
+          "color": "#5a1a1a",
+          "characters": [
+            "c_timur",
+            "c_tokhtamysh"
+          ]
+        },
+        {
+          "id": "e_gh_edigu_rise",
+          "year": 1399,
+          "title": "ヴォルスクラ川の戦い、エディゲ台頭",
+          "category": "battle",
+          "location": "ヴォルスクラ川",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_edigu"
+          ]
+        },
+        {
+          "id": "e_gh_tokhtamysh_death",
+          "year": 1406,
+          "title": "トクタミシュの死",
+          "category": "death",
+          "location": "チュメニ方面（シベリア）",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_tokhtamysh"
+          ]
+        },
+        {
+          "id": "e_gh_edigu_moscow_raid",
+          "year": 1408,
+          "title": "エディゲ、モスクワを包囲",
+          "category": "battle",
+          "location": "モスクワ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_edigu"
+          ]
+        },
+        {
+          "id": "e_gh_edigu_death",
+          "year": 1419,
+          "title": "エディゲの死",
+          "category": "death",
+          "location": "ホラズム方面",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_edigu"
+          ]
+        },
+        {
+          "id": "e_gh_kazan_khanate",
+          "year": 1438,
+          "title": "カザン・ハン国の成立",
+          "category": "politics",
+          "location": "カザン（ヴォルガ中流）",
+          "color": "#2a5a4a",
+          "characters": [
+            "c_ulugh_muhammad"
+          ]
+        },
+        {
+          "id": "e_gh_crimean_khanate",
+          "year": 1441,
+          "title": "クリミア・ハン国の成立",
+          "category": "politics",
+          "location": "クリミア半島"
+        },
+        {
+          "id": "e_gh_vasily_ii_wars",
+          "year": 1445,
+          "title": "ヴァシーリー2世、カザンとの戦いと内乱",
+          "category": "battle",
+          "location": "モスクワ大公国／カザン",
+          "color": "#8a1a1a",
+          "characters": [
+            "c_vasily_ii",
+            "c_ulugh_muhammad"
+          ]
+        },
+        {
+          "id": "e_gh_astrakhan_khanate",
+          "year": 1466,
+          "title": "アストラハン・ハン国の成立",
+          "category": "politics",
+          "location": "アストラハン（ヴォルガ河口）"
+        },
+        {
+          "id": "e_gh_akhmat_campaign",
+          "year": 1480,
+          "title": "アフマド・ハン、モスクワへ親征",
+          "category": "politics",
+          "location": "モスクワ大公国",
+          "color": "#7a5a2a",
+          "characters": [
+            "c_akhmat_khan",
+            "c_ivan_iii"
+          ]
+        },
+        {
+          "id": "e_gh_ugra_standoff",
+          "year": 1480,
+          "title": "ウグラ河畔の対峙",
+          "category": "battle",
+          "location": "ウグラ川",
+          "color": "#7a5a2a",
+          "characters": [
+            "c_akhmat_khan",
+            "c_ivan_iii",
+            "c_vassian_rylo"
+          ]
+        },
+        {
+          "id": "e_gh_akhmat_death",
+          "year": 1481,
+          "title": "アフマド・ハンの死",
+          "category": "death",
+          "location": "サライ近郊",
+          "color": "#7a5a2a",
+          "characters": [
+            "c_akhmat_khan"
+          ]
+        },
+        {
+          "id": "e_gh_great_horde_fall",
+          "year": 1502,
+          "title": "大帳の滅亡",
+          "category": "politics",
+          "location": "サライ",
+          "color": "#7a5a2a",
+          "characters": [
+            "c_sheikh_ahmed"
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_batu",
+          "name": "バトゥ",
+          "reading": "バトゥ",
+          "faction": "golden_horde",
+          "field": "governance"
+        },
+        {
+          "id": "c_sartaq",
+          "name": "サルタク",
+          "reading": "サルタク",
+          "faction": "golden_horde",
+          "field": "governance"
+        },
+        {
+          "id": "c_berke",
+          "name": "ベルケ",
+          "reading": "ベルケ",
+          "faction": "golden_horde",
+          "field": "governance"
+        },
+        {
+          "id": "c_burundai",
+          "name": "ブルンダイ",
+          "reading": "ブルンダイ",
+          "faction": "golden_horde",
+          "field": "military"
+        },
+        {
+          "id": "c_nogai",
+          "name": "ノガイ",
+          "reading": "ノガイ",
+          "faction": "golden_horde",
+          "field": "military"
+        },
+        {
+          "id": "c_tokta",
+          "name": "トクタ",
+          "reading": "トクタ",
+          "faction": "golden_horde",
+          "field": "governance"
+        },
+        {
+          "id": "c_uzbek_khan",
+          "name": "ウズベク・ハン",
+          "reading": "ウズベクハン",
+          "faction": "golden_horde",
+          "field": "governance"
+        },
+        {
+          "id": "c_janibeg",
+          "name": "ジャニベク",
+          "reading": "ジャニベク",
+          "faction": "golden_horde",
+          "field": "governance"
+        },
+        {
+          "id": "c_mamai",
+          "name": "ママイ",
+          "reading": "ママイ",
+          "faction": "mamai_horde",
+          "field": "governance"
+        },
+        {
+          "id": "c_tokhtamysh",
+          "name": "トクタミシュ",
+          "reading": "トクタミシュ",
+          "faction": "golden_horde",
+          "field": "governance"
+        },
+        {
+          "id": "c_edigu",
+          "name": "エディゲ",
+          "reading": "エディゲ",
+          "faction": "golden_horde",
+          "field": "military"
+        },
+        {
+          "id": "c_ulugh_muhammad",
+          "name": "ウルグ・ムハンマド",
+          "reading": "ウルグムハンマド",
+          "faction": "kazan_khanate",
+          "field": "governance"
+        },
+        {
+          "id": "c_akhmat_khan",
+          "name": "アフマド・ハン",
+          "reading": "アフマドハン",
+          "faction": "great_horde",
+          "field": "governance"
+        },
+        {
+          "id": "c_sheikh_ahmed",
+          "name": "シェイフ・アフメド",
+          "reading": "シェイフアフメド",
+          "faction": "great_horde",
+          "field": "governance"
+        },
+        {
+          "id": "c_alexander_nevsky",
+          "name": "アレクサンドル・ネフスキー",
+          "reading": "アレクサンドルネフスキー",
+          "faction": "rus",
+          "field": "governance"
+        },
+        {
+          "id": "c_mikhail_tver",
+          "name": "ミハイル・ヤロスラヴィチ",
+          "reading": "ミハイルヤロスラヴィチ",
+          "faction": "rus",
+          "field": "governance"
+        },
+        {
+          "id": "c_daniil_galitsky",
+          "name": "ダニイル・ガーリツキイ",
+          "reading": "ダニイルガーリツキイ",
+          "faction": "rus",
+          "field": "governance"
+        },
+        {
+          "id": "c_ivan_kalita",
+          "name": "イヴァン1世",
+          "reading": "イヴァンいっせい",
+          "faction": "moscow",
+          "field": "governance"
+        },
+        {
+          "id": "c_dmitry_donskoy",
+          "name": "ドミトリー・ドンスコイ",
+          "reading": "ドミトリードンスコイ",
+          "faction": "moscow",
+          "field": "governance"
+        },
+        {
+          "id": "c_vladimir_the_bold",
+          "name": "ヴラジーミル・アンドレーヴィチ",
+          "reading": "ヴラジーミルアンドレーヴィチ",
+          "faction": "moscow",
+          "field": "military"
+        },
+        {
+          "id": "c_sergius_radonezh",
+          "name": "セルギイ・ラドネシュスキー",
+          "reading": "セルギイラドネシュスキー",
+          "faction": "moscow",
+          "field": "thought"
+        },
+        {
+          "id": "c_vasily_ii",
+          "name": "ヴァシーリー2世",
+          "reading": "ヴァシーリーにせい",
+          "faction": "moscow",
+          "field": "governance"
+        },
+        {
+          "id": "c_ivan_iii",
+          "name": "イヴァン3世",
+          "reading": "イヴァンさんせい",
+          "faction": "moscow",
+          "field": "governance"
+        },
+        {
+          "id": "c_vassian_rylo",
+          "name": "ヴァッシアン・ルィロ",
+          "reading": "ヴァッシアンルィロ",
+          "faction": "moscow",
+          "field": "thought"
+        },
+        {
+          "id": "c_olgierd",
+          "name": "アルギルダス",
+          "reading": "アルギルダス",
+          "faction": "lithuania",
+          "field": "governance"
+        },
+        {
+          "id": "c_timur",
+          "name": "ティムール",
+          "reading": "ティムール",
+          "faction": "timurid",
+          "field": "governance"
+        },
+        {
+          "id": "c_ibn_battuta",
+          "name": "イブン・バットゥータ",
+          "reading": "イブンバットゥータ",
+          "faction": "other",
+          "field": "scholarship"
+        }
+      ],
+      "factions": {
+        "golden_horde": {
+          "id": "golden_horde",
+          "name": "ジョチ・ウルス（キプチャク・ハン国）",
+          "color": "#8a6a1a",
+          "colorLight": "#c0a04a"
+        },
+        "mamai_horde": {
+          "id": "mamai_horde",
+          "name": "ママイ政権（西方の実力者）",
+          "color": "#6a4a1a",
+          "colorLight": "#a37a3a"
+        },
+        "great_horde": {
+          "id": "great_horde",
+          "name": "大帳（ウルグ・オルダ）",
+          "color": "#7a5a2a",
+          "colorLight": "#b08a4a"
+        },
+        "kazan_khanate": {
+          "id": "kazan_khanate",
+          "name": "カザン・ハン国",
+          "color": "#2a5a4a",
+          "colorLight": "#4a9478"
+        },
+        "crimean_khanate": {
+          "id": "crimean_khanate",
+          "name": "クリミア・ハン国",
+          "color": "#1a5a6a",
+          "colorLight": "#4a95a8"
+        },
+        "astrakhan_khanate": {
+          "id": "astrakhan_khanate",
+          "name": "アストラハン・ハン国",
+          "color": "#3a4a6a",
+          "colorLight": "#6a80a8"
+        },
+        "rus": {
+          "id": "rus",
+          "name": "ルーシ諸公国",
+          "color": "#4a1a3a",
+          "colorLight": "#7a4a6a"
+        },
+        "moscow": {
+          "id": "moscow",
+          "name": "モスクワ大公国",
+          "color": "#8a1a1a",
+          "colorLight": "#c05a5a"
+        },
+        "lithuania": {
+          "id": "lithuania",
+          "name": "リトアニア大公国",
+          "color": "#1a3a5a",
+          "colorLight": "#4a6f9a"
+        },
+        "timurid": {
+          "id": "timurid",
+          "name": "ティムール帝国",
+          "color": "#5a1a1a",
+          "colorLight": "#8a4a4a"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#5A6072",
+          "colorLight": "#8A90A2"
+        }
+      }
     }
   }
 }
