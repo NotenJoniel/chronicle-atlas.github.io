@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.warn(`meta.layoutStyle ("${META.layoutStyle}") と body[data-layout] ("${document.body.dataset.layout}") が一致していません`);
   }
 
-  const state = { era: null, faction: 'all', category: 'all', query: '', mapVisible: false, sidebarVisible: true, activeEventYear: null, prevMapKey: null, selectedChars: new Set() };
+  const state = { era: null, faction: 'all', category: 'all', field: 'all', query: '', mapVisible: false, sidebarVisible: true, activeEventYear: null, prevMapKey: null, selectedChars: new Set() };
 
   const $ = id => document.getElementById(id);
   const eraNav = $('era-nav');
@@ -210,9 +210,24 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     sidebar.appendChild(clearBar);
 
+    // 分野フィルタ（人物一覧にのみ効く。年表本体には影響しないため、勢力/カテゴリと
+    // 同じ上部フィルタ列ではなくサイドバー内に置く）。otherは選択の意味が無いため除外。
+    const presentFields = Object.keys(FIELD_LABELS).filter(f => D.CHARACTERS.some(c => c.field === f));
+    if (presentFields.length > 1) {
+      const fieldFilter = mkEl('div', 'sidebar-field-filter');
+      const select = mkEl('select', '');
+      select.appendChild(new Option('全分野', 'all'));
+      presentFields.forEach(f => select.appendChild(new Option(FIELD_LABELS[f], f)));
+      select.value = state.field;
+      select.onchange = () => { state.field = select.value; renderSidebar(); };
+      fieldFilter.appendChild(mkEl('label', '', '人物を分野で絞り込み'));
+      fieldFilter.appendChild(select);
+      sidebar.appendChild(fieldFilter);
+    }
+
     const factionOrder = Object.keys(D.FACTIONS);
     factionOrder.forEach(fid => {
-      const chars = D.CHARACTERS.filter(c => c.faction === fid);
+      const chars = D.CHARACTERS.filter(c => c.faction === fid && (state.field === 'all' || c.field === state.field));
       if (!chars.length) return;
       const section = mkEl('div', 'sidebar-section');
       const header = mkEl('div', 'sidebar-header');
