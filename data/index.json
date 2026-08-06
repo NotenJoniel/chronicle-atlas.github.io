@@ -89,6 +89,15 @@
       "endYear": 1648,
       "dataFile": "timelines/age-of-exploration.json",
       "subProjectDir": "age-of-exploration"
+    },
+    {
+      "id": "mongol-empire",
+      "name": "モンゴル帝国",
+      "region": "china",
+      "startYear": 1206,
+      "endYear": 1368,
+      "dataFile": "timelines/mongol-empire.json",
+      "subProjectDir": "mongol-empire"
     }
   ]
 }

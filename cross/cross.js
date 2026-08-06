@@ -10,7 +10,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const REGIONS = [
     { id: 'japan', name: '日本', icon: '⛩️' },
-    { id: 'china', name: '中国', icon: '🐉' },
+    { id: 'china', name: '北・東アジア', icon: '🐉' },
     { id: 'europe', name: 'ヨーロッパ', icon: '🏛️' },
     { id: 'others', name: 'その他の地域', icon: '🌍' },
   ];

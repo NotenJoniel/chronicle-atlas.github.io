@@ -315,7 +315,7 @@
   // ── Regions ──
   const REGIONS = [
     { id: 'japan',  name: '日本',       icon: '⛩️' },
-    { id: 'china',  name: '中国',       icon: '🐉' },
+    { id: 'china',  name: '北・東アジア', icon: '🐉' },
     { id: 'europe', name: 'ヨーロッパ',  icon: '🏛️' },
     { id: 'others', name: 'その他の地域', icon: '🌍', placeholder: true },
   ];
@@ -336,6 +336,9 @@
     { region:'china', name:'三国時代',  start:220,  end:280,  color:'#b8963c', lineage:'china-main',
       note:'⚔️ 魏・蜀・呉の三国が覇を競う。劉備・曹操・孫権の時代。',
       link:'./three-kingdoms/', linked:true },
+    { region:'china', name:'モンゴル帝国', start:1206, end:1368, color:'#8a5a1a', lineage:'china-main',
+      link:'./mongol-empire/', linked:true,
+      note:'🏹 チンギス・カンによるモンゴル統一から、四ハン国分裂とクビライによる中国統一（元）、そして元の滅亡まで。ヨーロッパ（レグニツァ・モヒの戦い）から中東（バグダード陥落）、日本（元寇）まで同時多発的に広がった帝国だが、統治の中心は一貫して中国方面にあったためこの列に置く。「キプチャク・ハン国」のようにヨーロッパ側に根を張り続けた後継国家は、分裂までの帝国の物語とは別のタイムラインとして今後扱う。' },
 
     // ─── 日本 ───
     { region:'japan', name:'戦国時代',  start:1467, end:1615, color:'#5a6a2a',

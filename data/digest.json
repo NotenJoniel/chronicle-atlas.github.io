@@ -9172,6 +9172,1079 @@
           "colorLight": "#8A90A2"
         }
       }
+    },
+    "mongol-empire": {
+      "events": [
+        {
+          "id": "e_temujin_khan_of_khans",
+          "year": 1189,
+          "title": "テムジン、部族長に推戴される",
+          "category": "politics",
+          "location": "モンゴル高原",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_genghis_khan"
+          ]
+        },
+        {
+          "id": "e_genghis_enthronement",
+          "year": 1206,
+          "title": "チンギス・カン即位、モンゴル諸部族統一",
+          "category": "politics",
+          "location": "オノン川流域",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_genghis_khan"
+          ]
+        },
+        {
+          "id": "e_xixia_first",
+          "year": 1209,
+          "title": "西夏への遠征開始",
+          "category": "battle",
+          "location": "西夏（現寧夏・甘粛）",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_genghis_khan"
+          ]
+        },
+        {
+          "id": "e_jin_invasion",
+          "year": 1211,
+          "title": "金への侵攻開始",
+          "category": "battle",
+          "location": "華北",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_genghis_khan",
+            "c_muqali"
+          ]
+        },
+        {
+          "id": "e_zhongdu_fall",
+          "year": 1215,
+          "title": "中都（燕京）陥落",
+          "category": "battle",
+          "location": "中都（現北京）",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_muqali"
+          ]
+        },
+        {
+          "id": "e_genghis_death",
+          "year": 1227,
+          "title": "チンギス・カンの死、西夏滅亡",
+          "category": "death",
+          "location": "西夏遠征中の陣中",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_genghis_khan",
+            "c_xixia_emperor"
+          ]
+        },
+        {
+          "id": "e_ogedei_enthronement",
+          "year": 1229,
+          "title": "オゴデイ、大ハーンに即位",
+          "category": "politics",
+          "location": "カラコルム",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_ogedei"
+          ]
+        },
+        {
+          "id": "e_yelu_chucai_reform",
+          "year": 1230,
+          "title": "耶律楚材、中国統治の税制改革を進言",
+          "category": "episode",
+          "location": "カラコルム",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_yelu_chucai",
+            "c_ogedei"
+          ]
+        },
+        {
+          "id": "e_jin_fall",
+          "year": 1234,
+          "title": "金朝滅亡",
+          "category": "battle",
+          "location": "蔡州",
+          "color": "#4a3a1a",
+          "characters": [
+            "c_jin_emperor_aizong",
+            "c_ogedei"
+          ]
+        },
+        {
+          "id": "e_qara_khitai_conquest",
+          "year": 1218,
+          "title": "西遼（カラ・キタイ）征服",
+          "category": "politics",
+          "location": "中央アジア",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_jebe"
+          ]
+        },
+        {
+          "id": "e_otrar_incident",
+          "year": 1218,
+          "title": "オトラル事件",
+          "category": "episode",
+          "location": "オトラル",
+          "color": "#1a5a6a",
+          "characters": [
+            "c_muhammad_khwarazm"
+          ]
+        },
+        {
+          "id": "e_khwarazm_invasion",
+          "year": 1219,
+          "title": "ホラズム遠征開始",
+          "category": "battle",
+          "location": "中央アジア",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_genghis_khan"
+          ]
+        },
+        {
+          "id": "e_bukhara_samarkand",
+          "year": 1220,
+          "title": "ブハラ・サマルカンド陥落",
+          "category": "battle",
+          "location": "ブハラ／サマルカンド",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_genghis_khan"
+          ]
+        },
+        {
+          "id": "e_muhammad_death",
+          "year": 1220,
+          "title": "ムハンマド2世の逃亡と死",
+          "category": "death",
+          "location": "カスピ海の孤島",
+          "color": "#1a5a6a",
+          "characters": [
+            "c_muhammad_khwarazm"
+          ]
+        },
+        {
+          "id": "e_jalal_al_din_resistance",
+          "year": 1221,
+          "title": "インダス河畔の戦い",
+          "category": "battle",
+          "location": "インダス河畔",
+          "color": "#1a5a6a",
+          "characters": [
+            "c_jalal_al_din",
+            "c_genghis_khan"
+          ]
+        },
+        {
+          "id": "e_kalka_river",
+          "year": 1223,
+          "title": "カルカ河畔の戦い",
+          "category": "battle",
+          "location": "カルカ河（現ウクライナ）",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_jebe",
+            "c_subutai"
+          ]
+        },
+        {
+          "id": "e_batu_western_campaign",
+          "year": 1235,
+          "title": "バトゥの西方（ヨーロッパ）遠征開始",
+          "category": "battle",
+          "location": "ヴォルガ川流域",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_batu",
+            "c_subutai"
+          ]
+        },
+        {
+          "id": "e_sit_river",
+          "year": 1238,
+          "title": "シチ川の戦い",
+          "category": "death",
+          "location": "シチ川（現ロシア）",
+          "color": "#4a1a3a",
+          "characters": [
+            "c_yuri_ii"
+          ]
+        },
+        {
+          "id": "e_kiev_fall",
+          "year": 1240,
+          "title": "キエフ陥落",
+          "category": "battle",
+          "location": "キエフ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_batu"
+          ]
+        },
+        {
+          "id": "e_legnica",
+          "year": 1241,
+          "title": "レグニツァの戦い",
+          "category": "battle",
+          "location": "レグニツァ（現ポーランド）",
+          "color": "#3a3a6a",
+          "characters": [
+            "c_henry_ii_silesia",
+            "c_subutai"
+          ]
+        },
+        {
+          "id": "e_mohi",
+          "year": 1241,
+          "title": "モヒの戦い",
+          "category": "battle",
+          "location": "モヒ（現ハンガリー）",
+          "color": "#3a3a6a",
+          "characters": [
+            "c_bela_iv",
+            "c_batu"
+          ]
+        },
+        {
+          "id": "e_ogedei_death_withdrawal",
+          "year": 1241,
+          "title": "オゴデイの死とヨーロッパ遠征の中止",
+          "category": "death",
+          "location": "カラコルム／ハンガリー",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_ogedei",
+            "c_batu"
+          ]
+        },
+        {
+          "id": "e_hulagu_campaign",
+          "year": 1253,
+          "title": "フレグの西アジア遠征開始",
+          "category": "battle",
+          "location": "イラン高原",
+          "color": "#5a1a2a",
+          "characters": [
+            "c_hulagu"
+          ]
+        },
+        {
+          "id": "e_alamut_fall",
+          "year": 1256,
+          "title": "アラムート城陥落、ニザール派制圧",
+          "category": "battle",
+          "location": "アラムート（現イラン）",
+          "color": "#5a1a2a",
+          "characters": [
+            "c_hulagu"
+          ]
+        },
+        {
+          "id": "e_baghdad_fall",
+          "year": 1258,
+          "title": "バグダード陥落、アッバース朝滅亡",
+          "category": "battle",
+          "location": "バグダード",
+          "color": "#5a1a2a",
+          "characters": [
+            "c_hulagu",
+            "c_al_mustasim"
+          ]
+        },
+        {
+          "id": "e_maragheh_observatory",
+          "year": 1259,
+          "title": "マラーゲ天文台の設立",
+          "category": "episode",
+          "location": "マラーゲ（現イラン）",
+          "color": "#5a1a2a",
+          "characters": [
+            "c_nasir_al_din_tusi",
+            "c_hulagu"
+          ]
+        },
+        {
+          "id": "e_ain_jalut",
+          "year": 1260,
+          "title": "アイン・ジャールートの戦い",
+          "category": "battle",
+          "location": "アイン・ジャールート（現パレスチナ）",
+          "color": "#5a1a2a",
+          "characters": [
+            "c_kitbuqa",
+            "c_baibars"
+          ]
+        },
+        {
+          "id": "e_goryeo_invasion_start",
+          "year": 1231,
+          "title": "モンゴルの高麗侵攻開始",
+          "category": "battle",
+          "location": "朝鮮半島",
+          "color": "#2a3a5a",
+          "characters": [
+            "c_goryeo_wonjong"
+          ]
+        },
+        {
+          "id": "e_guyuk_enthronement",
+          "year": 1246,
+          "title": "グユク、大ハーンに即位",
+          "category": "politics",
+          "location": "カラコルム",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_guyuk"
+          ]
+        },
+        {
+          "id": "e_guyuk_death",
+          "year": 1248,
+          "title": "グユクの死",
+          "category": "death",
+          "location": "西方への遠征途上",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_guyuk"
+          ]
+        },
+        {
+          "id": "e_mongke_enthronement",
+          "year": 1251,
+          "title": "モンケ、大ハーンに即位",
+          "category": "politics",
+          "location": "カラコルム",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_mongke",
+            "c_sorghaghtani"
+          ]
+        },
+        {
+          "id": "e_sorghaghtani_death",
+          "year": 1252,
+          "title": "ソルガクタニ・ベキの死",
+          "category": "death",
+          "location": "モンゴル高原",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_sorghaghtani"
+          ]
+        },
+        {
+          "id": "e_dali_conquest",
+          "year": 1253,
+          "title": "大理国征服",
+          "category": "battle",
+          "location": "雲南（現中国雲南省）",
+          "color": "#8a2a1a",
+          "characters": [
+            "c_kublai",
+            "c_dali_king"
+          ]
+        },
+        {
+          "id": "e_kublai_song_campaign",
+          "year": 1258,
+          "title": "モンケ・クビライの南宋遠征開始",
+          "category": "battle",
+          "location": "四川方面",
+          "color": "#8a2a1a",
+          "characters": [
+            "c_kublai",
+            "c_mongke"
+          ]
+        },
+        {
+          "id": "e_vietnam_first_invasion",
+          "year": 1258,
+          "title": "大越（陳朝）への第一次侵攻",
+          "category": "battle",
+          "location": "大越（現ベトナム北部）"
+        },
+        {
+          "id": "e_mongke_death",
+          "year": 1259,
+          "title": "モンケの死",
+          "category": "death",
+          "location": "四川・釣魚城包囲陣中",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_mongke"
+          ]
+        },
+        {
+          "id": "e_goryeo_submission",
+          "year": 1259,
+          "title": "高麗の服属",
+          "category": "politics",
+          "location": "朝鮮半島",
+          "color": "#2a3a5a",
+          "characters": [
+            "c_goryeo_wonjong"
+          ]
+        },
+        {
+          "id": "e_yuan_dynasty_name",
+          "year": 1271,
+          "title": "国号を「元」と定める",
+          "category": "politics",
+          "location": "大都（現北京）",
+          "color": "#8a2a1a",
+          "characters": [
+            "c_kublai"
+          ]
+        },
+        {
+          "id": "e_marco_polo_arrival",
+          "year": 1275,
+          "title": "マルコ・ポーロ、上都に到着",
+          "category": "episode",
+          "location": "上都",
+          "color": "#5A6072",
+          "characters": [
+            "c_marco_polo",
+            "c_kublai"
+          ]
+        },
+        {
+          "id": "e_lin_an_fall",
+          "year": 1276,
+          "title": "臨安陥落、南宋の実質的滅亡",
+          "category": "politics",
+          "location": "臨安（現杭州）",
+          "color": "#1a5a4a",
+          "characters": [
+            "c_empress_dowager_xie",
+            "c_bayan"
+          ]
+        },
+        {
+          "id": "e_wen_tianxiang_capture",
+          "year": 1278,
+          "title": "文天祥の捕縛",
+          "category": "episode",
+          "location": "広東",
+          "color": "#1a5a4a",
+          "characters": [
+            "c_wen_tianxiang"
+          ]
+        },
+        {
+          "id": "e_yamen_battle",
+          "year": 1279,
+          "title": "崖山の戦い、南宋滅亡",
+          "category": "death",
+          "location": "崖山（広東沖）",
+          "color": "#1a5a4a",
+          "characters": [
+            "c_zhang_shijie"
+          ]
+        },
+        {
+          "id": "e_kublai_khan_claim",
+          "year": 1260,
+          "title": "クビライ、大ハーン即位を宣言",
+          "category": "politics",
+          "location": "開平（上都）",
+          "color": "#8a2a1a",
+          "characters": [
+            "c_kublai"
+          ]
+        },
+        {
+          "id": "e_ariq_boke_claim",
+          "year": 1260,
+          "title": "アリク・ブケも大ハーンを称し内乱勃発",
+          "category": "politics",
+          "location": "カラコルム",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_ariq_boke",
+            "c_kublai"
+          ]
+        },
+        {
+          "id": "e_ariq_boke_surrender",
+          "year": 1264,
+          "title": "アリク・ブケの降伏、帝国の実質的分裂",
+          "category": "politics",
+          "location": "上都",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_ariq_boke",
+            "c_kublai"
+          ]
+        },
+        {
+          "id": "e_kaidu_rebellion",
+          "year": 1268,
+          "title": "カイドゥの反乱始まる",
+          "category": "battle",
+          "location": "中央アジア",
+          "color": "#3a5a3a",
+          "characters": [
+            "c_kaidu",
+            "c_kublai"
+          ]
+        },
+        {
+          "id": "e_ahmad_finance_reform",
+          "year": 1270,
+          "title": "アフマド・ファナーカティー、元朝の財政を掌握",
+          "category": "episode",
+          "location": "大都",
+          "color": "#8a2a1a",
+          "characters": [
+            "c_ahmad_fanakati",
+            "c_kublai"
+          ]
+        },
+        {
+          "id": "e_first_mongol_invasion_japan",
+          "year": 1274,
+          "title": "元寇（文永の役）",
+          "category": "battle",
+          "location": "博多湾（日本）",
+          "color": "#8a2a1a",
+          "characters": [
+            "c_kublai",
+            "c_hojo_tokimune"
+          ]
+        },
+        {
+          "id": "e_guo_shoujing_calendar",
+          "year": 1280,
+          "title": "郭守敬、授時暦を完成",
+          "category": "episode",
+          "location": "大都",
+          "color": "#8a2a1a",
+          "characters": [
+            "c_guo_shoujing",
+            "c_kublai"
+          ]
+        },
+        {
+          "id": "e_second_mongol_invasion_japan",
+          "year": 1281,
+          "title": "元寇（弘安の役）",
+          "category": "battle",
+          "location": "博多湾（日本）",
+          "color": "#8a2a1a",
+          "characters": [
+            "c_kublai",
+            "c_hojo_tokimune"
+          ]
+        },
+        {
+          "id": "e_ahmad_assassination",
+          "year": 1282,
+          "title": "アフマド・ファナーカティーの暗殺",
+          "category": "death",
+          "location": "大都",
+          "color": "#8a2a1a",
+          "characters": [
+            "c_ahmad_fanakati"
+          ]
+        },
+        {
+          "id": "e_wen_tianxiang_execution",
+          "year": 1283,
+          "title": "文天祥の処刑",
+          "category": "death",
+          "location": "大都",
+          "color": "#1a5a4a",
+          "characters": [
+            "c_wen_tianxiang",
+            "c_kublai"
+          ]
+        },
+        {
+          "id": "e_vietnam_second_invasion",
+          "year": 1285,
+          "title": "大越への第二次侵攻",
+          "category": "battle",
+          "location": "大越（現ベトナム北部）",
+          "color": "#1a4a2a",
+          "characters": [
+            "c_tran_hung_dao"
+          ]
+        },
+        {
+          "id": "e_bach_dang_battle",
+          "year": 1288,
+          "title": "バクダン川の戦い",
+          "category": "battle",
+          "location": "バクダン川（現ベトナム）",
+          "color": "#1a4a2a",
+          "characters": [
+            "c_tran_hung_dao"
+          ]
+        },
+        {
+          "id": "e_nayan_rebellion",
+          "year": 1287,
+          "title": "ナヤンの乱",
+          "category": "battle",
+          "location": "満洲（中国東北部）",
+          "color": "#8a2a1a",
+          "characters": [
+            "c_kublai"
+          ]
+        },
+        {
+          "id": "e_rabban_bar_sauma_journey",
+          "year": 1287,
+          "title": "ラッバン・バール・サウマ、ヨーロッパへ",
+          "category": "episode",
+          "location": "ローマ／パリ／ロンドン",
+          "color": "#5a1a2a",
+          "characters": [
+            "c_rabban_bar_sauma"
+          ]
+        },
+        {
+          "id": "e_kublai_death",
+          "year": 1294,
+          "title": "クビライの死",
+          "category": "death",
+          "location": "大都",
+          "color": "#8a2a1a",
+          "characters": [
+            "c_kublai"
+          ]
+        },
+        {
+          "id": "e_yuan_succession_crisis",
+          "year": 1328,
+          "title": "元朝の相次ぐ皇位継承争い",
+          "category": "politics",
+          "location": "大都"
+        },
+        {
+          "id": "e_red_turban_rebellion",
+          "year": 1351,
+          "title": "紅巾の乱勃発",
+          "category": "battle",
+          "location": "中国各地"
+        },
+        {
+          "id": "e_yuan_fall",
+          "year": 1368,
+          "title": "元、大都放棄・明の建国",
+          "category": "politics",
+          "location": "大都"
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_genghis_khan",
+          "name": "チンギス・カン",
+          "reading": "チンギスカン",
+          "faction": "mongol",
+          "field": "governance"
+        },
+        {
+          "id": "c_jochi",
+          "name": "ジョチ",
+          "reading": "ジョチ",
+          "faction": "mongol",
+          "field": "military"
+        },
+        {
+          "id": "c_chagatai",
+          "name": "チャガタイ",
+          "reading": "チャガタイ",
+          "faction": "chagatai",
+          "field": "governance"
+        },
+        {
+          "id": "c_ogedei",
+          "name": "オゴデイ",
+          "reading": "オゴデイ",
+          "faction": "mongol",
+          "field": "governance"
+        },
+        {
+          "id": "c_tolui",
+          "name": "トルイ",
+          "reading": "トルイ",
+          "faction": "mongol",
+          "field": "military"
+        },
+        {
+          "id": "c_sorghaghtani",
+          "name": "ソルガクタニ・ベキ",
+          "reading": "ソルガクタニベキ",
+          "faction": "mongol",
+          "field": "governance"
+        },
+        {
+          "id": "c_subutai",
+          "name": "スブタイ",
+          "reading": "スブタイ",
+          "faction": "mongol",
+          "field": "military"
+        },
+        {
+          "id": "c_jebe",
+          "name": "ジェベ",
+          "reading": "ジェベ",
+          "faction": "mongol",
+          "field": "military"
+        },
+        {
+          "id": "c_muqali",
+          "name": "ムカリ",
+          "reading": "ムカリ",
+          "faction": "mongol",
+          "field": "military"
+        },
+        {
+          "id": "c_yelu_chucai",
+          "name": "耶律楚材",
+          "reading": "やりつそざい",
+          "faction": "mongol",
+          "field": "administration"
+        },
+        {
+          "id": "c_xixia_emperor",
+          "name": "李睍",
+          "reading": "りけん",
+          "faction": "xixia",
+          "field": "governance"
+        },
+        {
+          "id": "c_guyuk",
+          "name": "グユク",
+          "reading": "グユク",
+          "faction": "mongol",
+          "field": "governance"
+        },
+        {
+          "id": "c_mongke",
+          "name": "モンケ",
+          "reading": "モンケ",
+          "faction": "mongol",
+          "field": "governance"
+        },
+        {
+          "id": "c_kublai",
+          "name": "クビライ",
+          "reading": "クビライ",
+          "faction": "yuan",
+          "field": "governance"
+        },
+        {
+          "id": "c_ariq_boke",
+          "name": "アリク・ブケ",
+          "reading": "アリクブケ",
+          "faction": "mongol",
+          "field": "governance"
+        },
+        {
+          "id": "c_bayan",
+          "name": "バヤン",
+          "reading": "バヤン",
+          "faction": "yuan",
+          "field": "military"
+        },
+        {
+          "id": "c_ahmad_fanakati",
+          "name": "アフマド・ファナーカティー",
+          "reading": "アフマドファナーカティー",
+          "faction": "yuan",
+          "field": "commerce"
+        },
+        {
+          "id": "c_guo_shoujing",
+          "name": "郭守敬",
+          "reading": "かくしゅけい",
+          "faction": "yuan",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_marco_polo",
+          "name": "マルコ・ポーロ",
+          "reading": "マルコポーロ",
+          "faction": "other",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_batu",
+          "name": "バトゥ",
+          "reading": "バトゥ",
+          "faction": "golden_horde",
+          "field": "governance"
+        },
+        {
+          "id": "c_yuri_ii",
+          "name": "ユーリー2世",
+          "reading": "ユーリーにせい",
+          "faction": "rus",
+          "field": "governance"
+        },
+        {
+          "id": "c_hulagu",
+          "name": "フレグ",
+          "reading": "フレグ",
+          "faction": "ilkhanate",
+          "field": "governance"
+        },
+        {
+          "id": "c_kitbuqa",
+          "name": "キト・ブカ",
+          "reading": "キトブカ",
+          "faction": "ilkhanate",
+          "field": "military"
+        },
+        {
+          "id": "c_baibars",
+          "name": "バイバルス",
+          "reading": "バイバルス",
+          "faction": "mamluk",
+          "field": "governance"
+        },
+        {
+          "id": "c_nasir_al_din_tusi",
+          "name": "ナスィールッディーン・トゥースィー",
+          "reading": "ナスィールッディーントゥースィー",
+          "faction": "ilkhanate",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_rashid_al_din",
+          "name": "ラシード・ウッディーン",
+          "reading": "ラシードウッディーン",
+          "faction": "ilkhanate",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_rabban_bar_sauma",
+          "name": "ラッバン・バール・サウマ",
+          "reading": "ラッバンバールサウマ",
+          "faction": "ilkhanate",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_muhammad_khwarazm",
+          "name": "ムハンマド2世",
+          "reading": "ムハンマドにせい",
+          "faction": "khwarazm",
+          "field": "governance"
+        },
+        {
+          "id": "c_jalal_al_din",
+          "name": "ジャラールッディーン",
+          "reading": "ジャラールッディーン",
+          "faction": "khwarazm",
+          "field": "military"
+        },
+        {
+          "id": "c_jin_emperor_aizong",
+          "name": "金・哀宗",
+          "reading": "きんあいそう",
+          "faction": "jin",
+          "field": "governance"
+        },
+        {
+          "id": "c_empress_dowager_xie",
+          "name": "謝太后",
+          "reading": "しゃたいこう",
+          "faction": "song",
+          "field": "governance"
+        },
+        {
+          "id": "c_zhang_shijie",
+          "name": "張世傑",
+          "reading": "ちょうせいけつ",
+          "faction": "song",
+          "field": "military"
+        },
+        {
+          "id": "c_wen_tianxiang",
+          "name": "文天祥",
+          "reading": "ぶんてんしょう",
+          "faction": "song",
+          "field": "thought"
+        },
+        {
+          "id": "c_bela_iv",
+          "name": "ベーラ4世",
+          "reading": "ベーラよんせい",
+          "faction": "europe",
+          "field": "governance"
+        },
+        {
+          "id": "c_henry_ii_silesia",
+          "name": "ヘンリク2世敬虔公",
+          "reading": "ヘンリクにせいけいけんこう",
+          "faction": "europe",
+          "field": "governance"
+        },
+        {
+          "id": "c_al_mustasim",
+          "name": "アル＝ムスタアスィム",
+          "reading": "アルムスタアスィム",
+          "faction": "abbasid",
+          "field": "governance"
+        },
+        {
+          "id": "c_kaidu",
+          "name": "カイドゥ",
+          "reading": "カイドゥ",
+          "faction": "chagatai",
+          "field": "governance"
+        },
+        {
+          "id": "c_hojo_tokimune",
+          "name": "北条時宗",
+          "reading": "ほうじょうときむね",
+          "faction": "japan",
+          "field": "governance"
+        },
+        {
+          "id": "c_goryeo_wonjong",
+          "name": "元宗",
+          "reading": "げんそう",
+          "faction": "goryeo",
+          "field": "governance"
+        },
+        {
+          "id": "c_dali_king",
+          "name": "段興智",
+          "reading": "だんこうち",
+          "faction": "dali",
+          "field": "governance"
+        },
+        {
+          "id": "c_tran_hung_dao",
+          "name": "陳興道",
+          "reading": "ちんこうどう",
+          "faction": "vietnam",
+          "field": "military"
+        }
+      ],
+      "factions": {
+        "mongol": {
+          "id": "mongol",
+          "name": "モンゴル帝国（大ハーン家・統一期）",
+          "color": "#2a4a6a",
+          "colorLight": "#5a84ab"
+        },
+        "yuan": {
+          "id": "yuan",
+          "name": "元朝（クビライ・ウルス）",
+          "color": "#8a2a1a",
+          "colorLight": "#c0603f"
+        },
+        "golden_horde": {
+          "id": "golden_horde",
+          "name": "ジョチ・ウルス（キプチャク・ハン国）",
+          "color": "#8a6a1a",
+          "colorLight": "#c0a04a"
+        },
+        "ilkhanate": {
+          "id": "ilkhanate",
+          "name": "イルハン国",
+          "color": "#5a1a2a",
+          "colorLight": "#95455a"
+        },
+        "chagatai": {
+          "id": "chagatai",
+          "name": "チャガタイ・ハン国",
+          "color": "#3a5a3a",
+          "colorLight": "#6a946a"
+        },
+        "jin": {
+          "id": "jin",
+          "name": "金（女真）",
+          "color": "#4a3a1a",
+          "colorLight": "#8a704a"
+        },
+        "xixia": {
+          "id": "xixia",
+          "name": "西夏（タングート）",
+          "color": "#5a4a3a",
+          "colorLight": "#8a7a5a"
+        },
+        "khwarazm": {
+          "id": "khwarazm",
+          "name": "ホラズム・シャー朝",
+          "color": "#1a5a6a",
+          "colorLight": "#4a95a8"
+        },
+        "song": {
+          "id": "song",
+          "name": "南宋",
+          "color": "#1a5a4a",
+          "colorLight": "#4a9c85"
+        },
+        "abbasid": {
+          "id": "abbasid",
+          "name": "アッバース朝カリフ国",
+          "color": "#1a1a1a",
+          "colorLight": "#4a4a4a"
+        },
+        "rus": {
+          "id": "rus",
+          "name": "ルーシ諸公国",
+          "color": "#4a1a3a",
+          "colorLight": "#7a4a6a"
+        },
+        "europe": {
+          "id": "europe",
+          "name": "ハンガリー・ポーランド連合",
+          "color": "#3a3a6a",
+          "colorLight": "#7070a8"
+        },
+        "mamluk": {
+          "id": "mamluk",
+          "name": "マムルーク朝",
+          "color": "#6a5a1a",
+          "colorLight": "#a08a3a"
+        },
+        "japan": {
+          "id": "japan",
+          "name": "日本（鎌倉幕府）",
+          "color": "#6b1420",
+          "colorLight": "#a8455a"
+        },
+        "goryeo": {
+          "id": "goryeo",
+          "name": "高麗",
+          "color": "#2a3a5a",
+          "colorLight": "#5a6f9a"
+        },
+        "dali": {
+          "id": "dali",
+          "name": "大理国",
+          "color": "#3a5a5a",
+          "colorLight": "#6a9494"
+        },
+        "vietnam": {
+          "id": "vietnam",
+          "name": "大越（陳朝）",
+          "color": "#1a4a2a",
+          "colorLight": "#4a8058"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#5A6072",
+          "colorLight": "#8A90A2"
+        }
+      }
     }
   }
 }
