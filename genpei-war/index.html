@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>源平合戦 史実クロニクルタイムライン (1156年〜1189年)</title>
+  <meta name="description" content="保元の乱から奥州藤原氏滅亡まで。平清盛の栄華と平氏政権の専横、以仁王の令旨に始まる源氏の挙兵、木曾義仲の栄光と没落、一ノ谷・屋島・壇ノ浦の戦いによる平氏滅亡、そして源頼朝と義経の対立を経て頼朝が覇権を確立するまでの33年間。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared/timeline-core.css?v=1">
+  <link rel="stylesheet" href="theme.css?v=1">
+</head>
+<body data-timeline="genpei-war" data-layout="rail">
+  <div class="sticky-header">
+    <div class="header-row">
+      <a href="../" class="back-to-atlas">← Atlas</a>
+      <h1 id="page-h1"></h1>
+      <div class="header-actions">
+        <button class="btn" id="btn-toggle-sidebar" title="人物一覧">👥 人物一覧</button>
+        <button class="btn" id="btn-toggle-map" title="勢力図を表示">🗺️ 勢力図</button>
+      </div>
+    </div>
+    <div class="era-nav" id="era-nav"></div>
+    <div class="controls-row">
+      <div id="faction-filters"></div>
+      <div id="category-filters"></div>
+      <div class="search-box">
+        <input type="text" id="search" placeholder="">
+      </div>
+    </div>
+  </div>
+
+  <div class="main-layout">
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <div class="content-area">
+      <div class="timeline-column">
+        <div class="timeline" id="timeline"></div>
+      </div>
+
+      <div class="map-column" id="map-column" style="display:none">
+        <div class="map-panel" id="map-panel">
+          <div class="map-title"><span id="map-title-text"></span> <span class="map-year-badge" id="map-year-badge"></span></div>
+          <div class="map-container">
+            <div class="map-grid" id="map-grid"></div>
+            <div class="map-legend" id="map-legend"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Event Modal -->
+  <div class="modal-overlay" id="event-modal">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <h2 id="em-title"></h2>
+          <div class="sub"><span id="em-year"></span> ▸ <span id="em-location"></span></div>
+        </div>
+        <div class="modal-head-actions">
+          <div id="em-wiki-link"></div>
+          <button class="modal-close" id="em-close">✕</button>
+        </div>
+      </div>
+      <div class="modal-section"><h3 id="em-desc-label"></h3><p id="em-desc"></p></div>
+      <div class="modal-section" id="em-trivia-section"><h3 id="em-trivia-label"></h3><div class="trivia-box"><p id="em-trivia"></p></div></div>
+      <div class="modal-section" id="em-diff-section"><h3 id="em-diff-label"></h3><div class="trivia-box"><p id="em-diff"></p></div></div>
+      <div class="modal-section"><h3 id="em-chars-label"></h3><div class="char-events-grid" id="em-chars"></div></div>
+    </div>
+  </div>
+
+  <!-- Character Modal -->
+  <div class="modal-overlay" id="char-modal">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <div class="char-header-info">
+            <h2 id="cm-name"></h2>
+            <span id="cm-faction-tag" class="tag"></span>
+            <span class="char-life" id="cm-life"></span>
+          </div>
+          <div class="reading-line" id="cm-reading"></div>
+          <div class="sub" id="cm-role"></div>
+        </div>
+        <div class="modal-head-actions">
+          <div id="cm-wiki-link"></div>
+          <button class="modal-close" id="cm-close">✕</button>
+        </div>
+      </div>
+      <div class="modal-section"><h3 id="cm-desc-label"></h3><p id="cm-desc"></p></div>
+      <div class="modal-section" id="cm-trivia-section"><h3 id="cm-trivia-label"></h3><div class="trivia-box"><p id="cm-trivia"></p></div></div>
+      <div class="modal-section"><h3 id="cm-events-label"></h3><div class="char-events-grid" id="cm-events"></div></div>
+    </div>
+  </div>
+  <script src="../shared/timeline-core.js?v=1"></script>
+</body>
+</html>

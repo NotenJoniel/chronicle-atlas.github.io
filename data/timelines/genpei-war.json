@@ -1,0 +1,1062 @@
+{
+  "meta": {
+    "title": "源平合戦 史実クロニクルタイムライン (1156年〜1189年)",
+    "description": "保元の乱から奥州藤原氏滅亡まで。平清盛の栄華と平氏政権の専横、以仁王の令旨に始まる源氏の挙兵、木曾義仲の栄光と没落、一ノ谷・屋島・壇ノ浦の戦いによる平氏滅亡、そして源頼朝と義経の対立を経て頼朝が覇権を確立するまでの33年間をインタラクティブなタイムラインで体験。",
+    "headerIcon": "⚔️",
+    "headerTitle": "源平合戦",
+    "headerSubtitle": "1156年〜1189年",
+    "searchPlaceholder": "🔍 出来事・人物を検索…",
+    "mapTitleIcon": "🗾",
+    "mapTitleLabel": "勢力図",
+    "characterTitleLabel": "別名",
+    "descLabel": "📖 史実の記録",
+    "charDescLabel": "📖 人物伝",
+    "relatedCharsLabel": "👥 関連人物（クリックで詳細）",
+    "relatedEventsLabel": "📅 関連する出来事（クリックで詳細）",
+    "triviaLabel": "📜 補足・豆知識",
+    "layoutStyle": "rail",
+    "mapColumnRules": [
+      { "maxCount": 4, "cols": 2 },
+      { "maxCount": 6, "cols": 3 },
+      { "cols": 3 }
+    ]
+  },
+  "eraPhases": [
+    {
+      "id": 1,
+      "name": "第一章：保元の乱と清盛の台頭",
+      "period": "1156 〜 1167",
+      "startYear": 1156,
+      "endYear": 1167
+    },
+    {
+      "id": 2,
+      "name": "第二章：平氏政権の専横と反発",
+      "period": "1167 〜 1180",
+      "startYear": 1167,
+      "endYear": 1180
+    },
+    {
+      "id": 3,
+      "name": "第三章：頼朝・義仲の挙兵",
+      "period": "1180",
+      "startYear": 1180,
+      "endYear": 1180
+    },
+    {
+      "id": 4,
+      "name": "第四章：義仲の栄光と没落",
+      "period": "1181 〜 1184",
+      "startYear": 1181,
+      "endYear": 1184
+    },
+    {
+      "id": 5,
+      "name": "第五章：一ノ谷から屋島へ",
+      "period": "1184 〜 1185",
+      "startYear": 1184,
+      "endYear": 1185
+    },
+    {
+      "id": 6,
+      "name": "第六章：壇ノ浦と平氏滅亡",
+      "period": "1185",
+      "startYear": 1185,
+      "endYear": 1185
+    },
+    {
+      "id": 7,
+      "name": "第七章：頼朝と義経の対立",
+      "period": "1185 〜 1187",
+      "startYear": 1185,
+      "endYear": 1187
+    },
+    {
+      "id": 8,
+      "name": "第八章：奥州合戦と頼朝の覇権確立",
+      "period": "1189",
+      "startYear": 1189,
+      "endYear": 1189
+    }
+  ],
+  "factions": {
+    "heike": {
+      "id": "heike",
+      "name": "平氏",
+      "color": "#8a1a1a",
+      "colorLight": "#d1503a"
+    },
+    "kamakura-genji": {
+      "id": "kamakura-genji",
+      "name": "源氏（頼朝方）",
+      "color": "#1e3a5f",
+      "colorLight": "#5b8fd4"
+    },
+    "kiso-genji": {
+      "id": "kiso-genji",
+      "name": "源氏（義仲方）",
+      "color": "#3a5a3a",
+      "colorLight": "#7aab6a"
+    },
+    "oshu-fujiwara": {
+      "id": "oshu-fujiwara",
+      "name": "奥州藤原氏",
+      "color": "#6a4a1a",
+      "colorLight": "#c99a3a"
+    },
+    "court": {
+      "id": "court",
+      "name": "朝廷",
+      "color": "#4a2a5a",
+      "colorLight": "#9a6ac4"
+    },
+    "other": {
+      "id": "other",
+      "name": "その他",
+      "color": "#4a4a4a",
+      "colorLight": "#9a9a9a"
+    }
+  },
+  "categories": {
+    "battle": { "id": "battle", "name": "合戦", "icon": "⚔️" },
+    "politics": { "id": "politics", "name": "政変", "icon": "👑" },
+    "episode": { "id": "episode", "name": "逸話", "icon": "📜" },
+    "death": { "id": "death", "name": "死没", "icon": "💀" }
+  },
+  "characters": [
+    {
+      "id": "c_taira_kiyomori",
+      "name": "平清盛",
+      "reading": "たいらのきよもり",
+      "faction": "heike",
+      "role": "太政大臣／平氏政権の指導者",
+      "life": "1118-1181",
+      "field": "governance",
+      "description": "武士として初めて太政大臣に上り詰めた平氏政権の創始者。保元・平治の乱で軍事的実力を示し、日宋貿易で経済基盤を築き、娘を天皇の后に入れて外戚として権勢を極めた。",
+      "historyTrivia": "熱病に倒れた清盛の最期は「水をかけても燃え上がるほどの高熱だった」と『平家物語』は伝える。死の間際まで頼朝の首を墓前に供えよと言い残したという逸話が残る。"
+    },
+    {
+      "id": "c_taira_shigemori",
+      "name": "平重盛",
+      "reading": "たいらのしげもり",
+      "faction": "heike",
+      "role": "内大臣／清盛の嫡男",
+      "life": "1138-1179",
+      "field": "governance",
+      "description": "清盛の長男で穏健派の重鎮。父の専横をたびたび諫め、後白河法皇と清盛の間を取り持つ調整役を担ったが、平氏全盛期の1179年に病でこの世を去った。"
+    },
+    {
+      "id": "c_taira_munemori",
+      "name": "平宗盛",
+      "reading": "たいらのむねもり",
+      "faction": "heike",
+      "role": "平氏一門の棟梁（清盛没後）",
+      "life": "1147-1185",
+      "field": "governance",
+      "description": "清盛の三男。兄・重盛の死と父の死去により平氏一門の棟梁を継いだが、指導力に乏しく都落ちから壇ノ浦まで一門を勝利に導けなかった。壇ノ浦で捕らえられ後に処刑された。"
+    },
+    {
+      "id": "c_taira_tomomori",
+      "name": "平知盛",
+      "reading": "たいらのとももり",
+      "faction": "heike",
+      "role": "平氏の将／水軍を統率",
+      "life": "1152-1185",
+      "field": "military",
+      "description": "清盛の四男で平氏随一の武将。壇ノ浦の戦いでは水軍を指揮して最後まで奮戦し、敗北を悟ると「見るべき程の事をば見つ」と言い残して入水した。"
+    },
+    {
+      "id": "c_taira_noritsune",
+      "name": "平教経",
+      "reading": "たいらののりつね",
+      "title": "能登殿",
+      "faction": "heike",
+      "role": "能登守／平氏随一の猛将",
+      "life": "1160-1185",
+      "field": "military",
+      "description": "教盛の子で「能登殿」の異名を取った平氏最強の武将。屋島・壇ノ浦で義経を追い詰めるが、最後は源氏の武者二人を左右に抱えて共に海へ身を投げたと伝わる。"
+    },
+    {
+      "id": "c_taira_tadanori",
+      "name": "平忠度",
+      "reading": "たいらのただのり",
+      "faction": "heike",
+      "role": "薩摩守／清盛の異母弟",
+      "life": "1144-1184",
+      "field": "military",
+      "description": "清盛の異母弟で歌人としても知られた武将。一ノ谷の戦いで源氏方の武者に討たれたが、その最期は「武勇にも歌道にも優れた」と敵味方双方から惜しまれた。",
+      "historyTrivia": "都落ちの際、和歌の師である藤原俊成のもとへ引き返し、自作の和歌集を託した逸話が残る。俊成は後の勅撰集にこれを「詠み人知らず」として収めた。"
+    },
+    {
+      "id": "c_taira_shigehira",
+      "name": "平重衡",
+      "reading": "たいらのしげひら",
+      "faction": "heike",
+      "role": "清盛の五男／南都焼討の指揮官",
+      "life": "1157-1185",
+      "field": "military",
+      "description": "清盛の五男。1180年の南都焼討で東大寺・興福寺を炎上させ悪名を負った。一ノ谷の戦いで捕虜となり、後に南都の要求により処刑された。"
+    },
+    {
+      "id": "c_kenreimonin",
+      "name": "建礼門院",
+      "reading": "けんれいもんいん",
+      "title": "平徳子",
+      "faction": "heike",
+      "role": "高倉天皇中宮／安徳天皇生母",
+      "life": "1155-1213",
+      "field": "other",
+      "description": "清盛の娘で高倉天皇の中宮となり安徳天皇を生んだ。壇ノ浦で我が子と共に入水するが源氏方に救助され、後に大原の寂光院で亡き一門の菩提を弔いながら余生を送った。"
+    },
+    {
+      "id": "c_antoku_tennou",
+      "name": "安徳天皇",
+      "reading": "あんとくてんのう",
+      "faction": "heike",
+      "role": "第81代天皇",
+      "life": "1178-1185",
+      "field": "governance",
+      "description": "高倉天皇と建礼門院の子で、清盛の外孫として3歳で即位した。平氏都落ちに伴い都を離れ、壇ノ浦の戦いで祖母・二位尼に抱かれて8歳で入水した、歴代最年少で崩御した天皇。"
+    },
+    {
+      "id": "c_taira_tokitada",
+      "name": "平時忠",
+      "reading": "たいらのときただ",
+      "faction": "heike",
+      "role": "清盛の義弟／権大納言",
+      "life": "1130-1189",
+      "field": "administration",
+      "description": "清盛の妻・時子の弟で平氏政権の中枢を担った公卿。「平家にあらずんば人にあらず」の発言で知られ、平氏全盛期の専横を象徴する人物とされる。",
+      "historyTrivia": "壇ノ浦後は生き延びて能登に配流された。同地で没するまで生きたことから「一門で唯一天寿を全うした」とも言われる。"
+    },
+    {
+      "id": "c_taira_koremori",
+      "name": "平維盛",
+      "reading": "たいらのこれもり",
+      "faction": "heike",
+      "role": "重盛の嫡男",
+      "life": "1158-1184",
+      "field": "military",
+      "description": "重盛の嫡男で「光源氏の再来」と称されるほどの美貌を誇ったという。富士川の戦いで水鳥の羽音に驚いた源氏方の襲来と誤認し戦わず敗走、平氏没落の象徴的な敗戦を演じた。"
+    },
+    {
+      "id": "c_taira_atsumori",
+      "name": "平敦盛",
+      "reading": "たいらのあつもり",
+      "faction": "heike",
+      "role": "経盛の子／笛の名手として知られた若武者",
+      "life": "1169-1184",
+      "field": "military",
+      "description": "経盛の末子で、一ノ谷の戦いで16歳のまま熊谷直実に討たれた。討ち取られる間際まで名を明かさなかったという最期は『平家物語』屈指の哀話として語り継がれている。"
+    },
+    {
+      "id": "c_minamoto_yoshitomo",
+      "name": "源義朝",
+      "reading": "みなもとのよしとも",
+      "faction": "kamakura-genji",
+      "role": "河内源氏の棟梁／頼朝の父",
+      "life": "1123-1160",
+      "field": "military",
+      "description": "河内源氏の棟梁で頼朝・義経らの父。保元の乱では清盛と共に勝者側に立ったが、平治の乱で清盛と対立して敗れ、逃亡先の尾張で家臣の裏切りにより討たれた。"
+    },
+    {
+      "id": "c_minamoto_yoritomo",
+      "name": "源頼朝",
+      "reading": "みなもとのよりとも",
+      "title": "鎌倉殿",
+      "faction": "kamakura-genji",
+      "role": "鎌倉殿／源氏の棟梁",
+      "life": "1147-1199",
+      "field": "governance",
+      "description": "義朝の三男。平治の乱で敗れ伊豆に配流されるが、以仁王の令旨を受けて挙兵。以後は自ら戦場に出ることなく鎌倉で東国支配を固め、義経・範頼らを送り出して平氏を滅ぼし、最終的に武家政権の礎を築いた。"
+    },
+    {
+      "id": "c_minamoto_yoshitsune",
+      "name": "源義経",
+      "reading": "みなもとのよしつね",
+      "faction": "kamakura-genji",
+      "role": "頼朝の異母弟／軍を率いる稀代の戦術家",
+      "life": "1159-1189",
+      "field": "military",
+      "description": "義朝の九男で頼朝の異母弟。鞍馬山で育ち奥州で武芸を磨いた後、兄の挙兵に馳せ参じる。一ノ谷の鵯越、屋島、壇ノ浦と奇襲戦法で平氏を次々に打ち破ったが、その独断専行が頼朝との決定的な対立を招いた。"
+    },
+    {
+      "id": "c_minamoto_noriyori",
+      "name": "源範頼",
+      "reading": "みなもとののりより",
+      "faction": "kamakura-genji",
+      "role": "頼朝の異母弟／西征軍を率いる",
+      "life": "?-1193",
+      "field": "military",
+      "description": "義朝の六男で頼朝・義経の異母弟。一ノ谷・壇ノ浦の戦いで本隊を率いて義経と共に平氏討伐にあたった、堅実で目立たない武将。"
+    },
+    {
+      "id": "c_hojo_masako",
+      "name": "北条政子",
+      "reading": "ほうじょうまさこ",
+      "faction": "kamakura-genji",
+      "role": "頼朝の正室",
+      "life": "1157-1225",
+      "field": "governance",
+      "description": "伊豆の豪族・北条時政の娘で頼朝の正室。配流中の頼朝と結ばれ、挙兵後は鎌倉で御家人たちとの関係を支え、後の鎌倉幕府の権力構造に大きな影響を残した。"
+    },
+    {
+      "id": "c_hojo_tokimasa",
+      "name": "北条時政",
+      "reading": "ほうじょうときまさ",
+      "faction": "kamakura-genji",
+      "role": "政子の父／頼朝の後見",
+      "life": "1138-1215",
+      "field": "governance",
+      "description": "伊豆の在地豪族。娘・政子と頼朝の結婚を機に頼朝を支え、挙兵に協力して北条氏が鎌倉政権の中枢に食い込む足がかりを作った。"
+    },
+    {
+      "id": "c_hojo_yoshitoki",
+      "name": "北条義時",
+      "reading": "ほうじょうよしとき",
+      "faction": "kamakura-genji",
+      "role": "時政の子",
+      "life": "1163-1224",
+      "field": "administration",
+      "description": "時政の子で政子の弟。この時代はまだ頼朝配下の一御家人に過ぎないが、後に鎌倉幕府の実権を握る北条執権政治の担い手として台頭していく。"
+    },
+    {
+      "id": "c_kajiwara_kagetoki",
+      "name": "梶原景時",
+      "reading": "かじわらかげとき",
+      "faction": "kamakura-genji",
+      "role": "侍所所司／頼朝の側近",
+      "life": "?-1200",
+      "field": "military",
+      "description": "頼朝挙兵時に敵将として石橋山で頼朝を見逃したことを機に帰参した御家人。義経の戦いぶりを常に監視し、独断専行を頼朝に讒言し続けたことで両者の対立を決定的にした。"
+    },
+    {
+      "id": "c_oe_hiromoto",
+      "name": "大江広元",
+      "reading": "おおえのひろもと",
+      "faction": "kamakura-genji",
+      "role": "公文所（政所）別当",
+      "life": "1148-1225",
+      "field": "administration",
+      "description": "京から鎌倉に招かれた文官。1184年に公文所（後の政所）別当となり、頼朝に守護・地頭の設置を献策するなど、武家政権の行政機構を整備した実務の中心人物。"
+    },
+    {
+      "id": "c_miura_yoshizumi",
+      "name": "三浦義澄",
+      "reading": "みうらよしずみ",
+      "faction": "kamakura-genji",
+      "role": "相模の有力御家人",
+      "life": "1127-1200",
+      "field": "military",
+      "description": "相模三浦半島を本拠とする有力豪族。頼朝挙兵に呼応し、以後も鎌倉軍の中核を担った坂東武者の代表格。"
+    },
+    {
+      "id": "c_kumagai_naozane",
+      "name": "熊谷直実",
+      "reading": "くまがいなおざね",
+      "faction": "kamakura-genji",
+      "role": "武蔵の御家人",
+      "life": "1141-1208",
+      "field": "military",
+      "description": "武蔵の武士。一ノ谷の戦いで若武者・平敦盛を討ち取るが、自らの息子と同年代の少年を手にかけたことを深く悔い、後に出家して法然の門下に入った。"
+    },
+    {
+      "id": "c_nasu_yoichi",
+      "name": "那須与一",
+      "reading": "なすのよいち",
+      "faction": "kamakura-genji",
+      "role": "弓の名手",
+      "life": "1169?-?",
+      "field": "military",
+      "description": "下野の武士で弓の名手。屋島の戦いで平氏方の船に掲げられた扇の的を、荒れる波間から見事に射抜き、敵味方双方から喝采を浴びたと伝わる。"
+    },
+    {
+      "id": "c_musashibo_benkei",
+      "name": "武蔵坊弁慶",
+      "reading": "むさしぼうべんけい",
+      "faction": "kamakura-genji",
+      "role": "義経の郎党／僧兵",
+      "life": "?-1189",
+      "field": "military",
+      "description": "義経に付き従った怪力の僧兵。数々の合戦で義経を守り、最期は奥州・衣川館で主君の自害の時間を稼ぐため一人で敵を防ぎ続けたと伝わる。",
+      "historyTrivia": "衣川館での最期は、矢を全身に受けながらも立ったまま絶命したという「弁慶の立ち往生」の逸話で広く知られる。"
+    },
+    {
+      "id": "c_shizuka_gozen",
+      "name": "静御前",
+      "reading": "しずかごぜん",
+      "faction": "other",
+      "role": "義経の愛妾／白拍子",
+      "life": "?-?",
+      "field": "other",
+      "description": "義経に愛された白拍子（舞の名手）。義経の逃亡後に捕らえられ、鎌倉の鶴岡八幡宮で頼朝・政子の前で舞を強いられるが、義経を慕う歌を臆せず歌い上げたと伝わる。"
+    },
+    {
+      "id": "c_sato_tsuginobu",
+      "name": "佐藤継信",
+      "reading": "さとうつぐのぶ",
+      "faction": "kamakura-genji",
+      "role": "義経の郎党",
+      "life": "?-1185",
+      "field": "military",
+      "description": "奥州から義経に付き従った忠臣。屋島の戦いで平教経が放った義経を狙う矢の前に身を投げ出し、主君の身代わりとなって戦死した。"
+    },
+    {
+      "id": "c_minamoto_yoshinaka",
+      "name": "源義仲",
+      "reading": "みなもとのよしなか",
+      "title": "旭将軍",
+      "faction": "kiso-genji",
+      "role": "信濃源氏／征夷大将軍（一時）",
+      "life": "1154-1184",
+      "field": "military",
+      "description": "頼朝の従兄弟で信濃・木曾で挙兵した武将。倶利伽羅峠で平氏の大軍を破り一時は入京を果たすが、都での乱暴な統治で後白河法皇や京の人々の反発を招き、頼朝が派遣した義経・範頼軍に討たれた。"
+    },
+    {
+      "id": "c_tomoe_gozen",
+      "name": "巴御前",
+      "reading": "ともえごぜん",
+      "faction": "kiso-genji",
+      "role": "義仲の愛妾／女武者",
+      "life": "?-?",
+      "field": "military",
+      "description": "義仲に仕えた女武者。並みの武者では及ばない弓馬の腕を持ち、義仲最期の粟津の戦いにも従軍したが、義仲の勧めで戦場を離れその後の消息は諸説に分かれる。"
+    },
+    {
+      "id": "c_imai_kanehira",
+      "name": "今井兼平",
+      "reading": "いまいかねひら",
+      "faction": "kiso-genji",
+      "role": "義仲の乳母子",
+      "life": "1152-1184",
+      "field": "military",
+      "description": "義仲の乳母子として幼少期から行動を共にした腹心。粟津の戦いで義仲が討たれたことを見届けると、太刀を口にくわえて馬から飛び落ち、主君の後を追った。"
+    },
+    {
+      "id": "c_go_shirakawa",
+      "name": "後白河法皇",
+      "reading": "ごしらかわほうおう",
+      "faction": "court",
+      "role": "治天の君",
+      "life": "1127-1192",
+      "field": "governance",
+      "description": "保元の乱を制して即位した第77代天皇で、譲位後も治天の君として長く院政を敷いた。平氏・木曾義仲・源頼朝と時々の実力者を巧みに使い分け、幽閉されても生き延び続けた稀代の政治力の持ち主。"
+    },
+    {
+      "id": "c_mochihito_o",
+      "name": "以仁王",
+      "reading": "もちひとおう",
+      "faction": "court",
+      "role": "後白河法皇の第三皇子",
+      "life": "1151-1180",
+      "field": "governance",
+      "description": "後白河法皇の皇子でありながら平氏の圧力で親王宣下を受けられずにいた。1180年に諸国の源氏へ平氏打倒を呼びかける令旨を発するが、挙兵はすぐに露見し宇治で敗死した。"
+    },
+    {
+      "id": "c_minamoto_yorimasa",
+      "name": "源頼政",
+      "reading": "みなもとのよりまさ",
+      "faction": "court",
+      "role": "摂津源氏／従三位",
+      "life": "1104-1180",
+      "field": "military",
+      "description": "摂津源氏の長老で、武士として異例の従三位に叙せられた歌人でもある。以仁王を奉じて挙兵するが宇治川の戦いで敗れ、平等院で自害した。この挙兵が源平合戦全体の引き金となった。"
+    },
+    {
+      "id": "c_shunkan",
+      "name": "俊寛",
+      "reading": "しゅんかん",
+      "faction": "court",
+      "role": "法勝寺執行",
+      "life": "1143-1179",
+      "field": "administration",
+      "description": "京の法勝寺執行を務めた僧。鹿ヶ谷の陰謀に加担した罪で薩摩の鬼界ヶ島に配流され、同志が赦免された後も一人島に取り残されて没した。"
+    },
+    {
+      "id": "c_fujiwara_narichika",
+      "name": "藤原成親",
+      "reading": "ふじわらのなりちか",
+      "faction": "court",
+      "role": "後白河法皇の近臣",
+      "life": "1138-1177",
+      "field": "administration",
+      "description": "後白河法皇の側近公卿。平氏打倒を密議した鹿ヶ谷の陰謀の首謀者格とされ、計画が露見すると捕らえられ備前へ配流の後に殺害された。"
+    },
+    {
+      "id": "c_kujo_kanezane",
+      "name": "九条兼実",
+      "reading": "くじょうかねざね",
+      "faction": "court",
+      "role": "公卿／後の摂政関白",
+      "life": "1149-1207",
+      "field": "administration",
+      "description": "藤原摂関家の一員で、平氏にも源氏にも与さず中立を保った公卿。日記『玉葉』にこの時代の政局を克明に記録し、後世に伝わる貴重な同時代史料を残した。"
+    },
+    {
+      "id": "c_fujiwara_hidehira",
+      "name": "藤原秀衡",
+      "reading": "ふじわらのひでひら",
+      "faction": "oshu-fujiwara",
+      "role": "奥州藤原氏三代当主",
+      "life": "1122-1187",
+      "field": "governance",
+      "description": "奥州平泉に独立王国を築いた奥州藤原氏三代目当主。若き日の義経を庇護して育て、逃亡してきた義経を再び匿うが、頼朝との対立を避けきれぬまま1187年に病没した。"
+    },
+    {
+      "id": "c_fujiwara_yasuhira",
+      "name": "藤原泰衡",
+      "reading": "ふじわらのやすひら",
+      "faction": "oshu-fujiwara",
+      "role": "奥州藤原氏四代当主",
+      "life": "1155-1189",
+      "field": "governance",
+      "description": "秀衡の跡を継いだ奥州藤原氏四代当主。父の遺言に反し頼朝の圧力に屈して義経を討つが、それでも頼朝の奥州征伐を止めることはできず、一族もろとも滅ぼされた。"
+    },
+    {
+      "id": "c_kazusa_hirotsune",
+      "name": "上総広常",
+      "reading": "かずさひろつね",
+      "faction": "kamakura-genji",
+      "role": "上総の有力豪族",
+      "life": "?-1184",
+      "field": "military",
+      "description": "石橋山で敗れた頼朝のもとに二万騎ともいわれる大軍を率いて参陣し、鎌倉政権の軍事基盤を一気に固めた坂東随一の豪族。しかし後に謀反を疑われ頼朝の命により謀殺された。"
+    },
+    {
+      "id": "c_mongaku",
+      "name": "文覚",
+      "reading": "もんがく",
+      "faction": "other",
+      "role": "勧進聖",
+      "life": "1139-1203",
+      "field": "thought",
+      "description": "荒行で知られた勧進聖。伊豆に配流中の頼朝のもとを訪れ、父・義朝の髑髏（実際は別人のものとされる）を見せて挙兵を強く促したと伝わる、頼朝決起のきっかけを作った人物。"
+    }
+  ],
+  "events": [
+    {
+      "id": "e_hogen_rebellion",
+      "phaseId": 1,
+      "year": 1156,
+      "title": "保元の乱",
+      "category": "battle",
+      "characters": ["c_taira_kiyomori", "c_minamoto_yoshitomo", "c_go_shirakawa"],
+      "location": "京都・白河北殿",
+      "description": "崇徳上皇と後白河天皇の対立に藤原摂関家の内紛が絡み、両陣営がそれぞれ平氏・源氏の武力を頼った皇位継承争い。後白河方についた清盛・義朝が勝利し、以後の武士の政治的台頭を決定づけた。"
+    },
+    {
+      "id": "e_heiji_rebellion",
+      "phaseId": 1,
+      "year": 1159,
+      "title": "平治の乱",
+      "category": "battle",
+      "characters": ["c_taira_kiyomori", "c_minamoto_yoshitomo"],
+      "location": "京都",
+      "description": "保元の乱の勝者内部で権力争いが再燃し、源義朝が藤原信頼と結んで挙兵。清盛が留守中の隙を突いたが、清盛は熊野詣から急ぎ引き返して反撃し、義朝を敗走させた。",
+      "historyTrivia": "この乱の結果、源氏の主流が没落し平氏の独裁体制が確立した。幼い頼朝はこの敗戦で捕らえられ、殺されるはずのところを清盛の継母・池禅尼の嘆願により助命され伊豆へ流された。"
+    },
+    {
+      "id": "e_yoshitomo_death",
+      "phaseId": 1,
+      "year": 1160,
+      "title": "源義朝の最期",
+      "category": "death",
+      "characters": ["c_minamoto_yoshitomo"],
+      "location": "尾張国・野間",
+      "description": "平治の乱に敗れ東国へ落ち延びようとした義朝は、尾張の家臣・長田忠致の裏切りにより入浴中を襲われ落命した。源氏の棟梁の非業の死は、後年の頼朝の挙兵の原点となる。"
+    },
+    {
+      "id": "e_yoritomo_exile",
+      "phaseId": 1,
+      "year": 1160,
+      "title": "頼朝、伊豆に配流",
+      "category": "politics",
+      "characters": ["c_minamoto_yoritomo"],
+      "location": "伊豆国",
+      "description": "平治の乱後、13歳の頼朝は死罪を免れ伊豆国蛭ヶ小島への流罪となった。以後20年にわたる配流生活の中で、頼朝は雌伏の時を過ごすことになる。"
+    },
+    {
+      "id": "e_kiyomori_daijo_daijin",
+      "phaseId": 1,
+      "year": 1167,
+      "title": "清盛、太政大臣に就任",
+      "category": "politics",
+      "characters": ["c_taira_kiyomori"],
+      "location": "京都",
+      "description": "平治の乱の勝利を経て急速に昇進した清盛は、武士として初めて太政大臣に上り詰めた。日宋貿易による経済力と、一族を高位高官に就ける人事によって平氏政権の絶頂期が始まる。"
+    },
+    {
+      "id": "e_shishigatani",
+      "phaseId": 2,
+      "year": 1177,
+      "title": "鹿ヶ谷の陰謀",
+      "category": "politics",
+      "characters": ["c_fujiwara_narichika", "c_shunkan", "c_go_shirakawa", "c_taira_kiyomori"],
+      "location": "京都・鹿ヶ谷",
+      "description": "平氏の専横に反発する後白河法皇の近臣たちが、京都東山の鹿ヶ谷の山荘に集まり平氏打倒を密議した。計画は密告により露見し、清盛は関係者を厳しく処罰したが、後白河との溝は決定的に深まった。"
+    },
+    {
+      "id": "e_shigemori_death",
+      "phaseId": 2,
+      "year": 1179,
+      "title": "重盛の死",
+      "category": "death",
+      "characters": ["c_taira_shigemori", "c_taira_kiyomori"],
+      "location": "京都",
+      "description": "清盛と後白河法皇の間で調整役を果たしてきた重盛が病に倒れ死去した。平氏内部の抑止力を失った清盛は、以後急速に強硬路線へと傾いていく。"
+    },
+    {
+      "id": "e_jisho_coup",
+      "phaseId": 2,
+      "year": 1179,
+      "title": "治承三年の政変",
+      "category": "politics",
+      "characters": ["c_taira_kiyomori", "c_go_shirakawa"],
+      "location": "京都",
+      "description": "重盛の死を機に、清盛は多数の反平氏派公卿を解任・追放し、後白河法皇を鳥羽殿に幽閉して院政を停止させた。平氏一門による事実上の独裁体制が確立した。"
+    },
+    {
+      "id": "e_antoku_enthronement",
+      "phaseId": 2,
+      "year": 1180,
+      "title": "安徳天皇践祚",
+      "category": "politics",
+      "characters": ["c_antoku_tennou", "c_taira_kiyomori", "c_kenreimonin"],
+      "location": "京都",
+      "description": "清盛の外孫にあたる安徳天皇がわずか3歳で即位し、平氏は天皇の外戚として権勢の絶頂に達した。一方でこの皇位継承は以仁王ら他の皇位継承候補の反発を招くことになる。"
+    },
+    {
+      "id": "e_mochihito_edict",
+      "phaseId": 3,
+      "year": 1180,
+      "title": "以仁王の令旨",
+      "category": "politics",
+      "characters": ["c_mochihito_o", "c_minamoto_yorimasa"],
+      "location": "京都",
+      "description": "皇位継承から外され続けた以仁王が、源頼政の勧めで諸国の源氏・武士に平氏打倒を呼びかける令旨を発した。この令旨は頼朝・義仲をはじめ各地の反平氏勢力の挙兵を促す起爆剤となった。",
+      "historyTrivia": "令旨は源行家が諸国の源氏を巡って伝達したとされる。挙兵計画自体はすぐに露見して失敗したが、令旨そのものが独り歩きして全国に反平氏の火種を撒く結果となった。"
+    },
+    {
+      "id": "e_uji_battle",
+      "phaseId": 3,
+      "year": 1180,
+      "title": "宇治川の戦いと以仁王・頼政の最期",
+      "category": "battle",
+      "characters": ["c_mochihito_o", "c_minamoto_yorimasa"],
+      "location": "山城国・宇治",
+      "description": "挙兵の計画が露見した以仁王と頼政は、園城寺の僧兵と共に南都を目指すが平氏の追討軍に宇治川で追いつかれた。頼政は平等院で自害し、以仁王も逃走中に討たれ、決起はわずか数日で潰えた。"
+    },
+    {
+      "id": "e_yoritomo_uprising",
+      "phaseId": 3,
+      "year": 1180,
+      "title": "頼朝、伊豆で挙兵",
+      "category": "battle",
+      "characters": ["c_minamoto_yoritomo", "c_hojo_tokimasa", "c_mongaku"],
+      "location": "伊豆国",
+      "description": "以仁王の令旨を受け取った頼朝は、舅の北条時政ら在地武士団の支持を得て伊豆で挙兵し、平氏方の伊豆国目代・山木兼隆を討った。20年の雌伏を経た頼朝の挙兵である。"
+    },
+    {
+      "id": "e_ishibashiyama",
+      "phaseId": 3,
+      "year": 1180,
+      "title": "石橋山の戦い",
+      "category": "battle",
+      "characters": ["c_minamoto_yoritomo", "c_kazusa_hirotsune"],
+      "location": "相模国・石橋山",
+      "description": "挙兵直後の頼朝はわずかな手勢で平氏方の大庭景親らに石橋山で大敗し、山中に身を潜めて命からがら安房国へ逃れた。梶原景時が敵陣にいながら頼朝を見逃した逸話もこの戦いに由来する。"
+    },
+    {
+      "id": "e_kamakura_entry",
+      "phaseId": 3,
+      "year": 1180,
+      "title": "頼朝、鎌倉入り",
+      "category": "politics",
+      "characters": ["c_minamoto_yoritomo", "c_hojo_masako"],
+      "location": "相模国・鎌倉",
+      "description": "安房で体勢を立て直した頼朝は、上総広常ら坂東の豪族を次々に従えて大軍勢となり、源氏ゆかりの地・鎌倉に入った。以後鎌倉は東国支配の本拠地として整備されていく。"
+    },
+    {
+      "id": "e_fujigawa",
+      "phaseId": 3,
+      "year": 1180,
+      "title": "富士川の戦い",
+      "category": "battle",
+      "characters": ["c_minamoto_yoritomo", "c_taira_koremori"],
+      "location": "駿河国・富士川",
+      "description": "頼朝討伐に派遣された平維盛の軍は、富士川を挟んで頼朝軍と対峙した。夜半に水鳥の一斉に飛び立つ羽音を源氏方の夜襲と誤認した平氏軍は、戦わずして総崩れとなり京へ敗走した。"
+    },
+    {
+      "id": "e_yoshinaka_uprising",
+      "phaseId": 3,
+      "year": 1180,
+      "title": "義仲、信濃で挙兵",
+      "category": "battle",
+      "characters": ["c_minamoto_yoshinaka", "c_tomoe_gozen"],
+      "location": "信濃国",
+      "description": "頼朝の従兄弟にあたる義仲もまた以仁王の令旨を受け、信濃国木曾で挙兵した。頼朝とは別の勢力圏を形成し、以後は独自に北陸方面で平氏と戦っていく。"
+    },
+    {
+      "id": "e_kiyomori_death",
+      "phaseId": 4,
+      "year": 1181,
+      "title": "清盛、死去",
+      "category": "death",
+      "characters": ["c_taira_kiyomori", "c_taira_munemori"],
+      "location": "京都",
+      "description": "全国的な反平氏の挙兵が広がる中、清盛は熱病に倒れ64歳で死去した。求心力の要を失った平氏一門は、力量に劣る宗盛のもとで難局への対応を迫られることになる。"
+    },
+    {
+      "id": "e_kurikara",
+      "phaseId": 4,
+      "year": 1183,
+      "title": "倶利伽羅峠の戦い",
+      "category": "battle",
+      "characters": ["c_minamoto_yoshinaka", "c_taira_koremori"],
+      "location": "加賀・越中国境",
+      "description": "北陸に進出した義仲軍が、再び平維盛率いる平氏の大軍を倶利伽羅峠で撃破した。夜襲と牛の角に松明を括り付けて突撃させたという奇策が伝わり、平氏の軍事力に決定的な打撃を与えた。"
+    },
+    {
+      "id": "e_heike_flee",
+      "phaseId": 4,
+      "year": 1183,
+      "title": "平氏都落ち",
+      "category": "politics",
+      "characters": ["c_taira_munemori", "c_antoku_tennou", "c_kenreimonin", "c_taira_tokitada"],
+      "location": "京都 → 西国",
+      "description": "倶利伽羅峠の敗報を受け、義仲軍の入京を目前にした平氏一門は、幼い安徳天皇と三種の神器を奉じて都を放棄し、西国へと落ち延びた。栄華を誇った平氏政権はここに事実上崩壊した。"
+    },
+    {
+      "id": "e_yoshinaka_kyoto",
+      "phaseId": 4,
+      "year": 1183,
+      "title": "義仲、入京",
+      "category": "politics",
+      "characters": ["c_minamoto_yoshinaka", "c_go_shirakawa"],
+      "location": "京都",
+      "description": "平氏が去った都に義仲が入京し、後白河法皇から平氏追討の宣旨を与えられた。しかし木曾育ちの義仲の軍勢は都の作法に不慣れで、兵糧の徴発などをめぐり京の人々の不興を買っていく。"
+    },
+    {
+      "id": "e_yoshinaka_conflict",
+      "phaseId": 4,
+      "year": 1183,
+      "title": "義仲と後白河法皇の対立",
+      "category": "politics",
+      "characters": ["c_minamoto_yoshinaka", "c_go_shirakawa"],
+      "location": "京都",
+      "description": "統治能力を欠く義仲への評価は急落し、後白河法皇は水面下で頼朝に接近し始めた。危機感を強めた義仲は法皇の御所を武力で制圧するが、これがかえって京での孤立を決定的にした。"
+    },
+    {
+      "id": "e_yoshitsune_dispatch",
+      "phaseId": 4,
+      "year": 1184,
+      "title": "頼朝、義経・範頼を派遣",
+      "category": "politics",
+      "characters": ["c_minamoto_yoritomo", "c_minamoto_yoshitsune", "c_minamoto_noriyori"],
+      "location": "鎌倉",
+      "description": "後白河法皇の要請を受けた頼朝は、義経・範頼の率いる軍を義仲討伐のため京へ派遣した。これが頼朝配下としての義経の初陣であり、以後の平氏討伐戦の指揮官としての活躍の始まりとなる。"
+    },
+    {
+      "id": "e_awazu",
+      "phaseId": 4,
+      "year": 1184,
+      "title": "粟津の戦いと義仲の最期",
+      "category": "death",
+      "characters": ["c_minamoto_yoshinaka", "c_imai_kanehira", "c_tomoe_gozen"],
+      "location": "近江国・粟津",
+      "description": "義経・範頼軍に京を追われた義仲は近江へ落ち延びるが、粟津で追いつかれ深田に馬を取られたところを討たれた。乳母子の今井兼平も主君の後を追って自害し、木曾源氏の挙兵は幕を閉じた。"
+    },
+    {
+      "id": "e_ichinotani",
+      "phaseId": 5,
+      "year": 1184,
+      "title": "一ノ谷の戦い",
+      "category": "battle",
+      "characters": ["c_minamoto_yoshitsune", "c_minamoto_noriyori", "c_taira_tomomori", "c_taira_shigehira", "c_taira_tadanori"],
+      "location": "摂津国・一ノ谷",
+      "description": "義仲討伐後、態勢を立て直した平氏を義経・範頼軍が摂津一ノ谷に攻めた。義経は断崖絶壁の鵯越から少数精鋭で奇襲を仕掛け、油断していた平氏本陣を混乱に陥れて大勝を収めた。"
+    },
+    {
+      "id": "e_atsumori_kumagai",
+      "phaseId": 5,
+      "year": 1184,
+      "title": "敦盛最期",
+      "category": "episode",
+      "characters": ["c_kumagai_naozane", "c_taira_atsumori"],
+      "location": "摂津国・一ノ谷",
+      "description": "敗走する平氏方の若武者・平敦盛を波打ち際で組み伏せた熊谷直実は、我が子と同年代の少年と知り一度は見逃そうとするが、味方の追撃を見て涙ながらに討ち取った。この体験が後の直実の出家の契機になったと伝わる。"
+    },
+    {
+      "id": "e_yashima",
+      "phaseId": 5,
+      "year": 1185,
+      "title": "屋島の戦い",
+      "category": "battle",
+      "characters": ["c_minamoto_yoshitsune", "c_taira_munemori", "c_taira_noritsune", "c_sato_tsuginobu"],
+      "location": "讃岐国・屋島",
+      "description": "一ノ谷から立て直した平氏は讃岐屋島に本拠を構えるが、義経はわずかな手勢で暴風の中を渡海し、背後から奇襲をかけて平氏を海上へ敗走させた。この戦いで郎党・佐藤継信が義経の身代わりとなって戦死している。"
+    },
+    {
+      "id": "e_nasu_yoichi_fan",
+      "phaseId": 5,
+      "year": 1185,
+      "title": "那須与一、扇の的を射る",
+      "category": "episode",
+      "characters": ["c_nasu_yoichi"],
+      "location": "讃岐国・屋島",
+      "description": "海上に逃れた平氏方が船の竿に扇を掲げ、射抜けるものならと源氏方を挑発した。名指しされた那須与一は荒波に揺れる小舟の的を見事に射抜き、両軍から歓声が上がったという。"
+    },
+    {
+      "id": "e_dannoura",
+      "phaseId": 6,
+      "year": 1185,
+      "title": "壇ノ浦の戦い",
+      "category": "battle",
+      "characters": ["c_minamoto_yoshitsune", "c_taira_tomomori", "c_taira_noritsune", "c_taira_munemori"],
+      "location": "長門国・壇ノ浦",
+      "description": "本州西端の壇ノ浦で源平両軍の水軍が激突した。開戦当初は潮流を味方につけた平氏が優勢だったが、潮目が変わると源氏方が逆転し、平氏の水手を射るなど戦法を切り替えた義経軍が制圧、平氏は壊滅した。"
+    },
+    {
+      "id": "e_antoku_drowning",
+      "phaseId": 6,
+      "year": 1185,
+      "title": "安徳天皇入水",
+      "category": "death",
+      "characters": ["c_antoku_tennou", "c_kenreimonin"],
+      "location": "長門国・壇ノ浦",
+      "description": "敗勢が決すると、祖母の二位尼（時子）は幼い安徳天皇を抱いて「波の下にも都がございます」と語りかけ、共に入水した。この時、三種の神器のうち宝剣が海に沈み失われた。"
+    },
+    {
+      "id": "e_heike_annihilation",
+      "phaseId": 6,
+      "year": 1185,
+      "title": "平氏一門の最期",
+      "category": "death",
+      "characters": ["c_taira_tomomori", "c_taira_noritsune", "c_taira_munemori"],
+      "location": "長門国・壇ノ浦",
+      "description": "知盛・教経ら主だった一門は次々と入水し、清盛の孫世代までもが海に消えた。棟梁の宗盛は入水しきれず捕らえられ、後に鎌倉・京を引き回された末に処刑された。栄華を誇った平氏はここに滅亡した。"
+    },
+    {
+      "id": "e_kenreimonin_ohara",
+      "phaseId": 6,
+      "year": 1185,
+      "title": "建礼門院、大原へ",
+      "category": "episode",
+      "characters": ["c_kenreimonin", "c_go_shirakawa"],
+      "location": "京都・大原",
+      "description": "壇ノ浦で救助された建礼門院は都で出家し、洛北・大原の寂光院に隠棲して一門の菩提を弔う日々を送った。後白河法皇が寂光院を訪ねた「大原御幸」は、平家物語の掉尾を飾る名場面として知られる。"
+    },
+    {
+      "id": "e_koshigoe",
+      "phaseId": 7,
+      "year": 1185,
+      "title": "腰越状",
+      "category": "politics",
+      "characters": ["c_minamoto_yoshitsune", "c_kajiwara_kagetoki"],
+      "location": "相模国・腰越",
+      "description": "平氏討伐の大功を立てた義経だったが、梶原景時の讒言もあって頼朝は鎌倉入りを許さなかった。腰越に留め置かれた義経は自らの忠誠を訴える書状（腰越状）を送るが、頼朝の疑念は解けなかった。"
+    },
+    {
+      "id": "e_yoritomo_yoshitsune_rift",
+      "phaseId": 7,
+      "year": 1185,
+      "title": "頼朝と義経の対立決定的に",
+      "category": "politics",
+      "characters": ["c_minamoto_yoritomo", "c_minamoto_yoshitsune"],
+      "location": "京都・鎌倉",
+      "description": "後白河法皇から独自に検非違使の官位を受けたことなど、頼朝の統制を離れた義経の行動が積み重なり、両者の不和は修復不能となった。頼朝は義経討伐の意志を固めていく。"
+    },
+    {
+      "id": "e_yoshitsune_rebellion",
+      "phaseId": 7,
+      "year": 1185,
+      "title": "義経、頼朝追討の院宣を得るも失敗し逃亡",
+      "category": "politics",
+      "characters": ["c_minamoto_yoshitsune", "c_go_shirakawa", "c_minamoto_yoritomo"],
+      "location": "京都",
+      "description": "追い詰められた義経は後白河法皇から頼朝追討の院宣を得るが、味方する武士はほとんど集まらなかった。頼朝の圧力を受けた法皇はすぐに義経追討の院宣に切り替え、義経は都を追われる身となった。"
+    },
+    {
+      "id": "e_shugo_jito",
+      "phaseId": 7,
+      "year": 1185,
+      "title": "守護・地頭の設置を勅許される",
+      "category": "politics",
+      "characters": ["c_minamoto_yoritomo", "c_oe_hiromoto"],
+      "location": "京都・鎌倉",
+      "description": "義経追討を名目に、頼朝は大江広元の献策により諸国に守護・地頭を置く権限を朝廷から勅許された。これにより頼朝の支配は東国だけでなく全国の武士に及ぶ法的基盤を得ることになった。"
+    },
+    {
+      "id": "e_yoshitsune_flee_oshu",
+      "phaseId": 7,
+      "year": 1187,
+      "title": "義経、奥州へ逃れる",
+      "category": "politics",
+      "characters": ["c_minamoto_yoshitsune", "c_musashibo_benkei", "c_fujiwara_hidehira"],
+      "location": "奥州・平泉",
+      "description": "都を追われた義経は弁慶ら僅かな郎党と共に潜行し、少年時代に世話になった奥州藤原氏の藤原秀衡を頼って平泉に落ち延びた。秀衡は頼朝の圧力を承知の上で義経を再び匿った。"
+    },
+    {
+      "id": "e_hidehira_death",
+      "phaseId": 7,
+      "year": 1187,
+      "title": "秀衡、死去",
+      "category": "death",
+      "characters": ["c_fujiwara_hidehira", "c_fujiwara_yasuhira"],
+      "location": "奥州・平泉",
+      "description": "義経を庇護し続けた秀衡は、子の泰衡らに義経を主君として仰ぎ一致団結して頼朝に対抗するよう遺言し病没した。しかし泰衡はこの遺言を守り抜くことができなかった。"
+    },
+    {
+      "id": "e_yasuhira_betrayal",
+      "phaseId": 8,
+      "year": 1189,
+      "title": "泰衡、義経を討つ（衣川の戦い）",
+      "category": "death",
+      "characters": ["c_fujiwara_yasuhira", "c_minamoto_yoshitsune", "c_musashibo_benkei"],
+      "location": "奥州・衣川館",
+      "description": "頼朝からの再三の圧力に屈した泰衡は、父の遺言に反して義経の衣川館を急襲した。弁慶ら郎党が奮戦して時間を稼ぐ中、義経は妻子と共に自害し、31年の生涯を閉じた。"
+    },
+    {
+      "id": "e_oshu_campaign_fall",
+      "phaseId": 8,
+      "year": 1189,
+      "title": "頼朝、奥州征伐と藤原氏の滅亡",
+      "category": "battle",
+      "characters": ["c_minamoto_yoritomo", "c_fujiwara_yasuhira"],
+      "location": "奥州",
+      "description": "義経を討ち頼朝への恭順を示した泰衡だったが、頼朝は義経を匿った罪を口実に大軍を率いて奥州へ進撃した。抵抗虚しく平泉は陥落し、泰衡も家臣に裏切られて討たれ、三代にわたり栄えた奥州藤原氏は滅亡した。"
+    },
+    {
+      "id": "e_yoritomo_hegemony",
+      "phaseId": 8,
+      "year": 1189,
+      "title": "頼朝、東国の覇権を確立",
+      "category": "politics",
+      "characters": ["c_minamoto_yoritomo", "c_hojo_masako"],
+      "location": "鎌倉",
+      "description": "奥州藤原氏の滅亡により、頼朝に対抗しうる武力は日本国内に存在しなくなった。保元の乱に始まった33年にわたる争乱は頼朝の覇権確立をもって幕を閉じ、翌年の上洛、そして征夷大将軍就任へと道を開くことになる。"
+    }
+  ],
+  "mapSnapshots": [
+    {
+      "year": 1179,
+      "label": "平氏政権の絶頂",
+      "territories": {
+        "kyoto": { "name": "京（畿内）", "faction": "heike", "lord": "平清盛" },
+        "saigoku": { "name": "西国・瀬戸内", "faction": "heike", "lord": "平氏一門" },
+        "izu_kanto": { "name": "伊豆・関東", "faction": "other", "lord": "源頼朝（配流中）" },
+        "shinano_hokuriku": { "name": "信濃・北陸", "faction": "other", "lord": "在地豪族" },
+        "oshu": { "name": "奥州", "faction": "oshu-fujiwara", "lord": "藤原秀衡" }
+      }
+    },
+    {
+      "year": 1180,
+      "label": "挙兵、各地に分裂",
+      "territories": {
+        "kyoto": { "name": "京（畿内）", "faction": "heike", "lord": "平宗盛" },
+        "saigoku": { "name": "西国・瀬戸内", "faction": "heike", "lord": "平氏一門" },
+        "izu_kanto": { "name": "伊豆・関東", "faction": "kamakura-genji", "lord": "源頼朝" },
+        "shinano_hokuriku": { "name": "信濃・北陸", "faction": "kiso-genji", "lord": "源義仲" },
+        "oshu": { "name": "奥州", "faction": "oshu-fujiwara", "lord": "藤原秀衡" }
+      }
+    },
+    {
+      "year": 1183,
+      "label": "平氏都落ち、義仲入京",
+      "territories": {
+        "kyoto": { "name": "京（畿内）", "faction": "kiso-genji", "lord": "源義仲" },
+        "saigoku": { "name": "西国・瀬戸内", "faction": "heike", "lord": "平宗盛（西走）" },
+        "izu_kanto": { "name": "伊豆・関東", "faction": "kamakura-genji", "lord": "源頼朝" },
+        "shinano_hokuriku": { "name": "信濃・北陸", "faction": "kiso-genji", "lord": "源義仲" },
+        "oshu": { "name": "奥州", "faction": "oshu-fujiwara", "lord": "藤原秀衡" }
+      }
+    },
+    {
+      "year": 1185,
+      "label": "平氏滅亡直後",
+      "territories": {
+        "kyoto": { "name": "京（畿内）", "faction": "kamakura-genji", "lord": "源頼朝（義経が代行）" },
+        "saigoku": { "name": "西国・瀬戸内", "faction": "kamakura-genji", "lord": "平氏滅亡・源氏が制圧" },
+        "izu_kanto": { "name": "伊豆・関東", "faction": "kamakura-genji", "lord": "源頼朝" },
+        "shinano_hokuriku": { "name": "信濃・北陸", "faction": "kamakura-genji", "lord": "源頼朝（義仲討滅後接収）" },
+        "oshu": { "name": "奥州", "faction": "oshu-fujiwara", "lord": "藤原秀衡" }
+      }
+    },
+    {
+      "year": 1189,
+      "label": "奥州合戦後、頼朝の覇権確立",
+      "territories": {
+        "kyoto": { "name": "京（畿内）", "faction": "kamakura-genji", "lord": "源頼朝" },
+        "saigoku": { "name": "西国・瀬戸内", "faction": "kamakura-genji", "lord": "源頼朝" },
+        "izu_kanto": { "name": "伊豆・関東", "faction": "kamakura-genji", "lord": "源頼朝" },
+        "shinano_hokuriku": { "name": "信濃・北陸", "faction": "kamakura-genji", "lord": "源頼朝" },
+        "oshu": { "name": "奥州", "faction": "kamakura-genji", "lord": "源頼朝（藤原氏滅亡後接収）" }
+      }
+    }
+  ],
+  "wikiLinks": {
+    "characters": {
+      "c_taira_kiyomori": "平清盛",
+      "c_taira_shigemori": "平重盛",
+      "c_taira_munemori": "平宗盛",
+      "c_taira_tomomori": "平知盛",
+      "c_taira_noritsune": "平教経",
+      "c_taira_tadanori": "平忠度",
+      "c_taira_shigehira": "平重衡",
+      "c_kenreimonin": "建礼門院",
+      "c_antoku_tennou": "安徳天皇",
+      "c_taira_tokitada": "平時忠",
+      "c_taira_koremori": "平維盛",
+      "c_taira_atsumori": "平敦盛",
+      "c_minamoto_yoshitomo": "源義朝",
+      "c_minamoto_yoritomo": "源頼朝",
+      "c_minamoto_yoshitsune": "源義経",
+      "c_minamoto_noriyori": "源範頼",
+      "c_hojo_masako": "北条政子",
+      "c_hojo_tokimasa": "北条時政",
+      "c_hojo_yoshitoki": "北条義時",
+      "c_kajiwara_kagetoki": "梶原景時",
+      "c_oe_hiromoto": "大江広元",
+      "c_miura_yoshizumi": "三浦義澄",
+      "c_kumagai_naozane": "熊谷直実",
+      "c_nasu_yoichi": "那須与一",
+      "c_musashibo_benkei": "武蔵坊弁慶",
+      "c_shizuka_gozen": "静御前",
+      "c_sato_tsuginobu": "佐藤継信",
+      "c_minamoto_yoshinaka": "源義仲",
+      "c_tomoe_gozen": "巴御前",
+      "c_imai_kanehira": "今井兼平",
+      "c_go_shirakawa": "後白河天皇",
+      "c_mochihito_o": "以仁王",
+      "c_minamoto_yorimasa": "源頼政",
+      "c_shunkan": "俊寛",
+      "c_fujiwara_narichika": "藤原成親",
+      "c_kujo_kanezane": "九条兼実",
+      "c_fujiwara_hidehira": "藤原秀衡",
+      "c_fujiwara_yasuhira": "藤原泰衡",
+      "c_kazusa_hirotsune": "上総広常",
+      "c_mongaku": "文覚"
+    },
+    "events": {
+      "e_hogen_rebellion": "保元の乱",
+      "e_heiji_rebellion": "平治の乱",
+      "e_kiyomori_daijo_daijin": "平清盛",
+      "e_shishigatani": "鹿ケ谷の陰謀",
+      "e_jisho_coup": "治承三年の政変",
+      "e_mochihito_edict": "以仁王の挙兵",
+      "e_uji_battle": "宇治平等院の戦い",
+      "e_ishibashiyama": "石橋山の戦い",
+      "e_fujigawa": "富士川の戦い",
+      "e_kurikara": "倶利伽羅峠の戦い",
+      "e_heike_flee": "平氏",
+      "e_awazu": "粟津の戦い",
+      "e_ichinotani": "一ノ谷の戦い",
+      "e_yashima": "屋島の戦い",
+      "e_dannoura": "壇ノ浦の戦い",
+      "e_koshigoe": "腰越状",
+      "e_shugo_jito": "守護・地頭",
+      "e_yasuhira_betrayal": "衣川の戦い",
+      "e_oshu_campaign_fall": "奥州合戦"
+    }
+  }
+}

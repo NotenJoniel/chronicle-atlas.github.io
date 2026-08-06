@@ -3795,6 +3795,826 @@
         }
       }
     },
+    "genpei-war": {
+      "events": [
+        {
+          "id": "e_hogen_rebellion",
+          "year": 1156,
+          "title": "保元の乱",
+          "category": "battle",
+          "location": "京都・白河北殿",
+          "color": "#8a1a1a",
+          "characters": [
+            "c_taira_kiyomori",
+            "c_minamoto_yoshitomo",
+            "c_go_shirakawa"
+          ]
+        },
+        {
+          "id": "e_heiji_rebellion",
+          "year": 1159,
+          "title": "平治の乱",
+          "category": "battle",
+          "location": "京都",
+          "color": "#8a1a1a",
+          "characters": [
+            "c_taira_kiyomori",
+            "c_minamoto_yoshitomo"
+          ]
+        },
+        {
+          "id": "e_yoshitomo_death",
+          "year": 1160,
+          "title": "源義朝の最期",
+          "category": "death",
+          "location": "尾張国・野間",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_minamoto_yoshitomo"
+          ]
+        },
+        {
+          "id": "e_yoritomo_exile",
+          "year": 1160,
+          "title": "頼朝、伊豆に配流",
+          "category": "politics",
+          "location": "伊豆国",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_minamoto_yoritomo"
+          ]
+        },
+        {
+          "id": "e_kiyomori_daijo_daijin",
+          "year": 1167,
+          "title": "清盛、太政大臣に就任",
+          "category": "politics",
+          "location": "京都",
+          "color": "#8a1a1a",
+          "characters": [
+            "c_taira_kiyomori"
+          ]
+        },
+        {
+          "id": "e_shishigatani",
+          "year": 1177,
+          "title": "鹿ヶ谷の陰謀",
+          "category": "politics",
+          "location": "京都・鹿ヶ谷",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_fujiwara_narichika",
+            "c_shunkan",
+            "c_go_shirakawa",
+            "c_taira_kiyomori"
+          ]
+        },
+        {
+          "id": "e_shigemori_death",
+          "year": 1179,
+          "title": "重盛の死",
+          "category": "death",
+          "location": "京都",
+          "color": "#8a1a1a",
+          "characters": [
+            "c_taira_shigemori",
+            "c_taira_kiyomori"
+          ]
+        },
+        {
+          "id": "e_jisho_coup",
+          "year": 1179,
+          "title": "治承三年の政変",
+          "category": "politics",
+          "location": "京都",
+          "color": "#8a1a1a",
+          "characters": [
+            "c_taira_kiyomori",
+            "c_go_shirakawa"
+          ]
+        },
+        {
+          "id": "e_antoku_enthronement",
+          "year": 1180,
+          "title": "安徳天皇践祚",
+          "category": "politics",
+          "location": "京都",
+          "color": "#8a1a1a",
+          "characters": [
+            "c_antoku_tennou",
+            "c_taira_kiyomori",
+            "c_kenreimonin"
+          ]
+        },
+        {
+          "id": "e_mochihito_edict",
+          "year": 1180,
+          "title": "以仁王の令旨",
+          "category": "politics",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_mochihito_o",
+            "c_minamoto_yorimasa"
+          ]
+        },
+        {
+          "id": "e_uji_battle",
+          "year": 1180,
+          "title": "宇治川の戦いと以仁王・頼政の最期",
+          "category": "battle",
+          "location": "山城国・宇治",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_mochihito_o",
+            "c_minamoto_yorimasa"
+          ]
+        },
+        {
+          "id": "e_yoritomo_uprising",
+          "year": 1180,
+          "title": "頼朝、伊豆で挙兵",
+          "category": "battle",
+          "location": "伊豆国",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_minamoto_yoritomo",
+            "c_hojo_tokimasa",
+            "c_mongaku"
+          ]
+        },
+        {
+          "id": "e_ishibashiyama",
+          "year": 1180,
+          "title": "石橋山の戦い",
+          "category": "battle",
+          "location": "相模国・石橋山",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_minamoto_yoritomo",
+            "c_kazusa_hirotsune"
+          ]
+        },
+        {
+          "id": "e_kamakura_entry",
+          "year": 1180,
+          "title": "頼朝、鎌倉入り",
+          "category": "politics",
+          "location": "相模国・鎌倉",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_minamoto_yoritomo",
+            "c_hojo_masako"
+          ]
+        },
+        {
+          "id": "e_fujigawa",
+          "year": 1180,
+          "title": "富士川の戦い",
+          "category": "battle",
+          "location": "駿河国・富士川",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_minamoto_yoritomo",
+            "c_taira_koremori"
+          ]
+        },
+        {
+          "id": "e_yoshinaka_uprising",
+          "year": 1180,
+          "title": "義仲、信濃で挙兵",
+          "category": "battle",
+          "location": "信濃国",
+          "color": "#3a5a3a",
+          "characters": [
+            "c_minamoto_yoshinaka",
+            "c_tomoe_gozen"
+          ]
+        },
+        {
+          "id": "e_kiyomori_death",
+          "year": 1181,
+          "title": "清盛、死去",
+          "category": "death",
+          "location": "京都",
+          "color": "#8a1a1a",
+          "characters": [
+            "c_taira_kiyomori",
+            "c_taira_munemori"
+          ]
+        },
+        {
+          "id": "e_kurikara",
+          "year": 1183,
+          "title": "倶利伽羅峠の戦い",
+          "category": "battle",
+          "location": "加賀・越中国境",
+          "color": "#3a5a3a",
+          "characters": [
+            "c_minamoto_yoshinaka",
+            "c_taira_koremori"
+          ]
+        },
+        {
+          "id": "e_heike_flee",
+          "year": 1183,
+          "title": "平氏都落ち",
+          "category": "politics",
+          "location": "京都 → 西国",
+          "color": "#8a1a1a",
+          "characters": [
+            "c_taira_munemori",
+            "c_antoku_tennou",
+            "c_kenreimonin",
+            "c_taira_tokitada"
+          ]
+        },
+        {
+          "id": "e_yoshinaka_kyoto",
+          "year": 1183,
+          "title": "義仲、入京",
+          "category": "politics",
+          "location": "京都",
+          "color": "#3a5a3a",
+          "characters": [
+            "c_minamoto_yoshinaka",
+            "c_go_shirakawa"
+          ]
+        },
+        {
+          "id": "e_yoshinaka_conflict",
+          "year": 1183,
+          "title": "義仲と後白河法皇の対立",
+          "category": "politics",
+          "location": "京都",
+          "color": "#3a5a3a",
+          "characters": [
+            "c_minamoto_yoshinaka",
+            "c_go_shirakawa"
+          ]
+        },
+        {
+          "id": "e_yoshitsune_dispatch",
+          "year": 1184,
+          "title": "頼朝、義経・範頼を派遣",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_minamoto_yoritomo",
+            "c_minamoto_yoshitsune",
+            "c_minamoto_noriyori"
+          ]
+        },
+        {
+          "id": "e_awazu",
+          "year": 1184,
+          "title": "粟津の戦いと義仲の最期",
+          "category": "death",
+          "location": "近江国・粟津",
+          "color": "#3a5a3a",
+          "characters": [
+            "c_minamoto_yoshinaka",
+            "c_imai_kanehira",
+            "c_tomoe_gozen"
+          ]
+        },
+        {
+          "id": "e_ichinotani",
+          "year": 1184,
+          "title": "一ノ谷の戦い",
+          "category": "battle",
+          "location": "摂津国・一ノ谷",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_minamoto_yoshitsune",
+            "c_minamoto_noriyori",
+            "c_taira_tomomori",
+            "c_taira_shigehira",
+            "c_taira_tadanori"
+          ]
+        },
+        {
+          "id": "e_atsumori_kumagai",
+          "year": 1184,
+          "title": "敦盛最期",
+          "category": "episode",
+          "location": "摂津国・一ノ谷",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_kumagai_naozane",
+            "c_taira_atsumori"
+          ]
+        },
+        {
+          "id": "e_yashima",
+          "year": 1185,
+          "title": "屋島の戦い",
+          "category": "battle",
+          "location": "讃岐国・屋島",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_minamoto_yoshitsune",
+            "c_taira_munemori",
+            "c_taira_noritsune",
+            "c_sato_tsuginobu"
+          ]
+        },
+        {
+          "id": "e_nasu_yoichi_fan",
+          "year": 1185,
+          "title": "那須与一、扇の的を射る",
+          "category": "episode",
+          "location": "讃岐国・屋島",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_nasu_yoichi"
+          ]
+        },
+        {
+          "id": "e_dannoura",
+          "year": 1185,
+          "title": "壇ノ浦の戦い",
+          "category": "battle",
+          "location": "長門国・壇ノ浦",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_minamoto_yoshitsune",
+            "c_taira_tomomori",
+            "c_taira_noritsune",
+            "c_taira_munemori"
+          ]
+        },
+        {
+          "id": "e_antoku_drowning",
+          "year": 1185,
+          "title": "安徳天皇入水",
+          "category": "death",
+          "location": "長門国・壇ノ浦",
+          "color": "#8a1a1a",
+          "characters": [
+            "c_antoku_tennou",
+            "c_kenreimonin"
+          ]
+        },
+        {
+          "id": "e_heike_annihilation",
+          "year": 1185,
+          "title": "平氏一門の最期",
+          "category": "death",
+          "location": "長門国・壇ノ浦",
+          "color": "#8a1a1a",
+          "characters": [
+            "c_taira_tomomori",
+            "c_taira_noritsune",
+            "c_taira_munemori"
+          ]
+        },
+        {
+          "id": "e_kenreimonin_ohara",
+          "year": 1185,
+          "title": "建礼門院、大原へ",
+          "category": "episode",
+          "location": "京都・大原",
+          "color": "#8a1a1a",
+          "characters": [
+            "c_kenreimonin",
+            "c_go_shirakawa"
+          ]
+        },
+        {
+          "id": "e_koshigoe",
+          "year": 1185,
+          "title": "腰越状",
+          "category": "politics",
+          "location": "相模国・腰越",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_minamoto_yoshitsune",
+            "c_kajiwara_kagetoki"
+          ]
+        },
+        {
+          "id": "e_yoritomo_yoshitsune_rift",
+          "year": 1185,
+          "title": "頼朝と義経の対立決定的に",
+          "category": "politics",
+          "location": "京都・鎌倉",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_minamoto_yoritomo",
+            "c_minamoto_yoshitsune"
+          ]
+        },
+        {
+          "id": "e_yoshitsune_rebellion",
+          "year": 1185,
+          "title": "義経、頼朝追討の院宣を得るも失敗し逃亡",
+          "category": "politics",
+          "location": "京都",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_minamoto_yoshitsune",
+            "c_go_shirakawa",
+            "c_minamoto_yoritomo"
+          ]
+        },
+        {
+          "id": "e_shugo_jito",
+          "year": 1185,
+          "title": "守護・地頭の設置を勅許される",
+          "category": "politics",
+          "location": "京都・鎌倉",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_minamoto_yoritomo",
+            "c_oe_hiromoto"
+          ]
+        },
+        {
+          "id": "e_yoshitsune_flee_oshu",
+          "year": 1187,
+          "title": "義経、奥州へ逃れる",
+          "category": "politics",
+          "location": "奥州・平泉",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_minamoto_yoshitsune",
+            "c_musashibo_benkei",
+            "c_fujiwara_hidehira"
+          ]
+        },
+        {
+          "id": "e_hidehira_death",
+          "year": 1187,
+          "title": "秀衡、死去",
+          "category": "death",
+          "location": "奥州・平泉",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_fujiwara_hidehira",
+            "c_fujiwara_yasuhira"
+          ]
+        },
+        {
+          "id": "e_yasuhira_betrayal",
+          "year": 1189,
+          "title": "泰衡、義経を討つ（衣川の戦い）",
+          "category": "death",
+          "location": "奥州・衣川館",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_fujiwara_yasuhira",
+            "c_minamoto_yoshitsune",
+            "c_musashibo_benkei"
+          ]
+        },
+        {
+          "id": "e_oshu_campaign_fall",
+          "year": 1189,
+          "title": "頼朝、奥州征伐と藤原氏の滅亡",
+          "category": "battle",
+          "location": "奥州",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_minamoto_yoritomo",
+            "c_fujiwara_yasuhira"
+          ]
+        },
+        {
+          "id": "e_yoritomo_hegemony",
+          "year": 1189,
+          "title": "頼朝、東国の覇権を確立",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#1e3a5f",
+          "characters": [
+            "c_minamoto_yoritomo",
+            "c_hojo_masako"
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_taira_kiyomori",
+          "name": "平清盛",
+          "reading": "たいらのきよもり",
+          "faction": "heike",
+          "field": "governance"
+        },
+        {
+          "id": "c_taira_shigemori",
+          "name": "平重盛",
+          "reading": "たいらのしげもり",
+          "faction": "heike",
+          "field": "governance"
+        },
+        {
+          "id": "c_taira_munemori",
+          "name": "平宗盛",
+          "reading": "たいらのむねもり",
+          "faction": "heike",
+          "field": "governance"
+        },
+        {
+          "id": "c_taira_tomomori",
+          "name": "平知盛",
+          "reading": "たいらのとももり",
+          "faction": "heike",
+          "field": "military"
+        },
+        {
+          "id": "c_taira_noritsune",
+          "name": "平教経",
+          "reading": "たいらののりつね",
+          "faction": "heike",
+          "field": "military"
+        },
+        {
+          "id": "c_taira_tadanori",
+          "name": "平忠度",
+          "reading": "たいらのただのり",
+          "faction": "heike",
+          "field": "military"
+        },
+        {
+          "id": "c_taira_shigehira",
+          "name": "平重衡",
+          "reading": "たいらのしげひら",
+          "faction": "heike",
+          "field": "military"
+        },
+        {
+          "id": "c_kenreimonin",
+          "name": "建礼門院",
+          "reading": "けんれいもんいん",
+          "faction": "heike",
+          "field": "other"
+        },
+        {
+          "id": "c_antoku_tennou",
+          "name": "安徳天皇",
+          "reading": "あんとくてんのう",
+          "faction": "heike",
+          "field": "governance"
+        },
+        {
+          "id": "c_taira_tokitada",
+          "name": "平時忠",
+          "reading": "たいらのときただ",
+          "faction": "heike",
+          "field": "administration"
+        },
+        {
+          "id": "c_taira_koremori",
+          "name": "平維盛",
+          "reading": "たいらのこれもり",
+          "faction": "heike",
+          "field": "military"
+        },
+        {
+          "id": "c_taira_atsumori",
+          "name": "平敦盛",
+          "reading": "たいらのあつもり",
+          "faction": "heike",
+          "field": "military"
+        },
+        {
+          "id": "c_minamoto_yoshitomo",
+          "name": "源義朝",
+          "reading": "みなもとのよしとも",
+          "faction": "kamakura-genji",
+          "field": "military"
+        },
+        {
+          "id": "c_minamoto_yoritomo",
+          "name": "源頼朝",
+          "reading": "みなもとのよりとも",
+          "faction": "kamakura-genji",
+          "field": "governance"
+        },
+        {
+          "id": "c_minamoto_yoshitsune",
+          "name": "源義経",
+          "reading": "みなもとのよしつね",
+          "faction": "kamakura-genji",
+          "field": "military"
+        },
+        {
+          "id": "c_minamoto_noriyori",
+          "name": "源範頼",
+          "reading": "みなもとののりより",
+          "faction": "kamakura-genji",
+          "field": "military"
+        },
+        {
+          "id": "c_hojo_masako",
+          "name": "北条政子",
+          "reading": "ほうじょうまさこ",
+          "faction": "kamakura-genji",
+          "field": "governance"
+        },
+        {
+          "id": "c_hojo_tokimasa",
+          "name": "北条時政",
+          "reading": "ほうじょうときまさ",
+          "faction": "kamakura-genji",
+          "field": "governance"
+        },
+        {
+          "id": "c_hojo_yoshitoki",
+          "name": "北条義時",
+          "reading": "ほうじょうよしとき",
+          "faction": "kamakura-genji",
+          "field": "administration"
+        },
+        {
+          "id": "c_kajiwara_kagetoki",
+          "name": "梶原景時",
+          "reading": "かじわらかげとき",
+          "faction": "kamakura-genji",
+          "field": "military"
+        },
+        {
+          "id": "c_oe_hiromoto",
+          "name": "大江広元",
+          "reading": "おおえのひろもと",
+          "faction": "kamakura-genji",
+          "field": "administration"
+        },
+        {
+          "id": "c_miura_yoshizumi",
+          "name": "三浦義澄",
+          "reading": "みうらよしずみ",
+          "faction": "kamakura-genji",
+          "field": "military"
+        },
+        {
+          "id": "c_kumagai_naozane",
+          "name": "熊谷直実",
+          "reading": "くまがいなおざね",
+          "faction": "kamakura-genji",
+          "field": "military"
+        },
+        {
+          "id": "c_nasu_yoichi",
+          "name": "那須与一",
+          "reading": "なすのよいち",
+          "faction": "kamakura-genji",
+          "field": "military"
+        },
+        {
+          "id": "c_musashibo_benkei",
+          "name": "武蔵坊弁慶",
+          "reading": "むさしぼうべんけい",
+          "faction": "kamakura-genji",
+          "field": "military"
+        },
+        {
+          "id": "c_shizuka_gozen",
+          "name": "静御前",
+          "reading": "しずかごぜん",
+          "faction": "other",
+          "field": "other"
+        },
+        {
+          "id": "c_sato_tsuginobu",
+          "name": "佐藤継信",
+          "reading": "さとうつぐのぶ",
+          "faction": "kamakura-genji",
+          "field": "military"
+        },
+        {
+          "id": "c_minamoto_yoshinaka",
+          "name": "源義仲",
+          "reading": "みなもとのよしなか",
+          "faction": "kiso-genji",
+          "field": "military"
+        },
+        {
+          "id": "c_tomoe_gozen",
+          "name": "巴御前",
+          "reading": "ともえごぜん",
+          "faction": "kiso-genji",
+          "field": "military"
+        },
+        {
+          "id": "c_imai_kanehira",
+          "name": "今井兼平",
+          "reading": "いまいかねひら",
+          "faction": "kiso-genji",
+          "field": "military"
+        },
+        {
+          "id": "c_go_shirakawa",
+          "name": "後白河法皇",
+          "reading": "ごしらかわほうおう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_mochihito_o",
+          "name": "以仁王",
+          "reading": "もちひとおう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_minamoto_yorimasa",
+          "name": "源頼政",
+          "reading": "みなもとのよりまさ",
+          "faction": "court",
+          "field": "military"
+        },
+        {
+          "id": "c_shunkan",
+          "name": "俊寛",
+          "reading": "しゅんかん",
+          "faction": "court",
+          "field": "administration"
+        },
+        {
+          "id": "c_fujiwara_narichika",
+          "name": "藤原成親",
+          "reading": "ふじわらのなりちか",
+          "faction": "court",
+          "field": "administration"
+        },
+        {
+          "id": "c_kujo_kanezane",
+          "name": "九条兼実",
+          "reading": "くじょうかねざね",
+          "faction": "court",
+          "field": "administration"
+        },
+        {
+          "id": "c_fujiwara_hidehira",
+          "name": "藤原秀衡",
+          "reading": "ふじわらのひでひら",
+          "faction": "oshu-fujiwara",
+          "field": "governance"
+        },
+        {
+          "id": "c_fujiwara_yasuhira",
+          "name": "藤原泰衡",
+          "reading": "ふじわらのやすひら",
+          "faction": "oshu-fujiwara",
+          "field": "governance"
+        },
+        {
+          "id": "c_kazusa_hirotsune",
+          "name": "上総広常",
+          "reading": "かずさひろつね",
+          "faction": "kamakura-genji",
+          "field": "military"
+        },
+        {
+          "id": "c_mongaku",
+          "name": "文覚",
+          "reading": "もんがく",
+          "faction": "other",
+          "field": "thought"
+        }
+      ],
+      "factions": {
+        "heike": {
+          "id": "heike",
+          "name": "平氏",
+          "color": "#8a1a1a",
+          "colorLight": "#d1503a"
+        },
+        "kamakura-genji": {
+          "id": "kamakura-genji",
+          "name": "源氏（頼朝方）",
+          "color": "#1e3a5f",
+          "colorLight": "#5b8fd4"
+        },
+        "kiso-genji": {
+          "id": "kiso-genji",
+          "name": "源氏（義仲方）",
+          "color": "#3a5a3a",
+          "colorLight": "#7aab6a"
+        },
+        "oshu-fujiwara": {
+          "id": "oshu-fujiwara",
+          "name": "奥州藤原氏",
+          "color": "#6a4a1a",
+          "colorLight": "#c99a3a"
+        },
+        "court": {
+          "id": "court",
+          "name": "朝廷",
+          "color": "#4a2a5a",
+          "colorLight": "#9a6ac4"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#4a4a4a",
+          "colorLight": "#9a9a9a"
+        }
+      }
+    },
     "sengoku-japan": {
       "events": [
         {

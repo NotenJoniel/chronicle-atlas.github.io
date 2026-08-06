@@ -1,0 +1,6 @@
+/* 源平合戦 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#14100e;--surface:#1e1714;--surface-2:#281d18;--surface-3:#33261f;
+  --border-subtle:rgba(196,120,90,.12);--text:#ece2d8;--text-dim:#a89485;
+  --gold:#c9793f;--gold-dim:rgba(201,121,63,.18);
+}
