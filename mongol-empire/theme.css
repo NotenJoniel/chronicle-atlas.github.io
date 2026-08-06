@@ -1,0 +1,6 @@
+/* モンゴル帝国 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#120d0a;--surface:#1e150f;--surface-2:#291c14;--surface-3:#35271b;
+  --border-subtle:rgba(200,150,90,.12);--text:#ece0d0;--text-dim:#a3907a;
+  --gold:#d4a039;--gold-dim:rgba(212,160,57,.18);
+}
