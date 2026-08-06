@@ -29,7 +29,37 @@
     @keyframes fadeIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
     .tagline{color:var(--text-dim);font-size:.92rem;margin-top:10px;letter-spacing:.3px}
 
-    /* ── Navigation hint bar ── */
+    /* ── Cross View CTA（横串ビューへの導線。推し機能なのでクイックジャンプとは
+       視覚的にはっきり分けて目立たせる） ── */
+    .cta-wrap{display:flex;justify-content:center;padding:0 20px 18px;background:var(--bg)}
+    .cta-banner{
+      display:flex;align-items:center;gap:16px;
+      width:100%;max-width:640px;padding:16px 24px;
+      background:linear-gradient(135deg, rgba(196,165,90,.18), rgba(196,165,90,.05));
+      border:1.5px solid var(--gold);border-radius:14px;
+      text-decoration:none;color:var(--text);
+      transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+      box-shadow:0 0 18px rgba(196,165,90,.15);
+      animation:ctaGlow 4s ease-in-out infinite;
+    }
+    .cta-banner:hover{
+      transform:translateY(-2px);
+      background:linear-gradient(135deg, rgba(196,165,90,.26), rgba(196,165,90,.09));
+      box-shadow:0 6px 28px rgba(196,165,90,.35);
+    }
+    @keyframes ctaGlow{
+      0%,100%{box-shadow:0 0 16px rgba(196,165,90,.15)}
+      50%{box-shadow:0 0 26px rgba(196,165,90,.32)}
+    }
+    .cta-icon{font-size:2.1rem;flex-shrink:0}
+    .cta-text{display:flex;flex-direction:column;gap:3px;flex:1;min-width:0}
+    .cta-title{font-weight:700;font-size:1.08rem;color:var(--gold);display:flex;align-items:center;gap:8px}
+    .cta-badge{font-size:.62rem;font-weight:700;padding:2px 9px;border-radius:999px;background:var(--gold);color:var(--bg);letter-spacing:.5px}
+    .cta-sub{font-size:.8rem;color:var(--text-dim);line-height:1.45}
+    .cta-arrow{font-size:1.4rem;color:var(--gold);flex-shrink:0;transition:transform .2s}
+    .cta-banner:hover .cta-arrow{transform:translateX(5px)}
+
+    /* ── Navigation hint bar（クイックジャンプ専用。横串ビューの導線とは別枠） ── */
     .nav-hint{display:flex;align-items:center;justify-content:center;gap:16px;padding:8px 16px;background:var(--surface);border-bottom:1px solid var(--border-subtle);font-size:.82rem;color:var(--text-dim);flex-wrap:wrap}
     .nav-hint .jump-btn{padding:4px 12px;border-radius:12px;background:var(--gold-dim);border:1px solid var(--border);color:var(--gold);cursor:pointer;font-size:.78rem;font-family:inherit;transition:all .2s;text-decoration:none}
     .nav-hint .jump-btn:hover{background:var(--gold);color:var(--bg)}
@@ -195,6 +225,11 @@
       .site-header{padding:16px 12px 12px}
       .banner-img{max-width:90%}
       .tagline{font-size:.84rem}
+      .cta-wrap{padding:0 14px 14px}
+      .cta-banner{padding:12px 16px;gap:12px}
+      .cta-icon{font-size:1.7rem}
+      .cta-title{font-size:.95rem}
+      .cta-sub{font-size:.74rem}
       .wt-region-name{min-width:140px;font-size:.85rem;padding:8px 10px}
       .wt-region-col{min-width:140px}
       .era-block{left:3px;right:3px}
@@ -203,6 +238,7 @@
     @media(max-width:480px){
       :root{--year-col:50px}
       .banner-img{max-width:100%}
+      .cta-sub{display:none}
       .wt-region-name{min-width:120px;font-size:.8rem}
       .wt-region-col{min-width:120px}
     }
@@ -216,12 +252,22 @@
     <p class="tagline">世界の歴史を横断的に体験するインタラクティブ・タイムライン</p>
   </header>
 
+  <!-- Cross View CTA（推し機能。クイックジャンプとは別枠で目立たせる） -->
+  <div class="cta-wrap">
+    <a href="./cross/index.html" class="cta-banner">
+      <span class="cta-icon">🧭</span>
+      <span class="cta-text">
+        <span class="cta-title">横串ビュー<span class="cta-badge">おすすめ</span></span>
+        <span class="cta-sub">日本・中国・ヨーロッパを同じ年表軸に重ねて、同時代に何が起きていたかを一望する</span>
+      </span>
+      <span class="cta-arrow">→</span>
+    </a>
+  </div>
+
   <!-- Navigation Hint -->
   <nav class="nav-hint" id="nav-hint">
     <span>📍 クイックジャンプ:</span>
     <!-- populated by JS -->
-    <a href="./compare/index.html" class="jump-btn compare-link">🔀 同時代比較</a>
-    <a href="./cross/index.html" class="jump-btn cross-link">🧭 横串ビュー</a>
   </nav>
 
   <!-- World Timeline -->
