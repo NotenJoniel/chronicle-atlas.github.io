@@ -1,0 +1,110 @@
+/* ═══════════════════════════════════════════════
+   Chronicle Atlas — 横串ビュー（地域別俯瞰）専用スタイル
+   モーダル・タグ等の基礎スタイルは shared/timeline-core.css を流用。
+   ここでは横串ビュー固有のレイアウト（地域列・年軸・カード衝突配置）のみ定義する。
+   compare/compare.css と同じ設計方針（列＝グループ、縦軸＝年、レーン方式の
+   衝突回避）を踏襲しているが、列の単位が「タイムライン」ではなく「地域」で、
+   1列の中に複数タイムラインの出来事が年代でつながって並ぶ点が異なる。
+   ═══════════════════════════════════════════════ */
+
+:root{
+  --bg:#0d0f14;--surface:#171a22;--surface-2:#1f222c;--surface-3:#2a2e38;
+  --border-subtle:rgba(200,170,120,.12);--text:#e8e4d8;--text-dim:#a09888;
+  --gold:#c9a84c;--gold-dim:rgba(201,168,76,.18);
+  --font:'Noto Sans JP','Segoe UI',sans-serif;
+}
+
+html,body{height:100%}
+body{background:var(--bg);display:flex;flex-direction:column;overflow:hidden;margin:0}
+
+.sticky-header{flex-shrink:0;background:linear-gradient(180deg,var(--bg) 60%,transparent);padding:10px 20px 6px;backdrop-filter:blur(12px)}
+.header-row{display:flex;align-items:center;gap:14px}
+.header-row h1{font-size:1.3rem;color:var(--gold)}
+
+.cx-toolbar{display:flex;align-items:center;gap:16px;padding:6px 0;flex-wrap:wrap}
+.cx-category-filters{display:flex;gap:4px;flex-wrap:wrap}
+.cx-search-box{margin-left:auto}
+.cx-search-box input{background:var(--surface-2);border:1px solid var(--border-subtle);color:var(--text);padding:4px 12px;border-radius:6px;font-size:.82rem;width:220px;transition:border .2s}
+.cx-search-box input:focus{outline:none;border-color:var(--gold)}
+
+/* ─ Grid: column = region, shared vertical year axis ─ */
+.cx-wrapper{padding:0 20px;flex:1;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+.cx-header{display:flex;flex-shrink:0;background:rgba(13,15,20,.97);border-bottom:2px solid var(--border-subtle);overflow-x:hidden}
+.cx-grid-scroll{flex:1;min-height:0;overflow:auto;border-bottom:1px solid var(--border-subtle)}
+.cx-grid-scroll{scrollbar-width:auto;scrollbar-color:var(--surface-3) var(--bg)}
+.cx-grid-scroll::-webkit-scrollbar{width:16px;height:16px}
+.cx-grid-scroll::-webkit-scrollbar-track{background:var(--bg)}
+.cx-grid-scroll::-webkit-scrollbar-thumb{background:var(--surface-3);border-radius:8px;border:3px solid var(--bg)}
+.cx-grid-scroll::-webkit-scrollbar-thumb:hover{background:var(--gold-dim)}
+
+.cx-year-label{width:70px;min-width:70px;padding:10px 6px;text-align:center;font-size:.78rem;color:var(--gold);font-weight:700;border-right:1px solid var(--border-subtle)}
+.cx-region-name{width:600px;min-width:600px;padding:10px 14px;border-right:1px solid var(--border-subtle)}
+.cx-region-name .rn-title{font-weight:700;font-size:.98rem;color:var(--text);display:flex;align-items:center;gap:6px}
+.cx-region-name .rn-sub{font-size:.72rem;color:var(--text-dim);margin-top:2px}
+.cx-region-name.placeholder .rn-title{color:var(--text-dim);opacity:.55;font-style:italic}
+
+/* タイムラインOR絞り込み: 折り畳み式のチェックボックス一覧 */
+.cx-timeline-toggle summary{cursor:pointer;font-size:.74rem;color:var(--gold);margin-top:6px;list-style:none;user-select:none}
+.cx-timeline-toggle summary::-webkit-details-marker{display:none}
+.cx-timeline-toggle summary::before{content:'▸ ';display:inline-block;transition:transform .15s}
+.cx-timeline-toggle[open] summary::before{transform:rotate(90deg)}
+.cx-timeline-toggle .tt-list{margin-top:4px;display:flex;flex-direction:column;gap:2px}
+.cx-timeline-toggle label{display:flex;align-items:center;gap:6px;font-size:.76rem;color:var(--text);padding:1px 0;cursor:pointer}
+.cx-timeline-toggle input{width:13px;height:13px;flex-shrink:0}
+
+/* ─ 人物一覧サイドバー ─
+   詳細タイムラインの左サイドバー（shared/timeline-core.css の .main-layout/.sidebar）と
+   「画面に1つだけ・同じ配置・同じ見た目」になるよう、そちらのクラスをそのまま使う。
+   中身だけ、この画面独自の階層（地域→時代→人物一覧）で構成する。 */
+.main-layout{flex:1;min-height:0;display:flex;overflow:hidden;height:auto}
+.sidebar{padding:6px 0}
+.sidebar.hidden{display:none}
+
+.cx-sidebar-region{display:flex;align-items:center;gap:6px;padding:10px 10px 4px;font-weight:700;font-size:.85rem;color:var(--gold);border-top:1px solid var(--border-subtle);margin-top:6px}
+.cx-sidebar-region:first-of-type{border-top:none;margin-top:0}
+
+.cx-people-era{margin:0 8px 2px}
+.cx-people-era summary{cursor:pointer;font-size:.82rem;color:var(--text);list-style:none;user-select:none;padding:6px 4px}
+.cx-people-era summary::-webkit-details-marker{display:none}
+.cx-people-era summary::before{content:'▸ ';display:inline-block;transition:transform .15s;color:var(--text-dim)}
+.cx-people-era[open] summary::before{transform:rotate(90deg)}
+.cx-people-era-body{padding-bottom:6px}
+
+.cx-grid{display:flex;position:relative;min-width:max-content}
+.cx-year-col{width:70px;min-width:70px;position:sticky;left:0;z-index:20;background:var(--bg);border-right:1px solid var(--border-subtle);flex-shrink:0}
+.cx-year-mark{position:absolute;right:8px;transform:translateY(-50%);font-size:.7rem;color:var(--text-dim);white-space:nowrap}
+.cx-year-mark.century{color:var(--gold);font-weight:600}
+
+.cx-col{width:600px;min-width:600px;position:relative;border-right:1px solid var(--border-subtle)}
+.cx-col.placeholder{display:flex;align-items:center;justify-content:center}
+.cx-col.placeholder .placeholder-msg{color:var(--text-dim);opacity:.3;font-size:.85rem;writing-mode:vertical-rl;letter-spacing:4px}
+
+/* 時代の枠: トップページのera-blockと同じ「どこからどこまでがその時代か」を示す
+   背景の帯。時代固有のハードコード色は使わず、交互の濃淡だけで隣接区分を分ける。
+   タイムラインが実データ上重なる場合（例: 三国時代と後漢末期）は帯も素直に
+   重ねて描き、半透明の重なりでその重複自体を視覚的に示す。 */
+.cx-era-band{position:absolute;left:0;right:0;border-top:1px dashed var(--border-subtle);background:rgba(255,255,255,.018);pointer-events:none}
+.cx-era-band.alt{background:rgba(255,255,255,.04)}
+.cx-era-label{position:sticky;top:0;z-index:2;display:inline-block;font-size:.7rem;color:var(--text-dim);background:var(--bg);padding:2px 8px;border-bottom-right-radius:6px;opacity:.92}
+
+.cx-grid-line{position:absolute;left:0;right:0;height:1px;background:rgba(255,255,255,.03);pointer-events:none;z-index:0}
+.cx-grid-line.major{background:rgba(201,168,76,.08)}
+
+/* left/width はレーン数に応じてJSがインラインstyleで設定する */
+.cx-card{position:absolute;background:var(--surface);border:1px solid var(--border-subtle);border-left:3px solid var(--gold);border-radius:6px;padding:6px 9px;cursor:pointer;transition:border-color .15s,box-shadow .15s;overflow:hidden}
+.cx-card:hover{border-color:var(--gold);box-shadow:0 0 10px rgba(201,168,76,.15);z-index:5}
+.cx-card .cc-top{display:flex;align-items:center;gap:5px;font-size:.7rem;color:var(--text-dim)}
+.cx-card .cc-year{font-weight:700;color:var(--gold)}
+.cx-card .cc-title{font-size:.8rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}
+.cx-card.dimmed{opacity:.15;pointer-events:none}
+
+/* ═══ Responsive ═══ */
+@media(max-width:768px){
+  .cx-region-name,.cx-col{width:400px;min-width:400px}
+  .header-row h1{font-size:1.05rem}
+  .cx-search-box input{width:150px}
+  /* 詳細タイムライン側はモバイルで固定ドロワー化するが、この画面ではトグルは
+     開閉のみを担い、ドロワー演出は不要なので通常フローのまま縦に積む。 */
+  .main-layout{flex-direction:column;height:auto;overflow:visible}
+  .sidebar{width:100%;min-width:0;position:static;transform:none;max-height:40vh}
+}

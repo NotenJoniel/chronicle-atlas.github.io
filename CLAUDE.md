@@ -17,6 +17,7 @@
 - **フィールド名は camelCase 統一**：`eraPhases` `factions` `categories` `characters` `events` `mapSnapshots` `wikiLinks`
 - **JSONはPretty-print**（minify禁止 — diffが壊れると部分編集ができなくなる）
 - データ変更後は必ず `node data/validate.js` で **0 errors** を確認する
+- タイムラインデータ（`data/timelines/*.json`）を変更したら `node data/build-digest.js` も実行し、`data/digest.json`（横串ビュー `cross/` が使う軽量ダイジェスト）を再生成する
 - 時代固有の値をコードに直書きしない（「他の時代では違う値になるもの」はすべてデータ層）
 
 ## ローカルでブラウザ確認する

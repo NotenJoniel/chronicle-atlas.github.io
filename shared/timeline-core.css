@@ -52,6 +52,12 @@ button{font-family:inherit;cursor:pointer}
 
 /* sidebar internals */
 .sidebar-clear-bar{display:none;align-items:center;justify-content:space-between;padding:5px 8px;margin-bottom:6px;background:var(--gold-dim);border:1px solid var(--gold);border-radius:6px;font-size:.78rem;color:var(--gold);position:sticky;top:0;z-index:10}
+.sidebar-group-toggle{display:flex;gap:6px;padding:6px 8px 2px}
+.sidebar-group-toggle .filter-btn{flex:1;text-align:center}
+.sidebar-field-filter{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:6px 8px;margin-bottom:4px}
+.sidebar-field-filter label{font-size:.78rem;color:var(--text-dim)}
+.sidebar-field-filter select{background:var(--surface-2);color:var(--text);border:1px solid var(--border-subtle);border-radius:6px;padding:3px 6px;font-size:.78rem;font-family:inherit;cursor:pointer}
+.sidebar-field-filter select:hover{border-color:var(--text-dim)}
 .clear-char-filter{background:none;border:none;color:var(--gold);cursor:pointer;font-size:.78rem}
 .sidebar-section{margin-bottom:2px;border-bottom:1px solid var(--border-subtle)}
 .sidebar-header{display:flex;justify-content:space-between;align-items:center;padding:8px;cursor:pointer;font-size:.85rem;font-weight:700;color:var(--text-dim);border-radius:4px;transition:.15s;user-select:none}
@@ -64,7 +70,9 @@ button{font-family:inherit;cursor:pointer}
 .sidebar-char:hover{background:var(--surface-2);color:var(--text)}
 .sidebar-char.selected{background:var(--gold-dim);color:var(--gold)}
 .sidebar-char .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-.sidebar-char .reading{font-size:.72rem;color:var(--text-dim);margin-left:2px}
+.sidebar-char .name-block{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sidebar-char .reading{font-size:.72rem;color:var(--text-dim)}
+.sidebar-char .axis-label{flex:0 1 auto;max-width:38%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-left:auto;padding-left:8px;font-size:.68rem;color:var(--text-dim);opacity:.75}
 
 /* ─ Sticky Territory Map ─ */
 .map-column{width:480px;flex-shrink:0;padding:8px 0 8px 8px;overflow-y:auto;overflow-x:hidden;scrollbar-width:thin;scrollbar-color:var(--surface-3) transparent}

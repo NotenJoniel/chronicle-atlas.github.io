@@ -18,6 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function bootstrap(timelineId, raw) {
   const DEFAULT_MAP_COLUMN_RULES = [{ maxCount: 4, cols: 2 }, { maxCount: 9, cols: 3 }, { cols: 4 }];
+  // characters[].field の表示名。全時代共通の固定8分類のため、データ層ではなくここで定義する
+  // （判断基準: .agents/FIELD_TAXONOMY.md）。otherは「公的機能を持たない人物」の受け皿であり
+  // 表示上は分野行を出さない（ラベルなし=undefined）。
+  const FIELD_LABELS = {
+    governance: '統治', military: '軍事', administration: '行政・法',
+    thought: '思想・信仰', scholarship: '学術・技術', arts: '芸術', commerce: '経済・交易'
+  };
+  // 分野順グルーピング時のグループ表示順（件数順ではなく固定順。時代が変わっても
+  // 並びが揺れないようにするため。.agents/FIELD_TAXONOMY.md の定義順に一致させ、
+  // otherは必ず最後に置く）
+  const FIELD_ORDER = ['governance', 'military', 'administration', 'thought', 'scholarship', 'arts', 'commerce', 'other'];
+  function fieldGroupLabel(f) { return f === 'other' ? 'その他' : FIELD_LABELS[f]; }
 
   const D = {
     TIMELINE_ID: timelineId,
@@ -51,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.warn(`meta.layoutStyle ("${META.layoutStyle}") と body[data-layout] ("${document.body.dataset.layout}") が一致していません`);
   }
 
-  const state = { era: null, faction: 'all', category: 'all', query: '', mapVisible: false, sidebarVisible: true, activeEventYear: null, prevMapKey: null, selectedChars: new Set() };
+  const state = { era: null, faction: 'all', category: 'all', field: 'all', sidebarGroupBy: 'faction', query: '', mapVisible: false, sidebarVisible: true, activeEventYear: null, prevMapKey: null, selectedChars: new Set() };
 
   const $ = id => document.getElementById(id);
   const eraNav = $('era-nav');
@@ -203,14 +215,58 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     sidebar.appendChild(clearBar);
 
-    const factionOrder = Object.keys(D.FACTIONS);
-    factionOrder.forEach(fid => {
-      const chars = D.CHARACTERS.filter(c => c.faction === fid);
+    // 勢力順／分野順のグルーピング切り替え。同じ人物リストを、見出しの軸だけ
+    // 入れ替えて見せる。グルーピングに使っていない方の軸は、各行の右端に
+    // 補助ラベルとして添える（どちらの並びでも情報量が落ちないようにするため）。
+    const groupToggle = mkEl('div', 'sidebar-group-toggle');
+    [['faction', '勢力順'], ['field', '分野順']].forEach(([key, label]) => {
+      const btn = mkEl('button', 'filter-btn' + (state.sidebarGroupBy === key ? ' active' : ''), label);
+      btn.onclick = () => { state.sidebarGroupBy = key; renderSidebar(); };
+      groupToggle.appendChild(btn);
+    });
+    sidebar.appendChild(groupToggle);
+
+    // 分野フィルタ（人物一覧の表示を絞り込む起点は勢力/カテゴリと異なりサイドバー内。
+    // 選択すると、その分野の人物を年表側の人物フィルタ（selectedChars）にも
+    // 自動反映する。その際、既存の人物選択は一度クリアしてから絞り込み結果を
+    // 全選択する（「全分野」に戻したときも選択解除まで含めて対称に扱う）。
+    // otherは選択の意味が無いため選択肢から除外。
+    const presentFields = Object.keys(FIELD_LABELS).filter(f => D.CHARACTERS.some(c => c.field === f));
+    if (presentFields.length > 1) {
+      const fieldFilter = mkEl('div', 'sidebar-field-filter');
+      const select = mkEl('select', '');
+      select.appendChild(new Option('全分野', 'all'));
+      presentFields.forEach(f => select.appendChild(new Option(FIELD_LABELS[f], f)));
+      select.value = state.field;
+      select.onchange = () => {
+        state.field = select.value;
+        state.selectedChars.clear();
+        if (state.field !== 'all') {
+          D.CHARACTERS.filter(c => c.field === state.field).forEach(c => state.selectedChars.add(c.id));
+        }
+        renderSidebar();
+        renderTimeline();
+      };
+      fieldFilter.appendChild(mkEl('label', '', '人物を分野で絞り込み'));
+      fieldFilter.appendChild(select);
+      sidebar.appendChild(fieldFilter);
+    }
+
+    // グルーピング軸ごとの設定。groupIds は表示順（勢力は factions{} の宣言順、
+    // 分野は FIELD_ORDER の固定順）、axisLabel は各行の右端に出す補助ラベル
+    // （グルーピングに使っていない方の軸）。
+    const byField = state.sidebarGroupBy === 'field';
+    const groupIds = byField ? FIELD_ORDER : Object.keys(D.FACTIONS);
+    const groupKey = byField ? (c => c.field) : (c => c.faction);
+    const groupLabel = byField ? fieldGroupLabel : (gid => D.FACTIONS[gid]?.name || gid);
+    const axisLabel = byField ? (c => D.FACTIONS[c.faction]?.name || c.faction) : (c => FIELD_LABELS[c.field] || '');
+
+    groupIds.forEach(gid => {
+      const chars = D.CHARACTERS.filter(c => groupKey(c) === gid && (state.field === 'all' || c.field === state.field));
       if (!chars.length) return;
       const section = mkEl('div', 'sidebar-section');
       const header = mkEl('div', 'sidebar-header');
-      const fName = D.FACTIONS[fid]?.name || fid;
-      header.innerHTML = `<span>${fName}（${chars.length}）</span><span class="arrow">▼</span>`;
+      header.innerHTML = `<span>${groupLabel(gid)}（${chars.length}）</span><span class="arrow">▼</span>`;
       let collapsed = false;
       const list = mkEl('div', 'sidebar-list');
       header.onclick = () => { collapsed = !collapsed; list.classList.toggle('hidden', collapsed); header.classList.toggle('collapsed', collapsed); };
@@ -218,11 +274,23 @@ document.addEventListener('DOMContentLoaded', () => {
         const item = mkEl('div', 'sidebar-char');
         item.dataset.charId = c.id;
         const dot = mkEl('span', 'dot');
-        applyFactionSwatch(dot, fid);
-        const r = c.reading ? `<span class="reading">${c.reading}</span>` : '';
+        applyFactionSwatch(dot, c.faction);
         item.appendChild(dot);
-        item.appendChild(document.createTextNode(' ' + c.name + ' '));
-        if (r) item.insertAdjacentHTML('beforeend', r);
+        // 名前＋読みは1行に収まらない場合だけ省略記号にする（折り返しは行わない）。
+        // readingがnameと同一（表音文字の時代で頻出）なら、二重表示を避けて出さない。
+        const nameBlock = mkEl('span', 'name-block');
+        nameBlock.appendChild(document.createTextNode(c.name));
+        if (c.reading && c.reading !== c.name) {
+          nameBlock.appendChild(mkEl('span', 'reading', ' ' + c.reading));
+        }
+        nameBlock.title = c.reading && c.reading !== c.name ? `${c.name}（${c.reading}）` : c.name;
+        item.appendChild(nameBlock);
+        const axis = axisLabel(c);
+        if (axis) {
+          const axisEl = mkEl('span', 'axis-label', axis);
+          axisEl.title = axis;
+          item.appendChild(axisEl);
+        }
         if (state.selectedChars.has(c.id)) item.classList.add('selected');
         item.onclick = (e) => {
           if (e.ctrlKey || e.metaKey) {
@@ -577,7 +645,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (ch.reading) { rl.textContent = ch.reading + (ch.title ? `　${characterTitleLabel}: ${ch.title}` : ''); rl.style.display = ''; }
     else { rl.style.display = 'none'; }
     const ftag = $('cm-faction-tag');
-    ftag.textContent = D.FACTIONS[ch.faction]?.name || ch.faction;
+    const factionName = D.FACTIONS[ch.faction]?.name || ch.faction;
+    const fieldLabel = FIELD_LABELS[ch.field];
+    ftag.textContent = fieldLabel ? `${factionName} ／ ${fieldLabel}` : factionName;
     ftag.className = 'tag';
     applyFactionSwatch(ftag, ch.faction);
     $('cm-role').textContent = ch.role;

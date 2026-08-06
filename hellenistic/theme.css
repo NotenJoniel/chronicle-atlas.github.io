@@ -1,0 +1,6 @@
+/* ヘレニズム世界 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#120e18;--surface:#1c1522;--surface-2:#26192e;--surface-3:#33223d;
+  --border-subtle:rgba(200,160,220,.12);--text:#e8e2ec;--text-dim:#9b8fa8;
+  --gold:#c9a24a;--gold-dim:rgba(201,162,74,.18);
+}
