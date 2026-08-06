@@ -25,6 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
     governance: '統治', military: '軍事', administration: '行政・法',
     thought: '思想・信仰', scholarship: '学術・技術', arts: '芸術', commerce: '経済・交易'
   };
+  // 分野順グルーピング時のグループ表示順（件数順ではなく固定順。時代が変わっても
+  // 並びが揺れないようにするため。.agents/FIELD_TAXONOMY.md の定義順に一致させ、
+  // otherは必ず最後に置く）
+  const FIELD_ORDER = ['governance', 'military', 'administration', 'thought', 'scholarship', 'arts', 'commerce', 'other'];
+  function fieldGroupLabel(f) { return f === 'other' ? 'その他' : FIELD_LABELS[f]; }
 
   const D = {
     TIMELINE_ID: timelineId,
@@ -58,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.warn(`meta.layoutStyle ("${META.layoutStyle}") と body[data-layout] ("${document.body.dataset.layout}") が一致していません`);
   }
 
-  const state = { era: null, faction: 'all', category: 'all', field: 'all', query: '', mapVisible: false, sidebarVisible: true, activeEventYear: null, prevMapKey: null, selectedChars: new Set() };
+  const state = { era: null, faction: 'all', category: 'all', field: 'all', sidebarGroupBy: 'faction', query: '', mapVisible: false, sidebarVisible: true, activeEventYear: null, prevMapKey: null, selectedChars: new Set() };
 
   const $ = id => document.getElementById(id);
   const eraNav = $('era-nav');
@@ -210,6 +215,17 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     sidebar.appendChild(clearBar);
 
+    // 勢力順／分野順のグルーピング切り替え。同じ人物リストを、見出しの軸だけ
+    // 入れ替えて見せる。グルーピングに使っていない方の軸は、各行の右端に
+    // 補助ラベルとして添える（どちらの並びでも情報量が落ちないようにするため）。
+    const groupToggle = mkEl('div', 'sidebar-group-toggle');
+    [['faction', '勢力順'], ['field', '分野順']].forEach(([key, label]) => {
+      const btn = mkEl('button', 'filter-btn' + (state.sidebarGroupBy === key ? ' active' : ''), label);
+      btn.onclick = () => { state.sidebarGroupBy = key; renderSidebar(); };
+      groupToggle.appendChild(btn);
+    });
+    sidebar.appendChild(groupToggle);
+
     // 分野フィルタ（人物一覧の表示を絞り込む起点は勢力/カテゴリと異なりサイドバー内。
     // 選択すると、その分野の人物を年表側の人物フィルタ（selectedChars）にも
     // 自動反映する。その際、既存の人物選択は一度クリアしてから絞り込み結果を
@@ -236,14 +252,21 @@ document.addEventListener('DOMContentLoaded', () => {
       sidebar.appendChild(fieldFilter);
     }
 
-    const factionOrder = Object.keys(D.FACTIONS);
-    factionOrder.forEach(fid => {
-      const chars = D.CHARACTERS.filter(c => c.faction === fid && (state.field === 'all' || c.field === state.field));
+    // グルーピング軸ごとの設定。groupIds は表示順（勢力は factions{} の宣言順、
+    // 分野は FIELD_ORDER の固定順）、axisLabel は各行の右端に出す補助ラベル
+    // （グルーピングに使っていない方の軸）。
+    const byField = state.sidebarGroupBy === 'field';
+    const groupIds = byField ? FIELD_ORDER : Object.keys(D.FACTIONS);
+    const groupKey = byField ? (c => c.field) : (c => c.faction);
+    const groupLabel = byField ? fieldGroupLabel : (gid => D.FACTIONS[gid]?.name || gid);
+    const axisLabel = byField ? (c => D.FACTIONS[c.faction]?.name || c.faction) : (c => FIELD_LABELS[c.field] || '');
+
+    groupIds.forEach(gid => {
+      const chars = D.CHARACTERS.filter(c => groupKey(c) === gid && (state.field === 'all' || c.field === state.field));
       if (!chars.length) return;
       const section = mkEl('div', 'sidebar-section');
       const header = mkEl('div', 'sidebar-header');
-      const fName = D.FACTIONS[fid]?.name || fid;
-      header.innerHTML = `<span>${fName}（${chars.length}）</span><span class="arrow">▼</span>`;
+      header.innerHTML = `<span>${groupLabel(gid)}（${chars.length}）</span><span class="arrow">▼</span>`;
       let collapsed = false;
       const list = mkEl('div', 'sidebar-list');
       header.onclick = () => { collapsed = !collapsed; list.classList.toggle('hidden', collapsed); header.classList.toggle('collapsed', collapsed); };
@@ -251,11 +274,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const item = mkEl('div', 'sidebar-char');
         item.dataset.charId = c.id;
         const dot = mkEl('span', 'dot');
-        applyFactionSwatch(dot, fid);
+        applyFactionSwatch(dot, c.faction);
         const r = c.reading ? `<span class="reading">${c.reading}</span>` : '';
         item.appendChild(dot);
         item.appendChild(document.createTextNode(' ' + c.name + ' '));
         if (r) item.insertAdjacentHTML('beforeend', r);
+        const axis = axisLabel(c);
+        if (axis) item.appendChild(mkEl('span', 'axis-label', axis));
         if (state.selectedChars.has(c.id)) item.classList.add('selected');
         item.onclick = (e) => {
           if (e.ctrlKey || e.metaKey) {
