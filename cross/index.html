@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>横串ビュー — Chronicle Atlas</title>
+  <meta name="description" content="日本・中国・ヨーロッパを地域別の列に並べ、同じ年軸上でそれぞれの歴史の流れを俯瞰する。">
+  <link rel="stylesheet" href="../shared/timeline-core.css?v=1">
+  <link rel="stylesheet" href="cross.css?v=1">
+</head>
+<body>
+  <div class="sticky-header">
+    <div class="header-row">
+      <a href="../" class="back-to-atlas">← Atlas</a>
+      <h1>🧭 横串ビュー</h1>
+      <div class="header-actions">
+        <button class="btn active" id="btn-toggle-sidebar" title="人物一覧">👥 人物一覧</button>
+      </div>
+    </div>
+    <div class="cx-toolbar">
+      <div id="category-filters" class="cx-category-filters"></div>
+      <div class="cx-search-box">
+        <input type="text" id="cx-search" placeholder="🔍 タイトル・場所を検索…">
+      </div>
+    </div>
+  </div>
+
+  <!-- 人物一覧は詳細タイムラインのサイドバー（shared/timeline-core.css の .sidebar）と
+       同じ「画面左に1つだけ」の配置・見た目に統一する。中身は地域→時代→人物一覧の階層。 -->
+  <div class="main-layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="cx-wrapper" id="cx-wrapper">
+      <div class="cx-header" id="cx-header"></div>
+      <div class="cx-grid-scroll" id="cx-grid-scroll">
+        <div class="cx-grid" id="cx-grid"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Event Modal (shared/timeline-core.css classes reused) -->
+  <div class="modal-overlay" id="event-modal">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <h2 id="em-title"></h2>
+          <div class="sub"><span id="em-timeline-badge"></span> ▸ <span id="em-year"></span> ▸ <span id="em-location"></span></div>
+        </div>
+        <div class="modal-head-actions">
+          <div id="em-wiki-link"></div>
+          <a id="em-view-link" class="wiki-link" target="_blank" rel="noopener">元の年表で見る</a>
+          <button class="modal-close" id="em-close">✕</button>
+        </div>
+      </div>
+      <div class="modal-section"><h3>概要</h3><p id="em-desc"></p></div>
+      <div class="modal-section" id="em-trivia-section"><h3>📖 エピソード</h3><div class="trivia-box"><p id="em-trivia"></p></div></div>
+      <div class="modal-section"><h3>関連人物（クリックで詳細）</h3><div class="char-events-grid" id="em-chars"></div></div>
+    </div>
+  </div>
+
+  <!-- Character Modal -->
+  <div class="modal-overlay" id="char-modal">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <div class="char-header-info">
+            <h2 id="cm-name"></h2>
+            <span id="cm-faction-tag" class="tag"></span>
+            <span class="char-life" id="cm-life"></span>
+          </div>
+          <div class="reading-line" id="cm-reading"></div>
+          <div class="sub" id="cm-role"></div>
+        </div>
+        <div class="modal-head-actions">
+          <div id="cm-wiki-link"></div>
+          <button class="modal-close" id="cm-close">✕</button>
+        </div>
+      </div>
+      <div class="modal-section"><h3>人物紹介</h3><p id="cm-desc"></p></div>
+      <div class="modal-section" id="cm-trivia-section"><h3>📖 エピソード</h3><div class="trivia-box"><p id="cm-trivia"></p></div></div>
+      <div class="modal-section"><h3>関連する出来事（クリックで詳細）</h3><div class="char-events-grid" id="cm-events"></div></div>
+    </div>
+  </div>
+
+  <script src="cross.js?v=1"></script>
+</body>
+</html>
