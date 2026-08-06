@@ -210,8 +210,11 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     sidebar.appendChild(clearBar);
 
-    // 分野フィルタ（人物一覧にのみ効く。年表本体には影響しないため、勢力/カテゴリと
-    // 同じ上部フィルタ列ではなくサイドバー内に置く）。otherは選択の意味が無いため除外。
+    // 分野フィルタ（人物一覧の表示を絞り込む起点は勢力/カテゴリと異なりサイドバー内。
+    // 選択すると、その分野の人物を年表側の人物フィルタ（selectedChars）にも
+    // 自動反映する。その際、既存の人物選択は一度クリアしてから絞り込み結果を
+    // 全選択する（「全分野」に戻したときも選択解除まで含めて対称に扱う）。
+    // otherは選択の意味が無いため選択肢から除外。
     const presentFields = Object.keys(FIELD_LABELS).filter(f => D.CHARACTERS.some(c => c.field === f));
     if (presentFields.length > 1) {
       const fieldFilter = mkEl('div', 'sidebar-field-filter');
@@ -219,7 +222,15 @@ document.addEventListener('DOMContentLoaded', () => {
       select.appendChild(new Option('全分野', 'all'));
       presentFields.forEach(f => select.appendChild(new Option(FIELD_LABELS[f], f)));
       select.value = state.field;
-      select.onchange = () => { state.field = select.value; renderSidebar(); };
+      select.onchange = () => {
+        state.field = select.value;
+        state.selectedChars.clear();
+        if (state.field !== 'all') {
+          D.CHARACTERS.filter(c => c.field === state.field).forEach(c => state.selectedChars.add(c.id));
+        }
+        renderSidebar();
+        renderTimeline();
+      };
       fieldFilter.appendChild(mkEl('label', '', '人物を分野で絞り込み'));
       fieldFilter.appendChild(select);
       sidebar.appendChild(fieldFilter);
