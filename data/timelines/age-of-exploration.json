@@ -14,7 +14,12 @@
     "relatedCharsLabel": "関連人物",
     "relatedEventsLabel": "関連する出来事",
     "triviaLabel": "📖 エピソード",
-    "layoutStyle": "flat"
+    "layoutStyle": "flat",
+    "mapLayout": [
+      [null, "england_terr", "netherlands_terr", null],
+      [null, "france_terr", "austria_hre_terr", null],
+      ["portugal_terr", "spain_terr", "papal_states_terr", "ottoman_terr"]
+    ]
   },
   "eraPhases": [
     { "id": 1, "name": "第一章：大航海時代の黎明", "period": "1453年 〜 1497年", "startYear": 1453, "endYear": 1497 },

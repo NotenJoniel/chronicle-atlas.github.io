@@ -14,10 +14,13 @@
     "relatedEventsLabel": "📅 関連する出来事（クリックで詳細）",
     "triviaLabel": "📜 補足・豆知識",
     "layoutStyle": "rail",
-    "mapColumnRules": [
-      { "maxCount": 4, "cols": 2 },
-      { "maxCount": 6, "cols": 3 },
-      { "cols": 4 }
+    "mapLayout": [
+      [null, "zhao", "yan", "hanxin_n", null, null],
+      ["qin_center", "qin_guanzhong", "rebels_east", null, "qi", "han_qi"],
+      ["sanqin", "liu_west", "han_front", "xichu", "chu_north", "liu_pei"],
+      ["qin_all", "han_west", "peng_guerr", "han_liang", "chu_east", null],
+      ["hanzhong", "other_lords", "chu_south", "jiujiang", "han_huai", null],
+      [null, null, "han_all", null, null, null]
     ]
   },
   "eraPhases": [
@@ -1165,6 +1168,14 @@
       "year": -202,
       "label": "漢の天下統一 — 前漢成立",
       "territories": {
+        "sanqin": { "name": "関中", "faction": "han", "lord": "高祖 劉邦（皇帝即位）" },
+        "hanzhong": { "name": "漢中・巴蜀", "faction": "han", "lord": "高祖 劉邦（皇帝即位）" },
+        "zhao": { "name": "趙", "faction": "han", "lord": "高祖 劉邦（皇帝即位）" },
+        "yan": { "name": "燕", "faction": "han", "lord": "高祖 劉邦（皇帝即位）" },
+        "qi": { "name": "斉", "faction": "han", "lord": "高祖 劉邦（皇帝即位）" },
+        "xichu": { "name": "西楚（旧地）", "faction": "han", "lord": "高祖 劉邦（皇帝即位）" },
+        "chu_south": { "name": "楚（旧地）", "faction": "han", "lord": "高祖 劉邦（皇帝即位）" },
+        "jiujiang": { "name": "九江", "faction": "han", "lord": "高祖 劉邦（皇帝即位）" },
         "han_all": {
           "name": "漢帝国",
           "faction": "han",

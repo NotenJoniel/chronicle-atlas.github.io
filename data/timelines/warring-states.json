@@ -14,10 +14,11 @@
     "relatedEventsLabel": "📅 関連する出来事（クリックで詳細）",
     "triviaLabel": "📜 補足・豆知識",
     "layoutStyle": "rail",
-    "mapColumnRules": [
-      { "maxCount": 4, "cols": 2 },
-      { "maxCount": 6, "cols": 3 },
-      { "cols": 4 }
+    "mapLayout": [
+      [null, "zhao", "zhongshan", "yan"],
+      ["qin", "wei", "han", "qi"],
+      [null, "zhou", "song", null],
+      [null, "chu", null, "yue"]
     ]
   },
   "eraPhases": [
@@ -1603,6 +1604,11 @@
           "name": "宋",
           "faction": "other",
           "lord": "宋"
+        },
+        "yue": {
+          "name": "越",
+          "faction": "chu",
+          "lord": "楚に併合（越滅亡）"
         }
       }
     },
@@ -1650,10 +1656,20 @@
           "faction": "other",
           "lord": "周王室（形骸化）"
         },
+        "zhongshan": {
+          "name": "中山",
+          "faction": "zhao",
+          "lord": "趙に併合（中山滅亡）"
+        },
         "song": {
           "name": "宋",
-          "faction": "other",
-          "lord": "宋（斉に滅ぼされた後）"
+          "faction": "qi",
+          "lord": "斉に併合（宋滅亡）"
+        },
+        "yue": {
+          "name": "越",
+          "faction": "chu",
+          "lord": "楚に併合（越滅亡）"
         }
       }
     },
@@ -1700,6 +1716,21 @@
           "name": "周",
           "faction": "other",
           "lord": "周（BC256年に滅亡）"
+        },
+        "zhongshan": {
+          "name": "中山",
+          "faction": "zhao",
+          "lord": "趙に併合（中山滅亡）"
+        },
+        "song": {
+          "name": "宋",
+          "faction": "qi",
+          "lord": "斉に併合（宋滅亡）"
+        },
+        "yue": {
+          "name": "越",
+          "faction": "chu",
+          "lord": "楚に併合（越滅亡）"
         }
       }
     },
@@ -1741,6 +1772,26 @@
           "name": "韓",
           "faction": "han",
           "lord": "韓（風前の灯）"
+        },
+        "zhou": {
+          "name": "周",
+          "faction": "qin",
+          "lord": "秦に併合（周王室断絶）"
+        },
+        "zhongshan": {
+          "name": "中山",
+          "faction": "zhao",
+          "lord": "趙に併合（中山滅亡）"
+        },
+        "song": {
+          "name": "宋",
+          "faction": "qi",
+          "lord": "斉に併合（宋滅亡）"
+        },
+        "yue": {
+          "name": "越",
+          "faction": "chu",
+          "lord": "楚に併合（越滅亡）"
         }
       }
     },
@@ -1777,6 +1828,31 @@
           "name": "魏",
           "faction": "wei",
           "lord": "魏（滅亡寸前）"
+        },
+        "han": {
+          "name": "韓",
+          "faction": "qin",
+          "lord": "秦に併合（韓滅亡）"
+        },
+        "zhou": {
+          "name": "周",
+          "faction": "qin",
+          "lord": "秦に併合（周王室断絶）"
+        },
+        "zhongshan": {
+          "name": "中山",
+          "faction": "zhao",
+          "lord": "趙に併合（中山滅亡）"
+        },
+        "song": {
+          "name": "宋",
+          "faction": "qi",
+          "lord": "斉に併合（宋滅亡）"
+        },
+        "yue": {
+          "name": "越",
+          "faction": "chu",
+          "lord": "楚に併合（越滅亡）"
         }
       }
     },
@@ -1803,6 +1879,41 @@
           "name": "燕",
           "faction": "yan",
           "lord": "燕（遼東に退却）"
+        },
+        "zhao": {
+          "name": "趙",
+          "faction": "qin",
+          "lord": "秦に併合"
+        },
+        "wei": {
+          "name": "魏",
+          "faction": "qin",
+          "lord": "秦に併合"
+        },
+        "han": {
+          "name": "韓",
+          "faction": "qin",
+          "lord": "秦に併合（韓滅亡）"
+        },
+        "zhou": {
+          "name": "周",
+          "faction": "qin",
+          "lord": "秦に併合（周王室断絶）"
+        },
+        "zhongshan": {
+          "name": "中山",
+          "faction": "qin",
+          "lord": "秦に併合"
+        },
+        "song": {
+          "name": "宋",
+          "faction": "qi",
+          "lord": "斉に併合（宋滅亡）"
+        },
+        "yue": {
+          "name": "越",
+          "faction": "chu",
+          "lord": "楚に併合（越滅亡）"
         }
       }
     },
@@ -1814,6 +1925,56 @@
           "name": "秦",
           "faction": "qin",
           "lord": "始皇帝（天下統一）"
+        },
+        "chu": {
+          "name": "楚",
+          "faction": "qin",
+          "lord": "秦に併合・天下統一"
+        },
+        "qi": {
+          "name": "斉",
+          "faction": "qin",
+          "lord": "秦に併合・天下統一"
+        },
+        "yan": {
+          "name": "燕",
+          "faction": "qin",
+          "lord": "秦に併合・天下統一"
+        },
+        "zhao": {
+          "name": "趙",
+          "faction": "qin",
+          "lord": "秦に併合"
+        },
+        "wei": {
+          "name": "魏",
+          "faction": "qin",
+          "lord": "秦に併合"
+        },
+        "han": {
+          "name": "韓",
+          "faction": "qin",
+          "lord": "秦に併合（韓滅亡）"
+        },
+        "zhou": {
+          "name": "周",
+          "faction": "qin",
+          "lord": "秦に併合（周王室断絶）"
+        },
+        "zhongshan": {
+          "name": "中山",
+          "faction": "qin",
+          "lord": "秦に併合"
+        },
+        "song": {
+          "name": "宋",
+          "faction": "qin",
+          "lord": "秦に併合・天下統一"
+        },
+        "yue": {
+          "name": "越",
+          "faction": "qin",
+          "lord": "秦に併合・天下統一"
         }
       }
     }

@@ -14,7 +14,16 @@
     "relatedCharsLabel": "関連人物",
     "relatedEventsLabel": "関連する出来事",
     "triviaLabel": "📖 エピソード",
-    "layoutStyle": "flat"
+    "layoutStyle": "flat",
+    "mapLayout": [
+      [null, null, "xiongnu_north", "yan_zhao", null, "youzhou", "chaoxian"],
+      [null, "hexi", "xiongnu_south", "zhao", "hebei", "yan", null],
+      ["xiyu", "longyou", "guanzhong", null, null, "qi", null],
+      [null, "bashu", "luoyang", "zhongyuan", "yanzhou", "shandong", null],
+      [null, "yizhou", null, "chu", "hubei", "xuzhou", null],
+      [null, null, null, "jingzhou", "changsha", "jiangnan", "jiangdong"],
+      [null, null, "jiaozhi", "nanyue", null, null, null]
+    ]
   },
   "eraPhases": [
     {

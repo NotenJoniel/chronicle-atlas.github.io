@@ -37,6 +37,15 @@
       "subProjectDir": "three-kingdoms"
     },
     {
+      "id": "genpei-war",
+      "name": "源平合戦",
+      "region": "japan",
+      "startYear": 1156,
+      "endYear": 1189,
+      "dataFile": "timelines/genpei-war.json",
+      "subProjectDir": "genpei-war"
+    },
+    {
       "id": "sengoku-japan",
       "name": "日本の戦国時代",
       "region": "japan",
