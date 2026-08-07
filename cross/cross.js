@@ -60,7 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
       return { region, timelines, events, labelLanes: assignLabelLanes(timelines) };
     });
 
-    axis = computeAxis();
+    axis = computeAxis(regionGroups);
+    applyZoomToDOM();
+    renderZoomToggle();
     renderCategoryFilters();
     bindSearchBox();
     renderPeopleSidebar();
@@ -81,26 +83,55 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   }
 
-  // ─── Axis / layout math（compare/compare.js の computeAxis 系を地域グループ向けに複製） ───
-  function computeAxis() {
+  // ─── Axis / layout math ───
+  // 密度連動の可変軸: 一律px/年ではなく、BUCKET_YEARS刻みのバケツごとに高さを変える。
+  // バケツの高さは「時間経過を示す最低限の床(MIN_PX_PER_YEAR)」+「密度ボーナス」の2項。
+  // 密度は「4地域の出来事数の合計」ではなく「最も出来事が多い地域列の件数(maxCount)」で測る
+  // ——地域列は横に並ぶ（縦に積まれない）ため、ある時間帯に必要な高さは「その時間帯で
+  // 最も混んでいる1列がどれだけ場所を必要とするか」で決まるべきで、他地域の件数を
+  // 合算すると単独地域だけが密集している時代（例: 古代エジプト新王国時代）が
+  // 逆に一律スケールより窮屈になってしまう（実装前にnode scriptで両方式を検証済み）。
+  // 生の高さ合計をTARGET_TOTAL_PXへ正規化するため、絶対値ではなくMIN_PX_PER_YEARと
+  // PX_PER_EVENTの相対的な比率が本質的なチューニング対象になり、タイムラインが増減しても
+  // 総スクロール量が暴走しない。
+  const BUCKET_YEARS = 25;
+  const MIN_PX_PER_YEAR = 0.2;
+  const PX_PER_EVENT = 28;
+  const TARGET_TOTAL_PX = 26000;
+
+  function computeAxis(groups) {
     const allYears = allMetaList.flatMap(m => [m.startYear, m.endYear]);
     const unionStart = Math.min(...allYears);
     const unionEnd = Math.max(...allYears);
     const spanYears = Math.max(1, unionEnd - unionStart);
-    const pxPerYear = computePxPerYear(spanYears);
-    return { unionStart, unionEnd, spanYears, pxPerYear };
-  }
 
-  // compare/compare.js の computeDensityPxPerYear（局所密度に応じてpxPerYearを引き上げる方式）は
-  // ここでは採用しない。地域列は最大4タイムライン分の出来事を1本にまとめるため、
-  // どれだけpxPerYearを上げても一部のクラスタ（例: 三国時代の96年間に54件）はレーン上限に
-  // 収まりきらず、値を上げ続けるとページ全体が現実的でない高さ（実測で10万px超）になるだけで
-  // 解消しない。そのため全域スパンに対して妥当な総高さになる固定係数のみを使い、収まりきらない
-  // 密集はレーン方式（MAX_LANES）と縦位置のわずかなズレで吸収する（②詳細比較モードで個々の
-  // タイムラインを正確に見られるので、ここは俯瞰用の近似で割り切る）。
-  function computePxPerYear(spanYears) {
-    const MIN_PX = 3, MAX_PX = 20, TARGET_TOTAL_PX = 29000;
-    return Math.min(MAX_PX, Math.max(MIN_PX, TARGET_TOTAL_PX / spanYears));
+    // 地域ごとの出来事の年だけを取り出しておく（バケツごとにフィルタする際に使う）
+    const yearsByRegion = groups.map(g => g.events.map(e => e.year));
+
+    const bucketCount = Math.ceil(spanYears / BUCKET_YEARS);
+    const rawHeights = new Array(bucketCount);
+    let rawTotal = 0;
+    for (let i = 0; i < bucketCount; i++) {
+      const bStart = unionStart + i * BUCKET_YEARS;
+      const bEnd = Math.min(bStart + BUCKET_YEARS, unionEnd);
+      const bYears = bEnd - bStart;
+      let maxCount = 0;
+      yearsByRegion.forEach(years => {
+        const cnt = years.reduce((n, y) => (y >= bStart && y < bEnd ? n + 1 : n), 0);
+        if (cnt > maxCount) maxCount = cnt;
+      });
+      const h = bYears * MIN_PX_PER_YEAR + maxCount * PX_PER_EVENT;
+      rawHeights[i] = h;
+      rawTotal += h;
+    }
+    const scale = rawTotal > 0 ? TARGET_TOTAL_PX / rawTotal : 1;
+
+    // 累積Y座標（正規化後・ズーム倍率適用前）を前計算しておき、yearToYはO(1)で引く
+    const cumY = new Array(bucketCount + 1);
+    cumY[0] = 0;
+    for (let i = 0; i < bucketCount; i++) cumY[i + 1] = cumY[i] + rawHeights[i] * scale;
+
+    return { unionStart, unionEnd, spanYears, bucketCount, cumY };
   }
 
   function computeYearStep(spanYears) {
@@ -130,10 +161,22 @@ document.addEventListener('DOMContentLoaded', () => {
     return laneOf;
   }
 
-  const CARD_HEIGHT = 42, CARD_GAP = 4, MAX_LANES = 6;
+  // ─── Zoom levels（小/中/大）───
+  // heightMul: yearToYの最終出力に掛ける倍率。cardHeight: レーン衝突判定・カードCSSの両方で
+  // 揃える必要がある値。colWidth: 地域列の幅（CSS変数 --cx-col-width 経由でCSSに渡す）。
+  const ZOOM_LEVELS = {
+    small: { heightMul: 0.6, cardHeight: 34, colWidth: 420 },
+    medium: { heightMul: 1.0, cardHeight: 42, colWidth: 600 },
+    large: { heightMul: 1.7, cardHeight: 58, colWidth: 780 },
+  };
+  let zoomLevel = 'medium';
+  function currentZoom() { return ZOOM_LEVELS[zoomLevel]; }
+
+  const CARD_GAP = 4, MAX_LANES = 6;
 
   // 同時期に重なる出来事はレーンで横に並べる（compare/compare.js の layoutCards と同一ロジック）。
   function layoutCards(events, yearToY) {
+    const cardHeight = currentZoom().cardHeight;
     const laneBottoms = [];
     const laid = [];
     const clusters = [];
@@ -156,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
       const top = Math.max(idealTop, laneBottoms[lane] + CARD_GAP);
-      laneBottoms[lane] = top + CARD_HEIGHT;
+      laneBottoms[lane] = top + cardHeight;
       laid.push({ ev, top, idealTop, lane });
     });
     if (laneBottoms.length > 0) clusters.push({ start: clusterStart, end: laid.length, laneCount: laneBottoms.length });
@@ -172,7 +215,48 @@ document.addEventListener('DOMContentLoaded', () => {
   function fmtYear(y) { return y < 0 ? `BC${-y}` : `AD${y}`; }
   function fmtYearJa(y) { return y < 0 ? `紀元前${-y}年` : `${y}年`; }
 
-  function yearToY(year) { return (year - axis.unionStart) * axis.pxPerYear; }
+  // バケツ内を線形補間してO(1)で年→Yを求める。ズーム倍率はここで最後に掛けるので、
+  // ズーム切り替え時にバケツを再計算する必要はない（renderGrid()の再実行だけで済む）。
+  function yearToY(year) {
+    const { unionStart, bucketCount, cumY } = axis;
+    let i = Math.floor((year - unionStart) / BUCKET_YEARS);
+    if (i < 0) i = 0;
+    if (i >= bucketCount) i = bucketCount - 1;
+    const bStart = unionStart + i * BUCKET_YEARS;
+    const bEnd = Math.min(bStart + BUCKET_YEARS, axis.unionEnd);
+    const frac = bEnd > bStart ? Math.min(1, Math.max(0, (year - bStart) / (bEnd - bStart))) : 0;
+    const y = cumY[i] + (cumY[i + 1] - cumY[i]) * frac;
+    return y * currentZoom().heightMul;
+  }
+
+  // ─── Zoom toggle（小/中/大）───
+  // カード幅（.cx-region-name / .cx-col）はCSS変数 --cx-col-width 経由でCSS側に渡す。
+  // 縦軸のスケール（heightMul）とカード高さ（cardHeight、レーン判定用）は yearToY /
+  // layoutCards が currentZoom() を都度参照するので、renderGrid() を呼び直すだけで反映される。
+  function applyZoomToDOM() {
+    document.body.style.setProperty('--cx-col-width', currentZoom().colWidth + 'px');
+    document.body.dataset.cxZoom = zoomLevel;
+  }
+
+  function setZoom(level) {
+    if (zoomLevel === level) return;
+    zoomLevel = level;
+    applyZoomToDOM();
+    renderZoomToggle();
+    renderGrid();
+  }
+
+  function renderZoomToggle() {
+    const container = document.getElementById('zoom-toggle');
+    if (!container) return;
+    container.innerHTML = '';
+    [['small', '小'], ['medium', '中'], ['large', '大']].forEach(([key, label]) => {
+      const btn = mkEl('button', 'filter-btn' + (zoomLevel === key ? ' active' : ''), label);
+      btn.title = `表示サイズ: ${label}`;
+      btn.onclick = () => setZoom(key);
+      container.appendChild(btn);
+    });
+  }
 
   // ─── Filters ───
   function renderCategoryFilters() {
@@ -244,10 +328,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     header.appendChild(mkEl('div', 'cx-year-label', '年代'));
 
-    let maxBottom = (axis.unionEnd - axis.unionStart) * axis.pxPerYear;
+    const cardHeight = currentZoom().cardHeight;
+    let maxBottom = yearToY(axis.unionEnd);
     const columnLayouts = regionGroups.map(g => {
       const { laid } = layoutCards(g.events, yearToY);
-      const localBottom = laid.length ? Math.max(...laid.map(l => l.top + CARD_HEIGHT)) : 0;
+      const localBottom = laid.length ? Math.max(...laid.map(l => l.top + cardHeight)) : 0;
       maxBottom = Math.max(maxBottom, localBottom);
       return { g, laid };
     });
