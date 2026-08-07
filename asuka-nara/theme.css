@@ -1,0 +1,6 @@
+/* 律令国家の成立 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#160f0c;--surface:#211712;--surface-2:#2b1e17;--surface-3:#36261c;
+  --border-subtle:rgba(200,120,70,.14);--text:#ece3da;--text-dim:#a8927f;
+  --gold:#c8783f;--gold-dim:rgba(200,120,63,.2);
+}

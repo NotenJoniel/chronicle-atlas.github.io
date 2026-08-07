@@ -46,6 +46,15 @@
       "subProjectDir": "three-kingdoms"
     },
     {
+      "id": "asuka-nara",
+      "name": "律令国家の成立",
+      "region": "japan",
+      "startYear": 645,
+      "endYear": 802,
+      "dataFile": "timelines/asuka-nara.json",
+      "subProjectDir": "asuka-nara"
+    },
+    {
       "id": "heian-court",
       "name": "摂関政治の時代",
       "region": "japan",
