@@ -1,0 +1,6 @@
+/* 春秋時代 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#0e1210;--surface:#171e1a;--surface-2:#1f2822;--surface-3:#28332c;
+  --border-subtle:rgba(120,170,130,.12);--text:#dfe6e0;--text-dim:#8ea094;
+  --gold:#6fa87e;--gold-dim:rgba(111,168,126,.18);
+}

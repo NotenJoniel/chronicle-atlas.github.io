@@ -1,6 +1,15 @@
 {
   "timelines": [
     {
+      "id": "spring-autumn",
+      "name": "春秋時代",
+      "region": "china",
+      "startYear": -770,
+      "endYear": -476,
+      "dataFile": "timelines/spring-autumn.json",
+      "subProjectDir": "spring-autumn"
+    },
+    {
       "id": "warring-states",
       "name": "中国戦国時代",
       "region": "china",
