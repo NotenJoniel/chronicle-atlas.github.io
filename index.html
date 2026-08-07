@@ -303,10 +303,13 @@
    ========================================================================= */
 (() => {
   // ── Configuration ──
-  const START_YEAR = -800;
+  // START_YEARは-800が既定値だが、ERAS定義後に実データの最古開始年へ自動的に
+  // 引き下げる（メソポタミア文明BC3500追加時、この値を手動更新し忘れて
+  // 古代エジプト・メソポタミアの帯上部が見切れる問題が起きたための対応）。
+  let START_YEAR = -800;
   const END_YEAR   = 1920;
   const PX_PER_YEAR = 3;
-  const TOTAL_PX = (END_YEAR - START_YEAR) * PX_PER_YEAR;
+  let TOTAL_PX;
 
   function yearToY(year) { return (year - START_YEAR) * PX_PER_YEAR; }
   function fmtYear(y) { return y < 0 ? `BC${-y}` : `${y}`; }
@@ -397,6 +400,11 @@
       link:'./ancient-egypt/', linked:true,
       note:'🏺 ナルメルによる上下エジプト統一からギザの大ピラミッド、中王国の再統一、ヒクソスの支配、新王国の絶頂（ハトシェプスト・トトメス3世・アクエンアテン・ツタンカーメン・ラメセス2世）、異民族支配が連続する末期王朝、そしてプトレマイオス朝とクレオパトラの死によるローマ属州化まで。3070年におよぶ通史。' },
   ];
+
+  // ERASの実際の最古開始年に合わせてSTART_YEARを引き下げる（既定の-800より古い
+  // タイムラインが無ければ-800のまま）。TOTAL_PXはこの後で確定させる。
+  START_YEAR = Math.min(START_YEAR, ...ERAS.map(e => e.start));
+  TOTAL_PX = (END_YEAR - START_YEAR) * PX_PER_YEAR;
 
   // ── Quick Jump targets ──
   const JUMPS = [
