@@ -1,0 +1,955 @@
+{
+  "meta": {
+    "title": "北条氏の台頭と承久の乱 史実クロニクルタイムライン (1199年〜1247年)",
+    "description": "頼朝の死から宝治合戦まで。梶原景時の変・比企能員の変・畠山重忠の乱・和田合戦・実朝暗殺・承久の乱と、有力御家人が次々に滅ぼされていく粛清の連続を経て、北条得宗家が鎌倉幕府の実権を完全に掌握するまでの48年間をインタラクティブなタイムラインで体験。",
+    "headerIcon": "⚖️",
+    "headerTitle": "北条氏の台頭と承久の乱",
+    "headerSubtitle": "1199年〜1247年",
+    "searchPlaceholder": "🔍 出来事・人物を検索…",
+    "mapTitleIcon": "🗾",
+    "mapTitleLabel": "勢力図",
+    "characterTitleLabel": "別名",
+    "descLabel": "📖 史実の記録",
+    "charDescLabel": "📖 人物伝",
+    "relatedCharsLabel": "👥 関連人物（クリックで詳細）",
+    "relatedEventsLabel": "📅 関連する出来事（クリックで詳細）",
+    "triviaLabel": "📜 補足・豆知識",
+    "layoutStyle": "rail",
+    "mapLayout": [
+      [null, "musashi", null],
+      ["kyoto", "sagami", "kamakura"],
+      [null, "izu", null]
+    ]
+  },
+  "eraPhases": [
+    {
+      "id": 1,
+      "name": "第一章：頼朝の死と梶原景時の変",
+      "period": "1199 〜 1200",
+      "startYear": 1199,
+      "endYear": 1200
+    },
+    {
+      "id": 2,
+      "name": "第二章：比企能員の変と頼家の最期",
+      "period": "1203 〜 1204",
+      "startYear": 1203,
+      "endYear": 1204
+    },
+    {
+      "id": 3,
+      "name": "第三章：畠山重忠の乱と牧氏事件",
+      "period": "1205",
+      "startYear": 1205,
+      "endYear": 1205
+    },
+    {
+      "id": 4,
+      "name": "第四章：和田合戦と義時の専権確立",
+      "period": "1213",
+      "startYear": 1213,
+      "endYear": 1213
+    },
+    {
+      "id": 5,
+      "name": "第五章：実朝暗殺と将軍家の断絶",
+      "period": "1219",
+      "startYear": 1219,
+      "endYear": 1219
+    },
+    {
+      "id": 6,
+      "name": "第六章：承久の乱",
+      "period": "1221",
+      "startYear": 1221,
+      "endYear": 1221
+    },
+    {
+      "id": 7,
+      "name": "第七章：義時・政子の死と執権政治の確立",
+      "period": "1224 〜 1232",
+      "startYear": 1224,
+      "endYear": 1232
+    },
+    {
+      "id": 8,
+      "name": "第八章：宮騒動と宝治合戦",
+      "period": "1242 〜 1247",
+      "startYear": 1242,
+      "endYear": 1247
+    }
+  ],
+  "factions": {
+    "hojo": {
+      "id": "hojo",
+      "name": "北条家",
+      "color": "#1a2f52",
+      "colorLight": "#4a72b0"
+    },
+    "kajiwara": {
+      "id": "kajiwara",
+      "name": "梶原氏",
+      "color": "#4a3a2a",
+      "colorLight": "#8a6a4a"
+    },
+    "hiki": {
+      "id": "hiki",
+      "name": "比企氏",
+      "color": "#4a2a4a",
+      "colorLight": "#8a5a8a"
+    },
+    "hatakeyama": {
+      "id": "hatakeyama",
+      "name": "畠山氏",
+      "color": "#2a4a2a",
+      "colorLight": "#5a8a5a"
+    },
+    "wada": {
+      "id": "wada",
+      "name": "和田氏",
+      "color": "#1a4a4a",
+      "colorLight": "#4a8a8a"
+    },
+    "miura": {
+      "id": "miura",
+      "name": "三浦氏",
+      "color": "#6a4a1a",
+      "colorLight": "#c99a3a"
+    },
+    "shogun": {
+      "id": "shogun",
+      "name": "将軍家",
+      "color": "#5a4a1a",
+      "colorLight": "#c4a55a"
+    },
+    "court": {
+      "id": "court",
+      "name": "朝廷",
+      "color": "#4a2a5a",
+      "colorLight": "#9a6ac4"
+    },
+    "other": {
+      "id": "other",
+      "name": "その他",
+      "color": "#4a4a4a",
+      "colorLight": "#9a9a9a"
+    }
+  },
+  "categories": {
+    "battle": { "id": "battle", "name": "合戦", "icon": "⚔️" },
+    "politics": { "id": "politics", "name": "政変", "icon": "👑" },
+    "episode": { "id": "episode", "name": "逸話", "icon": "📜" },
+    "death": { "id": "death", "name": "死没", "icon": "💀" }
+  },
+  "characters": [
+    {
+      "id": "c_minamoto_yoritomo",
+      "name": "源頼朝",
+      "reading": "みなもとのよりとも",
+      "title": "鎌倉殿",
+      "faction": "shogun",
+      "role": "鎌倉幕府初代将軍",
+      "life": "1147-1199",
+      "field": "governance",
+      "description": "鎌倉幕府を開いた初代将軍。1199年に落馬が原因とされる急死を遂げ、これが本タイムラインの粛清劇の発端となった。詳細は前史にあたる『源平合戦』タイムラインを参照。"
+    },
+    {
+      "id": "c_hojo_masako",
+      "name": "北条政子",
+      "reading": "ほうじょうまさこ",
+      "title": "尼将軍",
+      "faction": "hojo",
+      "role": "頼朝の未亡人／実質的な最高権力者",
+      "life": "1157-1225",
+      "field": "governance",
+      "description": "頼朝の死後、出家して「尼御台」となるが、将軍家断絶後は「尼将軍」として幕政の最終決定権を握り続けた。承久の乱では御家人たちを鼓舞する演説で幕府を勝利に導き、伊賀氏の変では自ら動いて陰謀を鎮めるなど、生涯にわたり幕府の要であり続けた。"
+    },
+    {
+      "id": "c_hojo_tokimasa",
+      "name": "北条時政",
+      "reading": "ほうじょうときまさ",
+      "faction": "hojo",
+      "role": "初代執権",
+      "life": "1138-1215",
+      "field": "governance",
+      "description": "政子・義時の父。頼家の外戚である比企氏を滅ぼして政所別当となり、事実上の初代執権として幕政を主導した。しかし後妻・牧の方と共謀した将軍廃立の陰謀（牧氏事件）が露見し、政子・義時によって失脚・追放された。"
+    },
+    {
+      "id": "c_maki_no_kata",
+      "name": "牧の方",
+      "reading": "まきのかた",
+      "faction": "hojo",
+      "role": "北条時政の後妻",
+      "life": "?-?",
+      "field": "governance",
+      "description": "時政の後妻で、娘婿の平賀朝雅を将軍に擁立しようと画策した野心家。実朝を廃そうとする陰謀が政子・義時に露見し、時政もろとも失脚して伊豆へ追放された。"
+    },
+    {
+      "id": "c_hojo_yoshitoki",
+      "name": "北条義時",
+      "reading": "ほうじょうよしとき",
+      "faction": "hojo",
+      "role": "二代執権",
+      "life": "1163-1224",
+      "field": "governance",
+      "description": "時政の子で政子の弟。父を追放して二代執権となり、和田合戦で最後の対抗馬を退けて政所・侍所両別当を兼務、執権政治の基盤を確立した。承久の乱では朝廷の追討宣旨を受けながらも動じず、幕府軍を勝利に導いた。"
+    },
+    {
+      "id": "c_hojo_yasutoki",
+      "name": "北条泰時",
+      "reading": "ほうじょうやすとき",
+      "faction": "hojo",
+      "role": "三代執権",
+      "life": "1183-1242",
+      "field": "governance",
+      "description": "義時の長男。承久の乱では叔父・時房と共に幕府軍を率いて上洛し、乱後は初代六波羅探題として京を統治した。三代執権就任後は評定衆による合議政治を制度化し、御成敗式目を制定するなど、執権政治を安定した統治機構へと発展させた。"
+    },
+    {
+      "id": "c_hojo_tokifusa",
+      "name": "北条時房",
+      "reading": "ほうじょうときふさ",
+      "faction": "hojo",
+      "role": "初代連署／六波羅探題",
+      "life": "1175-1240",
+      "field": "governance",
+      "description": "時政の子で義時の弟。承久の乱では甥・泰時と共に幕府軍を率いて京へ進撃し、乱後は共に六波羅探題を務めた。後に鎌倉へ戻り、執権を補佐する連署の初代に就任した。"
+    },
+    {
+      "id": "c_hojo_tsunetoki",
+      "name": "北条経時",
+      "reading": "ほうじょうつねとき",
+      "faction": "hojo",
+      "role": "四代執権",
+      "life": "1224-1246",
+      "field": "governance",
+      "description": "泰時の孫で四代執権。前将軍・頼経を担ごうとする勢力の陰謀（宮騒動）を鎮めるが、まもなく病により弟の時頼に執権職を譲り、若くして没した。"
+    },
+    {
+      "id": "c_hojo_tokiyori",
+      "name": "北条時頼",
+      "reading": "ほうじょうときより",
+      "faction": "hojo",
+      "role": "五代執権",
+      "life": "1227-1263",
+      "field": "governance",
+      "description": "経時の弟で五代執権。最大の対抗勢力であった三浦氏を宝治合戦で滅ぼし、北条得宗家による独裁的な政治体制（得宗専制）を確立した、この時代の粛清劇の締めくくりとなる人物。"
+    },
+    {
+      "id": "c_iga_no_kata",
+      "name": "伊賀の方",
+      "reading": "いがのかた",
+      "faction": "hojo",
+      "role": "北条義時の後妻",
+      "life": "?-1224",
+      "field": "governance",
+      "description": "義時の後妻で伊賀光宗の妹。義時の急死後、実子・政村を執権に、娘婿・一条実雅を将軍に擁立しようと画策したとされる（伊賀氏の変）が、政子の迅速な介入により失敗し、伊豆へ追放された。"
+    },
+    {
+      "id": "c_kajiwara_kagetoki",
+      "name": "梶原景時",
+      "reading": "かじわらかげとき",
+      "faction": "kajiwara",
+      "role": "侍所所司",
+      "life": "?-1200",
+      "field": "military",
+      "description": "頼朝以来の重臣で、十三人の合議制の一人にも名を連ねた有力御家人。頼朝の死後、結城朝光の発言を将軍への謀反と讒言したことをきっかけに他の御家人たちの反発を買い、糾弾されて鎌倉を追放された。"
+    },
+    {
+      "id": "c_hiki_yoshikazu",
+      "name": "比企能員",
+      "reading": "ひきよしかず",
+      "faction": "hiki",
+      "role": "頼家の外戚／有力御家人",
+      "life": "?-1203",
+      "field": "governance",
+      "description": "娘・若狭局が頼家の妻となり、その子・一幡の外祖父として権勢を誇った。頼家の後ろ盾として北条氏と対立を深めるが、時政の謀略により名越邸に誘い出され謀殺、比企一族は滅ぼされた。"
+    },
+    {
+      "id": "c_wakasa_no_tsubone",
+      "name": "若狭局",
+      "reading": "わかさのつぼね",
+      "faction": "hiki",
+      "role": "源頼家の妻／比企能員の娘",
+      "life": "?-1203",
+      "field": "other",
+      "description": "頼家の妻となり嫡子・一幡を生んだが、比企能員の変で実家の比企一族が滅ぼされ、我が子・一幡も殺害された悲劇の人物。"
+    },
+    {
+      "id": "c_minamoto_yoriie",
+      "name": "源頼家",
+      "reading": "みなもとのよりいえ",
+      "faction": "shogun",
+      "role": "鎌倉幕府二代将軍",
+      "life": "1182-1204",
+      "field": "governance",
+      "description": "頼朝の嫡男で二代将軍。若年での独断を危ぶんだ宿老たちにより「十三人の合議制」で権限を制限された。比企能員の変で外戚と我が子を失い、自らも伊豆修禅寺に幽閉された末、翌年入浴中を襲われ暗殺された。"
+    },
+    {
+      "id": "c_minamoto_sanetomo",
+      "name": "源実朝",
+      "reading": "みなもとのさねとも",
+      "faction": "shogun",
+      "role": "鎌倉幕府三代将軍",
+      "life": "1192-1219",
+      "field": "governance",
+      "description": "頼家の弟で三代将軍。政治の実権は北条氏に握られていたが、公家文化への憧れが強く、藤原定家に師事して和歌を学び、歌集『金槐和歌集』を残した。右大臣拝賀の式典の帰り、鶴岡八幡宮で甥の公暁に暗殺され、頼朝の血統はここに絶えた。",
+      "historyTrivia": "『金槐和歌集』は万葉調の力強い歌風で知られ、後世に高く評価された。征夷大将軍でありながら武よりも歌に情熱を注いだ、この時代でも異色の存在。"
+    },
+    {
+      "id": "c_kugyo",
+      "name": "公暁",
+      "reading": "くぎょう",
+      "faction": "shogun",
+      "role": "頼家の子／鶴岡八幡宮別当",
+      "life": "1200-1219",
+      "field": "thought",
+      "description": "頼家の遺児で、父と一幡の死の背景に実朝と北条氏の存在があると信じて育てられたとされる。鶴岡八幡宮別当となった後、参拝を終えた実朝を石段で襲い「親の敵はかく討つぞ」と討ち取ったが、自身も直後に討たれた。"
+    },
+    {
+      "id": "c_fujiwara_yoritsune",
+      "name": "藤原頼経",
+      "reading": "ふじわらのよりつね",
+      "faction": "shogun",
+      "role": "鎌倉幕府四代将軍（摂家将軍）",
+      "life": "1218-1256",
+      "field": "governance",
+      "description": "摂関家・九条家出身で、源氏将軍断絶後にわずか2歳で鎌倉に迎えられた最初の「摂家将軍」。成人後も実権は北条氏にあり、反北条勢力に担ぎ出される事件（宮騒動）を機に将軍職を追われ京へ送還された。"
+    },
+    {
+      "id": "c_hatakeyama_shigetada",
+      "name": "畠山重忠",
+      "reading": "はたけやましげただ",
+      "faction": "hatakeyama",
+      "role": "武蔵の有力御家人",
+      "life": "1164-1205",
+      "field": "military",
+      "description": "武蔵国の名門で、忠勇の武将として御家人たちから深く敬愛された。稲毛重成の讒言により謀反の疑いをかけられ、北条時政の命を受けた義時の追討軍を前に、武蔵二俣川でわずかな手勢のまま討死した。"
+    },
+    {
+      "id": "c_hatakeyama_shigeyasu",
+      "name": "畠山重保",
+      "reading": "はたけやましげやす",
+      "faction": "hatakeyama",
+      "role": "畠山重忠の子",
+      "life": "?-1205",
+      "field": "military",
+      "description": "重忠の子。父に先立ち、由比ヶ浜で北条方の軍勢に誘い出され討たれた。"
+    },
+    {
+      "id": "c_wada_yoshimori",
+      "name": "和田義盛",
+      "reading": "わだよしもり",
+      "faction": "wada",
+      "role": "侍所別当",
+      "life": "1147-1213",
+      "field": "military",
+      "description": "頼朝挙兵以来の重臣で、鎌倉幕府創設以来の侍所別当を長く務めた。一族の謀反への連座を機に義時と対立し挙兵するが、頼みとした三浦義村の裏切りにあい、鎌倉市中での激戦の末に一族もろとも滅ぼされた。"
+    },
+    {
+      "id": "c_miura_yoshimura",
+      "name": "三浦義村",
+      "reading": "みうらよしむら",
+      "faction": "miura",
+      "role": "三浦氏当主／北条氏の有力な同盟者",
+      "life": "?-1239",
+      "field": "governance",
+      "description": "相模の有力御家人・三浦氏の当主。和田合戦では和田方につく密約を反故にして北条方に寝返り、承久の乱でも朝廷方についた実弟・胤義を見捨てて幕府に留まるなど、一貫して勝ち馬に乗り続けて三浦氏の勢力を保った老練な策士。"
+    },
+    {
+      "id": "c_miura_yasumura",
+      "name": "三浦泰村",
+      "reading": "みうらやすむら",
+      "faction": "miura",
+      "role": "三浦氏当主（義村の子）",
+      "life": "?-1247",
+      "field": "governance",
+      "description": "義村の子で三浦氏当主。父の代からの実力を背景に幕府内で最大の御家人勢力を築くが、北条氏との対立が先鋭化し、宝治合戦で一族もろとも滅ぼされた。"
+    },
+    {
+      "id": "c_miura_taneyoshi",
+      "name": "三浦胤義",
+      "reading": "みうらたねよし",
+      "faction": "miura",
+      "role": "義村の弟／後鳥羽上皇方の武将",
+      "life": "?-1221",
+      "field": "military",
+      "description": "義村の弟でありながら京で後鳥羽上皇に仕え、承久の乱では朝廷方の武将として戦った。実兄が幕府方に留まったことで三浦一族は敵味方に分かれる形となり、胤義は敗れて自害した。"
+    },
+    {
+      "id": "c_gotoba",
+      "name": "後鳥羽上皇",
+      "reading": "ごとばじょうこう",
+      "faction": "court",
+      "role": "治天の君／承久の乱の首謀者",
+      "life": "1180-1239",
+      "field": "governance",
+      "description": "朝廷の権威回復を志し、北条義時追討の院宣を発して承久の乱を起こした治天の君。しかし諸国の御家人の大半は幕府方につき、乱はわずか1か月で幕府側の圧勝に終わった。隠岐へ配流され、二度と京の地を踏むことなくその地で没した。"
+    },
+    {
+      "id": "c_juntoku",
+      "name": "順徳上皇",
+      "reading": "じゅんとくじょうこう",
+      "faction": "court",
+      "role": "後鳥羽上皇の皇子",
+      "life": "1197-1242",
+      "field": "governance",
+      "description": "後鳥羽上皇の皇子で、父の討幕計画に積極的に加担した。乱後は佐渡へ配流され、20年余りをその地で過ごした末に没した。"
+    },
+    {
+      "id": "c_fujiwara_hideyasu",
+      "name": "藤原秀康",
+      "reading": "ふじわらのひでやす",
+      "faction": "court",
+      "role": "院の武力の指揮官",
+      "life": "?-1221",
+      "field": "military",
+      "description": "後鳥羽上皇に仕えた西面の武士の中心人物で、朝廷方の軍事指揮を担った。宇治川などで幕府軍と戦うが敗れ、逃亡の末に発見され討たれた。"
+    },
+    {
+      "id": "c_kujo_michiie",
+      "name": "九条道家",
+      "reading": "くじょうみちいえ",
+      "faction": "court",
+      "role": "摂政関白／藤原頼経の父",
+      "life": "1193-1252",
+      "field": "administration",
+      "description": "摂関家の当主で、源氏将軍断絶後に自らの子・頼経を鎌倉の将軍として送り出し、朝廷と幕府をつなぐ窓口の役割を果たした公卿。"
+    },
+    {
+      "id": "c_iga_mitsumune",
+      "name": "伊賀光宗",
+      "reading": "いがみつむね",
+      "faction": "hojo",
+      "role": "政所執事",
+      "life": "?-1245",
+      "field": "administration",
+      "description": "義時の後妻・伊賀の方の兄で、政所執事を務めた実務官僚。伊賀氏の変で妹に加担した疑いをかけられ、信濃へ配流された。"
+    },
+    {
+      "id": "c_oe_hiromoto",
+      "name": "大江広元",
+      "reading": "おおえのひろもと",
+      "faction": "hojo",
+      "role": "政所別当",
+      "life": "1148-1225",
+      "field": "administration",
+      "description": "頼朝以来、政所別当として幕府の行政機構を支え続けた文官。承久の乱に際しては防御策を主張する周囲に反対し、「迷わず大軍で京へ攻め上るべき」と即時進撃を進言、この決断が幕府軍の圧勝につながった。"
+    },
+    {
+      "id": "c_miyoshi_yasunobu",
+      "name": "三善康信",
+      "reading": "みよしやすのぶ",
+      "faction": "hojo",
+      "role": "問注所執事",
+      "life": "1140-1221",
+      "field": "administration",
+      "description": "頼朝挙兵以前から交流があり、鎌倉幕府の裁判機関・問注所の初代執事を務めた実務官僚。承久の乱の勃発時には老齢を押して出仕し、広元と共に即時進撃を進言したとされる。"
+    },
+    {
+      "id": "c_yuki_tomomitsu",
+      "name": "結城朝光",
+      "reading": "ゆうきともみつ",
+      "faction": "other",
+      "role": "下総の有力御家人",
+      "life": "1168-1254",
+      "field": "military",
+      "description": "頼朝への追慕の情を語った発言を梶原景時に将軍への謀反と讒言され、これに反発して他の御家人たちを糾合、景時弾劾状を集める中心人物となった。梶原景時の変のきっかけを作った人物。"
+    },
+    {
+      "id": "c_awa_no_tsubone",
+      "name": "阿波局",
+      "reading": "あわのつぼね",
+      "faction": "hojo",
+      "role": "北条政子の妹／源実朝の乳母",
+      "life": "?-1227",
+      "field": "other",
+      "description": "政子の妹で実朝の乳母。比企能員の変の直前、比企一族による実朝暗殺計画を察知し姉・政子に密告したとされる逸話が伝わる。"
+    },
+    {
+      "id": "c_adachi_kagemori",
+      "name": "安達景盛",
+      "reading": "あだちかげもり",
+      "faction": "hojo",
+      "role": "北条氏の有力な同盟者",
+      "life": "?-1248",
+      "field": "military",
+      "description": "頼朝以来の御家人で、一貫して北条氏を支持し続けた武将。晩年、三浦氏との対立が深まると出家の身でありながら一族を鼓舞して挙兵を促し、宝治合戦での北条方勝利に大きく貢献した。"
+    },
+    {
+      "id": "c_inage_shigenari",
+      "name": "稲毛重成",
+      "reading": "いなげしげなり",
+      "faction": "hojo",
+      "role": "武蔵の御家人",
+      "life": "?-1205",
+      "field": "governance",
+      "description": "北条時政に加担し、姻戚関係にあった畠山重忠に謀反の疑いをかける讒言を行ったとされる人物。重忠討伐の直後、その謀略が露見して自身も誅殺された。"
+    }
+  ],
+  "events": [
+    {
+      "id": "e_yoritomo_death",
+      "phaseId": 1,
+      "year": 1199,
+      "title": "源頼朝、死去",
+      "category": "death",
+      "characters": ["c_minamoto_yoritomo"],
+      "location": "鎌倉",
+      "description": "落馬が原因とされる急死により、鎌倉幕府初代将軍・源頼朝がこの世を去った。53歳。カリスマ的指導者を失った幕府では、以後10年おきに有力御家人が次々と滅ぼされていく粛清の連鎖が始まる。"
+    },
+    {
+      "id": "e_thirteen_council",
+      "phaseId": 1,
+      "year": 1199,
+      "title": "頼家の家督相続と十三人の合議制",
+      "category": "politics",
+      "characters": ["c_minamoto_yoriie", "c_hojo_tokimasa", "c_kajiwara_kagetoki", "c_hiki_yoshikazu", "c_oe_hiromoto", "c_miyoshi_yasunobu", "c_miura_yoshimura"],
+      "location": "鎌倉",
+      "description": "18歳の頼家が二代将軍として家督を継ぐが、若年での独断専行を危ぶんだ宿老13人による合議制が敷かれ、将軍の権限は大きく制限された。この体制は間もなく宿老同士の権力争いの舞台となっていく。"
+    },
+    {
+      "id": "e_yuki_incident",
+      "phaseId": 1,
+      "year": 1200,
+      "title": "結城朝光の弾劾騒動",
+      "category": "politics",
+      "characters": ["c_yuki_tomomitsu", "c_kajiwara_kagetoki"],
+      "location": "鎌倉",
+      "description": "結城朝光が頼朝への追慕を語った発言を、梶原景時が将軍への謀反の兆しと讒言した。これに反発した朝光は他の御家人たちに働きかけ、和田義盛・三浦義村ら66人の連署による景時弾劾状を頼家に提出した。"
+    },
+    {
+      "id": "e_kajiwara_fall",
+      "phaseId": 1,
+      "year": 1200,
+      "title": "梶原景時の変・一族滅亡",
+      "category": "death",
+      "characters": ["c_kajiwara_kagetoki"],
+      "location": "鎌倉→駿河国",
+      "description": "御家人たちの糾弾を受けた景時は鎌倉を追放され、上洛を図って一族と共に西へ向かうが、駿河国清見関付近で在地武士団に発見され交戦の末に討たれた。頼朝以来の重臣の粛清は、この時代の陰謀劇の幕開けとなった。"
+    },
+    {
+      "id": "e_yoriie_illness",
+      "phaseId": 2,
+      "year": 1203,
+      "title": "頼家、重病に倒れる",
+      "category": "politics",
+      "characters": ["c_minamoto_yoriie"],
+      "location": "鎌倉",
+      "description": "頼家が突然の重病に倒れ危篤状態となり、後継をめぐる駆け引きが一気に表面化した。外戚として権勢を誇る比企能員と、時政ら北条氏との対立が決定的となる。"
+    },
+    {
+      "id": "e_awa_no_tsubone_tip",
+      "phaseId": 2,
+      "year": 1203,
+      "title": "阿波局の密告",
+      "category": "episode",
+      "characters": ["c_awa_no_tsubone", "c_minamoto_sanetomo"],
+      "location": "鎌倉",
+      "description": "比企一族が頼家の弟・実朝の排除を画策しているとの情報を、実朝の乳母である阿波局が察知し姉の政子に密告したと伝わる。この密告が北条方の先制行動を促したとされる。"
+    },
+    {
+      "id": "e_hiki_incident",
+      "phaseId": 2,
+      "year": 1203,
+      "title": "比企能員の変",
+      "category": "death",
+      "characters": ["c_hiki_yoshikazu", "c_hojo_tokimasa", "c_wakasa_no_tsubone", "c_minamoto_yoriie"],
+      "location": "鎌倉・名越邸",
+      "description": "時政は仏事にかこつけて能員を自邸（名越邸）に誘い出し謀殺、その隙に比企一族の館を襲撃して滅ぼした。頼家の嫡子で能員の外孫にあたる一幡も殺害され、頼家の後継体制は根底から覆された。"
+    },
+    {
+      "id": "e_yoriie_confined",
+      "phaseId": 2,
+      "year": 1203,
+      "title": "頼家、伊豆修禅寺に幽閉",
+      "category": "politics",
+      "characters": ["c_minamoto_yoriie", "c_hojo_tokimasa"],
+      "location": "伊豆・修禅寺",
+      "description": "外戚と嫡子を失った頼家は将軍職を廃され出家、伊豆の修禅寺へ幽閉された。鎌倉殿としての実権を完全に失った。"
+    },
+    {
+      "id": "e_sanetomo_shogun",
+      "phaseId": 2,
+      "year": 1203,
+      "title": "源実朝、三代将軍就任",
+      "category": "politics",
+      "characters": ["c_minamoto_sanetomo", "c_hojo_tokimasa"],
+      "location": "鎌倉",
+      "description": "頼家に代わり弟の実朝が12歳で三代将軍に就任した。後見役の時政が政所別当となり、事実上の初代執権として幕政を主導する体制が成立した。"
+    },
+    {
+      "id": "e_yoriie_death",
+      "phaseId": 2,
+      "year": 1204,
+      "title": "頼家、暗殺される",
+      "category": "death",
+      "characters": ["c_minamoto_yoriie"],
+      "location": "伊豆・修禅寺",
+      "description": "幽閉先の修禅寺で、頼家は入浴中を襲われ暗殺された。享年23。かつての鎌倉殿の非業の死は、後に子の公暁による復讐劇（実朝暗殺）を生む遠因となる。"
+    },
+    {
+      "id": "e_hatakeyama_incident",
+      "phaseId": 3,
+      "year": 1205,
+      "title": "畠山重忠の乱",
+      "category": "battle",
+      "characters": ["c_hatakeyama_shigetada", "c_hatakeyama_shigeyasu", "c_inage_shigenari", "c_hojo_tokimasa", "c_hojo_yoshitoki"],
+      "location": "武蔵国・二俣川",
+      "description": "稲毛重成の讒言を受けた時政は、忠勇で知られた畠山重忠に謀反の疑いをかけ、義時に追討を命じた。子の重保は由比ヶ浜で誘殺され、重忠自身もわずか134騎の手勢のまま武蔵二俣川で幕府の大軍に囲まれ討死した。無実を知りながら追討にあたった義時は、後にこの一件を深く悔いたと伝わる。"
+    },
+    {
+      "id": "e_maki_incident",
+      "phaseId": 3,
+      "year": 1205,
+      "title": "牧氏事件・時政失脚",
+      "category": "politics",
+      "characters": ["c_hojo_tokimasa", "c_maki_no_kata", "c_hojo_yoshitoki", "c_hojo_masako"],
+      "location": "鎌倉",
+      "description": "畠山討伐からわずか3か月後、時政と後妻・牧の方が実朝を廃し娘婿の平賀朝雅を将軍に擁立しようと画策していることが発覚した。政子・義時姉弟は迅速に実朝の身柄を確保して陰謀を阻止し、時政は出家して伊豆へ追放、義時が二代執権の座についた。"
+    },
+    {
+      "id": "e_izumi_chikahira_plot",
+      "phaseId": 4,
+      "year": 1213,
+      "title": "泉親衡の乱と和田氏への疑い",
+      "category": "politics",
+      "characters": ["c_wada_yoshimori", "c_hojo_yoshitoki"],
+      "location": "鎌倉",
+      "description": "頼家の遺児を擁立しようとする泉親衡の謀反計画が発覚し、和田義盛の子や甥が連座した。義盛は赦免を義時に嘆願するが拒絶され、両者の対立は修復不能となった。"
+    },
+    {
+      "id": "e_wada_gassen",
+      "phaseId": 4,
+      "year": 1213,
+      "title": "和田合戦",
+      "category": "battle",
+      "characters": ["c_wada_yoshimori", "c_hojo_yoshitoki", "c_miura_yoshimura"],
+      "location": "鎌倉",
+      "description": "追い詰められた義盛は一族を挙げて挙兵し、鎌倉市中は激しい市街戦となった。同心を約していた三浦義村が直前に義時方へ寝返ったことで和田方は劣勢に陥り、義盛は一族もろとも討ち死にした。侍所別当の職は義時のもとに移り、政所と合わせて両別当を兼ねる体制が確立した。"
+    },
+    {
+      "id": "e_yoshitoki_dual_office",
+      "phaseId": 4,
+      "year": 1213,
+      "title": "義時、政所・侍所両別当を兼務",
+      "category": "politics",
+      "characters": ["c_hojo_yoshitoki"],
+      "location": "鎌倉",
+      "description": "和田合戦の勝利により、義時は行政を司る政所別当と軍事・警察を司る侍所別当を兼務する立場となった。これが以後代々受け継がれる「執権」の実質的な権力基盤となった。"
+    },
+    {
+      "id": "e_sanetomo_udaijin",
+      "phaseId": 5,
+      "year": 1219,
+      "title": "実朝、右大臣に昇進",
+      "category": "episode",
+      "characters": ["c_minamoto_sanetomo"],
+      "location": "京都→鎌倉",
+      "description": "武家の棟梁でありながら公家社会への接近を強めていた実朝は、異例の右大臣にまで昇進した。和歌にも深く傾倒し、藤原定家に師事して『金槐和歌集』を編んでいる。この昇進を祝う拝賀の式典が、彼の運命を決めることになる。"
+    },
+    {
+      "id": "e_sanetomo_assassination",
+      "phaseId": 5,
+      "year": 1219,
+      "title": "実朝暗殺（鶴岡八幡宮）",
+      "category": "death",
+      "characters": ["c_minamoto_sanetomo", "c_kugyo"],
+      "location": "鎌倉・鶴岡八幡宮",
+      "description": "右大臣拝賀の式典を終え鶴岡八幡宮の石段を下りる実朝を、鶴岡八幡宮別当となっていた甥の公暁が「親の敵はかく討つぞ」と襲い討ち取った。享年28。頼朝直系の血筋はここに完全に絶えた。"
+    },
+    {
+      "id": "e_kugyo_death",
+      "phaseId": 5,
+      "year": 1219,
+      "title": "公暁、討たれる",
+      "category": "death",
+      "characters": ["c_kugyo", "c_miura_yoshimura"],
+      "location": "鎌倉",
+      "description": "実朝を討った公暁は、後ろ盾を期待して三浦義村のもとへ使者を送るが、義村はこれを義時に通報した。公暁は義村邸へ向かう途中で討手に襲われ討たれた。"
+    },
+    {
+      "id": "e_yoritsune_shogun",
+      "phaseId": 5,
+      "year": 1219,
+      "title": "摂家将軍の下向（藤原頼経）",
+      "category": "politics",
+      "characters": ["c_fujiwara_yoritsune", "c_hojo_masako"],
+      "location": "京都→鎌倉",
+      "description": "源氏の血筋が絶えたため、幕府は京の摂関家から2歳の頼経を新たな将軍候補として迎えた。実権は依然として北条氏にあり、政子が「尼将軍」として後見する体制が確立した。"
+    },
+    {
+      "id": "e_gotoba_uprising",
+      "phaseId": 6,
+      "year": 1221,
+      "title": "後鳥羽上皇、討幕の兵を挙げる",
+      "category": "politics",
+      "characters": ["c_gotoba", "c_fujiwara_hideyasu", "c_miura_taneyoshi"],
+      "location": "京都",
+      "description": "朝廷の権威回復を志す後鳥羽上皇は、北条義時追討の院宣を諸国に発して兵を挙げた。西面の武士を率いる藤原秀康や、幕府方から離れた三浦胤義らが上皇方についた。"
+    },
+    {
+      "id": "e_masako_speech",
+      "phaseId": 6,
+      "year": 1221,
+      "title": "政子の演説",
+      "category": "episode",
+      "characters": ["c_hojo_masako"],
+      "location": "鎌倉",
+      "description": "院宣を受け動揺する御家人たちを前に、政子は頼朝以来の恩顧を説く名演説を行った。「故右大将軍（頼朝）の恩は山よりも高く海よりも深い」と訴えたその言葉に、御家人たちは結束を固め、幕府軍は一丸となって京へ向かうことになる。"
+    },
+    {
+      "id": "e_immediate_advance",
+      "phaseId": 6,
+      "year": 1221,
+      "title": "幕府軍、京へ進撃",
+      "category": "politics",
+      "characters": ["c_hojo_yasutoki", "c_hojo_tokifusa", "c_oe_hiromoto", "c_miyoshi_yasunobu"],
+      "location": "鎌倉",
+      "description": "箱根での迎撃を主張する声が上がる中、大江広元・三善康信ら宿老は「一日も早く大軍で京へ攻め上るべき」と即時進撃を進言した。この決断により幕府軍は動揺が広がる前に東海道・東山道・北陸道の三方から京を目指すことになった。"
+    },
+    {
+      "id": "e_jokyu_war",
+      "phaseId": 6,
+      "year": 1221,
+      "title": "承久の乱・幕府軍の勝利",
+      "category": "battle",
+      "characters": ["c_hojo_yasutoki", "c_hojo_tokifusa", "c_fujiwara_hideyasu", "c_miura_taneyoshi"],
+      "location": "宇治川ほか各地",
+      "description": "総勢19万ともいわれる幕府軍は各地で朝廷方を撃破し、宇治川の戦いで最後の防衛線を突破して京へなだれ込んだ。挙兵からわずか1か月で乱は幕府側の圧勝に終わり、藤原秀康・三浦胤義ら朝廷方の指揮官は討死または自害した。"
+    },
+    {
+      "id": "e_gotoba_exile",
+      "phaseId": 6,
+      "year": 1221,
+      "title": "後鳥羽上皇ら配流、六波羅探題設置",
+      "category": "politics",
+      "characters": ["c_gotoba", "c_juntoku", "c_hojo_yasutoki", "c_hojo_tokifusa"],
+      "location": "京都",
+      "description": "後鳥羽上皇は隠岐へ、順徳上皇は佐渡へ、それぞれ配流された。京には新たに六波羅探題が設置され、泰時・時房が初代として朝廷の監視と西国の統治にあたることとなった。武家政権が朝廷に対して優位に立つ画期となった。"
+    },
+    {
+      "id": "e_yoshitoki_death",
+      "phaseId": 7,
+      "year": 1224,
+      "title": "北条義時、急死",
+      "category": "death",
+      "characters": ["c_hojo_yoshitoki"],
+      "location": "鎌倉",
+      "description": "承久の乱を勝利に導き執権政治の礎を築いた義時が、突然の病により急死した。62歳。後妻・伊賀の方による毒殺説も伝わるが定かではない。"
+    },
+    {
+      "id": "e_iga_incident",
+      "phaseId": 7,
+      "year": 1224,
+      "title": "伊賀氏の変",
+      "category": "politics",
+      "characters": ["c_iga_no_kata", "c_iga_mitsumune", "c_hojo_masako", "c_hojo_yasutoki"],
+      "location": "鎌倉",
+      "description": "義時の急死後、後妻の伊賀の方が実子・政村を執権に、娘婿の一条実雅を将軍に擁立しようとしているとの噂が広がった。政子は自ら御家人たちを説いて回り、京から急ぎ戻った泰時を三代執権に据えて事態を収拾。伊賀の方は伊豆へ、兄の光宗は信濃へ配流された。"
+    },
+    {
+      "id": "e_masako_death",
+      "phaseId": 7,
+      "year": 1225,
+      "title": "北条政子、死去",
+      "category": "death",
+      "characters": ["c_hojo_masako"],
+      "location": "鎌倉",
+      "description": "頼朝の挙兵から半世紀近くにわたり幕府を支え続けた政子が69歳で没した。「尼将軍」として幕府最大の危機（承久の乱）を乗り越えさせた生涯であった。"
+    },
+    {
+      "id": "e_hyojoshu",
+      "phaseId": 7,
+      "year": 1225,
+      "title": "評定衆の設置",
+      "category": "politics",
+      "characters": ["c_hojo_yasutoki", "c_hojo_tokifusa", "c_miura_yoshimura"],
+      "location": "鎌倉",
+      "description": "政子・広元という創業以来の重鎮を相次いで失った泰時は、執権の独断ではなく有力御家人による合議制の政治機構「評定衆」を新設した。個人の専断ではなく制度による統治への転換を図った。"
+    },
+    {
+      "id": "e_yoritsune_seii_taishogun",
+      "phaseId": 7,
+      "year": 1226,
+      "title": "頼経の将軍宣下",
+      "category": "politics",
+      "characters": ["c_fujiwara_yoritsune", "c_kujo_michiie"],
+      "location": "鎌倉",
+      "description": "鎌倉に迎えられて7年、頼経は正式に征夷大将軍の宣下を受けた。父・九条道家は朝廷と幕府をつなぐ窓口として、以後も影響力を保ち続けた。"
+    },
+    {
+      "id": "e_goseibai_shikimoku",
+      "phaseId": 7,
+      "year": 1232,
+      "title": "御成敗式目の制定",
+      "category": "politics",
+      "characters": ["c_hojo_yasutoki"],
+      "location": "鎌倉",
+      "description": "泰時は頼朝以来の先例と武家社会の「道理」に基づき、51か条からなる武家独自の成文法「御成敗式目」を制定した。公家の律令とは別の、武士の慣習に根ざした法として、後世の武家法の基本となった。"
+    },
+    {
+      "id": "e_yasutoki_death",
+      "phaseId": 8,
+      "year": 1242,
+      "title": "北条泰時、死去",
+      "category": "death",
+      "characters": ["c_hojo_yasutoki", "c_hojo_tsunetoki"],
+      "location": "鎌倉",
+      "description": "評定衆の設置・御成敗式目の制定など、執権政治を安定した統治機構へと発展させた泰時が60歳で没した。孫の経時が四代執権を継いだ。"
+    },
+    {
+      "id": "e_miya_sodo",
+      "phaseId": 8,
+      "year": 1246,
+      "title": "宮騒動",
+      "category": "politics",
+      "characters": ["c_hojo_tsunetoki", "c_hojo_tokiyori", "c_fujiwara_yoritsune", "c_miura_yasumura"],
+      "location": "鎌倉",
+      "description": "前将軍・頼経を担いで北条氏の専権に対抗しようとする勢力の陰謀が発覚した。経時・時頼兄弟はこれを鎮圧し、頼経を将軍職からも鎌倉からも追放して京へ送還した。三浦氏との対立が決定的となる契機となった。"
+    },
+    {
+      "id": "e_tokiyori_shikken",
+      "phaseId": 8,
+      "year": 1246,
+      "title": "北条時頼、五代執権就任",
+      "category": "politics",
+      "characters": ["c_hojo_tokiyori", "c_hojo_tsunetoki"],
+      "location": "鎌倉",
+      "description": "病の重い経時は弟の時頼に執権職を譲り、まもなく23歳で没した。若くして執権となった時頼は、宮騒動の余波が残る中で三浦氏との対決に向き合うことになる。"
+    },
+    {
+      "id": "e_miura_tension",
+      "phaseId": 8,
+      "year": 1247,
+      "title": "三浦氏との対立激化",
+      "category": "politics",
+      "characters": ["c_miura_yasumura", "c_hojo_tokiyori", "c_adachi_kagemori"],
+      "location": "鎌倉",
+      "description": "宮騒動で頼経方に近い立場を取った三浦泰村と北条氏との緊張が高まった。北条氏の有力な同盟者である安達景盛は出家の身ながら一族を鼓舞し、三浦氏打倒への挙兵を強く促した。"
+    },
+    {
+      "id": "e_hoji_gassen",
+      "phaseId": 8,
+      "year": 1247,
+      "title": "宝治合戦",
+      "category": "battle",
+      "characters": ["c_miura_yasumura", "c_hojo_tokiyori", "c_adachi_kagemori"],
+      "location": "鎌倉・法華堂",
+      "description": "安達景盛の軍勢が三浦邸を急襲したことで合戦の火蓋が切られた。三浦泰村ら一族は頼朝の法華堂に立てこもるが、時頼の大軍に包囲され、頼朝の墓前で一族郎党500余名と共に自害した。幕府最大の御家人勢力・三浦氏はここに滅亡した。"
+    },
+    {
+      "id": "e_tokuso_establishment",
+      "phaseId": 8,
+      "year": 1247,
+      "title": "得宗専制体制の確立",
+      "category": "politics",
+      "characters": ["c_hojo_tokiyori"],
+      "location": "鎌倉",
+      "description": "梶原・比企・畠山・和田・三浦と、頼朝以来の有力御家人が次々と滅ぼされ、もはや北条氏に対抗しうる勢力は幕府内に存在しなくなった。頼朝の死からおよそ半世紀、北条得宗家による独裁的な政治体制がここに確立した。"
+    }
+  ],
+  "mapSnapshots": [
+    {
+      "year": 1199,
+      "label": "頼朝死去 — 群雄割拠の始まり",
+      "territories": {
+        "musashi": { "name": "武蔵", "faction": "hiki", "lord": "比企能員" },
+        "kyoto": { "name": "京", "faction": "court", "lord": "後鳥羽上皇" },
+        "sagami": { "name": "相模", "faction": "miura", "lord": "三浦義村" },
+        "kamakura": { "name": "鎌倉", "faction": "shogun", "lord": "源頼家" },
+        "izu": { "name": "伊豆", "faction": "hojo", "lord": "北条時政" }
+      }
+    },
+    {
+      "year": 1205,
+      "label": "比企・畠山滅亡 — 北条氏が武蔵を接収",
+      "territories": {
+        "musashi": { "name": "武蔵", "faction": "hojo", "lord": "北条氏が接収（比企・畠山滅亡）" },
+        "kyoto": { "name": "京", "faction": "court", "lord": "後鳥羽上皇" },
+        "sagami": { "name": "相模", "faction": "miura", "lord": "三浦義村" },
+        "kamakura": { "name": "鎌倉", "faction": "shogun", "lord": "源実朝" },
+        "izu": { "name": "伊豆", "faction": "hojo", "lord": "北条義時（時政失脚）" }
+      }
+    },
+    {
+      "year": 1213,
+      "label": "和田合戦後 — 三浦氏が相模の実力者に",
+      "territories": {
+        "musashi": { "name": "武蔵", "faction": "hojo", "lord": "北条氏" },
+        "kyoto": { "name": "京", "faction": "court", "lord": "後鳥羽上皇" },
+        "sagami": { "name": "相模", "faction": "miura", "lord": "三浦義村（和田氏没落）" },
+        "kamakura": { "name": "鎌倉", "faction": "shogun", "lord": "源実朝" },
+        "izu": { "name": "伊豆", "faction": "hojo", "lord": "北条義時（政所・侍所両別当）" }
+      }
+    },
+    {
+      "year": 1221,
+      "label": "承久の乱後 — 六波羅探題設置",
+      "territories": {
+        "musashi": { "name": "武蔵", "faction": "hojo", "lord": "北条氏" },
+        "kyoto": { "name": "京", "faction": "hojo", "lord": "六波羅探題（北条泰時・時房）" },
+        "sagami": { "name": "相模", "faction": "miura", "lord": "三浦義村" },
+        "kamakura": { "name": "鎌倉", "faction": "shogun", "lord": "藤原頼経（政子後見）" },
+        "izu": { "name": "伊豆", "faction": "hojo", "lord": "北条義時" }
+      }
+    },
+    {
+      "year": 1247,
+      "label": "宝治合戦後 — 得宗専制の確立",
+      "territories": {
+        "musashi": { "name": "武蔵", "faction": "hojo", "lord": "北条氏" },
+        "kyoto": { "name": "京", "faction": "hojo", "lord": "六波羅探題" },
+        "sagami": { "name": "相模", "faction": "hojo", "lord": "北条氏が接収（三浦氏滅亡）" },
+        "kamakura": { "name": "鎌倉", "faction": "shogun", "lord": "藤原頼嗣（得宗専制下の将軍）" },
+        "izu": { "name": "伊豆", "faction": "hojo", "lord": "北条時頼" }
+      }
+    }
+  ],
+  "wikiLinks": {
+    "characters": {
+      "c_minamoto_yoritomo": "源頼朝",
+      "c_hojo_masako": "北条政子",
+      "c_hojo_tokimasa": "北条時政",
+      "c_maki_no_kata": "牧の方",
+      "c_hojo_yoshitoki": "北条義時",
+      "c_hojo_yasutoki": "北条泰時",
+      "c_hojo_tokifusa": "北条時房",
+      "c_hojo_tsunetoki": "北条経時",
+      "c_hojo_tokiyori": "北条時頼",
+      "c_iga_no_kata": "伊賀の方",
+      "c_kajiwara_kagetoki": "梶原景時",
+      "c_hiki_yoshikazu": "比企能員",
+      "c_wakasa_no_tsubone": "若狭局",
+      "c_minamoto_yoriie": "源頼家",
+      "c_minamoto_sanetomo": "源実朝",
+      "c_kugyo": "公暁",
+      "c_fujiwara_yoritsune": "藤原頼経",
+      "c_hatakeyama_shigetada": "畠山重忠",
+      "c_wada_yoshimori": "和田義盛",
+      "c_miura_yoshimura": "三浦義村",
+      "c_miura_yasumura": "三浦泰村",
+      "c_miura_taneyoshi": "三浦胤義",
+      "c_gotoba": "後鳥羽天皇",
+      "c_juntoku": "順徳天皇",
+      "c_fujiwara_hideyasu": "藤原秀康",
+      "c_kujo_michiie": "九条道家",
+      "c_iga_mitsumune": "伊賀光宗",
+      "c_oe_hiromoto": "大江広元",
+      "c_miyoshi_yasunobu": "三善康信",
+      "c_yuki_tomomitsu": "結城朝光",
+      "c_adachi_kagemori": "安達景盛"
+    },
+    "events": {
+      "e_kajiwara_fall": "梶原景時の変",
+      "e_hiki_incident": "比企能員の変",
+      "e_hatakeyama_incident": "畠山重忠の乱",
+      "e_maki_incident": "牧氏事件",
+      "e_wada_gassen": "和田合戦",
+      "e_sanetomo_assassination": "源実朝",
+      "e_gotoba_uprising": "承久の乱",
+      "e_goseibai_shikimoku": "御成敗式目",
+      "e_miya_sodo": "宮騒動",
+      "e_hoji_gassen": "宝治合戦"
+    }
+  }
+}

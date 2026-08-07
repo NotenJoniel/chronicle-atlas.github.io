@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06",
+  "generatedAt": "2026-08-07",
   "categories": {
     "battle": {
       "id": "battle",
@@ -4600,6 +4600,754 @@
           "name": "奥州藤原氏",
           "color": "#6a4a1a",
           "colorLight": "#c99a3a"
+        },
+        "court": {
+          "id": "court",
+          "name": "朝廷",
+          "color": "#4a2a5a",
+          "colorLight": "#9a6ac4"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#4a4a4a",
+          "colorLight": "#9a9a9a"
+        }
+      }
+    },
+    "hojo-rise": {
+      "events": [
+        {
+          "id": "e_yoritomo_death",
+          "year": 1199,
+          "title": "源頼朝、死去",
+          "category": "death",
+          "location": "鎌倉",
+          "color": "#5a4a1a",
+          "characters": [
+            "c_minamoto_yoritomo"
+          ]
+        },
+        {
+          "id": "e_thirteen_council",
+          "year": 1199,
+          "title": "頼家の家督相続と十三人の合議制",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#5a4a1a",
+          "characters": [
+            "c_minamoto_yoriie",
+            "c_hojo_tokimasa",
+            "c_kajiwara_kagetoki",
+            "c_hiki_yoshikazu",
+            "c_oe_hiromoto",
+            "c_miyoshi_yasunobu",
+            "c_miura_yoshimura"
+          ]
+        },
+        {
+          "id": "e_yuki_incident",
+          "year": 1200,
+          "title": "結城朝光の弾劾騒動",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_yuki_tomomitsu",
+            "c_kajiwara_kagetoki"
+          ]
+        },
+        {
+          "id": "e_kajiwara_fall",
+          "year": 1200,
+          "title": "梶原景時の変・一族滅亡",
+          "category": "death",
+          "location": "鎌倉→駿河国",
+          "color": "#4a3a2a",
+          "characters": [
+            "c_kajiwara_kagetoki"
+          ]
+        },
+        {
+          "id": "e_yoriie_illness",
+          "year": 1203,
+          "title": "頼家、重病に倒れる",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#5a4a1a",
+          "characters": [
+            "c_minamoto_yoriie"
+          ]
+        },
+        {
+          "id": "e_awa_no_tsubone_tip",
+          "year": 1203,
+          "title": "阿波局の密告",
+          "category": "episode",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_awa_no_tsubone",
+            "c_minamoto_sanetomo"
+          ]
+        },
+        {
+          "id": "e_hiki_incident",
+          "year": 1203,
+          "title": "比企能員の変",
+          "category": "death",
+          "location": "鎌倉・名越邸",
+          "color": "#4a2a4a",
+          "characters": [
+            "c_hiki_yoshikazu",
+            "c_hojo_tokimasa",
+            "c_wakasa_no_tsubone",
+            "c_minamoto_yoriie"
+          ]
+        },
+        {
+          "id": "e_yoriie_confined",
+          "year": 1203,
+          "title": "頼家、伊豆修禅寺に幽閉",
+          "category": "politics",
+          "location": "伊豆・修禅寺",
+          "color": "#5a4a1a",
+          "characters": [
+            "c_minamoto_yoriie",
+            "c_hojo_tokimasa"
+          ]
+        },
+        {
+          "id": "e_sanetomo_shogun",
+          "year": 1203,
+          "title": "源実朝、三代将軍就任",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#5a4a1a",
+          "characters": [
+            "c_minamoto_sanetomo",
+            "c_hojo_tokimasa"
+          ]
+        },
+        {
+          "id": "e_yoriie_death",
+          "year": 1204,
+          "title": "頼家、暗殺される",
+          "category": "death",
+          "location": "伊豆・修禅寺",
+          "color": "#5a4a1a",
+          "characters": [
+            "c_minamoto_yoriie"
+          ]
+        },
+        {
+          "id": "e_hatakeyama_incident",
+          "year": 1205,
+          "title": "畠山重忠の乱",
+          "category": "battle",
+          "location": "武蔵国・二俣川",
+          "color": "#2a4a2a",
+          "characters": [
+            "c_hatakeyama_shigetada",
+            "c_hatakeyama_shigeyasu",
+            "c_inage_shigenari",
+            "c_hojo_tokimasa",
+            "c_hojo_yoshitoki"
+          ]
+        },
+        {
+          "id": "e_maki_incident",
+          "year": 1205,
+          "title": "牧氏事件・時政失脚",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_tokimasa",
+            "c_maki_no_kata",
+            "c_hojo_yoshitoki",
+            "c_hojo_masako"
+          ]
+        },
+        {
+          "id": "e_izumi_chikahira_plot",
+          "year": 1213,
+          "title": "泉親衡の乱と和田氏への疑い",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#1a4a4a",
+          "characters": [
+            "c_wada_yoshimori",
+            "c_hojo_yoshitoki"
+          ]
+        },
+        {
+          "id": "e_wada_gassen",
+          "year": 1213,
+          "title": "和田合戦",
+          "category": "battle",
+          "location": "鎌倉",
+          "color": "#1a4a4a",
+          "characters": [
+            "c_wada_yoshimori",
+            "c_hojo_yoshitoki",
+            "c_miura_yoshimura"
+          ]
+        },
+        {
+          "id": "e_yoshitoki_dual_office",
+          "year": 1213,
+          "title": "義時、政所・侍所両別当を兼務",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_yoshitoki"
+          ]
+        },
+        {
+          "id": "e_sanetomo_udaijin",
+          "year": 1219,
+          "title": "実朝、右大臣に昇進",
+          "category": "episode",
+          "location": "京都→鎌倉",
+          "color": "#5a4a1a",
+          "characters": [
+            "c_minamoto_sanetomo"
+          ]
+        },
+        {
+          "id": "e_sanetomo_assassination",
+          "year": 1219,
+          "title": "実朝暗殺（鶴岡八幡宮）",
+          "category": "death",
+          "location": "鎌倉・鶴岡八幡宮",
+          "color": "#5a4a1a",
+          "characters": [
+            "c_minamoto_sanetomo",
+            "c_kugyo"
+          ]
+        },
+        {
+          "id": "e_kugyo_death",
+          "year": 1219,
+          "title": "公暁、討たれる",
+          "category": "death",
+          "location": "鎌倉",
+          "color": "#5a4a1a",
+          "characters": [
+            "c_kugyo",
+            "c_miura_yoshimura"
+          ]
+        },
+        {
+          "id": "e_yoritsune_shogun",
+          "year": 1219,
+          "title": "摂家将軍の下向（藤原頼経）",
+          "category": "politics",
+          "location": "京都→鎌倉",
+          "color": "#5a4a1a",
+          "characters": [
+            "c_fujiwara_yoritsune",
+            "c_hojo_masako"
+          ]
+        },
+        {
+          "id": "e_gotoba_uprising",
+          "year": 1221,
+          "title": "後鳥羽上皇、討幕の兵を挙げる",
+          "category": "politics",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_gotoba",
+            "c_fujiwara_hideyasu",
+            "c_miura_taneyoshi"
+          ]
+        },
+        {
+          "id": "e_masako_speech",
+          "year": 1221,
+          "title": "政子の演説",
+          "category": "episode",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_masako"
+          ]
+        },
+        {
+          "id": "e_immediate_advance",
+          "year": 1221,
+          "title": "幕府軍、京へ進撃",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_yasutoki",
+            "c_hojo_tokifusa",
+            "c_oe_hiromoto",
+            "c_miyoshi_yasunobu"
+          ]
+        },
+        {
+          "id": "e_jokyu_war",
+          "year": 1221,
+          "title": "承久の乱・幕府軍の勝利",
+          "category": "battle",
+          "location": "宇治川ほか各地",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_yasutoki",
+            "c_hojo_tokifusa",
+            "c_fujiwara_hideyasu",
+            "c_miura_taneyoshi"
+          ]
+        },
+        {
+          "id": "e_gotoba_exile",
+          "year": 1221,
+          "title": "後鳥羽上皇ら配流、六波羅探題設置",
+          "category": "politics",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_gotoba",
+            "c_juntoku",
+            "c_hojo_yasutoki",
+            "c_hojo_tokifusa"
+          ]
+        },
+        {
+          "id": "e_yoshitoki_death",
+          "year": 1224,
+          "title": "北条義時、急死",
+          "category": "death",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_yoshitoki"
+          ]
+        },
+        {
+          "id": "e_iga_incident",
+          "year": 1224,
+          "title": "伊賀氏の変",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_iga_no_kata",
+            "c_iga_mitsumune",
+            "c_hojo_masako",
+            "c_hojo_yasutoki"
+          ]
+        },
+        {
+          "id": "e_masako_death",
+          "year": 1225,
+          "title": "北条政子、死去",
+          "category": "death",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_masako"
+          ]
+        },
+        {
+          "id": "e_hyojoshu",
+          "year": 1225,
+          "title": "評定衆の設置",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_yasutoki",
+            "c_hojo_tokifusa",
+            "c_miura_yoshimura"
+          ]
+        },
+        {
+          "id": "e_yoritsune_seii_taishogun",
+          "year": 1226,
+          "title": "頼経の将軍宣下",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#5a4a1a",
+          "characters": [
+            "c_fujiwara_yoritsune",
+            "c_kujo_michiie"
+          ]
+        },
+        {
+          "id": "e_goseibai_shikimoku",
+          "year": 1232,
+          "title": "御成敗式目の制定",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_yasutoki"
+          ]
+        },
+        {
+          "id": "e_yasutoki_death",
+          "year": 1242,
+          "title": "北条泰時、死去",
+          "category": "death",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_yasutoki",
+            "c_hojo_tsunetoki"
+          ]
+        },
+        {
+          "id": "e_miya_sodo",
+          "year": 1246,
+          "title": "宮騒動",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_tsunetoki",
+            "c_hojo_tokiyori",
+            "c_fujiwara_yoritsune",
+            "c_miura_yasumura"
+          ]
+        },
+        {
+          "id": "e_tokiyori_shikken",
+          "year": 1246,
+          "title": "北条時頼、五代執権就任",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_tokiyori",
+            "c_hojo_tsunetoki"
+          ]
+        },
+        {
+          "id": "e_miura_tension",
+          "year": 1247,
+          "title": "三浦氏との対立激化",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_miura_yasumura",
+            "c_hojo_tokiyori",
+            "c_adachi_kagemori"
+          ]
+        },
+        {
+          "id": "e_hoji_gassen",
+          "year": 1247,
+          "title": "宝治合戦",
+          "category": "battle",
+          "location": "鎌倉・法華堂",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_miura_yasumura",
+            "c_hojo_tokiyori",
+            "c_adachi_kagemori"
+          ]
+        },
+        {
+          "id": "e_tokuso_establishment",
+          "year": 1247,
+          "title": "得宗専制体制の確立",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_tokiyori"
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_minamoto_yoritomo",
+          "name": "源頼朝",
+          "reading": "みなもとのよりとも",
+          "faction": "shogun",
+          "field": "governance"
+        },
+        {
+          "id": "c_hojo_masako",
+          "name": "北条政子",
+          "reading": "ほうじょうまさこ",
+          "faction": "hojo",
+          "field": "governance"
+        },
+        {
+          "id": "c_hojo_tokimasa",
+          "name": "北条時政",
+          "reading": "ほうじょうときまさ",
+          "faction": "hojo",
+          "field": "governance"
+        },
+        {
+          "id": "c_maki_no_kata",
+          "name": "牧の方",
+          "reading": "まきのかた",
+          "faction": "hojo",
+          "field": "governance"
+        },
+        {
+          "id": "c_hojo_yoshitoki",
+          "name": "北条義時",
+          "reading": "ほうじょうよしとき",
+          "faction": "hojo",
+          "field": "governance"
+        },
+        {
+          "id": "c_hojo_yasutoki",
+          "name": "北条泰時",
+          "reading": "ほうじょうやすとき",
+          "faction": "hojo",
+          "field": "governance"
+        },
+        {
+          "id": "c_hojo_tokifusa",
+          "name": "北条時房",
+          "reading": "ほうじょうときふさ",
+          "faction": "hojo",
+          "field": "governance"
+        },
+        {
+          "id": "c_hojo_tsunetoki",
+          "name": "北条経時",
+          "reading": "ほうじょうつねとき",
+          "faction": "hojo",
+          "field": "governance"
+        },
+        {
+          "id": "c_hojo_tokiyori",
+          "name": "北条時頼",
+          "reading": "ほうじょうときより",
+          "faction": "hojo",
+          "field": "governance"
+        },
+        {
+          "id": "c_iga_no_kata",
+          "name": "伊賀の方",
+          "reading": "いがのかた",
+          "faction": "hojo",
+          "field": "governance"
+        },
+        {
+          "id": "c_kajiwara_kagetoki",
+          "name": "梶原景時",
+          "reading": "かじわらかげとき",
+          "faction": "kajiwara",
+          "field": "military"
+        },
+        {
+          "id": "c_hiki_yoshikazu",
+          "name": "比企能員",
+          "reading": "ひきよしかず",
+          "faction": "hiki",
+          "field": "governance"
+        },
+        {
+          "id": "c_wakasa_no_tsubone",
+          "name": "若狭局",
+          "reading": "わかさのつぼね",
+          "faction": "hiki",
+          "field": "other"
+        },
+        {
+          "id": "c_minamoto_yoriie",
+          "name": "源頼家",
+          "reading": "みなもとのよりいえ",
+          "faction": "shogun",
+          "field": "governance"
+        },
+        {
+          "id": "c_minamoto_sanetomo",
+          "name": "源実朝",
+          "reading": "みなもとのさねとも",
+          "faction": "shogun",
+          "field": "governance"
+        },
+        {
+          "id": "c_kugyo",
+          "name": "公暁",
+          "reading": "くぎょう",
+          "faction": "shogun",
+          "field": "thought"
+        },
+        {
+          "id": "c_fujiwara_yoritsune",
+          "name": "藤原頼経",
+          "reading": "ふじわらのよりつね",
+          "faction": "shogun",
+          "field": "governance"
+        },
+        {
+          "id": "c_hatakeyama_shigetada",
+          "name": "畠山重忠",
+          "reading": "はたけやましげただ",
+          "faction": "hatakeyama",
+          "field": "military"
+        },
+        {
+          "id": "c_hatakeyama_shigeyasu",
+          "name": "畠山重保",
+          "reading": "はたけやましげやす",
+          "faction": "hatakeyama",
+          "field": "military"
+        },
+        {
+          "id": "c_wada_yoshimori",
+          "name": "和田義盛",
+          "reading": "わだよしもり",
+          "faction": "wada",
+          "field": "military"
+        },
+        {
+          "id": "c_miura_yoshimura",
+          "name": "三浦義村",
+          "reading": "みうらよしむら",
+          "faction": "miura",
+          "field": "governance"
+        },
+        {
+          "id": "c_miura_yasumura",
+          "name": "三浦泰村",
+          "reading": "みうらやすむら",
+          "faction": "miura",
+          "field": "governance"
+        },
+        {
+          "id": "c_miura_taneyoshi",
+          "name": "三浦胤義",
+          "reading": "みうらたねよし",
+          "faction": "miura",
+          "field": "military"
+        },
+        {
+          "id": "c_gotoba",
+          "name": "後鳥羽上皇",
+          "reading": "ごとばじょうこう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_juntoku",
+          "name": "順徳上皇",
+          "reading": "じゅんとくじょうこう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_fujiwara_hideyasu",
+          "name": "藤原秀康",
+          "reading": "ふじわらのひでやす",
+          "faction": "court",
+          "field": "military"
+        },
+        {
+          "id": "c_kujo_michiie",
+          "name": "九条道家",
+          "reading": "くじょうみちいえ",
+          "faction": "court",
+          "field": "administration"
+        },
+        {
+          "id": "c_iga_mitsumune",
+          "name": "伊賀光宗",
+          "reading": "いがみつむね",
+          "faction": "hojo",
+          "field": "administration"
+        },
+        {
+          "id": "c_oe_hiromoto",
+          "name": "大江広元",
+          "reading": "おおえのひろもと",
+          "faction": "hojo",
+          "field": "administration"
+        },
+        {
+          "id": "c_miyoshi_yasunobu",
+          "name": "三善康信",
+          "reading": "みよしやすのぶ",
+          "faction": "hojo",
+          "field": "administration"
+        },
+        {
+          "id": "c_yuki_tomomitsu",
+          "name": "結城朝光",
+          "reading": "ゆうきともみつ",
+          "faction": "other",
+          "field": "military"
+        },
+        {
+          "id": "c_awa_no_tsubone",
+          "name": "阿波局",
+          "reading": "あわのつぼね",
+          "faction": "hojo",
+          "field": "other"
+        },
+        {
+          "id": "c_adachi_kagemori",
+          "name": "安達景盛",
+          "reading": "あだちかげもり",
+          "faction": "hojo",
+          "field": "military"
+        },
+        {
+          "id": "c_inage_shigenari",
+          "name": "稲毛重成",
+          "reading": "いなげしげなり",
+          "faction": "hojo",
+          "field": "governance"
+        }
+      ],
+      "factions": {
+        "hojo": {
+          "id": "hojo",
+          "name": "北条家",
+          "color": "#1a2f52",
+          "colorLight": "#4a72b0"
+        },
+        "kajiwara": {
+          "id": "kajiwara",
+          "name": "梶原氏",
+          "color": "#4a3a2a",
+          "colorLight": "#8a6a4a"
+        },
+        "hiki": {
+          "id": "hiki",
+          "name": "比企氏",
+          "color": "#4a2a4a",
+          "colorLight": "#8a5a8a"
+        },
+        "hatakeyama": {
+          "id": "hatakeyama",
+          "name": "畠山氏",
+          "color": "#2a4a2a",
+          "colorLight": "#5a8a5a"
+        },
+        "wada": {
+          "id": "wada",
+          "name": "和田氏",
+          "color": "#1a4a4a",
+          "colorLight": "#4a8a8a"
+        },
+        "miura": {
+          "id": "miura",
+          "name": "三浦氏",
+          "color": "#6a4a1a",
+          "colorLight": "#c99a3a"
+        },
+        "shogun": {
+          "id": "shogun",
+          "name": "将軍家",
+          "color": "#5a4a1a",
+          "colorLight": "#c4a55a"
         },
         "court": {
           "id": "court",
