@@ -1,0 +1,6 @@
+/* 邪馬台国と倭の五王 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#14100a;--surface:#1f1912;--surface-2:#291f16;--surface-3:#332819;
+  --border-subtle:rgba(200,168,88,.14);--text:#ece3da;--text-dim:#a8927f;
+  --gold:#c8a858;--gold-dim:rgba(200,168,88,.2);
+}

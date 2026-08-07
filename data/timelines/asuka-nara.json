@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "律令国家の成立 史実クロニクルタイムライン (645年〜802年)",
-    "description": "乙巳の変・大化の改新から、壬申の乱、大宝律令の制定、平城京遷都、長屋王の変、藤原広嗣の乱、聖武天皇による大仏建立、恵美押勝の乱、道鏡の専権と宇佐八幡宮神託事件、桓武天皇による平安京遷都、そして蝦夷の指導者・阿弖流爲の降伏に至るまで。中央集権的な律令国家が形づくられていく157年間をインタラクティブなタイムラインで体験。",
+    "title": "律令国家の成立 史実クロニクルタイムライン (593年〜802年)",
+    "description": "推古天皇の即位と厩戸皇子（聖徳太子）による冠位十二階・十七条憲法の制定から、乙巳の変・大化の改新、壬申の乱、大宝律令の制定、平城京遷都、長屋王の変、藤原広嗣の乱、聖武天皇による大仏建立、恵美押勝の乱、道鏡の専権と宇佐八幡宮神託事件、桓武天皇による平安京遷都、そして蝦夷の指導者・阿弖流爲の降伏に至るまで。中央集権的な律令国家が形づくられていく209年間をインタラクティブなタイムラインで体験。",
     "headerIcon": "🏛️",
     "headerTitle": "律令国家の成立",
-    "headerSubtitle": "645年〜802年",
+    "headerSubtitle": "593年〜802年",
     "searchPlaceholder": "🔍 出来事・人物を検索…",
     "mapTitleIcon": "🗾",
     "mapTitleLabel": "勢力図",
@@ -22,15 +22,16 @@
     ]
   },
   "eraPhases": [
-    { "id": 1, "name": "第一章：大化の改新と乙巳の変", "period": "645 〜 663", "startYear": 645, "endYear": 663 },
-    { "id": 2, "name": "第二章：壬申の乱と天武・持統の治世", "period": "672 〜 701", "startYear": 672, "endYear": 701 },
-    { "id": 3, "name": "第三章：平城京と長屋王の変", "period": "708 〜 729", "startYear": 708, "endYear": 729 },
-    { "id": 4, "name": "第四章：天然痘禍と藤原広嗣の乱", "period": "735 〜 740", "startYear": 735, "endYear": 740 },
-    { "id": 5, "name": "第五章：聖武天皇の彷徨と大仏建立", "period": "740 〜 752", "startYear": 740, "endYear": 752 },
-    { "id": 6, "name": "第六章：橘奈良麻呂の変と恵美押勝の乱", "period": "749 〜 764", "startYear": 749, "endYear": 764 },
-    { "id": 7, "name": "第七章：道鏡の専権と宇佐八幡宮神託事件", "period": "764 〜 770", "startYear": 764, "endYear": 770 },
-    { "id": 8, "name": "第八章：桓武天皇と平安京遷都", "period": "781 〜 794", "startYear": 781, "endYear": 794 },
-    { "id": 9, "name": "第九章：蝦夷との攻防、阿弖流爲の降伏", "period": "780 〜 802", "startYear": 780, "endYear": 802 }
+    { "id": 0, "name": "第一章：推古朝と聖徳太子の政治", "period": "593 〜 622", "startYear": 593, "endYear": 622 },
+    { "id": 1, "name": "第二章：大化の改新と乙巳の変", "period": "645 〜 663", "startYear": 645, "endYear": 663 },
+    { "id": 2, "name": "第三章：壬申の乱と天武・持統の治世", "period": "672 〜 701", "startYear": 672, "endYear": 701 },
+    { "id": 3, "name": "第四章：平城京と長屋王の変", "period": "708 〜 729", "startYear": 708, "endYear": 729 },
+    { "id": 4, "name": "第五章：天然痘禍と藤原広嗣の乱", "period": "735 〜 740", "startYear": 735, "endYear": 740 },
+    { "id": 5, "name": "第六章：聖武天皇の彷徨と大仏建立", "period": "740 〜 752", "startYear": 740, "endYear": 752 },
+    { "id": 6, "name": "第七章：橘奈良麻呂の変と恵美押勝の乱", "period": "749 〜 764", "startYear": 749, "endYear": 764 },
+    { "id": 7, "name": "第八章：道鏡の専権と宇佐八幡宮神託事件", "period": "764 〜 770", "startYear": 764, "endYear": 770 },
+    { "id": 8, "name": "第九章：桓武天皇と平安京遷都", "period": "781 〜 794", "startYear": 781, "endYear": 794 },
+    { "id": 9, "name": "第十章：蝦夷との攻防、阿弖流爲の降伏", "period": "780 〜 802", "startYear": 780, "endYear": 802 }
   ],
   "factions": {
     "soga": { "id": "soga", "name": "蘇我氏", "color": "#2a4a2a", "colorLight": "#6a9a5a" },
@@ -48,6 +49,10 @@
     "death": { "id": "death", "name": "死没", "icon": "💀" }
   },
   "characters": [
+    { "id": "c_suiko_tennou", "name": "推古天皇", "reading": "すいこてんのう", "faction": "court", "role": "第33代天皇（女帝）", "life": "554-628", "field": "governance", "description": "崇峻天皇の暗殺を受け、蘇我馬子に擁立されて即位した日本初の女性天皇。甥の厩戸皇子（聖徳太子）を摂政格として政務に参画させ、馬子と三者で協調しながら冠位十二階・十七条憲法の制定、遣隋使の派遣など、律令国家建設に向けた基礎固めを進めた。" },
+    { "id": "c_umayado_no_ouji", "name": "厩戸皇子（聖徳太子）", "reading": "うまやどのおうじ", "faction": "court", "role": "皇太子・摂政", "life": "574-622", "field": "governance", "description": "用明天皇の子で、推古天皇のもとで政務に深く関わった皇族。冠位十二階・十七条憲法を制定して氏族の力に頼らない官人統治の理念を示し、遣隋使を派遣して隋との対等外交を試み、法隆寺を建立するなど、律令国家と仏教文化双方の礎を築いた。", "historyTrivia": "後世に広く知られる「聖徳太子」という呼称そのものは没後100年以上を経た奈良時代に定着したものであり、生前は「厩戸皇子」等と呼ばれていた。十七条憲法の成立時期や、皇子が単独で摂政の地位にあったかどうかについても史料上の議論があり、超人的な「聖徳太子像」の少なからぬ部分は没後に形成されたものと考えられている。" },
+    { "id": "c_soga_no_umako", "name": "蘇我馬子", "reading": "そがのうまこ", "faction": "soga", "role": "大臣（推古朝の実権者）", "life": "551?-626", "field": "governance", "description": "蘇我入鹿の祖父、蘇我蝦夷の父。丁未の乱で物部守屋を滅ぼして蘇我氏の権勢を確立し、592年には崇峻天皇の暗殺を主導して推古天皇を擁立した。以後は推古天皇・厩戸皇子と共に朝廷を主導し、飛鳥寺の建立や『天皇記』『国記』の編纂にも関わった。" },
+    { "id": "c_ono_no_imoko", "name": "小野妹子", "reading": "おののいもこ", "faction": "court", "role": "遣隋使", "life": "生没年不詳", "field": "administration", "description": "607年、「日出づる処の天子、書を日没する処の天子に致す。恙無きや」で始まる国書を携え、遣隋使として隋に派遣された。対等な立場を示そうとするこの文言に隋の煬帝は無礼だと不快感を示したと伝わるが、国交自体は結ばれ、翌年には隋の使者・裴世清を伴って帰国した。" },
     { "id": "c_soga_no_iruka", "name": "蘇我入鹿", "reading": "そがのいるか", "faction": "soga", "role": "大臣", "life": "?-645", "field": "governance", "description": "蘇我氏の全盛期を築いた蘇我蝦夷の子。聖徳太子の子・山背大兄王一族を滅ぼすなど強引な手法で権勢を振るい、皇室をも凌ぐ勢いを見せた。しかしその専横を危険視した中大兄皇子と中臣鎌足によって、飛鳥板蓋宮での儀式の最中に暗殺された。" },
     { "id": "c_soga_no_emishi", "name": "蘇我蝦夷", "reading": "そがのえみし", "faction": "soga", "role": "大臣", "life": "?-645", "field": "governance", "description": "入鹿の父で、蘇我氏の家長として朝廷の実権を長く握った。子の入鹿が暗殺されたと知ると、もはや抵抗の術なしと悟り、自邸に火を放って一族ともども自害した。これにより権勢を誇った蘇我本宗家は滅亡した。" },
     { "id": "c_naka_no_oe", "name": "中大兄皇子（天智天皇）", "reading": "なかのおおえのおうじ", "faction": "court", "role": "皇太子／第38代天皇", "life": "626-672", "field": "governance", "description": "中臣鎌足と謀り、宮中で蘇我入鹿を自ら斬りつけて討った乙巳の変の首謀者。以後、皇太子として大化の改新を主導し、白村江の敗戦を経て近江大津宮に遷都、即位して天智天皇となった。日本初の全国的な戸籍・近江令の編纂に着手するなど、中央集権化を大きく前進させた。" },
@@ -90,6 +95,12 @@
     { "id": "c_sakanoue_no_tamuramaro", "name": "坂上田村麻呂", "reading": "さかのうえのたむらまろ", "faction": "court", "role": "征夷大将軍", "life": "758-811", "field": "military", "description": "桓武天皇の信任を受けて征夷大将軍に任じられ、陸奥への遠征を指揮した。巧みな用兵で蝦夷の抵抗拠点を次々と制圧し、ついに阿弖流爲・母礼を降伏させて長年の戦争に区切りをつけた。降伏した二人の助命を朝廷に強く訴えたが、聞き入れられなかったと伝わる。" }
   ],
   "events": [
+    { "id": "e_suiko_enthronement", "phaseId": 0, "year": 593, "title": "推古天皇、即位・厩戸皇子が政務に参画", "category": "politics", "characters": ["c_suiko_tennou", "c_umayado_no_ouji", "c_soga_no_umako"], "location": "豊浦宮", "description": "前年の崇峻天皇暗殺を経て、蘇我馬子は姪にあたる推古天皇を擁立した。日本初の女性天皇の誕生である。甥の厩戸皇子は皇太子として立てられ、馬子と共に政務に深く参画するようになり、推古・馬子・厩戸皇子の三者による協調体制のもとで新たな国づくりが始まった。" },
+    { "id": "e_kani_junikai", "phaseId": 0, "year": 603, "title": "冠位十二階、制定", "category": "politics", "characters": ["c_umayado_no_ouji"], "location": "小墾田宮", "description": "氏族の出自ではなく個人の才能・功績に応じて冠位を与える冠位十二階が定められた。氏族単位で世襲されてきたそれまでの人事のあり方を改め、天皇を頂点とする官人統治の仕組みへと近づける狙いがあった。" },
+    { "id": "e_jushichijo_kenpo", "phaseId": 0, "year": 604, "title": "十七条憲法、制定", "category": "politics", "characters": ["c_umayado_no_ouji"], "location": "小墾田宮", "description": "「和を以て貴しと為し」に始まる十七条憲法が定められた。豪族・官人に対する道徳的な訓戒を中心とし、天皇への服従や仏教の尊重を説くこの憲法は、近代的な法典ではなく官人としての心得を示したものだが、律令国家の理念を最初に文章化した画期的な試みであった。", "historyTrivia": "十七条憲法の成立時期や厩戸皇子単独の作とする伝承の史実性については、後世の潤色を疑う議論が学界に根強くあり、確定した結論は出ていない。" },
+    { "id": "e_kenzuishi_ono_imoko", "phaseId": 0, "year": 607, "title": "遣隋使（小野妹子）の派遣と法隆寺創建", "category": "politics", "characters": ["c_umayado_no_ouji", "c_ono_no_imoko"], "location": "難波津→隋／斑鳩", "description": "小野妹子を正使とする遣隋使が派遣され、隋の皇帝・煬帝に対等外交を志向する国書がもたらされた。同じ頃、厩戸皇子は自らの宮のあった斑鳩の地に法隆寺を創建しており、対外交渉と仏教興隆の両面で新たな時代の到来を印象づけた。" },
+    { "id": "e_tennouki_kokki", "phaseId": 0, "year": 620, "title": "『天皇記』『国記』、編纂", "category": "episode", "characters": ["c_umayado_no_ouji", "c_soga_no_umako"], "location": "飛鳥", "description": "厩戸皇子と蘇我馬子は、天皇の系譜と国の歴史をまとめた『天皇記』『国記』などの編纂を主導した。これらは律令国家が自らの正統性を語る最初期の試みであったが、645年の乙巳の変で蘇我蝦夷が邸宅に火を放った際、大半が失われることになる。" },
+    { "id": "e_umayado_death", "phaseId": 0, "year": 622, "title": "厩戸皇子、没", "category": "death", "characters": ["c_umayado_no_ouji"], "location": "斑鳩宮", "description": "推古朝の政治を長く支えた厩戸皇子が49歳で没した。その死は多くの人々に深い悲しみをもたらしたと伝わり、没後の時代を経て「聖徳太子」として理想化された人物像が形成されていくことになる。" },
     { "id": "e_isshi_incident", "phaseId": 1, "year": 645, "title": "乙巳の変・蘇我入鹿暗殺", "category": "politics", "characters": ["c_naka_no_oe", "c_nakatomi_no_kamatari", "c_soga_no_iruka"], "location": "飛鳥板蓋宮", "description": "朝鮮半島の使者を迎える儀式の最中、中大兄皇子は自ら剣を振るって蘇我入鹿を斬り殺した。長らく朝廷の実権を握ってきた蘇我氏の専横に対する、中大兄皇子と中臣鎌足による周到な計画のもとでの決起であった。" },
     { "id": "e_soga_clan_fall", "phaseId": 1, "year": 645, "title": "蘇我蝦夷、邸宅に火を放ち自害", "category": "death", "characters": ["c_soga_no_emishi"], "location": "飛鳥・甘樫丘", "description": "子の入鹿が討たれたと知った蘇我蝦夷は、もはや抵抗できないと悟り、一族に伝わる『天皇記』『国記』などの記録もろとも自邸に火を放ち自害した。これにより長く権勢を誇った蘇我本宗家は滅亡した。" },
     { "id": "e_taika_reform_edict", "phaseId": 1, "year": 646, "title": "改新の詔", "category": "politics", "characters": ["c_koutoku_tennou", "c_naka_no_oe"], "location": "難波長柄豊碕宮", "description": "即位した孝徳天皇のもと、公地公民制・地方行政区画の整備・戸籍と班田収授法の実施・統一的な租税制度という4か条からなる「改新の詔」が発布された。豪族が私的に土地と人民を支配する体制から、天皇を中心とする中央集権国家へと転換する大方針が示された。" },
@@ -141,6 +152,17 @@
     { "id": "e_aterui_execution", "phaseId": 9, "year": 802, "title": "阿弖流爲・母礼、処刑される", "category": "death", "characters": ["c_aterui", "c_more"], "location": "河内国・杜山", "description": "田村麻呂の助命嘆願にもかかわらず、朝廷の公卿たちは「野蛮の性、反覆常なし」として二人の処刑を決定した。阿弖流爲・母礼は河内国で斬られ、長く続いた蝦夷との戦争は律令国家側の勝利という形で一つの区切りを迎えた。" }
   ],
   "mapSnapshots": [
+    {
+      "year": 593,
+      "label": "推古天皇即位 — 蘇我馬子の実権",
+      "territories": {
+        "mutsu": { "name": "陸奥", "faction": "other", "lord": "蝦夷（未服属）" },
+        "yamashiro": { "name": "山城", "faction": "other", "lord": "在地豪族" },
+        "yamato": { "name": "大和", "faction": "soga", "lord": "蘇我馬子（推古天皇の後見）" },
+        "oumi": { "name": "近江", "faction": "other", "lord": "在地豪族" },
+        "dazaifu": { "name": "大宰府", "faction": "other", "lord": "在地豪族" }
+      }
+    },
     {
       "year": 645,
       "label": "乙巳の変 — 蘇我氏打倒",
@@ -221,6 +243,10 @@
   ],
   "wikiLinks": {
     "characters": {
+      "c_suiko_tennou": "推古天皇",
+      "c_umayado_no_ouji": "聖徳太子",
+      "c_soga_no_umako": "蘇我馬子",
+      "c_ono_no_imoko": "小野妹子",
       "c_soga_no_iruka": "蘇我入鹿",
       "c_soga_no_emishi": "蘇我蝦夷",
       "c_naka_no_oe": "天智天皇",
@@ -262,6 +288,9 @@
       "c_sakanoue_no_tamuramaro": "坂上田村麻呂"
     },
     "events": {
+      "e_kani_junikai": "冠位十二階",
+      "e_jushichijo_kenpo": "十七条の憲法",
+      "e_kenzuishi_ono_imoko": "遣隋使",
       "e_isshi_incident": "乙巳の変",
       "e_taika_reform_edict": "大化の改新",
       "e_hakusukinoe": "白村江の戦い",

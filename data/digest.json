@@ -7559,8 +7559,652 @@
         }
       }
     },
+    "wakoku": {
+      "events": [
+        {
+          "id": "e_wa_hundred_states",
+          "year": -100,
+          "title": "倭人、百余国に分立",
+          "category": "politics",
+          "location": "倭国（列島各地、所在地は諸説あり）"
+        },
+        {
+          "id": "e_nakoku_gold_seal",
+          "year": 57,
+          "title": "奴国王、後漢に遣使し金印を授かる",
+          "category": "politics",
+          "location": "奴国（北部九州）",
+          "color": "#6a4a2a",
+          "characters": [
+            "c_king_of_na",
+            "c_guang_wu_di"
+          ]
+        },
+        {
+          "id": "e_suisho_tribute",
+          "year": 107,
+          "title": "倭国王帥升、生口160人を献上",
+          "category": "politics",
+          "location": "倭国",
+          "color": "#6a4a2a",
+          "characters": [
+            "c_suisho"
+          ]
+        },
+        {
+          "id": "e_wa_great_disturbance",
+          "year": 180,
+          "title": "倭国大乱",
+          "category": "battle",
+          "location": "倭国各地"
+        },
+        {
+          "id": "e_himiko_election",
+          "year": 190,
+          "title": "卑弥呼、共立される",
+          "category": "politics",
+          "location": "邪馬台国（所在地は畿内説・九州説あり）",
+          "color": "#5a2a6a",
+          "characters": [
+            "c_himiko"
+          ]
+        },
+        {
+          "id": "e_himiko_wei_mission",
+          "year": 239,
+          "title": "難升米を魏に派遣、「親魏倭王」の称号を授かる",
+          "category": "politics",
+          "location": "帯方郡→洛陽",
+          "color": "#5a2a6a",
+          "characters": [
+            "c_himiko",
+            "c_nashime",
+            "c_caorui"
+          ]
+        },
+        {
+          "id": "e_wei_envoy_visit",
+          "year": 240,
+          "title": "魏の使者、倭国を訪問",
+          "category": "episode",
+          "location": "邪馬台国",
+          "color": "#5a2a6a",
+          "characters": [
+            "c_himiko"
+          ]
+        },
+        {
+          "id": "e_wei_missions_continue",
+          "year": 243,
+          "title": "遣使続く、難升米に黄幢が贈られる",
+          "category": "politics",
+          "location": "洛陽",
+          "color": "#5a2a6a",
+          "characters": [
+            "c_nashime"
+          ]
+        },
+        {
+          "id": "e_kuna_conflict",
+          "year": 247,
+          "title": "狗奴国との抗争、張政の派遣",
+          "category": "battle",
+          "location": "邪馬台国・狗奴国",
+          "color": "#5a2a6a",
+          "characters": [
+            "c_himiko",
+            "c_himikoko",
+            "c_zhangzheng"
+          ]
+        },
+        {
+          "id": "e_himiko_death",
+          "year": 248,
+          "title": "卑弥呼、死去",
+          "category": "death",
+          "location": "邪馬台国",
+          "color": "#5a2a6a",
+          "characters": [
+            "c_himiko"
+          ]
+        },
+        {
+          "id": "e_toyo_enthronement",
+          "year": 249,
+          "title": "男王擁立の失敗と台与の即位",
+          "category": "politics",
+          "location": "邪馬台国",
+          "color": "#5a2a6a",
+          "characters": [
+            "c_toyo",
+            "c_zhangzheng"
+          ]
+        },
+        {
+          "id": "e_toyo_jin_mission",
+          "year": 266,
+          "title": "台与、晋に遣使",
+          "category": "politics",
+          "location": "洛陽",
+          "color": "#5a2a6a",
+          "characters": [
+            "c_toyo",
+            "c_sima_yan"
+          ]
+        },
+        {
+          "id": "e_makimuku_formation",
+          "year": 280,
+          "title": "纒向遺跡とヤマト政権の形成（推定）",
+          "category": "episode",
+          "location": "大和（纒向）"
+        },
+        {
+          "id": "e_kofun_spread",
+          "year": 350,
+          "title": "前方後円墳の広がり",
+          "category": "episode",
+          "location": "列島各地"
+        },
+        {
+          "id": "e_koutaiou_stele",
+          "year": 391,
+          "title": "好太王碑に倭の軍事行動の記述",
+          "category": "battle",
+          "location": "朝鮮半島",
+          "color": "#1a5a3a",
+          "characters": [
+            "c_gwanggaeto"
+          ]
+        },
+        {
+          "id": "e_san_song_mission",
+          "year": 413,
+          "title": "倭王讃、東晋に遣使",
+          "category": "politics",
+          "location": "建康（東晋）",
+          "color": "#6a4a2a",
+          "characters": [
+            "c_san"
+          ]
+        },
+        {
+          "id": "e_san_missions_continue",
+          "year": 421,
+          "title": "讃、宋にも遣使を重ねる（421・425・430年）",
+          "category": "politics",
+          "location": "建康（宋）",
+          "color": "#6a4a2a",
+          "characters": [
+            "c_san"
+          ]
+        },
+        {
+          "id": "e_chin_song_mission",
+          "year": 438,
+          "title": "珍、宋に遣使、「安東将軍倭国王」の称号",
+          "category": "politics",
+          "location": "建康（宋）",
+          "color": "#6a4a2a",
+          "characters": [
+            "c_chin"
+          ]
+        },
+        {
+          "id": "e_sei_missions",
+          "year": 443,
+          "title": "済の遣使（443・451年）",
+          "category": "politics",
+          "location": "建康（宋）",
+          "color": "#6a4a2a",
+          "characters": [
+            "c_sei"
+          ]
+        },
+        {
+          "id": "e_kou_mission",
+          "year": 462,
+          "title": "興の遣使",
+          "category": "politics",
+          "location": "建康（宋）",
+          "color": "#6a4a2a",
+          "characters": [
+            "c_kou"
+          ]
+        },
+        {
+          "id": "e_bu_memorial",
+          "year": 478,
+          "title": "武の上表文",
+          "category": "episode",
+          "location": "建康（宋）",
+          "color": "#6a4a2a",
+          "characters": [
+            "c_bu"
+          ]
+        },
+        {
+          "id": "e_bu_general_title",
+          "year": 502,
+          "title": "武、梁より征東将軍の号を受ける",
+          "category": "politics",
+          "location": "建康（梁）",
+          "color": "#6a4a2a",
+          "characters": [
+            "c_bu"
+          ]
+        },
+        {
+          "id": "e_mimana_cession",
+          "year": 512,
+          "title": "任那四県の割譲",
+          "category": "politics",
+          "location": "任那（朝鮮半島南部）",
+          "color": "#6a4a2a",
+          "characters": [
+            "c_otomo_no_kanamura"
+          ]
+        },
+        {
+          "id": "e_iwai_rebellion",
+          "year": 527,
+          "title": "磐井の乱",
+          "category": "battle",
+          "location": "筑紫（北部九州）",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_iwai",
+            "c_mononobe_no_arakahi"
+          ]
+        },
+        {
+          "id": "e_buddhism_introduced",
+          "year": 538,
+          "title": "仏教公伝",
+          "category": "episode",
+          "location": "難波／飛鳥",
+          "color": "#8a6a2a",
+          "characters": [
+            "c_seongmyeong"
+          ]
+        },
+        {
+          "id": "e_mimana_fall",
+          "year": 562,
+          "title": "任那日本府の滅亡",
+          "category": "politics",
+          "location": "加耶（任那）",
+          "color": "#2a4a6a",
+          "characters": [
+            "c_jinheung",
+            "c_otomo_no_kanamura"
+          ]
+        },
+        {
+          "id": "e_teibi_incident",
+          "year": 587,
+          "title": "丁未の乱、蘇我馬子が物部守屋を滅ぼす",
+          "category": "battle",
+          "location": "河内・渋川",
+          "color": "#2a4a2a",
+          "characters": [
+            "c_soga_no_umako",
+            "c_mononobe_no_moriya"
+          ]
+        },
+        {
+          "id": "e_moriya_death",
+          "year": 587,
+          "title": "物部守屋、討たれる",
+          "category": "death",
+          "location": "河内・渋川",
+          "color": "#3a3a5a",
+          "characters": [
+            "c_mononobe_no_moriya"
+          ]
+        },
+        {
+          "id": "e_sushun_assassination",
+          "year": 592,
+          "title": "崇峻天皇、暗殺される",
+          "category": "death",
+          "location": "倉梯柴垣宮",
+          "color": "#2a4a2a",
+          "characters": [
+            "c_soga_no_umako",
+            "c_sushun_tennou"
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_king_of_na",
+          "name": "奴国王",
+          "reading": "なこくおう",
+          "faction": "wa",
+          "field": "governance"
+        },
+        {
+          "id": "c_suisho",
+          "name": "帥升",
+          "reading": "すいしょう",
+          "faction": "wa",
+          "field": "governance"
+        },
+        {
+          "id": "c_himiko",
+          "name": "卑弥呼",
+          "reading": "ひみこ",
+          "faction": "yamatai",
+          "field": "governance"
+        },
+        {
+          "id": "c_nashime",
+          "name": "難升米",
+          "reading": "なしめ",
+          "faction": "yamatai",
+          "field": "administration"
+        },
+        {
+          "id": "c_caorui",
+          "name": "曹叡",
+          "reading": "ソウエイ",
+          "faction": "wei",
+          "field": "governance"
+        },
+        {
+          "id": "c_himikoko",
+          "name": "卑弥弓呼",
+          "reading": "ひみくこ",
+          "faction": "kuna",
+          "field": "governance"
+        },
+        {
+          "id": "c_zhangzheng",
+          "name": "張政",
+          "reading": "ちょうせい",
+          "faction": "wei",
+          "field": "administration"
+        },
+        {
+          "id": "c_toyo",
+          "name": "台与（壱与）",
+          "reading": "とよ（いよ）",
+          "faction": "yamatai",
+          "field": "governance"
+        },
+        {
+          "id": "c_sima_yan",
+          "name": "司馬炎",
+          "reading": "シバエン",
+          "faction": "jin",
+          "field": "governance"
+        },
+        {
+          "id": "c_gwanggaeto",
+          "name": "好太王（広開土王）",
+          "reading": "こうたいおう",
+          "faction": "goguryeo",
+          "field": "governance"
+        },
+        {
+          "id": "c_san",
+          "name": "倭王讃",
+          "reading": "わおうさん",
+          "faction": "wa",
+          "field": "governance"
+        },
+        {
+          "id": "c_chin",
+          "name": "倭王珍",
+          "reading": "わおうちん",
+          "faction": "wa",
+          "field": "governance"
+        },
+        {
+          "id": "c_sei",
+          "name": "倭王済",
+          "reading": "わおうせい",
+          "faction": "wa",
+          "field": "governance"
+        },
+        {
+          "id": "c_kou",
+          "name": "倭王興",
+          "reading": "わおうこう",
+          "faction": "wa",
+          "field": "governance"
+        },
+        {
+          "id": "c_bu",
+          "name": "倭王武",
+          "reading": "わおうぶ",
+          "faction": "wa",
+          "field": "governance"
+        },
+        {
+          "id": "c_otomo_no_kanamura",
+          "name": "大伴金村",
+          "reading": "おおとものかなむら",
+          "faction": "wa",
+          "field": "administration"
+        },
+        {
+          "id": "c_iwai",
+          "name": "筑紫君磐井",
+          "reading": "つくしのきみいわい",
+          "faction": "other",
+          "field": "military"
+        },
+        {
+          "id": "c_mononobe_no_arakahi",
+          "name": "物部麁鹿火",
+          "reading": "もののべのあらかひ",
+          "faction": "mononobe",
+          "field": "military"
+        },
+        {
+          "id": "c_seongmyeong",
+          "name": "聖明王",
+          "reading": "せいめいおう",
+          "faction": "baekje",
+          "field": "governance"
+        },
+        {
+          "id": "c_jinheung",
+          "name": "真興王",
+          "reading": "しんこうおう",
+          "faction": "silla",
+          "field": "governance"
+        },
+        {
+          "id": "c_soga_no_umako",
+          "name": "蘇我馬子",
+          "reading": "そがのうまこ",
+          "faction": "soga",
+          "field": "governance"
+        },
+        {
+          "id": "c_mononobe_no_moriya",
+          "name": "物部守屋",
+          "reading": "もののべのもりや",
+          "faction": "mononobe",
+          "field": "military"
+        },
+        {
+          "id": "c_sushun_tennou",
+          "name": "崇峻天皇",
+          "reading": "すしゅんてんのう",
+          "faction": "wa",
+          "field": "governance"
+        },
+        {
+          "id": "c_guang_wu_di",
+          "name": "光武帝",
+          "reading": "コウブテイ",
+          "faction": "han",
+          "field": "governance"
+        }
+      ],
+      "factions": {
+        "wa": {
+          "id": "wa",
+          "name": "倭",
+          "color": "#6a4a2a",
+          "colorLight": "#a8845a"
+        },
+        "yamatai": {
+          "id": "yamatai",
+          "name": "邪馬台国",
+          "color": "#5a2a6a",
+          "colorLight": "#9a5ac0"
+        },
+        "kuna": {
+          "id": "kuna",
+          "name": "狗奴国",
+          "color": "#8a3a1a",
+          "colorLight": "#c86a3a"
+        },
+        "soga": {
+          "id": "soga",
+          "name": "蘇我氏",
+          "color": "#2a4a2a",
+          "colorLight": "#6a9a5a"
+        },
+        "mononobe": {
+          "id": "mononobe",
+          "name": "物部氏",
+          "color": "#3a3a5a",
+          "colorLight": "#7a7ab0"
+        },
+        "han": {
+          "id": "han",
+          "name": "漢",
+          "color": "#8B1A1A",
+          "colorLight": "#CD5C5C"
+        },
+        "wei": {
+          "id": "wei",
+          "name": "魏",
+          "color": "#2a4a78",
+          "colorLight": "#4a7ac8"
+        },
+        "jin": {
+          "id": "jin",
+          "name": "晋",
+          "color": "#7a5a1a",
+          "colorLight": "#bba844"
+        },
+        "song": {
+          "id": "song",
+          "name": "宋（南朝）",
+          "color": "#7a2a4a",
+          "colorLight": "#b85a80"
+        },
+        "liang": {
+          "id": "liang",
+          "name": "梁",
+          "color": "#5a1a4a",
+          "colorLight": "#9a4a80"
+        },
+        "goguryeo": {
+          "id": "goguryeo",
+          "name": "高句麗",
+          "color": "#1a5a3a",
+          "colorLight": "#4a9a6a"
+        },
+        "baekje": {
+          "id": "baekje",
+          "name": "百済",
+          "color": "#8a6a2a",
+          "colorLight": "#c8a858"
+        },
+        "silla": {
+          "id": "silla",
+          "name": "新羅",
+          "color": "#2a4a6a",
+          "colorLight": "#5a8ac8"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#4a4a4a",
+          "colorLight": "#9a9a9a"
+        }
+      }
+    },
     "asuka-nara": {
       "events": [
+        {
+          "id": "e_suiko_enthronement",
+          "year": 593,
+          "title": "推古天皇、即位・厩戸皇子が政務に参画",
+          "category": "politics",
+          "location": "豊浦宮",
+          "color": "#5a4a12",
+          "characters": [
+            "c_suiko_tennou",
+            "c_umayado_no_ouji",
+            "c_soga_no_umako"
+          ]
+        },
+        {
+          "id": "e_kani_junikai",
+          "year": 603,
+          "title": "冠位十二階、制定",
+          "category": "politics",
+          "location": "小墾田宮",
+          "color": "#5a4a12",
+          "characters": [
+            "c_umayado_no_ouji"
+          ]
+        },
+        {
+          "id": "e_jushichijo_kenpo",
+          "year": 604,
+          "title": "十七条憲法、制定",
+          "category": "politics",
+          "location": "小墾田宮",
+          "color": "#5a4a12",
+          "characters": [
+            "c_umayado_no_ouji"
+          ]
+        },
+        {
+          "id": "e_kenzuishi_ono_imoko",
+          "year": 607,
+          "title": "遣隋使（小野妹子）の派遣と法隆寺創建",
+          "category": "politics",
+          "location": "難波津→隋／斑鳩",
+          "color": "#5a4a12",
+          "characters": [
+            "c_umayado_no_ouji",
+            "c_ono_no_imoko"
+          ]
+        },
+        {
+          "id": "e_tennouki_kokki",
+          "year": 620,
+          "title": "『天皇記』『国記』、編纂",
+          "category": "episode",
+          "location": "飛鳥",
+          "color": "#5a4a12",
+          "characters": [
+            "c_umayado_no_ouji",
+            "c_soga_no_umako"
+          ]
+        },
+        {
+          "id": "e_umayado_death",
+          "year": 622,
+          "title": "厩戸皇子、没",
+          "category": "death",
+          "location": "斑鳩宮",
+          "color": "#5a4a12",
+          "characters": [
+            "c_umayado_no_ouji"
+          ]
+        },
         {
           "id": "e_isshi_incident",
           "year": 645,
@@ -8119,6 +8763,34 @@
         }
       ],
       "characters": [
+        {
+          "id": "c_suiko_tennou",
+          "name": "推古天皇",
+          "reading": "すいこてんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_umayado_no_ouji",
+          "name": "厩戸皇子（聖徳太子）",
+          "reading": "うまやどのおうじ",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_soga_no_umako",
+          "name": "蘇我馬子",
+          "reading": "そがのうまこ",
+          "faction": "soga",
+          "field": "governance"
+        },
+        {
+          "id": "c_ono_no_imoko",
+          "name": "小野妹子",
+          "reading": "おののいもこ",
+          "faction": "court",
+          "field": "administration"
+        },
         {
           "id": "c_soga_no_iruka",
           "name": "蘇我入鹿",

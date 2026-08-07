@@ -73,10 +73,19 @@
       "subProjectDir": "three-kingdoms"
     },
     {
+      "id": "wakoku",
+      "name": "邪馬台国と倭の五王",
+      "region": "japan",
+      "startYear": -100,
+      "endYear": 592,
+      "dataFile": "timelines/wakoku.json",
+      "subProjectDir": "wakoku"
+    },
+    {
       "id": "asuka-nara",
       "name": "律令国家の成立",
       "region": "japan",
-      "startYear": 645,
+      "startYear": 593,
       "endYear": 802,
       "dataFile": "timelines/asuka-nara.json",
       "subProjectDir": "asuka-nara"

@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "邪馬台国と倭の五王 史実クロニクルタイムライン (前1世紀頃〜592年)",
+    "description": "倭人が百余国に分立していた時代から、奴国王の金印、倭国大乱と卑弥呼の共立、魏との交渉と「親魏倭王」の称号、空白の四世紀、倭の五王による中国南朝への朝貢外交、そして仏教公伝・丁未の乱・崇峻天皇暗殺に至るまで。中国側の史書に記録された断片的な情報だけが頼りの、日本古代史最大の謎に満ちた時代をインタラクティブなタイムラインで体験。",
+    "headerIcon": "🪞",
+    "headerTitle": "邪馬台国と倭の五王",
+    "headerSubtitle": "前1世紀頃〜592年",
+    "searchPlaceholder": "🔍 出来事・人物を検索…",
+    "mapTitleIcon": "🗾",
+    "mapTitleLabel": "勢力図",
+    "characterTitleLabel": "別名",
+    "descLabel": "📖 史実の記録",
+    "charDescLabel": "📖 人物伝",
+    "relatedCharsLabel": "👥 関連人物（クリックで詳細）",
+    "relatedEventsLabel": "📅 関連する出来事（クリックで詳細）",
+    "triviaLabel": "📜 補足・豆知識",
+    "layoutStyle": "rail",
+    "mapLayout": [
+      [null, "izumo", null, null],
+      ["kyushu_north", "kibi", "kawachi", "yamato"],
+      ["kyushu_south", null, null, null]
+    ]
+  },
+  "eraPhases": [
+    { "id": 1, "name": "第一章：倭の百余国と金印", "period": "前1世紀頃 〜 107年", "startYear": -100, "endYear": 107 },
+    { "id": 2, "name": "第二章：倭国大乱と卑弥呼の共立", "period": "2世紀後半 〜 239年", "startYear": 150, "endYear": 239 },
+    { "id": 3, "name": "第三章：魏との交渉と卑弥呼の死", "period": "240 〜 266年", "startYear": 240, "endYear": 266 },
+    { "id": 4, "name": "第四章：空白の四世紀", "period": "266 〜 390年頃", "startYear": 266, "endYear": 390 },
+    { "id": 5, "name": "第五章：倭の五王と朝鮮半島", "period": "391 〜 502年", "startYear": 391, "endYear": 502 },
+    { "id": 6, "name": "第六章：ヤマト政権の動揺と大陸文化", "period": "512 〜 592年", "startYear": 512, "endYear": 592 }
+  ],
+  "factions": {
+    "wa": { "id": "wa", "name": "倭", "color": "#6a4a2a", "colorLight": "#a8845a" },
+    "yamatai": { "id": "yamatai", "name": "邪馬台国", "color": "#5a2a6a", "colorLight": "#9a5ac0" },
+    "kuna": { "id": "kuna", "name": "狗奴国", "color": "#8a3a1a", "colorLight": "#c86a3a" },
+    "soga": { "id": "soga", "name": "蘇我氏", "color": "#2a4a2a", "colorLight": "#6a9a5a" },
+    "mononobe": { "id": "mononobe", "name": "物部氏", "color": "#3a3a5a", "colorLight": "#7a7ab0" },
+    "han": { "id": "han", "name": "漢", "color": "#8B1A1A", "colorLight": "#CD5C5C" },
+    "wei": { "id": "wei", "name": "魏", "color": "#2a4a78", "colorLight": "#4a7ac8" },
+    "jin": { "id": "jin", "name": "晋", "color": "#7a5a1a", "colorLight": "#bba844" },
+    "song": { "id": "song", "name": "宋（南朝）", "color": "#7a2a4a", "colorLight": "#b85a80" },
+    "liang": { "id": "liang", "name": "梁", "color": "#5a1a4a", "colorLight": "#9a4a80" },
+    "goguryeo": { "id": "goguryeo", "name": "高句麗", "color": "#1a5a3a", "colorLight": "#4a9a6a" },
+    "baekje": { "id": "baekje", "name": "百済", "color": "#8a6a2a", "colorLight": "#c8a858" },
+    "silla": { "id": "silla", "name": "新羅", "color": "#2a4a6a", "colorLight": "#5a8ac8" },
+    "other": { "id": "other", "name": "その他", "color": "#4a4a4a", "colorLight": "#9a9a9a" }
+  },
+  "categories": {
+    "battle": { "id": "battle", "name": "合戦", "icon": "⚔️" },
+    "politics": { "id": "politics", "name": "政変", "icon": "👑" },
+    "episode": { "id": "episode", "name": "逸話", "icon": "📜" },
+    "death": { "id": "death", "name": "死没", "icon": "💀" }
+  },
+  "characters": [
+    { "id": "c_king_of_na", "name": "奴国王", "reading": "なこくおう", "faction": "wa", "role": "奴国王", "life": "生没年不詳", "field": "governance", "description": "北部九州にあった奴国の王。後漢の光武帝に使者を送り、皇帝から倭の国王であることを認める金印「漢委奴国王」を授かった。この金印は江戸時代の1784年、志賀島（現・福岡県）で偶然発見され、中国史書の記述を裏付ける物証となった。", "historyTrivia": "金印の実物は国宝に指定され福岡市博物館に所蔵されている。農民が水田の溝の中から発見したと伝わる出土の逸話も含め、文献史料と考古遺物が直接結びつく稀有な例である。" },
+    { "id": "c_suisho", "name": "帥升", "reading": "すいしょう", "faction": "wa", "role": "倭国王", "life": "生没年不詳", "field": "governance", "description": "『後漢書』に記録される倭国王。安帝に使者を送り、生口（奴隷ないし捕虜とされる人々）160人を献上したと伝わる。名が中国史書に記録された最初期の倭国の代表者であり、奴国王より広い「倭国王」を称した点で注目される。" },
+    { "id": "c_himiko", "name": "卑弥呼", "reading": "ひみこ", "faction": "yamatai", "role": "邪馬台国の女王", "life": "生没年不詳（3世紀）", "field": "governance", "description": "倭国大乱を鎮めるため諸国から共立された女王。鬼道（呪術的な祭祀）を用いて人心を治め、弟が政務を補佐したと『魏志倭人伝』は伝える。239年に魏へ使者を送り「親魏倭王」の称号と金印紫綬、銅鏡百枚を授かった。", "historyTrivia": "『日本書紀』の神功皇后の記事には卑弥呼を意識したとみられる編年操作があるとされ、江戸時代以来「卑弥呼＝神功皇后」説が唱えられてきた。ただし神功皇后は考古学的実在を確認できない伝説的人物であり、この同一視には否定的な見方が強い。邪馬台国の所在地についても畿内説・九州説の論争が今なお決着していない。" },
+    { "id": "c_nashime", "name": "難升米", "reading": "なしめ", "faction": "yamatai", "role": "大夫（対魏外交の使者）", "life": "生没年不詳", "field": "administration", "description": "卑弥呼の命を受け239年に帯方郡を経て魏の都・洛陽に赴いた使者。皇帝・曹叡から「率善中郎将」の位を授かり、その後も243年・245年と繰り返し魏との交渉窓口を務め、軍の指揮権を象徴する黄色い旗「黄幢」を賜った。" },
+    { "id": "c_caorui", "name": "曹叡", "reading": "ソウエイ", "title": "元仲（ゲンチュウ）", "faction": "wei", "field": "governance", "role": "君主", "life": "204-239", "description": "魏の第二代皇帝（明帝）。聡明で諸葛亮の北伐を的確に防ぎ、呉の侵攻も退けた。しかし晩年は大規模な宮殿建設に溺れ、36歳で早世。幼帝・曹芳の後見を曹爽と司馬懿に託す遺詔を残したが、これが魏の実権を巡る争いの火種となった。", "historyTrivia": "正史では「沈毅断識、任心而行（沈着にして毅く、自らの判断で行動した）」と評される有能な君主。239年に倭の卑弥呼へ「親魏倭王」の称号を授けたのも、その治世の出来事である。" },
+    { "id": "c_himikoko", "name": "卑弥弓呼", "reading": "ひみくこ", "faction": "kuna", "role": "狗奴国王", "life": "生没年不詳", "field": "governance", "description": "邪馬台国と対立した狗奴国の王。『魏志倭人伝』には卑弥呼との間が「素より不和」とあり、247年頃には両国の抗争が魏に報告されるほど激化した。狗奴国の所在地も邪馬台国同様に確定していない。" },
+    { "id": "c_zhangzheng", "name": "張政", "reading": "ちょうせい", "faction": "wei", "role": "魏の帯方郡使", "life": "生没年不詳", "field": "administration", "description": "狗奴国との抗争が激化した247年頃、魏から帯方郡を経て倭国へ派遣された使者。詔書と黄幢を難升米にもたらし、倭国の内紛に介入した。卑弥呼の死後の混乱を経て台与が擁立される場面にも立ち会ったとされる。" },
+    { "id": "c_toyo", "name": "台与（壱与）", "reading": "とよ（いよ）", "faction": "yamatai", "role": "邪馬台国の女王", "life": "生没年不詳（当時13歳）", "field": "governance", "description": "卑弥呼の死後に男王が立ったが国が治まらず、卑弥呼の宗女（一族の娘）である13歳の台与が新たな女王に共立され、混乱を収めた。266年には晋（西晋）に使者を送っており、これが中国史書に現れる倭国最後の記録となる。" },
+    { "id": "c_sima_yan", "name": "司馬炎", "reading": "シバエン", "title": "安世（アンセイ）", "faction": "jin", "field": "governance", "role": "君主", "life": "236-290", "description": "晋の初代皇帝（武帝）。280年に呉を滅ぼし三国を統一。杜預の「破竹の勢い」で長江を下った。266年、即位間もない頃に倭の台与から遣使を受けている。" },
+    { "id": "c_gwanggaeto", "name": "好太王（広開土王）", "reading": "こうたいおう", "faction": "goguryeo", "role": "高句麗第19代王", "life": "374-412", "field": "governance", "description": "高句麗の全盛期を築いた王。死後、子の長寿王が建てた「好太王碑」（現・中国吉林省集安）には、391年頃倭が海を渡って百済・新羅と結んで高句麗と交戦したとする記述があり、倭の朝鮮半島への軍事介入を伝える現存最古級の同時代金石文として重視される。", "historyTrivia": "碑文の一部には摩滅・改変の可能性が指摘され、特に倭の軍事行動をめぐる釈読は近代以降の日韓の歴史認識とも絡み、解釈に論争がある。" },
+    { "id": "c_san", "name": "倭王讃", "reading": "わおうさん", "faction": "wa", "role": "倭国王", "life": "生没年不詳", "field": "governance", "description": "『宋書』倭国伝に名の残る「倭の五王」最初の王。413年に東晋へ、421年以降は宋へと繰り返し使者を送り、朝貢を通じて中国王朝の権威を後ろ盾に倭国内および朝鮮半島南部での立場を強めようとした。", "historyTrivia": "讃を『日本書紀』のどの天皇に比定するかは仁徳天皇説・履中天皇説などがあり定説がない。倭の五王と記紀の天皇系譜を直接対応させることの難しさを象徴する事例である。" },
+    { "id": "c_chin", "name": "倭王珍", "reading": "わおうちん", "faction": "wa", "role": "倭国王", "life": "生没年不詳", "field": "governance", "description": "讃の跡を継いだ倭王。438年に宋へ使者を送り「安東将軍倭国王」の称号を授かった。あわせて倭・百済・新羅・任那・秦韓・慕韓の軍事指揮権を自称して宋に承認を求めたが、実際に認められたのは倭国王の称号のみだった。" },
+    { "id": "c_sei", "name": "倭王済", "reading": "わおうせい", "faction": "wa", "role": "倭国王", "life": "生没年不詳", "field": "governance", "description": "443年・451年と宋へ使者を送った倭王。451年には珍が得られなかった朝鮮半島南部諸国に対する軍事指揮権（使持節都督倭・新羅・任那・加羅・秦韓・慕韓六国諸軍事）を宋から承認され、倭の五王の中で最も広い権威を対外的に認められた。" },
+    { "id": "c_kou", "name": "倭王興", "reading": "わおうこう", "faction": "wa", "role": "倭国王", "life": "生没年不詳", "field": "governance", "description": "済の跡を継ぎ462年に宋へ使者を送った倭王。在位期間は短く事績についての記録は乏しいが、倭の五王による対中国朝貢を絶やさず次代の武へとつないだ。" },
+    { "id": "c_bu", "name": "倭王武", "reading": "わおうぶ", "faction": "wa", "role": "倭国王", "life": "生没年不詳", "field": "governance", "description": "倭の五王最後の王。478年に宋へ送った上表文には「東は毛人を征すること五十五国、西は衆夷を服すること六十六国、渡りて海北を平ぐること九十五国」と自らの武功を誇る一節があり、倭国内の統一の広がりを示す一次史料として重視される。502年には南朝斉に代わった梁からも征東将軍の号を受けた。", "historyTrivia": "武は雄略天皇に比定する説が有力視されており、倭の五王の中では比較的比定の合意が得やすい例とされる（それでも確定ではない）。埼玉稲荷山古墳出土鉄剣の銘文「獲加多支鹵大王（ワカタケル大王）」を雄略天皇を指すとする説と結びつけ、傍証とされることがある。" },
+    { "id": "c_otomo_no_kanamura", "name": "大伴金村", "reading": "おおとものかなむら", "faction": "wa", "role": "大連", "life": "生没年不詳", "field": "administration", "description": "大伴氏の当主として長く朝廷の軍事・外交を主導した大連。512年、百済からの要請を受けて任那四県を割譲する決定に関わったが、この決定は後の任那の衰退を招いたとして非難を浴び、失脚の一因となった。" },
+    { "id": "c_iwai", "name": "筑紫君磐井", "reading": "つくしのきみいわい", "faction": "other", "role": "筑紫の豪族", "life": "?-528", "field": "military", "description": "北部九州に勢力を持った有力豪族。ヤマト政権による新羅出兵の後方支援に反発し、新羅と結んで大規模な反乱を起こした（磐井の乱）。九州の交通の要衝を掌握し、ヤマト政権の朝鮮半島政策を一時的に頓挫させるほどの勢力を誇った。" },
+    { "id": "c_mononobe_no_arakahi", "name": "物部麁鹿火", "reading": "もののべのあらかひ", "faction": "mononobe", "role": "大連", "life": "?-536", "field": "military", "description": "物部氏の当主として磐井の乱の鎮圧を託された大連。1年以上に及ぶ戦いの末、528年に磐井を討ち取り反乱を平定した。この功績により物部氏はヤマト政権内での軍事的地位を一層強めることになる。" },
+    { "id": "c_seongmyeong", "name": "聖明王", "reading": "せいめいおう", "faction": "baekje", "role": "百済第26代王", "life": "?-554", "field": "governance", "description": "百済の王。ヤマト政権との友好関係を重視し、仏像・経典を倭国に贈って仏教を公式に伝えたとされる（仏教公伝）。伝来年は『日本書紀』が552年、『上宮聖徳法王帝説』等が538年とし、確定していない。" },
+    { "id": "c_jinheung", "name": "真興王", "reading": "しんこうおう", "faction": "silla", "role": "新羅第24代王", "life": "534-576", "field": "governance", "description": "新羅の勢力拡大を主導した王。加耶（任那）諸国を次々に併合し、562年には最後まで残っていた大加耶を滅ぼして「任那日本府」と呼ばれた倭の勢力拠点を朝鮮半島から一掃した。" },
+    { "id": "c_soga_no_umako", "name": "蘇我馬子", "reading": "そがのうまこ", "faction": "soga", "role": "大臣", "life": "551?-626", "field": "governance", "description": "蘇我稲目の子で、崇仏派の中心として排仏派の物部守屋と対立した。587年の丁未の乱で守屋を滅ぼして蘇我氏の権勢を確立し、592年には崇峻天皇の暗殺を主導して推古天皇を擁立、以後は推古天皇・厩戸皇子と共に朝廷を主導する。", "historyTrivia": "自らの意に反発した崇峻天皇を臣下でありながら暗殺するという前代未聞の事件を起こしながら、その後も30年以上にわたり実権を保持し続けた。この時代の朝廷における蘇我氏の権力の大きさを象徴する人物である。" },
+    { "id": "c_mononobe_no_moriya", "name": "物部守屋", "reading": "もののべのもりや", "faction": "mononobe", "role": "大連", "life": "?-587", "field": "military", "description": "物部麁鹿火の系譜を継ぐ物部氏当主で、排仏派の中心人物として崇仏派の蘇我馬子と激しく対立した。587年、用明天皇の崩御後の後継争いも絡んで蘇我氏側の軍勢に攻められ、河内の本拠地で戦死した。この敗北により物部氏は没落する。" },
+    { "id": "c_sushun_tennou", "name": "崇峻天皇", "reading": "すしゅんてんのう", "faction": "wa", "role": "第32代天皇", "life": "?-592", "field": "governance", "description": "丁未の乱後、蘇我馬子に擁立されて即位した天皇。しかし次第に馬子の専横に不満を強め、それが漏れ伝わったことから、馬子の命を受けた東漢直駒によって暗殺された。臣下による天皇暗殺という日本史上唯一の事件であり、以後は馬子の推す推古天皇が即位する。" },
+    { "id": "c_guang_wu_di", "name": "光武帝", "reading": "コウブテイ", "title": "劉秀", "faction": "han", "field": "governance", "role": "皇帝・後漢建国者", "life": "BC6-AD57", "description": "後漢の建国者。前漢景帝の末裔だが長安から遠く離れた南陽の一農民にすぎなかった。新末の混乱で兄・劉縯と共に挙兵。昆陽の戦い（AD23年）で新の大軍42万を数千の兵で破る奇跡的大勝利を収めた。その後は河北を平定し、AD25年に帝位につき洛陽に都を定めた。建国後は「柔道で天下を治む」を旨とし、奴婢解放令を出し、度田（土地調査）を実施して豪族の土地集積を抑制。武力と徳治を兼ね備えた中興の明主。", "historyTrivia": "「仕官するなら執金吾、娶るなら陰麗華」は劉秀が学生時代に語った志。後に両方とも実現した。晩年の57年には倭の奴国からの朝貢も受けている。" }
+  ],
+  "events": [
+    { "id": "e_wa_hundred_states", "phaseId": 1, "year": -100, "title": "倭人、百余国に分立", "category": "politics", "characters": [], "location": "倭国（列島各地、所在地は諸説あり）", "certainty": "approximate", "description": "『漢書』地理志に「夫れ楽浪海中に倭人あり、分れて百余国と為る」とあり、紀元前1世紀頃の倭（日本列島）には統一的な政治権力がなく、多数の小国が分立していたことが中国側の記録から知られる。倭に関する現存最古の記述である。" },
+    { "id": "e_nakoku_gold_seal", "phaseId": 1, "year": 57, "title": "奴国王、後漢に遣使し金印を授かる", "category": "politics", "characters": ["c_king_of_na", "c_guang_wu_di"], "location": "奴国（北部九州）", "description": "『後漢書』東夷伝によれば、倭の奴国が後漢に朝貢し、光武帝から印綬を賜った。この金印とみられる「漢委奴国王」と刻まれた金印が、江戸時代の1784年に筑前国志賀島（現・福岡市）で発見され、文献の記述を裏付ける物証となった。" },
+    { "id": "e_suisho_tribute", "phaseId": 1, "year": 107, "title": "倭国王帥升、生口160人を献上", "category": "politics", "characters": ["c_suisho"], "location": "倭国", "description": "『後漢書』は、倭国王帥升らが安帝に使者を送り、生口160人を献上して謁見を願い出たと伝える。個別の国ではなく「倭国王」を名乗る勢力が中国に記録された最初期の例であり、倭における広域的な政治勢力の形成を示唆する。" },
+    { "id": "e_wa_great_disturbance", "phaseId": 2, "year": 180, "title": "倭国大乱", "category": "battle", "characters": [], "location": "倭国各地", "certainty": "approximate", "description": "『魏志倭人伝』は、倭国はもと男子を王としていたが、2世紀後半に大乱が起こり、諸国が何年にもわたって互いに攻め合ったと伝える。この混乱を収拾するため、諸国が共同で一人の女王を立てることで合意したのが卑弥呼であった。" },
+    { "id": "e_himiko_election", "phaseId": 2, "year": 190, "title": "卑弥呼、共立される", "category": "politics", "characters": ["c_himiko"], "location": "邪馬台国（所在地は畿内説・九州説あり）", "certainty": "approximate", "description": "倭国大乱を収めるため、諸国は一人の女子を王に共立した。それが卑弥呼である。鬼道と呼ばれる呪術的な祭祀によって人々を心服させ、弟が実務を助けて政治を執り行ったと伝わる。共立された正確な年は記録がなく不明である。" },
+    { "id": "e_himiko_wei_mission", "phaseId": 2, "year": 239, "title": "難升米を魏に派遣、「親魏倭王」の称号を授かる", "category": "politics", "characters": ["c_himiko", "c_nashime", "c_caorui"], "location": "帯方郡→洛陽", "description": "卑弥呼は大夫・難升米らを帯方郡を経て魏の都・洛陽へ派遣した。魏の皇帝・曹叡はこれを歓迎し、卑弥呼に「親魏倭王」の称号と金印紫綬、そして銅鏡百枚などを授ける詔書を発した。倭国が中国王朝から公式に王として認められた画期的な出来事である。", "historyTrivia": "この時授けられた「銅鏡百枚」は、邪馬台国の所在地論争において畿内各地の古墳から出土する三角縁神獣鏡と結びつけて論じられることが多いが、この鏡が果たして卑弥呼への下賜鏡そのものかは決着していない。" },
+    { "id": "e_wei_envoy_visit", "phaseId": 3, "year": 240, "title": "魏の使者、倭国を訪問", "category": "episode", "characters": ["c_himiko"], "location": "邪馬台国", "description": "魏は帯方郡太守の使者を倭国へ派遣し、詔書と印綬を卑弥呼のもとへ届けた。中国側の使者が実際に倭国の地を踏んだことを示す記録であり、単なる書簡のやり取りにとどまらない直接的な交渉が行われていたことがわかる。" },
+    { "id": "e_wei_missions_continue", "phaseId": 3, "year": 243, "title": "遣使続く、難升米に黄幢が贈られる", "category": "politics", "characters": ["c_nashime"], "location": "洛陽", "description": "243年・245年と倭は魏への遣使を重ねた。魏は難升米に対し、軍の指揮権を象徴する黄色い旗「黄幢」を授けている。魏が難升米を倭国内の軍事的な実力者として認識し、対狗奴国政策の窓口として重視していたことを示す。" },
+    { "id": "e_kuna_conflict", "phaseId": 3, "year": 247, "title": "狗奴国との抗争、張政の派遣", "category": "battle", "characters": ["c_himiko", "c_himikoko", "c_zhangzheng"], "location": "邪馬台国・狗奴国", "certainty": "approximate", "description": "卑弥呼と、南方に位置し以前から不和であった狗奴国の王・卑弥弓呼との間で軍事衝突が起きた。倭国は帯方郡に窮状を訴え、魏は張政を派遣して詔書と黄幢をもたらし、事態の収拾に乗り出した。" },
+    { "id": "e_himiko_death", "phaseId": 3, "year": 248, "title": "卑弥呼、死去", "category": "death", "characters": ["c_himiko"], "location": "邪馬台国", "certainty": "approximate", "description": "卑弥呼が没した。『魏志倭人伝』は、直径百余歩（約150メートル）にも及ぶ大きな塚が築かれ、奴婢百余人が殉葬されたと伝える。狗奴国との抗争のさなかの死であり、倭国は再び混乱に陥ることになった。" },
+    { "id": "e_toyo_enthronement", "phaseId": 3, "year": 249, "title": "男王擁立の失敗と台与の即位", "category": "politics", "characters": ["c_toyo", "c_zhangzheng"], "location": "邪馬台国", "certainty": "approximate", "description": "卑弥呼の死後、男王が立てられたが国内は服さず、千余人が殺し合う混乱が続いた。そこで卑弥呼の一族の娘で当時13歳の台与（壱与）が新たな女王に共立されると、ようやく国は治まった。この収拾には張政の関与もあったとされる。" },
+    { "id": "e_toyo_jin_mission", "phaseId": 3, "year": 266, "title": "台与、晋に遣使", "category": "politics", "characters": ["c_toyo", "c_sima_yan"], "location": "洛陽", "description": "台与は魏に代わって中国を統一した晋（西晋）の武帝・司馬炎のもとへ使者を送った。これが中国の史書に記録される倭国最後の遣使であり、以後およそ130年にわたり、中国史書から倭に関する記述が姿を消すことになる。" },
+    { "id": "e_makimuku_formation", "phaseId": 4, "year": 280, "title": "纒向遺跡とヤマト政権の形成（推定）", "category": "episode", "characters": [], "location": "大和（纒向）", "certainty": "approximate", "description": "台与の遣使を最後に中国史書から倭の記録が途絶える一方、大和（現・奈良県桜井市）の纒向遺跡では、この頃を中心に大規模な居館跡や日本最古級の前方後円墳（箸墓古墳など）が築かれ始める。中国史書の空白を埋める直接の文献はなく、考古学的な物証から広域的な政治連合＝ヤマト政権の形成が進んだと推定されている。" },
+    { "id": "e_kofun_spread", "phaseId": 4, "year": 350, "title": "前方後円墳の広がり", "category": "episode", "characters": [], "location": "列島各地", "certainty": "approximate", "description": "4世紀を通じて、纒向を起源とする前方後円墳の様式が近畿地方から東は関東、西は九州まで急速に広がっていった。同じ形式の墓を築く政治連合への参加が列島各地に波及した現象とみられ、次の「倭の五王」の時代に朝鮮半島へ軍事介入するだけの広域的な統治力が、この空白期間のうちに形成されたことをうかがわせる。" },
+    { "id": "e_koutaiou_stele", "phaseId": 5, "year": 391, "title": "好太王碑に倭の軍事行動の記述", "category": "battle", "characters": ["c_gwanggaeto"], "location": "朝鮮半島", "certainty": "approximate", "description": "高句麗の好太王の事績を記す好太王碑には、391年頃に倭が海を渡って百済・新羅と結び高句麗と交戦したとする記述がある。約130年に及んだ中国史書の空白の後、倭が朝鮮半島情勢に軍事的に関与する勢力として再び史料に姿を現す最初の同時代記録である。" },
+    { "id": "e_san_song_mission", "phaseId": 5, "year": 413, "title": "倭王讃、東晋に遣使", "category": "politics", "characters": ["c_san"], "location": "建康（東晋）", "description": "倭王讃が東晋に使者を送った。台与の266年の遣使から実に147年ぶりとなる、中国史書上の倭国の再登場である。以後、讃・珍・済・興・武と続く「倭の五王」による中国南朝への朝貢外交が本格的に始まる。" },
+    { "id": "e_san_missions_continue", "phaseId": 5, "year": 421, "title": "讃、宋にも遣使を重ねる（421・425・430年）", "category": "politics", "characters": ["c_san"], "location": "建康（宋）", "description": "東晋に代わって中国江南を支配した宋（劉宋）に対しても、讃は421年・425年・430年と繰り返し使者を送った。中国王朝の権威を後ろ盾とすることで、倭国内および朝鮮半島南部における立場を強化しようとする外交姿勢が続いた。" },
+    { "id": "e_chin_song_mission", "phaseId": 5, "year": 438, "title": "珍、宋に遣使、「安東将軍倭国王」の称号", "category": "politics", "characters": ["c_chin"], "location": "建康（宋）", "description": "讃の跡を継いだ珍が宋に使者を送り、「安東将軍倭国王」の称号を授かった。あわせて倭・百済・新羅・任那・秦韓・慕韓の六国に対する軍事指揮権も自称して承認を求めたが、宋が正式に認めたのは倭国王の号のみであった。" },
+    { "id": "e_sei_missions", "phaseId": 5, "year": 443, "title": "済の遣使（443・451年）", "category": "politics", "characters": ["c_sei"], "location": "建康（宋）", "description": "済が443年に宋へ使者を送り安東将軍倭国王に叙せられた。451年には再び使者を送り、珍が得られなかった朝鮮半島南部諸国への軍事指揮権（使持節都督倭・新羅・任那・加羅・秦韓・慕韓六国諸軍事）の承認を得て、倭の五王の中で最も広範な対外的地位を確立した。" },
+    { "id": "e_kou_mission", "phaseId": 5, "year": 462, "title": "興の遣使", "category": "politics", "characters": ["c_kou"], "location": "建康（宋）", "description": "済の跡を継いだ興が宋に使者を送り、安東将軍倭国王に叙せられた。事績を伝える史料は乏しいが、五王による対中国朝貢を絶やすことなく次代の武へと引き継いだ。" },
+    { "id": "e_bu_memorial", "phaseId": 5, "year": 478, "title": "武の上表文", "category": "episode", "characters": ["c_bu"], "location": "建康（宋）", "description": "倭王武が宋に送った上表文には「東は毛人を征すること五十五国、西は衆夷を服すること六十六国、渡りて海北を平ぐること九十五国」と、倭国内外への広範な軍事的成功を誇る文章が記されている。倭国自身の言葉で語られた統一の広がりを伝える、この時代でも稀な一次史料である。" },
+    { "id": "e_bu_general_title", "phaseId": 5, "year": 502, "title": "武、梁より征東将軍の号を受ける", "category": "politics", "characters": ["c_bu"], "location": "建康（梁）", "description": "南朝が宋から斉、そして梁へと交代する中、武は新たに成立した梁からも征東将軍の称号を受けた。これが中国史書に記録される倭の五王最後の遣使であり、以後、倭国と中国南朝との公式な外交記録は一時途絶える。" },
+    { "id": "e_mimana_cession", "phaseId": 6, "year": 512, "title": "任那四県の割譲", "category": "politics", "characters": ["c_otomo_no_kanamura"], "location": "任那（朝鮮半島南部）", "description": "百済からの要請を受け、大連・大伴金村の主導でヤマト政権は任那（加耶）の四県を百済に割譲することを決定した。当座の外交的判断であったが、この決定は後に任那の勢力が衰える一因になったとして非難され、金村失脚の伏線となる。" },
+    { "id": "e_iwai_rebellion", "phaseId": 6, "year": 527, "title": "磐井の乱", "category": "battle", "characters": ["c_iwai", "c_mononobe_no_arakahi"], "location": "筑紫（北部九州）", "description": "ヤマト政権が新羅に奪われた任那復興のため出兵しようとした際、北部九州の有力豪族・筑紫君磐井が新羅と結んでこれに反発し、大軍を阻んで反乱を起こした。ヤマト政権は大連・物部麁鹿火を将として派遣し、1年以上に及ぶ戦いの末、528年に磐井を討ち取って乱を平定した。", "historyTrivia": "磐井の墓とされる岩戸山古墳（福岡県八女市）は九州最大級の前方後円墳であり、磐井が一豪族の枠を超えた独自の勢力基盤を持っていたことをうかがわせる。" },
+    { "id": "e_buddhism_introduced", "phaseId": 6, "year": 538, "title": "仏教公伝", "category": "episode", "characters": ["c_seongmyeong"], "location": "難波／飛鳥", "certainty": "disputed", "description": "百済の聖明王が仏像・経典をヤマト政権に贈り、仏教が公式に伝えられた。崇仏派の蘇我氏と排仏派の物部氏の対立の発端となる出来事である。伝来年については『日本書紀』が552年とする一方、『上宮聖徳法王帝説』など複数の史料が538年とし、現在は538年説が有力とされるが確定していない。" },
+    { "id": "e_mimana_fall", "phaseId": 6, "year": 562, "title": "任那日本府の滅亡", "category": "politics", "characters": ["c_jinheung", "c_otomo_no_kanamura"], "location": "加耶（任那）", "description": "新羅の真興王が加耶（任那）諸国への圧迫を強め、562年に最後まで残っていた大加耶を滅ぼした。これにより「任那日本府」と呼ばれた倭のヤマト政権の朝鮮半島南部における拠点は消滅し、6世紀初頭の任那四県割譲から続いた大伴金村の対朝鮮半島外交は最終的な失敗として批判を浴びることになる。" },
+    { "id": "e_teibi_incident", "phaseId": 6, "year": 587, "title": "丁未の乱、蘇我馬子が物部守屋を滅ぼす", "category": "battle", "characters": ["c_soga_no_umako", "c_mononobe_no_moriya"], "location": "河内・渋川", "description": "仏教の受容をめぐり長年対立してきた崇仏派の蘇我馬子と排仏派の物部守屋の争いは、用明天皇の崩御後の皇位継承問題とも絡み合い、ついに武力衝突に至った。蘇我氏側は皇族・諸豪族を糾合した大軍で守屋の河内の本拠地を攻め、これを打ち破った。" },
+    { "id": "e_moriya_death", "phaseId": 6, "year": 587, "title": "物部守屋、討たれる", "category": "death", "characters": ["c_mononobe_no_moriya"], "location": "河内・渋川", "description": "自邸の朴の木に登って抗戦した物部守屋は、蘇我方の迹見赤檮が放った矢に射られて落命した。物部氏の主力はここに壊滅し、以後、蘇我氏が朝廷の実権を独占的に握る時代が始まる。" },
+    { "id": "e_sushun_assassination", "phaseId": 6, "year": 592, "title": "崇峻天皇、暗殺される", "category": "death", "characters": ["c_soga_no_umako", "c_sushun_tennou"], "location": "倉梯柴垣宮", "description": "丁未の乱後に即位した崇峻天皇は、次第に自らを擁立した蘇我馬子の専横に不満を強めていった。その不満が漏れ伝わったことを察知した馬子は、東漢直駒に命じて天皇を暗殺させた。臣下による天皇暗殺という日本史上唯一の事件であり、翌593年、馬子は推古天皇を擁立する。", "historyTrivia": "この事件を最後に、権勢を確立した蘇我馬子・推古天皇・厩戸皇子（聖徳太子）による新体制のもとで、律令国家建設への歩みが本格化していく。" }
+  ],
+  "mapSnapshots": [
+    { "year": -100, "label": "倭人、百余国に分立（前1世紀頃）", "territories": {
+      "kyushu_north": { "name": "北部九州", "faction": "other", "lord": "小国分立" },
+      "kyushu_south": { "name": "南九州", "faction": "other", "lord": "小国分立" },
+      "izumo": { "name": "出雲", "faction": "other", "lord": "小国分立" },
+      "kibi": { "name": "吉備", "faction": "other", "lord": "小国分立" },
+      "kawachi": { "name": "河内", "faction": "other", "lord": "小国分立" },
+      "yamato": { "name": "大和", "faction": "other", "lord": "小国分立" }
+    } },
+    { "year": 57, "label": "奴国、後漢より金印を授かる", "territories": {
+      "kyushu_north": { "name": "北部九州", "faction": "wa", "lord": "奴国王（漢委奴国王）" },
+      "kyushu_south": { "name": "南九州", "faction": "other", "lord": "小国分立" },
+      "izumo": { "name": "出雲", "faction": "other", "lord": "小国分立" },
+      "kibi": { "name": "吉備", "faction": "other", "lord": "小国分立" },
+      "kawachi": { "name": "河内", "faction": "other", "lord": "小国分立" },
+      "yamato": { "name": "大和", "faction": "other", "lord": "小国分立" }
+    } },
+    { "year": 239, "label": "卑弥呼「親魏倭王」に — 邪馬台国と狗奴国の対立", "territories": {
+      "kyushu_north": { "name": "北部九州", "faction": "yamatai", "lord": "卑弥呼（邪馬台国／所在地は畿内説・九州説あり）" },
+      "kyushu_south": { "name": "南九州", "faction": "kuna", "lord": "卑弥弓呼（狗奴国王）" },
+      "izumo": { "name": "出雲", "faction": "other", "lord": "小国分立" },
+      "kibi": { "name": "吉備", "faction": "other", "lord": "小国分立" },
+      "kawachi": { "name": "河内", "faction": "other", "lord": "小国分立" },
+      "yamato": { "name": "大和", "faction": "other", "lord": "小国分立" }
+    } },
+    { "year": 266, "label": "台与、晋に遣使", "territories": {
+      "kyushu_north": { "name": "北部九州", "faction": "yamatai", "lord": "台与（邪馬台国）" },
+      "kyushu_south": { "name": "南九州", "faction": "kuna", "lord": "卑弥弓呼系（狗奴国）" },
+      "izumo": { "name": "出雲", "faction": "other", "lord": "小国分立" },
+      "kibi": { "name": "吉備", "faction": "other", "lord": "小国分立" },
+      "kawachi": { "name": "河内", "faction": "other", "lord": "小国分立" },
+      "yamato": { "name": "大和", "faction": "other", "lord": "小国分立" }
+    } },
+    { "year": 390, "label": "ヤマト政権の形成（推定）— 空白の四世紀を経て", "territories": {
+      "kyushu_north": { "name": "北部九州", "faction": "wa", "lord": "北部九州（服属）" },
+      "kyushu_south": { "name": "南九州", "faction": "wa", "lord": "旧・狗奴国系（服属）" },
+      "izumo": { "name": "出雲", "faction": "wa", "lord": "出雲（服属）" },
+      "kibi": { "name": "吉備", "faction": "wa", "lord": "吉備（服属）" },
+      "kawachi": { "name": "河内", "faction": "wa", "lord": "河内の有力豪族（服属）" },
+      "yamato": { "name": "大和", "faction": "wa", "lord": "ヤマト政権（中心勢力）" }
+    } },
+    { "year": 478, "label": "倭王武の上表文 — 倭の五王の全盛", "territories": {
+      "kyushu_north": { "name": "北部九州", "faction": "wa", "lord": "ヤマト政権に服属" },
+      "kyushu_south": { "name": "南九州", "faction": "wa", "lord": "ヤマト政権に服属" },
+      "izumo": { "name": "出雲", "faction": "wa", "lord": "ヤマト政権に服属" },
+      "kibi": { "name": "吉備", "faction": "wa", "lord": "ヤマト政権に服属" },
+      "kawachi": { "name": "河内", "faction": "wa", "lord": "ヤマト政権に服属" },
+      "yamato": { "name": "大和", "faction": "wa", "lord": "倭王武" }
+    } },
+    { "year": 587, "label": "丁未の乱 — 蘇我氏、物部氏と激突", "territories": {
+      "kyushu_north": { "name": "北部九州", "faction": "wa", "lord": "地方豪族（ヤマト政権に服属）" },
+      "kyushu_south": { "name": "南九州", "faction": "wa", "lord": "地方豪族（ヤマト政権に服属）" },
+      "izumo": { "name": "出雲", "faction": "wa", "lord": "地方豪族（ヤマト政権に服属）" },
+      "kibi": { "name": "吉備", "faction": "wa", "lord": "地方豪族（ヤマト政権に服属）" },
+      "kawachi": { "name": "河内", "faction": "mononobe", "lord": "物部守屋（排仏派、本拠地）" },
+      "yamato": { "name": "大和", "faction": "soga", "lord": "蘇我馬子（崇仏派）" }
+    } },
+    { "year": 592, "label": "崇峻天皇暗殺 — 蘇我氏の権勢確立", "territories": {
+      "kyushu_north": { "name": "北部九州", "faction": "wa", "lord": "地方豪族（ヤマト政権に服属）" },
+      "kyushu_south": { "name": "南九州", "faction": "wa", "lord": "地方豪族（ヤマト政権に服属）" },
+      "izumo": { "name": "出雲", "faction": "wa", "lord": "地方豪族（ヤマト政権に服属）" },
+      "kibi": { "name": "吉備", "faction": "wa", "lord": "地方豪族（ヤマト政権に服属）" },
+      "kawachi": { "name": "河内", "faction": "soga", "lord": "物部氏、没落（蘇我氏が接収）" },
+      "yamato": { "name": "大和", "faction": "soga", "lord": "蘇我馬子（次代・推古天皇の後見）" }
+    } }
+  ],
+  "wikiLinks": {
+    "characters": {
+      "c_himiko": "卑弥呼",
+      "c_toyo": "台与",
+      "c_king_of_na": "漢委奴国王",
+      "c_caorui": "曹叡",
+      "c_sima_yan": "司馬炎",
+      "c_guang_wu_di": "光武帝",
+      "c_gwanggaeto": "広開土王",
+      "c_seongmyeong": "聖明王",
+      "c_jinheung": "真興王",
+      "c_soga_no_umako": "蘇我馬子",
+      "c_mononobe_no_moriya": "物部守屋",
+      "c_sushun_tennou": "崇峻天皇",
+      "c_iwai": "筑紫君磐井",
+      "c_otomo_no_kanamura": "大伴金村"
+    },
+    "events": {
+      "e_nakoku_gold_seal": "漢委奴国王",
+      "e_himiko_wei_mission": "魏志倭人伝",
+      "e_koutaiou_stele": "広開土王碑",
+      "e_iwai_rebellion": "磐井の乱",
+      "e_buddhism_introduced": "仏教公伝",
+      "e_teibi_incident": "丁未の乱"
+    }
+  }
+}
