@@ -1,0 +1,6 @@
+/* 北条氏の台頭と承久の乱 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#0f1216;--surface:#171c22;--surface-2:#1f262e;--surface-3:#29323c;
+  --border-subtle:rgba(120,140,160,.12);--text:#dde3e8;--text-dim:#8a97a3;
+  --gold:#5b8fd4;--gold-dim:rgba(91,143,212,.18);
+}

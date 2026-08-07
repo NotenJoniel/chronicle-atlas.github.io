@@ -46,6 +46,15 @@
       "subProjectDir": "genpei-war"
     },
     {
+      "id": "hojo-rise",
+      "name": "北条氏の台頭と承久の乱",
+      "region": "japan",
+      "startYear": 1199,
+      "endYear": 1247,
+      "dataFile": "timelines/hojo-rise.json",
+      "subProjectDir": "hojo-rise"
+    },
+    {
       "id": "sengoku-japan",
       "name": "日本の戦国時代",
       "region": "japan",
