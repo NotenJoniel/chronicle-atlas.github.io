@@ -1,0 +1,6 @@
+/* アケメネス朝ペルシア — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#130f1a;--surface:#1d1626;--surface-2:#271d32;--surface-3:#32263f;
+  --border-subtle:rgba(190,150,210,.15);--text:#e8e0ec;--text-dim:#a493ac;
+  --gold:#b8862e;--gold-dim:rgba(184,134,46,.2);
+}

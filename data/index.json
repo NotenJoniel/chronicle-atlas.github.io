@@ -19,6 +19,15 @@
       "subProjectDir": "ancient-egypt"
     },
     {
+      "id": "persia",
+      "name": "アケメネス朝ペルシア",
+      "region": "others",
+      "startYear": -559,
+      "endYear": -330,
+      "dataFile": "timelines/persia.json",
+      "subProjectDir": "persia"
+    },
+    {
       "id": "spring-autumn",
       "name": "春秋時代",
       "region": "china",
