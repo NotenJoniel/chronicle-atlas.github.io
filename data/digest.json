@@ -2200,6 +2200,861 @@
         }
       }
     },
+    "persia": {
+      "events": [
+        {
+          "id": "e_media_rises",
+          "year": -625,
+          "title": "メディア王国の勃興・キュアクサレスによる強国化",
+          "category": "politics",
+          "location": "エクバタナ",
+          "color": "#4a5a6a",
+          "characters": [
+            "c_cyaxares"
+          ]
+        },
+        {
+          "id": "e_nineveh_fall_media",
+          "year": -612,
+          "title": "メディア、新バビロニアと結びニネヴェを攻略",
+          "category": "battle",
+          "location": "ニネヴェ",
+          "color": "#4a5a6a",
+          "characters": [
+            "c_cyaxares"
+          ]
+        },
+        {
+          "id": "e_media_lydia_eclipse",
+          "year": -585,
+          "title": "メディア・リディア戦争、日食を機に和睦",
+          "category": "episode",
+          "location": "小アジア東部",
+          "color": "#4a5a6a",
+          "characters": [
+            "c_cyaxares"
+          ]
+        },
+        {
+          "id": "e_cyrus_anshan",
+          "year": -559,
+          "title": "キュロス2世、アンシャン王として即位",
+          "category": "politics",
+          "location": "アンシャン",
+          "color": "#4a3a66",
+          "characters": [
+            "c_cyrus_ii"
+          ]
+        },
+        {
+          "id": "e_cyrus_conquers_media",
+          "year": -550,
+          "title": "キュロス2世、アステュアゲスを破りメディアを併合",
+          "category": "battle",
+          "location": "パサルガダエ",
+          "color": "#4a3a66",
+          "characters": [
+            "c_cyrus_ii",
+            "c_astyages"
+          ]
+        },
+        {
+          "id": "e_croesus_defeated",
+          "year": -546,
+          "title": "クロイソスとの戦い・リディア征服",
+          "category": "battle",
+          "location": "サルディス",
+          "color": "#4a3a66",
+          "characters": [
+            "c_cyrus_ii",
+            "c_croesus"
+          ]
+        },
+        {
+          "id": "e_babylon_conquered_persia",
+          "year": -539,
+          "title": "キュロス2世、バビロンを無血開城で征服",
+          "category": "politics",
+          "location": "バビロン",
+          "color": "#4a3a66",
+          "characters": [
+            "c_cyrus_ii"
+          ]
+        },
+        {
+          "id": "e_cyrus_cylinder",
+          "year": -538,
+          "title": "キュロスの円筒印章・ユダヤ人のエルサレム帰還を許可",
+          "category": "politics",
+          "location": "バビロン",
+          "color": "#4a3a66",
+          "characters": [
+            "c_cyrus_ii"
+          ]
+        },
+        {
+          "id": "e_cyrus_death",
+          "year": -530,
+          "title": "キュロス2世、中央アジア遠征で戦死",
+          "category": "death",
+          "location": "中央アジア（マッサゲタイ方面）",
+          "color": "#4a3a66",
+          "characters": [
+            "c_cyrus_ii"
+          ]
+        },
+        {
+          "id": "e_cambyses_accession",
+          "year": -530,
+          "title": "カンビュセス2世、即位",
+          "category": "politics",
+          "location": "パサルガダエ",
+          "color": "#4a3a66",
+          "characters": [
+            "c_cambyses_ii"
+          ]
+        },
+        {
+          "id": "e_pelusium_persia",
+          "year": -525,
+          "title": "ペルシウムの戦い・エジプト征服",
+          "category": "battle",
+          "location": "ペルシウム（デルタ東部）",
+          "color": "#4a3a66",
+          "characters": [
+            "c_cambyses_ii",
+            "c_psamtik_iii"
+          ]
+        },
+        {
+          "id": "e_psamtik_executed",
+          "year": -525,
+          "title": "プサムテク3世、処刑される",
+          "category": "death",
+          "location": "メンフィス",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_psamtik_iii"
+          ]
+        },
+        {
+          "id": "e_bardiya_death",
+          "year": -522,
+          "title": "バルディヤの謎の死",
+          "category": "death",
+          "location": "パサルガダエ",
+          "color": "#4a3a66",
+          "characters": [
+            "c_bardiya"
+          ]
+        },
+        {
+          "id": "e_cambyses_death",
+          "year": -522,
+          "title": "カンビュセス2世、帰途で急死",
+          "category": "death",
+          "location": "シリア方面",
+          "color": "#4a3a66",
+          "characters": [
+            "c_cambyses_ii"
+          ]
+        },
+        {
+          "id": "e_gaumata_usurps",
+          "year": -522,
+          "title": "ガウマータの反乱・偽バルディヤとして即位",
+          "category": "politics",
+          "location": "メディア方面",
+          "color": "#4a3a66",
+          "characters": [
+            "c_gaumata"
+          ]
+        },
+        {
+          "id": "e_darius_kills_gaumata",
+          "year": -522,
+          "title": "ダレイオス1世、ガウマータを討ち即位",
+          "category": "battle",
+          "location": "メディア方面",
+          "color": "#4a3a66",
+          "characters": [
+            "c_darius",
+            "c_gaumata"
+          ]
+        },
+        {
+          "id": "e_persian_debate",
+          "year": -522,
+          "title": "ペルシアの立憲論争",
+          "category": "episode",
+          "location": "スーサ",
+          "color": "#4a3a66",
+          "characters": [
+            "c_otanes",
+            "c_darius"
+          ]
+        },
+        {
+          "id": "e_behistun",
+          "year": -520,
+          "title": "ベヒストゥン碑文、刻まれる",
+          "category": "episode",
+          "location": "ベヒストゥン（メディア）",
+          "color": "#4a3a66",
+          "characters": [
+            "c_darius"
+          ]
+        },
+        {
+          "id": "e_satrap_system",
+          "year": -518,
+          "title": "サトラップ制の確立・帝国の州区分",
+          "category": "politics",
+          "location": "帝国全土",
+          "color": "#4a3a66",
+          "characters": [
+            "c_darius"
+          ]
+        },
+        {
+          "id": "e_persepolis_begins",
+          "year": -518,
+          "title": "ペルセポリスの建設、開始",
+          "category": "episode",
+          "location": "ペルセポリス",
+          "color": "#4a3a66",
+          "characters": [
+            "c_darius"
+          ]
+        },
+        {
+          "id": "e_royal_road",
+          "year": -515,
+          "title": "「王の道」の整備・駅伝制",
+          "category": "episode",
+          "location": "スーサ〜サルディス",
+          "color": "#4a3a66",
+          "characters": [
+            "c_darius"
+          ]
+        },
+        {
+          "id": "e_daric_coinage",
+          "year": -515,
+          "title": "ダリク金貨の鋳造・統一通貨制度",
+          "category": "episode",
+          "location": "帝国全土",
+          "color": "#4a3a66",
+          "characters": [
+            "c_darius"
+          ]
+        },
+        {
+          "id": "e_indus_conquest",
+          "year": -518,
+          "title": "インダス川流域への遠征・属州化",
+          "category": "battle",
+          "location": "インダス川流域",
+          "color": "#4a3a66",
+          "characters": [
+            "c_darius"
+          ]
+        },
+        {
+          "id": "e_atossa_influence",
+          "year": -510,
+          "title": "アトッサ、宮廷で強い影響力を持つ",
+          "category": "episode",
+          "location": "スーサ",
+          "color": "#4a3a66",
+          "characters": [
+            "c_atossa"
+          ]
+        },
+        {
+          "id": "e_zoroastrianism_kingship",
+          "year": -515,
+          "title": "アフラ・マズダー信仰と王権の結びつき",
+          "category": "episode",
+          "location": "ベヒストゥン／ペルセポリス",
+          "color": "#4a3a66",
+          "characters": [
+            "c_darius",
+            "c_zoroaster"
+          ]
+        },
+        {
+          "id": "e_scythian_campaign",
+          "year": -513,
+          "title": "ダレイオスのスキタイ遠征",
+          "category": "battle",
+          "location": "黒海北岸（スキタイ）",
+          "color": "#4a3a66",
+          "characters": [
+            "c_darius"
+          ]
+        },
+        {
+          "id": "e_darius_i_death",
+          "year": -486,
+          "title": "ダレイオス1世、死去",
+          "category": "death",
+          "location": "ペルセポリス",
+          "color": "#4a3a66",
+          "characters": [
+            "c_darius"
+          ]
+        },
+        {
+          "id": "e_ionian_revolt",
+          "year": -499,
+          "title": "イオニアの反乱、勃発",
+          "category": "battle",
+          "location": "ミレトス（イオニア）"
+        },
+        {
+          "id": "e_lade_battle",
+          "year": -494,
+          "title": "ラデの海戦・イオニアの反乱鎮圧",
+          "category": "battle",
+          "location": "ラデ島沖（ミレトス沖）"
+        },
+        {
+          "id": "e_marathon_persia",
+          "year": -490,
+          "title": "マラトンの戦い、敗北",
+          "category": "battle",
+          "location": "マラトン（アッティカ）",
+          "color": "#4a3a66",
+          "characters": [
+            "c_datis"
+          ]
+        },
+        {
+          "id": "e_xerxes_accession",
+          "year": -486,
+          "title": "クセルクセス1世、即位",
+          "category": "politics",
+          "location": "ペルセポリス",
+          "color": "#4a3a66",
+          "characters": [
+            "c_xerxes"
+          ]
+        },
+        {
+          "id": "e_thermopylae_persia",
+          "year": -480,
+          "title": "テルモピュライの戦い、突破",
+          "category": "battle",
+          "location": "テルモピュライ",
+          "color": "#4a3a66",
+          "characters": [
+            "c_xerxes"
+          ]
+        },
+        {
+          "id": "e_athens_burned",
+          "year": -480,
+          "title": "アテナイ占領・アクロポリス炎上",
+          "category": "battle",
+          "location": "アテナイ",
+          "color": "#4a3a66",
+          "characters": [
+            "c_xerxes"
+          ]
+        },
+        {
+          "id": "e_salamis_persia",
+          "year": -480,
+          "title": "サラミスの海戦、敗北",
+          "category": "battle",
+          "location": "サラミス海峡",
+          "color": "#4a3a66",
+          "characters": [
+            "c_xerxes"
+          ]
+        },
+        {
+          "id": "e_plataea_persia",
+          "year": -479,
+          "title": "プラタイアの戦い、敗北・ギリシア遠征の終焉",
+          "category": "death",
+          "location": "プラタイア（ボイオティア）",
+          "color": "#4a3a66",
+          "characters": [
+            "c_mardonius"
+          ]
+        },
+        {
+          "id": "e_persepolis_apadana",
+          "year": -472,
+          "title": "ペルセポリスの謁見殿、建設進む",
+          "category": "episode",
+          "location": "ペルセポリス",
+          "color": "#4a3a66",
+          "characters": [
+            "c_xerxes"
+          ]
+        },
+        {
+          "id": "e_herodotus_histories",
+          "year": -450,
+          "title": "ヘロドトス、『歴史』でペルシアを描く",
+          "category": "episode",
+          "location": "ギリシア世界"
+        },
+        {
+          "id": "e_xerxes_assassinated",
+          "year": -465,
+          "title": "クセルクセス1世、宮廷内の陰謀で暗殺される",
+          "category": "death",
+          "location": "ペルセポリス",
+          "color": "#4a3a66",
+          "characters": [
+            "c_xerxes"
+          ]
+        },
+        {
+          "id": "e_artaxerxes_i_accession",
+          "year": -465,
+          "title": "アルタクセルクセス1世、即位",
+          "category": "politics",
+          "location": "ペルセポリス",
+          "color": "#4a3a66",
+          "characters": [
+            "c_artaxerxes_i"
+          ]
+        },
+        {
+          "id": "e_peace_of_callias",
+          "year": -449,
+          "title": "カリアスの和約・アテナイとの講和",
+          "category": "politics",
+          "location": "スーサ",
+          "color": "#4a3a66",
+          "characters": [
+            "c_artaxerxes_i"
+          ]
+        },
+        {
+          "id": "e_artaxerxes_i_death",
+          "year": -424,
+          "title": "アルタクセルクセス1世、死去・後継争い",
+          "category": "death",
+          "location": "スーサ",
+          "color": "#4a3a66",
+          "characters": [
+            "c_artaxerxes_i"
+          ]
+        },
+        {
+          "id": "e_darius_ii_to_artaxerxes_ii",
+          "year": -404,
+          "title": "ダレイオス2世、死去・アルタクセルクセス2世の即位",
+          "category": "politics",
+          "location": "スーサ",
+          "color": "#4a3a66",
+          "characters": [
+            "c_artaxerxes_ii"
+          ]
+        },
+        {
+          "id": "e_cyrus_younger_revolt",
+          "year": -401,
+          "title": "小キュロスの反乱・クナクサの戦い",
+          "category": "battle",
+          "location": "クナクサ（バビロン近郊）",
+          "color": "#4a3a66",
+          "characters": [
+            "c_cyrus_the_younger",
+            "c_artaxerxes_ii",
+            "c_tissaphernes"
+          ]
+        },
+        {
+          "id": "e_cyrus_younger_death",
+          "year": -401,
+          "title": "小キュロス、戦死",
+          "category": "death",
+          "location": "クナクサ",
+          "color": "#4a3a66",
+          "characters": [
+            "c_cyrus_the_younger"
+          ]
+        },
+        {
+          "id": "e_anabasis_ten_thousand",
+          "year": -400,
+          "title": "ギリシア人傭兵「一万人隊」の退却",
+          "category": "episode",
+          "location": "メソポタミア〜黒海沿岸",
+          "color": "#4a3a66",
+          "characters": [
+            "c_tissaphernes"
+          ]
+        },
+        {
+          "id": "e_satraps_revolt",
+          "year": -366,
+          "title": "大サトラップの反乱、勃発",
+          "category": "battle",
+          "location": "小アジア各地",
+          "color": "#4a3a66",
+          "characters": [
+            "c_mausolus"
+          ]
+        },
+        {
+          "id": "e_mausolus_mausoleum",
+          "year": -353,
+          "title": "マウソロス、死去・マウソレウム完成",
+          "category": "death",
+          "location": "ハリカルナッソス",
+          "color": "#4a3a66",
+          "characters": [
+            "c_mausolus"
+          ]
+        },
+        {
+          "id": "e_artaxerxes_ii_death",
+          "year": -358,
+          "title": "アルタクセルクセス2世、死去",
+          "category": "death",
+          "location": "スーサ",
+          "color": "#4a3a66",
+          "characters": [
+            "c_artaxerxes_ii"
+          ]
+        },
+        {
+          "id": "e_artaxerxes_iii_purge",
+          "year": -358,
+          "title": "アルタクセルクセス3世、即位・有力王族を粛清",
+          "category": "politics",
+          "location": "ペルセポリス",
+          "color": "#4a3a66",
+          "characters": [
+            "c_artaxerxes_iii"
+          ]
+        },
+        {
+          "id": "e_egypt_reconquered",
+          "year": -343,
+          "title": "アルタクセルクセス3世、エジプトを再征服",
+          "category": "battle",
+          "location": "メンフィス（エジプト）",
+          "color": "#4a3a66",
+          "characters": [
+            "c_artaxerxes_iii"
+          ]
+        },
+        {
+          "id": "e_artaxerxes_iii_death",
+          "year": -338,
+          "title": "アルタクセルクセス3世、毒殺される",
+          "category": "death",
+          "location": "ペルセポリス",
+          "color": "#4a3a66",
+          "characters": [
+            "c_artaxerxes_iii"
+          ]
+        },
+        {
+          "id": "e_darius_iii_accession",
+          "year": -336,
+          "title": "ダレイオス3世、即位",
+          "category": "politics",
+          "location": "ペルセポリス",
+          "color": "#4a3a66",
+          "characters": [
+            "c_darius_iii"
+          ]
+        },
+        {
+          "id": "e_granicus_persia",
+          "year": -334,
+          "title": "グラニコス川の戦い、敗北",
+          "category": "battle",
+          "location": "グラニコス川（小アジア）",
+          "color": "#4a3a66",
+          "characters": [
+            "c_darius_iii"
+          ]
+        },
+        {
+          "id": "e_issus_persia",
+          "year": -333,
+          "title": "イッソスの戦い、敗走",
+          "category": "battle",
+          "location": "イッソス（キリキア）",
+          "color": "#4a3a66",
+          "characters": [
+            "c_darius_iii"
+          ]
+        },
+        {
+          "id": "e_gaugamela_persia",
+          "year": -331,
+          "title": "ガウガメラの戦い、決定的敗北",
+          "category": "battle",
+          "location": "ガウガメラ（メソポタミア北部）",
+          "color": "#4a3a66",
+          "characters": [
+            "c_darius_iii"
+          ]
+        },
+        {
+          "id": "e_persepolis_burned",
+          "year": -330,
+          "title": "ペルセポリス炎上",
+          "category": "death",
+          "location": "ペルセポリス"
+        },
+        {
+          "id": "e_darius_iii_death",
+          "year": -330,
+          "title": "ベッソスによるダレイオス3世殺害・アケメネス朝の滅亡",
+          "category": "death",
+          "location": "バクトリア方面",
+          "color": "#4a3a66",
+          "characters": [
+            "c_darius_iii",
+            "c_bessus"
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_cyaxares",
+          "name": "キュアクサレス",
+          "reading": "キュアクサレス",
+          "faction": "media",
+          "field": "governance"
+        },
+        {
+          "id": "c_cyrus_ii",
+          "name": "キュロス2世",
+          "reading": "キュロス2世",
+          "faction": "persia",
+          "field": "governance"
+        },
+        {
+          "id": "c_astyages",
+          "name": "アステュアゲス",
+          "reading": "アステュアゲス",
+          "faction": "media",
+          "field": "governance"
+        },
+        {
+          "id": "c_croesus",
+          "name": "クロイソス",
+          "reading": "クロイソス",
+          "faction": "lydia",
+          "field": "governance"
+        },
+        {
+          "id": "c_cambyses_ii",
+          "name": "カンビュセス2世",
+          "reading": "カンビュセス2世",
+          "faction": "persia",
+          "field": "governance"
+        },
+        {
+          "id": "c_psamtik_iii",
+          "name": "プサムテク3世",
+          "reading": "プサムテクさんせい",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_bardiya",
+          "name": "バルディヤ（スメルディス）",
+          "reading": "バルディヤ",
+          "faction": "persia",
+          "field": "governance"
+        },
+        {
+          "id": "c_gaumata",
+          "name": "ガウマータ",
+          "reading": "ガウマータ",
+          "faction": "persia",
+          "field": "governance"
+        },
+        {
+          "id": "c_darius",
+          "name": "ダレイオス1世",
+          "reading": "ダレイオス",
+          "faction": "persia",
+          "field": "governance"
+        },
+        {
+          "id": "c_otanes",
+          "name": "オタネス",
+          "reading": "オタネス",
+          "faction": "persia",
+          "field": "administration"
+        },
+        {
+          "id": "c_atossa",
+          "name": "アトッサ",
+          "reading": "アトッサ",
+          "faction": "persia",
+          "field": "governance"
+        },
+        {
+          "id": "c_zoroaster",
+          "name": "ザラスシュトラ（ゾロアスター）",
+          "reading": "ザラスシュトラ",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_xerxes",
+          "name": "クセルクセス1世",
+          "reading": "クセルクセス",
+          "faction": "persia",
+          "field": "governance"
+        },
+        {
+          "id": "c_datis",
+          "name": "ダティス",
+          "reading": "ダティス",
+          "faction": "persia",
+          "field": "military"
+        },
+        {
+          "id": "c_mardonius",
+          "name": "マルドニオス",
+          "reading": "マルドニオス",
+          "faction": "persia",
+          "field": "military"
+        },
+        {
+          "id": "c_artaxerxes_i",
+          "name": "アルタクセルクセス1世",
+          "reading": "アルタクセルクセス",
+          "faction": "persia",
+          "field": "governance"
+        },
+        {
+          "id": "c_cyrus_the_younger",
+          "name": "小キュロス",
+          "reading": "こキュロス",
+          "faction": "persia",
+          "field": "governance"
+        },
+        {
+          "id": "c_artaxerxes_ii",
+          "name": "アルタクセルクセス2世",
+          "reading": "アルタクセルクセス",
+          "faction": "persia",
+          "field": "governance"
+        },
+        {
+          "id": "c_tissaphernes",
+          "name": "ティッサフェルネス",
+          "reading": "ティッサフェルネス",
+          "faction": "persia",
+          "field": "administration"
+        },
+        {
+          "id": "c_mausolus",
+          "name": "マウソロス",
+          "reading": "マウソロス",
+          "faction": "persia",
+          "field": "administration"
+        },
+        {
+          "id": "c_artaxerxes_iii",
+          "name": "アルタクセルクセス3世",
+          "reading": "アルタクセルクセス",
+          "faction": "persia",
+          "field": "governance"
+        },
+        {
+          "id": "c_darius_iii",
+          "name": "ダレイオス3世",
+          "reading": "ダレイオス",
+          "faction": "persia",
+          "field": "governance"
+        },
+        {
+          "id": "c_bessus",
+          "name": "ベッソス",
+          "reading": "ベッソス",
+          "faction": "persia",
+          "field": "governance"
+        }
+      ],
+      "factions": {
+        "persia": {
+          "id": "persia",
+          "name": "アケメネス朝ペルシア",
+          "color": "#4a3a66",
+          "colorLight": "#7a6aa0"
+        },
+        "media": {
+          "id": "media",
+          "name": "メディア",
+          "color": "#4a5a6a",
+          "colorLight": "#7a94a4"
+        },
+        "lydia": {
+          "id": "lydia",
+          "name": "リディア",
+          "color": "#8a7a1a",
+          "colorLight": "#c4b04a"
+        },
+        "babylon": {
+          "id": "babylon",
+          "name": "バビロニア",
+          "color": "#2a3a7a",
+          "colorLight": "#5a6ac4"
+        },
+        "egypt": {
+          "id": "egypt",
+          "name": "エジプト",
+          "color": "#8a6a1a",
+          "colorLight": "#c4a53a"
+        },
+        "ionia": {
+          "id": "ionia",
+          "name": "イオニア諸市",
+          "color": "#3a6a6a",
+          "colorLight": "#6aa0a0"
+        },
+        "athens": {
+          "id": "athens",
+          "name": "アテナイ",
+          "color": "#2e5a8a",
+          "colorLight": "#5a8aba"
+        },
+        "sparta": {
+          "id": "sparta",
+          "name": "スパルタ",
+          "color": "#7a2020",
+          "colorLight": "#b85050"
+        },
+        "macedon": {
+          "id": "macedon",
+          "name": "マケドニア",
+          "color": "#8a4a1a",
+          "colorLight": "#c07a3a"
+        },
+        "scythia": {
+          "id": "scythia",
+          "name": "スキタイ",
+          "color": "#4a5a2a",
+          "colorLight": "#7a9a4a"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#4a4a4a",
+          "colorLight": "#9a9a9a"
+        }
+      }
+    },
     "spring-autumn": {
       "events": [
         {
