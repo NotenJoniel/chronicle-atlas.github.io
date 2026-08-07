@@ -1,0 +1,6 @@
+/* 幕末・維新 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#0f1215;--surface:#181c20;--surface-2:#20262b;--surface-3:#2a3138;
+  --border-subtle:rgba(140,170,150,.12);--text:#e0e6e2;--text-dim:#8c9c94;
+  --gold:#4a9a7a;--gold-dim:rgba(74,154,122,.18);
+}

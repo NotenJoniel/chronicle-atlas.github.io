@@ -82,6 +82,15 @@
       "subProjectDir": "sengoku-japan"
     },
     {
+      "id": "bakumatsu-ishin",
+      "name": "幕末・維新",
+      "region": "japan",
+      "startYear": 1853,
+      "endYear": 1877,
+      "dataFile": "timelines/bakumatsu-ishin.json",
+      "subProjectDir": "bakumatsu-ishin"
+    },
+    {
       "id": "roman-empire",
       "name": "ローマ帝国",
       "region": "europe",
