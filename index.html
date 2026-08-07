@@ -311,9 +311,32 @@
   const PX_PER_YEAR = 3;
   let TOTAL_PX;
 
-  function yearToY(year) { return (year - START_YEAR) * PX_PER_YEAR; }
+  // BREAK_YEARより古い区間（現状メソポタミア・古代エジプトのみが存在する疎な区間）は
+  // ANCIENT_PX_PER_YEARという大幅に圧縮した縮尺で描く。BREAK_YEAR以降（今のところ全ての
+  // 主要タイムラインが密集する区間）は既存のPX_PER_YEARのまま変更しない。BC3000のような
+  // 古い年代だけが不自然に間延びして見づらくなる問題への対応（2区間の区分線形スケール）。
+  const BREAK_YEAR = -800;
+  const ANCIENT_PX_PER_YEAR = 0.5;
+
+  function yearToY(year) {
+    if (year >= BREAK_YEAR) {
+      return (BREAK_YEAR - START_YEAR) * ANCIENT_PX_PER_YEAR + (year - BREAK_YEAR) * PX_PER_YEAR;
+    }
+    return (year - START_YEAR) * ANCIENT_PX_PER_YEAR;
+  }
   function fmtYear(y) { return y < 0 ? `BC${-y}` : `${y}`; }
   function fmtYearJa(y) { return y < 0 ? `紀元前${-y}年` : `${y}年`; }
+
+  // 年ラベル・グリッド線の目盛りをyearToYと同じ2区間で生成する（疎なBREAK_YEAR以前は
+  // 500年刻み、密なBREAK_YEAR以降は既存の50年刻みのまま）。renderYearColumn/
+  // renderGridLinesの両方から共有する。
+  function yearTicks() {
+    const ticks = [];
+    const ancientStart = Math.ceil(START_YEAR / 500) * 500;
+    for (let y = ancientStart; y < BREAK_YEAR; y += 500) ticks.push(y);
+    for (let y = BREAK_YEAR; y <= END_YEAR; y += 50) ticks.push(y);
+    return ticks;
+  }
 
   // ── Regions ──
   const REGIONS = [
@@ -404,7 +427,7 @@
   // ERASの実際の最古開始年に合わせてSTART_YEARを引き下げる（既定の-800より古い
   // タイムラインが無ければ-800のまま）。TOTAL_PXはこの後で確定させる。
   START_YEAR = Math.min(START_YEAR, ...ERAS.map(e => e.start));
-  TOTAL_PX = (END_YEAR - START_YEAR) * PX_PER_YEAR;
+  TOTAL_PX = yearToY(END_YEAR);
 
   // ── Quick Jump targets ──
   const JUMPS = [
@@ -508,13 +531,14 @@
   function renderYearColumn() {
     const col = el('div','wt-year-col');
     col.style.height = TOTAL_PX + 'px';
-    for (let y = START_YEAR; y <= END_YEAR; y += 50) {
-      const mark = el('div', y % 100 === 0 ? 'year-mark century' : 'year-mark half-century');
+    yearTicks().forEach(y => {
+      const isMajor = y < BREAK_YEAR ? y % 1000 === 0 : y % 100 === 0;
+      const mark = el('div', isMajor ? 'year-mark century' : 'year-mark half-century');
       mark.style.top = yearToY(y) + 'px';
       mark.textContent = fmtYear(y);
       mark.id = 'y' + y;
       col.appendChild(mark);
-    }
+    });
     grid.appendChild(col);
   }
 
@@ -589,7 +613,7 @@
 
   function createEraBlock(era, lane, laneCount) {
     const top = yearToY(era.start);
-    const height = (era.end - era.start) * PX_PER_YEAR;
+    const height = yearToY(era.end) - yearToY(era.start);
     const isCompact = height < 55;
 
     const block = el('div', 'era-block' + (isCompact ? ' compact' : '') + (era.linked ? ' linked' : '') + (era.comingSoon ? ' coming-soon' : ''));
@@ -667,7 +691,7 @@
     const clampedStart = Math.max(dyn.start, START_YEAR);
     const clampedEnd = Math.min(dyn.end, END_YEAR);
     const top = yearToY(clampedStart);
-    const height = (clampedEnd - clampedStart) * PX_PER_YEAR;
+    const height = yearToY(clampedEnd) - yearToY(clampedStart);
 
     const block = el('div','dynasty-block');
     block.style.top = top + 'px';
@@ -691,11 +715,14 @@
     const lines = el('div','');
     lines.style.cssText = `position:absolute;top:0;left:var(--year-col);right:0;height:${TOTAL_PX}px;pointer-events:none;z-index:0`;
 
-    for (let y = START_YEAR; y <= END_YEAR; y += 50) {
-      const line = el('div', y % 500 === 0 ? 'grid-line major' : (y % 100 === 0 ? 'grid-line century' : 'grid-line half-century'));
+    yearTicks().forEach(y => {
+      const cls = y < BREAK_YEAR
+        ? (y % 1000 === 0 ? 'grid-line major' : 'grid-line century')
+        : (y % 500 === 0 ? 'grid-line major' : (y % 100 === 0 ? 'grid-line century' : 'grid-line half-century'));
+      const line = el('div', cls);
       line.style.top = yearToY(y) + 'px';
       lines.appendChild(line);
-    }
+    });
     grid.appendChild(lines);
   }
 
