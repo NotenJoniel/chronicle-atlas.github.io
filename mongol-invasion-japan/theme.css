@@ -1,0 +1,6 @@
+/* 元寇と鎌倉幕府の滅亡 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#100d0c;--surface:#1a1512;--surface-2:#241d18;--surface-3:#2e251e;
+  --border-subtle:rgba(180,110,70,.12);--text:#e6ddd2;--text-dim:#9c8c7a;
+  --gold:#b8622e;--gold-dim:rgba(184,98,46,.18);
+}
