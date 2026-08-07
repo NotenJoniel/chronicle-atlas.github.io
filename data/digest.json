@@ -23,6 +23,990 @@
     }
   },
   "timelines": {
+    "mesopotamia": {
+      "events": [
+        {
+          "id": "e_uruk_civilization",
+          "year": -3500,
+          "title": "ウルクなど都市文明の発展",
+          "category": "politics",
+          "location": "ウルク"
+        },
+        {
+          "id": "e_cuneiform_invented",
+          "year": -3200,
+          "title": "楔形文字の発明",
+          "category": "episode",
+          "location": "ウルク"
+        },
+        {
+          "id": "e_early_dynastic_begins",
+          "year": -2900,
+          "title": "都市国家群の分立（初期王朝時代）",
+          "category": "politics",
+          "location": "シュメール全域"
+        },
+        {
+          "id": "e_wheel_invented",
+          "year": -3100,
+          "title": "車輪の発明",
+          "category": "episode",
+          "location": "メソポタミア"
+        },
+        {
+          "id": "e_gilgamesh_reign",
+          "year": -2700,
+          "title": "ギルガメシュ、ウルクの王として君臨",
+          "category": "episode",
+          "location": "ウルク",
+          "color": "#2a5a4a",
+          "characters": [
+            "c_gilgamesh"
+          ]
+        },
+        {
+          "id": "e_stele_of_vultures",
+          "year": -2450,
+          "title": "ラガシュ対ウンマの国境紛争「禿鷲の碑」",
+          "category": "battle",
+          "location": "ラガシュ・ウンマ国境",
+          "color": "#2a5a4a",
+          "characters": [
+            "c_eannatum"
+          ]
+        },
+        {
+          "id": "e_urukagina_reforms",
+          "year": -2380,
+          "title": "ウルカギナの改革",
+          "category": "politics",
+          "location": "ラガシュ",
+          "color": "#2a5a4a",
+          "characters": [
+            "c_urukagina"
+          ]
+        },
+        {
+          "id": "e_lugalzagesi_unification",
+          "year": -2350,
+          "title": "ルガルザゲシ、シュメールを統一",
+          "category": "politics",
+          "location": "ウンマ・ウルク",
+          "color": "#2a5a4a",
+          "characters": [
+            "c_lugalzagesi"
+          ]
+        },
+        {
+          "id": "e_sargon_conquest",
+          "year": -2334,
+          "title": "サルゴン、ルガルザゲシを破りメソポタミアを統一",
+          "category": "battle",
+          "location": "ウルク",
+          "color": "#7a4a1a",
+          "characters": [
+            "c_sargon",
+            "c_lugalzagesi"
+          ]
+        },
+        {
+          "id": "e_akkadian_standing_army",
+          "year": -2320,
+          "title": "アッカド語の公用語化・常備軍の組織",
+          "category": "politics",
+          "location": "アッカド",
+          "color": "#7a4a1a",
+          "characters": [
+            "c_sargon"
+          ]
+        },
+        {
+          "id": "e_enheduanna_priestess",
+          "year": -2300,
+          "title": "エンヘドゥアンナ、ウルの女神官に",
+          "category": "episode",
+          "location": "ウル",
+          "color": "#7a4a1a",
+          "characters": [
+            "c_enheduanna"
+          ]
+        },
+        {
+          "id": "e_enheduanna_hymns",
+          "year": -2285,
+          "title": "エンヘドゥアンナ、イナンナ讃歌を著す",
+          "category": "episode",
+          "location": "ウル",
+          "color": "#7a4a1a",
+          "characters": [
+            "c_enheduanna"
+          ]
+        },
+        {
+          "id": "e_naram_sin_deification",
+          "year": -2254,
+          "title": "ナラム・シン、即位・自らを神格化",
+          "category": "politics",
+          "location": "アッカド",
+          "color": "#7a4a1a",
+          "characters": [
+            "c_naram_sin"
+          ]
+        },
+        {
+          "id": "e_naram_sin_stele",
+          "year": -2230,
+          "title": "ナラム・シンの遠征・帝国最大版図",
+          "category": "battle",
+          "location": "ザグロス山脈方面",
+          "color": "#7a4a1a",
+          "characters": [
+            "c_naram_sin"
+          ]
+        },
+        {
+          "id": "e_rimush_revolts",
+          "year": -2270,
+          "title": "リムシュ、諸都市の反乱を鎮圧",
+          "category": "battle",
+          "location": "シュメール各地"
+        },
+        {
+          "id": "e_akkad_collapse",
+          "year": -2154,
+          "title": "グティ人の侵入・アッカド帝国の崩壊",
+          "category": "death",
+          "location": "アッカド"
+        },
+        {
+          "id": "e_ur_iii_founded",
+          "year": -2112,
+          "title": "ウル・ナンム、ウル第三王朝を開く",
+          "category": "politics",
+          "location": "ウル",
+          "color": "#2a5a4a",
+          "characters": [
+            "c_ur_nammu"
+          ]
+        },
+        {
+          "id": "e_ur_nammu_code",
+          "year": -2100,
+          "title": "ウル・ナンム法典、発布",
+          "category": "politics",
+          "location": "ウル",
+          "color": "#2a5a4a",
+          "characters": [
+            "c_ur_nammu"
+          ]
+        },
+        {
+          "id": "e_shulgi_centralization",
+          "year": -2094,
+          "title": "シュルギ、即位・中央集権改革",
+          "category": "politics",
+          "location": "ウル",
+          "color": "#2a5a4a",
+          "characters": [
+            "c_shulgi"
+          ]
+        },
+        {
+          "id": "e_sumerian_renaissance",
+          "year": -2050,
+          "title": "シュメール・ルネサンス・行政記録の整備",
+          "category": "episode",
+          "location": "ウル"
+        },
+        {
+          "id": "e_ibbi_sin_decline",
+          "year": -2028,
+          "title": "イビ・シン、即位・帝国の急速な弱体化",
+          "category": "politics",
+          "location": "ウル"
+        },
+        {
+          "id": "e_ur_fall",
+          "year": -2004,
+          "title": "エラム人の侵入・ウル陥落",
+          "category": "death",
+          "location": "ウル"
+        },
+        {
+          "id": "e_babylon_i_founded",
+          "year": -1894,
+          "title": "スムアブム、バビロン第一王朝を開く",
+          "category": "politics",
+          "location": "バビロン"
+        },
+        {
+          "id": "e_hammurabi_accession",
+          "year": -1792,
+          "title": "ハンムラビ、即位",
+          "category": "politics",
+          "location": "バビロン",
+          "color": "#2a3a7a",
+          "characters": [
+            "c_hammurabi"
+          ]
+        },
+        {
+          "id": "e_zimri_lim_mari",
+          "year": -1780,
+          "title": "ジムリ・リム、マリで即位",
+          "category": "episode",
+          "location": "マリ",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_zimri_lim"
+          ]
+        },
+        {
+          "id": "e_hammurabi_conquers_mari",
+          "year": -1760,
+          "title": "ハンムラビ、マリを征服",
+          "category": "battle",
+          "location": "マリ",
+          "color": "#2a3a7a",
+          "characters": [
+            "c_hammurabi",
+            "c_zimri_lim"
+          ]
+        },
+        {
+          "id": "e_hammurabi_code",
+          "year": -1754,
+          "title": "ハンムラビ法典、発布",
+          "category": "politics",
+          "location": "バビロン",
+          "color": "#2a3a7a",
+          "characters": [
+            "c_hammurabi"
+          ]
+        },
+        {
+          "id": "e_hammurabi_death",
+          "year": -1750,
+          "title": "ハンムラビ、死去・バビロンによる統一の完成",
+          "category": "death",
+          "location": "バビロン",
+          "color": "#2a3a7a",
+          "characters": [
+            "c_hammurabi"
+          ]
+        },
+        {
+          "id": "e_samsu_iluna_troubles",
+          "year": -1740,
+          "title": "サムス・イルナ、反乱とカッシート人の侵入に苦しむ",
+          "category": "battle",
+          "location": "バビロニア南部"
+        },
+        {
+          "id": "e_hittite_sack_babylon",
+          "year": -1595,
+          "title": "ヒッタイトのムルシリ1世、バビロンを略奪",
+          "category": "battle",
+          "location": "バビロン",
+          "color": "#3a4a5a",
+          "characters": [
+            "c_mursili_i"
+          ]
+        },
+        {
+          "id": "e_mitanni_rise",
+          "year": -1600,
+          "title": "ミタンニ王国の興隆",
+          "category": "politics",
+          "location": "シリア北部・上メソポタミア"
+        },
+        {
+          "id": "e_amarna_letters_tushratta",
+          "year": -1350,
+          "title": "トゥシュラッタ、エジプトと外交書簡を交わす",
+          "category": "episode",
+          "location": "ワシュカンニ（ミタンニ）",
+          "color": "#5a2a6a",
+          "characters": [
+            "c_tushratta"
+          ]
+        },
+        {
+          "id": "e_suppiluliuma_mitanni_pressure",
+          "year": -1344,
+          "title": "シュッピルリウマ1世、ミタンニを圧迫",
+          "category": "battle",
+          "location": "シリア北部",
+          "color": "#3a4a5a",
+          "characters": [
+            "c_suppiluliuma_i",
+            "c_tushratta"
+          ]
+        },
+        {
+          "id": "e_mitanni_annexed",
+          "year": -1200,
+          "title": "ミタンニ王国、アッシリアに併合され消滅",
+          "category": "death",
+          "location": "上メソポタミア"
+        },
+        {
+          "id": "e_battle_kadesh_meso",
+          "year": -1274,
+          "title": "カデシュの戦い",
+          "category": "battle",
+          "location": "カデシュ（オロンテス川流域）",
+          "color": "#3a4a5a",
+          "characters": [
+            "c_muwatalli_ii"
+          ]
+        },
+        {
+          "id": "e_egypt_hittite_treaty_meso",
+          "year": -1259,
+          "title": "エジプト・ヒッタイト平和条約",
+          "category": "politics",
+          "location": "ハットゥシャ／ピラメセス",
+          "color": "#3a4a5a",
+          "characters": [
+            "c_hattusili_iii"
+          ]
+        },
+        {
+          "id": "e_bronze_age_collapse",
+          "year": -1200,
+          "title": "「海の民」を含む大規模な民族移動・青銅器時代の崩壊",
+          "category": "battle",
+          "location": "東地中海全域"
+        },
+        {
+          "id": "e_hittite_empire_collapse",
+          "year": -1190,
+          "title": "ヒッタイト帝国の崩壊",
+          "category": "death",
+          "location": "ハットゥシャ"
+        },
+        {
+          "id": "e_tukulti_ninurta_babylon",
+          "year": -1225,
+          "title": "トゥクルティ・ニヌルタ1世、バビロンを一時征服",
+          "category": "battle",
+          "location": "バビロン",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_tukulti_ninurta_i"
+          ]
+        },
+        {
+          "id": "e_sea_peoples_migration",
+          "year": -1180,
+          "title": "海の民、シリア・エジプト方面へ移動",
+          "category": "episode",
+          "location": "地中海東岸"
+        },
+        {
+          "id": "e_middle_assyrian_stagnation",
+          "year": -1100,
+          "title": "中期アッシリアの停滞・「暗黒時代」",
+          "category": "politics",
+          "location": "アッシリア"
+        },
+        {
+          "id": "e_ashurnasirpal_terror",
+          "year": -883,
+          "title": "アッシュルナツィルパル2世、即位・恐怖政治",
+          "category": "politics",
+          "location": "ニムルド",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_ashurnasirpal_ii"
+          ]
+        },
+        {
+          "id": "e_nimrud_capital",
+          "year": -879,
+          "title": "ニムルドへの遷都・新王宮建設",
+          "category": "episode",
+          "location": "ニムルド",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_ashurnasirpal_ii"
+          ]
+        },
+        {
+          "id": "e_shalmaneser_campaigns",
+          "year": -858,
+          "title": "シャルマネセル3世、即位・積極的な西方遠征",
+          "category": "politics",
+          "location": "ニムルド",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_shalmaneser_iii"
+          ]
+        },
+        {
+          "id": "e_battle_qarqar",
+          "year": -853,
+          "title": "カルカルの戦い",
+          "category": "battle",
+          "location": "カルカル（シリア）",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_shalmaneser_iii"
+          ]
+        },
+        {
+          "id": "e_sammu_ramat_regency",
+          "year": -811,
+          "title": "サンムラマト、摂政に",
+          "category": "politics",
+          "location": "ニムルド",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_sammu_ramat"
+          ]
+        },
+        {
+          "id": "e_tiglath_pileser_reforms",
+          "year": -745,
+          "title": "ティグラト・ピレセル3世、行政改革を断行",
+          "category": "politics",
+          "location": "ニネヴェ",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_tiglath_pileser_iii"
+          ]
+        },
+        {
+          "id": "e_damascus_annexed",
+          "year": -732,
+          "title": "ダマスカス征服・アラム諸国の属州化",
+          "category": "battle",
+          "location": "ダマスカス",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_tiglath_pileser_iii"
+          ]
+        },
+        {
+          "id": "e_sargon_ii_accession",
+          "year": -722,
+          "title": "サルゴン2世、即位",
+          "category": "politics",
+          "location": "ニネヴェ",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_sargon_ii"
+          ]
+        },
+        {
+          "id": "e_samaria_fall",
+          "year": -722,
+          "title": "北イスラエル王国の滅亡",
+          "category": "battle",
+          "location": "サマリア",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_sargon_ii"
+          ]
+        },
+        {
+          "id": "e_sennacherib_accession",
+          "year": -705,
+          "title": "センナケリブ、即位",
+          "category": "politics",
+          "location": "ニネヴェ",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_sennacherib"
+          ]
+        },
+        {
+          "id": "e_jerusalem_siege",
+          "year": -701,
+          "title": "センナケリブ、エルサレムを包囲",
+          "category": "battle",
+          "location": "エルサレム",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_sennacherib",
+            "c_hezekiah"
+          ]
+        },
+        {
+          "id": "e_babylon_destroyed_sennacherib",
+          "year": -689,
+          "title": "センナケリブ、バビロンを徹底破壊",
+          "category": "battle",
+          "location": "バビロン",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_sennacherib"
+          ]
+        },
+        {
+          "id": "e_sennacherib_assassinated",
+          "year": -681,
+          "title": "センナケリブ、暗殺される",
+          "category": "death",
+          "location": "ニネヴェ",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_sennacherib"
+          ]
+        },
+        {
+          "id": "e_esarhaddon_egypt_meso",
+          "year": -671,
+          "title": "エサルハドン、エジプトへ侵攻",
+          "category": "battle",
+          "location": "メンフィス（エジプト）",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_esarhaddon"
+          ]
+        },
+        {
+          "id": "e_ashurbanipal_library",
+          "year": -668,
+          "title": "アッシュルバニパル、即位・ニネヴェに大図書館を建設",
+          "category": "episode",
+          "location": "ニネヴェ",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_ashurbanipal"
+          ]
+        },
+        {
+          "id": "e_thebes_sacked_meso",
+          "year": -663,
+          "title": "アッシュルバニパル、テーベを略奪",
+          "category": "battle",
+          "location": "テーベ（エジプト）",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_ashurbanipal"
+          ]
+        },
+        {
+          "id": "e_ashurbanipal_death",
+          "year": -627,
+          "title": "アッシュルバニパル、死去・帝国の急速な崩壊",
+          "category": "death",
+          "location": "ニネヴェ",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_ashurbanipal"
+          ]
+        },
+        {
+          "id": "e_nineveh_fall",
+          "year": -612,
+          "title": "ニネヴェ陥落",
+          "category": "death",
+          "location": "ニネヴェ"
+        },
+        {
+          "id": "e_nabopolassar_independence",
+          "year": -626,
+          "title": "ナボポラッサル、バビロンで独立を宣言",
+          "category": "politics",
+          "location": "バビロン",
+          "color": "#2a3a7a",
+          "characters": [
+            "c_nabopolassar"
+          ]
+        },
+        {
+          "id": "e_nineveh_fall_nabopolassar",
+          "year": -612,
+          "title": "ナボポラッサル、メディアと結びニネヴェを陥落させる",
+          "category": "battle",
+          "location": "ニネヴェ",
+          "color": "#2a3a7a",
+          "characters": [
+            "c_nabopolassar"
+          ]
+        },
+        {
+          "id": "e_nebuchadnezzar_accession",
+          "year": -605,
+          "title": "ネブカドネザル2世、即位",
+          "category": "politics",
+          "location": "バビロン",
+          "color": "#2a3a7a",
+          "characters": [
+            "c_nebuchadnezzar_ii"
+          ]
+        },
+        {
+          "id": "e_jerusalem_conquered",
+          "year": -597,
+          "title": "ネブカドネザル2世、エルサレムを征服",
+          "category": "battle",
+          "location": "エルサレム",
+          "color": "#2a3a7a",
+          "characters": [
+            "c_nebuchadnezzar_ii"
+          ]
+        },
+        {
+          "id": "e_temple_destroyed_captivity",
+          "year": -586,
+          "title": "エルサレム神殿の破壊・バビロン捕囚",
+          "category": "death",
+          "location": "エルサレム",
+          "color": "#2a3a7a",
+          "characters": [
+            "c_nebuchadnezzar_ii"
+          ]
+        },
+        {
+          "id": "e_hanging_gardens",
+          "year": -575,
+          "title": "バビロンの空中庭園・イシュタル門の建設",
+          "category": "episode",
+          "location": "バビロン",
+          "color": "#2a3a7a",
+          "characters": [
+            "c_nebuchadnezzar_ii"
+          ]
+        },
+        {
+          "id": "e_nebuchadnezzar_death",
+          "year": -562,
+          "title": "ネブカドネザル2世、死去",
+          "category": "death",
+          "location": "バビロン",
+          "color": "#2a3a7a",
+          "characters": [
+            "c_nebuchadnezzar_ii"
+          ]
+        },
+        {
+          "id": "e_nabonidus_reforms",
+          "year": -556,
+          "title": "ナボニドゥス、即位・宗教改革で神官団と対立",
+          "category": "politics",
+          "location": "バビロン",
+          "color": "#2a3a7a",
+          "characters": [
+            "c_nabonidus"
+          ]
+        },
+        {
+          "id": "e_belshazzar_regent",
+          "year": -550,
+          "title": "ベルシャザル、共同統治者として実権を代行",
+          "category": "politics",
+          "location": "バビロン",
+          "color": "#2a3a7a",
+          "characters": [
+            "c_belshazzar"
+          ]
+        },
+        {
+          "id": "e_babylon_falls_cyrus",
+          "year": -539,
+          "title": "キュロス2世、バビロンを無血開城で征服",
+          "category": "politics",
+          "location": "バビロン",
+          "color": "#4a3a66",
+          "characters": [
+            "c_cyrus_ii",
+            "c_belshazzar",
+            "c_nabonidus"
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_gilgamesh",
+          "name": "ギルガメシュ",
+          "reading": "ギルガメシュ",
+          "faction": "sumer",
+          "field": "governance"
+        },
+        {
+          "id": "c_eannatum",
+          "name": "エアンナトゥム",
+          "reading": "エアンナトゥム",
+          "faction": "sumer",
+          "field": "governance"
+        },
+        {
+          "id": "c_urukagina",
+          "name": "ウルカギナ",
+          "reading": "ウルカギナ",
+          "faction": "sumer",
+          "field": "administration"
+        },
+        {
+          "id": "c_lugalzagesi",
+          "name": "ルガルザゲシ",
+          "reading": "ルガルザゲシ",
+          "faction": "sumer",
+          "field": "governance"
+        },
+        {
+          "id": "c_sargon",
+          "name": "サルゴン（大王）",
+          "reading": "サルゴン",
+          "faction": "akkad",
+          "field": "governance"
+        },
+        {
+          "id": "c_enheduanna",
+          "name": "エンヘドゥアンナ",
+          "reading": "エンヘドゥアンナ",
+          "faction": "akkad",
+          "field": "arts"
+        },
+        {
+          "id": "c_naram_sin",
+          "name": "ナラム・シン",
+          "reading": "ナラム・シン",
+          "faction": "akkad",
+          "field": "governance"
+        },
+        {
+          "id": "c_ur_nammu",
+          "name": "ウル・ナンム",
+          "reading": "ウル・ナンム",
+          "faction": "sumer",
+          "field": "governance"
+        },
+        {
+          "id": "c_shulgi",
+          "name": "シュルギ",
+          "reading": "シュルギ",
+          "faction": "sumer",
+          "field": "governance"
+        },
+        {
+          "id": "c_hammurabi",
+          "name": "ハンムラビ",
+          "reading": "ハンムラビ",
+          "faction": "babylon",
+          "field": "governance"
+        },
+        {
+          "id": "c_zimri_lim",
+          "name": "ジムリ・リム",
+          "reading": "ジムリ・リム",
+          "faction": "other",
+          "field": "administration"
+        },
+        {
+          "id": "c_mursili_i",
+          "name": "ムルシリ1世",
+          "reading": "ムルシリ1世",
+          "faction": "hittite",
+          "field": "military"
+        },
+        {
+          "id": "c_suppiluliuma_i",
+          "name": "シュッピルリウマ1世",
+          "reading": "シュッピルリウマ1世",
+          "faction": "hittite",
+          "field": "governance"
+        },
+        {
+          "id": "c_tushratta",
+          "name": "トゥシュラッタ",
+          "reading": "トゥシュラッタ",
+          "faction": "mitanni",
+          "field": "administration"
+        },
+        {
+          "id": "c_muwatalli_ii",
+          "name": "ムワタリ2世",
+          "reading": "ムワタリ2世",
+          "faction": "hittite",
+          "field": "governance"
+        },
+        {
+          "id": "c_hattusili_iii",
+          "name": "ハットゥシリ3世",
+          "reading": "ハットゥシリ3世",
+          "faction": "hittite",
+          "field": "governance"
+        },
+        {
+          "id": "c_tukulti_ninurta_i",
+          "name": "トゥクルティ・ニヌルタ1世",
+          "reading": "トゥクルティ・ニヌルタ1世",
+          "faction": "assyria",
+          "field": "military"
+        },
+        {
+          "id": "c_ashurnasirpal_ii",
+          "name": "アッシュルナツィルパル2世",
+          "reading": "アッシュルナツィルパル2世",
+          "faction": "assyria",
+          "field": "governance"
+        },
+        {
+          "id": "c_shalmaneser_iii",
+          "name": "シャルマネセル3世",
+          "reading": "シャルマネセル3世",
+          "faction": "assyria",
+          "field": "military"
+        },
+        {
+          "id": "c_sammu_ramat",
+          "name": "サンムラマト",
+          "reading": "サンムラマト",
+          "faction": "assyria",
+          "field": "governance"
+        },
+        {
+          "id": "c_tiglath_pileser_iii",
+          "name": "ティグラト・ピレセル3世",
+          "reading": "ティグラト・ピレセル3世",
+          "faction": "assyria",
+          "field": "administration"
+        },
+        {
+          "id": "c_sargon_ii",
+          "name": "サルゴン2世",
+          "reading": "サルゴン2世",
+          "faction": "assyria",
+          "field": "governance"
+        },
+        {
+          "id": "c_sennacherib",
+          "name": "センナケリブ",
+          "reading": "センナケリブ",
+          "faction": "assyria",
+          "field": "governance"
+        },
+        {
+          "id": "c_hezekiah",
+          "name": "ヒゼキヤ",
+          "reading": "ヒゼキヤ",
+          "faction": "israel",
+          "field": "governance"
+        },
+        {
+          "id": "c_esarhaddon",
+          "name": "エサルハドン",
+          "reading": "エサルハドン",
+          "faction": "assyria",
+          "field": "governance"
+        },
+        {
+          "id": "c_ashurbanipal",
+          "name": "アッシュルバニパル",
+          "reading": "アッシュルバニパル",
+          "faction": "assyria",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_nabopolassar",
+          "name": "ナボポラッサル",
+          "reading": "ナボポラッサル",
+          "faction": "babylon",
+          "field": "governance"
+        },
+        {
+          "id": "c_nebuchadnezzar_ii",
+          "name": "ネブカドネザル2世",
+          "reading": "ネブカドネザル2世",
+          "faction": "babylon",
+          "field": "governance"
+        },
+        {
+          "id": "c_nabonidus",
+          "name": "ナボニドゥス",
+          "reading": "ナボニドゥス",
+          "faction": "babylon",
+          "field": "thought"
+        },
+        {
+          "id": "c_belshazzar",
+          "name": "ベルシャザル",
+          "reading": "ベルシャザル",
+          "faction": "babylon",
+          "field": "governance"
+        },
+        {
+          "id": "c_cyrus_ii",
+          "name": "キュロス2世",
+          "reading": "キュロス2世",
+          "faction": "persia",
+          "field": "governance"
+        }
+      ],
+      "factions": {
+        "sumer": {
+          "id": "sumer",
+          "name": "シュメール都市国家",
+          "color": "#2a5a4a",
+          "colorLight": "#5a9a82"
+        },
+        "akkad": {
+          "id": "akkad",
+          "name": "アッカド帝国",
+          "color": "#7a4a1a",
+          "colorLight": "#c48a4a"
+        },
+        "babylon": {
+          "id": "babylon",
+          "name": "バビロニア",
+          "color": "#2a3a7a",
+          "colorLight": "#5a6ac4"
+        },
+        "assyria": {
+          "id": "assyria",
+          "name": "アッシリア",
+          "color": "#6a1a1a",
+          "colorLight": "#a83a3a"
+        },
+        "hittite": {
+          "id": "hittite",
+          "name": "ヒッタイト",
+          "color": "#3a4a5a",
+          "colorLight": "#6a8299"
+        },
+        "mitanni": {
+          "id": "mitanni",
+          "name": "ミタンニ",
+          "color": "#5a2a6a",
+          "colorLight": "#9a5aa8"
+        },
+        "elam": {
+          "id": "elam",
+          "name": "エラム",
+          "color": "#8a4a1a",
+          "colorLight": "#c47a3a"
+        },
+        "egypt": {
+          "id": "egypt",
+          "name": "エジプト",
+          "color": "#8a6a1a",
+          "colorLight": "#c4a53a"
+        },
+        "israel": {
+          "id": "israel",
+          "name": "イスラエル・ユダ",
+          "color": "#5a6a2a",
+          "colorLight": "#8fa64a"
+        },
+        "persia": {
+          "id": "persia",
+          "name": "アケメネス朝ペルシア",
+          "color": "#4a3a66",
+          "colorLight": "#7a6aa0"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#4a4a4a",
+          "colorLight": "#9a9a9a"
+        }
+      }
+    },
     "ancient-egypt": {
       "events": [
         {

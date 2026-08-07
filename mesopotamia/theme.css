@@ -1,0 +1,6 @@
+/* メソポタミア文明 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#120e10;--surface:#1c1518;--surface-2:#261c20;--surface-3:#31242a;
+  --border-subtle:rgba(90,130,168,.16);--text:#e8e0da;--text-dim:#a08e8a;
+  --gold:#3a7a9a;--gold-dim:rgba(58,122,154,.2);
+}

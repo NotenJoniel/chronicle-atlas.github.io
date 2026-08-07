@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メソポタミア文明 史実クロニクルタイムライン (BC3500年〜BC539年)</title>
+  <meta name="description" content="シュメールの都市国家群と楔形文字の発明から、サルゴンによる史上初の帝国、ウル・ナンム法典、ハンムラビ法典、ヒッタイトとミタンニの興亡、カデシュの戦い、前1200年のカタストロフ、アッシュルバニパルの図書館で知られる新アッシリア帝国の恐怖政治、ネブカドネザル2世とバビロン捕囚、そしてキュロス2世によるバビロン無血開城まで。ティグリス・ユーフラテス2つの大河が育んだ3000年の文明史をインタラクティブなタイムラインで体験。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared/timeline-core.css?v=1">
+  <link rel="stylesheet" href="theme.css?v=1">
+</head>
+<body data-timeline="mesopotamia" data-layout="flat">
+  <div class="sticky-header">
+    <div class="header-row">
+      <a href="../" class="back-to-atlas">← Atlas</a>
+      <h1 id="page-h1"></h1>
+      <div class="header-actions">
+        <button class="btn" id="btn-toggle-sidebar" title="人物一覧">👥 人物一覧</button>
+        <button class="btn" id="btn-toggle-map" title="勢力図を表示">🗺️ 勢力図</button>
+      </div>
+    </div>
+    <div class="era-nav" id="era-nav"></div>
+    <div class="controls-row">
+      <div id="faction-filters"></div>
+      <div id="category-filters"></div>
+      <div class="search-box">
+        <input type="text" id="search" placeholder="">
+      </div>
+    </div>
+  </div>
+
+  <div class="main-layout">
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <div class="content-area">
+      <div class="timeline-column">
+        <div class="timeline" id="timeline"></div>
+      </div>
+
+      <div class="map-column" id="map-column" style="display:none">
+        <div class="map-panel" id="map-panel">
+          <div class="map-title"><span id="map-title-text"></span> <span class="map-year-badge" id="map-year-badge"></span></div>
+          <div class="map-container">
+            <div class="map-grid" id="map-grid"></div>
+            <div class="map-legend" id="map-legend"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Event Modal -->
+  <div class="modal-overlay" id="event-modal">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <h2 id="em-title"></h2>
+          <div class="sub"><span id="em-year"></span> ▸ <span id="em-location"></span></div>
+        </div>
+        <div class="modal-head-actions">
+          <div id="em-wiki-link"></div>
+          <button class="modal-close" id="em-close">✕</button>
+        </div>
+      </div>
+      <div class="modal-section"><h3 id="em-desc-label"></h3><p id="em-desc"></p></div>
+      <div class="modal-section" id="em-trivia-section"><h3 id="em-trivia-label"></h3><div class="trivia-box"><p id="em-trivia"></p></div></div>
+      <div class="modal-section" id="em-diff-section"><h3 id="em-diff-label"></h3><div class="trivia-box"><p id="em-diff"></p></div></div>
+      <div class="modal-section"><h3 id="em-chars-label"></h3><div class="char-events-grid" id="em-chars"></div></div>
+    </div>
+  </div>
+
+  <!-- Character Modal -->
+  <div class="modal-overlay" id="char-modal">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <div class="char-header-info">
+            <h2 id="cm-name"></h2>
+            <span id="cm-faction-tag" class="tag"></span>
+            <span class="char-life" id="cm-life"></span>
+          </div>
+          <div class="reading-line" id="cm-reading"></div>
+          <div class="sub" id="cm-role"></div>
+        </div>
+        <div class="modal-head-actions">
+          <div id="cm-wiki-link"></div>
+          <button class="modal-close" id="cm-close">✕</button>
+        </div>
+      </div>
+      <div class="modal-section"><h3 id="cm-desc-label"></h3><p id="cm-desc"></p></div>
+      <div class="modal-section" id="cm-trivia-section"><h3 id="cm-trivia-label"></h3><div class="trivia-box"><p id="cm-trivia"></p></div></div>
+      <div class="modal-section"><h3 id="cm-events-label"></h3><div class="char-events-grid" id="cm-events"></div></div>
+    </div>
+  </div>
+  <script src="../shared/timeline-core.js?v=1"></script>
+</body>
+</html>
