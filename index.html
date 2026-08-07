@@ -303,14 +303,44 @@
    ========================================================================= */
 (() => {
   // ── Configuration ──
-  const START_YEAR = -800;
+  // START_YEARは-800が既定値だが、ERAS定義後に実データの最古開始年へ自動的に
+  // 引き下げる（メソポタミア文明BC3500追加時、この値を手動更新し忘れて
+  // 古代エジプト・メソポタミアの帯上部が見切れる問題が起きたための対応）。
+  let START_YEAR = -800;
   const END_YEAR   = 1920;
   const PX_PER_YEAR = 3;
-  const TOTAL_PX = (END_YEAR - START_YEAR) * PX_PER_YEAR;
+  let TOTAL_PX;
 
-  function yearToY(year) { return (year - START_YEAR) * PX_PER_YEAR; }
+  // BREAK_YEARより古い区間（現状メソポタミア・古代エジプトのみが存在する疎な区間）は
+  // ANCIENT_PX_PER_YEARという大幅に圧縮した縮尺で描く。BREAK_YEAR以降（今のところ全ての
+  // 主要タイムラインが密集する区間）は既存のPX_PER_YEARのまま変更しない。BC3000のような
+  // 古い年代だけが不自然に間延びして見づらくなる問題への対応（2区間の区分線形スケール）。
+  // ANCIENT_PX_PER_YEARは固定値ではなく、疎区間の合計高さが常にANCIENT_ZONE_TARGET_PX程度に
+  // 収まるよう、実データの最古開始年が確定した後に逆算する（1画面でBREAK_YEAR付近まで
+  // 見えてほしいという要望への対応。将来さらに古いタイムラインが増えても手動調整不要）。
+  const BREAK_YEAR = -800;
+  const ANCIENT_ZONE_TARGET_PX = 650;
+  let ANCIENT_PX_PER_YEAR;
+
+  function yearToY(year) {
+    if (year >= BREAK_YEAR) {
+      return (BREAK_YEAR - START_YEAR) * ANCIENT_PX_PER_YEAR + (year - BREAK_YEAR) * PX_PER_YEAR;
+    }
+    return (year - START_YEAR) * ANCIENT_PX_PER_YEAR;
+  }
   function fmtYear(y) { return y < 0 ? `BC${-y}` : `${y}`; }
   function fmtYearJa(y) { return y < 0 ? `紀元前${-y}年` : `${y}年`; }
+
+  // 年ラベル・グリッド線の目盛りをyearToYと同じ2区間で生成する（疎なBREAK_YEAR以前は
+  // 500年刻み、密なBREAK_YEAR以降は既存の50年刻みのまま）。renderYearColumn/
+  // renderGridLinesの両方から共有する。
+  function yearTicks() {
+    const ticks = [];
+    const ancientStart = Math.ceil(START_YEAR / 500) * 500;
+    for (let y = ancientStart; y < BREAK_YEAR; y += 500) ticks.push(y);
+    for (let y = BREAK_YEAR; y <= END_YEAR; y += 50) ticks.push(y);
+    return ticks;
+  }
 
   // ── Regions ──
   const REGIONS = [
@@ -390,10 +420,20 @@
       note:'🐎 バトゥのルーシ侵攻・サライ建設からタタールのくびきの確立、ウズベク・ハンの全盛期、クリコヴォの戦い、ティムールの猛攻、そして分裂とウグラ河畔の対峙まで。モンゴル帝国からヨーロッパ側に根を張り続けた後継国家の265年を描く。大航海時代・宗教改革とはAD1453〜1502年で重なる。' },
 
     // ─── その他の地域 ───
+    { region:'others', name:'メソポタミア文明', start:-3500, end:-539, color:'#3a7a9a',
+      link:'./mesopotamia/', linked:true,
+      note:'📜 シュメールの都市国家群と楔形文字の発明から、サルゴンによる史上初の帝国、ハンムラビ法典、ヒッタイトとミタンニの興亡、前1200年のカタストロフ、アッシュルバニパルの図書館で知られる新アッシリア帝国、ネブカドネザル2世とバビロン捕囚、キュロス2世によるバビロン無血開城まで。ティグリス・ユーフラテスが育んだ3000年の通史。' },
     { region:'others', name:'古代エジプト', start:-3100, end:-30, color:'#d4a84a',
       link:'./ancient-egypt/', linked:true,
       note:'🏺 ナルメルによる上下エジプト統一からギザの大ピラミッド、中王国の再統一、ヒクソスの支配、新王国の絶頂（ハトシェプスト・トトメス3世・アクエンアテン・ツタンカーメン・ラメセス2世）、異民族支配が連続する末期王朝、そしてプトレマイオス朝とクレオパトラの死によるローマ属州化まで。3070年におよぶ通史。' },
   ];
+
+  // ERASの実際の最古開始年に合わせてSTART_YEARを引き下げる（既定の-800より古い
+  // タイムラインが無ければ-800のまま）。ANCIENT_PX_PER_YEAR・TOTAL_PXはこの後で確定させる。
+  START_YEAR = Math.min(START_YEAR, ...ERAS.map(e => e.start));
+  const ancientSpan = BREAK_YEAR - START_YEAR;
+  ANCIENT_PX_PER_YEAR = ancientSpan > 0 ? ANCIENT_ZONE_TARGET_PX / ancientSpan : PX_PER_YEAR;
+  TOTAL_PX = yearToY(END_YEAR);
 
   // ── Quick Jump targets ──
   const JUMPS = [
@@ -497,13 +537,14 @@
   function renderYearColumn() {
     const col = el('div','wt-year-col');
     col.style.height = TOTAL_PX + 'px';
-    for (let y = START_YEAR; y <= END_YEAR; y += 50) {
-      const mark = el('div', y % 100 === 0 ? 'year-mark century' : 'year-mark half-century');
+    yearTicks().forEach(y => {
+      const isMajor = y < BREAK_YEAR ? y % 1000 === 0 : y % 100 === 0;
+      const mark = el('div', isMajor ? 'year-mark century' : 'year-mark half-century');
       mark.style.top = yearToY(y) + 'px';
       mark.textContent = fmtYear(y);
       mark.id = 'y' + y;
       col.appendChild(mark);
-    }
+    });
     grid.appendChild(col);
   }
 
@@ -578,7 +619,7 @@
 
   function createEraBlock(era, lane, laneCount) {
     const top = yearToY(era.start);
-    const height = (era.end - era.start) * PX_PER_YEAR;
+    const height = yearToY(era.end) - yearToY(era.start);
     const isCompact = height < 55;
 
     const block = el('div', 'era-block' + (isCompact ? ' compact' : '') + (era.linked ? ' linked' : '') + (era.comingSoon ? ' coming-soon' : ''));
@@ -656,7 +697,7 @@
     const clampedStart = Math.max(dyn.start, START_YEAR);
     const clampedEnd = Math.min(dyn.end, END_YEAR);
     const top = yearToY(clampedStart);
-    const height = (clampedEnd - clampedStart) * PX_PER_YEAR;
+    const height = yearToY(clampedEnd) - yearToY(clampedStart);
 
     const block = el('div','dynasty-block');
     block.style.top = top + 'px';
@@ -680,11 +721,14 @@
     const lines = el('div','');
     lines.style.cssText = `position:absolute;top:0;left:var(--year-col);right:0;height:${TOTAL_PX}px;pointer-events:none;z-index:0`;
 
-    for (let y = START_YEAR; y <= END_YEAR; y += 50) {
-      const line = el('div', y % 500 === 0 ? 'grid-line major' : (y % 100 === 0 ? 'grid-line century' : 'grid-line half-century'));
+    yearTicks().forEach(y => {
+      const cls = y < BREAK_YEAR
+        ? (y % 1000 === 0 ? 'grid-line major' : 'grid-line century')
+        : (y % 500 === 0 ? 'grid-line major' : (y % 100 === 0 ? 'grid-line century' : 'grid-line half-century'));
+      const line = el('div', cls);
       line.style.top = yearToY(y) + 'px';
       lines.appendChild(line);
-    }
+    });
     grid.appendChild(lines);
   }
 

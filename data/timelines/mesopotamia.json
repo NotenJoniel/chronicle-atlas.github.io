@@ -1,0 +1,330 @@
+{
+  "meta": {
+    "title": "メソポタミア文明 史実クロニクルタイムライン (BC3500年〜BC539年)",
+    "description": "シュメールの都市国家群と楔形文字の発明から、サルゴンによる史上初の帝国、ウル・ナンム法典、ハンムラビ法典、ヒッタイトとミタンニの興亡、カデシュの戦い、前1200年のカタストロフ、アッシュルバニパルの図書館で知られる新アッシリア帝国の恐怖政治、ネブカドネザル2世とバビロン捕囚、そしてキュロス2世によるバビロン無血開城まで。ティグリス・ユーフラテス2つの大河が育んだ3000年の文明史をインタラクティブなタイムラインで体験。",
+    "headerIcon": "📜",
+    "headerTitle": "メソポタミア文明",
+    "headerSubtitle": "BC3500年〜BC539年",
+    "searchPlaceholder": "🔍 出来事・人物を検索…",
+    "mapTitleIcon": "🗺️",
+    "mapTitleLabel": "勢力図",
+    "characterTitleLabel": "別名",
+    "descLabel": "概要",
+    "charDescLabel": "人物紹介",
+    "relatedCharsLabel": "関連人物",
+    "relatedEventsLabel": "関連する出来事",
+    "triviaLabel": "📖 エピソード",
+    "layoutStyle": "flat",
+    "mapLayout": [
+      [null, "assyria", "anatolia"],
+      ["levant", "babylon", "elam"],
+      [null, "sumer", null]
+    ]
+  },
+  "eraPhases": [
+    { "id": 1, "name": "第一章：シュメール都市国家時代", "period": "BC3500 〜 BC2334", "startYear": -3500, "endYear": -2334 },
+    { "id": 2, "name": "第二章：アッカド帝国", "period": "BC2334 〜 BC2154", "startYear": -2334, "endYear": -2154 },
+    { "id": 3, "name": "第三章：ウル第三王朝", "period": "BC2112 〜 BC2004", "startYear": -2112, "endYear": -2004 },
+    { "id": 4, "name": "第四章：古バビロニア", "period": "BC1894 〜 BC1595", "startYear": -1894, "endYear": -1595 },
+    { "id": 5, "name": "第五章：ヒッタイトとミタンニの時代", "period": "BC1600 〜 BC1200", "startYear": -1600, "endYear": -1200 },
+    { "id": 6, "name": "第六章：前1200年のカタストロフ〜中期アッシリア", "period": "BC1225 〜 BC1100", "startYear": -1225, "endYear": -1100 },
+    { "id": 7, "name": "第七章：新アッシリア帝国", "period": "BC911 〜 BC609", "startYear": -911, "endYear": -609 },
+    { "id": 8, "name": "第八章：新バビロニア", "period": "BC626 〜 BC539", "startYear": -626, "endYear": -539 }
+  ],
+  "factions": {
+    "sumer": { "id": "sumer", "name": "シュメール都市国家", "color": "#2a5a4a", "colorLight": "#5a9a82" },
+    "akkad": { "id": "akkad", "name": "アッカド帝国", "color": "#7a4a1a", "colorLight": "#c48a4a" },
+    "babylon": { "id": "babylon", "name": "バビロニア", "color": "#2a3a7a", "colorLight": "#5a6ac4" },
+    "assyria": { "id": "assyria", "name": "アッシリア", "color": "#6a1a1a", "colorLight": "#a83a3a" },
+    "hittite": { "id": "hittite", "name": "ヒッタイト", "color": "#3a4a5a", "colorLight": "#6a8299" },
+    "mitanni": { "id": "mitanni", "name": "ミタンニ", "color": "#5a2a6a", "colorLight": "#9a5aa8" },
+    "elam": { "id": "elam", "name": "エラム", "color": "#8a4a1a", "colorLight": "#c47a3a" },
+    "egypt": { "id": "egypt", "name": "エジプト", "color": "#8a6a1a", "colorLight": "#c4a53a" },
+    "israel": { "id": "israel", "name": "イスラエル・ユダ", "color": "#5a6a2a", "colorLight": "#8fa64a" },
+    "persia": { "id": "persia", "name": "アケメネス朝ペルシア", "color": "#4a3a66", "colorLight": "#7a6aa0" },
+    "other": { "id": "other", "name": "その他", "color": "#4a4a4a", "colorLight": "#9a9a9a" }
+  },
+  "categories": {
+    "battle": { "id": "battle", "name": "合戦", "icon": "⚔️" },
+    "politics": { "id": "politics", "name": "政変", "icon": "👑" },
+    "episode": { "id": "episode", "name": "逸話", "icon": "📜" },
+    "death": { "id": "death", "name": "死没", "icon": "💀" }
+  },
+  "characters": [
+    { "id": "c_gilgamesh", "name": "ギルガメシュ", "reading": "ギルガメシュ", "faction": "sumer", "role": "ウルクの王", "life": "生没年不詳（前2700年頃）", "field": "governance", "description": "都市国家ウルクの王で、後に人類最古の文学作品の一つ『ギルガメシュ叙事詩』の主人公となった半伝説的な人物。粘土板に刻まれたこの物語は、友情・死への恐怖・不死への渇望を描き、シュメール文明が残した最も重要な精神的遺産の一つとされる。", "certainty": "approximate" },
+    { "id": "c_eannatum", "name": "エアンナトゥム", "reading": "エアンナトゥム", "faction": "sumer", "role": "ラガシュの王", "life": "生没年不詳（前25世紀頃）", "field": "governance", "description": "隣接する都市国家ウンマとの長年の国境紛争に勝利し、その戦勝を記念して「禿鷲の碑」を建てた王。密集した隊列を組む重装歩兵の姿が刻まれたこの碑文は、人類史上最古級の戦争記録として知られている。", "certainty": "approximate" },
+    { "id": "c_urukagina", "name": "ウルカギナ", "reading": "ウルカギナ", "faction": "sumer", "role": "ラガシュの王", "life": "生没年不詳（前2380年頃）", "field": "administration", "description": "神官や役人による横暴な徴税・搾取を是正する改革を行ったラガシュの王。「弱者が強者に虐げられぬように」という趣旨の布告は、人類史上最古級の社会改革の記録として評価されている。", "certainty": "approximate" },
+    { "id": "c_lugalzagesi", "name": "ルガルザゲシ", "reading": "ルガルザゲシ", "faction": "sumer", "role": "ウンマ・ウルクの王", "life": "生没年不詳（前2334年頃没）", "field": "governance", "description": "ウンマの王からウルクの王位も兼ね、シュメールの都市国家群を初めて広範囲にまとめ上げた統一者。しかしその統一は長く続かず、北方から台頭したアッカドのサルゴンに敗れ、その治世は終わりを告げた。", "certainty": "approximate" },
+    { "id": "c_sargon", "name": "サルゴン（大王）", "reading": "サルゴン", "faction": "akkad", "role": "アッカド帝国の始祖", "life": "生没年不詳（前2334年頃-前2279年頃）", "field": "governance", "description": "出自不詳の身から身を起こし、ルガルザゲシを破ってシュメール全域を征服、さらに周辺にも遠征を重ねて人類史上初とされる広域帝国を築いた。アッカド語を公用語に定め、常備軍を組織するなど、以後の帝国統治の型を作った人物。", "certainty": "approximate" },
+    { "id": "c_enheduanna", "name": "エンヘドゥアンナ", "reading": "エンヘドゥアンナ", "faction": "akkad", "role": "ウルの月神の女神官", "life": "生没年不詳（前23世紀）", "field": "arts", "description": "サルゴンの娘で、ウルの月神ナンナの最高位の女神官に任じられた。女神イナンナを讃える詩を数多く残し、著者の実名が判明している人類史上最古の記録として知られる。政治的にも各都市の宗教統合を担う要職にあった。", "certainty": "approximate" },
+    { "id": "c_naram_sin", "name": "ナラム・シン", "reading": "ナラム・シン", "faction": "akkad", "role": "アッカド帝国の王", "life": "生没年不詳（前2254年頃-前2218年頃）", "field": "governance", "description": "サルゴンの孫で、アッカド帝国の版図を最大に広げた王。「四方世界の王」を自称し、存命中に自らを神として祀らせるという前代未聞の権威づけを行った。その治世の記念碑（ナラム・シンの碑）は帝国の絶頂を今に伝える。", "certainty": "approximate" },
+    { "id": "c_ur_nammu", "name": "ウル・ナンム", "reading": "ウル・ナンム", "faction": "sumer", "role": "ウル第三王朝の始祖", "life": "生没年不詳（前2112年頃-前2095年頃）", "field": "governance", "description": "グティ人の混乱を収拾してウルを都に新王朝を開いた。ハンムラビ法典よりおよそ300年早い、現存する世界最古級の法典を発布したことでも知られ、シュメール文明最後の輝きとなる「シュメール・ルネサンス」の礎を築いた。", "certainty": "approximate" },
+    { "id": "c_shulgi", "name": "シュルギ", "reading": "シュルギ", "faction": "sumer", "role": "ウル第三王朝の王", "life": "生没年不詳（前2094年頃-前2047年頃）", "field": "governance", "description": "父ウル・ナンムの跡を継ぎ、48年に及ぶ治世で中央集権的な官僚制度を整備した。全土から集められる膨大な行政記録（現存する粘土板文書は数万点に及ぶ）は、当時の経済・行政の実態を伝える史料として今も研究され続けている。", "certainty": "approximate" },
+    { "id": "c_hammurabi", "name": "ハンムラビ", "reading": "ハンムラビ", "faction": "babylon", "role": "バビロン第一王朝の王", "life": "生没年不詳（前1792年頃-前1750年頃）", "field": "governance", "description": "周辺諸国を次々と征服してメソポタミア全域を統一し、バビロンを歴史の中心舞台に押し上げた王。「目には目を、歯には歯を」の同害復讐法で知られるハンムラビ法典を石碑に刻ませ、282条におよぶこの法典は現存する最も完全な古代法典として名高い。" },
+    { "id": "c_zimri_lim", "name": "ジムリ・リム", "reading": "ジムリ・リム", "faction": "other", "role": "マリの王", "life": "生没年不詳（?-前1758年頃）", "field": "administration", "description": "ユーフラテス中流の都市マリを治めた王。王宮跡から発見された2万点以上の外交・行政文書（マリ文書）は、当時のメソポタミア諸国間の複雑な外交関係を伝える一級史料となっている。最終的にハンムラビに征服され、マリは徹底的に破壊された。", "certainty": "approximate" },
+    { "id": "c_mursili_i", "name": "ムルシリ1世", "reading": "ムルシリ1世", "faction": "hittite", "role": "ヒッタイトの王", "life": "生没年不詳（?-前1595年頃）", "field": "military", "description": "小アジアから遠征を敢行し、シリアを経て遠くバビロンにまで攻め入り、これを略奪した。すでに衰退していたバビロン第一王朝はこの一撃で滅亡し、以後メソポタミアは長い混乱期に入る。ムルシリ自身も帰国後まもなく暗殺された。", "certainty": "approximate" },
+    { "id": "c_suppiluliuma_i", "name": "シュッピルリウマ1世", "reading": "シュッピルリウマ1世", "faction": "hittite", "role": "ヒッタイトの大王", "life": "生没年不詳（?-前1322年頃）", "field": "governance", "description": "ヒッタイトを小アジアの一地方勢力から古代オリエントの大国へと押し上げた王。ミタンニ王国を軍事的に圧迫して弱体化させ、シリア方面へ勢力を拡大した。彼の築いた国力が、孫の代のカデシュの戦いでエジプトと渡り合う基盤となった。", "certainty": "approximate" },
+    { "id": "c_tushratta", "name": "トゥシュラッタ", "reading": "トゥシュラッタ", "faction": "mitanni", "role": "ミタンニの王", "life": "生没年不詳（前14世紀）", "field": "administration", "description": "フルリ人の国家ミタンニの王で、エジプトのアメンホテプ3世・アクエンアテンと外交書簡を交わした（アマルナ文書）。娘をエジプトの後宮に嫁がせるなど友好関係を築いたが、晩年はヒッタイトの圧迫と内紛によりミタンニの国力は急速に衰えた。", "certainty": "approximate" },
+    { "id": "c_muwatalli_ii", "name": "ムワタリ2世", "reading": "ムワタリ2世", "faction": "hittite", "role": "ヒッタイトの大王", "life": "生没年不詳（?-前1272年頃）", "field": "governance", "description": "小アジアに広大な版図を築いたヒッタイト帝国の大王。シリアの覇権を巡ってラメセス2世率いるエジプト軍とカデシュで激突し、決着のつかない激戦の末、双方が勝利を主張する結果となった。" },
+    { "id": "c_hattusili_iii", "name": "ハットゥシリ3世", "reading": "ハットゥシリ3世", "faction": "hittite", "role": "ヒッタイトの大王", "life": "生没年不詳（前13世紀）", "field": "governance", "description": "ムワタリ2世の弟で、甥から王位を奪って即位した。台頭するアッシリアへの警戒から、長年の宿敵であったエジプトのラメセス2世と和解し、史上初の国際平和条約とされるエジプト・ヒッタイト平和条約の締結を主導した。", "certainty": "approximate" },
+    { "id": "c_tukulti_ninurta_i", "name": "トゥクルティ・ニヌルタ1世", "reading": "トゥクルティ・ニヌルタ1世", "faction": "assyria", "role": "アッシリアの王", "life": "生没年不詳（?-前1207年頃）", "field": "military", "description": "中期アッシリア王国を率い、当時混乱していたバビロニアへ遠征してこれを一時征服した、アッシリアが初めてメソポタミア南部にまで版図を広げた王。しかしその晩年は息子による反乱で暗殺されるという悲劇に見舞われた。", "certainty": "approximate" },
+    { "id": "c_ashurnasirpal_ii", "name": "アッシュルナツィルパル2世", "reading": "アッシュルナツィルパル2世", "faction": "assyria", "role": "アッシリア王", "life": "生没年不詳（前883年頃-前859年頃）", "field": "governance", "description": "新アッシリア帝国の本格的な拡大を開始した王。征服した都市の住民を生きたまま串刺しにする、あるいは皮を剥ぐといった残虐な処罰を記録に誇らしげに刻ませ、恐怖による威嚇統治という新アッシリアの統治手法を確立した。新都ニムルドの壮麗な王宮建設でも知られる。" },
+    { "id": "c_shalmaneser_iii", "name": "シャルマネセル3世", "reading": "シャルマネセル3世", "faction": "assyria", "role": "アッシリア王", "life": "生没年不詳（前859年頃-前824年頃）", "field": "military", "description": "父アッシュルナツィルパル2世の遠征路線を引き継ぎ、35年におよぶ治世でほぼ毎年のように西方へ遠征を行った。カルカルの戦いではダマスカスを中心とする反アッシリア連合の激しい抵抗に遭ったが、その後も繰り返し西方への圧力をかけ続けた。" },
+    { "id": "c_sammu_ramat", "name": "サンムラマト", "reading": "サンムラマト", "faction": "assyria", "role": "アッシリアの摂政（王太后）", "life": "生没年不詳（前9世紀後半）", "field": "governance", "description": "夫の死後、幼い息子に代わって数年にわたり摂政として政務を執った王太后。異例の女性統治者として記録に残るその存在は、後世ギリシア世界で伝説化され、伝説的な女王「セミラミス」の物語の原型になったと考えられている。", "certainty": "approximate" },
+    { "id": "c_tiglath_pileser_iii", "name": "ティグラト・ピレセル3世", "reading": "ティグラト・ピレセル3世", "faction": "assyria", "role": "アッシリア王", "life": "生没年不詳（前745年頃-前727年頃）", "field": "administration", "description": "軍事クーデターで即位し、征服地を属州として直接統治する制度、駅伝制による情報伝達網、被征服民の強制移住政策など、以後のアッシリア帝国統治の骨格となる行政改革を断行した。単なる略奪的な征服から、恒久的な帝国統治への転換点を作った王。" },
+    { "id": "c_sargon_ii", "name": "サルゴン2世", "reading": "サルゴン2世", "faction": "assyria", "role": "アッシリア王", "life": "生没年不詳（前722年頃-前705年頃）", "field": "governance", "description": "簒奪により即位したとみられる王で、即位の年に北イスラエル王国の都サマリアを陥落させ、住民を各地へ強制移住させた（イスラエルの失われた十支族の伝承の起源）。新都ドゥル・シャルキンの建設中に遠征先で戦死するという異例の最期を遂げた。" },
+    { "id": "c_sennacherib", "name": "センナケリブ", "reading": "センナケリブ", "faction": "assyria", "role": "アッシリア王", "life": "生没年不詳（前705年頃-前681年頃）", "field": "governance", "description": "都をニネヴェに移し壮大に整備した王。ユダ王国の反乱に対しエルサレムを包囲したが陥落させるには至らなかった一方、繰り返し反抗するバビロンには容赦せず、都市を徹底的に破壊し尽くした。晩年、息子たちの手により神殿で暗殺された。" },
+    { "id": "c_hezekiah", "name": "ヒゼキヤ", "reading": "ヒゼキヤ", "faction": "israel", "role": "ユダ王国の王", "life": "生没年不詳（前8世紀後半-前7世紀初頭）", "field": "governance", "description": "アッシリアへの貢納を拒んで反旗を翻したユダ王国の王。センナケリブの大軍にエルサレムを包囲されるが、旧約聖書によれば疫病により包囲軍が壊滅し、都は陥落を免れたと伝えられる。籠城に備えて掘らせた地下水路（ヒゼキヤのトンネル）は現在も残っている。" },
+    { "id": "c_esarhaddon", "name": "エサルハドン", "reading": "エサルハドン", "faction": "assyria", "role": "アッシリア王", "life": "生没年不詳（?-前669年）", "field": "governance", "description": "センナケリブの子で、父が破壊したバビロンの再建に着手する一方、エジプトへ侵攻して都メンフィスを占領した。アッシリアはこの遠征により、メソポタミアからエジプトにまで及ぶ古代オリエント史上最大級の版図を築いた。" },
+    { "id": "c_ashurbanipal", "name": "アッシュルバニパル", "reading": "アッシュルバニパル", "faction": "assyria", "role": "アッシリア王", "life": "生没年不詳（前668年頃-前627年頃）", "field": "scholarship", "description": "エサルハドンの子で、エジプトの反乱を鎮圧すべく再侵攻し、都テーベを徹底的に略奪した軍事面の実績に加え、ニネヴェに古代オリエント最大級の図書館を築いた学識ある王としても知られる。『ギルガメシュ叙事詩』を含む数万枚の粘土板文書が収集され、19世紀の発掘によって古代メソポタミア文学の全容解明に決定的な役割を果たした。" },
+    { "id": "c_nabopolassar", "name": "ナボポラッサル", "reading": "ナボポラッサル", "faction": "babylon", "role": "新バビロニア王朝の始祖", "life": "生没年不詳（?-前605年）", "field": "governance", "description": "アッシリアの弱体化に乗じてバビロンで独立を宣言し、新バビロニア王朝を開いた。メディア王国と同盟してアッシリアの都ニネヴェを陥落させ、長年メソポタミアを支配したアッシリア帝国に終止符を打った。" },
+    { "id": "c_nebuchadnezzar_ii", "name": "ネブカドネザル2世", "reading": "ネブカドネザル2世", "faction": "babylon", "role": "新バビロニアの王", "life": "生没年不詳（前605年頃-前562年頃）", "field": "governance", "description": "新バビロニアの最盛期を築いた王。反乱を起こしたユダ王国のエルサレムを征服して神殿を破壊し、住民の多くをバビロンへ強制移住させた（バビロン捕囚）。イシュタル門や伝説の空中庭園など、バビロンを古代世界随一の壮麗な都に造り上げたことでも知られる。" },
+    { "id": "c_nabonidus", "name": "ナボニドゥス", "reading": "ナボニドゥス", "faction": "babylon", "role": "新バビロニア最後の王", "life": "生没年不詳（前556年頃-前539年頃）", "field": "thought", "description": "伝統的な主神マルドゥクよりも月神シンを重視する宗教改革を進め、アラビア半島のオアシス都市テイマに長期間滞在するなど異例の統治を行い、バビロンの神官団や有力者の反発を招いた。この内部の不和が、後のペルシアによる征服を容易にしたと考えられている。" },
+    { "id": "c_belshazzar", "name": "ベルシャザル", "reading": "ベルシャザル", "faction": "babylon", "role": "共同統治者（王太子）", "life": "生没年不詳（?-前539年）", "field": "governance", "description": "父ナボニドゥスがテイマに滞在していた間、バビロンの実質的な統治を代行した王太子。旧約聖書『ダニエル書』には、彼が催した宴の最中に壁に不吉な文字が浮かび上がったという「宴会の壁の文字」の逸話が記され、その夜のうちにバビロンが陥落したと伝えられる。", "certainty": "approximate" },
+    { "id": "c_cyrus_ii", "name": "キュロス2世", "reading": "キュロス2世", "faction": "persia", "role": "アケメネス朝ペルシアの始祖", "life": "生没年不詳（?-前530年）", "field": "governance", "description": "イラン高原に興ったアケメネス朝ペルシアの王で、急速に勢力を拡大しついにバビロンへ迫った。バビロンは大規模な破壊を受けることなく無血で開城し、キュロスは被征服民の信仰・慣習を尊重する寛容な統治方針を示した。この征服により3000年続いたメソポタミアの独立の歴史は幕を閉じ、以後の古代オリエントはペルシアの時代を迎える。" }
+  ],
+  "events": [
+    { "id": "e_uruk_civilization", "phaseId": 1, "year": -3500, "title": "ウルクなど都市文明の発展", "category": "politics", "characters": [], "location": "ウルク", "certainty": "approximate", "description": "ティグリス・ユーフラテス両河の下流域に、人類史上最初期の都市文明が形成された。神殿を中心に発達したウルクは最盛期に人口5万を超えたとされ、都市計画・分業・余剰生産物の管理という「都市」の要件を満たす世界最古級の事例となった。" },
+    { "id": "e_cuneiform_invented", "phaseId": 1, "year": -3200, "title": "楔形文字の発明", "category": "episode", "characters": [], "location": "ウルク", "certainty": "approximate", "description": "神殿の倉庫管理のために粘土板に刻まれた記号が、次第に洗練されて楔形文字へと発展した。当初は物品の数量を記録する実務的な目的で生まれたこの文字体系は、やがて法典・文学・天文記録まで書き記す、人類最古の本格的な文字体系へと成熟していく。" },
+    { "id": "e_early_dynastic_begins", "phaseId": 1, "year": -2900, "title": "都市国家群の分立（初期王朝時代）", "category": "politics", "characters": [], "location": "シュメール全域", "certainty": "approximate", "description": "ウル・ウルク・ラガシュ・ウンマ・キシュなど、シュメール各地に独立した都市国家が並び立つ時代が始まった。それぞれが守護神を戴き、水利権や国境を巡って絶えず抗争を繰り広げる、群雄割拠の時代である。" },
+    { "id": "e_wheel_invented", "phaseId": 1, "year": -3100, "title": "車輪の発明", "category": "episode", "characters": [], "location": "メソポタミア", "certainty": "approximate", "description": "荷車や戦車に用いられる車輪は、メソポタミアが発祥の地とされる。この技術革新は輸送と戦争のあり方を根本的に変え、後の全ての文明に計り知れない影響を与えることになった。" },
+    { "id": "e_gilgamesh_reign", "phaseId": 1, "year": -2700, "title": "ギルガメシュ、ウルクの王として君臨", "category": "episode", "characters": ["c_gilgamesh"], "location": "ウルク", "certainty": "approximate", "description": "半伝説的な王ギルガメシュの治世は、後世『ギルガメシュ叙事詩』として結実する数々の物語の土台となった。ウルクの巨大な城壁を築いたと伝えられ、その名は数千年を経てなお人類最古の英雄物語の主人公として記憶されている。" },
+    { "id": "e_stele_of_vultures", "phaseId": 1, "year": -2450, "title": "ラガシュ対ウンマの国境紛争「禿鷲の碑」", "category": "battle", "characters": ["c_eannatum"], "location": "ラガシュ・ウンマ国境", "certainty": "approximate", "description": "灌漑用水路と肥沃な国境地帯を巡り、ラガシュとウンマは長年にわたり争いを繰り返した。エアンナトゥムの勝利を記念して建てられた「禿鷲の碑」には、密集陣形を組む重装歩兵の姿が刻まれており、組織立った軍事行動を描いた現存最古級の記録とされる。" },
+    { "id": "e_urukagina_reforms", "phaseId": 1, "year": -2380, "title": "ウルカギナの改革", "category": "politics", "characters": ["c_urukagina"], "location": "ラガシュ", "certainty": "approximate", "description": "神官や役人による過重な徴税・横領を是正し、寡婦や孤児を保護する布告を発したラガシュの王。「弱者が強者に虐げられぬように」という理念を掲げたこの改革は、人類史上最古級の社会正義の記録として評価されている。" },
+    { "id": "e_lugalzagesi_unification", "phaseId": 1, "year": -2350, "title": "ルガルザゲシ、シュメールを統一", "category": "politics", "characters": ["c_lugalzagesi"], "location": "ウンマ・ウルク", "certainty": "approximate", "description": "ウンマの王ルガルザゲシは、ラガシュを征服してウルクの王位も兼ね、シュメールの都市国家群を史上初めて広範囲にまとめ上げた。しかしこの統一は長く続かず、まもなく北方から台頭する新たな勢力の前に敗れ去ることになる。" },
+    { "id": "e_sargon_conquest", "phaseId": 2, "year": -2334, "title": "サルゴン、ルガルザゲシを破りメソポタミアを統一", "category": "battle", "characters": ["c_sargon", "c_lugalzagesi"], "location": "ウルク", "certainty": "approximate", "description": "アッカドの王サルゴンはルガルザゲシを打ち破って捕虜とし、シュメール全域を征服した。さらに周辺各地へも遠征を重ねてペルシア湾から地中海に至る版図を築き、人類史上初とされる広域的な「帝国」を打ち立てた。" },
+    { "id": "e_akkadian_standing_army", "phaseId": 2, "year": -2320, "title": "アッカド語の公用語化・常備軍の組織", "category": "politics", "characters": ["c_sargon"], "location": "アッカド", "certainty": "approximate", "description": "サルゴンはシュメール語に代わりアッカド語を帝国の公用語とし、「王の食卓で食事をする5400人」と記録される史上初の常備軍を組織した。広大な征服地を維持するための行政・軍事の仕組みが、この時代に初めて体系化された。" },
+    { "id": "e_enheduanna_priestess", "phaseId": 2, "year": -2300, "title": "エンヘドゥアンナ、ウルの女神官に", "category": "episode", "characters": ["c_enheduanna"], "location": "ウル", "certainty": "approximate", "description": "サルゴンは娘エンヘドゥアンナをウルの月神ナンナの最高位の女神官に任じた。これは征服したシュメールの伝統的信仰とアッカドの王権を結びつける政治的な意図もあったとされ、彼女は以後40年近くこの要職を務めた。" },
+    { "id": "e_enheduanna_hymns", "phaseId": 2, "year": -2285, "title": "エンヘドゥアンナ、イナンナ讃歌を著す", "category": "episode", "characters": ["c_enheduanna"], "location": "ウル", "certainty": "approximate", "description": "エンヘドゥアンナは女神イナンナを讃える一連の詩を作り、その巻末に自らの名を記した。これにより彼女は、著者の実名が判明している人類史上最古の記録に残る作家となった。政治的著作と個人の信仰告白が融合したその作品は、後のメソポタミア文学に大きな影響を残した。" },
+    { "id": "e_naram_sin_deification", "phaseId": 2, "year": -2254, "title": "ナラム・シン、即位・自らを神格化", "category": "politics", "characters": ["c_naram_sin"], "location": "アッカド", "certainty": "approximate", "description": "サルゴンの孫ナラム・シンは「四方世界の王」を自称し、存命中に自らを神として祀らせるという前例のない権威づけを行った。彼の名は神を示す限定符号を付して表記されるようになり、王権の神格化という新たな段階を開いた。" },
+    { "id": "e_naram_sin_stele", "phaseId": 2, "year": -2230, "title": "ナラム・シンの遠征・帝国最大版図", "category": "battle", "characters": ["c_naram_sin"], "location": "ザグロス山脈方面", "certainty": "approximate", "description": "ナラム・シンは山岳民族ルルビ人を打ち破り、アッカド帝国の版図を最大に広げた。この勝利を記念する「ナラム・シンの碑」には、山を登る敵を踏みつける王の姿が刻まれ、帝国の絶頂期の自信を今に伝えている。" },
+    { "id": "e_rimush_revolts", "phaseId": 2, "year": -2270, "title": "リムシュ、諸都市の反乱を鎮圧", "category": "battle", "characters": [], "location": "シュメール各地", "certainty": "approximate", "description": "サルゴンの死後、征服されたシュメールの諸都市は各地で一斉に反乱を起こした。跡を継いだ王リムシュはこれを武力で鎮圧したが、記録には夥しい犠牲者の数が刻まれており、アッカド帝国の支配が常に不安定さと隣り合わせであったことを物語っている。" },
+    { "id": "e_akkad_collapse", "phaseId": 2, "year": -2154, "title": "グティ人の侵入・アッカド帝国の崩壊", "category": "death", "characters": [], "location": "アッカド", "certainty": "approximate", "description": "ザグロス山脈方面から侵入した遊牧民グティ人により、アッカド帝国は急速に瓦解した。人類史上初の帝国は、築かれてからおよそ180年でその歴史に幕を下ろした。" },
+    { "id": "e_ur_iii_founded", "phaseId": 3, "year": -2112, "title": "ウル・ナンム、ウル第三王朝を開く", "category": "politics", "characters": ["c_ur_nammu"], "location": "ウル", "certainty": "approximate", "description": "グティ人の混乱を収拾したウル・ナンムは、ウルを都に新たな王朝を開いた。シュメール文明最後の栄光の時代となる「ウル第三王朝」の始まりである。" },
+    { "id": "e_ur_nammu_code", "phaseId": 3, "year": -2100, "title": "ウル・ナンム法典、発布", "category": "politics", "characters": ["c_ur_nammu"], "location": "ウル", "certainty": "approximate", "description": "ウル・ナンムは現存する世界最古級の法典を発布した。ハンムラビ法典に先立つことおよそ300年、罰金による賠償を基本とするこの法典は、後の古代オリエントの法体系の原型の一つとなった。" },
+    { "id": "e_shulgi_centralization", "phaseId": 3, "year": -2094, "title": "シュルギ、即位・中央集権改革", "category": "politics", "characters": ["c_shulgi"], "location": "ウル", "certainty": "approximate", "description": "父の跡を継いだシュルギは、48年におよぶ治世で標準化された度量衡・暦・行政区画を整備し、高度に中央集権化された官僚国家を築き上げた。自らも神格化され、その治世は「シュメール・ルネサンス」の最盛期とされる。" },
+    { "id": "e_sumerian_renaissance", "phaseId": 3, "year": -2050, "title": "シュメール・ルネサンス・行政記録の整備", "category": "episode", "characters": [], "location": "ウル", "certainty": "approximate", "description": "ウル第三王朝下では、家畜・穀物・労働力の出納を記録した粘土板文書が数万点の規模で作成された。同時にシュメール語の文学作品も数多く書き写され、すでに日常語としては衰退しつつあったシュメール語が、学術・宗教言語として保存される契機となった。" },
+    { "id": "e_ibbi_sin_decline", "phaseId": 3, "year": -2028, "title": "イビ・シン、即位・帝国の急速な弱体化", "category": "politics", "characters": [], "location": "ウル", "certainty": "approximate", "description": "ウル第三王朝最後の王イビ・シンの治世下、飢饉と物価高騰、そして周辺のアムル人・エラム人の圧力により、中央集権体制は急速に崩れていった。地方総督が次々と独立を宣言し、王の実効支配は都ウル周辺にまで縮小した。" },
+    { "id": "e_ur_fall", "phaseId": 3, "year": -2004, "title": "エラム人の侵入・ウル陥落", "category": "death", "characters": [], "location": "ウル", "certainty": "approximate", "description": "東方の勢力エラムの侵攻を受け、ウルは陥落した。イビ・シン王は捕らえられてエラムへ連行され、ウル第三王朝は滅亡した。この陥落を悼む哀歌『ウル滅亡哀歌』は、シュメール文学最後期の傑作として今に伝わる。" },
+    { "id": "e_babylon_i_founded", "phaseId": 4, "year": -1894, "title": "スムアブム、バビロン第一王朝を開く", "category": "politics", "characters": [], "location": "バビロン", "certainty": "approximate", "description": "アムル人の首長スムアブムが、それまで小さな町に過ぎなかったバビロンを都に王朝を開いた。この時点ではメソポタミアに割拠する諸王朝の一つに過ぎなかったが、後にこの都市が古代オリエント史全体を象徴する存在となる。" },
+    { "id": "e_hammurabi_accession", "phaseId": 4, "year": -1792, "title": "ハンムラビ、即位", "category": "politics", "characters": ["c_hammurabi"], "location": "バビロン", "description": "バビロン第一王朝の6代目の王としてハンムラビが即位した。当初は周辺の有力国に挟まれた中規模国家の一つに過ぎなかったが、巧みな外交と軍事によって次第にその存在感を増していく。" },
+    { "id": "e_zimri_lim_mari", "phaseId": 4, "year": -1780, "title": "ジムリ・リム、マリで即位", "category": "episode", "characters": ["c_zimri_lim"], "location": "マリ", "certainty": "approximate", "description": "ユーフラテス中流の要衝マリでジムリ・リムが王位に就いた。彼の王宮跡から発見された膨大な外交文書群は、ハンムラビ台頭前夜のメソポタミア諸国間の複雑な同盟・裏切りの関係を詳細に伝えている。" },
+    { "id": "e_hammurabi_conquers_mari", "phaseId": 4, "year": -1760, "title": "ハンムラビ、マリを征服", "category": "battle", "characters": ["c_hammurabi", "c_zimri_lim"], "location": "マリ", "description": "長年の同盟相手であったマリに対し、ハンムラビは突如として軍を進めこれを征服した。都市は徹底的に破壊され、かつて栄えたジムリ・リムの壮麗な王宮も灰燼に帰した。" },
+    { "id": "e_hammurabi_code", "phaseId": 4, "year": -1754, "title": "ハンムラビ法典、発布", "category": "politics", "characters": ["c_hammurabi"], "location": "バビロン", "description": "ハンムラビは282条からなる法典を黒い石碑に刻ませ、マルドゥク神殿に据えた。「目には目を、歯には歯を」の同害復讐の原則で知られるこの法典は、身分によって刑罰の重さが異なる点も特徴で、現存する古代法典の中で最も完全な形を保っている。" },
+    { "id": "e_hammurabi_death", "phaseId": 4, "year": -1750, "title": "ハンムラビ、死去・バビロンによる統一の完成", "category": "death", "characters": ["c_hammurabi"], "location": "バビロン", "description": "43年に及ぶ治世の中で周辺諸国を次々と征服したハンムラビが没した。彼の代にメソポタミア全域がバビロンのもとに統一され、以後「バビロニア」という呼び名がこの地域全体を指すようになる。" },
+    { "id": "e_samsu_iluna_troubles", "phaseId": 4, "year": -1740, "title": "サムス・イルナ、反乱とカッシート人の侵入に苦しむ", "category": "battle", "characters": [], "location": "バビロニア南部", "certainty": "approximate", "description": "ハンムラビの跡を継いだサムス・イルナの治世下、南部の諸都市が相次いで反乱を起こし、山岳民族カッシート人の侵入も始まった。ハンムラビが一代で築いた広大な統一王国は、早くも綻びを見せ始めていた。" },
+    { "id": "e_hittite_sack_babylon", "phaseId": 4, "year": -1595, "title": "ヒッタイトのムルシリ1世、バビロンを略奪", "category": "battle", "characters": ["c_mursili_i"], "location": "バビロン", "certainty": "approximate", "description": "小アジアから遠征してきたヒッタイトの王ムルシリ1世が、遠くバビロンにまで攻め込みこれを略奪した。すでに弱体化していたバビロン第一王朝はこの一撃で滅亡し、メソポタミアは新たな勢力が入り乱れる時代へと入っていく。" },
+    { "id": "e_mitanni_rise", "phaseId": 5, "year": -1600, "title": "ミタンニ王国の興隆", "category": "politics", "characters": [], "location": "シリア北部・上メソポタミア", "certainty": "approximate", "description": "フルリ人を主体とする王国ミタンニが、シリア北部から上メソポタミアにかけて勢力を広げた。戦車技術に優れたこの王国は、一時エジプト・ヒッタイトと並ぶ古代オリエントの大国として、外交の主要な当事者となった。" },
+    { "id": "e_amarna_letters_tushratta", "phaseId": 5, "year": -1350, "title": "トゥシュラッタ、エジプトと外交書簡を交わす", "category": "episode", "characters": ["c_tushratta"], "location": "ワシュカンニ（ミタンニ）", "certainty": "approximate", "description": "ミタンニ王トゥシュラッタは、エジプトのアメンホテプ3世・アクエンアテンと数多くの外交書簡を交わした（アマルナ文書）。娘をエジプトの後宮に嫁がせるなど友好関係を結んだが、これは同時に、台頭するヒッタイトへの対抗という戦略的な意図もあった。" },
+    { "id": "e_suppiluliuma_mitanni_pressure", "phaseId": 5, "year": -1344, "title": "シュッピルリウマ1世、ミタンニを圧迫", "category": "battle", "characters": ["c_suppiluliuma_i", "c_tushratta"], "location": "シリア北部", "certainty": "approximate", "description": "ヒッタイトの大王シュッピルリウマ1世は、シリア方面への進出を巡ってミタンニと激しく対立した。度重なる遠征によりミタンニの国力は大きく削がれ、以後ヒッタイトが古代オリエント随一の大国として台頭していく。" },
+    { "id": "e_mitanni_annexed", "phaseId": 5, "year": -1200, "title": "ミタンニ王国、アッシリアに併合され消滅", "category": "death", "characters": [], "location": "上メソポタミア", "certainty": "approximate", "description": "ヒッタイトの圧迫と内紛で弱体化したミタンニは、最終的に東方から勢力を伸ばしたアッシリアに併合され、独立国家としての歴史を終えた。かつてエジプトと対等に渡り合った大国は、こうして地図上から姿を消した。" },
+    { "id": "e_battle_kadesh_meso", "phaseId": 5, "year": -1274, "title": "カデシュの戦い", "category": "battle", "characters": ["c_muwatalli_ii"], "location": "カデシュ（オロンテス川流域）", "description": "シリアの覇権を巡り、ムワタリ2世率いるヒッタイト軍はラメセス2世率いるエジプト軍とカデシュで激突した。奇襲を仕掛けて緒戦を優位に進めたが、決定的な勝利には至らず、双方が自国での勝利を宣伝する結果に終わった。" },
+    { "id": "e_egypt_hittite_treaty_meso", "phaseId": 5, "year": -1259, "title": "エジプト・ヒッタイト平和条約", "category": "politics", "characters": ["c_hattusili_iii"], "location": "ハットゥシャ／ピラメセス", "description": "カデシュの戦いから15年後、台頭するアッシリアへの警戒を強めるハットゥシリ3世は、長年の宿敵エジプトのラメセス2世との和解に踏み切った。銀版に刻まれたこの条約は現存する人類史上最古の国際平和条約とされ、両国は以後、婚姻関係も結ぶ緊密な同盟国となった。" },
+    { "id": "e_bronze_age_collapse", "phaseId": 6, "year": -1200, "title": "「海の民」を含む大規模な民族移動・青銅器時代の崩壊", "category": "battle", "characters": [], "location": "東地中海全域", "certainty": "approximate", "description": "出自不明の複数の民族集団「海の民」を含む大規模な混乱が東地中海世界を襲い、ヒッタイト・ミケーネ文明など多くの国家が同時多発的に崩壊した。青銅器の材料となる錫の交易網も寸断され、地域を横断していた国際的な貿易・外交システムそのものが機能を停止した。" },
+    { "id": "e_hittite_empire_collapse", "phaseId": 6, "year": -1190, "title": "ヒッタイト帝国の崩壊", "category": "death", "characters": [], "location": "ハットゥシャ", "certainty": "approximate", "description": "「海の民」を含む混乱の直撃を受け、かつて古代オリエントを代表する大国であったヒッタイト帝国は急速に瓦解し、都ハットゥシャは放棄された。以後、旧ヒッタイト領には多数の小規模な後継国家（新ヒッタイト諸国）が分立することになる。" },
+    { "id": "e_tukulti_ninurta_babylon", "phaseId": 6, "year": -1225, "title": "トゥクルティ・ニヌルタ1世、バビロンを一時征服", "category": "battle", "characters": ["c_tukulti_ninurta_i"], "location": "バビロン", "certainty": "approximate", "description": "中期アッシリアの王トゥクルティ・ニヌルタ1世は、南のバビロニアへ遠征してこれを征服した。アッシリアが初めてメソポタミア南部にまで版図を広げた画期的な出来事だが、この栄光は長続きせず、王自身も後に息子の反乱により命を落とした。" },
+    { "id": "e_sea_peoples_migration", "phaseId": 6, "year": -1180, "title": "海の民、シリア・エジプト方面へ移動", "category": "episode", "characters": [], "location": "地中海東岸", "certainty": "approximate", "description": "崩壊したヒッタイト・キプロスなどを経由した「海の民」の集団は、シリア沿岸を南下してエジプトへも侵攻した（`ancient-egypt`ではラメセス3世がこれを撃退している）。この大規模な民族移動の波は、古代オリエント全域の勢力図を大きく塗り替えることになった。" },
+    { "id": "e_middle_assyrian_stagnation", "phaseId": 6, "year": -1100, "title": "中期アッシリアの停滞・「暗黒時代」", "category": "politics", "characters": [], "location": "アッシリア", "certainty": "approximate", "description": "青銅器時代システムの崩壊を受け、アッシリアも一時的に領土を大きく縮小させ長い停滞期に入った。周辺のアラム人の移動・定住も進み、以後アッシリアが再び大国として台頭するまでには、およそ200年の空白を要することになる。" },
+    { "id": "e_ashurnasirpal_terror", "phaseId": 7, "year": -883, "title": "アッシュルナツィルパル2世、即位・恐怖政治", "category": "politics", "characters": ["c_ashurnasirpal_ii"], "location": "ニムルド", "description": "アッシュルナツィルパル2世は新アッシリア帝国の本格的な拡大を開始した。征服した都市の住民を生きたまま串刺しにし、あるいは皮を剥ぐといった処罰を記録に誇らしげに刻ませ、恐怖による威嚇統治という新アッシリアの統治手法を確立した。" },
+    { "id": "e_nimrud_capital", "phaseId": 7, "year": -879, "title": "ニムルドへの遷都・新王宮建設", "category": "episode", "characters": ["c_ashurnasirpal_ii"], "location": "ニムルド", "description": "アッシュルナツィルパル2世は都をニムルドに移し、壮麗な新王宮を建設した。落成を祝う宴には1万人以上が招かれたと記録されており、新アッシリア帝国の富と権勢を内外に誇示する一大事業であった。" },
+    { "id": "e_shalmaneser_campaigns", "phaseId": 7, "year": -858, "title": "シャルマネセル3世、即位・積極的な西方遠征", "category": "politics", "characters": ["c_shalmaneser_iii"], "location": "ニムルド", "description": "父の路線を継いだシャルマネセル3世は、35年の治世でほぼ毎年のように西方への遠征を繰り返した。その戦績は各地に残る記念碑や「黒色オベリスク」に詳細に刻まれている。" },
+    { "id": "e_battle_qarqar", "phaseId": 7, "year": -853, "title": "カルカルの戦い", "category": "battle", "characters": ["c_shalmaneser_iii"], "location": "カルカル（シリア）", "description": "ダマスカス・イスラエルなど反アッシリア連合軍とシャルマネセル3世の軍がカルカルで激突した。アッシリア側は勝利を主張したが、その後も西方諸国を完全に服属させるには至らず、以後何度も同方面への遠征を繰り返すことになる。" },
+    { "id": "e_sammu_ramat_regency", "phaseId": 7, "year": -811, "title": "サンムラマト、摂政に", "category": "politics", "characters": ["c_sammu_ramat"], "location": "ニムルド", "certainty": "approximate", "description": "夫の死後、幼い息子アダド・ニラリ3世に代わり、サンムラマトが数年にわたり摂政として政務を執った。男性王のみが記録されるのが通例のアッシリアにあって異例のこの統治は、後世ギリシア世界で伝説の女王「セミラミス」の物語として語り継がれることになる。" },
+    { "id": "e_tiglath_pileser_reforms", "phaseId": 7, "year": -745, "title": "ティグラト・ピレセル3世、行政改革を断行", "category": "politics", "characters": ["c_tiglath_pileser_iii"], "location": "ニネヴェ", "description": "軍事クーデターで即位したティグラト・ピレセル3世は、征服地を属州として直接統治する制度、駅伝による情報伝達網、被征服民の強制移住政策など、恒久的な帝国統治のための行政改革を次々と実施した。単なる略奪遠征から真の「帝国」への転換点となった。" },
+    { "id": "e_damascus_annexed", "phaseId": 7, "year": -732, "title": "ダマスカス征服・アラム諸国の属州化", "category": "battle", "characters": ["c_tiglath_pileser_iii"], "location": "ダマスカス", "description": "ティグラト・ピレセル3世はシリアの中心都市ダマスカスを征服し、周辺のアラム系諸国を次々とアッシリアの属州に組み込んだ。この結果、アッシリアの版図は地中海沿岸にまで達した。" },
+    { "id": "e_sargon_ii_accession", "phaseId": 7, "year": -722, "title": "サルゴン2世、即位", "category": "politics", "characters": ["c_sargon_ii"], "location": "ニネヴェ", "description": "簒奪によって即位したとみられるサルゴン2世は、古のアッカドの大王サルゴンにちなむ名を名乗り、王権の正統性を強調した。" },
+    { "id": "e_samaria_fall", "phaseId": 7, "year": -722, "title": "北イスラエル王国の滅亡", "category": "battle", "characters": ["c_sargon_ii"], "location": "サマリア", "description": "サルゴン2世は北イスラエル王国の都サマリアを陥落させ、住民の多くを帝国各地へ強制移住させた。移住させられた人々の消息は歴史から途絶え、後世「イスラエルの失われた十支族」の伝承として語り継がれることになる。" },
+    { "id": "e_sennacherib_accession", "phaseId": 7, "year": -705, "title": "センナケリブ、即位", "category": "politics", "characters": ["c_sennacherib"], "location": "ニネヴェ", "description": "サルゴン2世の跡を継いだセンナケリブは、都をニネヴェに移し、大規模な都市整備事業に着手した。" },
+    { "id": "e_jerusalem_siege", "phaseId": 7, "year": -701, "title": "センナケリブ、エルサレムを包囲", "category": "battle", "characters": ["c_sennacherib", "c_hezekiah"], "location": "エルサレム", "description": "アッシリアへの貢納を拒んだユダ王国のヒゼキヤに対し、センナケリブは大軍でエルサレムを包囲した。旧約聖書によれば包囲軍に疫病が広がり撤退したと伝えられ、エルサレムは陥落を免れた数少ない都市の一つとなった。" },
+    { "id": "e_babylon_destroyed_sennacherib", "phaseId": 7, "year": -689, "title": "センナケリブ、バビロンを徹底破壊", "category": "battle", "characters": ["c_sennacherib"], "location": "バビロン", "description": "繰り返し反乱を起こすバビロンに激怒したセンナケリブは、ついに都市を徹底的に破壊し尽くし、住民を虐殺・強制移住させ、神殿の神像すら持ち去らせた。この過酷な処置は、バビロンを聖地とみなす人々の間に深い恨みを残すことになる。" },
+    { "id": "e_sennacherib_assassinated", "phaseId": 7, "year": -681, "title": "センナケリブ、暗殺される", "category": "death", "characters": ["c_sennacherib"], "location": "ニネヴェ", "description": "センナケリブは神殿で礼拝中に、自らの息子たちの手により暗殺された。バビロン破壊への神罰と受け止められたこの事件を受け、跡を継いだエサルハドンはバビロンの再建に着手することになる。" },
+    { "id": "e_esarhaddon_egypt_meso", "phaseId": 7, "year": -671, "title": "エサルハドン、エジプトへ侵攻", "category": "battle", "characters": ["c_esarhaddon"], "location": "メンフィス（エジプト）", "description": "エサルハドンはエジプトへ侵攻して都メンフィスを占領した。アッシリアはこの遠征により、メソポタミアからエジプトにまで及ぶ古代オリエント史上最大級の版図を築いた。" },
+    { "id": "e_ashurbanipal_library", "phaseId": 7, "year": -668, "title": "アッシュルバニパル、即位・ニネヴェに大図書館を建設", "category": "episode", "characters": ["c_ashurbanipal"], "location": "ニネヴェ", "description": "即位したアッシュルバニパルは、帝国各地から粘土板文書を収集させ、ニネヴェに古代オリエント最大級の図書館を築いた。『ギルガメシュ叙事詩』を含む数万点の文書が収められたこの図書館は、19世紀の発掘により古代メソポタミア文学の全容を解明する決定的な史料となった。" },
+    { "id": "e_thebes_sacked_meso", "phaseId": 7, "year": -663, "title": "アッシュルバニパル、テーベを略奪", "category": "battle", "characters": ["c_ashurbanipal"], "location": "テーベ（エジプト）", "description": "エジプトの反乱を鎮圧すべく再侵攻したアッシュルバニパルは、宗教的な中心地テーベを徹底的に略奪した。この事件はエジプトの威信に大きな打撃を与えたが、アッシリア自体もまもなく内紛と急速な衰退に見舞われることになる。" },
+    { "id": "e_ashurbanipal_death", "phaseId": 7, "year": -627, "title": "アッシュルバニパル、死去・帝国の急速な崩壊", "category": "death", "characters": ["c_ashurbanipal"], "location": "ニネヴェ", "certainty": "approximate", "description": "学識と武勇を兼ね備えた最後の偉大なアッシリア王アッシュルバニパルが没すると、後継者争いと属州の相次ぐ離反により帝国は坂を転がり落ちるように弱体化していった。" },
+    { "id": "e_nineveh_fall", "phaseId": 7, "year": -612, "title": "ニネヴェ陥落", "category": "death", "characters": [], "location": "ニネヴェ", "description": "新興のバビロニアとメディアの連合軍によって、都ニネヴェは徹底的に破壊された。かつて古代オリエントを恐怖で支配した新アッシリア帝国は、これによって事実上滅亡した。" },
+    { "id": "e_nabopolassar_independence", "phaseId": 8, "year": -626, "title": "ナボポラッサル、バビロンで独立を宣言", "category": "politics", "characters": ["c_nabopolassar"], "location": "バビロン", "description": "アッシリアの内紛に乗じ、ナボポラッサルはバビロンで独立を宣言して新バビロニア王朝を開いた。長年アッシリアの支配に苦しんできたバビロンにとって、悲願の独立回復であった。" },
+    { "id": "e_nineveh_fall_nabopolassar", "phaseId": 8, "year": -612, "title": "ナボポラッサル、メディアと結びニネヴェを陥落させる", "category": "battle", "characters": ["c_nabopolassar"], "location": "ニネヴェ", "description": "ナボポラッサルはイラン高原のメディア王国と同盟を結び、両軍でアッシリアの都ニネヴェを攻め落とした。長くメソポタミアを支配したアッシリア帝国は、これにより歴史の舞台から姿を消した。" },
+    { "id": "e_nebuchadnezzar_accession", "phaseId": 8, "year": -605, "title": "ネブカドネザル2世、即位", "category": "politics", "characters": ["c_nebuchadnezzar_ii"], "location": "バビロン", "description": "父ナボポラッサルの跡を継いだネブカドネザル2世のもとで、新バビロニアは最盛期を迎える。即位前にはエジプト軍をカルケミシュの戦いで破り、シリア・パレスチナ方面への影響力を確立していた。" },
+    { "id": "e_jerusalem_conquered", "phaseId": 8, "year": -597, "title": "ネブカドネザル2世、エルサレムを征服", "category": "battle", "characters": ["c_nebuchadnezzar_ii"], "location": "エルサレム", "description": "エジプトと結んで反旗を翻したユダ王国に対し、ネブカドネザル2世はエルサレムを攻略し、王族・貴族層をバビロンへ連行した。これが後の本格的な「バビロン捕囚」の始まりとなる。" },
+    { "id": "e_temple_destroyed_captivity", "phaseId": 8, "year": -586, "title": "エルサレム神殿の破壊・バビロン捕囚", "category": "death", "characters": ["c_nebuchadnezzar_ii"], "location": "エルサレム", "description": "再度の反乱を受け、ネブカドネザル2世はエルサレムを完全に破壊し、ソロモン神殿を焼き払った。多数の住民がバビロンへ強制移住させられ、この「バビロン捕囚」はユダヤ民族の歴史とその宗教的自己認識に決定的な影響を残した。" },
+    { "id": "e_hanging_gardens", "phaseId": 8, "year": -575, "title": "バビロンの空中庭園・イシュタル門の建設", "category": "episode", "characters": ["c_nebuchadnezzar_ii"], "location": "バビロン", "certainty": "approximate", "description": "ネブカドネザル2世はバビロンを壮麗な都へと造り替えた。鮮やかな瑠璃色の煉瓦で飾られたイシュタル門、そして古代世界の七不思議に数えられる伝説の「空中庭園」は、彼の治世の栄華を象徴する事業とされる。" },
+    { "id": "e_nebuchadnezzar_death", "phaseId": 8, "year": -562, "title": "ネブカドネザル2世、死去", "category": "death", "characters": ["c_nebuchadnezzar_ii"], "location": "バビロン", "description": "43年におよぶ治世で新バビロニアを絶頂期に導いたネブカドネザル2世が没した。彼の死後、後継者たちの治世は短く不安定なものが続くことになる。" },
+    { "id": "e_nabonidus_reforms", "phaseId": 8, "year": -556, "title": "ナボニドゥス、即位・宗教改革で神官団と対立", "category": "politics", "characters": ["c_nabonidus"], "location": "バビロン", "description": "即位したナボニドゥスは、伝統的な主神マルドゥクよりも月神シンを重視する宗教政策を推し進めた。さらにアラビア半島のオアシス都市テイマに長期間滞在するという異例の行動をとり、バビロンの神官団や有力者の強い反発を招いた。" },
+    { "id": "e_belshazzar_regent", "phaseId": 8, "year": -550, "title": "ベルシャザル、共同統治者として実権を代行", "category": "politics", "characters": ["c_belshazzar"], "location": "バビロン", "certainty": "approximate", "description": "父ナボニドゥスがテイマに滞在する間、王太子ベルシャザルがバビロンの実質的な統治を代行した。国内の不和が続く中、東方では新たな脅威が急速に台頭しつつあった。" },
+    { "id": "e_babylon_falls_cyrus", "phaseId": 8, "year": -539, "title": "キュロス2世、バビロンを無血開城で征服", "category": "politics", "characters": ["c_cyrus_ii", "c_belshazzar", "c_nabonidus"], "location": "バビロン", "description": "アケメネス朝ペルシアのキュロス2世が迫ると、バビロンはほとんど抵抗することなく門を開いた。神官団の離反を招いていたナボニドゥス政権への不満が、無血開城を後押ししたと考えられている。旧約聖書はこの夜、宴の最中のベルシャザルの前に不吉な文字が現れたと伝える。この征服をもって、3000年続いたメソポタミアの独立の歴史は幕を閉じ、以後の古代オリエントはアケメネス朝ペルシアの時代を迎える。" }
+  ],
+  "mapSnapshots": [
+    {
+      "year": -2900,
+      "label": "シュメール都市国家の分立",
+      "territories": {
+        "sumer": { "name": "シュメール（南部）", "faction": "sumer", "lord": "諸都市国家、分立" },
+        "babylon": { "name": "アッカド（中部）", "faction": "other", "lord": "未統一の諸集落" },
+        "assyria": { "name": "アッシリア（北部）", "faction": "other", "lord": "未統一の諸集落" },
+        "elam": { "name": "エラム", "faction": "other", "lord": "独立した諸勢力" },
+        "levant": { "name": "レヴァント", "faction": "other", "lord": "独立した諸勢力" },
+        "anatolia": { "name": "アナトリア", "faction": "other", "lord": "独立した諸勢力" }
+      }
+    },
+    {
+      "year": -2334,
+      "label": "サルゴンによる統一・史上初の帝国",
+      "territories": {
+        "sumer": { "name": "シュメール（南部）", "faction": "akkad", "lord": "サルゴン" },
+        "babylon": { "name": "アッカド（中部）", "faction": "akkad", "lord": "サルゴン" },
+        "assyria": { "name": "アッシリア（北部）", "faction": "akkad", "lord": "サルゴン（進出）" },
+        "elam": { "name": "エラム", "faction": "other", "lord": "独立した諸勢力" },
+        "levant": { "name": "レヴァント", "faction": "other", "lord": "独立した諸勢力" },
+        "anatolia": { "name": "アナトリア", "faction": "other", "lord": "独立した諸勢力" }
+      }
+    },
+    {
+      "year": -2100,
+      "label": "ウル第三王朝による南部の再興",
+      "territories": {
+        "sumer": { "name": "シュメール（南部）", "faction": "sumer", "lord": "ウル・ナンム" },
+        "babylon": { "name": "アッカド（中部）", "faction": "sumer", "lord": "ウル第三王朝" },
+        "assyria": { "name": "アッシリア（北部）", "faction": "other", "lord": "独立した諸勢力" },
+        "elam": { "name": "エラム", "faction": "other", "lord": "独立した諸勢力" },
+        "levant": { "name": "レヴァント", "faction": "other", "lord": "独立した諸勢力" },
+        "anatolia": { "name": "アナトリア", "faction": "other", "lord": "独立した諸勢力" }
+      }
+    },
+    {
+      "year": -1750,
+      "label": "ハンムラビによる統一（古バビロニア）",
+      "territories": {
+        "sumer": { "name": "シュメール（南部）", "faction": "babylon", "lord": "ハンムラビ" },
+        "babylon": { "name": "アッカド（中部）", "faction": "babylon", "lord": "ハンムラビ" },
+        "assyria": { "name": "アッシリア（北部）", "faction": "other", "lord": "独立した諸勢力" },
+        "elam": { "name": "エラム", "faction": "other", "lord": "独立した諸勢力" },
+        "levant": { "name": "レヴァント", "faction": "other", "lord": "独立した諸勢力" },
+        "anatolia": { "name": "アナトリア", "faction": "other", "lord": "独立した諸勢力（勃興中のヒッタイト）" }
+      }
+    },
+    {
+      "year": -1274,
+      "label": "ヒッタイト・ミタンニの最盛期（カデシュの戦い前後）",
+      "territories": {
+        "sumer": { "name": "シュメール（南部）", "faction": "babylon", "lord": "カッシート朝バビロニア" },
+        "babylon": { "name": "アッカド（中部）", "faction": "babylon", "lord": "カッシート朝バビロニア" },
+        "assyria": { "name": "アッシリア（北部）", "faction": "assyria", "lord": "中期アッシリア（勃興中）" },
+        "elam": { "name": "エラム", "faction": "other", "lord": "独立した諸勢力" },
+        "levant": { "name": "レヴァント", "faction": "hittite", "lord": "ヒッタイトとエジプトの係争地" },
+        "anatolia": { "name": "アナトリア", "faction": "hittite", "lord": "ムワタリ2世" }
+      }
+    },
+    {
+      "year": -1190,
+      "label": "前1200年のカタストロフ直後",
+      "territories": {
+        "sumer": { "name": "シュメール（南部）", "faction": "babylon", "lord": "カッシート朝バビロニア（動揺）" },
+        "babylon": { "name": "アッカド（中部）", "faction": "babylon", "lord": "カッシート朝バビロニア（動揺）" },
+        "assyria": { "name": "アッシリア（北部）", "faction": "assyria", "lord": "中期アッシリア" },
+        "elam": { "name": "エラム", "faction": "other", "lord": "独立した諸勢力" },
+        "levant": { "name": "レヴァント", "faction": "other", "lord": "海の民の移動により混乱" },
+        "anatolia": { "name": "アナトリア", "faction": "other", "lord": "ヒッタイト帝国、崩壊" }
+      }
+    },
+    {
+      "year": -700,
+      "label": "新アッシリア帝国、史上最大版図",
+      "territories": {
+        "sumer": { "name": "シュメール（南部）", "faction": "assyria", "lord": "アッシリアの属州" },
+        "babylon": { "name": "アッカド（中部）", "faction": "assyria", "lord": "アッシリアの属州" },
+        "assyria": { "name": "アッシリア（北部）", "faction": "assyria", "lord": "センナケリブ" },
+        "elam": { "name": "エラム", "faction": "other", "lord": "半独立、抵抗継続" },
+        "levant": { "name": "レヴァント", "faction": "assyria", "lord": "アッシリアの属州（イスラエル滅亡済み）" },
+        "anatolia": { "name": "アナトリア", "faction": "assyria", "lord": "新ヒッタイト諸国、服属" }
+      }
+    },
+    {
+      "year": -650,
+      "label": "アッシュルバニパルの治世・エジプトを含む最大版図",
+      "territories": {
+        "sumer": { "name": "シュメール（南部）", "faction": "assyria", "lord": "アッシリアの属州" },
+        "babylon": { "name": "アッカド（中部）", "faction": "assyria", "lord": "アッシリアの属州" },
+        "assyria": { "name": "アッシリア（北部）", "faction": "assyria", "lord": "アッシュルバニパル" },
+        "elam": { "name": "エラム", "faction": "assyria", "lord": "征服（一時的）" },
+        "levant": { "name": "レヴァント", "faction": "assyria", "lord": "アッシリアの属州" },
+        "anatolia": { "name": "アナトリア", "faction": "assyria", "lord": "新ヒッタイト諸国、服属" }
+      }
+    },
+    {
+      "year": -562,
+      "label": "新バビロニアの最盛期（ネブカドネザル2世）",
+      "territories": {
+        "sumer": { "name": "シュメール（南部）", "faction": "babylon", "lord": "ネブカドネザル2世" },
+        "babylon": { "name": "アッカド（中部）", "faction": "babylon", "lord": "ネブカドネザル2世" },
+        "assyria": { "name": "アッシリア（北部）", "faction": "babylon", "lord": "新バビロニアが継承" },
+        "elam": { "name": "エラム", "faction": "other", "lord": "独立した諸勢力" },
+        "levant": { "name": "レヴァント", "faction": "babylon", "lord": "エルサレム征服済み" },
+        "anatolia": { "name": "アナトリア", "faction": "other", "lord": "リディア王国など諸勢力" }
+      }
+    },
+    {
+      "year": -539,
+      "label": "キュロス2世による無血開城 — メソポタミア、ペルシアへ",
+      "territories": {
+        "sumer": { "name": "シュメール（南部）", "faction": "persia", "lord": "キュロス2世" },
+        "babylon": { "name": "アッカド（中部）", "faction": "persia", "lord": "キュロス2世" },
+        "assyria": { "name": "アッシリア（北部）", "faction": "persia", "lord": "キュロス2世" },
+        "elam": { "name": "エラム", "faction": "persia", "lord": "アケメネス朝の版図" },
+        "levant": { "name": "レヴァント", "faction": "persia", "lord": "アケメネス朝の版図" },
+        "anatolia": { "name": "アナトリア", "faction": "other", "lord": "リディア王国（未征服）" }
+      }
+    }
+  ],
+  "wikiLinks": {
+    "characters": {
+      "c_gilgamesh": "ギルガメシュ",
+      "c_eannatum": "エアンナトゥム",
+      "c_urukagina": "ウルカギナ",
+      "c_lugalzagesi": "ルガルザゲシ",
+      "c_sargon": "サルゴン (アッカド王)",
+      "c_enheduanna": "エンヘドゥアンナ",
+      "c_naram_sin": "ナラム・シン",
+      "c_ur_nammu": "ウル・ナンム",
+      "c_shulgi": "シュルギ",
+      "c_hammurabi": "ハンムラビ",
+      "c_zimri_lim": "ジムリ・リム",
+      "c_mursili_i": "ムルシリ1世",
+      "c_suppiluliuma_i": "シュッピルリウマ1世",
+      "c_tushratta": "トゥシュラッタ",
+      "c_hattusili_iii": "ハットゥシリ3世",
+      "c_tukulti_ninurta_i": "トゥクルティ・ニヌルタ1世",
+      "c_ashurnasirpal_ii": "アッシュルナツィルパル2世",
+      "c_shalmaneser_iii": "シャルマネセル3世",
+      "c_sammu_ramat": "サンムラマト",
+      "c_tiglath_pileser_iii": "ティグラト・ピレセル3世",
+      "c_sargon_ii": "サルゴン2世",
+      "c_sennacherib": "センナケリブ",
+      "c_hezekiah": "ヒゼキヤ",
+      "c_esarhaddon": "エサルハドン",
+      "c_ashurbanipal": "アッシュールバニパル",
+      "c_nabopolassar": "ナボポラッサル",
+      "c_nebuchadnezzar_ii": "ネブカドネザル2世",
+      "c_nabonidus": "ナボニドゥス",
+      "c_belshazzar": "ベルシャザル",
+      "c_cyrus_ii": "キュロス2世"
+    },
+    "events": {
+      "e_cuneiform_invented": "楔形文字",
+      "e_sargon_conquest": "サルゴン (アッカド王)",
+      "e_naram_sin_stele": "ナラム・シンの碑",
+      "e_ur_nammu_code": "ウル・ナンム法典",
+      "e_hammurabi_code": "ハンムラビ法典",
+      "e_battle_kadesh_meso": "カデシュの戦い",
+      "e_egypt_hittite_treaty_meso": "エジプト・ヒッタイト平和条約",
+      "e_bronze_age_collapse": "青銅器時代の崩壊",
+      "e_ashurbanipal_library": "アッシュールバニパルの図書館",
+      "e_samaria_fall": "サマリア陥落",
+      "e_jerusalem_siege": "エルサレム包囲 (紀元前701年)",
+      "e_nineveh_fall": "ニネヴェの戦い",
+      "e_temple_destroyed_captivity": "バビロン捕囚",
+      "e_hanging_gardens": "バビロンの空中庭園",
+      "e_babylon_falls_cyrus": "バビロン陥落 (紀元前539年)"
+    }
+  }
+}

@@ -1,6 +1,15 @@
 {
   "timelines": [
     {
+      "id": "mesopotamia",
+      "name": "メソポタミア文明",
+      "region": "others",
+      "startYear": -3500,
+      "endYear": -539,
+      "dataFile": "timelines/mesopotamia.json",
+      "subProjectDir": "mesopotamia"
+    },
+    {
       "id": "ancient-egypt",
       "name": "古代エジプト",
       "region": "others",
