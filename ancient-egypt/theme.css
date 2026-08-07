@@ -1,0 +1,6 @@
+/* 古代エジプト — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#140f08;--surface:#1e170d;--surface-2:#281f11;--surface-3:#332815;
+  --border-subtle:rgba(212,168,74,.14);--text:#eee3cc;--text-dim:#a89678;
+  --gold:#d4a84a;--gold-dim:rgba(212,168,74,.2);
+}

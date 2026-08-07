@@ -23,6 +23,1199 @@
     }
   },
   "timelines": {
+    "ancient-egypt": {
+      "events": [
+        {
+          "id": "e_narmer_unification",
+          "year": -3100,
+          "title": "ナルメルによる上下エジプト統一",
+          "category": "politics",
+          "location": "ヒエラコンポリス／ナイル川流域",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_narmer"
+          ]
+        },
+        {
+          "id": "e_memphis_founded",
+          "year": -3000,
+          "title": "メンフィス建設・王朝の中心地に",
+          "category": "politics",
+          "location": "メンフィス",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_narmer"
+          ]
+        },
+        {
+          "id": "e_mastaba_tombs",
+          "year": -2900,
+          "title": "マスタバ墓の発展",
+          "category": "episode",
+          "location": "サッカラ・アビドス"
+        },
+        {
+          "id": "e_old_kingdom_begins",
+          "year": -2686,
+          "title": "第3王朝の成立・古王国の始まり",
+          "category": "politics",
+          "location": "メンフィス",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_djoser"
+          ]
+        },
+        {
+          "id": "e_step_pyramid",
+          "year": -2660,
+          "title": "サッカラに階段ピラミッドを建設",
+          "category": "episode",
+          "location": "サッカラ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_djoser",
+            "c_imhotep"
+          ]
+        },
+        {
+          "id": "e_sneferu_pyramids",
+          "year": -2600,
+          "title": "スネフルの三つのピラミッド",
+          "category": "episode",
+          "location": "ダハシュール・メイドゥム",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_sneferu"
+          ]
+        },
+        {
+          "id": "e_great_pyramid",
+          "year": -2570,
+          "title": "ギザの大ピラミッド、完成",
+          "category": "episode",
+          "location": "ギザ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_khufu"
+          ]
+        },
+        {
+          "id": "e_sphinx_built",
+          "year": -2540,
+          "title": "カフラー、スフィンクスを建造",
+          "category": "episode",
+          "location": "ギザ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_khafre"
+          ]
+        },
+        {
+          "id": "e_menkaure_pyramid",
+          "year": -2510,
+          "title": "メンカウラー、第三のピラミッドを建造",
+          "category": "episode",
+          "location": "ギザ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_menkaure"
+          ]
+        },
+        {
+          "id": "e_pyramid_texts",
+          "year": -2375,
+          "title": "初期のピラミッド・テキストが刻まれる",
+          "category": "episode",
+          "location": "サッカラ"
+        },
+        {
+          "id": "e_pepi_ii_accession",
+          "year": -2278,
+          "title": "ペピ2世、幼くして即位",
+          "category": "politics",
+          "location": "メンフィス",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_pepi_ii"
+          ]
+        },
+        {
+          "id": "e_nomarchs_rise",
+          "year": -2200,
+          "title": "州侯（ノマルク）の伸張・王権の弱体化",
+          "category": "politics",
+          "location": "各地の州（ノモス）",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_pepi_ii"
+          ]
+        },
+        {
+          "id": "e_old_kingdom_ends",
+          "year": -2184,
+          "title": "ペピ2世、崩御・古王国の終焉",
+          "category": "death",
+          "location": "メンフィス",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_pepi_ii"
+          ]
+        },
+        {
+          "id": "e_first_intermediate_collapse",
+          "year": -2181,
+          "title": "中央権力の崩壊・地方分権化",
+          "category": "politics",
+          "location": "エジプト全土"
+        },
+        {
+          "id": "e_thebes_herakleopolis_war",
+          "year": -2160,
+          "title": "テーベ対ヘラクレオポリスの内戦",
+          "category": "battle",
+          "location": "上エジプト・中エジプト"
+        },
+        {
+          "id": "e_reunification_mentuhotep",
+          "year": -2055,
+          "title": "メントゥヘテプ2世による再統一",
+          "category": "politics",
+          "location": "テーベ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_mentuhotep_ii"
+          ]
+        },
+        {
+          "id": "e_amenemhat_dynasty12",
+          "year": -1985,
+          "title": "アメンエムハト1世、第12王朝を開く",
+          "category": "politics",
+          "location": "イチタウイ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_amenemhat_i"
+          ]
+        },
+        {
+          "id": "e_senusret_nubia",
+          "year": -1860,
+          "title": "センウセルト3世のヌビア遠征・要塞建設",
+          "category": "battle",
+          "location": "ヌビア（現スーダン北部）",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_senusret_iii"
+          ]
+        },
+        {
+          "id": "e_faiyum_development",
+          "year": -1850,
+          "title": "ファイユームの大規模灌漑事業",
+          "category": "episode",
+          "location": "ファイユーム"
+        },
+        {
+          "id": "e_middle_kingdom_literature",
+          "year": -1800,
+          "title": "『シヌヘの物語』など文学の黄金期",
+          "category": "episode",
+          "location": "各地"
+        },
+        {
+          "id": "e_dynasty13_decline",
+          "year": -1700,
+          "title": "第13王朝の弱体化・中央権力の分散",
+          "category": "politics",
+          "location": "エジプト全土"
+        },
+        {
+          "id": "e_hyksos_delta_rule",
+          "year": -1650,
+          "title": "ヒクソス、デルタ地帯を支配・アヴァリス建設",
+          "category": "politics",
+          "location": "アヴァリス（デルタ東部）",
+          "color": "#5a4a3a",
+          "characters": [
+            "c_apepi"
+          ]
+        },
+        {
+          "id": "e_kamose_counterattack",
+          "year": -1555,
+          "title": "カーメス、ヒクソスへの反攻を開始",
+          "category": "battle",
+          "location": "上エジプト〜中エジプト",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_kamose",
+            "c_apepi"
+          ]
+        },
+        {
+          "id": "e_kamose_death",
+          "year": -1550,
+          "title": "カーメス、崩御・反攻は弟へ",
+          "category": "death",
+          "location": "テーベ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_kamose"
+          ]
+        },
+        {
+          "id": "e_hyksos_expelled",
+          "year": -1550,
+          "title": "イアフメス1世、ヒクソスを放逐・新王国の始まり",
+          "category": "battle",
+          "location": "アヴァリス",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_ahmose_i"
+          ]
+        },
+        {
+          "id": "e_hatshepsut_regency",
+          "year": -1479,
+          "title": "ハトシェプスト、摂政として実権を掌握",
+          "category": "politics",
+          "location": "テーベ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_hatshepsut"
+          ]
+        },
+        {
+          "id": "e_hatshepsut_pharaoh",
+          "year": -1473,
+          "title": "ハトシェプスト、ファラオとして即位",
+          "category": "politics",
+          "location": "テーベ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_hatshepsut"
+          ]
+        },
+        {
+          "id": "e_punt_expedition",
+          "year": -1470,
+          "title": "プントへの交易遠征",
+          "category": "episode",
+          "location": "プント（紅海沿岸）",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_hatshepsut"
+          ]
+        },
+        {
+          "id": "e_hatshepsut_death",
+          "year": -1458,
+          "title": "ハトシェプスト、崩御",
+          "category": "death",
+          "location": "テーベ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_hatshepsut"
+          ]
+        },
+        {
+          "id": "e_battle_megiddo",
+          "year": -1457,
+          "title": "トトメス3世、メギドの戦いで勝利",
+          "category": "battle",
+          "location": "メギド（カナン）",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_thutmose_iii"
+          ]
+        },
+        {
+          "id": "e_thutmose_iii_empire",
+          "year": -1450,
+          "title": "トトメス3世、エジプト史上最大の版図を達成",
+          "category": "politics",
+          "location": "シリア〜ヌビア",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_thutmose_iii"
+          ]
+        },
+        {
+          "id": "e_thutmose_iii_death",
+          "year": -1425,
+          "title": "トトメス3世、崩御",
+          "category": "death",
+          "location": "テーベ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_thutmose_iii"
+          ]
+        },
+        {
+          "id": "e_amenhotep_iii_golden_age",
+          "year": -1380,
+          "title": "アメンホテプ3世の黄金時代・メムノンの巨像建立",
+          "category": "episode",
+          "location": "テーベ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_amenhotep_iii"
+          ]
+        },
+        {
+          "id": "e_akhenaten_reform",
+          "year": -1353,
+          "title": "アクエンアテン、アテン一神教への改革を断行",
+          "category": "politics",
+          "location": "テーベ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_akhenaten"
+          ]
+        },
+        {
+          "id": "e_amarna_relocation",
+          "year": -1346,
+          "title": "アマルナへの遷都",
+          "category": "politics",
+          "location": "アケトアテン（アマルナ）",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_akhenaten",
+            "c_nefertiti"
+          ]
+        },
+        {
+          "id": "e_amarna_letters",
+          "year": -1340,
+          "title": "ネフェルティティの共同統治説・アマルナ文書",
+          "category": "episode",
+          "location": "アマルナ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_nefertiti"
+          ]
+        },
+        {
+          "id": "e_akhenaten_death",
+          "year": -1336,
+          "title": "アクエンアテン、崩御・改革の挫折へ",
+          "category": "death",
+          "location": "アマルナ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_akhenaten"
+          ]
+        },
+        {
+          "id": "e_tutankhamun_enthronement",
+          "year": -1332,
+          "title": "ツタンカーメン、幼くして即位",
+          "category": "politics",
+          "location": "アマルナ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_tutankhamun"
+          ]
+        },
+        {
+          "id": "e_traditional_religion_restored",
+          "year": -1327,
+          "title": "伝統宗教への復帰・都をテーベへ",
+          "category": "politics",
+          "location": "テーベ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_tutankhamun"
+          ]
+        },
+        {
+          "id": "e_tutankhamun_death",
+          "year": -1323,
+          "title": "ツタンカーメン、若くして死去",
+          "category": "death",
+          "location": "テーベ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_tutankhamun"
+          ]
+        },
+        {
+          "id": "e_horemheb_restoration",
+          "year": -1319,
+          "title": "ホルエムヘブ、秩序回復・アマルナの記憶を消去",
+          "category": "politics",
+          "location": "テーベ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_horemheb"
+          ]
+        },
+        {
+          "id": "e_karnak_hypostyle",
+          "year": -1285,
+          "title": "セティ1世、カルナック神殿の大列柱室を着工",
+          "category": "episode",
+          "location": "カルナック",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_seti_i"
+          ]
+        },
+        {
+          "id": "e_ramesses_ii_enthronement",
+          "year": -1279,
+          "title": "ラメセス2世、即位",
+          "category": "politics",
+          "location": "テーベ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_ramesses_ii"
+          ]
+        },
+        {
+          "id": "e_battle_kadesh",
+          "year": -1274,
+          "title": "カデシュの戦い",
+          "category": "battle",
+          "location": "カデシュ（オロンテス川流域）",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_ramesses_ii",
+            "c_muwatalli_ii"
+          ]
+        },
+        {
+          "id": "e_egypt_hittite_treaty",
+          "year": -1259,
+          "title": "史上初の国際平和条約（エジプト・ヒッタイト平和条約）",
+          "category": "politics",
+          "location": "ピラメセス／ハットゥシャ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_ramesses_ii",
+            "c_muwatalli_ii"
+          ]
+        },
+        {
+          "id": "e_abu_simbel",
+          "year": -1244,
+          "title": "アブ・シンベル神殿、建立",
+          "category": "episode",
+          "location": "アブ・シンベル（ヌビア）",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_ramesses_ii"
+          ]
+        },
+        {
+          "id": "e_ramesses_ii_death",
+          "year": -1213,
+          "title": "ラメセス2世、崩御（治世66年）",
+          "category": "death",
+          "location": "ピラメセス",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_ramesses_ii"
+          ]
+        },
+        {
+          "id": "e_israel_stele",
+          "year": -1208,
+          "title": "メルエンプタハ、「イスラエル碑文」を刻む",
+          "category": "episode",
+          "location": "テーベ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_merneptah"
+          ]
+        },
+        {
+          "id": "e_merneptah_sea_peoples",
+          "year": -1207,
+          "title": "メルエンプタハ、海の民とリビアの侵攻を撃退",
+          "category": "battle",
+          "location": "デルタ西部",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_merneptah"
+          ]
+        },
+        {
+          "id": "e_ramesses_iii_enthronement",
+          "year": -1186,
+          "title": "ラメセス3世、即位",
+          "category": "politics",
+          "location": "テーベ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_ramesses_iii"
+          ]
+        },
+        {
+          "id": "e_sea_peoples_repelled",
+          "year": -1175,
+          "title": "ラメセス3世、海の民を撃退（メディネト・ハブの戦い）",
+          "category": "battle",
+          "location": "デルタ／メディネト・ハブ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_ramesses_iii"
+          ]
+        },
+        {
+          "id": "e_harem_conspiracy",
+          "year": -1155,
+          "title": "ハーレムの陰謀・ラメセス3世、暗殺される",
+          "category": "death",
+          "location": "テーベ",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_ramesses_iii"
+          ]
+        },
+        {
+          "id": "e_new_kingdom_decline",
+          "year": -1150,
+          "title": "新王国の衰退・国力の低下",
+          "category": "politics",
+          "location": "エジプト全土"
+        },
+        {
+          "id": "e_tomb_robberies",
+          "year": -1080,
+          "title": "王家の谷での盗掘が横行",
+          "category": "episode",
+          "location": "王家の谷"
+        },
+        {
+          "id": "e_new_kingdom_ends",
+          "year": -1069,
+          "title": "新王国の終焉・第3中間期へ",
+          "category": "politics",
+          "location": "テーベ／タニス"
+        },
+        {
+          "id": "e_shoshenq_dynasty22",
+          "year": -945,
+          "title": "シェションク1世、第22王朝を開く",
+          "category": "politics",
+          "location": "ブバスティス",
+          "color": "#6a5a2a",
+          "characters": [
+            "c_shoshenq_i"
+          ]
+        },
+        {
+          "id": "e_shoshenq_jerusalem",
+          "year": -925,
+          "title": "シェションク1世、エルサレムへ遠征（聖書の「シシャク」）",
+          "category": "battle",
+          "location": "パレスチナ／エルサレム",
+          "color": "#6a5a2a",
+          "characters": [
+            "c_shoshenq_i"
+          ]
+        },
+        {
+          "id": "e_piye_invasion",
+          "year": -747,
+          "title": "ピイ、ヌビアからエジプト遠征を開始",
+          "category": "battle",
+          "location": "ヌビア〜上エジプト",
+          "color": "#7a2a1a",
+          "characters": [
+            "c_piye"
+          ]
+        },
+        {
+          "id": "e_piye_conquest",
+          "year": -728,
+          "title": "ピイ、エジプト全土を征服・第25王朝の成立",
+          "category": "politics",
+          "location": "メンフィス",
+          "color": "#7a2a1a",
+          "characters": [
+            "c_piye"
+          ]
+        },
+        {
+          "id": "e_taharqa_enthronement",
+          "year": -690,
+          "title": "タハルカ、即位",
+          "category": "politics",
+          "location": "テーベ",
+          "color": "#7a2a1a",
+          "characters": [
+            "c_taharqa"
+          ]
+        },
+        {
+          "id": "e_esarhaddon_invasion",
+          "year": -671,
+          "title": "エサルハドン、エジプトに侵攻・メンフィス占領",
+          "category": "battle",
+          "location": "メンフィス",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_esarhaddon",
+            "c_taharqa"
+          ]
+        },
+        {
+          "id": "e_thebes_sacked",
+          "year": -663,
+          "title": "アッシュールバニパル、テーベを略奪",
+          "category": "battle",
+          "location": "テーベ",
+          "color": "#6a1a1a",
+          "characters": [
+            "c_ashurbanipal"
+          ]
+        },
+        {
+          "id": "e_psamtik_reunification",
+          "year": -664,
+          "title": "プサムテク1世、第26王朝（サイス朝）を開き再統一",
+          "category": "politics",
+          "location": "サイス",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_psamtik_i"
+          ]
+        },
+        {
+          "id": "e_persian_conquest",
+          "year": -525,
+          "title": "カンビュセス2世、ペルシアによる征服（ペルシウムの戦い）",
+          "category": "battle",
+          "location": "ペルシウム（デルタ東部）",
+          "color": "#4a3a66",
+          "characters": [
+            "c_cambyses_ii"
+          ]
+        },
+        {
+          "id": "e_nectanebo_defeat",
+          "year": -343,
+          "title": "ネクタネボ2世の敗北・最後の在地王朝の終焉",
+          "category": "death",
+          "location": "メンフィス",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_nectanebo_ii"
+          ]
+        },
+        {
+          "id": "e_alexander_conquest",
+          "year": -332,
+          "title": "アレクサンドロス大王、エジプトを征服・アレクサンドリア建設",
+          "category": "politics",
+          "location": "メンフィス／アレクサンドリア",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_alexander_the_great"
+          ]
+        },
+        {
+          "id": "e_ptolemaic_kingdom_founded",
+          "year": -305,
+          "title": "プトレマイオス1世、王を称する・プトレマイオス朝の成立",
+          "category": "politics",
+          "location": "アレクサンドリア",
+          "color": "#1a5a6a",
+          "characters": [
+            "c_ptolemy_i"
+          ]
+        },
+        {
+          "id": "e_library_alexandria_founded",
+          "year": -280,
+          "title": "アレクサンドリア図書館・ムセイオンの創設",
+          "category": "episode",
+          "location": "アレクサンドリア",
+          "color": "#1a5a6a",
+          "characters": [
+            "c_ptolemy_i",
+            "c_ptolemy_ii"
+          ]
+        },
+        {
+          "id": "e_manetho_aegyptiaca",
+          "year": -280,
+          "title": "マネト、『エジプト史（アイギュプティアカ）』を著す",
+          "category": "episode",
+          "location": "ヘリオポリス／アレクサンドリア",
+          "color": "#1a5a6a",
+          "characters": [
+            "c_manetho"
+          ]
+        },
+        {
+          "id": "e_rosetta_stone_decree",
+          "year": -196,
+          "title": "ロゼッタ・ストーンの勅令が刻まれる",
+          "category": "episode",
+          "location": "メンフィス",
+          "color": "#1a5a6a",
+          "characters": [
+            "c_ptolemy_v"
+          ]
+        },
+        {
+          "id": "e_cleopatra_accession",
+          "year": -51,
+          "title": "クレオパトラ7世、即位",
+          "category": "politics",
+          "location": "アレクサンドリア",
+          "color": "#1a5a6a",
+          "characters": [
+            "c_cleopatra",
+            "c_ptolemy_xii"
+          ]
+        },
+        {
+          "id": "e_caesar_alexandria",
+          "year": -48,
+          "title": "カエサルとの関係・アレクサンドリア戦争",
+          "category": "politics",
+          "location": "アレクサンドリア",
+          "color": "#1a5a6a",
+          "characters": [
+            "c_cleopatra",
+            "c_caesar"
+          ]
+        },
+        {
+          "id": "e_caesar_death_cleopatra_returns",
+          "year": -44,
+          "title": "カエサル暗殺・クレオパトラ、エジプトへ帰還",
+          "category": "death",
+          "location": "ローマ／アレクサンドリア",
+          "color": "#8B1A1A",
+          "characters": [
+            "c_caesar",
+            "c_cleopatra"
+          ]
+        },
+        {
+          "id": "e_antony_alliance",
+          "year": -41,
+          "title": "アントニウスとの同盟",
+          "category": "politics",
+          "location": "タルソス／アレクサンドリア",
+          "color": "#1a5a6a",
+          "characters": [
+            "c_cleopatra",
+            "c_antony"
+          ]
+        },
+        {
+          "id": "e_battle_actium",
+          "year": -31,
+          "title": "アクティウムの海戦",
+          "category": "battle",
+          "location": "アクティウム（ギリシア西岸）",
+          "color": "#8B1A1A",
+          "characters": [
+            "c_antony",
+            "c_cleopatra",
+            "c_octavian"
+          ]
+        },
+        {
+          "id": "e_cleopatra_death",
+          "year": -30,
+          "title": "クレオパトラの死・エジプトのローマ属州化",
+          "category": "death",
+          "location": "アレクサンドリア",
+          "color": "#1a5a6a",
+          "characters": [
+            "c_cleopatra",
+            "c_octavian"
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_narmer",
+          "name": "ナルメル",
+          "reading": "ナルメル",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_djoser",
+          "name": "ジェセル",
+          "reading": "ジェセル",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_imhotep",
+          "name": "イムホテプ",
+          "reading": "イムホテプ",
+          "faction": "egypt",
+          "field": "administration"
+        },
+        {
+          "id": "c_sneferu",
+          "name": "スネフル",
+          "reading": "スネフル",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_khufu",
+          "name": "クフ",
+          "reading": "クフ",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_khafre",
+          "name": "カフラー",
+          "reading": "カフラー",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_menkaure",
+          "name": "メンカウラー",
+          "reading": "メンカウラー",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_pepi_ii",
+          "name": "ペピ2世",
+          "reading": "ペピ2世",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_mentuhotep_ii",
+          "name": "メントゥヘテプ2世",
+          "reading": "メントゥヘテプ2世",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_amenemhat_i",
+          "name": "アメンエムハト1世",
+          "reading": "アメンエムハト1世",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_senusret_iii",
+          "name": "センウセルト3世",
+          "reading": "センウセルト3世",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_sobekneferu",
+          "name": "セベクネフェル",
+          "reading": "セベクネフェル",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_apepi",
+          "name": "アペピ（アポピス）",
+          "reading": "アペピ",
+          "faction": "hyksos",
+          "field": "governance"
+        },
+        {
+          "id": "c_kamose",
+          "name": "カーメス",
+          "reading": "カーメス",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_ahmose_i",
+          "name": "イアフメス1世",
+          "reading": "イアフメス1世",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_hatshepsut",
+          "name": "ハトシェプスト",
+          "reading": "ハトシェプスト",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_thutmose_iii",
+          "name": "トトメス3世",
+          "reading": "トトメス3世",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_amenhotep_iii",
+          "name": "アメンホテプ3世",
+          "reading": "アメンホテプ3世",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_akhenaten",
+          "name": "アクエンアテン",
+          "reading": "アクエンアテン",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_nefertiti",
+          "name": "ネフェルティティ",
+          "reading": "ネフェルティティ",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_tutankhamun",
+          "name": "ツタンカーメン",
+          "reading": "ツタンカーメン",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_horemheb",
+          "name": "ホルエムヘブ",
+          "reading": "ホルエムヘブ",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_seti_i",
+          "name": "セティ1世",
+          "reading": "セティ1世",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_ramesses_ii",
+          "name": "ラメセス2世",
+          "reading": "ラメセス2世",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_muwatalli_ii",
+          "name": "ムワタリ2世",
+          "reading": "ムワタリ2世",
+          "faction": "hittite",
+          "field": "governance"
+        },
+        {
+          "id": "c_merneptah",
+          "name": "メルエンプタハ",
+          "reading": "メルエンプタハ",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_ramesses_iii",
+          "name": "ラメセス3世",
+          "reading": "ラメセス3世",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_shoshenq_i",
+          "name": "シェションク1世",
+          "reading": "シェションク1世",
+          "faction": "libya",
+          "field": "governance"
+        },
+        {
+          "id": "c_piye",
+          "name": "ピイ（ピアンキ）",
+          "reading": "ピイ",
+          "faction": "nubia",
+          "field": "governance"
+        },
+        {
+          "id": "c_taharqa",
+          "name": "タハルカ",
+          "reading": "タハルカ",
+          "faction": "nubia",
+          "field": "governance"
+        },
+        {
+          "id": "c_esarhaddon",
+          "name": "エサルハドン",
+          "reading": "エサルハドン",
+          "faction": "assyria",
+          "field": "governance"
+        },
+        {
+          "id": "c_ashurbanipal",
+          "name": "アッシュールバニパル",
+          "reading": "アッシュールバニパル",
+          "faction": "assyria",
+          "field": "governance"
+        },
+        {
+          "id": "c_psamtik_i",
+          "name": "プサムテク1世",
+          "reading": "プサムテク1世",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_cambyses_ii",
+          "name": "カンビュセス2世",
+          "reading": "カンビュセス2世",
+          "faction": "persia",
+          "field": "governance"
+        },
+        {
+          "id": "c_nectanebo_ii",
+          "name": "ネクタネボ2世",
+          "reading": "ネクタネボ2世",
+          "faction": "egypt",
+          "field": "governance"
+        },
+        {
+          "id": "c_alexander_the_great",
+          "name": "アレクサンドロス大王",
+          "reading": "アレクサンドロス",
+          "faction": "other",
+          "field": "governance"
+        },
+        {
+          "id": "c_ptolemy_i",
+          "name": "プトレマイオス1世",
+          "reading": "プトレマイオス・ソテル",
+          "faction": "ptolemaic",
+          "field": "governance"
+        },
+        {
+          "id": "c_ptolemy_ii",
+          "name": "プトレマイオス2世",
+          "reading": "プトレマイオス・フィラデルフォス",
+          "faction": "ptolemaic",
+          "field": "governance"
+        },
+        {
+          "id": "c_ptolemy_v",
+          "name": "プトレマイオス5世",
+          "reading": "プトレマイオス・エピファネス",
+          "faction": "ptolemaic",
+          "field": "governance"
+        },
+        {
+          "id": "c_manetho",
+          "name": "マネト",
+          "reading": "マネト",
+          "faction": "ptolemaic",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_ptolemy_xii",
+          "name": "プトレマイオス12世",
+          "reading": "アウレテス（笛吹き王）",
+          "faction": "ptolemaic",
+          "field": "governance"
+        },
+        {
+          "id": "c_cleopatra",
+          "name": "クレオパトラ7世",
+          "reading": "クレオパトラ",
+          "faction": "ptolemaic",
+          "field": "governance"
+        },
+        {
+          "id": "c_caesar",
+          "name": "ユリウス・カエサル",
+          "reading": "カエサル",
+          "faction": "rome",
+          "field": "governance"
+        },
+        {
+          "id": "c_antony",
+          "name": "マルクス・アントニウス",
+          "reading": "アントニウス",
+          "faction": "rome",
+          "field": "governance"
+        },
+        {
+          "id": "c_octavian",
+          "name": "オクタウィアヌス",
+          "reading": "オクタウィアヌス",
+          "faction": "rome",
+          "field": "governance"
+        }
+      ],
+      "factions": {
+        "egypt": {
+          "id": "egypt",
+          "name": "エジプト",
+          "color": "#8a6a1a",
+          "colorLight": "#c4a53a"
+        },
+        "hyksos": {
+          "id": "hyksos",
+          "name": "ヒクソス",
+          "color": "#5a4a3a",
+          "colorLight": "#9a8266"
+        },
+        "nubia": {
+          "id": "nubia",
+          "name": "ヌビア（クシュ）",
+          "color": "#7a2a1a",
+          "colorLight": "#b85a3a"
+        },
+        "libya": {
+          "id": "libya",
+          "name": "リビア",
+          "color": "#6a5a2a",
+          "colorLight": "#a68f4a"
+        },
+        "assyria": {
+          "id": "assyria",
+          "name": "アッシリア",
+          "color": "#6a1a1a",
+          "colorLight": "#a83a3a"
+        },
+        "persia": {
+          "id": "persia",
+          "name": "アケメネス朝ペルシア",
+          "color": "#4a3a66",
+          "colorLight": "#7a6aa0"
+        },
+        "hittite": {
+          "id": "hittite",
+          "name": "ヒッタイト",
+          "color": "#3a4a5a",
+          "colorLight": "#6a8299"
+        },
+        "ptolemaic": {
+          "id": "ptolemaic",
+          "name": "プトレマイオス朝",
+          "color": "#1a5a6a",
+          "colorLight": "#4a94a8"
+        },
+        "rome": {
+          "id": "rome",
+          "name": "ローマ",
+          "color": "#8B1A1A",
+          "colorLight": "#CD5C5C"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#4a4a4a",
+          "colorLight": "#9a9a9a"
+        }
+      }
+    },
     "spring-autumn": {
       "events": [
         {
