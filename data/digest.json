@@ -3,37 +3,776 @@
   "categories": {
     "battle": {
       "id": "battle",
-      "name": "戦い",
+      "name": "合戦",
       "icon": "⚔️"
     },
     "politics": {
       "id": "politics",
-      "name": "政治・外交",
-      "icon": "📜"
+      "name": "政変",
+      "icon": "👑"
     },
     "episode": {
       "id": "episode",
-      "name": "人物・逸話",
-      "icon": "🎭"
+      "name": "逸話",
+      "icon": "📜"
     },
     "death": {
       "id": "death",
-      "name": "英雄の死",
+      "name": "死没",
       "icon": "💀"
     }
   },
   "timelines": {
+    "spring-autumn": {
+      "events": [
+        {
+          "id": "e_beacon_fire",
+          "year": -771,
+          "title": "幽王、烽火戯諸侯で信を失う",
+          "category": "episode",
+          "location": "鎬京",
+          "color": "#6a5a1a",
+          "characters": [
+            "c_you_wang",
+            "c_baosi"
+          ]
+        },
+        {
+          "id": "e_western_zhou_fall",
+          "year": -771,
+          "title": "犬戎の侵入・幽王殺害、西周滅亡",
+          "category": "death",
+          "location": "驪山",
+          "color": "#6a5a1a",
+          "characters": [
+            "c_you_wang"
+          ]
+        },
+        {
+          "id": "e_eastern_zhou_move",
+          "year": -770,
+          "title": "平王東遷・洛邑遷都",
+          "category": "politics",
+          "location": "鎬京 → 洛邑",
+          "color": "#6a5a1a",
+          "characters": [
+            "c_ping_wang"
+          ]
+        },
+        {
+          "id": "e_zheng_xiaoba",
+          "year": -722,
+          "title": "鄭荘公、周王室と対立し勢力を拡大",
+          "category": "politics",
+          "location": "鄭",
+          "color": "#1a4a4a",
+          "characters": [
+            "c_zheng_zhuanggong"
+          ]
+        },
+        {
+          "id": "e_ruge_battle",
+          "year": -707,
+          "title": "繻葛の戦い・鄭が周王を破る",
+          "category": "battle",
+          "location": "繻葛",
+          "color": "#1a4a4a",
+          "characters": [
+            "c_zheng_zhuanggong",
+            "c_zhou_huanwang"
+          ]
+        },
+        {
+          "id": "e_huangong_enthronement",
+          "year": -685,
+          "title": "斉の桓公、即位",
+          "category": "politics",
+          "location": "斉",
+          "color": "#1a3a6a",
+          "characters": [
+            "c_qi_huangong"
+          ]
+        },
+        {
+          "id": "e_guanbao_friendship",
+          "year": -685,
+          "title": "管鮑の交わり・管仲、宰相に登用される",
+          "category": "episode",
+          "location": "斉",
+          "color": "#1a3a6a",
+          "characters": [
+            "c_guan_zhong",
+            "c_bao_shuya"
+          ]
+        },
+        {
+          "id": "e_kuiqiu_covenant",
+          "year": -651,
+          "title": "葵丘の会盟・桓公、覇者と認められる",
+          "category": "politics",
+          "location": "葵丘",
+          "color": "#1a3a6a",
+          "characters": [
+            "c_qi_huangong",
+            "c_guan_zhong"
+          ]
+        },
+        {
+          "id": "e_huangong_death",
+          "year": -643,
+          "title": "桓公、死去し斉は内乱に",
+          "category": "death",
+          "location": "斉",
+          "color": "#1a3a6a",
+          "characters": [
+            "c_qi_huangong"
+          ]
+        },
+        {
+          "id": "e_wengong_enthronement",
+          "year": -636,
+          "title": "重耳、19年の亡命の末に晋公に即位",
+          "category": "politics",
+          "location": "晋",
+          "color": "#2a4a1a",
+          "characters": [
+            "c_jin_wengong",
+            "c_jie_zhitui"
+          ]
+        },
+        {
+          "id": "e_jie_zhitui_death",
+          "year": -636,
+          "title": "介子推、恩賞を求めず綿山で焼死",
+          "category": "death",
+          "location": "綿山",
+          "color": "#2a4a1a",
+          "characters": [
+            "c_jie_zhitui"
+          ]
+        },
+        {
+          "id": "e_chengpu_battle",
+          "year": -632,
+          "title": "城濮の戦い・晋、楚を破る「退避三舎」",
+          "category": "battle",
+          "location": "城濮",
+          "color": "#2a4a1a",
+          "characters": [
+            "c_jin_wengong",
+            "c_chu_chengwang"
+          ]
+        },
+        {
+          "id": "e_jiantu_covenant",
+          "year": -632,
+          "title": "践土の会盟・晋文公、覇者となる",
+          "category": "politics",
+          "location": "践土",
+          "color": "#2a4a1a",
+          "characters": [
+            "c_jin_wengong"
+          ]
+        },
+        {
+          "id": "e_qin_expansion",
+          "year": -624,
+          "title": "秦穆公、西方で勢力を拡大",
+          "category": "politics",
+          "location": "秦",
+          "color": "#4a3a5a",
+          "characters": [
+            "c_qin_mugong"
+          ]
+        },
+        {
+          "id": "e_ding_weight",
+          "year": -606,
+          "title": "楚荘王、「鼎の軽重を問う」",
+          "category": "episode",
+          "location": "洛邑近郊",
+          "color": "#7a1a1a",
+          "characters": [
+            "c_chu_zhuangwang"
+          ]
+        },
+        {
+          "id": "e_bi_battle",
+          "year": -597,
+          "title": "邲の戦い・楚荘王、晋を破り覇者に",
+          "category": "battle",
+          "location": "邲",
+          "color": "#7a1a1a",
+          "characters": [
+            "c_chu_zhuangwang"
+          ]
+        },
+        {
+          "id": "e_first_peace_covenant",
+          "year": -579,
+          "title": "第一次弭兵の会",
+          "category": "politics",
+          "location": "宋"
+        },
+        {
+          "id": "e_yanling_battle",
+          "year": -575,
+          "title": "鄢陵の戦い・晋楚、再び衝突",
+          "category": "battle",
+          "location": "鄢陵"
+        },
+        {
+          "id": "e_yanying_qi",
+          "year": -556,
+          "title": "晏嬰、斉の宰相として国政を支える",
+          "category": "episode",
+          "location": "斉",
+          "color": "#1a3a6a",
+          "characters": [
+            "c_yan_ying"
+          ]
+        },
+        {
+          "id": "e_confucius_birth",
+          "year": -551,
+          "title": "孔子、誕生",
+          "category": "episode",
+          "location": "魯",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_confucius"
+          ]
+        },
+        {
+          "id": "e_zichan_law",
+          "year": -536,
+          "title": "子産、鄭で成文法を公布",
+          "category": "politics",
+          "location": "鄭",
+          "color": "#1a4a4a",
+          "characters": [
+            "c_zichan"
+          ]
+        },
+        {
+          "id": "e_second_peace_covenant",
+          "year": -546,
+          "title": "第二次弭兵の会・晋楚の対立が収まる",
+          "category": "politics",
+          "location": "宋",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_xiang_xu"
+          ]
+        },
+        {
+          "id": "e_confucius_laozi",
+          "year": -518,
+          "title": "孔子、老子に教えを請う（伝説）",
+          "category": "episode",
+          "location": "周・洛邑",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_confucius",
+            "c_laozi"
+          ]
+        },
+        {
+          "id": "e_wu_zixu_exile",
+          "year": -522,
+          "title": "伍子胥、楚から呉へ亡命",
+          "category": "politics",
+          "location": "楚 → 呉",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_wu_zixu"
+          ]
+        },
+        {
+          "id": "e_zhuanzhu_assassination",
+          "year": -515,
+          "title": "専諸、呉王僚を暗殺・闔閭が即位",
+          "category": "death",
+          "location": "呉",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_zhuanzhu",
+            "c_helu"
+          ]
+        },
+        {
+          "id": "e_sunwu_general",
+          "year": -512,
+          "title": "孫武、兵法を献じ呉軍の将となる",
+          "category": "episode",
+          "location": "呉",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_sunwu",
+            "c_helu"
+          ]
+        },
+        {
+          "id": "e_wu_zixu_revenge",
+          "year": -506,
+          "title": "伍子胥、楚の都を陥落させ復讐",
+          "category": "episode",
+          "location": "郢（楚の都）",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_wu_zixu"
+          ]
+        },
+        {
+          "id": "e_helu_death",
+          "year": -496,
+          "title": "呉越、抗争開始・闔閭、越に敗れ死去",
+          "category": "death",
+          "location": "呉越国境",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_helu",
+            "c_goujian"
+          ]
+        },
+        {
+          "id": "e_fuchai_defeats_yue",
+          "year": -494,
+          "title": "夫差、父の仇討ちで越を降す",
+          "category": "battle",
+          "location": "会稽山",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_fuchai",
+            "c_goujian"
+          ]
+        },
+        {
+          "id": "e_goujian_endures",
+          "year": -493,
+          "title": "勾践、臥薪嘗胆の屈辱に耐える",
+          "category": "episode",
+          "location": "会稽 → 越",
+          "color": "#5a1a4a",
+          "characters": [
+            "c_goujian",
+            "c_fan_li",
+            "c_wen_zhong"
+          ]
+        },
+        {
+          "id": "e_xishi_sent",
+          "year": -490,
+          "title": "西施、呉へ送られる（美人計）",
+          "category": "episode",
+          "location": "呉",
+          "color": "#5a1a4a",
+          "characters": [
+            "c_xishi",
+            "c_fan_li"
+          ]
+        },
+        {
+          "id": "e_wu_zixu_death",
+          "year": -484,
+          "title": "伍子胥、夫差に疎まれ自害を命じられる",
+          "category": "death",
+          "location": "呉",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_wu_zixu",
+            "c_fuchai"
+          ]
+        },
+        {
+          "id": "e_wu_destroyed",
+          "year": -473,
+          "title": "勾践、会稽の恥をすすぎ呉を滅ぼす",
+          "category": "death",
+          "location": "呉",
+          "color": "#5a1a4a",
+          "characters": [
+            "c_goujian",
+            "c_fuchai"
+          ]
+        },
+        {
+          "id": "e_fanli_retires",
+          "year": -472,
+          "title": "范蠡、身を引き陶朱公となる",
+          "category": "episode",
+          "location": "越 → 斉",
+          "color": "#5a1a4a",
+          "characters": [
+            "c_fan_li"
+          ]
+        },
+        {
+          "id": "e_wenzhong_death",
+          "year": -472,
+          "title": "文種、勾践に自害を命じられる",
+          "category": "death",
+          "location": "越",
+          "color": "#5a1a4a",
+          "characters": [
+            "c_wen_zhong",
+            "c_goujian"
+          ]
+        },
+        {
+          "id": "e_confucius_journey",
+          "year": -497,
+          "title": "孔子、周遊を開始",
+          "category": "episode",
+          "location": "魯 → 諸国",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_confucius"
+          ]
+        },
+        {
+          "id": "e_jin_six_ministers",
+          "year": -493,
+          "title": "晋の六卿抗争・范氏と中行氏が没落",
+          "category": "politics",
+          "location": "晋",
+          "color": "#2a4a1a",
+          "characters": [
+            "c_zhao_yang"
+          ]
+        },
+        {
+          "id": "e_confucius_return",
+          "year": -484,
+          "title": "孔子、魯に帰り古典編纂に専念",
+          "category": "episode",
+          "location": "魯",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_confucius"
+          ]
+        },
+        {
+          "id": "e_confucius_death",
+          "year": -479,
+          "title": "孔子、死去",
+          "category": "death",
+          "location": "魯",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_confucius"
+          ]
+        },
+        {
+          "id": "e_zhibo_rise",
+          "year": -464,
+          "title": "智伯、勢力を強め他の卿を圧迫し始める",
+          "category": "politics",
+          "location": "晋",
+          "color": "#2a4a1a",
+          "characters": [
+            "c_zhibo",
+            "c_zhao_yang"
+          ]
+        },
+        {
+          "id": "e_jingwang_death",
+          "year": -476,
+          "title": "周敬王、崩御",
+          "category": "death",
+          "location": "洛邑",
+          "color": "#6a5a1a",
+          "characters": [
+            "c_zhou_jingwang"
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_you_wang",
+          "name": "周幽王",
+          "reading": "しゅうゆうおう",
+          "faction": "zhou",
+          "field": "governance"
+        },
+        {
+          "id": "c_baosi",
+          "name": "褒姒",
+          "reading": "ほうじ",
+          "faction": "zhou",
+          "field": "other"
+        },
+        {
+          "id": "c_ping_wang",
+          "name": "周平王",
+          "reading": "しゅうへいおう",
+          "faction": "zhou",
+          "field": "governance"
+        },
+        {
+          "id": "c_zhou_huanwang",
+          "name": "周桓王",
+          "reading": "しゅうかんおう",
+          "faction": "zhou",
+          "field": "governance"
+        },
+        {
+          "id": "c_zhou_jingwang",
+          "name": "周敬王",
+          "reading": "しゅうけいおう",
+          "faction": "zhou",
+          "field": "governance"
+        },
+        {
+          "id": "c_qi_huangong",
+          "name": "斉桓公",
+          "reading": "せいかんこう",
+          "faction": "qi",
+          "field": "governance"
+        },
+        {
+          "id": "c_guan_zhong",
+          "name": "管仲",
+          "reading": "かんちゅう",
+          "faction": "qi",
+          "field": "administration"
+        },
+        {
+          "id": "c_bao_shuya",
+          "name": "鮑叔牙",
+          "reading": "ほうしゅくが",
+          "faction": "qi",
+          "field": "administration"
+        },
+        {
+          "id": "c_zheng_zhuanggong",
+          "name": "鄭荘公",
+          "reading": "ていそうこう",
+          "faction": "zheng",
+          "field": "governance"
+        },
+        {
+          "id": "c_jin_wengong",
+          "name": "晋文公",
+          "reading": "しんぶんこう",
+          "faction": "jin",
+          "field": "governance"
+        },
+        {
+          "id": "c_jie_zhitui",
+          "name": "介子推",
+          "reading": "かいしすい",
+          "faction": "jin",
+          "field": "other"
+        },
+        {
+          "id": "c_zhao_yang",
+          "name": "趙鞅（趙簡子）",
+          "reading": "ちょうおう",
+          "faction": "jin",
+          "field": "governance"
+        },
+        {
+          "id": "c_zhibo",
+          "name": "智伯（知伯瑶）",
+          "reading": "ちはく",
+          "faction": "jin",
+          "field": "governance"
+        },
+        {
+          "id": "c_chu_chengwang",
+          "name": "楚成王",
+          "reading": "そせいおう",
+          "faction": "chu",
+          "field": "governance"
+        },
+        {
+          "id": "c_chu_zhuangwang",
+          "name": "楚荘王",
+          "reading": "そそうおう",
+          "faction": "chu",
+          "field": "governance"
+        },
+        {
+          "id": "c_qin_mugong",
+          "name": "秦穆公",
+          "reading": "しんぼくこう",
+          "faction": "qin",
+          "field": "governance"
+        },
+        {
+          "id": "c_helu",
+          "name": "呉王闔閭",
+          "reading": "ごおうこうりょ",
+          "faction": "wu",
+          "field": "governance"
+        },
+        {
+          "id": "c_zhuanzhu",
+          "name": "専諸",
+          "reading": "せんしょ",
+          "faction": "wu",
+          "field": "military"
+        },
+        {
+          "id": "c_wu_zixu",
+          "name": "伍子胥",
+          "reading": "ごししょ",
+          "faction": "wu",
+          "field": "administration"
+        },
+        {
+          "id": "c_sunwu",
+          "name": "孫武",
+          "reading": "そんぶ",
+          "faction": "wu",
+          "field": "military"
+        },
+        {
+          "id": "c_fuchai",
+          "name": "呉王夫差",
+          "reading": "ごおうふさ",
+          "faction": "wu",
+          "field": "governance"
+        },
+        {
+          "id": "c_goujian",
+          "name": "越王勾践",
+          "reading": "えつおうこうせん",
+          "faction": "yue",
+          "field": "governance"
+        },
+        {
+          "id": "c_fan_li",
+          "name": "范蠡",
+          "reading": "はんれい",
+          "faction": "yue",
+          "field": "administration"
+        },
+        {
+          "id": "c_wen_zhong",
+          "name": "文種",
+          "reading": "ぶんしょう",
+          "faction": "yue",
+          "field": "administration"
+        },
+        {
+          "id": "c_xishi",
+          "name": "西施",
+          "reading": "せいし",
+          "faction": "yue",
+          "field": "other"
+        },
+        {
+          "id": "c_confucius",
+          "name": "孔子",
+          "reading": "こうし",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_laozi",
+          "name": "老子",
+          "reading": "ろうし",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_xiang_xu",
+          "name": "向戌",
+          "reading": "しょうじゅつ",
+          "faction": "other",
+          "field": "administration"
+        },
+        {
+          "id": "c_song_xianggong",
+          "name": "宋襄公",
+          "reading": "そうじょうこう",
+          "faction": "other",
+          "field": "governance"
+        },
+        {
+          "id": "c_yan_ying",
+          "name": "晏嬰（晏子）",
+          "reading": "あんえい",
+          "faction": "qi",
+          "field": "administration"
+        },
+        {
+          "id": "c_zichan",
+          "name": "子産",
+          "reading": "しさん",
+          "faction": "zheng",
+          "field": "administration"
+        }
+      ],
+      "factions": {
+        "zhou": {
+          "id": "zhou",
+          "name": "周王室",
+          "color": "#6a5a1a",
+          "colorLight": "#c4a53a"
+        },
+        "qi": {
+          "id": "qi",
+          "name": "斉",
+          "color": "#1a3a6a",
+          "colorLight": "#4a7ac4"
+        },
+        "jin": {
+          "id": "jin",
+          "name": "晋",
+          "color": "#2a4a1a",
+          "colorLight": "#5a8a3a"
+        },
+        "chu": {
+          "id": "chu",
+          "name": "楚",
+          "color": "#7a1a1a",
+          "colorLight": "#c04a3a"
+        },
+        "qin": {
+          "id": "qin",
+          "name": "秦",
+          "color": "#4a3a5a",
+          "colorLight": "#8a6ac4"
+        },
+        "zheng": {
+          "id": "zheng",
+          "name": "鄭",
+          "color": "#1a4a4a",
+          "colorLight": "#4a8a8a"
+        },
+        "wu": {
+          "id": "wu",
+          "name": "呉",
+          "color": "#8a5a1a",
+          "colorLight": "#c9973a"
+        },
+        "yue": {
+          "id": "yue",
+          "name": "越",
+          "color": "#5a1a4a",
+          "colorLight": "#9a4a8a"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#4a4a4a",
+          "colorLight": "#9a9a9a"
+        }
+      }
+    },
     "warring-states": {
       "events": [
         {
           "id": "e_sonshi_heiho",
           "year": -475,
-          "title": "孫子の兵法と墨家の非攻",
+          "title": "墨家の非攻",
           "category": "episode",
           "location": "各国",
           "color": "#5a5a3a",
           "characters": [
-            "c_sunwu",
             "c_mozi"
           ]
         },
@@ -805,13 +1544,6 @@
           "reading": "ソウシ",
           "faction": "other",
           "field": "thought"
-        },
-        {
-          "id": "c_sunwu",
-          "name": "孫武",
-          "reading": "ソンブ",
-          "faction": "other",
-          "field": "military"
         },
         {
           "id": "c_guiguzi",
