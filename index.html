@@ -315,8 +315,12 @@
   // ANCIENT_PX_PER_YEARという大幅に圧縮した縮尺で描く。BREAK_YEAR以降（今のところ全ての
   // 主要タイムラインが密集する区間）は既存のPX_PER_YEARのまま変更しない。BC3000のような
   // 古い年代だけが不自然に間延びして見づらくなる問題への対応（2区間の区分線形スケール）。
+  // ANCIENT_PX_PER_YEARは固定値ではなく、疎区間の合計高さが常にANCIENT_ZONE_TARGET_PX程度に
+  // 収まるよう、実データの最古開始年が確定した後に逆算する（1画面でBREAK_YEAR付近まで
+  // 見えてほしいという要望への対応。将来さらに古いタイムラインが増えても手動調整不要）。
   const BREAK_YEAR = -800;
-  const ANCIENT_PX_PER_YEAR = 0.5;
+  const ANCIENT_ZONE_TARGET_PX = 650;
+  let ANCIENT_PX_PER_YEAR;
 
   function yearToY(year) {
     if (year >= BREAK_YEAR) {
@@ -425,8 +429,10 @@
   ];
 
   // ERASの実際の最古開始年に合わせてSTART_YEARを引き下げる（既定の-800より古い
-  // タイムラインが無ければ-800のまま）。TOTAL_PXはこの後で確定させる。
+  // タイムラインが無ければ-800のまま）。ANCIENT_PX_PER_YEAR・TOTAL_PXはこの後で確定させる。
   START_YEAR = Math.min(START_YEAR, ...ERAS.map(e => e.start));
+  const ancientSpan = BREAK_YEAR - START_YEAR;
+  ANCIENT_PX_PER_YEAR = ancientSpan > 0 ? ANCIENT_ZONE_TARGET_PX / ancientSpan : PX_PER_YEAR;
   TOTAL_PX = yearToY(END_YEAR);
 
   // ── Quick Jump targets ──
