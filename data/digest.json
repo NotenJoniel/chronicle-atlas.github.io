@@ -4611,6 +4611,18 @@
           ]
         },
         {
+          "id": "e_hitomaro_yoshino",
+          "year": 692,
+          "title": "柿本人麻呂、宮廷歌人として活躍",
+          "category": "episode",
+          "location": "吉野／近江",
+          "color": "#5a4a12",
+          "characters": [
+            "c_kakinomoto_no_hitomaro",
+            "c_jitou_tennou"
+          ]
+        },
+        {
           "id": "e_fujiwarakyo_capital",
           "year": 694,
           "title": "藤原京遷都",
@@ -4652,6 +4664,17 @@
           "color": "#5a4a12",
           "characters": [
             "c_oo_no_yasumaro"
+          ]
+        },
+        {
+          "id": "e_fudoki_edict",
+          "year": 713,
+          "title": "風土記編纂の詔",
+          "category": "politics",
+          "location": "平城京",
+          "color": "#5a4a12",
+          "characters": [
+            "c_genmei_tennou"
           ]
         },
         {
@@ -4789,6 +4812,13 @@
           ]
         },
         {
+          "id": "e_kaifuso_compiled",
+          "year": 751,
+          "title": "『懐風藻』、成立",
+          "category": "episode",
+          "location": "平城京"
+        },
+        {
           "id": "e_daibutsu_kaigen",
           "year": 752,
           "title": "東大寺大仏、開眼供養",
@@ -4846,6 +4876,17 @@
           "characters": [
             "c_junnin_tennou",
             "c_fujiwara_no_nakamaro"
+          ]
+        },
+        {
+          "id": "e_manyoshu_compiled",
+          "year": 759,
+          "title": "『万葉集』、最後の歌が詠まれる（成立は8世紀後半）",
+          "category": "episode",
+          "location": "各地",
+          "color": "#5a4a12",
+          "characters": [
+            "c_otomo_no_yakamochi"
           ]
         },
         {
@@ -5110,6 +5151,13 @@
           "field": "administration"
         },
         {
+          "id": "c_kakinomoto_no_hitomaro",
+          "name": "柿本人麻呂",
+          "reading": "かきのもとのひとまろ",
+          "faction": "court",
+          "field": "arts"
+        },
+        {
           "id": "c_genmei_tennou",
           "name": "元明天皇",
           "reading": "げんめいてんのう",
@@ -5220,6 +5268,13 @@
           "reading": "たちばなのならまろ",
           "faction": "tachibana",
           "field": "governance"
+        },
+        {
+          "id": "c_otomo_no_yakamochi",
+          "name": "大伴家持",
+          "reading": "おおとものやかもち",
+          "faction": "court",
+          "field": "arts"
         },
         {
           "id": "c_junnin_tennou",
