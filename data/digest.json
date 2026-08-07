@@ -8002,6 +8002,1087 @@
         }
       }
     },
+    "bakumatsu-ishin": {
+      "events": [
+        {
+          "id": "e_perry_arrival",
+          "year": 1853,
+          "title": "ペリー、浦賀に来航",
+          "category": "politics",
+          "location": "浦賀",
+          "color": "#3a4a5a",
+          "characters": [
+            "c_matthew_perry"
+          ]
+        },
+        {
+          "id": "e_kanagawa_treaty",
+          "year": 1854,
+          "title": "日米和親条約締結",
+          "category": "politics",
+          "location": "横浜",
+          "color": "#3a4a5a",
+          "characters": [
+            "c_matthew_perry"
+          ]
+        },
+        {
+          "id": "e_nariaki_influence",
+          "year": 1855,
+          "title": "徳川斉昭ら、幕政参与として発言力を強める",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_tokugawa_nariaki"
+          ]
+        },
+        {
+          "id": "e_harris_shimoda",
+          "year": 1856,
+          "title": "ハリス、下田に着任",
+          "category": "politics",
+          "location": "下田",
+          "color": "#3a4a5a",
+          "characters": [
+            "c_townsend_harris"
+          ]
+        },
+        {
+          "id": "e_shogun_succession",
+          "year": 1858,
+          "title": "将軍継嗣問題、激化",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_tokugawa_nariaki",
+            "c_tokugawa_yoshinobu",
+            "c_ii_naosuke"
+          ]
+        },
+        {
+          "id": "e_ansei_treaty",
+          "year": 1858,
+          "title": "日米修好通商条約、無勅許で調印",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#2a3a52",
+          "characters": [
+            "c_ii_naosuke",
+            "c_townsend_harris"
+          ]
+        },
+        {
+          "id": "e_naosuke_tairo",
+          "year": 1858,
+          "title": "井伊直弼、大老に就任し家茂を将軍継嗣に決定",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#2a3a52",
+          "characters": [
+            "c_ii_naosuke",
+            "c_tokugawa_iemochi"
+          ]
+        },
+        {
+          "id": "e_ansei_purge",
+          "year": 1858,
+          "title": "安政の大獄、始まる",
+          "category": "politics",
+          "location": "全国",
+          "color": "#2a3a52",
+          "characters": [
+            "c_ii_naosuke"
+          ]
+        },
+        {
+          "id": "e_shoin_execution",
+          "year": 1859,
+          "title": "吉田松陰、処刑される",
+          "category": "death",
+          "location": "江戸・伝馬町",
+          "color": "#2a4a1a",
+          "characters": [
+            "c_yoshida_shoin"
+          ]
+        },
+        {
+          "id": "e_nariaki_confined",
+          "year": 1859,
+          "title": "徳川斉昭、隠居謹慎処分",
+          "category": "politics",
+          "location": "水戸",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_tokugawa_nariaki"
+          ]
+        },
+        {
+          "id": "e_sakuradamongai",
+          "year": 1860,
+          "title": "桜田門外の変・井伊直弼暗殺",
+          "category": "death",
+          "location": "江戸・桜田門外",
+          "color": "#2a3a52",
+          "characters": [
+            "c_ii_naosuke"
+          ]
+        },
+        {
+          "id": "e_sakashitamongai",
+          "year": 1862,
+          "title": "坂下門外の変・安藤信正襲撃",
+          "category": "episode",
+          "location": "江戸・坂下門外",
+          "color": "#2a3a52",
+          "characters": [
+            "c_ando_nobumasa"
+          ]
+        },
+        {
+          "id": "e_namamugi_incident",
+          "year": 1862,
+          "title": "生麦事件",
+          "category": "episode",
+          "location": "武蔵国・生麦",
+          "color": "#7a1a2a",
+          "characters": [
+            "c_shimazu_hisamitsu"
+          ]
+        },
+        {
+          "id": "e_satsuei_war",
+          "year": 1863,
+          "title": "薩英戦争",
+          "category": "battle",
+          "location": "鹿児島湾",
+          "color": "#7a1a2a",
+          "characters": [
+            "c_shimazu_hisamitsu"
+          ]
+        },
+        {
+          "id": "e_shimonoseki_bombardment",
+          "year": 1863,
+          "title": "長州藩、下関で外国船を砲撃",
+          "category": "battle",
+          "location": "下関海峡",
+          "color": "#2a4a1a",
+          "characters": [
+            "c_takasugi_shinsaku",
+            "c_kusaka_genzui"
+          ]
+        },
+        {
+          "id": "e_august18_coup",
+          "year": 1863,
+          "title": "八月十八日の政変",
+          "category": "politics",
+          "location": "京都",
+          "color": "#7a1a2a",
+          "characters": [
+            "c_shimazu_hisamitsu",
+            "c_matsudaira_katamori",
+            "c_sanjo_sanetomi"
+          ]
+        },
+        {
+          "id": "e_shimonoseki_war",
+          "year": 1864,
+          "title": "下関戦争・四国連合艦隊の報復",
+          "category": "battle",
+          "location": "下関",
+          "color": "#2a4a1a",
+          "characters": [
+            "c_takasugi_shinsaku"
+          ]
+        },
+        {
+          "id": "e_takasugi_conversion",
+          "year": 1865,
+          "title": "高杉晋作、藩論転換に尽力",
+          "category": "episode",
+          "location": "下関",
+          "color": "#2a4a1a",
+          "characters": [
+            "c_takasugi_shinsaku"
+          ]
+        },
+        {
+          "id": "e_ikedaya_incident",
+          "year": 1864,
+          "title": "池田屋事件",
+          "category": "battle",
+          "location": "京都・池田屋",
+          "color": "#2a3a52",
+          "characters": [
+            "c_kondo_isami",
+            "c_katsura_kogoro"
+          ]
+        },
+        {
+          "id": "e_kinmon_incident",
+          "year": 1864,
+          "title": "禁門の変・久坂玄瑞討死",
+          "category": "death",
+          "location": "京都御所周辺",
+          "color": "#2a4a1a",
+          "characters": [
+            "c_kusaka_genzui",
+            "c_matsudaira_katamori"
+          ]
+        },
+        {
+          "id": "e_first_choshu_expedition",
+          "year": 1864,
+          "title": "第一次長州征討・長州藩、恭順",
+          "category": "politics",
+          "location": "長州",
+          "color": "#2a3a52",
+          "characters": [
+            "c_tokugawa_iemochi"
+          ]
+        },
+        {
+          "id": "e_kozanji_uprising",
+          "year": 1865,
+          "title": "高杉晋作のクーデター（功山寺挙兵）",
+          "category": "battle",
+          "location": "長州・下関",
+          "color": "#2a4a1a",
+          "characters": [
+            "c_takasugi_shinsaku"
+          ]
+        },
+        {
+          "id": "e_satcho_alliance",
+          "year": 1866,
+          "title": "坂本龍馬、薩長同盟を仲介",
+          "category": "politics",
+          "location": "京都",
+          "color": "#1a4a4a",
+          "characters": [
+            "c_sakamoto_ryoma",
+            "c_saigo_takamori",
+            "c_katsura_kogoro"
+          ]
+        },
+        {
+          "id": "e_second_choshu_expedition",
+          "year": 1866,
+          "title": "第二次長州征討・幕府軍苦戦",
+          "category": "battle",
+          "location": "長州各地",
+          "color": "#2a4a1a",
+          "characters": [
+            "c_takasugi_shinsaku",
+            "c_tokugawa_iemochi"
+          ]
+        },
+        {
+          "id": "e_iemochi_death",
+          "year": 1866,
+          "title": "徳川家茂、大坂城で死去",
+          "category": "death",
+          "location": "大坂城",
+          "color": "#2a3a52",
+          "characters": [
+            "c_tokugawa_iemochi"
+          ]
+        },
+        {
+          "id": "e_yoshinobu_shogun",
+          "year": 1866,
+          "title": "徳川慶喜、十五代将軍に就任",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#2a3a52",
+          "characters": [
+            "c_tokugawa_yoshinobu"
+          ]
+        },
+        {
+          "id": "e_komei_death",
+          "year": 1867,
+          "title": "孝明天皇、崩御",
+          "category": "death",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_komei_tenno"
+          ]
+        },
+        {
+          "id": "e_meiji_enthronement",
+          "year": 1867,
+          "title": "明治天皇、即位",
+          "category": "politics",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_meiji_tenno"
+          ]
+        },
+        {
+          "id": "e_senchu_hassaku",
+          "year": 1867,
+          "title": "坂本龍馬、船中八策を起草",
+          "category": "episode",
+          "location": "船上（京都〜長崎）",
+          "color": "#1a4a4a",
+          "characters": [
+            "c_sakamoto_ryoma"
+          ]
+        },
+        {
+          "id": "e_taisei_hokan_proposal",
+          "year": 1867,
+          "title": "山内容堂、大政奉還を建白",
+          "category": "politics",
+          "location": "京都",
+          "color": "#1a4a4a",
+          "characters": [
+            "c_yamauchi_yodo",
+            "c_goto_shojiro"
+          ]
+        },
+        {
+          "id": "e_taisei_hokan",
+          "year": 1867,
+          "title": "大政奉還",
+          "category": "politics",
+          "location": "京都・二条城",
+          "color": "#2a3a52",
+          "characters": [
+            "c_tokugawa_yoshinobu"
+          ]
+        },
+        {
+          "id": "e_ryoma_assassination",
+          "year": 1867,
+          "title": "坂本龍馬・中岡慎太郎、暗殺される",
+          "category": "death",
+          "location": "京都・近江屋",
+          "color": "#1a4a4a",
+          "characters": [
+            "c_sakamoto_ryoma",
+            "c_nakaoka_shintaro"
+          ]
+        },
+        {
+          "id": "e_osei_fukko",
+          "year": 1867,
+          "title": "王政復古の大号令",
+          "category": "politics",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_iwakura_tomomi",
+            "c_saigo_takamori"
+          ]
+        },
+        {
+          "id": "e_kogosho_conference",
+          "year": 1867,
+          "title": "小御所会議・慶喜の辞官納地決定",
+          "category": "politics",
+          "location": "京都・小御所",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_iwakura_tomomi",
+            "c_yamauchi_yodo"
+          ]
+        },
+        {
+          "id": "e_toba_fushimi",
+          "year": 1868,
+          "title": "鳥羽・伏見の戦い",
+          "category": "battle",
+          "location": "京都・鳥羽伏見",
+          "color": "#2a3a52",
+          "characters": [
+            "c_tokugawa_yoshinobu",
+            "c_saigo_takamori",
+            "c_itagaki_taisuke"
+          ]
+        },
+        {
+          "id": "e_yoshinobu_retreat",
+          "year": 1868,
+          "title": "慶喜、大坂城を脱出し江戸へ",
+          "category": "politics",
+          "location": "大坂 → 江戸",
+          "color": "#2a3a52",
+          "characters": [
+            "c_tokugawa_yoshinobu"
+          ]
+        },
+        {
+          "id": "e_arisugawa_general",
+          "year": 1868,
+          "title": "有栖川宮熾仁親王、東征大総督に就任",
+          "category": "politics",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_arisugawanomiya"
+          ]
+        },
+        {
+          "id": "e_charter_oath",
+          "year": 1868,
+          "title": "五箇条の御誓文",
+          "category": "politics",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_meiji_tenno",
+            "c_iwakura_tomomi"
+          ]
+        },
+        {
+          "id": "e_atsuhime_appeal",
+          "year": 1868,
+          "title": "天璋院篤姫、徳川家存続を嘆願",
+          "category": "episode",
+          "location": "江戸城",
+          "color": "#2a3a52",
+          "characters": [
+            "c_tenshoin_atsuhime"
+          ]
+        },
+        {
+          "id": "e_edo_bloodless_surrender",
+          "year": 1868,
+          "title": "江戸城無血開城・勝海舟と西郷の会談",
+          "category": "politics",
+          "location": "江戸・薩摩藩邸",
+          "color": "#2a3a52",
+          "characters": [
+            "c_katsu_kaishu",
+            "c_saigo_takamori"
+          ]
+        },
+        {
+          "id": "e_ueno_war",
+          "year": 1868,
+          "title": "上野戦争・彰義隊の壊滅",
+          "category": "battle",
+          "location": "江戸・上野",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_omura_masujiro"
+          ]
+        },
+        {
+          "id": "e_ouetsu_alliance",
+          "year": 1868,
+          "title": "奥羽越列藩同盟、結成",
+          "category": "politics",
+          "location": "奥羽・越後",
+          "color": "#4a3a5a",
+          "characters": [
+            "c_matsudaira_katamori"
+          ]
+        },
+        {
+          "id": "e_aizu_war",
+          "year": 1868,
+          "title": "会津戦争・白虎隊の悲劇",
+          "category": "battle",
+          "location": "会津若松",
+          "color": "#4a3a5a",
+          "characters": [
+            "c_matsudaira_katamori",
+            "c_niijima_yae"
+          ]
+        },
+        {
+          "id": "e_aizu_castle_fall",
+          "year": 1868,
+          "title": "会津若松城、開城",
+          "category": "politics",
+          "location": "会津若松城",
+          "color": "#4a3a5a",
+          "characters": [
+            "c_matsudaira_katamori"
+          ]
+        },
+        {
+          "id": "e_enomoto_ezo",
+          "year": 1868,
+          "title": "榎本武揚、艦隊を率いて蝦夷地へ",
+          "category": "politics",
+          "location": "江戸 → 蝦夷地",
+          "color": "#2a3a52",
+          "characters": [
+            "c_enomoto_takeaki",
+            "c_hijikata_toshizo"
+          ]
+        },
+        {
+          "id": "e_ezo_republic",
+          "year": 1868,
+          "title": "蝦夷共和国の成立",
+          "category": "politics",
+          "location": "箱館・五稜郭",
+          "color": "#2a3a52",
+          "characters": [
+            "c_enomoto_takeaki"
+          ]
+        },
+        {
+          "id": "e_goryokaku_battle",
+          "year": 1869,
+          "title": "五稜郭の戦い・土方歳三戦死",
+          "category": "death",
+          "location": "箱館・五稜郭",
+          "color": "#2a3a52",
+          "characters": [
+            "c_hijikata_toshizo"
+          ]
+        },
+        {
+          "id": "e_boshin_war_end",
+          "year": 1869,
+          "title": "五稜郭開城・戊辰戦争終結",
+          "category": "politics",
+          "location": "箱館・五稜郭",
+          "color": "#2a3a52",
+          "characters": [
+            "c_enomoto_takeaki"
+          ]
+        },
+        {
+          "id": "e_hanseki_hokan",
+          "year": 1869,
+          "title": "版籍奉還",
+          "category": "politics",
+          "location": "東京",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_meiji_tenno",
+            "c_katsura_kogoro"
+          ]
+        },
+        {
+          "id": "e_omura_assassination",
+          "year": 1869,
+          "title": "大村益次郎、暗殺される",
+          "category": "death",
+          "location": "京都",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_omura_masujiro"
+          ]
+        },
+        {
+          "id": "e_haihan_chiken",
+          "year": 1871,
+          "title": "廃藩置県",
+          "category": "politics",
+          "location": "東京",
+          "color": "#7a1a2a",
+          "characters": [
+            "c_okubo_toshimichi",
+            "c_katsura_kogoro"
+          ]
+        },
+        {
+          "id": "e_iwakura_mission",
+          "year": 1871,
+          "title": "岩倉使節団、欧米へ出発",
+          "category": "politics",
+          "location": "横浜 → 欧米各国",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_iwakura_tomomi",
+            "c_okubo_toshimichi",
+            "c_ito_hirobumi"
+          ]
+        },
+        {
+          "id": "e_conscription_law",
+          "year": 1873,
+          "title": "徴兵令の公布",
+          "category": "politics",
+          "location": "東京",
+          "color": "#2a4a1a",
+          "characters": [
+            "c_yamagata_aritomo"
+          ]
+        },
+        {
+          "id": "e_land_tax_reform",
+          "year": 1873,
+          "title": "地租改正",
+          "category": "politics",
+          "location": "東京",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_okuma_shigenobu",
+            "c_inoue_kaoru"
+          ]
+        },
+        {
+          "id": "e_seikanron_dispute",
+          "year": 1873,
+          "title": "征韓論政変・西郷隆盛ら下野",
+          "category": "politics",
+          "location": "東京",
+          "color": "#7a1a2a",
+          "characters": [
+            "c_saigo_takamori",
+            "c_okubo_toshimichi",
+            "c_itagaki_taisuke",
+            "c_eto_shinpei",
+            "c_saigo_tsugumichi"
+          ]
+        },
+        {
+          "id": "e_minsen_giin",
+          "year": 1874,
+          "title": "民撰議院設立建白書",
+          "category": "politics",
+          "location": "東京",
+          "color": "#1a4a4a",
+          "characters": [
+            "c_itagaki_taisuke",
+            "c_goto_shojiro"
+          ]
+        },
+        {
+          "id": "e_saga_rebellion",
+          "year": 1874,
+          "title": "佐賀の乱・江藤新平処刑",
+          "category": "death",
+          "location": "佐賀",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_eto_shinpei"
+          ]
+        },
+        {
+          "id": "e_hagi_rebellion",
+          "year": 1876,
+          "title": "萩の乱・前原一誠処刑",
+          "category": "death",
+          "location": "萩",
+          "color": "#2a4a1a",
+          "characters": [
+            "c_maehara_issei"
+          ]
+        },
+        {
+          "id": "e_seinan_uprising",
+          "year": 1877,
+          "title": "西郷隆盛、私学校生徒に擁されて挙兵",
+          "category": "politics",
+          "location": "鹿児島",
+          "color": "#7a1a2a",
+          "characters": [
+            "c_saigo_takamori",
+            "c_kirino_toshiaki"
+          ]
+        },
+        {
+          "id": "e_kumamoto_castle_siege",
+          "year": 1877,
+          "title": "熊本城の攻防",
+          "category": "battle",
+          "location": "熊本城",
+          "color": "#7a1a2a",
+          "characters": [
+            "c_saigo_takamori"
+          ]
+        },
+        {
+          "id": "e_tabaruzaka_battle",
+          "year": 1877,
+          "title": "田原坂の戦い",
+          "category": "battle",
+          "location": "熊本・田原坂",
+          "color": "#7a1a2a",
+          "characters": [
+            "c_saigo_takamori",
+            "c_kirino_toshiaki"
+          ]
+        },
+        {
+          "id": "e_saigo_retreat",
+          "year": 1877,
+          "title": "西郷軍、鹿児島へ敗走",
+          "category": "battle",
+          "location": "九州各地 → 鹿児島",
+          "color": "#7a1a2a",
+          "characters": [
+            "c_saigo_takamori"
+          ]
+        },
+        {
+          "id": "e_shiroyama_battle",
+          "year": 1877,
+          "title": "城山の戦い・西郷隆盛、自刃",
+          "category": "death",
+          "location": "鹿児島・城山",
+          "color": "#7a1a2a",
+          "characters": [
+            "c_saigo_takamori",
+            "c_kirino_toshiaki"
+          ]
+        },
+        {
+          "id": "e_okubo_assassination",
+          "year": 1878,
+          "title": "大久保利通、暗殺される",
+          "category": "death",
+          "location": "東京・紀尾井坂",
+          "color": "#7a1a2a",
+          "characters": [
+            "c_okubo_toshimichi"
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_matthew_perry",
+          "name": "マシュー・ペリー",
+          "reading": "ましゅー・ぺりー",
+          "faction": "foreign",
+          "field": "military"
+        },
+        {
+          "id": "c_townsend_harris",
+          "name": "タウンゼント・ハリス",
+          "reading": "たうんぜんど・はりす",
+          "faction": "foreign",
+          "field": "administration"
+        },
+        {
+          "id": "c_ii_naosuke",
+          "name": "井伊直弼",
+          "reading": "いいなおすけ",
+          "faction": "bakufu",
+          "field": "governance"
+        },
+        {
+          "id": "c_tokugawa_nariaki",
+          "name": "徳川斉昭",
+          "reading": "とくがわなりあき",
+          "faction": "other",
+          "field": "governance"
+        },
+        {
+          "id": "c_ando_nobumasa",
+          "name": "安藤信正",
+          "reading": "あんどうのぶまさ",
+          "faction": "bakufu",
+          "field": "governance"
+        },
+        {
+          "id": "c_tokugawa_iemochi",
+          "name": "徳川家茂",
+          "reading": "とくがわいえもち",
+          "faction": "bakufu",
+          "field": "governance"
+        },
+        {
+          "id": "c_tokugawa_yoshinobu",
+          "name": "徳川慶喜",
+          "reading": "とくがわよしのぶ",
+          "faction": "bakufu",
+          "field": "governance"
+        },
+        {
+          "id": "c_katsu_kaishu",
+          "name": "勝海舟",
+          "reading": "かつかいしゅう",
+          "faction": "bakufu",
+          "field": "administration"
+        },
+        {
+          "id": "c_kondo_isami",
+          "name": "近藤勇",
+          "reading": "こんどういさみ",
+          "faction": "bakufu",
+          "field": "military"
+        },
+        {
+          "id": "c_hijikata_toshizo",
+          "name": "土方歳三",
+          "reading": "ひじかたとしぞう",
+          "faction": "bakufu",
+          "field": "military"
+        },
+        {
+          "id": "c_enomoto_takeaki",
+          "name": "榎本武揚",
+          "reading": "えのもとたけあき",
+          "faction": "bakufu",
+          "field": "military"
+        },
+        {
+          "id": "c_tenshoin_atsuhime",
+          "name": "天璋院篤姫",
+          "reading": "てんしょういんあつひめ",
+          "faction": "bakufu",
+          "field": "other"
+        },
+        {
+          "id": "c_shimazu_hisamitsu",
+          "name": "島津久光",
+          "reading": "しまづひさみつ",
+          "faction": "satsuma",
+          "field": "governance"
+        },
+        {
+          "id": "c_saigo_takamori",
+          "name": "西郷隆盛",
+          "reading": "さいごうたかもり",
+          "faction": "satsuma",
+          "field": "military"
+        },
+        {
+          "id": "c_okubo_toshimichi",
+          "name": "大久保利通",
+          "reading": "おおくぼとしみち",
+          "faction": "satsuma",
+          "field": "governance"
+        },
+        {
+          "id": "c_kirino_toshiaki",
+          "name": "桐野利秋",
+          "reading": "きりのとしあき",
+          "faction": "satsuma",
+          "field": "military"
+        },
+        {
+          "id": "c_saigo_tsugumichi",
+          "name": "西郷従道",
+          "reading": "さいごうつぐみち",
+          "faction": "satsuma",
+          "field": "military"
+        },
+        {
+          "id": "c_yoshida_shoin",
+          "name": "吉田松陰",
+          "reading": "よしだしょういん",
+          "faction": "choshu",
+          "field": "thought"
+        },
+        {
+          "id": "c_katsura_kogoro",
+          "name": "桂小五郎（木戸孝允）",
+          "reading": "かつらこごろう",
+          "faction": "choshu",
+          "field": "governance"
+        },
+        {
+          "id": "c_kusaka_genzui",
+          "name": "久坂玄瑞",
+          "reading": "くさかげんずい",
+          "faction": "choshu",
+          "field": "military"
+        },
+        {
+          "id": "c_takasugi_shinsaku",
+          "name": "高杉晋作",
+          "reading": "たかすぎしんさく",
+          "faction": "choshu",
+          "field": "military"
+        },
+        {
+          "id": "c_ito_hirobumi",
+          "name": "伊藤博文",
+          "reading": "いとうひろぶみ",
+          "faction": "choshu",
+          "field": "administration"
+        },
+        {
+          "id": "c_yamagata_aritomo",
+          "name": "山県有朋",
+          "reading": "やまがたありとも",
+          "faction": "choshu",
+          "field": "military"
+        },
+        {
+          "id": "c_inoue_kaoru",
+          "name": "井上馨",
+          "reading": "いのうえかおる",
+          "faction": "choshu",
+          "field": "administration"
+        },
+        {
+          "id": "c_maehara_issei",
+          "name": "前原一誠",
+          "reading": "まえばらいっせい",
+          "faction": "choshu",
+          "field": "military"
+        },
+        {
+          "id": "c_sakamoto_ryoma",
+          "name": "坂本龍馬",
+          "reading": "さかもとりょうま",
+          "faction": "tosa",
+          "field": "administration"
+        },
+        {
+          "id": "c_nakaoka_shintaro",
+          "name": "中岡慎太郎",
+          "reading": "なかおかしんたろう",
+          "faction": "tosa",
+          "field": "military"
+        },
+        {
+          "id": "c_yamauchi_yodo",
+          "name": "山内容堂",
+          "reading": "やまうちようどう",
+          "faction": "tosa",
+          "field": "governance"
+        },
+        {
+          "id": "c_itagaki_taisuke",
+          "name": "板垣退助",
+          "reading": "いたがきたいすけ",
+          "faction": "tosa",
+          "field": "military"
+        },
+        {
+          "id": "c_goto_shojiro",
+          "name": "後藤象二郎",
+          "reading": "ごとうしょうじろう",
+          "faction": "tosa",
+          "field": "administration"
+        },
+        {
+          "id": "c_matsudaira_katamori",
+          "name": "松平容保",
+          "reading": "まつだいらかたもり",
+          "faction": "aizu",
+          "field": "governance"
+        },
+        {
+          "id": "c_niijima_yae",
+          "name": "新島八重（山本八重）",
+          "reading": "にいじまやえ",
+          "faction": "aizu",
+          "field": "military"
+        },
+        {
+          "id": "c_komei_tenno",
+          "name": "孝明天皇",
+          "reading": "こうめいてんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_meiji_tenno",
+          "name": "明治天皇",
+          "reading": "めいじてんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_iwakura_tomomi",
+          "name": "岩倉具視",
+          "reading": "いわくらともみ",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_sanjo_sanetomi",
+          "name": "三条実美",
+          "reading": "さんじょうさねとみ",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_arisugawanomiya",
+          "name": "有栖川宮熾仁親王",
+          "reading": "ありすがわのみやたるひとしんのう",
+          "faction": "court",
+          "field": "military"
+        },
+        {
+          "id": "c_omura_masujiro",
+          "name": "大村益次郎",
+          "reading": "おおむらますじろう",
+          "faction": "meiji_gov",
+          "field": "military"
+        },
+        {
+          "id": "c_eto_shinpei",
+          "name": "江藤新平",
+          "reading": "えとうしんぺい",
+          "faction": "other",
+          "field": "administration"
+        },
+        {
+          "id": "c_okuma_shigenobu",
+          "name": "大隈重信",
+          "reading": "おおくましげのぶ",
+          "faction": "other",
+          "field": "administration"
+        }
+      ],
+      "factions": {
+        "bakufu": {
+          "id": "bakufu",
+          "name": "幕府",
+          "color": "#2a3a52",
+          "colorLight": "#5a7ab0"
+        },
+        "satsuma": {
+          "id": "satsuma",
+          "name": "薩摩藩",
+          "color": "#7a1a2a",
+          "colorLight": "#c0455a"
+        },
+        "choshu": {
+          "id": "choshu",
+          "name": "長州藩",
+          "color": "#2a4a1a",
+          "colorLight": "#5a8a3a"
+        },
+        "tosa": {
+          "id": "tosa",
+          "name": "土佐藩",
+          "color": "#1a4a4a",
+          "colorLight": "#4a8a8a"
+        },
+        "aizu": {
+          "id": "aizu",
+          "name": "会津藩",
+          "color": "#4a3a5a",
+          "colorLight": "#8a6ac4"
+        },
+        "court": {
+          "id": "court",
+          "name": "朝廷",
+          "color": "#4a2a5a",
+          "colorLight": "#9a6ac4"
+        },
+        "meiji_gov": {
+          "id": "meiji_gov",
+          "name": "明治新政府",
+          "color": "#8a6a1a",
+          "colorLight": "#c9a83a"
+        },
+        "foreign": {
+          "id": "foreign",
+          "name": "列強",
+          "color": "#3a4a5a",
+          "colorLight": "#7a9ab0"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#4a4a4a",
+          "colorLight": "#9a9a9a"
+        }
+      }
+    },
     "roman-empire": {
       "events": [
         {
