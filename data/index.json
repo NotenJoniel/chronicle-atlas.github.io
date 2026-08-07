@@ -55,6 +55,15 @@
       "subProjectDir": "hojo-rise"
     },
     {
+      "id": "mongol-invasion-japan",
+      "name": "元寇と鎌倉幕府の滅亡",
+      "region": "japan",
+      "startYear": 1268,
+      "endYear": 1333,
+      "dataFile": "timelines/mongol-invasion-japan.json",
+      "subProjectDir": "mongol-invasion-japan"
+    },
+    {
       "id": "sengoku-japan",
       "name": "日本の戦国時代",
       "region": "japan",

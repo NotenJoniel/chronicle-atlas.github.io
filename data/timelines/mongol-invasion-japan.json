@@ -1,0 +1,915 @@
+{
+  "meta": {
+    "title": "元寇と鎌倉幕府の滅亡 史実クロニクルタイムライン (1268年〜1333年)",
+    "description": "フビライの国書到来から新田義貞の鎌倉攻めまで。文永・弘安の役という二度の対外戦争、霜月騒動・平禅門の乱という御内人による内部粛清、そして後醍醐天皇の討幕運動と楠木正成の千早城籠城を経て、150年近く続いた鎌倉幕府が滅亡するまでの65年間をインタラクティブなタイムラインで体験。",
+    "headerIcon": "🏯",
+    "headerTitle": "元寇と鎌倉幕府の滅亡",
+    "headerSubtitle": "1268年〜1333年",
+    "searchPlaceholder": "🔍 出来事・人物を検索…",
+    "mapTitleIcon": "🗾",
+    "mapTitleLabel": "勢力図",
+    "characterTitleLabel": "別名",
+    "descLabel": "📖 史実の記録",
+    "charDescLabel": "📖 人物伝",
+    "relatedCharsLabel": "👥 関連人物（クリックで詳細）",
+    "relatedEventsLabel": "📅 関連する出来事（クリックで詳細）",
+    "triviaLabel": "📜 補足・豆知識",
+    "layoutStyle": "rail",
+    "mapLayout": [
+      [null, "kozuke", null],
+      ["kyushu", "kyoto", "kamakura"],
+      [null, "kawachi", null]
+    ]
+  },
+  "eraPhases": [
+    {
+      "id": 1,
+      "name": "第一章：フビライの国書と幕府の対応",
+      "period": "1268 〜 1272",
+      "startYear": 1268,
+      "endYear": 1272
+    },
+    {
+      "id": 2,
+      "name": "第二章：文永の役",
+      "period": "1274",
+      "startYear": 1274,
+      "endYear": 1274
+    },
+    {
+      "id": 3,
+      "name": "第三章：弘安の役への備えと再襲来",
+      "period": "1275 〜 1281",
+      "startYear": 1275,
+      "endYear": 1281
+    },
+    {
+      "id": 4,
+      "name": "第四章：恩賞問題と御内人の台頭",
+      "period": "1281 〜 1285",
+      "startYear": 1281,
+      "endYear": 1285
+    },
+    {
+      "id": 5,
+      "name": "第五章：霜月騒動と平禅門の乱",
+      "period": "1285 〜 1293",
+      "startYear": 1285,
+      "endYear": 1293
+    },
+    {
+      "id": 6,
+      "name": "第六章：得宗専制の爛熟と悪党の台頭",
+      "period": "1293 〜 1324",
+      "startYear": 1293,
+      "endYear": 1324
+    },
+    {
+      "id": 7,
+      "name": "第七章：元弘の変と楠木正成の挙兵",
+      "period": "1331 〜 1332",
+      "startYear": 1331,
+      "endYear": 1332
+    },
+    {
+      "id": 8,
+      "name": "第八章：鎌倉幕府の滅亡",
+      "period": "1333",
+      "startYear": 1333,
+      "endYear": 1333
+    }
+  ],
+  "factions": {
+    "hojo": {
+      "id": "hojo",
+      "name": "北条得宗家",
+      "color": "#1a2f52",
+      "colorLight": "#4a72b0"
+    },
+    "miuchibito": {
+      "id": "miuchibito",
+      "name": "御内人",
+      "color": "#5a1a2a",
+      "colorLight": "#a8455a"
+    },
+    "gokenin": {
+      "id": "gokenin",
+      "name": "有力御家人",
+      "color": "#2a4a2a",
+      "colorLight": "#5a8a5a"
+    },
+    "mongol": {
+      "id": "mongol",
+      "name": "元",
+      "color": "#8a2a1a",
+      "colorLight": "#c0603f"
+    },
+    "court": {
+      "id": "court",
+      "name": "朝廷・討幕勢力",
+      "color": "#4a2a5a",
+      "colorLight": "#9a6ac4"
+    },
+    "kusunoki": {
+      "id": "kusunoki",
+      "name": "楠木氏",
+      "color": "#3a4a1a",
+      "colorLight": "#7a9a3a"
+    },
+    "ashikaga": {
+      "id": "ashikaga",
+      "name": "足利氏",
+      "color": "#6a4a1a",
+      "colorLight": "#c99a3a"
+    },
+    "nitta": {
+      "id": "nitta",
+      "name": "新田氏",
+      "color": "#3a4a5a",
+      "colorLight": "#7a9ab0"
+    },
+    "other": {
+      "id": "other",
+      "name": "その他",
+      "color": "#4a4a4a",
+      "colorLight": "#9a9a9a"
+    }
+  },
+  "categories": {
+    "battle": { "id": "battle", "name": "合戦", "icon": "⚔️" },
+    "politics": { "id": "politics", "name": "政変", "icon": "👑" },
+    "episode": { "id": "episode", "name": "逸話", "icon": "📜" },
+    "death": { "id": "death", "name": "死没", "icon": "💀" }
+  },
+  "characters": [
+    {
+      "id": "c_hojo_tokimune",
+      "name": "北条時宗",
+      "reading": "ほうじょうときむね",
+      "faction": "hojo",
+      "role": "八代執権",
+      "life": "1251-1284",
+      "field": "governance",
+      "description": "18歳で執権に就任し、フビライからの服属要求を一貫して拒絶し続けた。文永・弘安の両度にわたる元寇では総指揮官として全国の武士を動員して迎撃態勢を敷き、いずれも撃退に成功した。過度の緊張と激務により33歳の若さで没した。"
+    },
+    {
+      "id": "c_hojo_sadatoki",
+      "name": "北条貞時",
+      "reading": "ほうじょうさだとき",
+      "faction": "hojo",
+      "role": "九代執権",
+      "life": "1272-1311",
+      "field": "governance",
+      "description": "時宗の子で14歳で執権となる。当初は外戚・安達泰盛と内管領・平頼綱の対立に翻弄されたが、霜月騒動で泰盛を、平禅門の乱で頼綱を、それぞれ排して独裁権を確立した。晩年は政務から離れがちになったとも伝わる。"
+    },
+    {
+      "id": "c_hojo_takatoki",
+      "name": "北条高時",
+      "reading": "ほうじょうたかとき",
+      "faction": "hojo",
+      "role": "十四代執権",
+      "life": "1303-1333",
+      "field": "governance",
+      "description": "内管領・長崎氏の専権のもとで名目的な執権となり、田楽や闘犬に耽溺したと伝わる。後醍醐天皇の討幕運動と楠木正成の抵抗、そして足利・新田の離反という奔流を止められず、鎌倉幕府最後の得宗として東勝寺で一族と共に自害した。"
+    },
+    {
+      "id": "c_hojo_tokisuke",
+      "name": "北条時輔",
+      "reading": "ほうじょうときすけ",
+      "faction": "hojo",
+      "role": "時宗の異母兄／六波羅探題南方",
+      "life": "1248-1272",
+      "field": "governance",
+      "description": "時宗の異母兄で、庶子ながら年長であったため執権継承をめぐる潜在的な対抗馬と見なされた。二月騒動で謀反の疑いをかけられ、京都の六波羅探題邸を襲撃されて誅殺された。"
+    },
+    {
+      "id": "c_hojo_moritoki",
+      "name": "北条守時",
+      "reading": "ほうじょうもりとき",
+      "faction": "hojo",
+      "role": "十六代執権",
+      "life": "1295-1333",
+      "field": "governance",
+      "description": "高時の後を継いだ最後の執権で、足利尊氏の義兄にあたる。鎌倉幕府滅亡の際、新田軍を迎え撃つ最前線で奮戦した末に討死した。"
+    },
+    {
+      "id": "c_hojo_nakatoki",
+      "name": "北条仲時",
+      "reading": "ほうじょうなかとき",
+      "faction": "hojo",
+      "role": "最後の六波羅探題（北方）",
+      "life": "1306-1333",
+      "field": "governance",
+      "description": "六波羅探題北方として京都の統治にあたっていたが、足利高氏の離反により六波羅は陥落。東国への逃亡を図るが近江で行く手を阻まれ、一族郎党430余名と共に自刃した。"
+    },
+    {
+      "id": "c_hojo_tokimasu",
+      "name": "北条時益",
+      "reading": "ほうじょうときます",
+      "faction": "hojo",
+      "role": "最後の六波羅探題（南方）",
+      "life": "?-1333",
+      "field": "governance",
+      "description": "六波羅探題南方。六波羅陥落後、仲時と共に東国への脱出を図るが、道中で反幕府方の襲撃を受け討死した。"
+    },
+    {
+      "id": "c_taira_yoritsuna",
+      "name": "平頼綱",
+      "reading": "たいらのよりつな",
+      "faction": "miuchibito",
+      "role": "内管領",
+      "life": "?-1293",
+      "field": "administration",
+      "description": "得宗家の家政を統括する内管領。霜月騒動では政敵・安達泰盛が謀反を企てていると貞時に讒言し、泰盛派の御家人数百名を粛清した。以後は得宗すら及ばぬ専横を極めるが、これを危険視した貞時自身によって最終的に誅殺された。"
+    },
+    {
+      "id": "c_nagasaki_enki",
+      "name": "長崎円喜",
+      "reading": "ながさきえんき",
+      "faction": "miuchibito",
+      "role": "内管領",
+      "life": "?-1333",
+      "field": "administration",
+      "description": "平頼綱の後を継ぐ形で内管領となった長崎氏の当主。子の高資と共に高時政権下で幕政を壟断し、得宗専制の実質的な担い手となった。"
+    },
+    {
+      "id": "c_nagasaki_takasuke",
+      "name": "長崎高資",
+      "reading": "ながさきたかすけ",
+      "faction": "miuchibito",
+      "role": "内管領",
+      "life": "?-1333",
+      "field": "administration",
+      "description": "円喜の子で、父の跡を継いで内管領となった。賄賂政治の象徴として御家人たちの反感を買い、幕府滅亡時には高時らと共に東勝寺で自害した。"
+    },
+    {
+      "id": "c_adachi_yasumori",
+      "name": "安達泰盛",
+      "reading": "あだちやすもり",
+      "faction": "gokenin",
+      "role": "有力御家人／時宗の岳父",
+      "life": "1231-1285",
+      "field": "governance",
+      "description": "時宗の岳父として幕政を支えた有力御家人。元寇後の御家人救済を目指す「弘安徳政」を主導するが、既得権を守りたい内管領・平頼綱の讒言により謀反の疑いをかけられ、霜月騒動で一族もろとも滅ぼされた。"
+    },
+    {
+      "id": "c_shoni_kagesuke",
+      "name": "少弐景資",
+      "reading": "しょうにかげすけ",
+      "faction": "gokenin",
+      "role": "九州の御家人／元寇防衛の指揮官",
+      "life": "?-1285",
+      "field": "military",
+      "description": "九州の有力御家人で、文永・弘安の両役で防衛軍の総大将格として奮戦した。霜月騒動の余波が九州にも及ぶと泰盛派と見なされ、兄の少弐経資に攻められて岩門合戦で討死した。"
+    },
+    {
+      "id": "c_takezaki_suenaga",
+      "name": "竹崎季長",
+      "reading": "たけざきすえなが",
+      "faction": "gokenin",
+      "role": "肥後の御家人",
+      "life": "1246-?",
+      "field": "military",
+      "description": "文永の役で先駆けの功を立てるが、防衛戦のため恩賞の対象となる土地がなく苦境に陥った。自ら鎌倉へ赴き恩賞奉行・安達泰盛に直訴してこれを得た経緯を、絵巻物『蒙古襲来絵詞』に描き残した。"
+    },
+    {
+      "id": "c_shimazu_hisatsune",
+      "name": "島津久経",
+      "reading": "しまづひさつね",
+      "faction": "gokenin",
+      "role": "九州・薩摩の御家人",
+      "life": "?-1285",
+      "field": "military",
+      "description": "薩摩の有力御家人で、弘安の役では博多の防衛にあたった島津氏の当主。"
+    },
+    {
+      "id": "c_shoni_sadatsune",
+      "name": "少弐貞経",
+      "reading": "しょうにさだつね",
+      "faction": "gokenin",
+      "role": "九州の御家人",
+      "life": "?-1333",
+      "field": "military",
+      "description": "鎌倉幕府滅亡の報を受けると、大友貞宗らと共に九州の反北条勢力を糾合して鎮西探題を攻め、北条英時を自刃に追い込んだ。"
+    },
+    {
+      "id": "c_kublai",
+      "name": "クビライ",
+      "reading": "くびらい",
+      "faction": "mongol",
+      "role": "元朝初代皇帝",
+      "life": "1215-1294",
+      "field": "governance",
+      "description": "モンゴル帝国大ハーンにして元朝初代皇帝。日本に繰り返し服属を求める使者を送るが、鎌倉幕府に一貫して拒絶されたため、文永・弘安の二度にわたり大規模な遠征軍を派遣した。いずれも暴風雨により壊滅的な被害を受け、日本征服の野望は果たせなかった。詳細は『モンゴル帝国』タイムラインを参照。"
+    },
+    {
+      "id": "c_hong_dagu",
+      "name": "洪茶丘",
+      "reading": "こうちゃきゅう",
+      "faction": "mongol",
+      "role": "元軍の高麗系将軍",
+      "life": "1244-1291",
+      "field": "military",
+      "description": "高麗出身で元に仕えた軍人。文永・弘安の両役に従軍し、対馬・壱岐の攻略や博多湾での戦闘を指揮した。"
+    },
+    {
+      "id": "c_fan_wenhu",
+      "name": "范文虎",
+      "reading": "はんぶんこ",
+      "faction": "mongol",
+      "role": "元軍・江南軍司令官",
+      "life": "?-1301",
+      "field": "military",
+      "description": "旧南宋の将で、弘安の役では江南から出撃する江南軍10万を率いた総司令官。暴風雨が艦隊を襲うといち早く撤退したとされ、多くの兵を戦場に置き去りにしたと伝わる。"
+    },
+    {
+      "id": "c_du_shizhong",
+      "name": "杜世忠",
+      "reading": "とせいちゅう",
+      "faction": "mongol",
+      "role": "元の使者",
+      "life": "1242-1275",
+      "field": "administration",
+      "description": "文永の役の翌年、なおも服属を求めてフビライが派遣した使節団の正使。鎌倉に到着するが、時宗は交渉に応じず、龍ノ口で一行を斬首に処した。"
+    },
+    {
+      "id": "c_godaigo",
+      "name": "後醍醐天皇",
+      "reading": "ごだいごてんのう",
+      "faction": "court",
+      "role": "第96代天皇／討幕運動の中心",
+      "life": "1288-1339",
+      "field": "governance",
+      "description": "天皇親政の復活を志し、二度にわたり討幕計画を企てた（正中の変・元弘の変）。二度目の失敗で隠岐へ配流されるが、そこを脱出して伯耆で挙兵、楠木正成の抵抗や足利・新田の離反と呼応して鎌倉幕府を滅亡に追い込み、建武の新政を開始した。"
+    },
+    {
+      "id": "c_moriyoshi_shinno",
+      "name": "護良親王",
+      "reading": "もりよししんのう",
+      "faction": "court",
+      "role": "後醍醐天皇の皇子",
+      "life": "1308-1335",
+      "field": "governance",
+      "description": "後醍醐天皇の皇子。父の討幕計画に呼応し、諸国の武士に決起を促す令旨を発して倒幕勢力の結集に大きな役割を果たした。"
+    },
+    {
+      "id": "c_hino_toshimoto",
+      "name": "日野俊基",
+      "reading": "ひのとしもと",
+      "faction": "court",
+      "role": "後醍醐天皇の側近",
+      "life": "?-1332",
+      "field": "administration",
+      "description": "後醍醐天皇の側近公家で、正中の変・元弘の変の両方で討幕計画の中心人物となった。元弘の変で捕らえられ、鎌倉へ送られて処刑された。"
+    },
+    {
+      "id": "c_hino_suketomo",
+      "name": "日野資朝",
+      "reading": "ひのすけとも",
+      "faction": "court",
+      "role": "後醍醐天皇の側近",
+      "life": "1290-1332",
+      "field": "administration",
+      "description": "俊基と共に討幕計画に加わった側近公家。正中の変で発覚し佐渡へ配流されたが、その後も後醍醐の再挙兵計画に関与したとして、元弘の変の際に佐渡で処刑された。"
+    },
+    {
+      "id": "c_nawa_nagatoshi",
+      "name": "名和長年",
+      "reading": "なわながとし",
+      "faction": "court",
+      "role": "伯耆の豪族",
+      "life": "?-1336",
+      "field": "military",
+      "description": "隠岐を脱出した後醍醐天皇を迎え入れ、伯耆国船上山に立てこもって幕府軍を撃退した豪族。この挙兵が全国の反幕府勢力を大きく勢いづかせた。"
+    },
+    {
+      "id": "c_chigusa_tadaaki",
+      "name": "千種忠顕",
+      "reading": "ちぐさただあき",
+      "faction": "court",
+      "role": "後醍醐天皇の側近",
+      "life": "?-1336",
+      "field": "administration",
+      "description": "後醍醐天皇の側近公家で、隠岐配流にも同行した忠臣。船上山挙兵の際も天皇のもとにあり、以後も倒幕・建武政権の中枢で活動した。"
+    },
+    {
+      "id": "c_kusunoki_masashige",
+      "name": "楠木正成",
+      "reading": "くすのきまさしげ",
+      "faction": "kusunoki",
+      "role": "河内の悪党／千早城の戦いの英雄",
+      "life": "?-1336",
+      "field": "military",
+      "description": "荘園制の枠外で台頭した新興武士「悪党」の一人。後醍醐天皇の呼びかけに応じて河内で挙兵し、赤坂城・千早城でわずかな兵力ながら幕府の大軍を巧みなゲリラ戦術で翻弄し続けた。この抵抗が諸国の反幕府勢力を勢いづかせ、鎌倉幕府滅亡の大きな契機となった。"
+    },
+    {
+      "id": "c_akamatsu_norimura",
+      "name": "赤松則村（円心）",
+      "reading": "あかまつのりむら",
+      "faction": "other",
+      "role": "播磨の悪党",
+      "life": "1277-1350",
+      "field": "military",
+      "description": "播磨の悪党で、護良親王の令旨に応じて挙兵した。京都への進撃路を確保し、六波羅探題攻略を側面から支えた。"
+    },
+    {
+      "id": "c_ashikaga_takauji",
+      "name": "足利高氏（尊氏）",
+      "reading": "あしかがたかうじ",
+      "faction": "ashikaga",
+      "role": "有力御家人／幕府から離反",
+      "life": "1305-1358",
+      "field": "military",
+      "description": "源氏の名門・足利氏の当主で、幕府軍として上洛するが、千早城で幕府が苦戦する様を見て倒幕方に転じることを決意したとされる。丹波篠村八幡宮で反旗を翻し、六波羅探題を攻略した。鎌倉幕府滅亡の直接の引き金を引いた人物。"
+    },
+    {
+      "id": "c_nitta_yoshisada",
+      "name": "新田義貞",
+      "reading": "にったよしさだ",
+      "faction": "nitta",
+      "role": "上野の御家人／鎌倉攻めの指揮官",
+      "life": "1301-1338",
+      "field": "military",
+      "description": "上野の御家人で、足利氏と同じ源氏の一族。上野で挙兵すると南下して鎌倉を包囲し、稲村ヶ崎からの奇襲により難攻不落とされた鎌倉市中への突入を果たした。北条一門を東勝寺で滅ぼし、鎌倉幕府に終止符を打った。"
+    }
+  ],
+  "events": [
+    {
+      "id": "e_kublai_letter",
+      "phaseId": 1,
+      "year": 1268,
+      "title": "フビライの国書、日本に到来",
+      "category": "politics",
+      "characters": ["c_kublai", "c_hojo_tokimune"],
+      "location": "大宰府",
+      "description": "元の皇帝フビライが日本に服属を求める国書を送りつけてきた。「兵を用いるに至るは、それ孰か好む所ぞ」という穏やかな文言の裏に軍事的圧力をにじませていたが、時宗を中心とする幕府はこれを黙殺・拒絶した。"
+    },
+    {
+      "id": "e_tokimune_shikken",
+      "phaseId": 1,
+      "year": 1268,
+      "title": "北条時宗、執権就任",
+      "category": "politics",
+      "characters": ["c_hojo_tokimune"],
+      "location": "鎌倉",
+      "description": "国書到来と同じ年、18歳の時宗が八代執権に就任した。対外的な国難が迫る中、若き指導者として舵取りを担うことになる。"
+    },
+    {
+      "id": "e_nigatsu_sodo",
+      "phaseId": 1,
+      "year": 1272,
+      "title": "二月騒動",
+      "category": "death",
+      "characters": ["c_hojo_tokisuke", "c_hojo_tokimune"],
+      "location": "京都・鎌倉",
+      "description": "時宗は異母兄で六波羅探題南方を務めていた時輔に謀反の疑いをかけ、京の六波羅邸を襲撃させて誅殺した。同時に鎌倉でも名越氏など反対派が粛清され、来るべき国難を前に得宗への権力集中が一気に進んだ。"
+    },
+    {
+      "id": "e_tsushima_iki_attack",
+      "phaseId": 2,
+      "year": 1274,
+      "title": "対馬・壱岐、元軍に襲われる",
+      "category": "battle",
+      "characters": ["c_hong_dagu"],
+      "location": "対馬・壱岐",
+      "description": "元・高麗の連合軍約3万が対馬・壱岐に上陸し、抵抗する島の武士や住民を殺戮した。この報は瞬く間に九州本土へ伝わり、緊張が一気に高まった。"
+    },
+    {
+      "id": "e_bunei_no_eki",
+      "phaseId": 2,
+      "year": 1274,
+      "title": "文永の役・博多湾の戦い",
+      "category": "battle",
+      "characters": ["c_hojo_tokimune", "c_shoni_kagesuke", "c_hong_dagu"],
+      "location": "博多湾",
+      "description": "元軍は博多湾に上陸し、集団戦法と炸裂する火薬兵器「てつはう」を用いて一騎討ちに慣れた日本の武士団を苦しめた。しかし元軍も損害を重ねて撤退を決め、その夜を襲った暴風雨により多くの船が失われた。",
+      "historyTrivia": "この時の日本軍が苦戦した集団戦法・てつはうの様子は、後年『蒙古襲来絵詞』に生々しく描かれている。"
+    },
+    {
+      "id": "e_ikoku_keigo",
+      "phaseId": 2,
+      "year": 1275,
+      "title": "異国警固番役の設置",
+      "category": "politics",
+      "characters": ["c_hojo_tokimune"],
+      "location": "九州",
+      "description": "再侵攻を確信した幕府は、九州の御家人に沿岸警備を恒常的に課す「異国警固番役」を新設した。西国支配における幕府の権限が大きく強化される契機ともなった。"
+    },
+    {
+      "id": "e_du_shizhong_execution",
+      "phaseId": 3,
+      "year": 1275,
+      "title": "杜世忠ら元使、龍ノ口で処刑",
+      "category": "death",
+      "characters": ["c_du_shizhong", "c_hojo_tokimune"],
+      "location": "鎌倉・龍ノ口",
+      "description": "なおも服属を求めるフビライの使節・杜世忠一行が鎌倉に到着するが、時宗は交渉に応じず一行を斬首に処した。徹底抗戦の意志を内外に示す決断であった。"
+    },
+    {
+      "id": "e_hakata_bay_wall",
+      "phaseId": 3,
+      "year": 1276,
+      "title": "博多湾岸に防塁（石塁）を築造",
+      "category": "politics",
+      "characters": ["c_hojo_tokimune"],
+      "location": "博多湾岸",
+      "description": "再侵攻に備え、幕府は九州の御家人を動員して博多湾岸およそ20キロにわたる石造りの防塁を築かせた。この防塁が後の弘安の役で元軍の上陸を大きく阻むことになる。"
+    },
+    {
+      "id": "e_koan_no_eki",
+      "phaseId": 3,
+      "year": 1281,
+      "title": "弘安の役・東路軍と江南軍の来襲",
+      "category": "battle",
+      "characters": ["c_hojo_tokimune", "c_fan_wenhu", "c_hong_dagu", "c_shoni_kagesuke"],
+      "location": "博多湾・鷹島",
+      "description": "旧南宋の水軍も動員した総勢14万ともいわれる過去最大規模の遠征軍が再来襲した。博多湾岸の防塁に阻まれ上陸できず、長期のにらみ合いの末、暴風雨が艦隊を襲い甚大な被害を与えた。范文虎ら指揮官はいち早く撤退し、取り残された将兵の多くが討たれるか捕虜となった。",
+      "historyTrivia": "二度にわたる暴風による勝利は後世「神風」の伝説として語り継がれ、日本の対外意識に長く影響を与えることになる。"
+    },
+    {
+      "id": "e_takezaki_direct_appeal",
+      "phaseId": 3,
+      "year": 1284,
+      "title": "竹崎季長、恩賞を求め鎌倉へ直訴",
+      "category": "episode",
+      "characters": ["c_takezaki_suenaga", "c_adachi_yasumori"],
+      "location": "鎌倉",
+      "description": "元寇は防衛戦であったため新たな領地を得られず、多大な犠牲を払った肥後の御家人・竹崎季長は恩賞に窮した。季長は自ら鎌倉へ赴き恩賞奉行・安達泰盛に直訴、これを認めさせた顛末を絵巻物『蒙古襲来絵詞』に描き残した。"
+    },
+    {
+      "id": "e_onsho_problem",
+      "phaseId": 4,
+      "year": 1281,
+      "title": "元寇の恩賞問題、深刻化",
+      "category": "politics",
+      "characters": ["c_hojo_tokimune"],
+      "location": "全国",
+      "description": "防衛戦で新たな領地が得られなかったため、多大な犠牲を払った御家人たちへの恩賞は乏しいものにとどまった。これは幕府と御家人の信頼関係に修復困難な亀裂を生み、後の御家人窮乏化の遠因となった。"
+    },
+    {
+      "id": "e_tokimune_death",
+      "phaseId": 4,
+      "year": 1284,
+      "title": "北条時宗、死去",
+      "category": "death",
+      "characters": ["c_hojo_tokimune"],
+      "location": "鎌倉",
+      "description": "二度の国難を退けた時宗が34歳の若さで没した。過度の激務と緊張が寿命を縮めたとされる。強力な指導者を失った幕府は、以後内部対立の時代に入っていく。"
+    },
+    {
+      "id": "e_sadatoki_shikken",
+      "phaseId": 4,
+      "year": 1284,
+      "title": "北条貞時、九代執権就任",
+      "category": "politics",
+      "characters": ["c_hojo_sadatoki"],
+      "location": "鎌倉",
+      "description": "時宗の子・貞時がわずか14歳で執権となった。若年の貞時のもとで、外戚の安達泰盛と内管領・平頼綱という二大実力者の対立が急速に先鋭化していく。"
+    },
+    {
+      "id": "e_koan_tokusei",
+      "phaseId": 4,
+      "year": 1285,
+      "title": "弘安の徳政、推進される",
+      "category": "politics",
+      "characters": ["c_adachi_yasumori"],
+      "location": "鎌倉",
+      "description": "泰盛は困窮する御家人の救済と幕政改革を目指す「弘安徳政」を推し進めた。しかしこれは既得権を脅かされる御内人層の強い反発を招き、両者の対立は抜き差しならないものとなっていく。"
+    },
+    {
+      "id": "e_shimotsuki_sodo",
+      "phaseId": 5,
+      "year": 1285,
+      "title": "霜月騒動・安達泰盛一族滅亡",
+      "category": "death",
+      "characters": ["c_adachi_yasumori", "c_taira_yoritsuna", "c_hojo_sadatoki"],
+      "location": "鎌倉",
+      "description": "頼綱は泰盛が謀反を企てていると貞時に讒言し、鎌倉中で泰盛一族と同心する御家人数百名を急襲・殺害した。有力御家人層に壊滅的な打撃を与えたこの事件により、以後の幕政は内管領・平頼綱が主導することとなった。"
+    },
+    {
+      "id": "e_iwato_gassen",
+      "phaseId": 5,
+      "year": 1285,
+      "title": "岩門合戦",
+      "category": "death",
+      "characters": ["c_shoni_kagesuke"],
+      "location": "九州・岩門",
+      "description": "霜月騒動の余波は九州にも及んだ。元寇防衛の英雄であった少弐景資は泰盛派と見なされ、兄・少弐経資に攻められて岩門で討死した。"
+    },
+    {
+      "id": "e_yoritsuna_despotism",
+      "phaseId": 5,
+      "year": 1290,
+      "title": "平頼綱の専制",
+      "category": "politics",
+      "characters": ["c_taira_yoritsuna", "c_hojo_sadatoki"],
+      "location": "鎌倉",
+      "description": "泰盛派を一掃した頼綱は内管領として幕政を壟断し、得宗すら及ばぬほどの専横を極めた。実子を将軍の側近に据えるなど、御内人による権力の私物化が頂点に達した。"
+    },
+    {
+      "id": "e_heizenmon_no_ran",
+      "phaseId": 5,
+      "year": 1293,
+      "title": "平禅門の乱・頼綱誅殺",
+      "category": "death",
+      "characters": ["c_taira_yoritsuna", "c_hojo_sadatoki"],
+      "location": "鎌倉",
+      "description": "頼綱の専横に危機感を強めた貞時は、自ら軍勢を率いて頼綱の邸を急襲し、頼綱とその子を誅殺した。粛清した者が今度は粛清される、この時代の陰謀劇の連鎖を象徴する事件となった。"
+    },
+    {
+      "id": "e_einin_tokuseirei",
+      "phaseId": 6,
+      "year": 1297,
+      "title": "永仁の徳政令",
+      "category": "politics",
+      "characters": ["c_hojo_sadatoki"],
+      "location": "鎌倉",
+      "description": "困窮する御家人の救済を目的に、御家人が売却・質入れした土地を無償で取り戻せる徳政令を発布した。しかし土地取引そのものが混乱し、かえって御家人への金融が滞るなど、意図とは逆の結果を招いた。"
+    },
+    {
+      "id": "e_akuto_rise",
+      "phaseId": 6,
+      "year": 1300,
+      "title": "悪党の台頭",
+      "category": "episode",
+      "characters": ["c_kusunoki_masashige"],
+      "location": "畿内一円",
+      "description": "荘園制の枠外で武力・経済力を蓄える新興武士団「悪党」が畿内周辺で跋扈し始めた。既存の御家人体制では対応しきれないこの新たな勢力が、後に鎌倉幕府打倒の重要な戦力となっていく。"
+    },
+    {
+      "id": "e_takatoki_shikken",
+      "phaseId": 6,
+      "year": 1316,
+      "title": "北条高時、十四代執権就任",
+      "category": "politics",
+      "characters": ["c_hojo_takatoki", "c_nagasaki_takasuke"],
+      "location": "鎌倉",
+      "description": "若年の高時が執権となったが、政務の実権は内管領・長崎氏がほぼ完全に掌握する「御内人専制」がさらに深化した。"
+    },
+    {
+      "id": "e_takatoki_dengaku",
+      "phaseId": 6,
+      "year": 1322,
+      "title": "高時、田楽・闘犬に耽る",
+      "category": "episode",
+      "characters": ["c_hojo_takatoki"],
+      "location": "鎌倉",
+      "description": "高時は政務を顧みず田楽や闘犬に興じたと『太平記』は伝える。史実性には議論があるものの、得宗権威の形骸化を象徴する逸話として広く語られてきた。"
+    },
+    {
+      "id": "e_shochu_no_hen",
+      "phaseId": 6,
+      "year": 1324,
+      "title": "正中の変",
+      "category": "politics",
+      "characters": ["c_godaigo", "c_hino_suketomo", "c_hino_toshimoto"],
+      "location": "京都",
+      "description": "後醍醐天皇による討幕計画が事前に発覚した。首謀者とされた日野資朝は佐渡へ配流されたが、天皇自身の関与は不問に付され、後醍醐は倒幕の意志を捨てなかった。"
+    },
+    {
+      "id": "e_genko_no_hen",
+      "phaseId": 7,
+      "year": 1331,
+      "title": "元弘の変",
+      "category": "politics",
+      "characters": ["c_godaigo", "c_hino_toshimoto"],
+      "location": "京都",
+      "description": "後醍醐天皇による二度目の討幕計画が発覚した。天皇は三種の神器を持って京を脱出し笠置山に立てこもり、諸国の武士に挙兵を呼びかけた。"
+    },
+    {
+      "id": "e_moriyoshi_edict",
+      "phaseId": 7,
+      "year": 1331,
+      "title": "護良親王、令旨を発する",
+      "category": "politics",
+      "characters": ["c_moriyoshi_shinno"],
+      "location": "吉野",
+      "description": "後醍醐の皇子・護良親王が諸国の武士に討幕の令旨を発し、反幕府勢力の結集を促した。この呼びかけが楠木正成をはじめとする各地の武士の挙兵につながっていく。"
+    },
+    {
+      "id": "e_akasakajo_uprising",
+      "phaseId": 7,
+      "year": 1331,
+      "title": "楠木正成、赤坂城で挙兵",
+      "category": "battle",
+      "characters": ["c_kusunoki_masashige"],
+      "location": "河内・赤坂城",
+      "description": "後醍醐の呼びかけに応じ、河内の悪党・楠木正成が赤坂城で挙兵した。寡兵ながら、油を注いだ大木や熱湯を落とすなどの奇策を駆使して幕府の大軍を翻弄し、後に落城するもののその名を一躍高めた。"
+    },
+    {
+      "id": "e_kasagi_falls",
+      "phaseId": 7,
+      "year": 1331,
+      "title": "笠置山の陥落、後醍醐天皇捕縛",
+      "category": "death",
+      "characters": ["c_godaigo", "c_hino_toshimoto"],
+      "location": "笠置山",
+      "description": "幕府の大軍に攻められ笠置山は陥落し、後醍醐天皇は捕らえられた。側近の日野俊基は鎌倉へ送られて処刑された。"
+    },
+    {
+      "id": "e_godaigo_exile_oki",
+      "phaseId": 7,
+      "year": 1332,
+      "title": "後醍醐天皇、隠岐へ配流",
+      "category": "politics",
+      "characters": ["c_godaigo"],
+      "location": "隠岐",
+      "description": "捕らえられた後醍醐天皇は隠岐へ配流された。しかし天皇不在の中でも諸国の反幕府勢力の挙兵は収まらず、事態はむしろ拡大していく。"
+    },
+    {
+      "id": "e_chihayajo_siege",
+      "phaseId": 7,
+      "year": 1332,
+      "title": "楠木正成、千早城に籠城",
+      "category": "battle",
+      "characters": ["c_kusunoki_masashige"],
+      "location": "河内・千早城",
+      "description": "正成は険阻な山城・千早城に籠城し、わずかな兵力で幕府の大軍を数ヶ月にわたり翻弄し続けた。攻めあぐねる幕府軍の様子は諸国に伝わり、各地の反幕府勢力を大いに勢いづかせる契機となった。"
+    },
+    {
+      "id": "e_godaigo_escape_oki",
+      "phaseId": 8,
+      "year": 1333,
+      "title": "後醍醐天皇、隠岐を脱出",
+      "category": "episode",
+      "characters": ["c_godaigo", "c_nawa_nagatoshi"],
+      "location": "隠岐 → 伯耆・船上山",
+      "description": "後醍醐天皇は隠岐を脱出し、伯耆の豪族・名和長年に迎えられて船上山で挙兵した。天皇自らの再起は、倒幕運動に決定的な求心力を与えた。"
+    },
+    {
+      "id": "e_ashikaga_betrayal",
+      "phaseId": 8,
+      "year": 1333,
+      "title": "足利高氏、幕府に離反",
+      "category": "politics",
+      "characters": ["c_ashikaga_takauji"],
+      "location": "丹波・篠村八幡宮",
+      "description": "幕府軍として上洛していた足利高氏が、篠村八幡宮で突如反旗を翻し討幕の兵を挙げた。源氏の名門である足利氏の離反は、幕府方に大きな衝撃を与えた。"
+    },
+    {
+      "id": "e_akamatsu_uprising",
+      "phaseId": 8,
+      "year": 1333,
+      "title": "赤松則村、播磨で挙兵",
+      "category": "battle",
+      "characters": ["c_akamatsu_norimura"],
+      "location": "播磨",
+      "description": "播磨の悪党・赤松則村も護良親王の令旨に応じて挙兵し、京都への進撃路を確保して六波羅探題攻略を側面から支えた。"
+    },
+    {
+      "id": "e_rokuhara_falls",
+      "phaseId": 8,
+      "year": 1333,
+      "title": "六波羅探題、陥落",
+      "category": "death",
+      "characters": ["c_ashikaga_takauji", "c_hojo_nakatoki", "c_hojo_tokimasu"],
+      "location": "京都",
+      "description": "足利高氏の攻撃を受け六波羅探題は陥落した。北方探題・仲時と南方探題・時益は光厳天皇らを奉じて東国への脱出を図るが、時益は道中で討たれ、仲時も近江で行く手を阻まれ一族郎党430余名と共に自刃した。"
+    },
+    {
+      "id": "e_nitta_uprising",
+      "phaseId": 8,
+      "year": 1333,
+      "title": "新田義貞、鎌倉攻めのため挙兵",
+      "category": "politics",
+      "characters": ["c_nitta_yoshisada"],
+      "location": "上野・生品明神",
+      "description": "上野の御家人・新田義貞が生品明神で挙兵し、鎌倉を目指して南下を開始した。足利と並ぶ源氏の名門である新田氏の決起は、幕府方の御家人にも大きな動揺を与えた。"
+    },
+    {
+      "id": "e_inamuragasaki_miracle",
+      "phaseId": 8,
+      "year": 1333,
+      "title": "稲村ヶ崎の奇跡",
+      "category": "episode",
+      "characters": ["c_nitta_yoshisada"],
+      "location": "鎌倉・稲村ヶ崎",
+      "description": "鎌倉の切通しは天然の要害で攻めあぐねた義貞は、稲村ヶ崎の海岸からの突破を図った。義貞が黄金の太刀を海に投じて龍神に祈ると潮が引き、浜辺が広がって騎馬での突入を許したという伝説が『太平記』に描かれている。"
+    },
+    {
+      "id": "e_kamakura_fall",
+      "phaseId": 8,
+      "year": 1333,
+      "title": "鎌倉幕府滅亡・東勝寺合戦",
+      "category": "death",
+      "characters": ["c_hojo_takatoki", "c_hojo_moritoki", "c_nagasaki_takasuke"],
+      "location": "鎌倉・東勝寺",
+      "description": "鎌倉市中になだれ込んだ新田軍を前に、最後の執権・守時は防戦の末に討死した。高時ら北条一門と長崎氏ら御内人は菩提寺の東勝寺に立てこもり、870余名と共に自害した。頼朝以来150年近く続いた鎌倉幕府はここに滅亡した。"
+    },
+    {
+      "id": "e_chinzei_tandai_fall",
+      "phaseId": 8,
+      "year": 1333,
+      "title": "鎮西探題の滅亡",
+      "category": "death",
+      "characters": ["c_shoni_sadatsune"],
+      "location": "九州・博多",
+      "description": "幕府滅亡の報を受け、少弐貞経ら九州の反北条勢力が九州における幕府の拠点・鎮西探題を攻めた。探題・北条英時は自刃し、全国に散らばっていた幕府の出先機関が相次いで崩壊していった。"
+    },
+    {
+      "id": "e_kenmu_restoration",
+      "phaseId": 8,
+      "year": 1333,
+      "title": "建武の新政、始まる",
+      "category": "politics",
+      "characters": ["c_godaigo", "c_moriyoshi_shinno", "c_kusunoki_masashige", "c_ashikaga_takauji", "c_nitta_yoshisada"],
+      "location": "京都",
+      "description": "鎌倉幕府滅亡後、後醍醐天皇は京へ戻り、武家政権を否定して天皇親政による新たな政治「建武の新政」を開始した。しかし倒幕に功のあった武士たちへの恩賞をめぐる不満はすぐに表面化し、新たな争乱の火種が生まれていくことになる。"
+    }
+  ],
+  "mapSnapshots": [
+    {
+      "year": 1268,
+      "label": "フビライの国書到来",
+      "territories": {
+        "kozuke": { "name": "上野", "faction": "other", "lord": "在地御家人" },
+        "kyushu": { "name": "九州", "faction": "hojo", "lord": "少弐氏（幕府方）" },
+        "kyoto": { "name": "京", "faction": "court", "lord": "亀山天皇" },
+        "kamakura": { "name": "鎌倉", "faction": "hojo", "lord": "北条時宗" },
+        "kawachi": { "name": "河内", "faction": "other", "lord": "在地武士" }
+      }
+    },
+    {
+      "year": 1281,
+      "label": "弘安の役撃退",
+      "territories": {
+        "kozuke": { "name": "上野", "faction": "other", "lord": "在地御家人" },
+        "kyushu": { "name": "九州", "faction": "hojo", "lord": "少弐氏・島津氏（防衛成功）" },
+        "kyoto": { "name": "京", "faction": "court", "lord": "後宇多天皇" },
+        "kamakura": { "name": "鎌倉", "faction": "hojo", "lord": "北条時宗" },
+        "kawachi": { "name": "河内", "faction": "other", "lord": "在地武士" }
+      }
+    },
+    {
+      "year": 1324,
+      "label": "正中の変 — 御内人専制の深化",
+      "territories": {
+        "kozuke": { "name": "上野", "faction": "other", "lord": "在地御家人" },
+        "kyushu": { "name": "九州", "faction": "hojo", "lord": "鎮西探題" },
+        "kyoto": { "name": "京", "faction": "court", "lord": "後醍醐天皇（討幕を志す）" },
+        "kamakura": { "name": "鎌倉", "faction": "hojo", "lord": "北条高時（長崎氏が実権）" },
+        "kawachi": { "name": "河内", "faction": "other", "lord": "楠木氏ら悪党が台頭" }
+      }
+    },
+    {
+      "year": 1332,
+      "label": "千早城籠城 — 幕府方が優位",
+      "territories": {
+        "kozuke": { "name": "上野", "faction": "other", "lord": "新田氏（挙兵前）" },
+        "kyushu": { "name": "九州", "faction": "hojo", "lord": "鎮西探題" },
+        "kyoto": { "name": "京", "faction": "hojo", "lord": "六波羅探題（後醍醐は隠岐配流中）" },
+        "kamakura": { "name": "鎌倉", "faction": "hojo", "lord": "北条高時" },
+        "kawachi": { "name": "河内", "faction": "kusunoki", "lord": "楠木正成（千早城籠城）" }
+      }
+    },
+    {
+      "year": 1333,
+      "label": "鎌倉幕府滅亡",
+      "territories": {
+        "kozuke": { "name": "上野", "faction": "nitta", "lord": "新田義貞" },
+        "kyushu": { "name": "九州", "faction": "court", "lord": "少弐貞経ら（鎮西探題滅亡）" },
+        "kyoto": { "name": "京", "faction": "court", "lord": "後醍醐天皇（六波羅探題陥落）" },
+        "kamakura": { "name": "鎌倉", "faction": "nitta", "lord": "新田義貞が接収（北条氏滅亡）" },
+        "kawachi": { "name": "河内", "faction": "kusunoki", "lord": "楠木正成" }
+      }
+    }
+  ],
+  "wikiLinks": {
+    "characters": {
+      "c_hojo_tokimune": "北条時宗",
+      "c_hojo_sadatoki": "北条貞時",
+      "c_hojo_takatoki": "北条高時",
+      "c_hojo_tokisuke": "北条時輔",
+      "c_hojo_moritoki": "北条守時",
+      "c_hojo_nakatoki": "北条仲時",
+      "c_taira_yoritsuna": "平頼綱",
+      "c_nagasaki_takasuke": "長崎高資",
+      "c_adachi_yasumori": "安達泰盛",
+      "c_shoni_kagesuke": "少弐景資",
+      "c_takezaki_suenaga": "竹崎季長",
+      "c_kublai": "クビライ",
+      "c_du_shizhong": "杜世忠",
+      "c_godaigo": "後醍醐天皇",
+      "c_moriyoshi_shinno": "護良親王",
+      "c_hino_toshimoto": "日野俊基",
+      "c_hino_suketomo": "日野資朝",
+      "c_nawa_nagatoshi": "名和長年",
+      "c_kusunoki_masashige": "楠木正成",
+      "c_akamatsu_norimura": "赤松則村",
+      "c_ashikaga_takauji": "足利尊氏",
+      "c_nitta_yoshisada": "新田義貞"
+    },
+    "events": {
+      "e_bunei_no_eki": "文永の役",
+      "e_koan_no_eki": "弘安の役",
+      "e_shimotsuki_sodo": "霜月騒動",
+      "e_heizenmon_no_ran": "平禅門の乱",
+      "e_einin_tokuseirei": "永仁の徳政令",
+      "e_shochu_no_hen": "正中の変",
+      "e_genko_no_hen": "元弘の変",
+      "e_chihayajo_siege": "千早城の戦い",
+      "e_kamakura_fall": "鎌倉幕府",
+      "e_kenmu_restoration": "建武の新政"
+    }
+  }
+}

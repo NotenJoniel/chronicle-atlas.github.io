@@ -5363,6 +5363,716 @@
         }
       }
     },
+    "mongol-invasion-japan": {
+      "events": [
+        {
+          "id": "e_kublai_letter",
+          "year": 1268,
+          "title": "フビライの国書、日本に到来",
+          "category": "politics",
+          "location": "大宰府",
+          "color": "#8a2a1a",
+          "characters": [
+            "c_kublai",
+            "c_hojo_tokimune"
+          ]
+        },
+        {
+          "id": "e_tokimune_shikken",
+          "year": 1268,
+          "title": "北条時宗、執権就任",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_tokimune"
+          ]
+        },
+        {
+          "id": "e_nigatsu_sodo",
+          "year": 1272,
+          "title": "二月騒動",
+          "category": "death",
+          "location": "京都・鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_tokisuke",
+            "c_hojo_tokimune"
+          ]
+        },
+        {
+          "id": "e_tsushima_iki_attack",
+          "year": 1274,
+          "title": "対馬・壱岐、元軍に襲われる",
+          "category": "battle",
+          "location": "対馬・壱岐",
+          "color": "#8a2a1a",
+          "characters": [
+            "c_hong_dagu"
+          ]
+        },
+        {
+          "id": "e_bunei_no_eki",
+          "year": 1274,
+          "title": "文永の役・博多湾の戦い",
+          "category": "battle",
+          "location": "博多湾",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_tokimune",
+            "c_shoni_kagesuke",
+            "c_hong_dagu"
+          ]
+        },
+        {
+          "id": "e_ikoku_keigo",
+          "year": 1275,
+          "title": "異国警固番役の設置",
+          "category": "politics",
+          "location": "九州",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_tokimune"
+          ]
+        },
+        {
+          "id": "e_du_shizhong_execution",
+          "year": 1275,
+          "title": "杜世忠ら元使、龍ノ口で処刑",
+          "category": "death",
+          "location": "鎌倉・龍ノ口",
+          "color": "#8a2a1a",
+          "characters": [
+            "c_du_shizhong",
+            "c_hojo_tokimune"
+          ]
+        },
+        {
+          "id": "e_hakata_bay_wall",
+          "year": 1276,
+          "title": "博多湾岸に防塁（石塁）を築造",
+          "category": "politics",
+          "location": "博多湾岸",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_tokimune"
+          ]
+        },
+        {
+          "id": "e_koan_no_eki",
+          "year": 1281,
+          "title": "弘安の役・東路軍と江南軍の来襲",
+          "category": "battle",
+          "location": "博多湾・鷹島",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_tokimune",
+            "c_fan_wenhu",
+            "c_hong_dagu",
+            "c_shoni_kagesuke"
+          ]
+        },
+        {
+          "id": "e_takezaki_direct_appeal",
+          "year": 1284,
+          "title": "竹崎季長、恩賞を求め鎌倉へ直訴",
+          "category": "episode",
+          "location": "鎌倉",
+          "color": "#2a4a2a",
+          "characters": [
+            "c_takezaki_suenaga",
+            "c_adachi_yasumori"
+          ]
+        },
+        {
+          "id": "e_onsho_problem",
+          "year": 1281,
+          "title": "元寇の恩賞問題、深刻化",
+          "category": "politics",
+          "location": "全国",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_tokimune"
+          ]
+        },
+        {
+          "id": "e_tokimune_death",
+          "year": 1284,
+          "title": "北条時宗、死去",
+          "category": "death",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_tokimune"
+          ]
+        },
+        {
+          "id": "e_sadatoki_shikken",
+          "year": 1284,
+          "title": "北条貞時、九代執権就任",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_sadatoki"
+          ]
+        },
+        {
+          "id": "e_koan_tokusei",
+          "year": 1285,
+          "title": "弘安の徳政、推進される",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#2a4a2a",
+          "characters": [
+            "c_adachi_yasumori"
+          ]
+        },
+        {
+          "id": "e_shimotsuki_sodo",
+          "year": 1285,
+          "title": "霜月騒動・安達泰盛一族滅亡",
+          "category": "death",
+          "location": "鎌倉",
+          "color": "#2a4a2a",
+          "characters": [
+            "c_adachi_yasumori",
+            "c_taira_yoritsuna",
+            "c_hojo_sadatoki"
+          ]
+        },
+        {
+          "id": "e_iwato_gassen",
+          "year": 1285,
+          "title": "岩門合戦",
+          "category": "death",
+          "location": "九州・岩門",
+          "color": "#2a4a2a",
+          "characters": [
+            "c_shoni_kagesuke"
+          ]
+        },
+        {
+          "id": "e_yoritsuna_despotism",
+          "year": 1290,
+          "title": "平頼綱の専制",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#5a1a2a",
+          "characters": [
+            "c_taira_yoritsuna",
+            "c_hojo_sadatoki"
+          ]
+        },
+        {
+          "id": "e_heizenmon_no_ran",
+          "year": 1293,
+          "title": "平禅門の乱・頼綱誅殺",
+          "category": "death",
+          "location": "鎌倉",
+          "color": "#5a1a2a",
+          "characters": [
+            "c_taira_yoritsuna",
+            "c_hojo_sadatoki"
+          ]
+        },
+        {
+          "id": "e_einin_tokuseirei",
+          "year": 1297,
+          "title": "永仁の徳政令",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_sadatoki"
+          ]
+        },
+        {
+          "id": "e_akuto_rise",
+          "year": 1300,
+          "title": "悪党の台頭",
+          "category": "episode",
+          "location": "畿内一円",
+          "color": "#3a4a1a",
+          "characters": [
+            "c_kusunoki_masashige"
+          ]
+        },
+        {
+          "id": "e_takatoki_shikken",
+          "year": 1316,
+          "title": "北条高時、十四代執権就任",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_takatoki",
+            "c_nagasaki_takasuke"
+          ]
+        },
+        {
+          "id": "e_takatoki_dengaku",
+          "year": 1322,
+          "title": "高時、田楽・闘犬に耽る",
+          "category": "episode",
+          "location": "鎌倉",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_takatoki"
+          ]
+        },
+        {
+          "id": "e_shochu_no_hen",
+          "year": 1324,
+          "title": "正中の変",
+          "category": "politics",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_godaigo",
+            "c_hino_suketomo",
+            "c_hino_toshimoto"
+          ]
+        },
+        {
+          "id": "e_genko_no_hen",
+          "year": 1331,
+          "title": "元弘の変",
+          "category": "politics",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_godaigo",
+            "c_hino_toshimoto"
+          ]
+        },
+        {
+          "id": "e_moriyoshi_edict",
+          "year": 1331,
+          "title": "護良親王、令旨を発する",
+          "category": "politics",
+          "location": "吉野",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_moriyoshi_shinno"
+          ]
+        },
+        {
+          "id": "e_akasakajo_uprising",
+          "year": 1331,
+          "title": "楠木正成、赤坂城で挙兵",
+          "category": "battle",
+          "location": "河内・赤坂城",
+          "color": "#3a4a1a",
+          "characters": [
+            "c_kusunoki_masashige"
+          ]
+        },
+        {
+          "id": "e_kasagi_falls",
+          "year": 1331,
+          "title": "笠置山の陥落、後醍醐天皇捕縛",
+          "category": "death",
+          "location": "笠置山",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_godaigo",
+            "c_hino_toshimoto"
+          ]
+        },
+        {
+          "id": "e_godaigo_exile_oki",
+          "year": 1332,
+          "title": "後醍醐天皇、隠岐へ配流",
+          "category": "politics",
+          "location": "隠岐",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_godaigo"
+          ]
+        },
+        {
+          "id": "e_chihayajo_siege",
+          "year": 1332,
+          "title": "楠木正成、千早城に籠城",
+          "category": "battle",
+          "location": "河内・千早城",
+          "color": "#3a4a1a",
+          "characters": [
+            "c_kusunoki_masashige"
+          ]
+        },
+        {
+          "id": "e_godaigo_escape_oki",
+          "year": 1333,
+          "title": "後醍醐天皇、隠岐を脱出",
+          "category": "episode",
+          "location": "隠岐 → 伯耆・船上山",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_godaigo",
+            "c_nawa_nagatoshi"
+          ]
+        },
+        {
+          "id": "e_ashikaga_betrayal",
+          "year": 1333,
+          "title": "足利高氏、幕府に離反",
+          "category": "politics",
+          "location": "丹波・篠村八幡宮",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_ashikaga_takauji"
+          ]
+        },
+        {
+          "id": "e_akamatsu_uprising",
+          "year": 1333,
+          "title": "赤松則村、播磨で挙兵",
+          "category": "battle",
+          "location": "播磨",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_akamatsu_norimura"
+          ]
+        },
+        {
+          "id": "e_rokuhara_falls",
+          "year": 1333,
+          "title": "六波羅探題、陥落",
+          "category": "death",
+          "location": "京都",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_ashikaga_takauji",
+            "c_hojo_nakatoki",
+            "c_hojo_tokimasu"
+          ]
+        },
+        {
+          "id": "e_nitta_uprising",
+          "year": 1333,
+          "title": "新田義貞、鎌倉攻めのため挙兵",
+          "category": "politics",
+          "location": "上野・生品明神",
+          "color": "#3a4a5a",
+          "characters": [
+            "c_nitta_yoshisada"
+          ]
+        },
+        {
+          "id": "e_inamuragasaki_miracle",
+          "year": 1333,
+          "title": "稲村ヶ崎の奇跡",
+          "category": "episode",
+          "location": "鎌倉・稲村ヶ崎",
+          "color": "#3a4a5a",
+          "characters": [
+            "c_nitta_yoshisada"
+          ]
+        },
+        {
+          "id": "e_kamakura_fall",
+          "year": 1333,
+          "title": "鎌倉幕府滅亡・東勝寺合戦",
+          "category": "death",
+          "location": "鎌倉・東勝寺",
+          "color": "#1a2f52",
+          "characters": [
+            "c_hojo_takatoki",
+            "c_hojo_moritoki",
+            "c_nagasaki_takasuke"
+          ]
+        },
+        {
+          "id": "e_chinzei_tandai_fall",
+          "year": 1333,
+          "title": "鎮西探題の滅亡",
+          "category": "death",
+          "location": "九州・博多",
+          "color": "#2a4a2a",
+          "characters": [
+            "c_shoni_sadatsune"
+          ]
+        },
+        {
+          "id": "e_kenmu_restoration",
+          "year": 1333,
+          "title": "建武の新政、始まる",
+          "category": "politics",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_godaigo",
+            "c_moriyoshi_shinno",
+            "c_kusunoki_masashige",
+            "c_ashikaga_takauji",
+            "c_nitta_yoshisada"
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_hojo_tokimune",
+          "name": "北条時宗",
+          "reading": "ほうじょうときむね",
+          "faction": "hojo",
+          "field": "governance"
+        },
+        {
+          "id": "c_hojo_sadatoki",
+          "name": "北条貞時",
+          "reading": "ほうじょうさだとき",
+          "faction": "hojo",
+          "field": "governance"
+        },
+        {
+          "id": "c_hojo_takatoki",
+          "name": "北条高時",
+          "reading": "ほうじょうたかとき",
+          "faction": "hojo",
+          "field": "governance"
+        },
+        {
+          "id": "c_hojo_tokisuke",
+          "name": "北条時輔",
+          "reading": "ほうじょうときすけ",
+          "faction": "hojo",
+          "field": "governance"
+        },
+        {
+          "id": "c_hojo_moritoki",
+          "name": "北条守時",
+          "reading": "ほうじょうもりとき",
+          "faction": "hojo",
+          "field": "governance"
+        },
+        {
+          "id": "c_hojo_nakatoki",
+          "name": "北条仲時",
+          "reading": "ほうじょうなかとき",
+          "faction": "hojo",
+          "field": "governance"
+        },
+        {
+          "id": "c_hojo_tokimasu",
+          "name": "北条時益",
+          "reading": "ほうじょうときます",
+          "faction": "hojo",
+          "field": "governance"
+        },
+        {
+          "id": "c_taira_yoritsuna",
+          "name": "平頼綱",
+          "reading": "たいらのよりつな",
+          "faction": "miuchibito",
+          "field": "administration"
+        },
+        {
+          "id": "c_nagasaki_enki",
+          "name": "長崎円喜",
+          "reading": "ながさきえんき",
+          "faction": "miuchibito",
+          "field": "administration"
+        },
+        {
+          "id": "c_nagasaki_takasuke",
+          "name": "長崎高資",
+          "reading": "ながさきたかすけ",
+          "faction": "miuchibito",
+          "field": "administration"
+        },
+        {
+          "id": "c_adachi_yasumori",
+          "name": "安達泰盛",
+          "reading": "あだちやすもり",
+          "faction": "gokenin",
+          "field": "governance"
+        },
+        {
+          "id": "c_shoni_kagesuke",
+          "name": "少弐景資",
+          "reading": "しょうにかげすけ",
+          "faction": "gokenin",
+          "field": "military"
+        },
+        {
+          "id": "c_takezaki_suenaga",
+          "name": "竹崎季長",
+          "reading": "たけざきすえなが",
+          "faction": "gokenin",
+          "field": "military"
+        },
+        {
+          "id": "c_shimazu_hisatsune",
+          "name": "島津久経",
+          "reading": "しまづひさつね",
+          "faction": "gokenin",
+          "field": "military"
+        },
+        {
+          "id": "c_shoni_sadatsune",
+          "name": "少弐貞経",
+          "reading": "しょうにさだつね",
+          "faction": "gokenin",
+          "field": "military"
+        },
+        {
+          "id": "c_kublai",
+          "name": "クビライ",
+          "reading": "くびらい",
+          "faction": "mongol",
+          "field": "governance"
+        },
+        {
+          "id": "c_hong_dagu",
+          "name": "洪茶丘",
+          "reading": "こうちゃきゅう",
+          "faction": "mongol",
+          "field": "military"
+        },
+        {
+          "id": "c_fan_wenhu",
+          "name": "范文虎",
+          "reading": "はんぶんこ",
+          "faction": "mongol",
+          "field": "military"
+        },
+        {
+          "id": "c_du_shizhong",
+          "name": "杜世忠",
+          "reading": "とせいちゅう",
+          "faction": "mongol",
+          "field": "administration"
+        },
+        {
+          "id": "c_godaigo",
+          "name": "後醍醐天皇",
+          "reading": "ごだいごてんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_moriyoshi_shinno",
+          "name": "護良親王",
+          "reading": "もりよししんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_hino_toshimoto",
+          "name": "日野俊基",
+          "reading": "ひのとしもと",
+          "faction": "court",
+          "field": "administration"
+        },
+        {
+          "id": "c_hino_suketomo",
+          "name": "日野資朝",
+          "reading": "ひのすけとも",
+          "faction": "court",
+          "field": "administration"
+        },
+        {
+          "id": "c_nawa_nagatoshi",
+          "name": "名和長年",
+          "reading": "なわながとし",
+          "faction": "court",
+          "field": "military"
+        },
+        {
+          "id": "c_chigusa_tadaaki",
+          "name": "千種忠顕",
+          "reading": "ちぐさただあき",
+          "faction": "court",
+          "field": "administration"
+        },
+        {
+          "id": "c_kusunoki_masashige",
+          "name": "楠木正成",
+          "reading": "くすのきまさしげ",
+          "faction": "kusunoki",
+          "field": "military"
+        },
+        {
+          "id": "c_akamatsu_norimura",
+          "name": "赤松則村（円心）",
+          "reading": "あかまつのりむら",
+          "faction": "other",
+          "field": "military"
+        },
+        {
+          "id": "c_ashikaga_takauji",
+          "name": "足利高氏（尊氏）",
+          "reading": "あしかがたかうじ",
+          "faction": "ashikaga",
+          "field": "military"
+        },
+        {
+          "id": "c_nitta_yoshisada",
+          "name": "新田義貞",
+          "reading": "にったよしさだ",
+          "faction": "nitta",
+          "field": "military"
+        }
+      ],
+      "factions": {
+        "hojo": {
+          "id": "hojo",
+          "name": "北条得宗家",
+          "color": "#1a2f52",
+          "colorLight": "#4a72b0"
+        },
+        "miuchibito": {
+          "id": "miuchibito",
+          "name": "御内人",
+          "color": "#5a1a2a",
+          "colorLight": "#a8455a"
+        },
+        "gokenin": {
+          "id": "gokenin",
+          "name": "有力御家人",
+          "color": "#2a4a2a",
+          "colorLight": "#5a8a5a"
+        },
+        "mongol": {
+          "id": "mongol",
+          "name": "元",
+          "color": "#8a2a1a",
+          "colorLight": "#c0603f"
+        },
+        "court": {
+          "id": "court",
+          "name": "朝廷・討幕勢力",
+          "color": "#4a2a5a",
+          "colorLight": "#9a6ac4"
+        },
+        "kusunoki": {
+          "id": "kusunoki",
+          "name": "楠木氏",
+          "color": "#3a4a1a",
+          "colorLight": "#7a9a3a"
+        },
+        "ashikaga": {
+          "id": "ashikaga",
+          "name": "足利氏",
+          "color": "#6a4a1a",
+          "colorLight": "#c99a3a"
+        },
+        "nitta": {
+          "id": "nitta",
+          "name": "新田氏",
+          "color": "#3a4a5a",
+          "colorLight": "#7a9ab0"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#4a4a4a",
+          "colorLight": "#9a9a9a"
+        }
+      }
+    },
     "sengoku-japan": {
       "events": [
         {
