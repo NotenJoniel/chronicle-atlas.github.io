@@ -6073,6 +6073,694 @@
         }
       }
     },
+    "nanboku-cho": {
+      "events": [
+        {
+          "id": "e_kenmu_dissatisfaction",
+          "year": 1334,
+          "title": "建武新政の恩賞不公平、武士の不満高まる",
+          "category": "politics",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_godaigo"
+          ]
+        },
+        {
+          "id": "e_nakasendai_no_ran",
+          "year": 1335,
+          "title": "中先代の乱",
+          "category": "battle",
+          "location": "鎌倉",
+          "color": "#5a1a2a",
+          "characters": [
+            "c_hojo_tokiyuki",
+            "c_ashikaga_tadayoshi"
+          ]
+        },
+        {
+          "id": "e_takauji_east",
+          "year": 1335,
+          "title": "尊氏、鎮圧のため東下・独断で恩賞を与える",
+          "category": "politics",
+          "location": "鎌倉",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_ashikaga_takauji"
+          ]
+        },
+        {
+          "id": "e_yoshisada_pursuit_order",
+          "year": 1335,
+          "title": "新田義貞の尊氏追討令",
+          "category": "politics",
+          "location": "京都",
+          "color": "#1a4a4a",
+          "characters": [
+            "c_nitta_yoshisada",
+            "c_godaigo"
+          ]
+        },
+        {
+          "id": "e_hakone_takenoshita",
+          "year": 1335,
+          "title": "箱根・竹ノ下の戦い",
+          "category": "battle",
+          "location": "箱根・竹ノ下",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_ashikaga_takauji",
+            "c_nitta_yoshisada"
+          ]
+        },
+        {
+          "id": "e_takauji_kyoto_repulsed",
+          "year": 1336,
+          "title": "尊氏、京都占領も北畠顕家軍に敗走",
+          "category": "battle",
+          "location": "京都",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_ashikaga_takauji",
+            "c_kitabatake_akiie",
+            "c_nitta_yoshisada",
+            "c_kusunoki_masashige"
+          ]
+        },
+        {
+          "id": "e_takauji_kyushu_regroup",
+          "year": 1336,
+          "title": "尊氏、九州で勢力を立て直す",
+          "category": "politics",
+          "location": "九州",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_ashikaga_takauji"
+          ]
+        },
+        {
+          "id": "e_masashige_proposal_rejected",
+          "year": 1336,
+          "title": "楠木正成、湊川で献策するも容れられず",
+          "category": "episode",
+          "location": "京都",
+          "color": "#3a4a1a",
+          "characters": [
+            "c_kusunoki_masashige",
+            "c_nitta_yoshisada"
+          ]
+        },
+        {
+          "id": "e_minatogawa_death",
+          "year": 1336,
+          "title": "湊川の戦い・楠木正成討死",
+          "category": "death",
+          "location": "摂津・湊川",
+          "color": "#3a4a1a",
+          "characters": [
+            "c_kusunoki_masashige",
+            "c_ashikaga_takauji",
+            "c_ashikaga_tadayoshi"
+          ]
+        },
+        {
+          "id": "e_godaigo_yoshino",
+          "year": 1336,
+          "title": "後醍醐天皇、吉野へ遷幸・南北朝分裂",
+          "category": "politics",
+          "location": "京都 → 吉野",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_godaigo",
+            "c_komyo"
+          ]
+        },
+        {
+          "id": "e_kenmu_shikimoku",
+          "year": 1336,
+          "title": "建武式目の制定",
+          "category": "politics",
+          "location": "京都",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_ashikaga_takauji"
+          ]
+        },
+        {
+          "id": "e_chigusa_death",
+          "year": 1336,
+          "title": "千種忠顕、討死",
+          "category": "death",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_chigusa_tadaaki"
+          ]
+        },
+        {
+          "id": "e_akiie_second_march",
+          "year": 1337,
+          "title": "北畠顕家、再び奥州から西上",
+          "category": "politics",
+          "location": "陸奥 → 京都",
+          "color": "#5a2a1a",
+          "characters": [
+            "c_kitabatake_akiie",
+            "c_kitabatake_chikafusa"
+          ]
+        },
+        {
+          "id": "e_ishizu_akiie_death",
+          "year": 1338,
+          "title": "石津の戦い・北畠顕家討死",
+          "category": "death",
+          "location": "和泉・石津",
+          "color": "#5a2a1a",
+          "characters": [
+            "c_kitabatake_akiie",
+            "c_ko_no_moroyasu"
+          ]
+        },
+        {
+          "id": "e_fujishima_yoshisada_death",
+          "year": 1338,
+          "title": "藤島の戦い・新田義貞討死",
+          "category": "death",
+          "location": "越前・藤島",
+          "color": "#1a4a4a",
+          "characters": [
+            "c_nitta_yoshisada"
+          ]
+        },
+        {
+          "id": "e_takauji_seii_taishogun",
+          "year": 1338,
+          "title": "尊氏、征夷大将軍就任",
+          "category": "politics",
+          "location": "京都",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_ashikaga_takauji"
+          ]
+        },
+        {
+          "id": "e_godaigo_death",
+          "year": 1339,
+          "title": "後醍醐天皇、崩御",
+          "category": "death",
+          "location": "吉野",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_godaigo",
+            "c_gomurakami"
+          ]
+        },
+        {
+          "id": "e_jinno_shotoki",
+          "year": 1339,
+          "title": "北畠親房、『神皇正統記』を著す",
+          "category": "episode",
+          "location": "常陸",
+          "color": "#5a2a1a",
+          "characters": [
+            "c_kitabatake_chikafusa"
+          ]
+        },
+        {
+          "id": "e_masatsura_uprising",
+          "year": 1347,
+          "title": "楠木正行、河内で挙兵",
+          "category": "battle",
+          "location": "河内",
+          "color": "#3a4a1a",
+          "characters": [
+            "c_kusunoki_masatsura"
+          ]
+        },
+        {
+          "id": "e_shijonawate_death",
+          "year": 1348,
+          "title": "四条畷の戦い・楠木正行討死",
+          "category": "death",
+          "location": "河内・四条畷",
+          "color": "#3a4a1a",
+          "characters": [
+            "c_kusunoki_masatsura",
+            "c_ko_no_moronao"
+          ]
+        },
+        {
+          "id": "e_masanori_succession",
+          "year": 1348,
+          "title": "楠木正儀、家督を継ぐ",
+          "category": "politics",
+          "location": "河内",
+          "color": "#3a4a1a",
+          "characters": [
+            "c_kusunoki_masanori"
+          ]
+        },
+        {
+          "id": "e_ko_tadayoshi_conflict",
+          "year": 1349,
+          "title": "高師直と足利直義の対立、激化",
+          "category": "politics",
+          "location": "京都",
+          "color": "#4a4a2a",
+          "characters": [
+            "c_ko_no_moronao",
+            "c_ashikaga_tadayoshi"
+          ]
+        },
+        {
+          "id": "e_tadafuyu_rise",
+          "year": 1349,
+          "title": "足利直冬、直義の養子として台頭",
+          "category": "politics",
+          "location": "京都・九州",
+          "color": "#4a4a2a",
+          "characters": [
+            "c_ashikaga_tadafuyu",
+            "c_ashikaga_tadayoshi"
+          ]
+        },
+        {
+          "id": "e_tadayoshi_joins_nancho",
+          "year": 1351,
+          "title": "直義、南朝に降り挙兵",
+          "category": "politics",
+          "location": "京都",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_ashikaga_tadayoshi",
+            "c_gomurakami"
+          ]
+        },
+        {
+          "id": "e_ko_brothers_death",
+          "year": 1351,
+          "title": "高師直・師泰、討たれる",
+          "category": "death",
+          "location": "摂津",
+          "color": "#4a4a2a",
+          "characters": [
+            "c_ko_no_moronao",
+            "c_ko_no_moroyasu",
+            "c_ashikaga_tadayoshi"
+          ]
+        },
+        {
+          "id": "e_shohei_ittoo",
+          "year": 1351,
+          "title": "正平一統・南北朝の一時的合体",
+          "category": "politics",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_gomurakami",
+            "c_ashikaga_takauji"
+          ]
+        },
+        {
+          "id": "e_tadayoshi_death",
+          "year": 1352,
+          "title": "足利直義、鎌倉で急死",
+          "category": "death",
+          "location": "鎌倉",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_ashikaga_tadayoshi",
+            "c_ashikaga_takauji"
+          ]
+        },
+        {
+          "id": "e_akamatsu_norisuke_kanno",
+          "year": 1351,
+          "title": "赤松則祐、観応の擾乱で幕府方として活躍",
+          "category": "battle",
+          "location": "播磨",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_akamatsu_norisuke"
+          ]
+        },
+        {
+          "id": "e_sasaki_doyo_survival",
+          "year": 1352,
+          "title": "婆娑羅大名・佐々木道誉の処世術",
+          "category": "episode",
+          "location": "京都・近江",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_sasaki_doyo"
+          ]
+        },
+        {
+          "id": "e_yamana_shifting_allegiance",
+          "year": 1352,
+          "title": "山名時氏、直義派から南朝、そして幕府へ",
+          "category": "episode",
+          "location": "山陰",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_yamana_tokiuji"
+          ]
+        },
+        {
+          "id": "e_takauji_death",
+          "year": 1358,
+          "title": "足利尊氏、死去",
+          "category": "death",
+          "location": "京都",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_ashikaga_takauji",
+            "c_ashikaga_yoshiakira"
+          ]
+        },
+        {
+          "id": "e_momonoi_resistance",
+          "year": 1360,
+          "title": "桃井直常、抵抗を続ける",
+          "category": "episode",
+          "location": "越中",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_momonoi_tadatsune"
+          ]
+        },
+        {
+          "id": "e_masanori_peace_talks",
+          "year": 1366,
+          "title": "楠木正儀、幕府と和睦交渉",
+          "category": "politics",
+          "location": "河内",
+          "color": "#3a4a1a",
+          "characters": [
+            "c_kusunoki_masanori"
+          ]
+        },
+        {
+          "id": "e_yoshimitsu_shogun",
+          "year": 1368,
+          "title": "足利義満、三代将軍就任",
+          "category": "politics",
+          "location": "京都",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_ashikaga_yoshimitsu",
+            "c_ashikaga_yoshiakira"
+          ]
+        },
+        {
+          "id": "e_masanori_defection",
+          "year": 1368,
+          "title": "楠木正儀、幕府に帰順",
+          "category": "politics",
+          "location": "河内",
+          "color": "#3a4a1a",
+          "characters": [
+            "c_kusunoki_masanori"
+          ]
+        },
+        {
+          "id": "e_nijo_yoshimoto_tutor",
+          "year": 1375,
+          "title": "二条良基、義満を教導",
+          "category": "episode",
+          "location": "京都",
+          "color": "#3a4a6a",
+          "characters": [
+            "c_nijo_yoshimoto",
+            "c_ashikaga_yoshimitsu"
+          ]
+        },
+        {
+          "id": "e_nancho_decline",
+          "year": 1370,
+          "title": "南朝勢力、各地で衰退",
+          "category": "politics",
+          "location": "吉野",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_gokameyama"
+          ]
+        },
+        {
+          "id": "e_meitoku_no_wayaku",
+          "year": 1392,
+          "title": "明徳の和約・南北朝合体",
+          "category": "politics",
+          "location": "京都",
+          "color": "#6a4a1a",
+          "characters": [
+            "c_ashikaga_yoshimitsu",
+            "c_gokameyama",
+            "c_gokomatsu"
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_godaigo",
+          "name": "後醍醐天皇",
+          "reading": "ごだいごてんのう",
+          "faction": "nancho",
+          "field": "governance"
+        },
+        {
+          "id": "c_gomurakami",
+          "name": "後村上天皇",
+          "reading": "ごむらかみてんのう",
+          "faction": "nancho",
+          "field": "governance"
+        },
+        {
+          "id": "c_gokameyama",
+          "name": "後亀山天皇",
+          "reading": "ごかめやまてんのう",
+          "faction": "nancho",
+          "field": "governance"
+        },
+        {
+          "id": "c_kogon",
+          "name": "光厳上皇",
+          "reading": "こうごんじょうこう",
+          "faction": "hokucho",
+          "field": "governance"
+        },
+        {
+          "id": "c_komyo",
+          "name": "光明天皇",
+          "reading": "こうみょうてんのう",
+          "faction": "hokucho",
+          "field": "governance"
+        },
+        {
+          "id": "c_gokomatsu",
+          "name": "後小松天皇",
+          "reading": "ごこまつてんのう",
+          "faction": "hokucho",
+          "field": "governance"
+        },
+        {
+          "id": "c_ashikaga_takauji",
+          "name": "足利尊氏",
+          "reading": "あしかがたかうじ",
+          "faction": "ashikaga",
+          "field": "military"
+        },
+        {
+          "id": "c_ashikaga_tadayoshi",
+          "name": "足利直義",
+          "reading": "あしかがただよし",
+          "faction": "ashikaga",
+          "field": "governance"
+        },
+        {
+          "id": "c_ashikaga_yoshiakira",
+          "name": "足利義詮",
+          "reading": "あしかがよしあきら",
+          "faction": "ashikaga",
+          "field": "governance"
+        },
+        {
+          "id": "c_ashikaga_yoshimitsu",
+          "name": "足利義満",
+          "reading": "あしかがよしみつ",
+          "faction": "ashikaga",
+          "field": "governance"
+        },
+        {
+          "id": "c_ko_no_moronao",
+          "name": "高師直",
+          "reading": "こうのもろなお",
+          "faction": "ko",
+          "field": "military"
+        },
+        {
+          "id": "c_ko_no_moroyasu",
+          "name": "高師泰",
+          "reading": "こうのもろやす",
+          "faction": "ko",
+          "field": "military"
+        },
+        {
+          "id": "c_kusunoki_masashige",
+          "name": "楠木正成",
+          "reading": "くすのきまさしげ",
+          "faction": "kusunoki",
+          "field": "military"
+        },
+        {
+          "id": "c_kusunoki_masatsura",
+          "name": "楠木正行",
+          "reading": "くすのきまさつら",
+          "faction": "kusunoki",
+          "field": "military"
+        },
+        {
+          "id": "c_kusunoki_masanori",
+          "name": "楠木正儀",
+          "reading": "くすのきまさのり",
+          "faction": "kusunoki",
+          "field": "military"
+        },
+        {
+          "id": "c_nitta_yoshisada",
+          "name": "新田義貞",
+          "reading": "にったよしさだ",
+          "faction": "nitta",
+          "field": "military"
+        },
+        {
+          "id": "c_kitabatake_chikafusa",
+          "name": "北畠親房",
+          "reading": "きたばたけちかふさ",
+          "faction": "kitabatake",
+          "field": "thought"
+        },
+        {
+          "id": "c_kitabatake_akiie",
+          "name": "北畠顕家",
+          "reading": "きたばたけあきいえ",
+          "faction": "kitabatake",
+          "field": "military"
+        },
+        {
+          "id": "c_hojo_tokiyuki",
+          "name": "北条時行",
+          "reading": "ほうじょうときゆき",
+          "faction": "hojo_remnant",
+          "field": "military"
+        },
+        {
+          "id": "c_ashikaga_tadafuyu",
+          "name": "足利直冬",
+          "reading": "あしかがただふゆ",
+          "faction": "ko",
+          "field": "military"
+        },
+        {
+          "id": "c_sasaki_doyo",
+          "name": "佐々木道誉（京極高氏）",
+          "reading": "ささきどうよ",
+          "faction": "ashikaga",
+          "field": "military"
+        },
+        {
+          "id": "c_yamana_tokiuji",
+          "name": "山名時氏",
+          "reading": "やまなときうじ",
+          "faction": "other",
+          "field": "military"
+        },
+        {
+          "id": "c_momonoi_tadatsune",
+          "name": "桃井直常",
+          "reading": "もものいただつね",
+          "faction": "other",
+          "field": "military"
+        },
+        {
+          "id": "c_akamatsu_norisuke",
+          "name": "赤松則祐",
+          "reading": "あかまつのりすけ",
+          "faction": "ashikaga",
+          "field": "military"
+        },
+        {
+          "id": "c_nijo_yoshimoto",
+          "name": "二条良基",
+          "reading": "にじょうよしもと",
+          "faction": "hokucho",
+          "field": "administration"
+        },
+        {
+          "id": "c_chigusa_tadaaki",
+          "name": "千種忠顕",
+          "reading": "ちぐさただあき",
+          "faction": "nancho",
+          "field": "administration"
+        }
+      ],
+      "factions": {
+        "ashikaga": {
+          "id": "ashikaga",
+          "name": "足利・室町幕府",
+          "color": "#6a4a1a",
+          "colorLight": "#c99a3a"
+        },
+        "hokucho": {
+          "id": "hokucho",
+          "name": "北朝",
+          "color": "#3a4a6a",
+          "colorLight": "#7a9ad0"
+        },
+        "nancho": {
+          "id": "nancho",
+          "name": "南朝",
+          "color": "#4a2a5a",
+          "colorLight": "#9a6ac4"
+        },
+        "kusunoki": {
+          "id": "kusunoki",
+          "name": "楠木氏",
+          "color": "#3a4a1a",
+          "colorLight": "#7a9a3a"
+        },
+        "nitta": {
+          "id": "nitta",
+          "name": "新田氏",
+          "color": "#1a4a4a",
+          "colorLight": "#4a8a8a"
+        },
+        "kitabatake": {
+          "id": "kitabatake",
+          "name": "北畠氏",
+          "color": "#5a2a1a",
+          "colorLight": "#a8603a"
+        },
+        "ko": {
+          "id": "ko",
+          "name": "高氏",
+          "color": "#4a4a2a",
+          "colorLight": "#8a8a4a"
+        },
+        "hojo_remnant": {
+          "id": "hojo_remnant",
+          "name": "北条残党",
+          "color": "#5a1a2a",
+          "colorLight": "#a8455a"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#4a4a4a",
+          "colorLight": "#9a9a9a"
+        }
+      }
+    },
     "sengoku-japan": {
       "events": [
         {
