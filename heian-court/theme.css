@@ -1,0 +1,6 @@
+/* 摂関政治と王朝文化 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#120e16;--surface:#1c1620;--surface-2:#251d2a;--surface-3:#2f2635;
+  --border-subtle:rgba(180,140,200,.12);--text:#e6dfea;--text-dim:#9c8fa8;
+  --gold:#b48ad6;--gold-dim:rgba(180,138,214,.18);
+}

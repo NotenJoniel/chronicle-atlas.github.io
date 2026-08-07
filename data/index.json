@@ -46,6 +46,15 @@
       "subProjectDir": "three-kingdoms"
     },
     {
+      "id": "heian-court",
+      "name": "摂関政治と王朝文化",
+      "region": "japan",
+      "startYear": 894,
+      "endYear": 1068,
+      "dataFile": "timelines/heian-court.json",
+      "subProjectDir": "heian-court"
+    },
+    {
       "id": "genpei-war",
       "name": "源平合戦",
       "region": "japan",

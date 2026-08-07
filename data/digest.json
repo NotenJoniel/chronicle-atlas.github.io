@@ -4527,6 +4527,692 @@
         }
       }
     },
+    "heian-court": {
+      "events": [
+        {
+          "id": "e_kentoshi_abolished",
+          "year": 894,
+          "title": "遣唐使の停止",
+          "category": "politics",
+          "location": "京都",
+          "color": "#6a5a1a",
+          "characters": [
+            "c_sugawara_michizane"
+          ]
+        },
+        {
+          "id": "e_michizane_udaijin",
+          "year": 899,
+          "title": "菅原道真、右大臣に就任",
+          "category": "politics",
+          "location": "京都",
+          "color": "#6a5a1a",
+          "characters": [
+            "c_sugawara_michizane"
+          ]
+        },
+        {
+          "id": "e_shotai_incident",
+          "year": 901,
+          "title": "昌泰の変・道真、大宰府へ左遷",
+          "category": "politics",
+          "location": "京都 → 大宰府",
+          "color": "#6a5a1a",
+          "characters": [
+            "c_sugawara_michizane",
+            "c_fujiwara_tokihira"
+          ]
+        },
+        {
+          "id": "e_michizane_death",
+          "year": 903,
+          "title": "道真、大宰府で死去",
+          "category": "death",
+          "location": "大宰府",
+          "color": "#6a5a1a",
+          "characters": [
+            "c_sugawara_michizane"
+          ]
+        },
+        {
+          "id": "e_tokihira_death",
+          "year": 909,
+          "title": "藤原時平、急死（道真の祟りと恐れられる）",
+          "category": "death",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_fujiwara_tokihira"
+          ]
+        },
+        {
+          "id": "e_masakado_uprising",
+          "year": 935,
+          "title": "平将門、一族内の抗争から挙兵",
+          "category": "battle",
+          "location": "坂東",
+          "color": "#7a1a1a",
+          "characters": [
+            "c_taira_masakado"
+          ]
+        },
+        {
+          "id": "e_masakado_shinno",
+          "year": 939,
+          "title": "将門、新皇を称する",
+          "category": "politics",
+          "location": "坂東",
+          "color": "#7a1a1a",
+          "characters": [
+            "c_taira_masakado"
+          ]
+        },
+        {
+          "id": "e_masakado_death",
+          "year": 940,
+          "title": "平貞盛・藤原秀郷、将門を討つ",
+          "category": "death",
+          "location": "下総・北山",
+          "color": "#7a1a1a",
+          "characters": [
+            "c_taira_masakado",
+            "c_taira_sadamori",
+            "c_fujiwara_hidesato"
+          ]
+        },
+        {
+          "id": "e_sumitomo_uprising",
+          "year": 939,
+          "title": "藤原純友、瀬戸内海で反乱",
+          "category": "battle",
+          "location": "瀬戸内海",
+          "color": "#1a4a4a",
+          "characters": [
+            "c_fujiwara_sumitomo"
+          ]
+        },
+        {
+          "id": "e_sumitomo_suppressed",
+          "year": 941,
+          "title": "純友の乱、鎮圧される",
+          "category": "death",
+          "location": "伊予・博多",
+          "color": "#1a4a4a",
+          "characters": [
+            "c_fujiwara_sumitomo"
+          ]
+        },
+        {
+          "id": "e_anwa_prelude",
+          "year": 967,
+          "title": "藤原実頼、摂政となる",
+          "category": "politics",
+          "location": "京都"
+        },
+        {
+          "id": "e_anwa_incident",
+          "year": 969,
+          "title": "安和の変・源高明、失脚",
+          "category": "politics",
+          "location": "京都",
+          "color": "#1a3a6a",
+          "characters": [
+            "c_minamoto_takaakira"
+          ]
+        },
+        {
+          "id": "e_kazan_tonsure",
+          "year": 986,
+          "title": "花山天皇、出家させられる",
+          "category": "episode",
+          "location": "京都・元慶寺",
+          "color": "#6a5a1a",
+          "characters": [
+            "c_kazan_tennou",
+            "c_fujiwara_kaneie"
+          ]
+        },
+        {
+          "id": "e_ichijou_enthronement",
+          "year": 986,
+          "title": "一条天皇、即位・兼家が摂政に",
+          "category": "politics",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_fujiwara_kaneie",
+            "c_ichijou_tennou"
+          ]
+        },
+        {
+          "id": "e_michinaga_rise",
+          "year": 995,
+          "title": "藤原道長、政権を掌握",
+          "category": "politics",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_fujiwara_michinaga"
+          ]
+        },
+        {
+          "id": "e_chotoku_incident",
+          "year": 996,
+          "title": "長徳の変・藤原伊周、失脚",
+          "category": "politics",
+          "location": "京都",
+          "color": "#7a2a4a",
+          "characters": [
+            "c_fujiwara_korechika",
+            "c_fujiwara_takaie"
+          ]
+        },
+        {
+          "id": "e_teishi_death",
+          "year": 1001,
+          "title": "藤原定子、崩御",
+          "category": "death",
+          "location": "京都",
+          "color": "#7a2a4a",
+          "characters": [
+            "c_fujiwara_teishi"
+          ]
+        },
+        {
+          "id": "e_korechika_death",
+          "year": 1010,
+          "title": "藤原伊周、失意のうちに死去",
+          "category": "death",
+          "location": "京都",
+          "color": "#7a2a4a",
+          "characters": [
+            "c_fujiwara_korechika"
+          ]
+        },
+        {
+          "id": "e_kagerou_nikki",
+          "year": 974,
+          "title": "藤原道綱母、『蜻蛉日記』を著す",
+          "category": "episode",
+          "location": "京都",
+          "color": "#3a4a2a",
+          "characters": [
+            "c_fujiwara_michitsuna_no_haha"
+          ]
+        },
+        {
+          "id": "e_kintou_sansen",
+          "year": 995,
+          "title": "藤原公任、「三船の才」を発揮",
+          "category": "episode",
+          "location": "京都・大堰川",
+          "color": "#3a4a2a",
+          "characters": [
+            "c_fujiwara_kintou"
+          ]
+        },
+        {
+          "id": "e_makura_no_soshi",
+          "year": 1000,
+          "title": "清少納言、『枕草子』を執筆",
+          "category": "episode",
+          "location": "京都",
+          "color": "#3a4a2a",
+          "characters": [
+            "c_sei_shonagon",
+            "c_fujiwara_teishi"
+          ]
+        },
+        {
+          "id": "e_genji_monogatari_begins",
+          "year": 1005,
+          "title": "紫式部、『源氏物語』を書き始める",
+          "category": "episode",
+          "location": "京都",
+          "color": "#3a4a2a",
+          "characters": [
+            "c_murasaki_shikibu"
+          ]
+        },
+        {
+          "id": "e_murasaki_serves_akiko",
+          "year": 1006,
+          "title": "紫式部、彰子に仕える",
+          "category": "episode",
+          "location": "京都",
+          "color": "#3a4a2a",
+          "characters": [
+            "c_murasaki_shikibu",
+            "c_fujiwara_akiko"
+          ]
+        },
+        {
+          "id": "e_izumi_shikibu_romance",
+          "year": 1008,
+          "title": "和泉式部、情熱的な恋歌で名を馳せる",
+          "category": "episode",
+          "location": "京都",
+          "color": "#3a4a2a",
+          "characters": [
+            "c_izumi_shikibu"
+          ]
+        },
+        {
+          "id": "e_yukinari_calligraphy",
+          "year": 1009,
+          "title": "藤原行成、能書家として活躍",
+          "category": "episode",
+          "location": "京都",
+          "color": "#3a4a2a",
+          "characters": [
+            "c_fujiwara_yukinari"
+          ]
+        },
+        {
+          "id": "e_mochizuki_no_uta",
+          "year": 1018,
+          "title": "「望月の歌」・道長、栄華の絶頂",
+          "category": "episode",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_fujiwara_michinaga",
+            "c_fujiwara_akiko"
+          ]
+        },
+        {
+          "id": "e_toi_invasion",
+          "year": 1019,
+          "title": "刀伊の入寇",
+          "category": "battle",
+          "location": "対馬・壱岐・博多",
+          "color": "#7a2a4a",
+          "characters": [
+            "c_fujiwara_takaie"
+          ]
+        },
+        {
+          "id": "e_michinaga_tonsure",
+          "year": 1019,
+          "title": "藤原道長、出家",
+          "category": "episode",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_fujiwara_michinaga"
+          ]
+        },
+        {
+          "id": "e_michinaga_death",
+          "year": 1027,
+          "title": "藤原道長、死去",
+          "category": "death",
+          "location": "京都",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_fujiwara_michinaga"
+          ]
+        },
+        {
+          "id": "e_tadatsune_rebellion",
+          "year": 1028,
+          "title": "平忠常の乱",
+          "category": "battle",
+          "location": "上総・下総",
+          "color": "#7a1a1a",
+          "characters": [
+            "c_taira_tadatsune",
+            "c_minamoto_yorinobu"
+          ]
+        },
+        {
+          "id": "e_byodoin_construction",
+          "year": 1053,
+          "title": "藤原頼通、平等院鳳凰堂を建立",
+          "category": "episode",
+          "location": "宇治",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_fujiwara_yorimichi"
+          ]
+        },
+        {
+          "id": "e_zenkunen_begins",
+          "year": 1051,
+          "title": "前九年の役、始まる",
+          "category": "battle",
+          "location": "陸奥",
+          "color": "#1a3a6a",
+          "characters": [
+            "c_minamoto_yoriyoshi",
+            "c_abe_yoritoki"
+          ]
+        },
+        {
+          "id": "e_yoshiie_valor",
+          "year": 1057,
+          "title": "源義家、陣頭で活躍（八幡太郎）",
+          "category": "episode",
+          "location": "陸奥",
+          "color": "#1a3a6a",
+          "characters": [
+            "c_minamoto_yoshiie",
+            "c_abe_sadatou"
+          ]
+        },
+        {
+          "id": "e_zenkunen_ends",
+          "year": 1062,
+          "title": "前九年の役、終結",
+          "category": "death",
+          "location": "陸奥・厨川柵",
+          "color": "#5a3a1a",
+          "characters": [
+            "c_abe_sadatou",
+            "c_minamoto_yoriyoshi",
+            "c_minamoto_yoshiie"
+          ]
+        },
+        {
+          "id": "e_yorimichi_uji",
+          "year": 1067,
+          "title": "藤原頼通、宇治に退く",
+          "category": "politics",
+          "location": "宇治",
+          "color": "#4a2a5a",
+          "characters": [
+            "c_fujiwara_yorimichi"
+          ]
+        },
+        {
+          "id": "e_gosanjou_enthronement",
+          "year": 1068,
+          "title": "後三条天皇、即位",
+          "category": "politics",
+          "location": "京都",
+          "color": "#6a5a1a",
+          "characters": [
+            "c_gosanjou_tennou",
+            "c_fujiwara_yorimichi"
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_sugawara_michizane",
+          "name": "菅原道真",
+          "reading": "すがわらのみちざね",
+          "faction": "court",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_fujiwara_tokihira",
+          "name": "藤原時平",
+          "reading": "ふじわらのときひら",
+          "faction": "fujiwara",
+          "field": "governance"
+        },
+        {
+          "id": "c_taira_masakado",
+          "name": "平将門",
+          "reading": "たいらのまさかど",
+          "faction": "taira",
+          "field": "military"
+        },
+        {
+          "id": "c_taira_sadamori",
+          "name": "平貞盛",
+          "reading": "たいらのさだもり",
+          "faction": "taira",
+          "field": "military"
+        },
+        {
+          "id": "c_fujiwara_hidesato",
+          "name": "藤原秀郷（俵藤太）",
+          "reading": "ふじわらのひでさと",
+          "faction": "other",
+          "field": "military"
+        },
+        {
+          "id": "c_fujiwara_sumitomo",
+          "name": "藤原純友",
+          "reading": "ふじわらのすみとも",
+          "faction": "sumitomo",
+          "field": "military"
+        },
+        {
+          "id": "c_minamoto_takaakira",
+          "name": "源高明",
+          "reading": "みなもとのたかあきら",
+          "faction": "minamoto",
+          "field": "governance"
+        },
+        {
+          "id": "c_fujiwara_kaneie",
+          "name": "藤原兼家",
+          "reading": "ふじわらのかねいえ",
+          "faction": "fujiwara",
+          "field": "governance"
+        },
+        {
+          "id": "c_kazan_tennou",
+          "name": "花山天皇",
+          "reading": "かざんてんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_ichijou_tennou",
+          "name": "一条天皇",
+          "reading": "いちじょうてんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_fujiwara_michitaka",
+          "name": "藤原道隆",
+          "reading": "ふじわらのみちたか",
+          "faction": "nakanokanpaku",
+          "field": "governance"
+        },
+        {
+          "id": "c_fujiwara_korechika",
+          "name": "藤原伊周",
+          "reading": "ふじわらのこれちか",
+          "faction": "nakanokanpaku",
+          "field": "governance"
+        },
+        {
+          "id": "c_fujiwara_teishi",
+          "name": "藤原定子",
+          "reading": "ふじわらのていし",
+          "faction": "nakanokanpaku",
+          "field": "other"
+        },
+        {
+          "id": "c_fujiwara_michinaga",
+          "name": "藤原道長",
+          "reading": "ふじわらのみちなが",
+          "faction": "fujiwara",
+          "field": "governance"
+        },
+        {
+          "id": "c_fujiwara_akiko",
+          "name": "藤原彰子",
+          "reading": "ふじわらのあきこ（しょうし）",
+          "faction": "fujiwara",
+          "field": "governance"
+        },
+        {
+          "id": "c_fujiwara_takaie",
+          "name": "藤原隆家",
+          "reading": "ふじわらのたかいえ",
+          "faction": "nakanokanpaku",
+          "field": "military"
+        },
+        {
+          "id": "c_fujiwara_yorimichi",
+          "name": "藤原頼通",
+          "reading": "ふじわらのよりみち",
+          "faction": "fujiwara",
+          "field": "governance"
+        },
+        {
+          "id": "c_gosanjou_tennou",
+          "name": "後三条天皇",
+          "reading": "ごさんじょうてんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_murasaki_shikibu",
+          "name": "紫式部",
+          "reading": "むらさきしきぶ",
+          "faction": "bunjin",
+          "field": "arts"
+        },
+        {
+          "id": "c_sei_shonagon",
+          "name": "清少納言",
+          "reading": "せいしょうなごん",
+          "faction": "bunjin",
+          "field": "arts"
+        },
+        {
+          "id": "c_izumi_shikibu",
+          "name": "和泉式部",
+          "reading": "いずみしきぶ",
+          "faction": "bunjin",
+          "field": "arts"
+        },
+        {
+          "id": "c_fujiwara_michitsuna_no_haha",
+          "name": "藤原道綱母",
+          "reading": "ふじわらのみちつなのはは",
+          "faction": "bunjin",
+          "field": "arts"
+        },
+        {
+          "id": "c_fujiwara_kintou",
+          "name": "藤原公任",
+          "reading": "ふじわらのきんとう",
+          "faction": "bunjin",
+          "field": "arts"
+        },
+        {
+          "id": "c_fujiwara_yukinari",
+          "name": "藤原行成",
+          "reading": "ふじわらのゆきなり",
+          "faction": "bunjin",
+          "field": "arts"
+        },
+        {
+          "id": "c_fujiwara_sanesuke",
+          "name": "藤原実資",
+          "reading": "ふじわらのさねすけ",
+          "faction": "fujiwara",
+          "field": "administration"
+        },
+        {
+          "id": "c_minamoto_yorinobu",
+          "name": "源頼信",
+          "reading": "みなもとのよりのぶ",
+          "faction": "minamoto",
+          "field": "military"
+        },
+        {
+          "id": "c_taira_tadatsune",
+          "name": "平忠常",
+          "reading": "たいらのただつね",
+          "faction": "taira",
+          "field": "military"
+        },
+        {
+          "id": "c_minamoto_yoriyoshi",
+          "name": "源頼義",
+          "reading": "みなもとのよりよし",
+          "faction": "minamoto",
+          "field": "military"
+        },
+        {
+          "id": "c_minamoto_yoshiie",
+          "name": "源義家",
+          "reading": "みなもとのよしいえ",
+          "faction": "minamoto",
+          "field": "military"
+        },
+        {
+          "id": "c_abe_yoritoki",
+          "name": "安倍頼時",
+          "reading": "あべのよりとき",
+          "faction": "abe",
+          "field": "governance"
+        },
+        {
+          "id": "c_abe_sadatou",
+          "name": "安倍貞任",
+          "reading": "あべのさだとう",
+          "faction": "abe",
+          "field": "military"
+        }
+      ],
+      "factions": {
+        "fujiwara": {
+          "id": "fujiwara",
+          "name": "藤原摂関家",
+          "color": "#4a2a5a",
+          "colorLight": "#9a6ac4"
+        },
+        "nakanokanpaku": {
+          "id": "nakanokanpaku",
+          "name": "中関白家",
+          "color": "#7a2a4a",
+          "colorLight": "#c0608a"
+        },
+        "court": {
+          "id": "court",
+          "name": "朝廷",
+          "color": "#6a5a1a",
+          "colorLight": "#c4a53a"
+        },
+        "taira": {
+          "id": "taira",
+          "name": "平氏",
+          "color": "#7a1a1a",
+          "colorLight": "#c04a3a"
+        },
+        "minamoto": {
+          "id": "minamoto",
+          "name": "源氏",
+          "color": "#1a3a6a",
+          "colorLight": "#4a7ac4"
+        },
+        "abe": {
+          "id": "abe",
+          "name": "安倍氏",
+          "color": "#5a3a1a",
+          "colorLight": "#9a7a3a"
+        },
+        "sumitomo": {
+          "id": "sumitomo",
+          "name": "藤原純友勢力",
+          "color": "#1a4a4a",
+          "colorLight": "#4a8a8a"
+        },
+        "bunjin": {
+          "id": "bunjin",
+          "name": "文化人",
+          "color": "#3a4a2a",
+          "colorLight": "#7a9a5a"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#4a4a4a",
+          "colorLight": "#9a9a9a"
+        }
+      }
+    },
     "genpei-war": {
       "events": [
         {

@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "title": "摂関政治と王朝文化 史実クロニクルタイムライン (894年〜1068年)",
+    "description": "遣唐使の停止から後三条天皇の即位まで。菅原道真の悲劇、平将門・藤原純友の乱、安和の変による摂関政治の確立、藤原道長の栄華、紫式部・清少納言・和泉式部ら王朝文学の開花、刀伊の入寇、そして源氏の武士としての台頭を経て、摂関家を外戚としない天皇が現れるまでの174年間をインタラクティブなタイムラインで体験。",
+    "headerIcon": "🎎",
+    "headerTitle": "摂関政治と王朝文化",
+    "headerSubtitle": "894年〜1068年",
+    "searchPlaceholder": "🔍 出来事・人物を検索…",
+    "mapTitleIcon": "🗾",
+    "mapTitleLabel": "勢力図",
+    "characterTitleLabel": "別名",
+    "descLabel": "📖 史実の記録",
+    "charDescLabel": "📖 人物伝",
+    "relatedCharsLabel": "👥 関連人物（クリックで詳細）",
+    "relatedEventsLabel": "📅 関連する出来事（クリックで詳細）",
+    "triviaLabel": "📜 補足・豆知識",
+    "layoutStyle": "rail",
+    "mapLayout": [
+      [null, "mutsu", null],
+      ["setouchi", "kyoto", "kanto"],
+      [null, "dazaifu", null]
+    ]
+  },
+  "eraPhases": [
+    { "id": 1, "name": "第一章：遣唐使の停止と菅原道真の悲劇", "period": "894 〜 909", "startYear": 894, "endYear": 909 },
+    { "id": 2, "name": "第二章：承平天慶の乱", "period": "935 〜 941", "startYear": 935, "endYear": 941 },
+    { "id": 3, "name": "第三章：安和の変と摂関政治の確立", "period": "967 〜 969", "startYear": 967, "endYear": 969 },
+    { "id": 4, "name": "第四章：藤原道長の台頭", "period": "986 〜 1010", "startYear": 986, "endYear": 1010 },
+    { "id": 5, "name": "第五章：王朝文学の開花", "period": "974 〜 1010", "startYear": 974, "endYear": 1010 },
+    { "id": 6, "name": "第六章：道長の栄華と刀伊の入寇", "period": "1016 〜 1027", "startYear": 1016, "endYear": 1027 },
+    { "id": 7, "name": "第七章：摂関政治の絶頂と武士の台頭", "period": "1028 〜 1062", "startYear": 1028, "endYear": 1062 },
+    { "id": 8, "name": "第八章：摂関政治の転換", "period": "1067 〜 1068", "startYear": 1067, "endYear": 1068 }
+  ],
+  "factions": {
+    "fujiwara": { "id": "fujiwara", "name": "藤原摂関家", "color": "#4a2a5a", "colorLight": "#9a6ac4" },
+    "nakanokanpaku": { "id": "nakanokanpaku", "name": "中関白家", "color": "#7a2a4a", "colorLight": "#c0608a" },
+    "court": { "id": "court", "name": "朝廷", "color": "#6a5a1a", "colorLight": "#c4a53a" },
+    "taira": { "id": "taira", "name": "平氏", "color": "#7a1a1a", "colorLight": "#c04a3a" },
+    "minamoto": { "id": "minamoto", "name": "源氏", "color": "#1a3a6a", "colorLight": "#4a7ac4" },
+    "abe": { "id": "abe", "name": "安倍氏", "color": "#5a3a1a", "colorLight": "#9a7a3a" },
+    "sumitomo": { "id": "sumitomo", "name": "藤原純友勢力", "color": "#1a4a4a", "colorLight": "#4a8a8a" },
+    "bunjin": { "id": "bunjin", "name": "文化人", "color": "#3a4a2a", "colorLight": "#7a9a5a" },
+    "other": { "id": "other", "name": "その他", "color": "#4a4a4a", "colorLight": "#9a9a9a" }
+  },
+  "categories": {
+    "battle": { "id": "battle", "name": "合戦", "icon": "⚔️" },
+    "politics": { "id": "politics", "name": "政変", "icon": "👑" },
+    "episode": { "id": "episode", "name": "逸話", "icon": "📜" },
+    "death": { "id": "death", "name": "死没", "icon": "💀" }
+  },
+  "characters": [
+    { "id": "c_sugawara_michizane", "name": "菅原道真", "reading": "すがわらのみちざね", "faction": "court", "role": "右大臣／学者", "life": "845-903", "field": "scholarship", "description": "代々学者を輩出した家に生まれた学者政治家。遣唐使の停止を建議して国風文化の下地を作り、宇多・醍醐両天皇に重用されて右大臣にまで昇るが、藤原時平の讒言により大宰府へ左遷され、失意のうちに没した。没後、都で相次いだ怪異が道真の祟りと恐れられ、後に「天神様」として学問の神に祀られた。" },
+    { "id": "c_fujiwara_tokihira", "name": "藤原時平", "reading": "ふじわらのときひら", "faction": "fujiwara", "role": "左大臣", "life": "871-909", "field": "governance", "description": "若くして左大臣に上った藤原摂関家の俊英。政敵と目した菅原道真を讒言により大宰府へ追いやったが、その6年後に39歳の若さで急死し、これが道真の祟りだと都で噂された。" },
+    { "id": "c_taira_masakado", "name": "平将門", "reading": "たいらのまさかど", "faction": "taira", "role": "坂東の豪族", "life": "?-940", "field": "military", "description": "一族内の所領争いから挙兵し、関東一円を制圧すると自ら「新皇」を称して独自の政権樹立を宣言した。朝廷の権威に真っ向から挑んだこの反乱は坂東を震撼させたが、平貞盛・藤原秀郷の連合軍に討たれ、乱はわずか2ヶ月ほどで鎮圧された。" },
+    { "id": "c_taira_sadamori", "name": "平貞盛", "reading": "たいらのさだもり", "faction": "taira", "role": "坂東の豪族", "life": "生没年不詳", "field": "military", "description": "将門の従兄弟にあたるが、一族の抗争を経て将門と敵対した。藤原秀郷と連合して将門を討ち取り、この功により平氏一門の地位を大きく高めた。後の伊勢平氏の祖とされる。" },
+    { "id": "c_fujiwara_hidesato", "name": "藤原秀郷（俵藤太）", "reading": "ふじわらのひでさと", "faction": "other", "role": "下野の豪族", "life": "生没年不詳", "field": "military", "description": "平貞盛と共に将門追討軍を率い、その首級を挙げた立役者。「俵藤太」の通称でムカデ退治などの伝説的な武勇譚が数多く伝わる、後世の武家説話の代表的な英雄。" },
+    { "id": "c_fujiwara_sumitomo", "name": "藤原純友", "reading": "ふじわらのすみとも", "faction": "sumitomo", "role": "伊予の海賊の頭目", "life": "?-941", "field": "military", "description": "伊予に赴任した下級貴族でありながら、瀬戸内海の海賊を統率して大規模な反乱を起こした。将門の乱とほぼ同時期に起きたこの反乱は「承平天慶の乱」として並び称され、朝廷を東西から揺るがした。最終的に追討軍に敗れ討たれた。" },
+    { "id": "c_minamoto_takaakira", "name": "源高明", "reading": "みなもとのたかあきら", "faction": "minamoto", "role": "左大臣（醍醐源氏）", "life": "914-983", "field": "governance", "description": "醍醐天皇の皇子でありながら臣籍降下して源氏となり、政治的手腕を評価されて左大臣にまで昇った。しかし安和の変で謀反の疑いをかけられ大宰府へ左遷され、以後藤原氏に対抗しうる有力な他氏はほぼ姿を消し、摂関政治が確立する契機となった。" },
+    { "id": "c_fujiwara_kaneie", "name": "藤原兼家", "reading": "ふじわらのかねいえ", "faction": "fujiwara", "role": "摂政", "life": "929-990", "field": "governance", "description": "花山天皇を欺いて出家させ退位に追い込み、自らの外孫にあたる一条天皇を即位させて摂政の座についた。この強引な政治手法により藤原氏の権勢をさらに拡大させ、子の道長が後に築く栄華の土台を作った。" },
+    { "id": "c_kazan_tennou", "name": "花山天皇", "reading": "かざんてんのう", "faction": "court", "role": "第65代天皇", "life": "968-1008", "field": "governance", "description": "寵愛した女御の死を深く悲しんでいたところ、藤原兼家の子・道兼に「共に出家しよう」と誘われて宮中を抜け出し出家させられた。これは兼家一派が自らの外孫を即位させるために仕組んだ策謀であったとされ、花山天皇はわずか19歳で退位に追い込まれた。" },
+    { "id": "c_ichijou_tennou", "name": "一条天皇", "reading": "いちじょうてんのう", "faction": "court", "role": "第66代天皇", "life": "980-1011", "field": "governance", "description": "藤原兼家の外孫として幼くして即位した天皇。中宮定子と中宮彰子という二人の后を持ち、それぞれの後宮に清少納言・紫式部という王朝文学史上最高の才媛が仕えたことから、その治世は王朝文化最盛期の舞台となった。" },
+    { "id": "c_fujiwara_michitaka", "name": "藤原道隆", "reading": "ふじわらのみちたか", "faction": "nakanokanpaku", "role": "関白", "life": "953-995", "field": "governance", "description": "兼家の長男で、娘の定子を一条天皇の后に入れて関白として権勢を誇った。しかしその治世は長く続かず、疫病により43歳で急死。この死が子の伊周と弟の道長との間で激しい後継争いを引き起こす引き金となった。" },
+    { "id": "c_fujiwara_korechika", "name": "藤原伊周", "reading": "ふじわらのこれちか", "faction": "nakanokanpaku", "role": "内大臣", "life": "974-1010", "field": "governance", "description": "道隆の嫡男として若くして内大臣に上り、叔父の道長と後継の座を争った。しかし長徳の変で花山法皇に矢を射かける事件を起こしたとして左遷され、政治生命を絶たれた。以後、失意のうちに官位の回復を求め続けたが、栄達することなく世を去った。" },
+    { "id": "c_fujiwara_teishi", "name": "藤原定子", "reading": "ふじわらのていし", "faction": "nakanokanpaku", "role": "一条天皇の皇后", "life": "977-1001", "field": "other", "description": "道隆の娘で一条天皇に深く愛された后。父の死と兄・伊周の失脚により実家の後ろ盾を失いながらも、清少納言をはじめとする女房たちに慕われる華やかな後宮サロンを築いた。その明るく才気あふれる様子は『枕草子』に生き生きと描かれている。第二皇女の出産後に24歳で世を去った。" },
+    { "id": "c_fujiwara_michinaga", "name": "藤原道長", "reading": "ふじわらのみちなが", "faction": "fujiwara", "role": "摂政・太政大臣", "life": "966-1027", "field": "governance", "description": "兼家の五男でありながら、兄たちの相次ぐ病死という幸運も重なり氏長者の座をつかんだ。娘たちを次々と天皇の后に入れて外戚の地位を独占し、「この世をば我が世とぞ思ふ望月の欠けたることも無しと思へば」と詠むほどの栄華を極めた、摂関政治の頂点に立つ人物。" },
+    { "id": "c_fujiwara_akiko", "name": "藤原彰子", "reading": "ふじわらのあきこ（しょうし）", "faction": "fujiwara", "role": "一条天皇の中宮", "life": "988-1074", "field": "governance", "description": "道長の長女として一条天皇の中宮となり、後一条・後朱雀両天皇の生母として長く朝廷に重きをなした。紫式部・和泉式部ら当代一流の女房を後宮に迎え、王朝文学が花開く土壌を提供した文化的パトロンでもある。" },
+    { "id": "c_fujiwara_takaie", "name": "藤原隆家", "reading": "ふじわらのたかいえ", "faction": "nakanokanpaku", "role": "大宰権帥", "life": "979-1044", "field": "military", "description": "伊周の弟で、兄と共に長徳の変に連座して一時左遷されるが、後に大宰権帥として九州に赴任した。刀伊の入寇に際しては自ら陣頭に立って現地の武士団を指揮し、女真族系の襲撃者を撃退して九州を守り抜いた、中関白家の中では数少ない栄誉を得た人物。" },
+    { "id": "c_fujiwara_yorimichi", "name": "藤原頼通", "reading": "ふじわらのよりみち", "faction": "fujiwara", "role": "摂政・関白", "life": "992-1074", "field": "governance", "description": "道長の嫡男として父の跡を継ぎ、後一条・後朱雀・後冷泉の三代にわたり50年近く摂政・関白を務めた。宇治に平等院鳳凰堂を建立し極楽浄土を現世に再現しようとしたが、外戚関係にない後三条天皇の即位を防げず、摂関政治の絶頂とその終わりの両方を見届けることになった。" },
+    { "id": "c_gosanjou_tennou", "name": "後三条天皇", "reading": "ごさんじょうてんのう", "faction": "court", "role": "第71代天皇", "life": "1034-1073", "field": "governance", "description": "母が藤原氏出身でなかったため、170年ぶりに藤原摂関家を外戚としない天皇として即位した。荘園整理令などの改革に着手し、摂関家の経済的基盤に切り込んだその治世は、長く続いた摂関政治が終わりへと向かう画期となった。" },
+    { "id": "c_murasaki_shikibu", "name": "紫式部", "reading": "むらさきしきぶ", "faction": "bunjin", "role": "女房・作家", "life": "生没年不詳（970年代?-1019年頃?）", "field": "arts", "description": "中宮彰子に女房として仕えながら、全54帖におよぶ長編物語『源氏物語』を著した。光源氏の恋愛と栄華、そして人の世の無常を精緻な心理描写で描いたこの作品は、世界最古の長編小説の一つとされ、千年を経てなお読み継がれている。" },
+    { "id": "c_sei_shonagon", "name": "清少納言", "reading": "せいしょうなごん", "faction": "bunjin", "role": "女房・作家", "life": "生没年不詳（966年頃?-1025年頃?）", "field": "arts", "description": "中宮定子に仕え、その聡明さと機知で寵愛された女房。四季の情趣や宮廷生活の機微を鋭い観察眼と歯切れの良い文体で綴った随筆『枕草子』を著した。「春はあけぼの」の書き出しで知られ、日本の随筆文学の祖とされる。" },
+    { "id": "c_izumi_shikibu", "name": "和泉式部", "reading": "いずみしきぶ", "faction": "bunjin", "role": "女房・歌人", "life": "生没年不詳", "field": "arts", "description": "情熱的な恋愛遍歴と、それを詠んだ和歌の巧みさで知られた歌人。冷泉天皇の皇子たちとの相次ぐ恋愛関係でも都の評判となったが、その歌才は紫式部にも一目置かれ、後に中宮彰子にも女房として仕えた。" },
+    { "id": "c_fujiwara_michitsuna_no_haha", "name": "藤原道綱母", "reading": "ふじわらのみちつなのはは", "faction": "bunjin", "role": "女房・作家", "life": "936頃-995", "field": "arts", "description": "藤原兼家の妻の一人で、夫の複数の妻をめぐる愛情の不安定さを赤裸々に綴った日記文学『蜻蛉日記』の作者。宮中の華やかさとは異なる、一人の女性の内面の苦悩を描いた先駆的な作品として、後の女流日記文学に大きな影響を与えた。" },
+    { "id": "c_fujiwara_kintou", "name": "藤原公任", "reading": "ふじわらのきんとう", "faction": "bunjin", "role": "歌人・学者", "life": "966-1041", "field": "arts", "description": "漢詩・和歌・管弦のいずれにも優れ「三船の才」と称された当代随一の教養人。歌論書や秀歌撰を数多く編纂し、王朝文化の美意識を体系化した功績は大きい。道長とは幼馴染でもあり、その栄華の時代を文化面から支えた。" },
+    { "id": "c_fujiwara_yukinari", "name": "藤原行成", "reading": "ふじわらのゆきなり", "faction": "bunjin", "role": "能書家", "life": "972-1028", "field": "arts", "description": "小野道風・藤原佐理と並び「三跡」に数えられる書の名手。優美で気品ある書風は「権跡（ごんせき）」と呼ばれ、和様書道の完成に大きく寄与した。実務官僚としても道長の信任が厚く、政治と文化の両面で活躍した。" },
+    { "id": "c_fujiwara_sanesuke", "name": "藤原実資", "reading": "ふじわらのさねすけ", "faction": "fujiwara", "role": "右大臣", "life": "957-1046", "field": "administration", "description": "道長の全盛期を批判的な目で見つめ続けた有職故実の大家。半世紀以上にわたり記した日記『小右記』は、道長の「望月の歌」の逸話を今日に伝える一次史料でもあり、摂関政治の実態を知る上で欠かせない記録となっている。" },
+    { "id": "c_minamoto_yorinobu", "name": "源頼信", "reading": "みなもとのよりのぶ", "faction": "minamoto", "role": "河内源氏の祖", "life": "968-1048", "field": "military", "description": "清和源氏の一族で、房総で反乱を起こした平忠常をわずかな威勢で服従させ、この功により河内を本拠とする「河内源氏」の勢力基盤を築いた。この東国での活躍が、子・頼義、孫・義家へと続く源氏の武家としての台頭の出発点となった。" },
+    { "id": "c_taira_tadatsune", "name": "平忠常", "reading": "たいらのただつね", "faction": "taira", "role": "房総の豪族", "life": "967-1031", "field": "military", "description": "上総・下総に勢力を持つ有力豪族で、国司との対立から反乱を起こし房総一帯を制圧した。追討に手こずった朝廷が源頼信を派遣すると、忠常はその威名を聞いてほとんど戦わずに降伏した。この一件は源氏の東国における声望を大きく高める結果となった。" },
+    { "id": "c_minamoto_yoriyoshi", "name": "源頼義", "reading": "みなもとのよりよし", "faction": "minamoto", "role": "河内源氏", "life": "988-1075", "field": "military", "description": "頼信の子で、陸奥守として赴任した先で安倍氏との大規模な戦い（前九年の役）を戦い抜いた。長期にわたる苦しい戦いであったが、出羽の清原氏の助力を得てついに安倍氏を滅ぼし、河内源氏の武名を東国に轟かせた。" },
+    { "id": "c_minamoto_yoshiie", "name": "源義家", "reading": "みなもとのよしいえ", "faction": "minamoto", "role": "河内源氏／八幡太郎", "life": "1039-1106", "field": "military", "description": "頼義の嫡男で、石清水八幡宮で元服したことから「八幡太郎」と称された。若くして前九年の役に従軍し、父と共に安倍氏との激戦を戦い抜いた。後の後三年の役でも活躍し、東国武士たちから絶大な信望を集める、源氏の武家としての名声を決定づけた人物。" },
+    { "id": "c_abe_yoritoki", "name": "安倍頼時", "reading": "あべのよりとき", "faction": "abe", "role": "陸奥の豪族", "life": "?-1057", "field": "governance", "description": "陸奥奥六郡を実質的に支配した在地の有力豪族。朝廷への貢租を怠ったとして源頼義の追討を受け、前九年の役の発端となった。緒戦で勢いを見せるが、戦いの半ばで矢を受けて戦死した。" },
+    { "id": "c_abe_sadatou", "name": "安倍貞任", "reading": "あべのさだとう", "faction": "abe", "role": "陸奥の豪族", "life": "1019-1062", "field": "military", "description": "頼時の子として父の死後も抵抗を続け、源頼義・義家父子を相手に長期にわたる激戦を繰り広げた。出羽の清原氏が源氏方についたことで戦局は決し、最後の拠点・厨川柵で敗れて討死した。前九年の役はこの死をもって終結する。" }
+  ],
+  "events": [
+    { "id": "e_kentoshi_abolished", "phaseId": 1, "year": 894, "title": "遣唐使の停止", "category": "politics", "characters": ["c_sugawara_michizane"], "location": "京都", "description": "遣唐大使に任じられた菅原道真は、唐の混乱と航海の危険を理由に派遣の中止を建議した。これにより実質的に遣唐使は廃止され、大陸文化の直接的な影響力が薄れる中で、日本独自の「国風文化」が花開く下地が整っていく。" },
+    { "id": "e_michizane_udaijin", "phaseId": 1, "year": 899, "title": "菅原道真、右大臣に就任", "category": "politics", "characters": ["c_sugawara_michizane"], "location": "京都", "description": "学者の家柄でありながら異例の出世を遂げた道真が右大臣に就任した。左大臣・藤原時平と並ぶ地位に上り詰めたが、これが藤原氏側の警戒と反発を強める結果にもなった。" },
+    { "id": "e_shotai_incident", "phaseId": 1, "year": 901, "title": "昌泰の変・道真、大宰府へ左遷", "category": "politics", "characters": ["c_sugawara_michizane", "c_fujiwara_tokihira"], "location": "京都 → 大宰府", "description": "藤原時平は道真が娘婿の斉世親王を皇位に就けようと謀っていると醍醐天皇に讒言し、道真は大宰権帥として大宰府へ左遷された。事実上の流罪であり、道真の政治生命はここで絶たれた。" },
+    { "id": "e_michizane_death", "phaseId": 1, "year": 903, "title": "道真、大宰府で死去", "category": "death", "characters": ["c_sugawara_michizane"], "location": "大宰府", "description": "都への帰還を許されぬまま、道真は失意のうちに大宰府で没した。「東風吹かば匂ひおこせよ梅の花 主なしとて春な忘れそ」の歌に、都への尽きせぬ思いが託されている。" },
+    { "id": "e_tokihira_death", "phaseId": 1, "year": 909, "title": "藤原時平、急死（道真の祟りと恐れられる）", "category": "death", "characters": ["c_fujiwara_tokihira"], "location": "京都", "description": "道真を追い落とした時平が39歳の若さで急死した。以後も都では落雷や疫病、皇族の相次ぐ死が続き、これらはことごとく道真の怨霊の祟りと恐れられた。朝廷は道真の官位を復し、天満宮に祀ることで鎮魂を図った。" },
+    { "id": "e_masakado_uprising", "phaseId": 2, "year": 935, "title": "平将門、一族内の抗争から挙兵", "category": "battle", "characters": ["c_taira_masakado"], "location": "坂東", "description": "所領をめぐる一族内の私闘から始まった将門の武力行使は、次第に国司との対立へと発展し、坂東一円を巻き込む大規模な争乱へと拡大していった。" },
+    { "id": "e_masakado_shinno", "phaseId": 2, "year": 939, "title": "将門、新皇を称する", "category": "politics", "characters": ["c_taira_masakado"], "location": "坂東", "description": "坂東諸国の国府を次々と制圧した将門は、自らを「新皇」と称し、独自の官制を敷いて坂東に新たな政権を樹立しようとした。朝廷の権威に真正面から挑むこの行動は、都に大きな衝撃を与えた。" },
+    { "id": "e_masakado_death", "phaseId": 2, "year": 940, "title": "平貞盛・藤原秀郷、将門を討つ", "category": "death", "characters": ["c_taira_masakado", "c_taira_sadamori", "c_fujiwara_hidesato"], "location": "下総・北山", "description": "朝廷方に転じた平貞盛と藤原秀郷の連合軍が将門軍を急襲し、将門は矢を受けて討死した。「新皇」を称してからわずか2ヶ月ほどでの陥落であり、乱は急速に収束していった。" },
+    { "id": "e_sumitomo_uprising", "phaseId": 2, "year": 939, "title": "藤原純友、瀬戸内海で反乱", "category": "battle", "characters": ["c_fujiwara_sumitomo"], "location": "瀬戸内海", "description": "伊予の下級貴族であった純友は、瀬戸内海の海賊衆を糾合して大規模な反乱を起こし、周辺の国府や大宰府までも脅かした。将門の乱とほぼ同時期に起きたこの東西呼応の争乱は、朝廷に深刻な危機感を抱かせた。" },
+    { "id": "e_sumitomo_suppressed", "phaseId": 2, "year": 941, "title": "純友の乱、鎮圧される", "category": "death", "characters": ["c_fujiwara_sumitomo"], "location": "伊予・博多", "description": "朝廷が派遣した追討軍に大宰府を奪還され、純友の勢力は急速に瓦解した。伊予に逃れた純友も捕らえられ、獄中で没したと伝わる。将門・純友二つの乱が同時に鎮圧されたことで、朝廷は当面の危機を脱した。" },
+    { "id": "e_anwa_prelude", "phaseId": 3, "year": 967, "title": "藤原実頼、摂政となる", "category": "politics", "characters": [], "location": "京都", "description": "冷泉天皇の即位に伴い藤原実頼が摂政となった。天皇の奇行が噂される中、朝廷内では藤原氏各流と源高明ら他氏出身の有力者との間で、次期天皇をめぐる緊張が高まっていく。" },
+    { "id": "e_anwa_incident", "phaseId": 3, "year": 969, "title": "安和の変・源高明、失脚", "category": "politics", "characters": ["c_minamoto_takaakira"], "location": "京都", "description": "為平親王を擁立しようとしているとの密告により、左大臣・源高明は謀反の疑いをかけられ大宰権帥に左遷された。藤原氏による他氏排斥の最後の事件とされ、これ以降、摂政・関白の地位は事実上藤原北家によって独占される摂関政治体制が確立していく。" },
+    { "id": "e_kazan_tonsure", "phaseId": 4, "year": 986, "title": "花山天皇、出家させられる", "category": "episode", "characters": ["c_kazan_tennou", "c_fujiwara_kaneie"], "location": "京都・元慶寺", "description": "寵愛した女御を亡くし悲嘆に暮れる花山天皇に、藤原兼家の子・道兼が「共に出家しましょう」と持ちかけ宮中から連れ出した。天皇が出家すると道兼はそのまま逃げ帰り、これが兼家一派による周到な策謀であったことが露見した。" },
+    { "id": "e_ichijou_enthronement", "phaseId": 4, "year": 986, "title": "一条天皇、即位・兼家が摂政に", "category": "politics", "characters": ["c_fujiwara_kaneie", "c_ichijou_tennou"], "location": "京都", "description": "花山天皇の退位を受け、兼家の外孫にあたる懐仁親王が一条天皇として即位した。兼家は念願の摂政の座につき、藤原氏の権勢はさらに強固なものとなった。" },
+    { "id": "e_michinaga_rise", "phaseId": 4, "year": 995, "title": "藤原道長、政権を掌握", "category": "politics", "characters": ["c_fujiwara_michinaga"], "location": "京都", "description": "関白であった兄・道隆が病死し、後を継いだもう一人の兄・道兼も就任からわずか数日で疫病により没するという不運が重なった。五男でありながら生き残った道長に運が巡り、氏長者・内覧の地位を得て事実上の政権を掌握した。" },
+    { "id": "e_chotoku_incident", "phaseId": 4, "year": 996, "title": "長徳の変・藤原伊周、失脚", "category": "politics", "characters": ["c_fujiwara_korechika", "c_fujiwara_takaie"], "location": "京都", "description": "伊周が女性関係のもつれから花山法皇の一行に矢を射かける事件を起こし、これを口実に伊周・隆家兄弟は左遷された。道長最大のライバルであった伊周はこれにより完全に政治力を失い、道長の権力基盤は決定的なものとなった。" },
+    { "id": "e_teishi_death", "phaseId": 4, "year": 1001, "title": "藤原定子、崩御", "category": "death", "characters": ["c_fujiwara_teishi"], "location": "京都", "description": "実家の後ろ盾を失いながらも一条天皇の寵愛を受け続けた定子が、第二皇女の出産直後に24歳で世を去った。清少納言が仕えた華やかな後宮サロンは、その中心を失うことになった。" },
+    { "id": "e_korechika_death", "phaseId": 4, "year": 1010, "title": "藤原伊周、失意のうちに死去", "category": "death", "characters": ["c_fujiwara_korechika"], "location": "京都", "description": "長徳の変の後も官位の回復を望み続けた伊周だったが、ついに政治の表舞台に返り咲くことなく37歳で没した。中関白家はこの死により事実上没落し、道長の藤原摂関家が名実共に朝廷を主導する体制が固まった。" },
+    { "id": "e_kagerou_nikki", "phaseId": 5, "year": 974, "title": "藤原道綱母、『蜻蛉日記』を著す", "category": "episode", "characters": ["c_fujiwara_michitsuna_no_haha"], "location": "京都", "description": "兼家の妻の一人であった道綱母は、夫の複数の妻との関係に苦しむ自らの半生を赤裸々に綴った『蜻蛉日記』を著した。一人の女性の内面を見つめる先駆的な日記文学として、後の女流文学に大きな道を開いた。" },
+    { "id": "e_kintou_sansen", "phaseId": 5, "year": 995, "title": "藤原公任、「三船の才」を発揮", "category": "episode", "characters": ["c_fujiwara_kintou"], "location": "京都・大堰川", "description": "道長が大堰川で催した舟遊びで、漢詩・和歌・管弦それぞれの舟に分かれた文人たちの中から、公任はどの舟に乗っても一流の腕前を見せたと伝わる。この故事から「三船の才」の呼び名が生まれ、公任の類まれな教養が広く知れ渡った。" },
+    { "id": "e_makura_no_soshi", "phaseId": 5, "year": 1000, "title": "清少納言、『枕草子』を執筆", "category": "episode", "characters": ["c_sei_shonagon", "c_fujiwara_teishi"], "location": "京都", "description": "中宮定子に仕える清少納言は、四季の情趣や宮廷生活の機微を鋭い観察眼で描いた随筆『枕草子』を著した。「春はあけぼの」の書き出しで知られるこの作品は、没落しゆく定子の後宮の華やかな記憶を今に伝えている。" },
+    { "id": "e_genji_monogatari_begins", "phaseId": 5, "year": 1005, "title": "紫式部、『源氏物語』を書き始める", "category": "episode", "characters": ["c_murasaki_shikibu"], "location": "京都", "description": "夫と死別した紫式部は、その文才を見込まれて中宮彰子に女房として出仕する前後から、光源氏の生涯を描く長編物語『源氏物語』の執筆を開始したと考えられている。この作品はやがて全54帖におよぶ王朝文学の最高峰へと結実していく。" },
+    { "id": "e_murasaki_serves_akiko", "phaseId": 5, "year": 1006, "title": "紫式部、彰子に仕える", "category": "episode", "characters": ["c_murasaki_shikibu", "c_fujiwara_akiko"], "location": "京都", "description": "道長は評判高い『源氏物語』の作者を娘・彰子の後宮に招き入れた。紫式部は彰子に仕えながら執筆を続け、その様子は自らの手による『紫式部日記』にも記録されている。" },
+    { "id": "e_izumi_shikibu_romance", "phaseId": 5, "year": 1008, "title": "和泉式部、情熱的な恋歌で名を馳せる", "category": "episode", "characters": ["c_izumi_shikibu"], "location": "京都", "description": "冷泉天皇の皇子たちとの相次ぐ恋愛遍歴が都の評判となる一方、その恋心を詠んだ和歌の技巧は紫式部をして「天性の歌人」と言わしめるほどであった。後に彰子にも女房として仕え、王朝随一の恋愛歌人としての名声を確立した。" },
+    { "id": "e_yukinari_calligraphy", "phaseId": 5, "year": 1009, "title": "藤原行成、能書家として活躍", "category": "episode", "characters": ["c_fujiwara_yukinari"], "location": "京都", "description": "小野道風・藤原佐理と並ぶ「三跡」の一人として、行成の優美な書風「権跡」は貴族社会で高く評価された。実務官僚としても道長に深く信頼され、政治と文化の両面で王朝の全盛期を支えた。" },
+    { "id": "e_mochizuki_no_uta", "phaseId": 6, "year": 1018, "title": "「望月の歌」・道長、栄華の絶頂", "category": "episode", "characters": ["c_fujiwara_michinaga", "c_fujiwara_akiko"], "location": "京都", "description": "三女・威子が後一条天皇の中宮に立てられ、道長の娘三人が同時に太皇太后・皇太后・中宮の地位を占めるという前代未聞の状況が実現した。祝宴の席で道長が詠んだ「この世をば我が世とぞ思ふ望月の欠けたることも無しと思へば」の歌は、その権勢の頂点を象徴している。" },
+    { "id": "e_toi_invasion", "phaseId": 6, "year": 1019, "title": "刀伊の入寇", "category": "battle", "characters": ["c_fujiwara_takaie"], "location": "対馬・壱岐・博多", "description": "女真族系とされる異民族「刀伊」の船団数十隻が対馬・壱岐を襲い、多くの島民が殺害・拉致された。九州本土にも迫るが、大宰権帥であった藤原隆家が現地の武士団を指揮して迎撃し、これを撃退した。中央の貴族社会にとって数少ない対外的な軍事的脅威であった。" },
+    { "id": "e_michinaga_tonsure", "phaseId": 6, "year": 1019, "title": "藤原道長、出家", "category": "episode", "characters": ["c_fujiwara_michinaga"], "location": "京都", "description": "病を機に出家した道長は、政務の第一線からは退くが、なお隠然たる影響力を保ち続けた。晩年は法成寺の建立に心血を注ぎ、この世に極楽浄土を再現しようとした。" },
+    { "id": "e_michinaga_death", "phaseId": 6, "year": 1027, "title": "藤原道長、死去", "category": "death", "characters": ["c_fujiwara_michinaga"], "location": "京都", "description": "摂関政治の頂点を極めた道長が62歳で没した。娘たちを通じて三代の天皇の外戚となり、望月にたとえられるほどの栄華を築いたその生涯は、王朝文化が最も華やかであった時代の象徴として記憶されている。" },
+    { "id": "e_tadatsune_rebellion", "phaseId": 7, "year": 1028, "title": "平忠常の乱", "category": "battle", "characters": ["c_taira_tadatsune", "c_minamoto_yorinobu"], "location": "上総・下総", "description": "房総で勢力を誇った平忠常が国司と対立して反乱を起こし、追討軍を退けるほどの勢いを見せた。しかし朝廷が源頼信を新たに派遣すると、忠常はその威名を聞いてほとんど戦わずに降伏した。この一件は源氏が東国武士団の信望を集める大きな契機となった。" },
+    { "id": "e_byodoin_construction", "phaseId": 7, "year": 1053, "title": "藤原頼通、平等院鳳凰堂を建立", "category": "episode", "characters": ["c_fujiwara_yorimichi"], "location": "宇治", "description": "末法の世が到来するとの不安が広がる中、頼通は宇治の別荘を寺院に改め、阿弥陀如来を祀る鳳凰堂を建立した。極楽浄土をこの世に体現しようとしたこの建築は、藤原摂関家の富と美意識の到達点として今も残る。" },
+    { "id": "e_zenkunen_begins", "phaseId": 7, "year": 1051, "title": "前九年の役、始まる", "category": "battle", "characters": ["c_minamoto_yoriyoshi", "c_abe_yoritoki"], "location": "陸奥", "description": "陸奥奥六郡を実質支配していた安倍頼時が朝廷への貢租を怠っているとして、陸奥守・源頼義による追討が始まった。当初は安倍氏が優勢に戦いを進め、頼時自身も緒戦で活躍したが、やがて戦いは長期化していく。" },
+    { "id": "e_yoshiie_valor", "phaseId": 7, "year": 1057, "title": "源義家、陣頭で活躍（八幡太郎）", "category": "episode", "characters": ["c_minamoto_yoshiie", "c_abe_sadatou"], "location": "陸奥", "description": "頼義の嫡男・義家は若くして戦の陣頭に立ち、安倍貞任との激戦の中でその武勇を示した。石清水八幡宮で元服したことにちなむ「八幡太郎」の名は、この前九年の役での活躍を通じて東国武士たちの間に広く知れ渡っていった。" },
+    { "id": "e_zenkunen_ends", "phaseId": 7, "year": 1062, "title": "前九年の役、終結", "category": "death", "characters": ["c_abe_sadatou", "c_minamoto_yoriyoshi", "c_minamoto_yoshiie"], "location": "陸奥・厨川柵", "description": "出羽の清原氏が源氏方に加勢したことで戦局は一気に傾き、安倍氏最後の拠点・厨川柵は陥落、貞任も討死した。12年におよぶ前九年の役はここに終結し、源頼義・義家父子の武名は東国全域に轟くことになった。" },
+    { "id": "e_yorimichi_uji", "phaseId": 8, "year": 1067, "title": "藤原頼通、宇治に退く", "category": "politics", "characters": ["c_fujiwara_yorimichi"], "location": "宇治", "description": "半世紀近く摂政・関白を務めた頼通は関白の座を弟に譲り、宇治へと退いた。外戚関係にない皇子の即位が現実味を帯びる中、藤原摂関家の権勢に陰りが見え始めていた。" },
+    { "id": "e_gosanjou_enthronement", "phaseId": 8, "year": 1068, "title": "後三条天皇、即位", "category": "politics", "characters": ["c_gosanjou_tennou", "c_fujiwara_yorimichi"], "location": "京都", "description": "母が藤原氏出身でなかったため、実に170年ぶりに摂関家を外戚としない天皇が即位した。荘園整理などの改革に着手したその治世は、道長・頼通と続いた摂関政治の絶頂期に、静かながら決定的な転換をもたらすことになる。" }
+  ],
+  "mapSnapshots": [
+    {
+      "year": 901,
+      "label": "昌泰の変 — 道真、大宰府へ",
+      "territories": {
+        "mutsu": { "name": "陸奥", "faction": "other", "lord": "在地豪族" },
+        "setouchi": { "name": "瀬戸内", "faction": "other", "lord": "在地豪族" },
+        "kyoto": { "name": "京", "faction": "fujiwara", "lord": "藤原時平" },
+        "kanto": { "name": "関東", "faction": "other", "lord": "在地豪族" },
+        "dazaifu": { "name": "大宰府", "faction": "fujiwara", "lord": "菅原道真（左遷）" }
+      }
+    },
+    {
+      "year": 941,
+      "label": "承平天慶の乱、鎮圧",
+      "territories": {
+        "mutsu": { "name": "陸奥", "faction": "other", "lord": "在地豪族" },
+        "setouchi": { "name": "瀬戸内", "faction": "fujiwara", "lord": "純友の乱、鎮圧" },
+        "kyoto": { "name": "京", "faction": "fujiwara", "lord": "藤原氏" },
+        "kanto": { "name": "関東", "faction": "fujiwara", "lord": "将門の乱、鎮圧" },
+        "dazaifu": { "name": "大宰府", "faction": "fujiwara", "lord": "朝廷の拠点" }
+      }
+    },
+    {
+      "year": 969,
+      "label": "安和の変 — 摂関政治の確立",
+      "territories": {
+        "mutsu": { "name": "陸奥", "faction": "other", "lord": "安倍氏（台頭中）" },
+        "setouchi": { "name": "瀬戸内", "faction": "fujiwara", "lord": "藤原氏" },
+        "kyoto": { "name": "京", "faction": "fujiwara", "lord": "藤原氏（他氏排斥完了）" },
+        "kanto": { "name": "関東", "faction": "fujiwara", "lord": "藤原氏" },
+        "dazaifu": { "name": "大宰府", "faction": "fujiwara", "lord": "源高明（左遷）" }
+      }
+    },
+    {
+      "year": 1019,
+      "label": "刀伊の入寇、撃退",
+      "territories": {
+        "mutsu": { "name": "陸奥", "faction": "other", "lord": "安倍頼時" },
+        "setouchi": { "name": "瀬戸内", "faction": "fujiwara", "lord": "藤原氏" },
+        "kyoto": { "name": "京", "faction": "fujiwara", "lord": "藤原道長" },
+        "kanto": { "name": "関東", "faction": "fujiwara", "lord": "藤原氏" },
+        "dazaifu": { "name": "大宰府", "faction": "fujiwara", "lord": "藤原隆家（刀伊を撃退）" }
+      }
+    },
+    {
+      "year": 1068,
+      "label": "後三条天皇の即位 — 摂関政治、転換へ",
+      "territories": {
+        "mutsu": { "name": "陸奥", "faction": "minamoto", "lord": "源氏（前九年の役の結果、進出）" },
+        "setouchi": { "name": "瀬戸内", "faction": "fujiwara", "lord": "藤原氏" },
+        "kyoto": { "name": "京", "faction": "court", "lord": "後三条天皇（藤原を外戚としない）" },
+        "kanto": { "name": "関東", "faction": "fujiwara", "lord": "藤原氏" },
+        "dazaifu": { "name": "大宰府", "faction": "fujiwara", "lord": "藤原氏" }
+      }
+    }
+  ],
+  "wikiLinks": {
+    "characters": {
+      "c_sugawara_michizane": "菅原道真",
+      "c_fujiwara_tokihira": "藤原時平",
+      "c_taira_masakado": "平将門",
+      "c_taira_sadamori": "平貞盛",
+      "c_fujiwara_hidesato": "藤原秀郷",
+      "c_fujiwara_sumitomo": "藤原純友",
+      "c_minamoto_takaakira": "源高明",
+      "c_fujiwara_kaneie": "藤原兼家",
+      "c_kazan_tennou": "花山天皇",
+      "c_ichijou_tennou": "一条天皇",
+      "c_fujiwara_michitaka": "藤原道隆",
+      "c_fujiwara_korechika": "藤原伊周",
+      "c_fujiwara_teishi": "藤原定子",
+      "c_fujiwara_michinaga": "藤原道長",
+      "c_fujiwara_akiko": "藤原彰子",
+      "c_fujiwara_takaie": "藤原隆家",
+      "c_fujiwara_yorimichi": "藤原頼通",
+      "c_gosanjou_tennou": "後三条天皇",
+      "c_murasaki_shikibu": "紫式部",
+      "c_sei_shonagon": "清少納言",
+      "c_izumi_shikibu": "和泉式部",
+      "c_fujiwara_michitsuna_no_haha": "藤原道綱母",
+      "c_fujiwara_kintou": "藤原公任",
+      "c_fujiwara_yukinari": "藤原行成",
+      "c_fujiwara_sanesuke": "藤原実資",
+      "c_minamoto_yorinobu": "源頼信",
+      "c_taira_tadatsune": "平忠常",
+      "c_minamoto_yoriyoshi": "源頼義",
+      "c_minamoto_yoshiie": "源義家",
+      "c_abe_yoritoki": "安倍頼時",
+      "c_abe_sadatou": "安倍貞任"
+    },
+    "events": {
+      "e_kentoshi_abolished": "遣唐使",
+      "e_shotai_incident": "昌泰の変",
+      "e_masakado_shinno": "平将門の乱",
+      "e_sumitomo_uprising": "藤原純友の乱",
+      "e_anwa_incident": "安和の変",
+      "e_chotoku_incident": "長徳の変",
+      "e_makura_no_soshi": "枕草子",
+      "e_genji_monogatari_begins": "源氏物語",
+      "e_toi_invasion": "刀伊の入寇",
+      "e_zenkunen_begins": "前九年の役",
+      "e_gosanjou_enthronement": "後三条天皇"
+    }
+  }
+}
