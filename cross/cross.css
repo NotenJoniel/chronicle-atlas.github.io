@@ -23,6 +23,7 @@ body{background:var(--bg);display:flex;flex-direction:column;overflow:hidden;mar
 
 .cx-toolbar{display:flex;align-items:center;gap:16px;padding:6px 0;flex-wrap:wrap}
 .cx-category-filters{display:flex;gap:4px;flex-wrap:wrap}
+.cx-zoom-toggle{display:flex;gap:2px}
 .cx-search-box{margin-left:auto}
 .cx-search-box input{background:var(--surface-2);border:1px solid var(--border-subtle);color:var(--text);padding:4px 12px;border-radius:6px;font-size:.82rem;width:220px;transition:border .2s}
 .cx-search-box input:focus{outline:none;border-color:var(--gold)}
@@ -38,7 +39,7 @@ body{background:var(--bg);display:flex;flex-direction:column;overflow:hidden;mar
 .cx-grid-scroll::-webkit-scrollbar-thumb:hover{background:var(--gold-dim)}
 
 .cx-year-label{width:70px;min-width:70px;padding:10px 6px;text-align:center;font-size:.78rem;color:var(--gold);font-weight:700;border-right:1px solid var(--border-subtle)}
-.cx-region-name{width:600px;min-width:600px;padding:10px 14px;border-right:1px solid var(--border-subtle)}
+.cx-region-name{width:var(--cx-col-width,600px);min-width:var(--cx-col-width,600px);padding:10px 14px;border-right:1px solid var(--border-subtle);transition:width .15s ease}
 .cx-region-name .rn-title{font-weight:700;font-size:.98rem;color:var(--text);display:flex;align-items:center;gap:6px}
 .cx-region-name .rn-sub{font-size:.72rem;color:var(--text-dim);margin-top:2px}
 .cx-region-name.placeholder .rn-title{color:var(--text-dim);opacity:.55;font-style:italic}
@@ -75,7 +76,7 @@ body{background:var(--bg);display:flex;flex-direction:column;overflow:hidden;mar
 .cx-year-mark{position:absolute;right:8px;transform:translateY(-50%);font-size:.7rem;color:var(--text-dim);white-space:nowrap}
 .cx-year-mark.century{color:var(--gold);font-weight:600}
 
-.cx-col{width:600px;min-width:600px;position:relative;border-right:1px solid var(--border-subtle)}
+.cx-col{width:var(--cx-col-width,600px);min-width:var(--cx-col-width,600px);position:relative;border-right:1px solid var(--border-subtle);transition:width .15s ease}
 .cx-col.placeholder{display:flex;align-items:center;justify-content:center}
 .cx-col.placeholder .placeholder-msg{color:var(--text-dim);opacity:.3;font-size:.85rem;writing-mode:vertical-rl;letter-spacing:4px}
 
@@ -97,6 +98,16 @@ body{background:var(--bg);display:flex;flex-direction:column;overflow:hidden;mar
 .cx-card .cc-year{font-weight:700;color:var(--gold)}
 .cx-card .cc-title{font-size:.8rem;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}
 .cx-card.dimmed{opacity:.15;pointer-events:none}
+
+/* ズームレベル別のカードサイズ。JS側の ZOOM_LEVELS.cardHeight（レーン判定用）と
+   見た目が一致するよう、padding/font-sizeの増減で調整する（3段階とも大まかに合わせる程度で、
+   厳密な逆算はしていない）。 */
+body[data-cx-zoom="small"] .cx-card{padding:3px 6px}
+body[data-cx-zoom="small"] .cx-card .cc-top{font-size:.62rem}
+body[data-cx-zoom="small"] .cx-card .cc-title{font-size:.7rem}
+body[data-cx-zoom="large"] .cx-card{padding:9px 13px}
+body[data-cx-zoom="large"] .cx-card .cc-top{font-size:.78rem}
+body[data-cx-zoom="large"] .cx-card .cc-title{font-size:.92rem}
 
 /* ═══ Responsive ═══ */
 @media(max-width:768px){
