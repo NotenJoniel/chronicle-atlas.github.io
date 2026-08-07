@@ -1,6 +1,15 @@
 {
   "timelines": [
     {
+      "id": "ancient-egypt",
+      "name": "古代エジプト",
+      "region": "others",
+      "startYear": -3100,
+      "endYear": -30,
+      "dataFile": "timelines/ancient-egypt.json",
+      "subProjectDir": "ancient-egypt"
+    },
+    {
       "id": "spring-autumn",
       "name": "春秋時代",
       "region": "china",
