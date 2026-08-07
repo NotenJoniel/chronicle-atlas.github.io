@@ -1,0 +1,273 @@
+{
+  "meta": {
+    "title": "律令国家の成立 史実クロニクルタイムライン (645年〜802年)",
+    "description": "乙巳の変・大化の改新から、壬申の乱、大宝律令の制定、平城京遷都、長屋王の変、藤原広嗣の乱、聖武天皇による大仏建立、恵美押勝の乱、道鏡の専権と宇佐八幡宮神託事件、桓武天皇による平安京遷都、そして蝦夷の指導者・阿弖流爲の降伏に至るまで。中央集権的な律令国家が形づくられていく157年間をインタラクティブなタイムラインで体験。",
+    "headerIcon": "🏛️",
+    "headerTitle": "律令国家の成立",
+    "headerSubtitle": "645年〜802年",
+    "searchPlaceholder": "🔍 出来事・人物を検索…",
+    "mapTitleIcon": "🗾",
+    "mapTitleLabel": "勢力図",
+    "characterTitleLabel": "別名",
+    "descLabel": "📖 史実の記録",
+    "charDescLabel": "📖 人物伝",
+    "relatedCharsLabel": "👥 関連人物（クリックで詳細）",
+    "relatedEventsLabel": "📅 関連する出来事（クリックで詳細）",
+    "triviaLabel": "📜 補足・豆知識",
+    "layoutStyle": "rail",
+    "mapLayout": [
+      [null, "mutsu", null],
+      ["yamashiro", "yamato", "oumi"],
+      [null, "dazaifu", null]
+    ]
+  },
+  "eraPhases": [
+    { "id": 1, "name": "第一章：大化の改新と乙巳の変", "period": "645 〜 663", "startYear": 645, "endYear": 663 },
+    { "id": 2, "name": "第二章：壬申の乱と天武・持統の治世", "period": "672 〜 701", "startYear": 672, "endYear": 701 },
+    { "id": 3, "name": "第三章：平城京と長屋王の変", "period": "708 〜 729", "startYear": 708, "endYear": 729 },
+    { "id": 4, "name": "第四章：天然痘禍と藤原広嗣の乱", "period": "735 〜 740", "startYear": 735, "endYear": 740 },
+    { "id": 5, "name": "第五章：聖武天皇の彷徨と大仏建立", "period": "740 〜 752", "startYear": 740, "endYear": 752 },
+    { "id": 6, "name": "第六章：橘奈良麻呂の変と恵美押勝の乱", "period": "749 〜 764", "startYear": 749, "endYear": 764 },
+    { "id": 7, "name": "第七章：道鏡の専権と宇佐八幡宮神託事件", "period": "764 〜 770", "startYear": 764, "endYear": 770 },
+    { "id": 8, "name": "第八章：桓武天皇と平安京遷都", "period": "781 〜 794", "startYear": 781, "endYear": 794 },
+    { "id": 9, "name": "第九章：蝦夷との攻防、阿弖流爲の降伏", "period": "780 〜 802", "startYear": 780, "endYear": 802 }
+  ],
+  "factions": {
+    "soga": { "id": "soga", "name": "蘇我氏", "color": "#2a4a2a", "colorLight": "#6a9a5a" },
+    "court": { "id": "court", "name": "朝廷", "color": "#5a4a12", "colorLight": "#b89a3a" },
+    "fujiwara": { "id": "fujiwara", "name": "藤原氏", "color": "#3a2a5a", "colorLight": "#8a6ac4" },
+    "tachibana": { "id": "tachibana", "name": "橘氏", "color": "#7a4a1a", "colorLight": "#c48a4a" },
+    "dokyo": { "id": "dokyo", "name": "道鏡派", "color": "#5a1a2a", "colorLight": "#a04a5a" },
+    "emishi": { "id": "emishi", "name": "蝦夷", "color": "#2a3a3a", "colorLight": "#5a8a8a" },
+    "other": { "id": "other", "name": "その他", "color": "#4a4a4a", "colorLight": "#9a9a9a" }
+  },
+  "categories": {
+    "battle": { "id": "battle", "name": "合戦", "icon": "⚔️" },
+    "politics": { "id": "politics", "name": "政変", "icon": "👑" },
+    "episode": { "id": "episode", "name": "逸話", "icon": "📜" },
+    "death": { "id": "death", "name": "死没", "icon": "💀" }
+  },
+  "characters": [
+    { "id": "c_soga_no_iruka", "name": "蘇我入鹿", "reading": "そがのいるか", "faction": "soga", "role": "大臣", "life": "?-645", "field": "governance", "description": "蘇我氏の全盛期を築いた蘇我蝦夷の子。聖徳太子の子・山背大兄王一族を滅ぼすなど強引な手法で権勢を振るい、皇室をも凌ぐ勢いを見せた。しかしその専横を危険視した中大兄皇子と中臣鎌足によって、飛鳥板蓋宮での儀式の最中に暗殺された。" },
+    { "id": "c_soga_no_emishi", "name": "蘇我蝦夷", "reading": "そがのえみし", "faction": "soga", "role": "大臣", "life": "?-645", "field": "governance", "description": "入鹿の父で、蘇我氏の家長として朝廷の実権を長く握った。子の入鹿が暗殺されたと知ると、もはや抵抗の術なしと悟り、自邸に火を放って一族ともども自害した。これにより権勢を誇った蘇我本宗家は滅亡した。" },
+    { "id": "c_naka_no_oe", "name": "中大兄皇子（天智天皇）", "reading": "なかのおおえのおうじ", "faction": "court", "role": "皇太子／第38代天皇", "life": "626-672", "field": "governance", "description": "中臣鎌足と謀り、宮中で蘇我入鹿を自ら斬りつけて討った乙巳の変の首謀者。以後、皇太子として大化の改新を主導し、白村江の敗戦を経て近江大津宮に遷都、即位して天智天皇となった。日本初の全国的な戸籍・近江令の編纂に着手するなど、中央集権化を大きく前進させた。" },
+    { "id": "c_nakatomi_no_kamatari", "name": "中臣鎌足（藤原鎌足）", "reading": "なかとみのかまたり", "faction": "fujiwara", "role": "内臣", "life": "614-669", "field": "governance", "description": "中大兄皇子と共に乙巳の変を計画・実行し、蘇我氏打倒の立役者となった。以後は内臣として改新政治を支え続け、死の直前に天智天皇から「藤原」の姓を賜った。これが後に朝廷を数百年にわたり左右する藤原氏の始まりとなる。" },
+    { "id": "c_koutoku_tennou", "name": "孝徳天皇", "reading": "こうとくてんのう", "faction": "court", "role": "第36代天皇", "life": "596-654", "field": "governance", "description": "乙巳の変の直後、皇極天皇の譲位を受けて即位した。難波長柄豊碕宮に遷都し、「改新の詔」を発して公地公民制・班田収授法など律令国家建設の基本方針を打ち出した、大化の改新を名目上主導した天皇。" },
+    { "id": "c_temmu_tennou", "name": "天武天皇（大海人皇子）", "reading": "てんむてんのう", "faction": "court", "role": "皇弟／第40代天皇", "life": "?-686", "field": "governance", "description": "天智天皇の弟。兄の死後、皇位継承をめぐって甥の大友皇子と激突した壬申の乱に勝利し即位した。強大な皇親政治を敷き、飛鳥浄御原令の編纂や『日本書紀』編纂の勅命など、律令国家の骨格を築いた中興の天皇。" },
+    { "id": "c_koubun_tennou", "name": "大友皇子（弘文天皇）", "reading": "おおとものみこ", "faction": "court", "role": "太政大臣／皇太子", "life": "648-672", "field": "governance", "description": "天智天皇の皇子で、父の死後に朝廷を率いたが、叔父の大海人皇子が挙兵すると劣勢に陥り、瀬田橋の戦いに敗れて自害した。壬申の乱における敗者であり、明治時代に至って「弘文天皇」の諡号を追贈された。" },
+    { "id": "c_jitou_tennou", "name": "持統天皇", "reading": "じとうてんのう", "faction": "court", "role": "第41代天皇", "life": "645-703", "field": "governance", "description": "天智天皇の皇女で天武天皇の皇后。夫の崩御後、皇太子であった草壁皇子の早世を経て自ら即位し、藤原京への遷都を断行した。夫の遺志を継いで律令制定事業を推し進め、律令国家の礎を固めた。" },
+    { "id": "c_fujiwara_no_fuhito", "name": "藤原不比等", "reading": "ふじわらのふひと", "faction": "fujiwara", "role": "右大臣", "life": "659-720", "field": "administration", "description": "鎌足の子で、藤原氏を中央政界の頂点に押し上げた実質的な始祖。刑部親王らと共に大宝律令の編纂を主導し、日本を名実共に法治国家へと変貌させた。娘を天皇家に嫁がせる外戚政策も進め、以後数百年続く藤原氏繁栄の基盤を作った。" },
+    { "id": "c_genmei_tennou", "name": "元明天皇", "reading": "げんめいてんのう", "faction": "court", "role": "第43代天皇", "life": "661-721", "field": "governance", "description": "持統天皇の異母妹にあたり、孫の首皇子（後の聖武天皇）が幼少であったため中継ぎとして即位した。より広大で恒久的な都を求めて平城京への遷都を断行し、『古事記』編纂の事業を命じるなど、奈良時代の幕開けを整えた。" },
+    { "id": "c_nagaya_ou", "name": "長屋王", "reading": "ながやおう", "faction": "court", "role": "左大臣", "life": "684-729", "field": "governance", "description": "天武天皇の孫にあたる皇族で、藤原不比等の死後、左大臣として朝政を主導した。三世一身法を制定するなど手腕を発揮したが、藤原四兄弟によって謀反の疑いをかけられ、邸宅を包囲されて妻子もろとも自害に追い込まれた。" },
+    { "id": "c_oo_no_yasumaro", "name": "太安万侶", "reading": "おおのやすまろ", "faction": "court", "role": "官人・編纂者", "life": "?-723", "field": "scholarship", "description": "稗田阿礼が誦習していた神話・伝承を筆録し、日本最古の歴史書『古事記』を完成させた。天皇の系譜と国の起こりを一つの物語として書き記したこの仕事は、律令国家が自らの正統性を語る基礎資料となった。" },
+    { "id": "c_toneri_shinnou", "name": "舎人親王", "reading": "とねりしんのう", "faction": "court", "role": "知太政官事", "life": "676-735", "field": "scholarship", "description": "天武天皇の皇子で、勅命を受けて編纂事業の総責任者を務め、漢文の編年体で書かれた正史『日本書紀』全30巻を完成させた。国家の公式な歴史として、以後の律令国家の自己認識を長く規定する仕事を成し遂げた。" },
+    { "id": "c_fujiwara_no_muchimaro", "name": "藤原武智麻呂", "reading": "ふじわらのむちまろ", "faction": "fujiwara", "role": "左大臣（藤原四兄弟・南家祖）", "life": "680-737", "field": "governance", "description": "不比等の長男で藤原南家の祖。弟たちと共に長屋王を陥れ、その死後は兄弟で朝廷の要職を独占して藤原氏の全盛を築いた。しかし737年、都を襲った天然痘の大流行によって、四兄弟は次々と病に倒れていくことになる。" },
+    { "id": "c_tachibana_no_moroe", "name": "橘諸兄", "reading": "たちばなのもろえ", "faction": "tachibana", "role": "右大臣・左大臣", "life": "684-757", "field": "governance", "description": "皇族出身ながら臣籍降下して橘氏を名乗った。藤原四兄弟が天然痘で相次いで病没すると、代わって朝廷の中心に立ち、唐帰りの吉備真備・玄昉を重用して新しい政治を進めた。だが藤原広嗣の乱でその政権基盤を早くも揺さぶられることになる。" },
+    { "id": "c_kibi_no_makibi", "name": "吉備真備", "reading": "きびのまきび", "faction": "court", "role": "遣唐留学生・学者", "life": "695-775", "field": "scholarship", "description": "17年に及ぶ唐への留学から、天文・暦学・音楽・兵法など膨大な知識を携えて帰国した稀代の学者。橘諸兄政権の中枢に迎えられて重用されたが、その台頭は反発を招き、後に藤原広嗣の乱の一因ともなった。" },
+    { "id": "c_genbou", "name": "玄昉", "reading": "げんぼう", "faction": "court", "role": "僧・内道場僧", "life": "?-746", "field": "thought", "description": "吉備真備と同じ遣唐使船で唐に渡り、多くの経典を携えて帰国した学僧。聖武天皇や光明皇后の厚い信任を得て内道場に迎えられ仏教政策を主導したが、真備と並んで藤原広嗣の乱で標的とされた人物である。" },
+    { "id": "c_fujiwara_no_hirotsugu", "name": "藤原広嗣", "reading": "ふじわらのひろつぐ", "faction": "fujiwara", "role": "大宰少弐（藤原式家）", "life": "?-740", "field": "military", "description": "藤原四兄弟の一人・宇合の子。大宰府に左遷されたことへの不満から、朝廷の混乱の元凶は吉備真備と玄昉であるとしてその排除を求め、九州で大規模な反乱を起こした。しかし追討軍に敗れ、逃亡先で捕らえられて斬られた。" },
+    { "id": "c_shoumu_tennou", "name": "聖武天皇", "reading": "しょうむてんのう", "faction": "court", "role": "第45代天皇", "life": "701-756", "field": "governance", "description": "相次ぐ疫病・飢饉・反乱に深く心を痛め、仏教の力によって国を鎮めようと願った天皇。恭仁京・難波京・紫香楽宮と都を転々とする「彷徨五年」を経て平城京に戻り、東大寺に盧舎那大仏を造立する一大事業を成し遂げた。" },
+    { "id": "c_koumyou_kougou", "name": "光明皇后", "reading": "こうみょうこうごう", "faction": "court", "role": "皇后", "life": "701-760", "field": "governance", "description": "藤原不比等の娘で、皇族以外から立后した最初の例となった聖武天皇の皇后。貧民や孤児を救う悲田院、医療施設の施薬院を設けるなど社会事業に力を注ぎ、夫と共に大仏造立事業を強く後押しした。" },
+    { "id": "c_gyouki", "name": "行基", "reading": "ぎょうき", "faction": "other", "role": "民間布教僧", "life": "668-749", "field": "thought", "description": "朝廷の許可を得ない民間布教を行いつつ、橋や用水路を各地に築いて民衆の絶大な支持を集めた僧。当初は朝廷から弾圧されたが、大仏造立に際してはその動員力が不可欠と見なされ、聖武天皇自ら協力を要請するに至った。" },
+    { "id": "c_roben", "name": "良弁", "reading": "ろうべん", "faction": "court", "role": "東大寺初代別当", "life": "689-773", "field": "thought", "description": "聖武天皇の信任を受けて東大寺建立の実務を統括した僧。大仏開眼供養の儀式を取り仕切り、初代別当として東大寺の基礎を築いた、国家仏教の実務面を支えた中心人物である。" },
+    { "id": "c_kouken_tennou", "name": "孝謙天皇", "reading": "こうけんてんのう", "faction": "court", "role": "第46代天皇", "life": "718-770", "field": "governance", "description": "聖武天皇と光明皇后の娘で、女性として即位した。当初は藤原仲麻呂を重用したが、後に僧・道鏡を寵愛するようになり仲麻呂と対立、乱を退けて重祚（再度の即位）した後は称徳天皇として道鏡を重用する専制的な政治を敷いた。" },
+    { "id": "c_fujiwara_no_nakamaro", "name": "藤原仲麻呂（恵美押勝）", "reading": "ふじわらのなかまろ", "faction": "fujiwara", "role": "太師（太政大臣）", "life": "706-764", "field": "governance", "description": "武智麻呂の子で、孝謙天皇・光明皇太后の信任を背景に太政大臣にまで昇り、淳仁天皇を擁立して「恵美押勝」の名を賜るほどの権勢を誇った。しかし道鏡の台頭により孝謙上皇との関係が悪化すると挙兵に踏み切り、追討されて近江で敗死した。" },
+    { "id": "c_tachibana_no_naramaro", "name": "橘奈良麻呂", "reading": "たちばなのならまろ", "faction": "tachibana", "role": "参議（橘諸兄の子）", "life": "721-757", "field": "governance", "description": "橘諸兄の子で、父の失脚後に強まる藤原仲麻呂の専権に危機感を抱き、これを打倒する謀反を計画した。しかし事前に発覚して一味もろとも捕らえられ、厳しい拷問の末に獄中で命を落とした。" },
+    { "id": "c_junnin_tennou", "name": "淳仁天皇", "reading": "じゅんにんてんのう", "faction": "court", "role": "第47代天皇", "life": "733-765", "field": "governance", "description": "天武天皇の孫にあたり、藤原仲麻呂に擁立されて即位した。仲麻呂の傀儡的な立場に終始したため、恵美押勝の乱で後ろ盾を失うと孝謙上皇によって廃位され、淡路に流されてまもなく世を去った。" },
+    { "id": "c_doukyou", "name": "道鏡", "reading": "どうきょう", "faction": "dokyo", "role": "太政大臣禅師・法王", "life": "?-772", "field": "governance", "description": "孝謙上皇の病を祈祷で治したことから寵愛を受けた僧。恵美押勝の乱後、太政大臣禅師、さらには法王という前例のない地位にまで昇りつめた。宇佐八幡宮の神託を利用して自ら皇位に就こうとしたが、和気清麻呂によって阻止され、称徳天皇の崩御と共に失脚した。" },
+    { "id": "c_shoutoku_tennou", "name": "称徳天皇（孝謙天皇重祚）", "reading": "しょうとくてんのう", "faction": "court", "role": "第48代天皇", "life": "718-770", "field": "governance", "description": "淳仁天皇を廃した孝謙上皇が再び即位した姿。道鏡への深い信頼のもと、その専権を許す政治を続けたが、後継者を定めぬまま崩御した。この死により道鏡は後ろ盾を完全に失い、政界から追放されることになる。" },
+    { "id": "c_wake_no_kiyomaro", "name": "和気清麻呂", "reading": "わけのきよまろ", "faction": "court", "role": "近衛将監", "life": "733-799", "field": "administration", "description": "道鏡が皇位に就くことを望んだ宇佐八幡宮神託事件で、現地に赴いて「皇位は皇統の者に継がせよ、道鏡は排除すべし」という神託を持ち帰り、道鏡の野望を阻んだ。この報復で一時左遷されたが、後に許されて桓武朝の都造りにも尽力した。" },
+    { "id": "c_kounin_tennou", "name": "光仁天皇", "reading": "こうにんてんのう", "faction": "court", "role": "第49代天皇", "life": "709-782", "field": "governance", "description": "天智天皇の孫にあたり、称徳天皇の崩御後、高齢ながら擁立されて即位した。天武系の皇統が絶えたことで天智系に皇位が戻る画期となり、道鏡専権時代の混乱を収拾して律令政治の立て直しに着手した。" },
+    { "id": "c_kammu_tennou", "name": "桓武天皇", "reading": "かんむてんのう", "faction": "court", "role": "第50代天皇", "life": "737-806", "field": "governance", "description": "光仁天皇の子で、仏教勢力が強く根を張った平城京を離れるべく長岡京、続いて平安京への遷都を断行した。国内の律令制立て直しと並行して、蝦夷平定のため坂上田村麻呂らを陸奥に派遣するなど、対外・対内両面で強い指導力を発揮した天皇。" },
+    { "id": "c_fujiwara_no_tanetsugu", "name": "藤原種継", "reading": "ふじわらのたねつぐ", "faction": "fujiwara", "role": "中納言（造長岡宮使）", "life": "737-785", "field": "administration", "description": "桓武天皇の厚い信任を受け、造長岡宮使として新都・長岡京の造営を陣頭指揮した。しかし工事の視察中に矢で射られ、翌日死去した。この暗殺事件の首謀者として、皇太子・早良親王が疑われることになる。" },
+    { "id": "c_sawara_shinnou", "name": "早良親王", "reading": "さわらしんのう", "faction": "court", "role": "皇太子", "life": "750-785", "field": "governance", "description": "桓武天皇の同母弟で皇太子であったが、藤原種継暗殺事件への関与を疑われて廃太子とされ、淡路への配流の途上、無実を訴えて絶食し憤死した。その後、都で疫病や皇族の死が相次いだため「祟り」と恐れられ、平安京遷都を後押しする一因になったとされる。" },
+    { "id": "c_korehari_no_azamaro", "name": "伊治呰麻呂", "reading": "これはりのあざまろ", "faction": "emishi", "role": "陸奥の豪族（俘囚の長）", "life": "生没年不詳", "field": "military", "description": "朝廷側に帰順していた蝦夷系の豪族でありながら、待遇への不満から按察使・紀広純を殺害して反乱を起こした。この伊治呰麻呂の乱を機に、陸奥では朝廷と蝦夷の間で数十年におよぶ大規模な戦争が始まることになる。" },
+    { "id": "c_ki_no_kosami", "name": "紀古佐美", "reading": "きのこさみ", "faction": "court", "role": "征東大使", "life": "733-797", "field": "military", "description": "朝廷から征東大使に任じられ、大軍を率いて陸奥の蝦夷討伐に向かった。しかし阿弖流爲らの巧みな戦術の前に胆沢の巣伏で大敗を喫し、多くの兵を失って撤退した。この敗北は朝廷に蝦夷の実力を痛感させることになった。" },
+    { "id": "c_aterui", "name": "阿弖流爲", "reading": "あてるい", "faction": "emishi", "role": "蝦夷の指導者", "life": "?-802", "field": "military", "description": "胆沢地方を拠点とした蝦夷の指導者。紀古佐美の率いる朝廷軍を巣伏の戦いで打ち破るなど長年にわたり抵抗を続けたが、坂上田村麻呂の遠征を受けて衆を率いて降伏した。田村麻呂は助命を嘆願したが聞き入れられず、都に連行されて処刑された。" },
+    { "id": "c_more", "name": "母礼", "reading": "もれ", "faction": "emishi", "role": "蝦夷の指導者", "life": "?-802", "field": "military", "description": "阿弖流爲と並ぶ蝦夷の有力な指導者。共に朝廷軍への抵抗を続けたが、坂上田村麻呂の遠征の後、阿弖流爲と行動を共にして降伏し、都に連行された末に処刑された。" },
+    { "id": "c_sakanoue_no_tamuramaro", "name": "坂上田村麻呂", "reading": "さかのうえのたむらまろ", "faction": "court", "role": "征夷大将軍", "life": "758-811", "field": "military", "description": "桓武天皇の信任を受けて征夷大将軍に任じられ、陸奥への遠征を指揮した。巧みな用兵で蝦夷の抵抗拠点を次々と制圧し、ついに阿弖流爲・母礼を降伏させて長年の戦争に区切りをつけた。降伏した二人の助命を朝廷に強く訴えたが、聞き入れられなかったと伝わる。" }
+  ],
+  "events": [
+    { "id": "e_isshi_incident", "phaseId": 1, "year": 645, "title": "乙巳の変・蘇我入鹿暗殺", "category": "politics", "characters": ["c_naka_no_oe", "c_nakatomi_no_kamatari", "c_soga_no_iruka"], "location": "飛鳥板蓋宮", "description": "朝鮮半島の使者を迎える儀式の最中、中大兄皇子は自ら剣を振るって蘇我入鹿を斬り殺した。長らく朝廷の実権を握ってきた蘇我氏の専横に対する、中大兄皇子と中臣鎌足による周到な計画のもとでの決起であった。" },
+    { "id": "e_soga_clan_fall", "phaseId": 1, "year": 645, "title": "蘇我蝦夷、邸宅に火を放ち自害", "category": "death", "characters": ["c_soga_no_emishi"], "location": "飛鳥・甘樫丘", "description": "子の入鹿が討たれたと知った蘇我蝦夷は、もはや抵抗できないと悟り、一族に伝わる『天皇記』『国記』などの記録もろとも自邸に火を放ち自害した。これにより長く権勢を誇った蘇我本宗家は滅亡した。" },
+    { "id": "e_taika_reform_edict", "phaseId": 1, "year": 646, "title": "改新の詔", "category": "politics", "characters": ["c_koutoku_tennou", "c_naka_no_oe"], "location": "難波長柄豊碕宮", "description": "即位した孝徳天皇のもと、公地公民制・地方行政区画の整備・戸籍と班田収授法の実施・統一的な租税制度という4か条からなる「改新の詔」が発布された。豪族が私的に土地と人民を支配する体制から、天皇を中心とする中央集権国家へと転換する大方針が示された。" },
+    { "id": "e_hakusukinoe", "phaseId": 1, "year": 663, "title": "白村江の戦い、大敗", "category": "battle", "characters": ["c_naka_no_oe"], "location": "白村江（朝鮮半島）", "description": "滅亡した百済の復興を助けるべく朝鮮半島に派遣された倭国の水軍は、唐・新羅の連合艦隊に白村江で壊滅的な敗北を喫した。この敗戦により倭国は朝鮮半島への足がかりを完全に失い、以後は唐・新羅の侵攻に備えて国内の防備を固めることに国力を注ぐことになる。" },
+    { "id": "e_jinshin_war_begins", "phaseId": 2, "year": 672, "title": "壬申の乱、勃発", "category": "battle", "characters": ["c_temmu_tennou", "c_koubun_tennou"], "location": "美濃・近江", "description": "天智天皇の崩御後、皇位を継いだ大友皇子に対し、吉野に退いていた大海人皇子が挙兵した。東国の豪族を味方につけた大海人皇子軍は各地で朝廷軍を打ち破り、瀬田橋の戦いで決定的な勝利を収めた。古代日本最大級の内乱であった。" },
+    { "id": "e_koubun_death", "phaseId": 2, "year": 672, "title": "大友皇子、自害", "category": "death", "characters": ["c_koubun_tennou"], "location": "近江・山前", "description": "瀬田橋での敗北により大津宮を支えきれなくなった大友皇子は、山前まで逃れた末に自害した。享年25。近江朝廷は崩壊し、勝利した大海人皇子が新たな政権を樹立することになった。" },
+    { "id": "e_temmu_enthronement", "phaseId": 2, "year": 673, "title": "天武天皇、飛鳥浄御原宮で即位", "category": "politics", "characters": ["c_temmu_tennou"], "location": "飛鳥浄御原宮", "description": "壬申の乱に勝利した大海人皇子は飛鳥浄御原宮で即位し天武天皇となった。皇族を重んじる皇親政治を敷き、律令や国史編纂の事業に着手するなど、以後の律令国家建設の方向性を決定づけた。" },
+    { "id": "e_fujiwarakyo_capital", "phaseId": 2, "year": 694, "title": "藤原京遷都", "category": "politics", "characters": ["c_jitou_tennou"], "location": "藤原京", "description": "天武天皇の遺志を継いだ持統天皇は、中国の都城制にならった日本初の本格的な条坊制都市・藤原京へと遷都した。恒久的な首都という発想そのものが、それまでの遷都の慣習からの大きな転換であった。" },
+    { "id": "e_taiho_ritsuryo", "phaseId": 2, "year": 701, "title": "大宝律令、制定", "category": "politics", "characters": ["c_fujiwara_no_fuhito"], "location": "藤原京", "description": "刑部親王・藤原不比等らが中心となって編纂した大宝律令が完成し、日本は初めて体系的な成文法典を持つ国家となった。二官八省からなる官僚機構と、全国を統一的に統治する行政制度がここに確立した。" },
+    { "id": "e_heijokyo_capital", "phaseId": 3, "year": 710, "title": "平城京遷都", "category": "politics", "characters": ["c_genmei_tennou"], "location": "平城京", "description": "元明天皇は、手狭になった藤原京から、より広大な平城京へと都を移した。「あをによし」と歌われたこの都は、以後740年の一時的な遷都を除いて74年間、律令国家の中心であり続けることになる。" },
+    { "id": "e_kojiki_compiled", "phaseId": 3, "year": 712, "title": "『古事記』、完成", "category": "episode", "characters": ["c_oo_no_yasumaro"], "location": "平城京", "description": "稗田阿礼が記憶していた神話・伝承を、太安万侶が漢字を用いて筆録し、日本最古の歴史書『古事記』が完成した。天地開闢から推古天皇の代までを描くこの書は、律令国家が自らの由来を語る根本の物語となった。" },
+    { "id": "e_nihonshoki_compiled", "phaseId": 3, "year": 720, "title": "『日本書紀』、完成", "category": "episode", "characters": ["c_toneri_shinnou"], "location": "平城京", "description": "舎人親王を総裁として編纂が進められた正史『日本書紀』全30巻が完成し、朝廷に奏上された。中国の史書にならった漢文編年体で書かれたこの正史は、対外的にも国家の正統性を示す公式記録として位置づけられた。" },
+    { "id": "e_fuhito_death", "phaseId": 3, "year": 720, "title": "藤原不比等、死去", "category": "death", "characters": ["c_fujiwara_no_fuhito"], "location": "平城京", "description": "大宝律令の制定を主導し、娘を天皇家に嫁がせて藤原氏の礎を築いた不比等が62歳で没した。その死後、後ろ盾を失った朝廷では皇族出身の長屋王が台頭し、藤原氏の四兄弟との間に緊張が高まっていく。" },
+    { "id": "e_nagaya_incident", "phaseId": 3, "year": 729, "title": "長屋王の変・自害に追い込まれる", "category": "death", "characters": ["c_nagaya_ou", "c_fujiwara_no_muchimaro"], "location": "平城京・左大臣邸", "description": "左大臣として朝政を主導していた長屋王は、藤原四兄弟の陰謀により「私かに左道を学びて国家を傾けんと欲す」との密告を受け、邸宅を武力で包囲された。無実を訴える術もなく、長屋王は妻子もろとも自害した。この事件により藤原四兄弟は朝廷の要職を独占することになる。" },
+    { "id": "e_kibi_genbou_return", "phaseId": 4, "year": 735, "title": "吉備真備・玄昉、唐から帰国", "category": "episode", "characters": ["c_kibi_no_makibi", "c_genbou"], "location": "平城京", "description": "17年に及ぶ長期留学から帰国した吉備真備は膨大な典籍と学問を、玄昉は数多くの経典を携え、いずれも朝廷から破格の歓迎を受けた。橘諸兄政権のもとで急速に重用されていくことになるが、この急な台頭が後の反発を招く火種にもなる。" },
+    { "id": "e_tennentou_epidemic", "phaseId": 4, "year": 737, "title": "天然痘の大流行・藤原四兄弟、相次いで病死", "category": "death", "characters": ["c_fujiwara_no_muchimaro"], "location": "平城京", "description": "大宰府から広がったとされる天然痘の大流行が都を襲い、朝廷の要職を独占していた藤原四兄弟（武智麻呂・房前・宇合・麻呂）が、数か月のうちに相次いで病死するという未曾有の事態が起きた。藤原氏の権勢は一時的に大きく後退することになる。" },
+    { "id": "e_tachibana_moroe_rise", "phaseId": 4, "year": 738, "title": "橘諸兄、政権を握る", "category": "politics", "characters": ["c_tachibana_no_moroe"], "location": "平城京", "description": "藤原四兄弟の死により生じた権力の空白を埋め、皇族出身の橘諸兄が右大臣として政権の中心に立った。唐帰りの吉備真備・玄昉を側近として重用し、藤原氏に代わる新たな政治の刷新を進めた。" },
+    { "id": "e_hirotsugu_rebellion", "phaseId": 4, "year": 740, "title": "藤原広嗣の乱", "category": "battle", "characters": ["c_fujiwara_no_hirotsugu"], "location": "大宰府（九州）", "description": "大宰府に左遷されていた藤原広嗣は、朝廷の混乱の元凶は吉備真備と玄昉であるとしてその排除を求め、九州で1万を超える兵を率いて挙兵した。朝廷はただちに大軍を派遣し、鎮圧に乗り出した。" },
+    { "id": "e_hirotsugu_death", "phaseId": 4, "year": 740, "title": "藤原広嗣、討たれる", "category": "death", "characters": ["c_fujiwara_no_hirotsugu"], "location": "肥前・松浦", "description": "追討軍との戦いに敗れた広嗣は海路の逃亡を図ったが、目的地にたどり着けず捕らえられ、まもなく斬られた。九州を揺るがしたこの反乱の衝撃は大きく、聖武天皇はこの直後から都を転々とする異例の行動に出ることになる。" },
+    { "id": "e_kuni_capital", "phaseId": 5, "year": 740, "title": "恭仁京遷都", "category": "episode", "characters": ["c_shoumu_tennou"], "location": "恭仁京", "description": "藤原広嗣の乱に強い衝撃を受けた聖武天皇は、平城京を離れて恭仁京への遷都を断行した。しかしその後も難波京、紫香楽宮と5年にわたり都を転々とすることになり、この時期は後世「彷徨五年」と呼ばれる。" },
+    { "id": "e_daibutsu_vow", "phaseId": 5, "year": 743, "title": "大仏造立の詔", "category": "politics", "characters": ["c_shoumu_tennou"], "location": "紫香楽宮", "description": "相次ぐ疫病・飢饉・反乱に深く心を痛めた聖武天皇は、仏教の力によって国を鎮め守ろうと願い、盧舎那大仏の造立を命じる詔を発した。国家の総力を挙げた前代未聞の大事業がここに始まった。" },
+    { "id": "e_gyouki_mobilizes", "phaseId": 5, "year": 745, "title": "行基、大仏造営に協力", "category": "episode", "characters": ["c_gyouki"], "location": "平城京", "description": "民衆から絶大な信望を集めていた行基は、聖武天皇からの直々の要請を受け、大仏造立事業への協力を決めた。かつて朝廷から弾圧された民間布教僧が国家事業の中心的な担い手となる、異例の転換であった。" },
+    { "id": "e_heijokyo_return", "phaseId": 5, "year": 745, "title": "平城京へ還都", "category": "episode", "characters": ["c_shoumu_tennou"], "location": "平城京", "description": "5年にわたる遷都の彷徨の末、聖武天皇はついに平城京へと戻った。大仏の造営はこの平城京の地で本格的に再開され、東大寺の建立に向けた事業が加速していく。" },
+    { "id": "e_daibutsu_kaigen", "phaseId": 5, "year": 752, "title": "東大寺大仏、開眼供養", "category": "episode", "characters": ["c_shoumu_tennou", "c_roben", "c_koumyou_kougou"], "location": "東大寺", "description": "インド出身の僧・菩提僊那を導師に迎え、盛大な開眼供養の儀式が営まれた。すでに譲位していた聖武上皇、光明皇太后、孝謙天皇が居並ぶ中、大仏の瞳に魂を入れる筆が入れられた。国家仏教の一大事業がここに結実した瞬間であった。" },
+    { "id": "e_kouken_enthronement", "phaseId": 6, "year": 749, "title": "孝謙天皇、即位", "category": "politics", "characters": ["c_kouken_tennou", "c_shoumu_tennou"], "location": "平城京", "description": "譲位した聖武上皇に代わり、皇女の阿倍内親王が即位して孝謙天皇となった。女性天皇の即位という異例の事態であり、当初は藤原仲麻呂の後見のもとで政治が進められることになる。" },
+    { "id": "e_naramaro_conspiracy", "phaseId": 6, "year": 757, "title": "橘奈良麻呂の変", "category": "politics", "characters": ["c_tachibana_no_naramaro", "c_fujiwara_no_nakamaro"], "location": "平城京", "description": "父・諸兄の死後、急速に権勢を強める藤原仲麻呂に危機感を抱いた橘奈良麻呂は、これを打倒する謀反を密かに計画した。しかし計画は事前に発覚し、仲麻呂側によって一味は一斉に捕らえられた。" },
+    { "id": "e_naramaro_death", "phaseId": 6, "year": 757, "title": "橘奈良麻呂、獄死", "category": "death", "characters": ["c_tachibana_no_naramaro"], "location": "平城京", "description": "謀反への関与を厳しく追及された奈良麻呂は、拷問の末に獄中で命を落とした。連座した多くの貴族・官人も処罰され、橘氏の勢力はこの一件で大きく後退することになった。" },
+    { "id": "e_junnin_enthronement", "phaseId": 6, "year": 758, "title": "淳仁天皇、即位・仲麻呂が恵美押勝の名を賜る", "category": "politics", "characters": ["c_junnin_tennou", "c_fujiwara_no_nakamaro"], "location": "平城京", "description": "橘奈良麻呂の変の後、藤原仲麻呂は自ら擁立した淳仁天皇のもとで太政大臣にまで昇りつめ、「恵美押勝」の名と特別な地位を与えられた。人臣として最高位に達し、その権勢は頂点に達した。" },
+    { "id": "e_emi_no_oshikatsu_rebellion", "phaseId": 6, "year": 764, "title": "恵美押勝の乱", "category": "battle", "characters": ["c_fujiwara_no_nakamaro"], "location": "近江", "description": "僧・道鏡を寵愛する孝謙上皇との対立が深まった仲麻呂は、権力を維持すべく挙兵に踏み切った。しかし上皇方に機先を制されて近江へ追われ、追討軍との戦いに敗れていった。" },
+    { "id": "e_nakamaro_death", "phaseId": 6, "year": 764, "title": "藤原仲麻呂、敗死", "category": "death", "characters": ["c_fujiwara_no_nakamaro"], "location": "近江・高島", "description": "琵琶湖畔まで追い詰められた仲麻呂は、一族もろとも討ち取られた。太政大臣にまで昇った権勢は一夜にして瓦解し、擁立された淳仁天皇もまもなく廃位され淡路に流されることになる。" },
+    { "id": "e_shoutoku_restoration", "phaseId": 7, "year": 764, "title": "称徳天皇、重祚", "category": "politics", "characters": ["c_shoutoku_tennou", "c_junnin_tennou"], "location": "平城京", "description": "恵美押勝の乱を退けた孝謙上皇は、淳仁天皇を廃位して淡路に追放し、自ら再び皇位に就いて称徳天皇となった。以後、深く信頼する道鏡を重用する政治が本格化していく。" },
+    { "id": "e_dokyo_rise", "phaseId": 7, "year": 766, "title": "道鏡、法王となる", "category": "politics", "characters": ["c_doukyou"], "location": "平城京", "description": "称徳天皇の絶大な信任のもと、道鏡は太政大臣禅師を経て、皇族にも準じる前例のない地位「法王」にまで昇りつめた。一介の僧が事実上の最高権力者となる、律令国家史上異例の事態であった。" },
+    { "id": "e_usa_hachiman_oracle", "phaseId": 7, "year": 769, "title": "宇佐八幡宮神託事件", "category": "politics", "characters": ["c_doukyou", "c_wake_no_kiyomaro"], "location": "宇佐八幡宮（豊前）／平城京", "description": "「道鏡を天皇の位に就かせれば天下太平になる」との神託があったとの報告を受け、称徳天皇は和気清麻呂を宇佐八幡宮へ真偽の確認に派遣した。だが清麻呂が持ち帰ったのは「臣下の道鏡には皇位を継がせるな」という正反対の神託であり、道鏡の即位の野望はここで断たれた。" },
+    { "id": "e_kiyomaro_exile", "phaseId": 7, "year": 769, "title": "和気清麻呂、左遷される", "category": "episode", "characters": ["c_wake_no_kiyomaro"], "location": "大隅国", "description": "道鏡の期待に反する神託を持ち帰った清麻呂は、道鏡の怒りを買って官位を剥奪され、大隅国へ追放された。しかし称徳天皇の崩御後に名誉を回復され、桓武朝では都造りの功労者として重用されることになる。" },
+    { "id": "e_shoutoku_death", "phaseId": 7, "year": 770, "title": "称徳天皇、崩御・道鏡失脚", "category": "death", "characters": ["c_shoutoku_tennou", "c_doukyou"], "location": "平城京", "description": "後継者を定めぬまま称徳天皇が崩御すると、唯一の後ろ盾を失った道鏡はただちに失脚し、下野国の薬師寺別当へと左遷された。天智系の光仁天皇が擁立され、道鏡の専権時代は幕を閉じた。" },
+    { "id": "e_kammu_enthronement", "phaseId": 8, "year": 781, "title": "桓武天皇、即位", "category": "politics", "characters": ["c_kammu_tennou", "c_kounin_tennou"], "location": "平城京", "description": "光仁天皇の崩御を受け、皇子の桓武天皇が即位した。仏教勢力が強く政治に介入する平城京の体質を刷新すべく、新たな都への遷都を構想し始める。" },
+    { "id": "e_nagaokakyo_capital", "phaseId": 8, "year": 784, "title": "長岡京遷都", "category": "politics", "characters": ["c_kammu_tennou", "c_fujiwara_no_tanetsugu"], "location": "長岡京", "description": "桓武天皇は側近の藤原種継を造長岡宮使に任じ、平城京から長岡京への遷都を断行した。水運の便に優れた新天地での再出発であったが、この都はわずか10年で放棄されることになる。" },
+    { "id": "e_tanetsugu_assassination", "phaseId": 8, "year": 785, "title": "藤原種継、暗殺される", "category": "death", "characters": ["c_fujiwara_no_tanetsugu"], "location": "長岡京", "description": "造営工事の陣頭指揮を執っていた種継が、夜の視察中に何者かに矢で射られ、翌日死去した。この暗殺事件の首謀者として、皇太子・早良親王とその周辺が厳しく追及されることになる。" },
+    { "id": "e_sawara_shinnou_death", "phaseId": 8, "year": 785, "title": "早良親王、廃太子・憤死", "category": "death", "characters": ["c_sawara_shinnou"], "location": "淡路への配流の途上", "description": "種継暗殺への関与を疑われた早良親王は皇太子の地位を剥奪され、淡路へ配流されることになった。無実を訴えて食を絶った親王は、配流の船上で憤死した。以後、都で疫病や皇族の不幸が相次ぎ、これが早良親王の祟りと恐れられることになる。" },
+    { "id": "e_heiankyo_capital", "phaseId": 8, "year": 794, "title": "平安京遷都", "category": "politics", "characters": ["c_kammu_tennou"], "location": "平安京", "description": "相次ぐ怪異や早良親王の祟りへの恐れもあり、桓武天皇は長岡京を離れて平安京へと都を移した。以後1000年以上にわたり都であり続けるこの遷都をもって、律令国家建設の一つの区切りとされる。" },
+    { "id": "e_korehari_rebellion", "phaseId": 9, "year": 780, "title": "伊治呰麻呂の乱", "category": "battle", "characters": ["c_korehari_no_azamaro"], "location": "陸奥・伊治城", "description": "朝廷に帰順していた蝦夷系の豪族・伊治呰麻呂が、按察使・紀広純らを殺害して反乱を起こし、多賀城を焼き払った。この事件を機に、陸奥では朝廷と蝦夷との間で数十年に及ぶ大規模な戦争の時代が始まる。" },
+    { "id": "e_kosami_defeat", "phaseId": 9, "year": 789, "title": "巣伏の戦い・紀古佐美、敗北", "category": "battle", "characters": ["c_ki_no_kosami", "c_aterui"], "location": "陸奥・胆沢（巣伏）", "description": "征東大使・紀古佐美が率いる数万の朝廷軍は、阿弖流爲の指揮する蝦夷軍の巧みな戦術の前に胆沢の巣伏で大敗を喫し、多くの兵を失って撤退した。律令国家の正規軍が蝦夷に手痛い敗北を喫した象徴的な戦いであった。" },
+    { "id": "e_tamuramaro_seii_taishogun", "phaseId": 9, "year": 797, "title": "坂上田村麻呂、征夷大将軍に任命", "category": "politics", "characters": ["c_sakanoue_no_tamuramaro"], "location": "平安京", "description": "紀古佐美の敗北を経て、桓武天皇は武勇に優れた坂上田村麻呂を征夷大将軍に任じ、陸奥への本格的な遠征を委ねた。田村麻呂は巧みな用兵で蝦夷の抵抗拠点を着実に切り崩していく。" },
+    { "id": "e_aterui_surrender", "phaseId": 9, "year": 802, "title": "阿弖流爲・母礼、降伏", "category": "politics", "characters": ["c_aterui", "c_more", "c_sakanoue_no_tamuramaro"], "location": "陸奥・胆沢城", "description": "胆沢城を築いて勢力基盤を固めた田村麻呂の前に、長年抵抗を続けてきた阿弖流爲と母礼はついに500余人を率いて降伏した。田村麻呂は二人の武勇と器量を惜しみ、都へ連行した後も助命を強く嘆願した。" },
+    { "id": "e_aterui_execution", "phaseId": 9, "year": 802, "title": "阿弖流爲・母礼、処刑される", "category": "death", "characters": ["c_aterui", "c_more"], "location": "河内国・杜山", "description": "田村麻呂の助命嘆願にもかかわらず、朝廷の公卿たちは「野蛮の性、反覆常なし」として二人の処刑を決定した。阿弖流爲・母礼は河内国で斬られ、長く続いた蝦夷との戦争は律令国家側の勝利という形で一つの区切りを迎えた。" }
+  ],
+  "mapSnapshots": [
+    {
+      "year": 645,
+      "label": "乙巳の変 — 蘇我氏打倒",
+      "territories": {
+        "mutsu": { "name": "陸奥", "faction": "other", "lord": "蝦夷（未服属）" },
+        "yamashiro": { "name": "山城", "faction": "other", "lord": "在地豪族" },
+        "yamato": { "name": "大和", "faction": "court", "lord": "孝徳天皇（改新政権）" },
+        "oumi": { "name": "近江", "faction": "other", "lord": "在地豪族" },
+        "dazaifu": { "name": "大宰府", "faction": "other", "lord": "在地豪族" }
+      }
+    },
+    {
+      "year": 672,
+      "label": "壬申の乱 — 天武天皇の即位",
+      "territories": {
+        "mutsu": { "name": "陸奥", "faction": "other", "lord": "蝦夷（未服属）" },
+        "yamashiro": { "name": "山城", "faction": "other", "lord": "在地豪族" },
+        "yamato": { "name": "大和", "faction": "court", "lord": "天武天皇" },
+        "oumi": { "name": "近江", "faction": "court", "lord": "大友皇子、敗死・大津宮放棄" },
+        "dazaifu": { "name": "大宰府", "faction": "other", "lord": "在地豪族" }
+      }
+    },
+    {
+      "year": 701,
+      "label": "大宝律令 — 藤原不比等の台頭",
+      "territories": {
+        "mutsu": { "name": "陸奥", "faction": "other", "lord": "蝦夷（未服属）" },
+        "yamashiro": { "name": "山城", "faction": "other", "lord": "在地豪族" },
+        "yamato": { "name": "大和", "faction": "fujiwara", "lord": "藤原不比等" },
+        "oumi": { "name": "近江", "faction": "court", "lord": "朝廷の直轄地" },
+        "dazaifu": { "name": "大宰府", "faction": "court", "lord": "朝廷の出先機関" }
+      }
+    },
+    {
+      "year": 740,
+      "label": "藤原広嗣の乱、鎮圧",
+      "territories": {
+        "mutsu": { "name": "陸奥", "faction": "other", "lord": "蝦夷（未服属）" },
+        "yamashiro": { "name": "山城", "faction": "other", "lord": "在地豪族" },
+        "yamato": { "name": "大和", "faction": "tachibana", "lord": "橘諸兄（藤原四兄弟死去後）" },
+        "oumi": { "name": "近江", "faction": "court", "lord": "朝廷の直轄地" },
+        "dazaifu": { "name": "大宰府", "faction": "court", "lord": "広嗣の乱、鎮圧" }
+      }
+    },
+    {
+      "year": 770,
+      "label": "道鏡失脚、光仁天皇の即位",
+      "territories": {
+        "mutsu": { "name": "陸奥", "faction": "other", "lord": "蝦夷（未服属）" },
+        "yamashiro": { "name": "山城", "faction": "other", "lord": "在地豪族" },
+        "yamato": { "name": "大和", "faction": "court", "lord": "光仁天皇（天皇親政の回復）" },
+        "oumi": { "name": "近江", "faction": "court", "lord": "朝廷の直轄地" },
+        "dazaifu": { "name": "大宰府", "faction": "court", "lord": "朝廷の出先機関" }
+      }
+    },
+    {
+      "year": 794,
+      "label": "平安京遷都",
+      "territories": {
+        "mutsu": { "name": "陸奥", "faction": "emishi", "lord": "阿弖流爲（抵抗継続中）" },
+        "yamashiro": { "name": "山城", "faction": "court", "lord": "桓武天皇（新都・平安京）" },
+        "yamato": { "name": "大和", "faction": "court", "lord": "旧都・平城京" },
+        "oumi": { "name": "近江", "faction": "court", "lord": "朝廷の直轄地" },
+        "dazaifu": { "name": "大宰府", "faction": "court", "lord": "朝廷の出先機関" }
+      }
+    },
+    {
+      "year": 802,
+      "label": "阿弖流爲の降伏 — 蝦夷平定",
+      "territories": {
+        "mutsu": { "name": "陸奥", "faction": "court", "lord": "坂上田村麻呂（阿弖流爲、降伏）" },
+        "yamashiro": { "name": "山城", "faction": "court", "lord": "桓武天皇（平安京）" },
+        "yamato": { "name": "大和", "faction": "court", "lord": "旧都・平城京" },
+        "oumi": { "name": "近江", "faction": "court", "lord": "朝廷の直轄地" },
+        "dazaifu": { "name": "大宰府", "faction": "court", "lord": "朝廷の出先機関" }
+      }
+    }
+  ],
+  "wikiLinks": {
+    "characters": {
+      "c_soga_no_iruka": "蘇我入鹿",
+      "c_soga_no_emishi": "蘇我蝦夷",
+      "c_naka_no_oe": "天智天皇",
+      "c_nakatomi_no_kamatari": "藤原鎌足",
+      "c_koutoku_tennou": "孝徳天皇",
+      "c_temmu_tennou": "天武天皇",
+      "c_koubun_tennou": "弘文天皇",
+      "c_jitou_tennou": "持統天皇",
+      "c_fujiwara_no_fuhito": "藤原不比等",
+      "c_genmei_tennou": "元明天皇",
+      "c_nagaya_ou": "長屋王",
+      "c_oo_no_yasumaro": "太安万侶",
+      "c_toneri_shinnou": "舎人親王",
+      "c_fujiwara_no_muchimaro": "藤原武智麻呂",
+      "c_tachibana_no_moroe": "橘諸兄",
+      "c_kibi_no_makibi": "吉備真備",
+      "c_genbou": "玄昉",
+      "c_fujiwara_no_hirotsugu": "藤原広嗣",
+      "c_shoumu_tennou": "聖武天皇",
+      "c_koumyou_kougou": "光明皇后",
+      "c_gyouki": "行基",
+      "c_roben": "良弁",
+      "c_kouken_tennou": "孝謙天皇",
+      "c_fujiwara_no_nakamaro": "藤原仲麻呂",
+      "c_tachibana_no_naramaro": "橘奈良麻呂",
+      "c_junnin_tennou": "淳仁天皇",
+      "c_doukyou": "道鏡",
+      "c_shoutoku_tennou": "称徳天皇",
+      "c_wake_no_kiyomaro": "和気清麻呂",
+      "c_kounin_tennou": "光仁天皇",
+      "c_kammu_tennou": "桓武天皇",
+      "c_fujiwara_no_tanetsugu": "藤原種継",
+      "c_sawara_shinnou": "早良親王",
+      "c_korehari_no_azamaro": "伊治呰麻呂",
+      "c_ki_no_kosami": "紀古佐美",
+      "c_aterui": "阿弖流為",
+      "c_sakanoue_no_tamuramaro": "坂上田村麻呂"
+    },
+    "events": {
+      "e_isshi_incident": "乙巳の変",
+      "e_taika_reform_edict": "大化の改新",
+      "e_hakusukinoe": "白村江の戦い",
+      "e_jinshin_war_begins": "壬申の乱",
+      "e_taiho_ritsuryo": "大宝律令",
+      "e_heijokyo_capital": "平城京",
+      "e_nagaya_incident": "長屋王の変",
+      "e_hirotsugu_rebellion": "藤原広嗣の乱",
+      "e_daibutsu_kaigen": "東大寺盧舎那仏像",
+      "e_emi_no_oshikatsu_rebellion": "藤原仲麻呂の乱",
+      "e_usa_hachiman_oracle": "宇佐八幡宮神託事件",
+      "e_heiankyo_capital": "平安京",
+      "e_kosami_defeat": "巣伏の戦い",
+      "e_aterui_surrender": "阿弖流為"
+    }
+  }
+}

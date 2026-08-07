@@ -4527,6 +4527,837 @@
         }
       }
     },
+    "asuka-nara": {
+      "events": [
+        {
+          "id": "e_isshi_incident",
+          "year": 645,
+          "title": "乙巳の変・蘇我入鹿暗殺",
+          "category": "politics",
+          "location": "飛鳥板蓋宮",
+          "color": "#5a4a12",
+          "characters": [
+            "c_naka_no_oe",
+            "c_nakatomi_no_kamatari",
+            "c_soga_no_iruka"
+          ]
+        },
+        {
+          "id": "e_soga_clan_fall",
+          "year": 645,
+          "title": "蘇我蝦夷、邸宅に火を放ち自害",
+          "category": "death",
+          "location": "飛鳥・甘樫丘",
+          "color": "#2a4a2a",
+          "characters": [
+            "c_soga_no_emishi"
+          ]
+        },
+        {
+          "id": "e_taika_reform_edict",
+          "year": 646,
+          "title": "改新の詔",
+          "category": "politics",
+          "location": "難波長柄豊碕宮",
+          "color": "#5a4a12",
+          "characters": [
+            "c_koutoku_tennou",
+            "c_naka_no_oe"
+          ]
+        },
+        {
+          "id": "e_hakusukinoe",
+          "year": 663,
+          "title": "白村江の戦い、大敗",
+          "category": "battle",
+          "location": "白村江（朝鮮半島）",
+          "color": "#5a4a12",
+          "characters": [
+            "c_naka_no_oe"
+          ]
+        },
+        {
+          "id": "e_jinshin_war_begins",
+          "year": 672,
+          "title": "壬申の乱、勃発",
+          "category": "battle",
+          "location": "美濃・近江",
+          "color": "#5a4a12",
+          "characters": [
+            "c_temmu_tennou",
+            "c_koubun_tennou"
+          ]
+        },
+        {
+          "id": "e_koubun_death",
+          "year": 672,
+          "title": "大友皇子、自害",
+          "category": "death",
+          "location": "近江・山前",
+          "color": "#5a4a12",
+          "characters": [
+            "c_koubun_tennou"
+          ]
+        },
+        {
+          "id": "e_temmu_enthronement",
+          "year": 673,
+          "title": "天武天皇、飛鳥浄御原宮で即位",
+          "category": "politics",
+          "location": "飛鳥浄御原宮",
+          "color": "#5a4a12",
+          "characters": [
+            "c_temmu_tennou"
+          ]
+        },
+        {
+          "id": "e_fujiwarakyo_capital",
+          "year": 694,
+          "title": "藤原京遷都",
+          "category": "politics",
+          "location": "藤原京",
+          "color": "#5a4a12",
+          "characters": [
+            "c_jitou_tennou"
+          ]
+        },
+        {
+          "id": "e_taiho_ritsuryo",
+          "year": 701,
+          "title": "大宝律令、制定",
+          "category": "politics",
+          "location": "藤原京",
+          "color": "#3a2a5a",
+          "characters": [
+            "c_fujiwara_no_fuhito"
+          ]
+        },
+        {
+          "id": "e_heijokyo_capital",
+          "year": 710,
+          "title": "平城京遷都",
+          "category": "politics",
+          "location": "平城京",
+          "color": "#5a4a12",
+          "characters": [
+            "c_genmei_tennou"
+          ]
+        },
+        {
+          "id": "e_kojiki_compiled",
+          "year": 712,
+          "title": "『古事記』、完成",
+          "category": "episode",
+          "location": "平城京",
+          "color": "#5a4a12",
+          "characters": [
+            "c_oo_no_yasumaro"
+          ]
+        },
+        {
+          "id": "e_nihonshoki_compiled",
+          "year": 720,
+          "title": "『日本書紀』、完成",
+          "category": "episode",
+          "location": "平城京",
+          "color": "#5a4a12",
+          "characters": [
+            "c_toneri_shinnou"
+          ]
+        },
+        {
+          "id": "e_fuhito_death",
+          "year": 720,
+          "title": "藤原不比等、死去",
+          "category": "death",
+          "location": "平城京",
+          "color": "#3a2a5a",
+          "characters": [
+            "c_fujiwara_no_fuhito"
+          ]
+        },
+        {
+          "id": "e_nagaya_incident",
+          "year": 729,
+          "title": "長屋王の変・自害に追い込まれる",
+          "category": "death",
+          "location": "平城京・左大臣邸",
+          "color": "#5a4a12",
+          "characters": [
+            "c_nagaya_ou",
+            "c_fujiwara_no_muchimaro"
+          ]
+        },
+        {
+          "id": "e_kibi_genbou_return",
+          "year": 735,
+          "title": "吉備真備・玄昉、唐から帰国",
+          "category": "episode",
+          "location": "平城京",
+          "color": "#5a4a12",
+          "characters": [
+            "c_kibi_no_makibi",
+            "c_genbou"
+          ]
+        },
+        {
+          "id": "e_tennentou_epidemic",
+          "year": 737,
+          "title": "天然痘の大流行・藤原四兄弟、相次いで病死",
+          "category": "death",
+          "location": "平城京",
+          "color": "#3a2a5a",
+          "characters": [
+            "c_fujiwara_no_muchimaro"
+          ]
+        },
+        {
+          "id": "e_tachibana_moroe_rise",
+          "year": 738,
+          "title": "橘諸兄、政権を握る",
+          "category": "politics",
+          "location": "平城京",
+          "color": "#7a4a1a",
+          "characters": [
+            "c_tachibana_no_moroe"
+          ]
+        },
+        {
+          "id": "e_hirotsugu_rebellion",
+          "year": 740,
+          "title": "藤原広嗣の乱",
+          "category": "battle",
+          "location": "大宰府（九州）",
+          "color": "#3a2a5a",
+          "characters": [
+            "c_fujiwara_no_hirotsugu"
+          ]
+        },
+        {
+          "id": "e_hirotsugu_death",
+          "year": 740,
+          "title": "藤原広嗣、討たれる",
+          "category": "death",
+          "location": "肥前・松浦",
+          "color": "#3a2a5a",
+          "characters": [
+            "c_fujiwara_no_hirotsugu"
+          ]
+        },
+        {
+          "id": "e_kuni_capital",
+          "year": 740,
+          "title": "恭仁京遷都",
+          "category": "episode",
+          "location": "恭仁京",
+          "color": "#5a4a12",
+          "characters": [
+            "c_shoumu_tennou"
+          ]
+        },
+        {
+          "id": "e_daibutsu_vow",
+          "year": 743,
+          "title": "大仏造立の詔",
+          "category": "politics",
+          "location": "紫香楽宮",
+          "color": "#5a4a12",
+          "characters": [
+            "c_shoumu_tennou"
+          ]
+        },
+        {
+          "id": "e_gyouki_mobilizes",
+          "year": 745,
+          "title": "行基、大仏造営に協力",
+          "category": "episode",
+          "location": "平城京",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_gyouki"
+          ]
+        },
+        {
+          "id": "e_heijokyo_return",
+          "year": 745,
+          "title": "平城京へ還都",
+          "category": "episode",
+          "location": "平城京",
+          "color": "#5a4a12",
+          "characters": [
+            "c_shoumu_tennou"
+          ]
+        },
+        {
+          "id": "e_daibutsu_kaigen",
+          "year": 752,
+          "title": "東大寺大仏、開眼供養",
+          "category": "episode",
+          "location": "東大寺",
+          "color": "#5a4a12",
+          "characters": [
+            "c_shoumu_tennou",
+            "c_roben",
+            "c_koumyou_kougou"
+          ]
+        },
+        {
+          "id": "e_kouken_enthronement",
+          "year": 749,
+          "title": "孝謙天皇、即位",
+          "category": "politics",
+          "location": "平城京",
+          "color": "#5a4a12",
+          "characters": [
+            "c_kouken_tennou",
+            "c_shoumu_tennou"
+          ]
+        },
+        {
+          "id": "e_naramaro_conspiracy",
+          "year": 757,
+          "title": "橘奈良麻呂の変",
+          "category": "politics",
+          "location": "平城京",
+          "color": "#7a4a1a",
+          "characters": [
+            "c_tachibana_no_naramaro",
+            "c_fujiwara_no_nakamaro"
+          ]
+        },
+        {
+          "id": "e_naramaro_death",
+          "year": 757,
+          "title": "橘奈良麻呂、獄死",
+          "category": "death",
+          "location": "平城京",
+          "color": "#7a4a1a",
+          "characters": [
+            "c_tachibana_no_naramaro"
+          ]
+        },
+        {
+          "id": "e_junnin_enthronement",
+          "year": 758,
+          "title": "淳仁天皇、即位・仲麻呂が恵美押勝の名を賜る",
+          "category": "politics",
+          "location": "平城京",
+          "color": "#5a4a12",
+          "characters": [
+            "c_junnin_tennou",
+            "c_fujiwara_no_nakamaro"
+          ]
+        },
+        {
+          "id": "e_emi_no_oshikatsu_rebellion",
+          "year": 764,
+          "title": "恵美押勝の乱",
+          "category": "battle",
+          "location": "近江",
+          "color": "#3a2a5a",
+          "characters": [
+            "c_fujiwara_no_nakamaro"
+          ]
+        },
+        {
+          "id": "e_nakamaro_death",
+          "year": 764,
+          "title": "藤原仲麻呂、敗死",
+          "category": "death",
+          "location": "近江・高島",
+          "color": "#3a2a5a",
+          "characters": [
+            "c_fujiwara_no_nakamaro"
+          ]
+        },
+        {
+          "id": "e_shoutoku_restoration",
+          "year": 764,
+          "title": "称徳天皇、重祚",
+          "category": "politics",
+          "location": "平城京",
+          "color": "#5a4a12",
+          "characters": [
+            "c_shoutoku_tennou",
+            "c_junnin_tennou"
+          ]
+        },
+        {
+          "id": "e_dokyo_rise",
+          "year": 766,
+          "title": "道鏡、法王となる",
+          "category": "politics",
+          "location": "平城京",
+          "color": "#5a1a2a",
+          "characters": [
+            "c_doukyou"
+          ]
+        },
+        {
+          "id": "e_usa_hachiman_oracle",
+          "year": 769,
+          "title": "宇佐八幡宮神託事件",
+          "category": "politics",
+          "location": "宇佐八幡宮（豊前）／平城京",
+          "color": "#5a1a2a",
+          "characters": [
+            "c_doukyou",
+            "c_wake_no_kiyomaro"
+          ]
+        },
+        {
+          "id": "e_kiyomaro_exile",
+          "year": 769,
+          "title": "和気清麻呂、左遷される",
+          "category": "episode",
+          "location": "大隅国",
+          "color": "#5a4a12",
+          "characters": [
+            "c_wake_no_kiyomaro"
+          ]
+        },
+        {
+          "id": "e_shoutoku_death",
+          "year": 770,
+          "title": "称徳天皇、崩御・道鏡失脚",
+          "category": "death",
+          "location": "平城京",
+          "color": "#5a4a12",
+          "characters": [
+            "c_shoutoku_tennou",
+            "c_doukyou"
+          ]
+        },
+        {
+          "id": "e_kammu_enthronement",
+          "year": 781,
+          "title": "桓武天皇、即位",
+          "category": "politics",
+          "location": "平城京",
+          "color": "#5a4a12",
+          "characters": [
+            "c_kammu_tennou",
+            "c_kounin_tennou"
+          ]
+        },
+        {
+          "id": "e_nagaokakyo_capital",
+          "year": 784,
+          "title": "長岡京遷都",
+          "category": "politics",
+          "location": "長岡京",
+          "color": "#5a4a12",
+          "characters": [
+            "c_kammu_tennou",
+            "c_fujiwara_no_tanetsugu"
+          ]
+        },
+        {
+          "id": "e_tanetsugu_assassination",
+          "year": 785,
+          "title": "藤原種継、暗殺される",
+          "category": "death",
+          "location": "長岡京",
+          "color": "#3a2a5a",
+          "characters": [
+            "c_fujiwara_no_tanetsugu"
+          ]
+        },
+        {
+          "id": "e_sawara_shinnou_death",
+          "year": 785,
+          "title": "早良親王、廃太子・憤死",
+          "category": "death",
+          "location": "淡路への配流の途上",
+          "color": "#5a4a12",
+          "characters": [
+            "c_sawara_shinnou"
+          ]
+        },
+        {
+          "id": "e_heiankyo_capital",
+          "year": 794,
+          "title": "平安京遷都",
+          "category": "politics",
+          "location": "平安京",
+          "color": "#5a4a12",
+          "characters": [
+            "c_kammu_tennou"
+          ]
+        },
+        {
+          "id": "e_korehari_rebellion",
+          "year": 780,
+          "title": "伊治呰麻呂の乱",
+          "category": "battle",
+          "location": "陸奥・伊治城",
+          "color": "#2a3a3a",
+          "characters": [
+            "c_korehari_no_azamaro"
+          ]
+        },
+        {
+          "id": "e_kosami_defeat",
+          "year": 789,
+          "title": "巣伏の戦い・紀古佐美、敗北",
+          "category": "battle",
+          "location": "陸奥・胆沢（巣伏）",
+          "color": "#5a4a12",
+          "characters": [
+            "c_ki_no_kosami",
+            "c_aterui"
+          ]
+        },
+        {
+          "id": "e_tamuramaro_seii_taishogun",
+          "year": 797,
+          "title": "坂上田村麻呂、征夷大将軍に任命",
+          "category": "politics",
+          "location": "平安京",
+          "color": "#5a4a12",
+          "characters": [
+            "c_sakanoue_no_tamuramaro"
+          ]
+        },
+        {
+          "id": "e_aterui_surrender",
+          "year": 802,
+          "title": "阿弖流爲・母礼、降伏",
+          "category": "politics",
+          "location": "陸奥・胆沢城",
+          "color": "#2a3a3a",
+          "characters": [
+            "c_aterui",
+            "c_more",
+            "c_sakanoue_no_tamuramaro"
+          ]
+        },
+        {
+          "id": "e_aterui_execution",
+          "year": 802,
+          "title": "阿弖流爲・母礼、処刑される",
+          "category": "death",
+          "location": "河内国・杜山",
+          "color": "#2a3a3a",
+          "characters": [
+            "c_aterui",
+            "c_more"
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_soga_no_iruka",
+          "name": "蘇我入鹿",
+          "reading": "そがのいるか",
+          "faction": "soga",
+          "field": "governance"
+        },
+        {
+          "id": "c_soga_no_emishi",
+          "name": "蘇我蝦夷",
+          "reading": "そがのえみし",
+          "faction": "soga",
+          "field": "governance"
+        },
+        {
+          "id": "c_naka_no_oe",
+          "name": "中大兄皇子（天智天皇）",
+          "reading": "なかのおおえのおうじ",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_nakatomi_no_kamatari",
+          "name": "中臣鎌足（藤原鎌足）",
+          "reading": "なかとみのかまたり",
+          "faction": "fujiwara",
+          "field": "governance"
+        },
+        {
+          "id": "c_koutoku_tennou",
+          "name": "孝徳天皇",
+          "reading": "こうとくてんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_temmu_tennou",
+          "name": "天武天皇（大海人皇子）",
+          "reading": "てんむてんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_koubun_tennou",
+          "name": "大友皇子（弘文天皇）",
+          "reading": "おおとものみこ",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_jitou_tennou",
+          "name": "持統天皇",
+          "reading": "じとうてんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_fujiwara_no_fuhito",
+          "name": "藤原不比等",
+          "reading": "ふじわらのふひと",
+          "faction": "fujiwara",
+          "field": "administration"
+        },
+        {
+          "id": "c_genmei_tennou",
+          "name": "元明天皇",
+          "reading": "げんめいてんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_nagaya_ou",
+          "name": "長屋王",
+          "reading": "ながやおう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_oo_no_yasumaro",
+          "name": "太安万侶",
+          "reading": "おおのやすまろ",
+          "faction": "court",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_toneri_shinnou",
+          "name": "舎人親王",
+          "reading": "とねりしんのう",
+          "faction": "court",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_fujiwara_no_muchimaro",
+          "name": "藤原武智麻呂",
+          "reading": "ふじわらのむちまろ",
+          "faction": "fujiwara",
+          "field": "governance"
+        },
+        {
+          "id": "c_tachibana_no_moroe",
+          "name": "橘諸兄",
+          "reading": "たちばなのもろえ",
+          "faction": "tachibana",
+          "field": "governance"
+        },
+        {
+          "id": "c_kibi_no_makibi",
+          "name": "吉備真備",
+          "reading": "きびのまきび",
+          "faction": "court",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_genbou",
+          "name": "玄昉",
+          "reading": "げんぼう",
+          "faction": "court",
+          "field": "thought"
+        },
+        {
+          "id": "c_fujiwara_no_hirotsugu",
+          "name": "藤原広嗣",
+          "reading": "ふじわらのひろつぐ",
+          "faction": "fujiwara",
+          "field": "military"
+        },
+        {
+          "id": "c_shoumu_tennou",
+          "name": "聖武天皇",
+          "reading": "しょうむてんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_koumyou_kougou",
+          "name": "光明皇后",
+          "reading": "こうみょうこうごう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_gyouki",
+          "name": "行基",
+          "reading": "ぎょうき",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_roben",
+          "name": "良弁",
+          "reading": "ろうべん",
+          "faction": "court",
+          "field": "thought"
+        },
+        {
+          "id": "c_kouken_tennou",
+          "name": "孝謙天皇",
+          "reading": "こうけんてんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_fujiwara_no_nakamaro",
+          "name": "藤原仲麻呂（恵美押勝）",
+          "reading": "ふじわらのなかまろ",
+          "faction": "fujiwara",
+          "field": "governance"
+        },
+        {
+          "id": "c_tachibana_no_naramaro",
+          "name": "橘奈良麻呂",
+          "reading": "たちばなのならまろ",
+          "faction": "tachibana",
+          "field": "governance"
+        },
+        {
+          "id": "c_junnin_tennou",
+          "name": "淳仁天皇",
+          "reading": "じゅんにんてんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_doukyou",
+          "name": "道鏡",
+          "reading": "どうきょう",
+          "faction": "dokyo",
+          "field": "governance"
+        },
+        {
+          "id": "c_shoutoku_tennou",
+          "name": "称徳天皇（孝謙天皇重祚）",
+          "reading": "しょうとくてんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_wake_no_kiyomaro",
+          "name": "和気清麻呂",
+          "reading": "わけのきよまろ",
+          "faction": "court",
+          "field": "administration"
+        },
+        {
+          "id": "c_kounin_tennou",
+          "name": "光仁天皇",
+          "reading": "こうにんてんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_kammu_tennou",
+          "name": "桓武天皇",
+          "reading": "かんむてんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_fujiwara_no_tanetsugu",
+          "name": "藤原種継",
+          "reading": "ふじわらのたねつぐ",
+          "faction": "fujiwara",
+          "field": "administration"
+        },
+        {
+          "id": "c_sawara_shinnou",
+          "name": "早良親王",
+          "reading": "さわらしんのう",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_korehari_no_azamaro",
+          "name": "伊治呰麻呂",
+          "reading": "これはりのあざまろ",
+          "faction": "emishi",
+          "field": "military"
+        },
+        {
+          "id": "c_ki_no_kosami",
+          "name": "紀古佐美",
+          "reading": "きのこさみ",
+          "faction": "court",
+          "field": "military"
+        },
+        {
+          "id": "c_aterui",
+          "name": "阿弖流爲",
+          "reading": "あてるい",
+          "faction": "emishi",
+          "field": "military"
+        },
+        {
+          "id": "c_more",
+          "name": "母礼",
+          "reading": "もれ",
+          "faction": "emishi",
+          "field": "military"
+        },
+        {
+          "id": "c_sakanoue_no_tamuramaro",
+          "name": "坂上田村麻呂",
+          "reading": "さかのうえのたむらまろ",
+          "faction": "court",
+          "field": "military"
+        }
+      ],
+      "factions": {
+        "soga": {
+          "id": "soga",
+          "name": "蘇我氏",
+          "color": "#2a4a2a",
+          "colorLight": "#6a9a5a"
+        },
+        "court": {
+          "id": "court",
+          "name": "朝廷",
+          "color": "#5a4a12",
+          "colorLight": "#b89a3a"
+        },
+        "fujiwara": {
+          "id": "fujiwara",
+          "name": "藤原氏",
+          "color": "#3a2a5a",
+          "colorLight": "#8a6ac4"
+        },
+        "tachibana": {
+          "id": "tachibana",
+          "name": "橘氏",
+          "color": "#7a4a1a",
+          "colorLight": "#c48a4a"
+        },
+        "dokyo": {
+          "id": "dokyo",
+          "name": "道鏡派",
+          "color": "#5a1a2a",
+          "colorLight": "#a04a5a"
+        },
+        "emishi": {
+          "id": "emishi",
+          "name": "蝦夷",
+          "color": "#2a3a3a",
+          "colorLight": "#5a8a8a"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#4a4a4a",
+          "colorLight": "#9a9a9a"
+        }
+      }
+    },
     "heian-court": {
       "events": [
         {
