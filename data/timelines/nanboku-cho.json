@@ -1,0 +1,882 @@
+{
+  "meta": {
+    "title": "南北朝の動乱 史実クロニクルタイムライン (1334年〜1392年)",
+    "description": "建武の新政の綻びから南北朝合体まで。中先代の乱、尊氏の離反と南北朝分裂、湊川の戦いによる楠木正成の討死、北畠顕家・新田義貞の相次ぐ戦死、室町幕府の成立、四条畷の戦い、足利兄弟の内訌（観応の擾乱）を経て、二つに割れた朝廷が足利義満のもとで一つに戻るまでの58年間をインタラクティブなタイムラインで体験。",
+    "headerIcon": "🎏",
+    "headerTitle": "南北朝の動乱",
+    "headerSubtitle": "1334年〜1392年",
+    "searchPlaceholder": "🔍 出来事・人物を検索…",
+    "mapTitleIcon": "🗾",
+    "mapTitleLabel": "勢力図",
+    "characterTitleLabel": "別名",
+    "descLabel": "📖 史実の記録",
+    "charDescLabel": "📖 人物伝",
+    "relatedCharsLabel": "👥 関連人物（クリックで詳細）",
+    "relatedEventsLabel": "📅 関連する出来事（クリックで詳細）",
+    "triviaLabel": "📜 補足・豆知識",
+    "layoutStyle": "rail",
+    "mapLayout": [
+      [null, "oshu", null],
+      ["yoshino", "kyoto", "kamakura"],
+      [null, "kawachi", null]
+    ]
+  },
+  "eraPhases": [
+    {
+      "id": 1,
+      "name": "第一章：建武の新政の綻びと中先代の乱",
+      "period": "1334 〜 1335",
+      "startYear": 1334,
+      "endYear": 1335
+    },
+    {
+      "id": 2,
+      "name": "第二章：尊氏の離反と南北朝分裂",
+      "period": "1335 〜 1336",
+      "startYear": 1335,
+      "endYear": 1336
+    },
+    {
+      "id": 3,
+      "name": "第三章：湊川の戦いと後醍醐の吉野遷幸",
+      "period": "1336",
+      "startYear": 1336,
+      "endYear": 1336
+    },
+    {
+      "id": 4,
+      "name": "第四章：北畠顕家・新田義貞の相次ぐ討死",
+      "period": "1337 〜 1338",
+      "startYear": 1337,
+      "endYear": 1338
+    },
+    {
+      "id": 5,
+      "name": "第五章：室町幕府の成立と後醍醐の崩御",
+      "period": "1338 〜 1339",
+      "startYear": 1338,
+      "endYear": 1339
+    },
+    {
+      "id": 6,
+      "name": "第六章：四条畷の戦いと南朝の劣勢",
+      "period": "1347 〜 1348",
+      "startYear": 1347,
+      "endYear": 1348
+    },
+    {
+      "id": 7,
+      "name": "第七章：観応の擾乱",
+      "period": "1349 〜 1352",
+      "startYear": 1349,
+      "endYear": 1352
+    },
+    {
+      "id": 8,
+      "name": "第八章：南朝の衰退と南北朝合体",
+      "period": "1358 〜 1392",
+      "startYear": 1358,
+      "endYear": 1392
+    }
+  ],
+  "factions": {
+    "ashikaga": {
+      "id": "ashikaga",
+      "name": "足利・室町幕府",
+      "color": "#6a4a1a",
+      "colorLight": "#c99a3a"
+    },
+    "hokucho": {
+      "id": "hokucho",
+      "name": "北朝",
+      "color": "#3a4a6a",
+      "colorLight": "#7a9ad0"
+    },
+    "nancho": {
+      "id": "nancho",
+      "name": "南朝",
+      "color": "#4a2a5a",
+      "colorLight": "#9a6ac4"
+    },
+    "kusunoki": {
+      "id": "kusunoki",
+      "name": "楠木氏",
+      "color": "#3a4a1a",
+      "colorLight": "#7a9a3a"
+    },
+    "nitta": {
+      "id": "nitta",
+      "name": "新田氏",
+      "color": "#1a4a4a",
+      "colorLight": "#4a8a8a"
+    },
+    "kitabatake": {
+      "id": "kitabatake",
+      "name": "北畠氏",
+      "color": "#5a2a1a",
+      "colorLight": "#a8603a"
+    },
+    "ko": {
+      "id": "ko",
+      "name": "高氏",
+      "color": "#4a4a2a",
+      "colorLight": "#8a8a4a"
+    },
+    "hojo_remnant": {
+      "id": "hojo_remnant",
+      "name": "北条残党",
+      "color": "#5a1a2a",
+      "colorLight": "#a8455a"
+    },
+    "other": {
+      "id": "other",
+      "name": "その他",
+      "color": "#4a4a4a",
+      "colorLight": "#9a9a9a"
+    }
+  },
+  "categories": {
+    "battle": { "id": "battle", "name": "合戦", "icon": "⚔️" },
+    "politics": { "id": "politics", "name": "政変", "icon": "👑" },
+    "episode": { "id": "episode", "name": "逸話", "icon": "📜" },
+    "death": { "id": "death", "name": "死没", "icon": "💀" }
+  },
+  "characters": [
+    {
+      "id": "c_godaigo",
+      "name": "後醍醐天皇",
+      "reading": "ごだいごてんのう",
+      "faction": "nancho",
+      "role": "南朝初代天皇",
+      "life": "1288-1339",
+      "field": "governance",
+      "description": "鎌倉幕府を倒し建武の新政を開始するが、公家偏重の統治は武士の不満を招き足利尊氏の離反を許した。三種の神器を持って吉野へ逃れ南朝を樹立、京都の北朝と並び立つ異常事態を作り出した張本人でありながら、その死まで京都奪還への執念を捨てなかった。詳細は前史にあたる『元寇と鎌倉幕府の滅亡』タイムラインを参照。"
+    },
+    {
+      "id": "c_gomurakami",
+      "name": "後村上天皇",
+      "reading": "ごむらかみてんのう",
+      "faction": "nancho",
+      "role": "南朝第2代天皇",
+      "life": "1328-1368",
+      "field": "governance",
+      "description": "後醍醐天皇の子で、父の崩御後に南朝を継いだ。観応の擾乱では一時的に足利直義と結んで京都を奪還する好機を得るが、直義の死後まもなく撃退され、以後は劣勢の南朝を支え続けた。"
+    },
+    {
+      "id": "c_gokameyama",
+      "name": "後亀山天皇",
+      "reading": "ごかめやまてんのう",
+      "faction": "nancho",
+      "role": "南朝最後の天皇",
+      "life": "?-1424",
+      "field": "governance",
+      "description": "衰退しきった南朝最後の天皇。足利義満の仲介による明徳の和約に応じ、三種の神器を北朝の後小松天皇に譲って南北朝合体を実現させた。"
+    },
+    {
+      "id": "c_kogon",
+      "name": "光厳上皇",
+      "reading": "こうごんじょうこう",
+      "faction": "hokucho",
+      "role": "北朝の中心人物",
+      "life": "1313-1364",
+      "field": "governance",
+      "description": "鎌倉幕府滅亡直前に即位した先帝で、建武の新政では廃位されていた。京都に戻った尊氏に擁され北朝樹立の院宣を与え、以後も北朝の精神的支柱であり続けた。"
+    },
+    {
+      "id": "c_komyo",
+      "name": "光明天皇",
+      "reading": "こうみょうてんのう",
+      "faction": "hokucho",
+      "role": "北朝初代天皇",
+      "life": "1322-1380",
+      "field": "governance",
+      "description": "光厳上皇の弟で、尊氏によって擁立された北朝最初の天皇。この即位により後醍醐の吉野遷幸と合わせて、京都と吉野に二人の天皇が並び立つ南北朝の分裂が確定した。"
+    },
+    {
+      "id": "c_gokomatsu",
+      "name": "後小松天皇",
+      "reading": "ごこまつてんのう",
+      "faction": "hokucho",
+      "role": "北朝第6代天皇／南北朝合体時の天皇",
+      "life": "1377-1433",
+      "field": "governance",
+      "description": "義満の主導した明徳の和約により、後亀山天皇から三種の神器を譲り受け、南北朝合体後は唯一の天皇として全国の統治を象徴する存在となった。"
+    },
+    {
+      "id": "c_ashikaga_takauji",
+      "name": "足利尊氏",
+      "reading": "あしかがたかうじ",
+      "faction": "ashikaga",
+      "role": "室町幕府初代将軍",
+      "life": "1305-1358",
+      "field": "military",
+      "description": "鎌倉幕府打倒の立役者だったが、恩賞への不満から建武の新政に反旗を翻し、後醍醐天皇と対立した。湊川で楠木正成を、その後も新田義貞・北畠顕家を退けて京都を確保し、北朝を擁立して室町幕府を開いた。晩年は弟・直義との骨肉の争い（観応の擾乱）にも見舞われた。詳細は前史にあたる『元寇と鎌倉幕府の滅亡』タイムラインを参照。"
+    },
+    {
+      "id": "c_ashikaga_tadayoshi",
+      "name": "足利直義",
+      "reading": "あしかがただよし",
+      "faction": "ashikaga",
+      "role": "尊氏の弟／室町幕府の実質的な政務統括者",
+      "life": "1306-1352",
+      "field": "governance",
+      "description": "兄・尊氏が軍事を、直義が政務を担う分業体制で室町幕府創設を支えた。しかし実力で台頭した執事・高師直と幕政の主導権を巡り激しく対立（観応の擾乱）、一時は南朝に降ってまで師直打倒を果たすが、最終的には兄に追い詰められ鎌倉で急死した。"
+    },
+    {
+      "id": "c_ashikaga_yoshiakira",
+      "name": "足利義詮",
+      "reading": "あしかがよしあきら",
+      "faction": "ashikaga",
+      "role": "室町幕府二代将軍",
+      "life": "1330-1367",
+      "field": "governance",
+      "description": "尊氏の子で二代将軍。観応の擾乱の混乱を引き継ぎながらも幕府権力の安定化に努め、幼い子・義満への継承の基盤を整えた。"
+    },
+    {
+      "id": "c_ashikaga_yoshimitsu",
+      "name": "足利義満",
+      "reading": "あしかがよしみつ",
+      "faction": "ashikaga",
+      "role": "室町幕府三代将軍",
+      "life": "1358-1408",
+      "field": "governance",
+      "description": "わずか10歳で三代将軍となるが、管領・細川頼之らの補佐のもと着実に幕府権力を強化した。長年分裂していた南北朝を、南朝の後亀山天皇に神器の譲渡を働きかける形で合体させ、60年近く続いた異常事態に終止符を打った。"
+    },
+    {
+      "id": "c_ko_no_moronao",
+      "name": "高師直",
+      "reading": "こうのもろなお",
+      "faction": "ko",
+      "role": "足利尊氏の執事",
+      "life": "?-1351",
+      "field": "military",
+      "description": "尊氏の執事として実務・軍事の両面で幕府を支え、四条畷の戦いでは楠木正行を討ち取るなど数々の戦功を挙げた。実力を背景に台頭したことで直義派と激しく対立（観応の擾乱）、一時は直義を失脚させるが、直義派との和睦の道中で殺害された。"
+    },
+    {
+      "id": "c_ko_no_moroyasu",
+      "name": "高師泰",
+      "reading": "こうのもろやす",
+      "faction": "ko",
+      "role": "師直の兄弟",
+      "life": "?-1351",
+      "field": "military",
+      "description": "師直と共に幕府軍の主力を率いた武将で、石津の戦いでは北畠顕家を討ち取った。観応の擾乱では師直と行動を共にし、共に討たれた。"
+    },
+    {
+      "id": "c_kusunoki_masashige",
+      "name": "楠木正成",
+      "reading": "くすのきまさしげ",
+      "faction": "kusunoki",
+      "role": "河内の武将",
+      "life": "?-1336",
+      "field": "military",
+      "description": "後醍醐天皇に最後まで忠義を尽くした武将。京都放棄とゲリラ戦を献策するが公家たちに退けられ、望みなき湊川の決戦を命じられた。圧倒的劣勢の中、弟・正季と刺し違えて自害し、「七生報国」の言葉を残したと伝わる。後世、忠臣の鑑として長く語り継がれた。詳細は前史にあたる『元寇と鎌倉幕府の滅亡』タイムラインを参照。"
+    },
+    {
+      "id": "c_kusunoki_masatsura",
+      "name": "楠木正行",
+      "reading": "くすのきまさつら",
+      "faction": "kusunoki",
+      "role": "正成の子",
+      "life": "1326-1348",
+      "field": "military",
+      "description": "父・正成の遺志を継ぎ、南朝方の軍事的支柱として各地で幕府軍を破った。しかし高師直率いる幕府の大軍を前に四条畷で敗れ、弟・正時と刺し違えて討死した。"
+    },
+    {
+      "id": "c_kusunoki_masanori",
+      "name": "楠木正儀",
+      "reading": "くすのきまさのり",
+      "faction": "kusunoki",
+      "role": "正行の弟",
+      "life": "?-1390?",
+      "field": "military",
+      "description": "兄・正行の討死後に楠木氏の家督を継ぎ、長らく南朝軍事の中心を担った。しかし度重なる抗争に疲弊し南朝内の主戦派とも対立、ついに幕府方に帰順した。「忠臣の家」楠木氏の当主による離反は南朝の権威を大きく揺るがせた。"
+    },
+    {
+      "id": "c_nitta_yoshisada",
+      "name": "新田義貞",
+      "reading": "にったよしさだ",
+      "faction": "nitta",
+      "role": "上野の御家人",
+      "life": "1301-1338",
+      "field": "military",
+      "description": "鎌倉幕府を滅ぼした功臣で、後醍醐方の総大将として尊氏追討を担った。箱根・竹ノ下で尊氏に敗れるなど苦戦を重ね、越前で幕府方と戦う中、小勢での偵察中に不意の遭遇戦となり討死した。詳細は前史にあたる『元寇と鎌倉幕府の滅亡』タイムラインを参照。"
+    },
+    {
+      "id": "c_kitabatake_chikafusa",
+      "name": "北畠親房",
+      "reading": "きたばたけちかふさ",
+      "faction": "kitabatake",
+      "role": "南朝の重臣",
+      "life": "1293-1354",
+      "field": "thought",
+      "description": "南朝の重臣で、子・顕家と共に南朝を軍事・思想の両面から支えた。常陸で著した『神皇正統記』は、南朝の皇位継承の正統性を歴史的に論証する書として、後世まで大きな影響力を持ち続けた。"
+    },
+    {
+      "id": "c_kitabatake_akiie",
+      "name": "北畠顕家",
+      "reading": "きたばたけあきいえ",
+      "faction": "kitabatake",
+      "role": "親房の子／陸奥守",
+      "life": "1318-1338",
+      "field": "military",
+      "description": "若くして陸奥守として奥州に赴任し、その統率力で東北の武士団をまとめ上げた。京都を占領した尊氏を奥州からの怒涛の進軍で敗走させる大功を立てるが、二度目の西上では各地で消耗し、和泉石津で高師泰らに敗れ21歳で討死した。"
+    },
+    {
+      "id": "c_hojo_tokiyuki",
+      "name": "北条時行",
+      "reading": "ほうじょうときゆき",
+      "faction": "hojo_remnant",
+      "role": "高時の子",
+      "life": "?-1353",
+      "field": "military",
+      "description": "鎌倉幕府最後の得宗・北条高時の遺児。信濃で挙兵して一時鎌倉を奪還した（中先代の乱）が、尊氏の反撃を受けて敗走。以後も南朝方について幕府への抵抗を続けたが、最終的に捕らえられ処刑された。"
+    },
+    {
+      "id": "c_ashikaga_tadafuyu",
+      "name": "足利直冬",
+      "reading": "あしかがただふゆ",
+      "faction": "ko",
+      "role": "尊氏の庶子／直義の養子",
+      "life": "1327-1400?",
+      "field": "military",
+      "description": "尊氏の庶子でありながら実父に認知されず、伯父・直義の養子となった複雑な出自を持つ。観応の擾乱では養父・直義派の旗頭として九州で勢力を広げ、実父・尊氏と敵対するという骨肉の争いを体現する存在となった。"
+    },
+    {
+      "id": "c_sasaki_doyo",
+      "name": "佐々木道誉（京極高氏）",
+      "reading": "ささきどうよ",
+      "faction": "ashikaga",
+      "role": "近江の守護／ばさら大名",
+      "life": "1296-1373",
+      "field": "military",
+      "description": "派手な振る舞いと巧みな政治感覚で知られた「婆娑羅大名」の代表格。幕府内の激しい権力闘争を巧みに泳ぎ渡り、常に勝者の側にあり続けた、この時代の武士の新しい気風を象徴する人物。"
+    },
+    {
+      "id": "c_yamana_tokiuji",
+      "name": "山名時氏",
+      "reading": "やまなときうじ",
+      "faction": "other",
+      "role": "有力守護",
+      "life": "1303-1371",
+      "field": "military",
+      "description": "観応の擾乱では直義派として戦うが、直義没落後は一時南朝に転じ、最終的には幕府に帰参して山名氏の勢力を拡大させた。この時代を象徴する「去就定まらぬ」有力武将の一人。"
+    },
+    {
+      "id": "c_momonoi_tadatsune",
+      "name": "桃井直常",
+      "reading": "もものいただつね",
+      "faction": "other",
+      "role": "直義派の武将",
+      "life": "?-1376?",
+      "field": "military",
+      "description": "直義派の有力武将で、直義の死後も屈することなく越中を拠点に幕府への抵抗を長く続けた、直義派の中でも最も頑強な残存勢力であった。"
+    },
+    {
+      "id": "c_akamatsu_norisuke",
+      "name": "赤松則祐",
+      "reading": "あかまつのりすけ",
+      "faction": "ashikaga",
+      "role": "播磨の守護",
+      "life": "1311-1372",
+      "field": "military",
+      "description": "討幕で活躍した赤松則村（円心）の子。観応の擾乱では終始尊氏方として戦い、播磨をはじめとする所領を拡大させて赤松氏繁栄の基礎を築いた。"
+    },
+    {
+      "id": "c_nijo_yoshimoto",
+      "name": "二条良基",
+      "reading": "にじょうよしもと",
+      "faction": "hokucho",
+      "role": "公家の重鎮",
+      "life": "1320-1388",
+      "field": "administration",
+      "description": "北朝・室町幕府を通じて公家社会の重鎮であり続けた摂関家出身の公卿。若き義満に朝廷の作法や有職故実を教え、武家と公家の融合という室町文化の方向性を築く上で大きな役割を果たした。"
+    },
+    {
+      "id": "c_chigusa_tadaaki",
+      "name": "千種忠顕",
+      "reading": "ちぐさただあき",
+      "faction": "nancho",
+      "role": "後醍醐天皇の側近",
+      "life": "?-1336",
+      "field": "administration",
+      "description": "隠岐配流にも同行した後醍醐の忠臣。尊氏の京都奪還戦の中で防戦にあたるが、戦死した。"
+    }
+  ],
+  "events": [
+    {
+      "id": "e_kenmu_dissatisfaction",
+      "phaseId": 1,
+      "year": 1334,
+      "title": "建武新政の恩賞不公平、武士の不満高まる",
+      "category": "politics",
+      "characters": ["c_godaigo"],
+      "location": "京都",
+      "description": "後醍醐天皇による親政は公家を優遇し倒幕に功のあった武士への恩賞は乏しく、各地で不満が噴出した。京都の二条河原には政道を風刺する落書が掲げられ、新政への失望が広がっていく。"
+    },
+    {
+      "id": "e_nakasendai_no_ran",
+      "phaseId": 1,
+      "year": 1335,
+      "title": "中先代の乱",
+      "category": "battle",
+      "characters": ["c_hojo_tokiyuki", "c_ashikaga_tadayoshi"],
+      "location": "鎌倉",
+      "description": "鎌倉幕府最後の得宗・北条高時の遺児である時行が信濃で挙兵し、鎌倉を守っていた足利直義を破って一時的に鎌倉を奪還した。直義は成良親王を奉じて三河まで敗走した。"
+    },
+    {
+      "id": "e_takauji_east",
+      "phaseId": 1,
+      "year": 1335,
+      "title": "尊氏、鎮圧のため東下・独断で恩賞を与える",
+      "category": "politics",
+      "characters": ["c_ashikaga_takauji"],
+      "location": "鎌倉",
+      "description": "尊氏は後醍醐の許可を待たず東下して時行を破り鎌倉を奪還した。しかしそのまま鎌倉に留まり、従軍した武士たちに朝廷の裁可を得ぬまま独断で恩賞を与え始め、事実上の造反状態に入った。"
+    },
+    {
+      "id": "e_yoshisada_pursuit_order",
+      "phaseId": 2,
+      "year": 1335,
+      "title": "新田義貞の尊氏追討令",
+      "category": "politics",
+      "characters": ["c_nitta_yoshisada", "c_godaigo"],
+      "location": "京都",
+      "description": "独断専行を続ける尊氏に対し、後醍醐天皇は追討を命じ、宿敵ともいえる新田義貞を総大将とする討伐軍を派遣した。"
+    },
+    {
+      "id": "e_hakone_takenoshita",
+      "phaseId": 2,
+      "year": 1335,
+      "title": "箱根・竹ノ下の戦い",
+      "category": "battle",
+      "characters": ["c_ashikaga_takauji", "c_nitta_yoshisada"],
+      "location": "箱根・竹ノ下",
+      "description": "箱根周辺で激突した両軍は、新田方の武将の寝返りもあって足利方が勝利した。義貞は敗走し、勢いに乗った尊氏は京へ向け進撃を開始する。"
+    },
+    {
+      "id": "e_takauji_kyoto_repulsed",
+      "phaseId": 2,
+      "year": 1336,
+      "title": "尊氏、京都占領も北畠顕家軍に敗走",
+      "category": "battle",
+      "characters": ["c_ashikaga_takauji", "c_kitabatake_akiie", "c_nitta_yoshisada", "c_kusunoki_masashige"],
+      "location": "京都",
+      "description": "一時京都を占領した尊氏だったが、奥州から怒涛の勢いで駆けつけた北畠顕家の軍勢が新田・楠木軍と合流して反撃、尊氏は挟撃されて大敗し九州へ落ち延びた。"
+    },
+    {
+      "id": "e_takauji_kyushu_regroup",
+      "phaseId": 2,
+      "year": 1336,
+      "title": "尊氏、九州で勢力を立て直す",
+      "category": "politics",
+      "characters": ["c_ashikaga_takauji"],
+      "location": "九州",
+      "description": "少弐氏らの支援を受けて九州で勢力を回復した尊氏は、光厳上皇から「朝敵」の汚名を晴らす院宣を得た。これにより大義名分を整え、再び東上を開始する。"
+    },
+    {
+      "id": "e_masashige_proposal_rejected",
+      "phaseId": 3,
+      "year": 1336,
+      "title": "楠木正成、湊川で献策するも容れられず",
+      "category": "episode",
+      "characters": ["c_kusunoki_masashige", "c_nitta_yoshisada"],
+      "location": "京都",
+      "description": "再び迫る尊氏に対し、正成は京都を放棄していったん比叡山へ退き、ゲリラ戦で敵を疲弊させる策を献策した。しかし公家たちはこれを臆病と退け、勝ち目のない正面決戦を命じた。"
+    },
+    {
+      "id": "e_minatogawa_death",
+      "phaseId": 3,
+      "year": 1336,
+      "title": "湊川の戦い・楠木正成討死",
+      "category": "death",
+      "characters": ["c_kusunoki_masashige", "c_ashikaga_takauji", "c_ashikaga_tadayoshi"],
+      "location": "摂津・湊川",
+      "description": "圧倒的劣勢の中、正成は半日にわたり奮戦するが力尽き、弟・正季と「七生報国」（七度生まれ変わっても朝敵を滅ぼす）と誓い合い刺し違えて自害したと伝わる。"
+    },
+    {
+      "id": "e_godaigo_yoshino",
+      "phaseId": 3,
+      "year": 1336,
+      "title": "後醍醐天皇、吉野へ遷幸・南北朝分裂",
+      "category": "politics",
+      "characters": ["c_godaigo", "c_komyo"],
+      "location": "京都 → 吉野",
+      "description": "京都を制圧した尊氏は光明天皇を擁立して北朝を樹立した。後醍醐はこれを認めず三種の神器を持って吉野へ逃れ独自の朝廷（南朝）を維持し続け、ここに一つの国に二人の天皇が並び立つ異常事態が始まった。"
+    },
+    {
+      "id": "e_kenmu_shikimoku",
+      "phaseId": 3,
+      "year": 1336,
+      "title": "建武式目の制定",
+      "category": "politics",
+      "characters": ["c_ashikaga_takauji"],
+      "location": "京都",
+      "description": "尊氏は新たな武家政権の基本方針17条からなる「建武式目」を制定した。まだ将軍宣下は受けていないものの、これが室町幕府の実質的な出発点となった。"
+    },
+    {
+      "id": "e_chigusa_death",
+      "phaseId": 3,
+      "year": 1336,
+      "title": "千種忠顕、討死",
+      "category": "death",
+      "characters": ["c_chigusa_tadaaki"],
+      "location": "京都",
+      "description": "隠岐配流にも同行した後醍醐の忠臣・千種忠顕が、尊氏の京都奪還戦の中で防戦の末に戦死した。"
+    },
+    {
+      "id": "e_akiie_second_march",
+      "phaseId": 4,
+      "year": 1337,
+      "title": "北畠顕家、再び奥州から西上",
+      "category": "politics",
+      "characters": ["c_kitabatake_akiie", "c_kitabatake_chikafusa"],
+      "location": "陸奥 → 京都",
+      "description": "顕家は父・親房の支援を受け、再び大軍を率いて奥州を発った。しかし初回のような勢いはなく、行く先々で幕府方の抵抗を受け軍勢を消耗させていく。"
+    },
+    {
+      "id": "e_ishizu_akiie_death",
+      "phaseId": 4,
+      "year": 1338,
+      "title": "石津の戦い・北畠顕家討死",
+      "category": "death",
+      "characters": ["c_kitabatake_akiie", "c_ko_no_moroyasu"],
+      "location": "和泉・石津",
+      "description": "消耗しきった顕家軍は高師泰らの幕府軍に和泉石津で行く手を阻まれ壊滅、顕家自身も討死した。享年21。奥州からの再度の快進撃を期待されていた南朝にとって大きな痛手となった。"
+    },
+    {
+      "id": "e_fujishima_yoshisada_death",
+      "phaseId": 4,
+      "year": 1338,
+      "title": "藤島の戦い・新田義貞討死",
+      "category": "death",
+      "characters": ["c_nitta_yoshisada"],
+      "location": "越前・藤島",
+      "description": "越前で幕府方との一進一退の攻防を続けていた義貞は、わずかな手勢で偵察中に不意の遭遇戦となり、抵抗むなしく討死した。北畠顕家に続き、南朝は軍事の柱をまたも失った。"
+    },
+    {
+      "id": "e_takauji_seii_taishogun",
+      "phaseId": 5,
+      "year": 1338,
+      "title": "尊氏、征夷大将軍就任",
+      "category": "politics",
+      "characters": ["c_ashikaga_takauji"],
+      "location": "京都",
+      "description": "北畠顕家・新田義貞という南朝方の二枚看板を相次いで討ち取った直後、尊氏は光明天皇より征夷大将軍に任じられた。ここに室町幕府が正式に成立した。"
+    },
+    {
+      "id": "e_godaigo_death",
+      "phaseId": 5,
+      "year": 1339,
+      "title": "後醍醐天皇、崩御",
+      "category": "death",
+      "characters": ["c_godaigo", "c_gomurakami"],
+      "location": "吉野",
+      "description": "「玉体は南山の苔に埋むるとも、魂魄は常に北闕の天を望まん」と京都奪還への執念を言い残し、後醍醐天皇は吉野で崩御した。子の後村上天皇が跡を継ぎ、劣勢の南朝を支えていくことになる。"
+    },
+    {
+      "id": "e_jinno_shotoki",
+      "phaseId": 5,
+      "year": 1339,
+      "title": "北畠親房、『神皇正統記』を著す",
+      "category": "episode",
+      "characters": ["c_kitabatake_chikafusa"],
+      "location": "常陸",
+      "description": "子・顕家を失いながらも東国で抵抗を続けた親房は、常陸の拠点で南朝の皇位継承の正統性を歴史的に論証する『神皇正統記』を著した。以後の南朝を思想面で支える重要な書となった。"
+    },
+    {
+      "id": "e_masatsura_uprising",
+      "phaseId": 6,
+      "year": 1347,
+      "title": "楠木正行、河内で挙兵",
+      "category": "battle",
+      "characters": ["c_kusunoki_masatsura"],
+      "location": "河内",
+      "description": "父・正成の遺志を継いだ正行が河内で挙兵し、幕府方の軍勢を各地で打ち破って南朝方に一時の勢いをもたらした。"
+    },
+    {
+      "id": "e_shijonawate_death",
+      "phaseId": 6,
+      "year": 1348,
+      "title": "四条畷の戦い・楠木正行討死",
+      "category": "death",
+      "characters": ["c_kusunoki_masatsura", "c_ko_no_moronao"],
+      "location": "河内・四条畷",
+      "description": "高師直率いる幕府の大軍を前に、正行は弟・正時と刺し違えて討死した。南朝は軍事の柱を完全に失い、追撃する幕府軍によって吉野の行宮も焼き払われた。"
+    },
+    {
+      "id": "e_masanori_succession",
+      "phaseId": 6,
+      "year": 1348,
+      "title": "楠木正儀、家督を継ぐ",
+      "category": "politics",
+      "characters": ["c_kusunoki_masanori"],
+      "location": "河内",
+      "description": "正行の弟・正儀が楠木氏の家督を継いだ。以後、長きにわたり南朝軍事の実質的な中心を一手に担うことになる。"
+    },
+    {
+      "id": "e_ko_tadayoshi_conflict",
+      "phaseId": 7,
+      "year": 1349,
+      "title": "高師直と足利直義の対立、激化",
+      "category": "politics",
+      "characters": ["c_ko_no_moronao", "c_ashikaga_tadayoshi"],
+      "location": "京都",
+      "description": "幕府創設以来の重鎮である直義と、実力で台頭した執事・師直の間で、幕政の主導権をめぐる対立が抜き差しならないものとなっていった。"
+    },
+    {
+      "id": "e_tadafuyu_rise",
+      "phaseId": 7,
+      "year": 1349,
+      "title": "足利直冬、直義の養子として台頭",
+      "category": "politics",
+      "characters": ["c_ashikaga_tadafuyu", "c_ashikaga_tadayoshi"],
+      "location": "京都・九州",
+      "description": "尊氏の庶子でありながら実父に認知されず直義の養子となっていた直冬が、直義派の旗頭として九州で急速に勢力を広げ、実の父と敵対するという骨肉の構図が生まれた。"
+    },
+    {
+      "id": "e_tadayoshi_joins_nancho",
+      "phaseId": 7,
+      "year": 1351,
+      "title": "直義、南朝に降り挙兵",
+      "category": "politics",
+      "characters": ["c_ashikaga_tadayoshi", "c_gomurakami"],
+      "location": "京都",
+      "description": "師直に一時失脚させられた直義は出奔し、あろうことか宿敵であったはずの南朝に降って尊氏・師直に対する挙兵を呼びかけた。この時代の対立構図の複雑さを象徴する出来事である。"
+    },
+    {
+      "id": "e_ko_brothers_death",
+      "phaseId": 7,
+      "year": 1351,
+      "title": "高師直・師泰、討たれる",
+      "category": "death",
+      "characters": ["c_ko_no_moronao", "c_ko_no_moroyasu", "c_ashikaga_tadayoshi"],
+      "location": "摂津",
+      "description": "直義の反攻を受けた尊氏はいったん和睦を選ぶが、その和睦条件に基づき出家させられ護送されていた師直・師泰兄弟は、道中で直義派の武士に襲撃され殺害された。"
+    },
+    {
+      "id": "e_shohei_ittoo",
+      "phaseId": 7,
+      "year": 1351,
+      "title": "正平一統・南北朝の一時的合体",
+      "category": "politics",
+      "characters": ["c_gomurakami", "c_ashikaga_takauji"],
+      "location": "京都",
+      "description": "直義討伐を優先したい尊氏は、一時的に南朝と講和し北朝の天皇号・年号を廃するという「正平一統」に応じた。しかし直義の死後まもなくこの講和は破綻し、北朝が復活する。"
+    },
+    {
+      "id": "e_tadayoshi_death",
+      "phaseId": 7,
+      "year": 1352,
+      "title": "足利直義、鎌倉で急死",
+      "category": "death",
+      "characters": ["c_ashikaga_tadayoshi", "c_ashikaga_takauji"],
+      "location": "鎌倉",
+      "description": "尊氏に追い詰められ鎌倉に逃れていた直義が急死した。死因は病とされるが、時期的な符合から兄・尊氏による毒殺説が古くから根強く伝わっている。"
+    },
+    {
+      "id": "e_akamatsu_norisuke_kanno",
+      "phaseId": 7,
+      "year": 1351,
+      "title": "赤松則祐、観応の擾乱で幕府方として活躍",
+      "category": "battle",
+      "characters": ["c_akamatsu_norisuke"],
+      "location": "播磨",
+      "description": "討幕の功臣・赤松則村の子である則祐は、観応の擾乱を通じて終始尊氏方として戦い、播磨をはじめとする所領を拡大させて後の赤松氏繁栄の基礎を築いた。"
+    },
+    {
+      "id": "e_sasaki_doyo_survival",
+      "phaseId": 7,
+      "year": 1352,
+      "title": "婆娑羅大名・佐々木道誉の処世術",
+      "category": "episode",
+      "characters": ["c_sasaki_doyo"],
+      "location": "京都・近江",
+      "description": "派手な振る舞いで知られる「婆娑羅大名」佐々木道誉は、尊氏・直義の対立という激しい政局の中でも常に勝者の側につき続け、権謀術数を駆使してこの動乱の時代を生き抜いた。"
+    },
+    {
+      "id": "e_yamana_shifting_allegiance",
+      "phaseId": 7,
+      "year": 1352,
+      "title": "山名時氏、直義派から南朝、そして幕府へ",
+      "category": "episode",
+      "characters": ["c_yamana_tokiuji"],
+      "location": "山陰",
+      "description": "直義派として戦った山名時氏は、直義没落後は一時南朝方に転じるが、最終的には幕府に帰参して山名氏の勢力を大きく拡大させた。この時代を象徴する「去就定まらぬ」有力武将の一人。"
+    },
+    {
+      "id": "e_takauji_death",
+      "phaseId": 8,
+      "year": 1358,
+      "title": "足利尊氏、死去",
+      "category": "death",
+      "characters": ["c_ashikaga_takauji", "c_ashikaga_yoshiakira"],
+      "location": "京都",
+      "description": "南朝との戦いと弟との骨肉の争いという二重の動乱を乗り越え、室町幕府を軌道に乗せた尊氏が54歳で没した。子の義詮が二代将軍を継いだ。"
+    },
+    {
+      "id": "e_momonoi_resistance",
+      "phaseId": 8,
+      "year": 1360,
+      "title": "桃井直常、抵抗を続ける",
+      "category": "episode",
+      "characters": ["c_momonoi_tadatsune"],
+      "location": "越中",
+      "description": "直義派の有力武将であった桃井直常は、直義の死後も屈することなく越中を拠点に幕府への抵抗を長く続けた、直義派の中でも最も頑強な残存勢力であった。"
+    },
+    {
+      "id": "e_masanori_peace_talks",
+      "phaseId": 8,
+      "year": 1366,
+      "title": "楠木正儀、幕府と和睦交渉",
+      "category": "politics",
+      "characters": ["c_kusunoki_masanori"],
+      "location": "河内",
+      "description": "長年の抗争に疲弊した正儀は、南朝内の主戦派と対立しながらも幕府との和平を模索し続けた。この現実路線が、後の南朝内での孤立を招いていく。"
+    },
+    {
+      "id": "e_yoshimitsu_shogun",
+      "phaseId": 8,
+      "year": 1368,
+      "title": "足利義満、三代将軍就任",
+      "category": "politics",
+      "characters": ["c_ashikaga_yoshimitsu", "c_ashikaga_yoshiakira"],
+      "location": "京都",
+      "description": "父・義詮の死により、わずか10歳で三代将軍となった。管領・細川頼之らの補佐のもと、以後幕府権力は着実に強化されていく。"
+    },
+    {
+      "id": "e_masanori_defection",
+      "phaseId": 8,
+      "year": 1368,
+      "title": "楠木正儀、幕府に帰順",
+      "category": "politics",
+      "characters": ["c_kusunoki_masanori"],
+      "location": "河内",
+      "description": "南朝内で孤立を深めた正儀はついに幕府方に降った。「忠臣の家」楠木氏の当主による離反は、南朝の権威と結束を大きく揺るがせた。"
+    },
+    {
+      "id": "e_nijo_yoshimoto_tutor",
+      "phaseId": 8,
+      "year": 1375,
+      "title": "二条良基、義満を教導",
+      "category": "episode",
+      "characters": ["c_nijo_yoshimoto", "c_ashikaga_yoshimitsu"],
+      "location": "京都",
+      "description": "公家社会の重鎮・二条良基は若き義満に朝廷の作法や有職故実を教え込み、武家と公家の文化が融合していく室町文化の方向性を築く上で大きな役割を果たした。"
+    },
+    {
+      "id": "e_nancho_decline",
+      "phaseId": 8,
+      "year": 1370,
+      "title": "南朝勢力、各地で衰退",
+      "category": "politics",
+      "characters": ["c_gokameyama"],
+      "location": "吉野",
+      "description": "有力武将の相次ぐ離反と死去により、南朝の勢力基盤は年を追うごとに縮小していった。もはや幕府に軍事的に対抗する力は失われつつあった。"
+    },
+    {
+      "id": "e_meitoku_no_wayaku",
+      "phaseId": 8,
+      "year": 1392,
+      "title": "明徳の和約・南北朝合体",
+      "category": "politics",
+      "characters": ["c_ashikaga_yoshimitsu", "c_gokameyama", "c_gokomatsu"],
+      "location": "京都",
+      "description": "義満の仲介により、南朝の後亀山天皇が三種の神器を北朝の後小松天皇に譲る形で合一が実現した。1336年の分裂から56年、後醍醐の崩御から53年を経て、二つに割れていた朝廷はここに一つに戻った。"
+    }
+  ],
+  "mapSnapshots": [
+    {
+      "year": 1334,
+      "label": "建武の新政",
+      "territories": {
+        "oshu": { "name": "奥州", "faction": "nancho", "lord": "北畠顕家（陸奥守）" },
+        "yoshino": { "name": "吉野", "faction": "other", "lord": "（まだ行宮なし）" },
+        "kyoto": { "name": "京", "faction": "nancho", "lord": "後醍醐天皇" },
+        "kamakura": { "name": "鎌倉", "faction": "other", "lord": "足利直義（成良親王を奉じる）" },
+        "kawachi": { "name": "河内", "faction": "nancho", "lord": "楠木正成" }
+      }
+    },
+    {
+      "year": 1336,
+      "label": "南北朝分裂",
+      "territories": {
+        "oshu": { "name": "奥州", "faction": "nancho", "lord": "北畠顕家" },
+        "yoshino": { "name": "吉野", "faction": "nancho", "lord": "後醍醐天皇（南朝樹立）" },
+        "kyoto": { "name": "京", "faction": "hokucho", "lord": "光明天皇（尊氏が擁立）" },
+        "kamakura": { "name": "鎌倉", "faction": "ashikaga", "lord": "足利氏" },
+        "kawachi": { "name": "河内", "faction": "nancho", "lord": "楠木正成（湊川で戦死直後）" }
+      }
+    },
+    {
+      "year": 1338,
+      "label": "顕家・義貞討死後",
+      "territories": {
+        "oshu": { "name": "奥州", "faction": "ashikaga", "lord": "北畠顕家、石津で戦死" },
+        "yoshino": { "name": "吉野", "faction": "nancho", "lord": "後醍醐天皇" },
+        "kyoto": { "name": "京", "faction": "hokucho", "lord": "光明天皇" },
+        "kamakura": { "name": "鎌倉", "faction": "ashikaga", "lord": "足利氏" },
+        "kawachi": { "name": "河内", "faction": "nancho", "lord": "楠木正行（正成の子）" }
+      }
+    },
+    {
+      "year": 1352,
+      "label": "観応の擾乱後",
+      "territories": {
+        "oshu": { "name": "奥州", "faction": "ashikaga", "lord": "足利氏" },
+        "yoshino": { "name": "吉野", "faction": "nancho", "lord": "後村上天皇" },
+        "kyoto": { "name": "京", "faction": "ashikaga", "lord": "足利尊氏（直義死去）" },
+        "kamakura": { "name": "鎌倉", "faction": "ashikaga", "lord": "足利氏" },
+        "kawachi": { "name": "河内", "faction": "nancho", "lord": "楠木正儀" }
+      }
+    },
+    {
+      "year": 1392,
+      "label": "明徳の和約・南北朝合体",
+      "territories": {
+        "oshu": { "name": "奥州", "faction": "ashikaga", "lord": "足利氏" },
+        "yoshino": { "name": "吉野", "faction": "ashikaga", "lord": "南朝、後小松天皇のもとに合流" },
+        "kyoto": { "name": "京", "faction": "ashikaga", "lord": "足利義満" },
+        "kamakura": { "name": "鎌倉", "faction": "ashikaga", "lord": "足利氏（鎌倉府）" },
+        "kawachi": { "name": "河内", "faction": "ashikaga", "lord": "楠木氏（幕府に帰順済み）" }
+      }
+    }
+  ],
+  "wikiLinks": {
+    "characters": {
+      "c_godaigo": "後醍醐天皇",
+      "c_gomurakami": "後村上天皇",
+      "c_gokameyama": "後亀山天皇",
+      "c_kogon": "光厳天皇",
+      "c_komyo": "光明天皇",
+      "c_gokomatsu": "後小松天皇",
+      "c_ashikaga_takauji": "足利尊氏",
+      "c_ashikaga_tadayoshi": "足利直義",
+      "c_ashikaga_yoshiakira": "足利義詮",
+      "c_ashikaga_yoshimitsu": "足利義満",
+      "c_ko_no_moronao": "高師直",
+      "c_ko_no_moroyasu": "高師泰",
+      "c_kusunoki_masashige": "楠木正成",
+      "c_kusunoki_masatsura": "楠木正行",
+      "c_kusunoki_masanori": "楠木正儀",
+      "c_nitta_yoshisada": "新田義貞",
+      "c_kitabatake_chikafusa": "北畠親房",
+      "c_kitabatake_akiie": "北畠顕家",
+      "c_hojo_tokiyuki": "北条時行",
+      "c_ashikaga_tadafuyu": "足利直冬",
+      "c_sasaki_doyo": "佐々木道誉",
+      "c_yamana_tokiuji": "山名時氏"
+    },
+    "events": {
+      "e_nakasendai_no_ran": "中先代の乱",
+      "e_hakone_takenoshita": "箱根・竹ノ下の戦い",
+      "e_minatogawa_death": "湊川の戦い",
+      "e_godaigo_yoshino": "南北朝時代",
+      "e_ishizu_akiie_death": "石津の戦い",
+      "e_fujishima_yoshisada_death": "藤島の戦い",
+      "e_shijonawate_death": "四条畷の戦い",
+      "e_shohei_ittoo": "正平一統",
+      "e_meitoku_no_wayaku": "明徳の和約"
+    }
+  }
+}

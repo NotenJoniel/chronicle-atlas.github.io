@@ -64,6 +64,15 @@
       "subProjectDir": "mongol-invasion-japan"
     },
     {
+      "id": "nanboku-cho",
+      "name": "南北朝の動乱",
+      "region": "japan",
+      "startYear": 1334,
+      "endYear": 1392,
+      "dataFile": "timelines/nanboku-cho.json",
+      "subProjectDir": "nanboku-cho"
+    },
+    {
       "id": "sengoku-japan",
       "name": "日本の戦国時代",
       "region": "japan",
