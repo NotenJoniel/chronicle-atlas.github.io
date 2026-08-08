@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "エーゲ文明 史実クロニクルタイムライン (BC3200年頃〜BC800年頃)",
+    "description": "キクラデス文明の成立から、クレタ島のミノア文明の宮殿時代、ミュケナイを中心とするミケーネ文明の興隆、そして東地中海の同時崩壊と暗黒時代を経てギリシア文字が成立するまで。ポリス以前、ギリシア世界最初期の考古学的な物語をインタラクティブなタイムラインで体験。",
+    "headerIcon": "🏺",
+    "headerTitle": "エーゲ文明",
+    "headerSubtitle": "BC3200年頃〜BC800年頃",
+    "searchPlaceholder": "🔍 出来事・人物を検索…",
+    "mapTitleIcon": "🗺️",
+    "mapTitleLabel": "勢力図",
+    "characterTitleLabel": "別名",
+    "descLabel": "概要",
+    "charDescLabel": "人物紹介",
+    "relatedCharsLabel": "関連人物",
+    "relatedEventsLabel": "関連する出来事",
+    "triviaLabel": "📖 エピソード",
+    "layoutStyle": "flat",
+    "mapLayout": [
+      [null, "troy", null],
+      ["mainland", "cyclades", "ionia"],
+      [null, "crete", null]
+    ]
+  },
+  "eraPhases": [
+    { "id": 1, "name": "第一章：エーゲ海の黎明", "period": "BC3200年頃 〜 BC2000年頃", "startYear": -3200, "endYear": -2000 },
+    { "id": 2, "name": "第二章：ミノア文明の宮殿時代", "period": "BC2000年頃 〜 BC1450年頃", "startYear": -2000, "endYear": -1450 },
+    { "id": 3, "name": "第三章：ミケーネ文明の時代", "period": "BC1600年頃 〜 BC1200年頃", "startYear": -1600, "endYear": -1200 },
+    { "id": 4, "name": "第四章：崩壊と暗黒時代", "period": "BC1200年頃 〜 BC800年頃", "startYear": -1200, "endYear": -800 }
+  ],
+  "factions": {
+    "minoan": { "id": "minoan", "name": "ミノア文明（クレタ）", "color": "#1a5a7a", "colorLight": "#4a94b8" },
+    "mycenaean": { "id": "mycenaean", "name": "ミケーネ文明", "color": "#7a4a1a", "colorLight": "#b8823a" },
+    "cycladic": { "id": "cycladic", "name": "キクラデス文明", "color": "#6a7a8a", "colorLight": "#a0b0c0" },
+    "troy": { "id": "troy", "name": "トロイア", "color": "#7a2a1a", "colorLight": "#b8583a" },
+    "hittite": { "id": "hittite", "name": "ヒッタイト", "color": "#3a4a5a", "colorLight": "#6a8299" },
+    "egypt": { "id": "egypt", "name": "エジプト", "color": "#8a6a1a", "colorLight": "#c4a53a" },
+    "dorian": { "id": "dorian", "name": "ドーリア人", "color": "#4a4a3a", "colorLight": "#8a8a6a" },
+    "ionia": { "id": "ionia", "name": "イオニア諸市", "color": "#3a6a6a", "colorLight": "#6aa0a0" },
+    "other": { "id": "other", "name": "その他", "color": "#4a4a4a", "colorLight": "#9a9a9a" }
+  },
+  "categories": {
+    "battle": { "id": "battle", "name": "合戦", "icon": "⚔️" },
+    "politics": { "id": "politics", "name": "政変", "icon": "👑" },
+    "episode": { "id": "episode", "name": "逸話", "icon": "📜" },
+    "death": { "id": "death", "name": "死没", "icon": "💀" }
+  },
+  "characters": [
+    { "id": "c_minos", "name": "ミノス", "reading": "ミノス", "faction": "minoan", "role": "伝承上のクレタ王", "life": "伝承上の人物", "field": "governance", "description": "ゼウスとエウロペの子とされ、クノッソスに宮殿を構えたと伝わる伝説上のクレタ王。学術用語「ミノア文明」自体が彼の名にちなむが、これはあくまで20世紀初頭の発掘者アーサー・エヴァンズによる命名であり、ミノスという人物の実在を裏づける同時代の史料は存在しない。" },
+    { "id": "c_agamemnon", "name": "アガメムノン", "reading": "アガメムノン", "faction": "mycenaean", "role": "伝承上のミュケナイ王・トロイア遠征のギリシア軍総大将", "life": "伝承上の人物", "field": "governance", "description": "ホメロスの叙事詩において、ギリシア諸都市の連合軍を率いてトロイアを攻めたミュケナイ王として描かれる。実在を示す同時代史料はなく、後述する「アガメムノンの黄金マスク」も後世の考古学者による推定上の命名にすぎない。" }
+  ],
+  "events": [
+    { "id": "e_cycladic_civilization", "phaseId": 1, "year": -3200, "title": "キクラデス文明の成立", "category": "episode", "characters": [], "location": "キクラデス諸島", "certainty": "approximate", "description": "エーゲ海中央部の島々で、大理石を薄く削って作られた抽象的な人物像（キクラデス・フィギュア）を特徴とする文化が興った。黒曜石など島ごとに異なる資源を扱う初期の島嶼間交易網が、この時代からすでに機能していたと考えられている。" },
+    { "id": "e_minoan_early_period", "phaseId": 1, "year": -3000, "title": "クレタ島で前期ミノア期が始まる", "category": "episode", "characters": [], "location": "クレタ島", "certainty": "approximate", "description": "クレタ島で後にミノア文明と呼ばれる文化の最初期段階が始まった。この段階ではまだ宮殿のような大規模建造物はなく、小規模な集落が営まれていたにすぎない。" },
+    { "id": "e_troy_ii", "phaseId": 1, "year": -2800, "title": "トロイア第2市の繁栄", "category": "episode", "characters": [], "location": "トロイア（ヒサルルク）", "certainty": "approximate", "description": "小アジア北西部、ヒサルルクの丘に築かれたトロイア遺跡の第2市が繁栄した。", "historyTrivia": "19世紀にこの遺跡を発掘したシュリーマンは、この層から出土した黄金の副葬品を、ホメロスが描くトロイア戦争の王プリアモスの財宝と誤認して発表した。実際にはこの層はホメロスが想定する戦争の年代（後期青銅器時代）よりはるかに古く、千年以上のずれがある。" },
+    { "id": "e_bronze_age_spread", "phaseId": 1, "year": -2500, "title": "エーゲ海における青銅器の本格的普及", "category": "episode", "characters": [], "location": "エーゲ海一帯", "certainty": "approximate", "description": "銅と錫の合金である青銅の利用がエーゲ海の島々と沿岸部一帯に広がった。武器・道具の性能向上に加え、原料の錫を遠方から確保する必要から、より広域的な交易網の発達を促した。" },
+    { "id": "e_early_helladic_collapse", "phaseId": 1, "year": -2200, "title": "ギリシア本土の初期ヘラディック文明が断絶", "category": "episode", "characters": [], "location": "ギリシア本土", "certainty": "approximate", "description": "ギリシア本土で栄えていた初期ヘラディック文明の集落の多くが、この頃を境に焼失・放棄された。原因については、インド・ヨーロッパ語族系の新たな集団の到来説をはじめ複数の仮説が唱えられているが、確定した説明はない。" },
+    { "id": "e_first_palaces", "phaseId": 2, "year": -1900, "title": "クノッソス、ファイストス、マリアに第一次宮殿が建設される", "category": "politics", "characters": ["c_minos"], "location": "クレタ島（クノッソス・ファイストス・マリア）", "certainty": "approximate", "description": "クレタ島の複数の拠点に、複雑な部屋の集合体からなる大規模な「宮殿」が建設された。最大のクノッソス宮殿は、伝承上のクレタ王ミノスの名にちなんで後に「ミノア文明」と呼ばれる文化の中心地となる。" },
+    { "id": "e_linear_a", "phaseId": 2, "year": -1800, "title": "線文字Aの使用開始（未解読）", "category": "episode", "characters": [], "location": "クレタ島", "certainty": "approximate", "description": "宮殿の行政記録を残すための文字体系、線文字Aの使用が始まった。粘土板に刻まれた多数の文書が出土しているが、後の線文字Bとは異なり現在も解読されておらず、記された言語の系統も判明していない。" },
+    { "id": "e_first_palaces_collapse_rebuild", "phaseId": 2, "year": -1700, "title": "地震により第一次宮殿群が崩壊、第二次宮殿が再建される", "category": "episode", "characters": [], "location": "クレタ島", "certainty": "approximate", "description": "地震とみられる災害によってクレタ島の第一次宮殿群が大きく損壊した。しかしミノア文明の勢力はほどなく回復し、同じ場所により壮麗な第二次宮殿群が再建された。" },
+    { "id": "e_akrotiri_flourish", "phaseId": 2, "year": -1650, "title": "アクロティリ（テラ島）の繁栄", "category": "episode", "characters": [], "location": "テラ島（サントリーニ）", "certainty": "approximate", "description": "キクラデス諸島南端のテラ島に築かれた都市アクロティリが繁栄した。「船団のフレスコ画」に代表される精緻な壁画群からは、ミノア文明の強い影響を受けつつも独自性を保った海洋都市の姿がうかがえる。" },
+    { "id": "e_thera_eruption", "phaseId": 2, "year": -1628, "title": "テラ島（サントリーニ）の大噴火", "category": "episode", "characters": [], "location": "テラ島（サントリーニ）", "certainty": "disputed", "description": "テラ島で歴史上最大級の火山噴火が起こり、アクロティリの都市は火山灰の下に埋没した（住民は事前に避難していたとみられ、犠牲者の遺骸はほとんど見つかっていない）。噴火の年代については、放射性炭素年代測定が前17世紀を示す一方、エジプト・近東の考古学的編年に基づく従来説は前16世紀を支持しており、両説が対立したまま決着していない。" },
+    { "id": "e_minoan_trade_peak", "phaseId": 2, "year": -1600, "title": "ミノアの海上交易網が最盛期に達する", "category": "episode", "characters": ["c_minos"], "location": "地中海東部", "certainty": "approximate", "description": "ミノア文明の海上交易網はこの頃に最盛期を迎え、エジプトをはじめ東地中海の各地と活発に交易した。エジプト新王国の貴族の墓室壁画には、独特の衣装をまとった使者が貢物を捧げる様子が「ケフティウ」（クレタを指すとされる）として描かれている。" },
+    { "id": "e_cretan_palaces_destroyed", "phaseId": 2, "year": -1450, "title": "クレタ島の宮殿群が破壊され、クノッソスのみ存続", "category": "battle", "characters": [], "location": "クレタ島", "certainty": "approximate", "description": "クノッソス以外のクレタ島の宮殿群がほぼ同時に破壊され、放棄された。クノッソスのみが存続したが、この時期を境に線文字の記録言語がギリシア語（後の線文字B）に変わっており、ギリシア本土から進出したミケーネ人がクレタ島の支配権を握ったと考えられている。" },
+    { "id": "e_mycenae_shaft_graves", "phaseId": 3, "year": -1600, "title": "ミュケナイに竪穴式墓群が造営される", "category": "episode", "characters": ["c_agamemnon"], "location": "ミュケナイ", "certainty": "approximate", "description": "ギリシア本土のミュケナイで、支配者層のための竪穴式墓群が築かれた。金の副葬品が豊富に納められており、中でも黄金の仮面はシュリーマンによって発掘され「アガメムノンの黄金マスク」と名付けられたが、年代を調べるとホメロスの伝えるトロイア戦争より数百年古く、アガメムノン本人とは無関係である。" },
+    { "id": "e_mycenaean_citadels", "phaseId": 3, "year": -1500, "title": "ミケーネ人がギリシア本土に城塞王宮を築く", "category": "politics", "characters": [], "location": "ミュケナイ・ティリンス・ピュロス", "certainty": "approximate", "description": "ギリシア本土各地で、巨石を積み上げた城壁を備える城塞王宮が築かれ始めた。ミュケナイ、ティリンス、ピュロスをはじめとする複数の中心地がそれぞれ独自の王権のもとで並立する、ミケーネ文明の政治構造が形成されていった。" },
+    { "id": "e_linear_b_knossos", "phaseId": 3, "year": -1450, "title": "クノッソスでの線文字Bの使用", "category": "episode", "characters": [], "location": "クノッソス", "certainty": "approximate", "description": "クレタ島を掌握したミケーネ人は、線文字Aを土台としつつ独自の文字体系である線文字Bをクノッソスで用い始めた。", "historyTrivia": "線文字Bは1952年、建築家出身の言語学者マイケル・ヴェントリスによって解読され、記された言語がギリシア語であることが判明した。これによりミケーネ文明の担い手がギリシア語を話す集団であったことが初めて文字史料で確認された。" },
+    { "id": "e_tholos_tombs", "phaseId": 3, "year": -1400, "title": "円形墓（トロス墓）の造営、アトレウスの宝庫", "category": "episode", "characters": [], "location": "ミュケナイ", "certainty": "approximate", "description": "ミケーネ諸王権の各地で、蜂の巣状の石積み天井を持つ円形墓（トロス墓）が築かれるようになった。中でもミュケナイの「アトレウスの宝庫」は最大規模を誇り、後世に伝説上の王アトレウス（アガメムノンの父）の名で呼ばれるようになったが、実際の被葬者は不明である。" },
+    { "id": "e_ahhiyawa", "phaseId": 3, "year": -1350, "title": "ヒッタイト文書に「アヒヤワ」の記述", "category": "episode", "characters": [], "location": "小アジア", "certainty": "approximate", "description": "小アジアを支配したヒッタイト帝国の外交文書に、「アヒヤワ」と呼ばれる海の向こうの強国がたびたび言及されるようになった。多くの研究者はこれをミケーネ系の勢力を指すとみなしており、もしそうであれば、ミケーネ文明が同時代の大国から独立した外交主体として認識されていたことを示す貴重な証言となる。" },
+    { "id": "e_lion_gate", "phaseId": 3, "year": -1250, "title": "ミュケナイの獅子門が建造される", "category": "episode", "characters": [], "location": "ミュケナイ", "certainty": "approximate", "description": "ミュケナイの城塞に、二頭の獅子を浮き彫りにした巨大な門（獅子門）が築かれた。ミケーネ文明の権力と技術力を象徴する記念建造物であり、ミケーネ諸王権が最盛期を迎えていたことを物語る。" },
+    { "id": "e_trojan_war", "phaseId": 3, "year": -1250, "title": "トロイア戦争（伝承）", "category": "battle", "characters": ["c_agamemnon"], "location": "トロイア（ヒサルルク）", "certainty": "disputed", "description": "ホメロスの叙事詩は、ミュケナイ王アガメムノンを総大将とするギリシア諸都市の連合軍が、10年にわたりトロイアを攻囲した末に陥落させたと伝える。ヒサルルクの遺跡にはこの頃に相当する破壊層（トロイア第7a市）が実際に存在するが、その破壊がホメロスの描く戦争そのものに対応するかどうかは考古学的に証明されておらず、あくまで伝承と物証の年代が重なるという状況証拠にとどまる。" },
+    { "id": "e_pylos_coastal_watch", "phaseId": 3, "year": -1200, "title": "ピュロス宮殿の線文字B文書に沿岸警備の記録", "category": "episode", "characters": [], "location": "ピュロス", "certainty": "approximate", "description": "ピュロスの宮殿跡から出土した線文字B粘土板には、海岸線に配置された監視部隊の編成が記録されている。滅亡直前の緊迫した情勢の中で作成されたとみられ、迫りくる危機への備えを物語る同時代文書として注目される。" },
+    { "id": "e_bronze_age_collapse", "phaseId": 4, "year": -1200, "title": "東地中海の同時崩壊", "category": "battle", "characters": [], "location": "東地中海一帯", "certainty": "approximate", "description": "前1200年頃を境に、ミュケナイ、ティリンス、ピュロスをはじめとするミケーネ文明の宮殿群がほぼ同時に炎上・放棄された。同じ頃、エジプトは「海の民」と呼ばれる集団の侵攻を受け、ヒッタイト帝国は滅亡しており、東地中海全域を巻き込んだ複合的な危機であったと考えられている。単独の原因では説明しきれず、気候変動・飢饉・内乱・交易網の途絶などが連鎖したとする説が有力である。" },
+    { "id": "e_linear_b_lost", "phaseId": 4, "year": -1150, "title": "線文字Bの使用が途絶える", "category": "episode", "characters": [], "location": "ギリシア本土・クレタ島", "certainty": "approximate", "description": "宮殿群の崩壊とともに、行政記録を担っていた線文字Bの使用も完全に途絶えた。文字を記す必要そのものを生み出していた宮殿官僚機構が消滅した結果であり、以後ギリシア世界は文字を持たない約350年間に入る。" },
+    { "id": "e_dorian_invasion", "phaseId": 4, "year": -1100, "title": "ドーリア人の南下（伝承）", "category": "battle", "characters": [], "location": "ギリシア本土（ペロポネソス半島ほか）", "certainty": "disputed", "description": "古代ギリシアの伝承は、北方からドーリア人と呼ばれる集団が南下してペロポネソス半島などを征服し、ミケーネ文明の残存勢力を駆逐したと語る。", "historyTrivia": "「ヘラクレスの子孫の帰還」として語られるこの伝承は長く史実として扱われてきたが、この時期の考古学的な物質文化には征服を裏づけるような明確な断絶が見出しにくく、近年は大規模な軍事侵攻というより、既存の住民構成の緩やかな変化や自称の変化を反映した伝承ではないかとする懐疑的な見方も有力になっている。" },
+    { "id": "e_ionian_migration", "phaseId": 4, "year": -1050, "title": "イオニア人の小アジア西岸への移住", "category": "politics", "characters": [], "location": "小アジア西岸", "certainty": "approximate", "description": "暗黒時代の混乱の中、ギリシア語を話す人々の一部が小アジア（現在のトルコ）の西岸に移住し、定住を始めた。この移住者たちの子孫が築いた都市群が、後にミレトス・エフェソスをはじめとする「イオニア諸市」と呼ばれる地域として発展していく。伝承ではこの地の出身とされる詩人ホメロスも、後の世代に連なる。" },
+    { "id": "e_iron_age_begins", "phaseId": 4, "year": -1050, "title": "鉄器の普及が始まる", "category": "episode", "characters": [], "location": "ギリシア世界各地", "certainty": "approximate", "description": "青銅に代わり、より安価で広く産出する鉄を用いた道具・武器が普及し始めた。青銅の生産に不可欠だった錫の遠距離交易網が崩壊の混乱で途絶えたことも、鉄器への移行を後押しした一因とみられる。" },
+    { "id": "e_protogeometric_pottery", "phaseId": 4, "year": -1000, "title": "原幾何学様式土器の成立", "category": "episode", "characters": [], "location": "アテナイほか", "certainty": "approximate", "description": "コンパスを用いた同心円文様を特徴とする原幾何学様式の土器がアテナイを中心に成立した。ミケーネ時代の具象的な図柄から抽象的な幾何学文様への移行は、暗黒時代のギリシア世界に新たな美意識が芽生え始めたことを示している。" },
+    { "id": "e_geometric_pottery", "phaseId": 4, "year": -900, "title": "幾何学様式土器へ移行、レフカンディの「英雄の墓」", "category": "episode", "characters": [], "location": "エウボイア島レフカンディほか", "certainty": "approximate", "description": "原幾何学様式はより複雑な文様を持つ幾何学様式へと発展した。この頃エウボイア島のレフカンディに築かれた巨大な建物（「英雄の墓」と呼ばれる）には、火葬された男性と副葬品を伴う女性の遺骸が納められており、暗黒時代とされる時期にも突出した富と権力を持つ有力者が存在したことを物語る。" },
+    { "id": "e_polis_formation_begins", "phaseId": 4, "year": -850, "title": "集落の再組織化が進み、ポリス形成の萌芽", "category": "politics", "characters": [], "location": "ギリシア各地", "certainty": "approximate", "description": "各地の集落で人口が緩やかに増加し、共同の祭祀や防衛を軸とした再組織化が進み始めた。後にポリス（都市国家）と呼ばれる政治単位が形成されていく、その最初期の兆しがこの頃に現れる。" },
+    { "id": "e_greek_alphabet", "phaseId": 4, "year": -800, "title": "フェニキア文字を改良したギリシア文字の成立", "category": "episode", "characters": [], "location": "ギリシア各地", "certainty": "approximate", "description": "地中海交易で活躍したフェニキア人の表音文字体系を借用・改良し、母音を独立した文字として表記するギリシア文字が成立した。線文字Bの喪失以来約350年途絶えていた文字の使用がここに再開される。数世代のうちに、ホメロスに帰せられる叙事詩の口承伝統もこの文字によって書き留められていくことになる。" }
+  ],
+  "mapSnapshots": [
+    { "year": -3200, "label": "キクラデス文明の成立", "territories": {
+      "troy": { "name": "トロイア", "faction": "other", "lord": "初期集落" },
+      "mainland": { "name": "ギリシア本土", "faction": "other", "lord": "初期集落" },
+      "cyclades": { "name": "キクラデス諸島", "faction": "cycladic", "lord": "キクラデス文明（島嶼間交易）" },
+      "ionia": { "name": "小アジア西岸", "faction": "other", "lord": "未着任（イオニア成立前）" },
+      "crete": { "name": "クレタ島", "faction": "other", "lord": "初期集落" }
+    } },
+    { "year": -1900, "label": "ミノア第一次宮殿の建設", "territories": {
+      "troy": { "name": "トロイア", "faction": "troy", "lord": "トロイア（交易拠点）" },
+      "mainland": { "name": "ギリシア本土", "faction": "other", "lord": "初期ヘラディック後の再編期" },
+      "cyclades": { "name": "キクラデス諸島", "faction": "cycladic", "lord": "キクラデス文明（ミノアの影響拡大）" },
+      "ionia": { "name": "小アジア西岸", "faction": "other", "lord": "未着任（イオニア成立前）" },
+      "crete": { "name": "クレタ島", "faction": "minoan", "lord": "クノッソス・ファイストス・マリア（第一次宮殿群）" }
+    } },
+    { "year": -1450, "label": "ミケーネ人によるクレタ制圧", "territories": {
+      "troy": { "name": "トロイア", "faction": "troy", "lord": "トロイア（交易の要衝）" },
+      "mainland": { "name": "ギリシア本土", "faction": "mycenaean", "lord": "ミケーネ諸王権（最盛期へ）" },
+      "cyclades": { "name": "キクラデス諸島", "faction": "cycladic", "lord": "キクラデス（ミケーネの影響下）" },
+      "ionia": { "name": "小アジア西岸", "faction": "other", "lord": "未着任（イオニア成立前）" },
+      "crete": { "name": "クレタ島", "faction": "mycenaean", "lord": "クノッソス（ミケーネ人の支配下）" }
+    } },
+    { "year": -1250, "label": "ミケーネ文明の最盛期", "territories": {
+      "troy": { "name": "トロイア", "faction": "troy", "lord": "トロイア（伝承の攻囲戦前夜）" },
+      "mainland": { "name": "ギリシア本土", "faction": "mycenaean", "lord": "ミュケナイ・ティリンス・ピュロス（獅子門の時代）" },
+      "cyclades": { "name": "キクラデス諸島", "faction": "mycenaean", "lord": "キクラデス（ミケーネの交易網）" },
+      "ionia": { "name": "小アジア西岸", "faction": "other", "lord": "未着任（イオニア成立前）" },
+      "crete": { "name": "クレタ島", "faction": "mycenaean", "lord": "クノッソス（ミケーネの一部）" }
+    } },
+    { "year": -1200, "label": "青銅器時代の崩壊 — 東地中海の同時崩壊", "territories": {
+      "troy": { "name": "トロイア", "faction": "other", "lord": "破壊層（伝承のトロイア戦争と同時期）" },
+      "mainland": { "name": "ギリシア本土", "faction": "other", "lord": "宮殿群、炎上・放棄" },
+      "cyclades": { "name": "キクラデス諸島", "faction": "other", "lord": "交易網の途絶" },
+      "ionia": { "name": "小アジア西岸", "faction": "other", "lord": "未着任（イオニア成立前）" },
+      "crete": { "name": "クレタ島", "faction": "other", "lord": "クノッソス、衰退" }
+    } },
+    { "year": -1050, "label": "ドーリア人の南下とイオニア人の移住（伝承）", "territories": {
+      "troy": { "name": "トロイア", "faction": "other", "lord": "小規模再建" },
+      "mainland": { "name": "ギリシア本土", "faction": "dorian", "lord": "ドーリア人系（伝承）／旧ミケーネ系が混在" },
+      "cyclades": { "name": "キクラデス諸島", "faction": "other", "lord": "小規模集落の時代" },
+      "ionia": { "name": "小アジア西岸", "faction": "ionia", "lord": "イオニア人、定住開始" },
+      "crete": { "name": "クレタ島", "faction": "other", "lord": "小規模集落の時代" }
+    } },
+    { "year": -800, "label": "ギリシア文字の成立 — 「古代ギリシア」へ", "territories": {
+      "troy": { "name": "トロイア", "faction": "other", "lord": "小規模集落" },
+      "mainland": { "name": "ギリシア本土", "faction": "other", "lord": "集落の再組織化、ポリス形成の萌芽" },
+      "cyclades": { "name": "キクラデス諸島", "faction": "other", "lord": "交易の再興" },
+      "ionia": { "name": "小アジア西岸", "faction": "ionia", "lord": "イオニア諸市の萌芽（ミレトス・エフェソスの起源）" },
+      "crete": { "name": "クレタ島", "faction": "other", "lord": "小規模集落" }
+    } }
+  ],
+  "wikiLinks": {
+    "characters": {
+      "c_minos": "ミノス",
+      "c_agamemnon": "アガメムノン"
+    },
+    "events": {
+      "e_thera_eruption": "ミノア噴火",
+      "e_trojan_war": "トロイア戦争",
+      "e_linear_b_knossos": "線文字B",
+      "e_dorian_invasion": "ドーリア人",
+      "e_bronze_age_collapse": "後期青銅器時代の崩壊"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+/* エーゲ文明 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#0a1218;--surface:#12202a;--surface-2:#1a2c38;--surface-3:#243c4a;
+  --border-subtle:rgba(120,180,190,.12);--text:#e2ecec;--text-dim:#8fa8a8;
+  --gold:#4a94b8;--gold-dim:rgba(74,148,184,.18);
+}
