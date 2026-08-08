@@ -73,6 +73,15 @@
       "subProjectDir": "three-kingdoms"
     },
     {
+      "id": "sui-tang",
+      "name": "隋唐帝国",
+      "region": "china",
+      "startYear": 581,
+      "endYear": 907,
+      "dataFile": "timelines/sui-tang.json",
+      "subProjectDir": "sui-tang"
+    },
+    {
       "id": "wakoku",
       "name": "邪馬台国と倭の五王",
       "region": "japan",

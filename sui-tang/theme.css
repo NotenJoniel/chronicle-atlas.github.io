@@ -1,0 +1,6 @@
+/* 隋唐帝国 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#140a0a;--surface:#1f1210;--surface-2:#2a1815;--surface-3:#38201c;
+  --border-subtle:rgba(216,90,90,.14);--text:#ece3da;--text-dim:#a8927f;
+  --gold:#d85a5a;--gold-dim:rgba(216,90,90,.2);
+}
