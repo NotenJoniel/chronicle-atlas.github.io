@@ -3055,6 +3055,898 @@
         }
       }
     },
+    "ancient-india": {
+      "events": [
+        {
+          "id": "e_indus_urbanization",
+          "year": -2600,
+          "title": "ハラッパー・モエンジョ＝ダーロ、都市文明が成立",
+          "category": "episode",
+          "location": "インダス川流域"
+        },
+        {
+          "id": "e_dholavira_water_management",
+          "year": -2450,
+          "title": "ドーラヴィーラの貯水施設 — 高度な水利管理",
+          "category": "episode",
+          "location": "ドーラヴィーラ（現・グジャラート州）"
+        },
+        {
+          "id": "e_indus_seals",
+          "year": -2400,
+          "title": "インダス印章と未解読の文字",
+          "category": "episode",
+          "location": "インダス川流域各地"
+        },
+        {
+          "id": "e_meluhha_trade",
+          "year": -2300,
+          "title": "メソポタミアとの交易 — 「メルッハ」との接触",
+          "category": "episode",
+          "location": "ペルシア湾沿岸〜メソポタミア"
+        },
+        {
+          "id": "e_indus_religion",
+          "year": -2200,
+          "title": "動物文様の印章と「原シヴァ神」像（推定）",
+          "category": "episode",
+          "location": "モエンジョ＝ダーロ"
+        },
+        {
+          "id": "e_indus_decline",
+          "year": -1900,
+          "title": "都市文明の衰退",
+          "category": "episode",
+          "location": "インダス川流域"
+        },
+        {
+          "id": "e_aryan_migration",
+          "year": -1500,
+          "title": "アーリヤ人の移動（諸説あり）",
+          "category": "episode",
+          "location": "北西インド"
+        },
+        {
+          "id": "e_rigveda_composed",
+          "year": -1400,
+          "title": "『リグ・ヴェーダ』の成立",
+          "category": "episode",
+          "location": "パンジャーブ地方"
+        },
+        {
+          "id": "e_iron_age_ganges",
+          "year": -1000,
+          "title": "鉄器の使用とガンジス川流域への移動",
+          "category": "episode",
+          "location": "ガンジス川上流域"
+        },
+        {
+          "id": "e_varna_formation",
+          "year": -1000,
+          "title": "ヴァルナ制の形成",
+          "category": "episode",
+          "location": "ガンジス川流域"
+        },
+        {
+          "id": "e_later_vedas",
+          "year": -900,
+          "title": "後期ヴェーダ文献の成立",
+          "category": "episode",
+          "location": "ガンジス川流域"
+        },
+        {
+          "id": "e_upanishads",
+          "year": -700,
+          "title": "ウパニシャッド哲学の成立",
+          "category": "episode",
+          "location": "ガンジス川流域"
+        },
+        {
+          "id": "e_sixteen_mahajanapadas",
+          "year": -600,
+          "title": "十六大国（マハージャナパダ）の並立",
+          "category": "politics",
+          "location": "北インド一帯"
+        },
+        {
+          "id": "e_magadha_rises",
+          "year": -544,
+          "title": "ビンビサーラのもとでマガダ国が台頭",
+          "category": "politics",
+          "location": "ラージャグリハ（王舎城）",
+          "color": "#2a5a3a",
+          "characters": [
+            "c_bimbisara"
+          ]
+        },
+        {
+          "id": "e_buddha_birth",
+          "year": -563,
+          "title": "ガウタマ・シッダールタ（釈迦）、誕生",
+          "category": "episode",
+          "location": "ルンビニー（シャカ族の領地）",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_buddha"
+          ]
+        },
+        {
+          "id": "e_buddha_enlightenment",
+          "year": -528,
+          "title": "釈迦、成道（悟りを開く）",
+          "category": "episode",
+          "location": "ブッダガヤ",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_buddha"
+          ]
+        },
+        {
+          "id": "e_mahavira_jainism",
+          "year": -527,
+          "title": "ヴァルダマーナ（マハーヴィーラ）、ジャイナ教を確立",
+          "category": "episode",
+          "location": "マガダ周辺",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_mahavira"
+          ]
+        },
+        {
+          "id": "e_sramana_movement",
+          "year": -500,
+          "title": "沙門思想の隆盛とバラモン教への批判",
+          "category": "episode",
+          "location": "北インド各地"
+        },
+        {
+          "id": "e_charvaka_materialism",
+          "year": -450,
+          "title": "チャールヴァーカ（順世派）、唯物論を説く",
+          "category": "episode",
+          "location": "北インド各地"
+        },
+        {
+          "id": "e_ajatashatru_expansion",
+          "year": -492,
+          "title": "アジャータシャトゥル、マガダを拡大",
+          "category": "battle",
+          "location": "マガダ・コーサラ・ヴァッジ",
+          "color": "#2a5a3a",
+          "characters": [
+            "c_ajatashatru",
+            "c_bimbisara"
+          ]
+        },
+        {
+          "id": "e_magadha_hegemony",
+          "year": -400,
+          "title": "マガダ国、ガンジス川流域の覇権を確立",
+          "category": "politics",
+          "location": "パータリプトラ"
+        },
+        {
+          "id": "e_alexander_indus_invasion",
+          "year": -326,
+          "title": "アレクサンドロス、インダス川流域に侵入",
+          "category": "battle",
+          "location": "ヒュダスペス河畔（現・パンジャーブ地方）",
+          "color": "#8a4a1a",
+          "characters": [
+            "c_alexander_the_great",
+            "c_porus"
+          ]
+        },
+        {
+          "id": "e_chandragupta_founds_maurya",
+          "year": -322,
+          "title": "チャンドラグプタ、マウリヤ朝を建国",
+          "category": "politics",
+          "location": "パータリプトラ",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_chandragupta_maurya",
+            "c_chanakya"
+          ]
+        },
+        {
+          "id": "e_arthashastra",
+          "year": -320,
+          "title": "『実利論』（アルタシャーストラ）の成立",
+          "category": "episode",
+          "location": "パータリプトラ",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_chanakya"
+          ]
+        },
+        {
+          "id": "e_seleucus_treaty",
+          "year": -305,
+          "title": "セレウコス1世との講和、メガステネスの来訪",
+          "category": "politics",
+          "location": "パータリプトラ",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_chandragupta_maurya",
+            "c_seleucus_i",
+            "c_megasthenes"
+          ]
+        },
+        {
+          "id": "e_chandragupta_death_jain",
+          "year": -297,
+          "title": "チャンドラグプタ、ジャイナ教に帰依し断食死（伝承）",
+          "category": "death",
+          "location": "シュラヴァナベルゴラ",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_chandragupta_maurya"
+          ]
+        },
+        {
+          "id": "e_bindusara_reign",
+          "year": -297,
+          "title": "ビンドゥサーラ、即位",
+          "category": "politics",
+          "location": "パータリプトラ",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_bindusara"
+          ]
+        },
+        {
+          "id": "e_ashoka_accession",
+          "year": -268,
+          "title": "アショーカ王、即位",
+          "category": "politics",
+          "location": "パータリプトラ",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_ashoka"
+          ]
+        },
+        {
+          "id": "e_kalinga_war",
+          "year": -261,
+          "title": "カリンガ戦争",
+          "category": "battle",
+          "location": "カリンガ（現・オリッサ地方）",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_ashoka"
+          ]
+        },
+        {
+          "id": "e_ashoka_buddhist_conversion",
+          "year": -260,
+          "title": "アショーカ王、仏教に帰依",
+          "category": "politics",
+          "location": "パータリプトラ",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_ashoka"
+          ]
+        },
+        {
+          "id": "e_ashoka_dharma_policy",
+          "year": -255,
+          "title": "ダルマ（法）による統治理念",
+          "category": "episode",
+          "location": "帝国全土",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_ashoka"
+          ]
+        },
+        {
+          "id": "e_ashoka_edicts",
+          "year": -257,
+          "title": "磨崖法勅・石柱法勅、刻まれる",
+          "category": "episode",
+          "location": "帝国各地",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_ashoka",
+            "c_ptolemy_ii"
+          ]
+        },
+        {
+          "id": "e_buddhist_missions",
+          "year": -250,
+          "title": "仏教の対外布教、スリランカへ",
+          "category": "episode",
+          "location": "スリランカ",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_ashoka",
+            "c_mahinda"
+          ]
+        },
+        {
+          "id": "e_ashoka_death",
+          "year": -232,
+          "title": "アショーカ王、死去",
+          "category": "death",
+          "location": "パータリプトラ",
+          "color": "#8a5a1a",
+          "characters": [
+            "c_ashoka"
+          ]
+        },
+        {
+          "id": "e_maurya_decline_shunga",
+          "year": -185,
+          "title": "プシュヤミトラ・シュンガ、マウリヤ朝を滅ぼす",
+          "category": "battle",
+          "location": "パータリプトラ",
+          "color": "#6a3a2a",
+          "characters": [
+            "c_pushyamitra_shunga"
+          ]
+        },
+        {
+          "id": "e_indo_greek_invasion",
+          "year": -180,
+          "title": "インド・グリーク朝、北西インドに進出",
+          "category": "battle",
+          "location": "北西インド（ガンダーラ）",
+          "color": "#3a5a7a",
+          "characters": [
+            "c_demetrius_i_bactria"
+          ]
+        },
+        {
+          "id": "e_menander_reign",
+          "year": -165,
+          "title": "メナンドロス1世（ミリンダ王）、即位",
+          "category": "politics",
+          "location": "サガラ（現・シアールコート）",
+          "color": "#3a5a7a",
+          "characters": [
+            "c_menander"
+          ]
+        },
+        {
+          "id": "e_milinda_panha",
+          "year": -150,
+          "title": "『ミリンダ王の問い』 — ギリシア人王と仏僧の対話",
+          "category": "episode",
+          "location": "サガラ",
+          "color": "#3a5a7a",
+          "characters": [
+            "c_menander",
+            "c_nagasena"
+          ]
+        },
+        {
+          "id": "e_satavahana_rise",
+          "year": -100,
+          "title": "サータヴァーハナ朝、デカン高原で勃興",
+          "category": "politics",
+          "location": "デカン高原",
+          "color": "#7a5a2a",
+          "characters": [
+            "c_satakarni"
+          ]
+        },
+        {
+          "id": "e_kushana_migration",
+          "year": -130,
+          "title": "大月氏の西走とクシャーナ朝の起源",
+          "category": "episode",
+          "location": "中央アジア"
+        },
+        {
+          "id": "e_kushana_founding",
+          "year": 50,
+          "title": "クシャーナ朝の成立",
+          "category": "politics",
+          "location": "バクトリア〜北西インド",
+          "color": "#6a2a5a",
+          "characters": [
+            "c_kujula_kadphises"
+          ]
+        },
+        {
+          "id": "e_kanishka_reign",
+          "year": 127,
+          "title": "カニシカ王、即位",
+          "category": "politics",
+          "location": "プルシャプラ（現・ペシャワール）",
+          "color": "#6a2a5a",
+          "characters": [
+            "c_kanishka"
+          ]
+        },
+        {
+          "id": "e_gandhara_art",
+          "year": 150,
+          "title": "ガンダーラ美術の隆盛",
+          "category": "episode",
+          "location": "ガンダーラ地方",
+          "color": "#6a2a5a",
+          "characters": [
+            "c_kanishka"
+          ]
+        },
+        {
+          "id": "e_mahayana_buddhism",
+          "year": 100,
+          "title": "大乗仏教の成立",
+          "category": "episode",
+          "location": "北インド・中央アジア"
+        },
+        {
+          "id": "e_kanishka_buddhist_council",
+          "year": 100,
+          "title": "カニシカ王、第四回仏典結集を後援",
+          "category": "episode",
+          "location": "カシミール地方",
+          "color": "#6a2a5a",
+          "characters": [
+            "c_kanishka"
+          ]
+        },
+        {
+          "id": "e_nagarjuna_madhyamaka",
+          "year": 150,
+          "title": "ナーガールジュナ（龍樹）、中観思想を確立",
+          "category": "episode",
+          "location": "南インド",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_nagarjuna"
+          ]
+        },
+        {
+          "id": "e_periplus_written",
+          "year": 60,
+          "title": "『エリュトゥラー海案内記』、著される",
+          "category": "episode",
+          "location": "紅海〜インド洋"
+        },
+        {
+          "id": "e_roman_trade",
+          "year": 50,
+          "title": "季節風貿易 — ローマとの交易全盛",
+          "category": "episode",
+          "location": "インド西海岸（ムジリス等）"
+        },
+        {
+          "id": "e_charaka_samhita",
+          "year": 100,
+          "title": "『チャラカ・サンヒター』、医学書として編纂",
+          "category": "episode",
+          "location": "北インド"
+        },
+        {
+          "id": "e_kanishka_death",
+          "year": 150,
+          "title": "カニシカ王、死去",
+          "category": "death",
+          "location": "北インド",
+          "color": "#6a2a5a",
+          "characters": [
+            "c_kanishka"
+          ]
+        },
+        {
+          "id": "e_kushana_decline",
+          "year": 240,
+          "title": "クシャーナ朝、衰退",
+          "category": "politics",
+          "location": "北西インド〜中央アジア"
+        },
+        {
+          "id": "e_gupta_founding",
+          "year": 320,
+          "title": "チャンドラグプタ1世、グプタ朝を建国",
+          "category": "politics",
+          "location": "パータリプトラ",
+          "color": "#5a2a7a",
+          "characters": [
+            "c_chandragupta_i"
+          ]
+        },
+        {
+          "id": "e_samudragupta_conquests",
+          "year": 335,
+          "title": "サムドラグプタ、大規模な征服活動",
+          "category": "battle",
+          "location": "北インド〜南インド",
+          "color": "#5a2a7a",
+          "characters": [
+            "c_samudragupta"
+          ]
+        },
+        {
+          "id": "e_chandragupta_ii_reign",
+          "year": 380,
+          "title": "チャンドラグプタ2世、即位・グプタ朝の最盛期",
+          "category": "politics",
+          "location": "パータリプトラ〜ウッジャイン",
+          "color": "#5a2a7a",
+          "characters": [
+            "c_chandragupta_ii"
+          ]
+        },
+        {
+          "id": "e_nalanda_founded",
+          "year": 427,
+          "title": "ナーランダー僧院、創建される",
+          "category": "episode",
+          "location": "ナーランダー（現・ビハール州）"
+        },
+        {
+          "id": "e_faxian_visit",
+          "year": 399,
+          "title": "法顕の来訪 — 中国側の記録",
+          "category": "episode",
+          "location": "パータリプトラほか各地",
+          "color": "#7a6a2a",
+          "characters": [
+            "c_faxian"
+          ]
+        },
+        {
+          "id": "e_kalidasa_works",
+          "year": 400,
+          "title": "カーリダーサ、戯曲・詩の傑作を残す",
+          "category": "episode",
+          "location": "ウッジャイン",
+          "color": "#5a2a7a",
+          "characters": [
+            "c_kalidasa"
+          ]
+        },
+        {
+          "id": "e_hindu_epics_completed",
+          "year": 400,
+          "title": "『マハーバーラタ』『ラーマーヤナ』の完成、ヒンドゥー教の確立",
+          "category": "episode",
+          "location": "北インド各地"
+        },
+        {
+          "id": "e_aryabhata_treatise",
+          "year": 499,
+          "title": "アーリヤバタ、『アーリヤバティーヤ』を著す",
+          "category": "episode",
+          "location": "パータリプトラ",
+          "color": "#5a2a7a",
+          "characters": [
+            "c_aryabhata"
+          ]
+        },
+        {
+          "id": "e_hephthalite_first_invasion",
+          "year": 455,
+          "title": "エフタルの侵入、始まる",
+          "category": "battle",
+          "location": "北西インド",
+          "color": "#5a2a7a",
+          "characters": [
+            "c_skandagupta"
+          ]
+        },
+        {
+          "id": "e_hephthalite_conquest",
+          "year": 510,
+          "title": "エフタル王ミヒラクラ、グプタ朝を圧迫",
+          "category": "battle",
+          "location": "北インド",
+          "color": "#5a4a5a",
+          "characters": [
+            "c_mihirakula"
+          ]
+        },
+        {
+          "id": "e_gupta_collapse",
+          "year": 550,
+          "title": "グプタ朝、事実上崩壊",
+          "category": "politics",
+          "location": "北インド一帯"
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_bimbisara",
+          "name": "ビンビサーラ",
+          "reading": "ビンビサーラ",
+          "faction": "magadha",
+          "field": "governance"
+        },
+        {
+          "id": "c_buddha",
+          "name": "ガウタマ・シッダールタ（釈迦）",
+          "reading": "しゃか",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_mahavira",
+          "name": "ヴァルダマーナ（マハーヴィーラ）",
+          "reading": "マハーヴィーラ",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_ajatashatru",
+          "name": "アジャータシャトゥル",
+          "reading": "アジャータシャトゥル",
+          "faction": "magadha",
+          "field": "military"
+        },
+        {
+          "id": "c_alexander_the_great",
+          "name": "アレクサンドロス3世",
+          "reading": "アレクサンドロス大王",
+          "faction": "macedon",
+          "field": "governance"
+        },
+        {
+          "id": "c_porus",
+          "name": "ポロス",
+          "reading": "ポロス",
+          "faction": "other",
+          "field": "military"
+        },
+        {
+          "id": "c_chandragupta_maurya",
+          "name": "チャンドラグプタ",
+          "reading": "チャンドラグプタ",
+          "faction": "maurya",
+          "field": "governance"
+        },
+        {
+          "id": "c_chanakya",
+          "name": "チャーナキヤ（カウティリヤ）",
+          "reading": "チャーナキヤ",
+          "faction": "maurya",
+          "field": "administration"
+        },
+        {
+          "id": "c_seleucus_i",
+          "name": "セレウコス1世",
+          "reading": "セレウコス・ニカトル",
+          "faction": "seleucid",
+          "field": "governance"
+        },
+        {
+          "id": "c_megasthenes",
+          "name": "メガステネス",
+          "reading": "メガステネス",
+          "faction": "seleucid",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_bindusara",
+          "name": "ビンドゥサーラ",
+          "reading": "ビンドゥサーラ",
+          "faction": "maurya",
+          "field": "governance"
+        },
+        {
+          "id": "c_ashoka",
+          "name": "アショーカ王",
+          "reading": "アショーカ",
+          "faction": "maurya",
+          "field": "governance"
+        },
+        {
+          "id": "c_ptolemy_ii",
+          "name": "プトレマイオス2世",
+          "reading": "プトレマイオス・フィラデルフォス",
+          "faction": "ptolemaic",
+          "field": "governance"
+        },
+        {
+          "id": "c_mahinda",
+          "name": "マヒンダ",
+          "reading": "マヒンダ",
+          "faction": "maurya",
+          "field": "thought"
+        },
+        {
+          "id": "c_pushyamitra_shunga",
+          "name": "プシュヤミトラ・シュンガ",
+          "reading": "プシュヤミトラ",
+          "faction": "shunga",
+          "field": "military"
+        },
+        {
+          "id": "c_demetrius_i_bactria",
+          "name": "デメトリオス1世",
+          "reading": "デメトリオス",
+          "faction": "indo_greek",
+          "field": "governance"
+        },
+        {
+          "id": "c_menander",
+          "name": "メナンドロス1世（ミリンダ王）",
+          "reading": "メナンドロス",
+          "faction": "indo_greek",
+          "field": "governance"
+        },
+        {
+          "id": "c_nagasena",
+          "name": "ナーガセーナ",
+          "reading": "ナーガセーナ",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_satakarni",
+          "name": "シャータカルニ1世",
+          "reading": "シャータカルニ",
+          "faction": "satavahana",
+          "field": "governance"
+        },
+        {
+          "id": "c_kujula_kadphises",
+          "name": "クジュラ・カドフィセス",
+          "reading": "クジュラ・カドフィセス",
+          "faction": "kushana",
+          "field": "governance"
+        },
+        {
+          "id": "c_kanishka",
+          "name": "カニシカ王",
+          "reading": "カニシカ",
+          "faction": "kushana",
+          "field": "governance"
+        },
+        {
+          "id": "c_nagarjuna",
+          "name": "ナーガールジュナ（龍樹）",
+          "reading": "りゅうじゅ",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_chandragupta_i",
+          "name": "チャンドラグプタ1世",
+          "reading": "チャンドラグプタ",
+          "faction": "gupta",
+          "field": "governance"
+        },
+        {
+          "id": "c_samudragupta",
+          "name": "サムドラグプタ",
+          "reading": "サムドラグプタ",
+          "faction": "gupta",
+          "field": "military"
+        },
+        {
+          "id": "c_chandragupta_ii",
+          "name": "チャンドラグプタ2世",
+          "reading": "チャンドラグプタ",
+          "faction": "gupta",
+          "field": "governance"
+        },
+        {
+          "id": "c_faxian",
+          "name": "法顕",
+          "reading": "ほっけん",
+          "faction": "china",
+          "field": "thought"
+        },
+        {
+          "id": "c_kalidasa",
+          "name": "カーリダーサ",
+          "reading": "カーリダーサ",
+          "faction": "gupta",
+          "field": "arts"
+        },
+        {
+          "id": "c_aryabhata",
+          "name": "アーリヤバタ",
+          "reading": "アーリヤバタ",
+          "faction": "gupta",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_skandagupta",
+          "name": "スカンダグプタ",
+          "reading": "スカンダグプタ",
+          "faction": "gupta",
+          "field": "military"
+        },
+        {
+          "id": "c_mihirakula",
+          "name": "ミヒラクラ",
+          "reading": "ミヒラクラ",
+          "faction": "hephthalite",
+          "field": "military"
+        }
+      ],
+      "factions": {
+        "indus": {
+          "id": "indus",
+          "name": "インダス文明",
+          "color": "#5a4028",
+          "colorLight": "#9a7850"
+        },
+        "magadha": {
+          "id": "magadha",
+          "name": "マガダ国",
+          "color": "#2a5a3a",
+          "colorLight": "#5a9a6a"
+        },
+        "maurya": {
+          "id": "maurya",
+          "name": "マウリヤ朝",
+          "color": "#8a5a1a",
+          "colorLight": "#c89a4a"
+        },
+        "shunga": {
+          "id": "shunga",
+          "name": "シュンガ朝",
+          "color": "#6a3a2a",
+          "colorLight": "#a06a4a"
+        },
+        "indo_greek": {
+          "id": "indo_greek",
+          "name": "インド・グリーク朝",
+          "color": "#3a5a7a",
+          "colorLight": "#6a94b8"
+        },
+        "kushana": {
+          "id": "kushana",
+          "name": "クシャーナ朝",
+          "color": "#6a2a5a",
+          "colorLight": "#a05a90"
+        },
+        "satavahana": {
+          "id": "satavahana",
+          "name": "サータヴァーハナ朝",
+          "color": "#7a5a2a",
+          "colorLight": "#b8905a"
+        },
+        "gupta": {
+          "id": "gupta",
+          "name": "グプタ朝",
+          "color": "#5a2a7a",
+          "colorLight": "#8a5ab0"
+        },
+        "hephthalite": {
+          "id": "hephthalite",
+          "name": "エフタル",
+          "color": "#5a4a5a",
+          "colorLight": "#8a768a"
+        },
+        "macedon": {
+          "id": "macedon",
+          "name": "マケドニア",
+          "color": "#8a4a1a",
+          "colorLight": "#c07a3a"
+        },
+        "seleucid": {
+          "id": "seleucid",
+          "name": "セレウコス朝",
+          "color": "#5a3a7a",
+          "colorLight": "#8a6aab"
+        },
+        "ptolemaic": {
+          "id": "ptolemaic",
+          "name": "プトレマイオス朝",
+          "color": "#1a5a6a",
+          "colorLight": "#4a94a8"
+        },
+        "china": {
+          "id": "china",
+          "name": "中国",
+          "color": "#7a6a2a",
+          "colorLight": "#b8a44a"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#4a4a4a",
+          "colorLight": "#9a9a9a"
+        }
+      }
+    },
     "spring-autumn": {
       "events": [
         {
@@ -7777,6 +8669,51 @@
           ]
         },
         {
+          "id": "e_xuanzang_departure",
+          "year": 629,
+          "title": "玄奘、国禁を犯してインドへ出発",
+          "category": "episode",
+          "location": "長安→西域",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_xuanzang"
+          ]
+        },
+        {
+          "id": "e_xuanzang_return",
+          "year": 645,
+          "title": "玄奘、帰国・太宗の歓迎",
+          "category": "episode",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_xuanzang",
+            "c_li_shimin"
+          ]
+        },
+        {
+          "id": "e_datang_xiyuji",
+          "year": 646,
+          "title": "『大唐西域記』、撰述",
+          "category": "episode",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_xuanzang"
+          ]
+        },
+        {
+          "id": "e_daci_en_temple",
+          "year": 648,
+          "title": "大慈恩寺の設立、訳経事業が本格化",
+          "category": "episode",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_xuanzang"
+          ]
+        },
+        {
           "id": "e_taizong_death",
           "year": 649,
           "title": "太宗、崩御",
@@ -8267,6 +9204,13 @@
           "reading": "ぎちょう",
           "faction": "tang",
           "field": "administration"
+        },
+        {
+          "id": "c_xuanzang",
+          "name": "玄奘",
+          "reading": "げんじょう",
+          "faction": "tang",
+          "field": "thought"
         },
         {
           "id": "c_li_zhi",
