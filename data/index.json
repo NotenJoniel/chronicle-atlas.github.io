@@ -172,6 +172,15 @@
       "subProjectDir": "roman-republic"
     },
     {
+      "id": "aegean",
+      "name": "エーゲ文明",
+      "region": "europe",
+      "startYear": -3200,
+      "endYear": -800,
+      "dataFile": "timelines/aegean.json",
+      "subProjectDir": "aegean"
+    },
+    {
       "id": "ancient-greece",
       "name": "古代ギリシア",
       "region": "europe",

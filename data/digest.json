@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07",
+  "generatedAt": "2026-08-08",
   "categories": {
     "battle": {
       "id": "battle",
@@ -16514,6 +16514,301 @@
           "name": "その他",
           "color": "#5A6072",
           "colorLight": "#8A90A2"
+        }
+      }
+    },
+    "aegean": {
+      "events": [
+        {
+          "id": "e_cycladic_civilization",
+          "year": -3200,
+          "title": "キクラデス文明の成立",
+          "category": "episode",
+          "location": "キクラデス諸島"
+        },
+        {
+          "id": "e_minoan_early_period",
+          "year": -3000,
+          "title": "クレタ島で前期ミノア期が始まる",
+          "category": "episode",
+          "location": "クレタ島"
+        },
+        {
+          "id": "e_troy_ii",
+          "year": -2800,
+          "title": "トロイア第2市の繁栄",
+          "category": "episode",
+          "location": "トロイア（ヒサルルク）"
+        },
+        {
+          "id": "e_bronze_age_spread",
+          "year": -2500,
+          "title": "エーゲ海における青銅器の本格的普及",
+          "category": "episode",
+          "location": "エーゲ海一帯"
+        },
+        {
+          "id": "e_early_helladic_collapse",
+          "year": -2200,
+          "title": "ギリシア本土の初期ヘラディック文明が断絶",
+          "category": "episode",
+          "location": "ギリシア本土"
+        },
+        {
+          "id": "e_first_palaces",
+          "year": -1900,
+          "title": "クノッソス、ファイストス、マリアに第一次宮殿が建設される",
+          "category": "politics",
+          "location": "クレタ島（クノッソス・ファイストス・マリア）",
+          "color": "#1a5a7a",
+          "characters": [
+            "c_minos"
+          ]
+        },
+        {
+          "id": "e_linear_a",
+          "year": -1800,
+          "title": "線文字Aの使用開始（未解読）",
+          "category": "episode",
+          "location": "クレタ島"
+        },
+        {
+          "id": "e_first_palaces_collapse_rebuild",
+          "year": -1700,
+          "title": "地震により第一次宮殿群が崩壊、第二次宮殿が再建される",
+          "category": "episode",
+          "location": "クレタ島"
+        },
+        {
+          "id": "e_akrotiri_flourish",
+          "year": -1650,
+          "title": "アクロティリ（テラ島）の繁栄",
+          "category": "episode",
+          "location": "テラ島（サントリーニ）"
+        },
+        {
+          "id": "e_thera_eruption",
+          "year": -1628,
+          "title": "テラ島（サントリーニ）の大噴火",
+          "category": "episode",
+          "location": "テラ島（サントリーニ）"
+        },
+        {
+          "id": "e_minoan_trade_peak",
+          "year": -1600,
+          "title": "ミノアの海上交易網が最盛期に達する",
+          "category": "episode",
+          "location": "地中海東部",
+          "color": "#1a5a7a",
+          "characters": [
+            "c_minos"
+          ]
+        },
+        {
+          "id": "e_cretan_palaces_destroyed",
+          "year": -1450,
+          "title": "クレタ島の宮殿群が破壊され、クノッソスのみ存続",
+          "category": "battle",
+          "location": "クレタ島"
+        },
+        {
+          "id": "e_mycenae_shaft_graves",
+          "year": -1600,
+          "title": "ミュケナイに竪穴式墓群が造営される",
+          "category": "episode",
+          "location": "ミュケナイ",
+          "color": "#7a4a1a",
+          "characters": [
+            "c_agamemnon"
+          ]
+        },
+        {
+          "id": "e_mycenaean_citadels",
+          "year": -1500,
+          "title": "ミケーネ人がギリシア本土に城塞王宮を築く",
+          "category": "politics",
+          "location": "ミュケナイ・ティリンス・ピュロス"
+        },
+        {
+          "id": "e_linear_b_knossos",
+          "year": -1450,
+          "title": "クノッソスでの線文字Bの使用",
+          "category": "episode",
+          "location": "クノッソス"
+        },
+        {
+          "id": "e_tholos_tombs",
+          "year": -1400,
+          "title": "円形墓（トロス墓）の造営、アトレウスの宝庫",
+          "category": "episode",
+          "location": "ミュケナイ"
+        },
+        {
+          "id": "e_ahhiyawa",
+          "year": -1350,
+          "title": "ヒッタイト文書に「アヒヤワ」の記述",
+          "category": "episode",
+          "location": "小アジア"
+        },
+        {
+          "id": "e_lion_gate",
+          "year": -1250,
+          "title": "ミュケナイの獅子門が建造される",
+          "category": "episode",
+          "location": "ミュケナイ"
+        },
+        {
+          "id": "e_trojan_war",
+          "year": -1250,
+          "title": "トロイア戦争（伝承）",
+          "category": "battle",
+          "location": "トロイア（ヒサルルク）",
+          "color": "#7a4a1a",
+          "characters": [
+            "c_agamemnon"
+          ]
+        },
+        {
+          "id": "e_pylos_coastal_watch",
+          "year": -1200,
+          "title": "ピュロス宮殿の線文字B文書に沿岸警備の記録",
+          "category": "episode",
+          "location": "ピュロス"
+        },
+        {
+          "id": "e_bronze_age_collapse",
+          "year": -1200,
+          "title": "東地中海の同時崩壊",
+          "category": "battle",
+          "location": "東地中海一帯"
+        },
+        {
+          "id": "e_linear_b_lost",
+          "year": -1150,
+          "title": "線文字Bの使用が途絶える",
+          "category": "episode",
+          "location": "ギリシア本土・クレタ島"
+        },
+        {
+          "id": "e_dorian_invasion",
+          "year": -1100,
+          "title": "ドーリア人の南下（伝承）",
+          "category": "battle",
+          "location": "ギリシア本土（ペロポネソス半島ほか）"
+        },
+        {
+          "id": "e_ionian_migration",
+          "year": -1050,
+          "title": "イオニア人の小アジア西岸への移住",
+          "category": "politics",
+          "location": "小アジア西岸"
+        },
+        {
+          "id": "e_iron_age_begins",
+          "year": -1050,
+          "title": "鉄器の普及が始まる",
+          "category": "episode",
+          "location": "ギリシア世界各地"
+        },
+        {
+          "id": "e_protogeometric_pottery",
+          "year": -1000,
+          "title": "原幾何学様式土器の成立",
+          "category": "episode",
+          "location": "アテナイほか"
+        },
+        {
+          "id": "e_geometric_pottery",
+          "year": -900,
+          "title": "幾何学様式土器へ移行、レフカンディの「英雄の墓」",
+          "category": "episode",
+          "location": "エウボイア島レフカンディほか"
+        },
+        {
+          "id": "e_polis_formation_begins",
+          "year": -850,
+          "title": "集落の再組織化が進み、ポリス形成の萌芽",
+          "category": "politics",
+          "location": "ギリシア各地"
+        },
+        {
+          "id": "e_greek_alphabet",
+          "year": -800,
+          "title": "フェニキア文字を改良したギリシア文字の成立",
+          "category": "episode",
+          "location": "ギリシア各地"
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_minos",
+          "name": "ミノス",
+          "reading": "ミノス",
+          "faction": "minoan",
+          "field": "governance"
+        },
+        {
+          "id": "c_agamemnon",
+          "name": "アガメムノン",
+          "reading": "アガメムノン",
+          "faction": "mycenaean",
+          "field": "governance"
+        }
+      ],
+      "factions": {
+        "minoan": {
+          "id": "minoan",
+          "name": "ミノア文明（クレタ）",
+          "color": "#1a5a7a",
+          "colorLight": "#4a94b8"
+        },
+        "mycenaean": {
+          "id": "mycenaean",
+          "name": "ミケーネ文明",
+          "color": "#7a4a1a",
+          "colorLight": "#b8823a"
+        },
+        "cycladic": {
+          "id": "cycladic",
+          "name": "キクラデス文明",
+          "color": "#6a7a8a",
+          "colorLight": "#a0b0c0"
+        },
+        "troy": {
+          "id": "troy",
+          "name": "トロイア",
+          "color": "#7a2a1a",
+          "colorLight": "#b8583a"
+        },
+        "hittite": {
+          "id": "hittite",
+          "name": "ヒッタイト",
+          "color": "#3a4a5a",
+          "colorLight": "#6a8299"
+        },
+        "egypt": {
+          "id": "egypt",
+          "name": "エジプト",
+          "color": "#8a6a1a",
+          "colorLight": "#c4a53a"
+        },
+        "dorian": {
+          "id": "dorian",
+          "name": "ドーリア人",
+          "color": "#4a4a3a",
+          "colorLight": "#8a8a6a"
+        },
+        "ionia": {
+          "id": "ionia",
+          "name": "イオニア諸市",
+          "color": "#3a6a6a",
+          "colorLight": "#6aa0a0"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#4a4a4a",
+          "colorLight": "#9a9a9a"
         }
       }
     },
