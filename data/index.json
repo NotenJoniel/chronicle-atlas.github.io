@@ -172,6 +172,15 @@
       "subProjectDir": "sengoku-japan"
     },
     {
+      "id": "edo-period",
+      "name": "江戸時代",
+      "region": "japan",
+      "startYear": 1603,
+      "endYear": 1853,
+      "dataFile": "timelines/edo-period.json",
+      "subProjectDir": "edo-period"
+    },
+    {
       "id": "bakumatsu-ishin",
       "name": "幕末・維新",
       "region": "japan",

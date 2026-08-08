@@ -17201,6 +17201,1369 @@
         }
       }
     },
+    "edo-period": {
+      "events": [
+        {
+          "id": "e_edo_bakufu_founding",
+          "year": 1603,
+          "title": "徳川家康、征夷大将軍就任・江戸開府",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_ieyasu"
+          ]
+        },
+        {
+          "id": "e_izumo_no_okuni_kabuki",
+          "year": 1603,
+          "title": "出雲阿国、かぶき踊りを始める",
+          "category": "episode",
+          "location": "京都"
+        },
+        {
+          "id": "e_hidetada_shogun",
+          "year": 1605,
+          "title": "秀忠に将軍職を譲り大御所政治",
+          "category": "politics",
+          "location": "江戸・駿府",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_ieyasu",
+            "c_hidetada"
+          ]
+        },
+        {
+          "id": "e_kinkyo_rei",
+          "year": 1612,
+          "title": "禁教令、発布",
+          "category": "politics",
+          "location": "江戸・駿府",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_ieyasu"
+          ]
+        },
+        {
+          "id": "e_keicho_mission",
+          "year": 1613,
+          "title": "慶長遣欧使節、出発",
+          "category": "episode",
+          "location": "月浦（現・宮城県石巻市）→スペイン・ローマ"
+        },
+        {
+          "id": "e_buke_shohatto",
+          "year": 1615,
+          "title": "一国一城令・武家諸法度・禁中並公家諸法度",
+          "category": "politics",
+          "location": "江戸・京都",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_ieyasu"
+          ]
+        },
+        {
+          "id": "e_shibun_system",
+          "year": 1620,
+          "title": "士農工商、身分秩序の形成",
+          "category": "episode",
+          "location": "全国"
+        },
+        {
+          "id": "e_ieyasu_death",
+          "year": 1616,
+          "title": "家康、没・日光東照宮へ",
+          "category": "death",
+          "location": "駿府→日光",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_ieyasu"
+          ]
+        },
+        {
+          "id": "e_iemitsu_shogun",
+          "year": 1623,
+          "title": "家光、将軍就任",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_iemitsu"
+          ]
+        },
+        {
+          "id": "e_shii_incident",
+          "year": 1629,
+          "title": "紫衣事件",
+          "category": "politics",
+          "location": "京都",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_iemitsu",
+            "c_gomizunoo"
+          ]
+        },
+        {
+          "id": "e_hosho_ships",
+          "year": 1633,
+          "title": "奉書船制度、開始 — 段階的な貿易統制",
+          "category": "politics",
+          "location": "全国の港",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_iemitsu"
+          ]
+        },
+        {
+          "id": "e_sankin_kotai",
+          "year": 1635,
+          "title": "参勤交代の制度化、日本人の海外渡航禁止",
+          "category": "politics",
+          "location": "全国",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_iemitsu"
+          ]
+        },
+        {
+          "id": "e_shimabara_rebellion",
+          "year": 1637,
+          "title": "島原・天草一揆、勃発",
+          "category": "battle",
+          "location": "島原・天草",
+          "color": "#4a5a2a",
+          "characters": [
+            "c_amakusa_shiro"
+          ]
+        },
+        {
+          "id": "e_shimabara_suppression",
+          "year": 1638,
+          "title": "島原・天草一揆、鎮圧される",
+          "category": "death",
+          "location": "原城",
+          "color": "#4a5a2a",
+          "characters": [
+            "c_amakusa_shiro"
+          ]
+        },
+        {
+          "id": "e_sakoku_completion",
+          "year": 1639,
+          "title": "ポルトガル船来航禁止 — いわゆる鎖国の完成",
+          "category": "politics",
+          "location": "長崎",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_iemitsu"
+          ]
+        },
+        {
+          "id": "e_dejima_dutch",
+          "year": 1641,
+          "title": "オランダ商館、出島へ移設",
+          "category": "politics",
+          "location": "長崎・出島"
+        },
+        {
+          "id": "e_denpata_eitai_baibai_kinshi",
+          "year": 1643,
+          "title": "田畑永代売買禁止令",
+          "category": "politics",
+          "location": "全国",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_iemitsu"
+          ]
+        },
+        {
+          "id": "e_keian_incident",
+          "year": 1651,
+          "title": "由井正雪の乱（慶安の変）、末期養子の禁緩和",
+          "category": "politics",
+          "location": "駿府ほか",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_yui_shosetsu",
+            "c_ietsuna"
+          ]
+        },
+        {
+          "id": "e_ietsuna_shogun",
+          "year": 1651,
+          "title": "家綱、将軍就任",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_ietsuna"
+          ]
+        },
+        {
+          "id": "e_meireki_fire",
+          "year": 1657,
+          "title": "明暦の大火",
+          "category": "episode",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_ietsuna"
+          ]
+        },
+        {
+          "id": "e_junshi_prohibition",
+          "year": 1663,
+          "title": "殉死の禁止",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_ietsuna"
+          ]
+        },
+        {
+          "id": "e_shakushain_war",
+          "year": 1669,
+          "title": "シャクシャインの戦い",
+          "category": "battle",
+          "location": "蝦夷地",
+          "color": "#3a5a4a",
+          "characters": [
+            "c_shakushain"
+          ]
+        },
+        {
+          "id": "e_higashi_nishi_mawari_kairo",
+          "year": 1672,
+          "title": "東廻り・西廻り航路の整備",
+          "category": "episode",
+          "location": "東北〜江戸・大坂",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_kawamura_zuiken"
+          ]
+        },
+        {
+          "id": "e_echigoya_founding",
+          "year": 1673,
+          "title": "三井高利、越後屋を開業",
+          "category": "episode",
+          "location": "江戸",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_mitsui_takatoshi"
+          ]
+        },
+        {
+          "id": "e_tsunayoshi_shogun",
+          "year": 1680,
+          "title": "綱吉、将軍就任",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_tsunayoshi"
+          ]
+        },
+        {
+          "id": "e_shorui_awaremi",
+          "year": 1685,
+          "title": "生類憐みの令、発令",
+          "category": "politics",
+          "location": "全国",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_tsunayoshi"
+          ]
+        },
+        {
+          "id": "e_saikaku_koshoku",
+          "year": 1682,
+          "title": "井原西鶴、『好色一代男』を刊行",
+          "category": "episode",
+          "location": "大坂",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_ihara_saikaku"
+          ]
+        },
+        {
+          "id": "e_oku_no_hosomichi",
+          "year": 1689,
+          "title": "松尾芭蕉、「奥の細道」の旅に出る",
+          "category": "episode",
+          "location": "江戸→東北・北陸",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_matsuo_basho"
+          ]
+        },
+        {
+          "id": "e_sonezaki_shinju",
+          "year": 1703,
+          "title": "近松門左衛門、『曾根崎心中』初演",
+          "category": "episode",
+          "location": "大坂",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_chikamatsu_monzaemon"
+          ]
+        },
+        {
+          "id": "e_nogyo_zensho",
+          "year": 1697,
+          "title": "宮崎安貞、『農業全書』を刊行",
+          "category": "episode",
+          "location": "全国",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_miyazaki_yasusada"
+          ]
+        },
+        {
+          "id": "e_ako_incident",
+          "year": 1702,
+          "title": "赤穂事件（元禄赤穂事件）",
+          "category": "episode",
+          "location": "江戸",
+          "color": "#6a5a3a",
+          "characters": [
+            "c_oishi_kuranosuke"
+          ]
+        },
+        {
+          "id": "e_genroku_earthquake",
+          "year": 1703,
+          "title": "元禄地震",
+          "category": "episode",
+          "location": "関東南部"
+        },
+        {
+          "id": "e_hoei_eruption",
+          "year": 1707,
+          "title": "宝永地震・富士山宝永大噴火",
+          "category": "episode",
+          "location": "東海・南海地方、富士山"
+        },
+        {
+          "id": "e_seki_takakazu_math",
+          "year": 1708,
+          "title": "関孝和、和算を大成",
+          "category": "death",
+          "location": "江戸",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_seki_takakazu"
+          ]
+        },
+        {
+          "id": "e_tsunayoshi_death_hakuseki",
+          "year": 1709,
+          "title": "綱吉、没・新井白石の正徳の治へ",
+          "category": "death",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_tsunayoshi",
+            "c_arai_hakuseki"
+          ]
+        },
+        {
+          "id": "e_kaihaku_gosihn_rei",
+          "year": 1715,
+          "title": "海舶互市新例、発布",
+          "category": "politics",
+          "location": "長崎",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_arai_hakuseki"
+          ]
+        },
+        {
+          "id": "e_yoshimune_kyoho",
+          "year": 1716,
+          "title": "吉宗、将軍就任・享保の改革開始",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_yoshimune"
+          ]
+        },
+        {
+          "id": "e_aitai_sumashi_rei",
+          "year": 1719,
+          "title": "相対済し令",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_yoshimune"
+          ]
+        },
+        {
+          "id": "e_kanyaku_yosho_relax",
+          "year": 1720,
+          "title": "漢訳洋書の輸入制限緩和 — 蘭学の素地",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_yoshimune"
+          ]
+        },
+        {
+          "id": "e_meyasubako",
+          "year": 1721,
+          "title": "目安箱の設置、江戸の人口調査",
+          "category": "politics",
+          "location": "江戸城前",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_yoshimune"
+          ]
+        },
+        {
+          "id": "e_agemai_yojosho",
+          "year": 1722,
+          "title": "上米の制、小石川養生所の設立",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_yoshimune",
+            "c_ooka_tadasuke"
+          ]
+        },
+        {
+          "id": "e_tashidaka",
+          "year": 1723,
+          "title": "足高の制",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_yoshimune"
+          ]
+        },
+        {
+          "id": "e_ooka_machi_bugyo",
+          "year": 1728,
+          "title": "大岡忠相、江戸町奉行として都市行政を主導",
+          "category": "episode",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_ooka_tadasuke"
+          ]
+        },
+        {
+          "id": "e_dojima_rice_exchange",
+          "year": 1730,
+          "title": "堂島米会所、公認される",
+          "category": "episode",
+          "location": "大坂・堂島"
+        },
+        {
+          "id": "e_kyoho_famine",
+          "year": 1732,
+          "title": "享保の大飢饉",
+          "category": "episode",
+          "location": "西日本一帯",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_yoshimune"
+          ]
+        },
+        {
+          "id": "e_ogyu_sorai_seidan",
+          "year": 1727,
+          "title": "荻生徂徠、『政談』を著す",
+          "category": "episode",
+          "location": "江戸",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_ogyu_sorai"
+          ]
+        },
+        {
+          "id": "e_kujikata_osadamegaki",
+          "year": 1742,
+          "title": "公事方御定書、完成",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_yoshimune"
+          ]
+        },
+        {
+          "id": "e_horeki_incident",
+          "year": 1758,
+          "title": "宝暦事件",
+          "category": "politics",
+          "location": "京都"
+        },
+        {
+          "id": "e_tanuma_sobayonin",
+          "year": 1767,
+          "title": "田沼意次、側用人に就任",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_tanuma_okitsugu"
+          ]
+        },
+        {
+          "id": "e_tanuma_roju_kabunakama",
+          "year": 1772,
+          "title": "田沼意次、老中就任・株仲間公認",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_tanuma_okitsugu"
+          ]
+        },
+        {
+          "id": "e_elekiteru",
+          "year": 1776,
+          "title": "平賀源内、エレキテルの復元に成功",
+          "category": "episode",
+          "location": "江戸",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_hiraga_gennai"
+          ]
+        },
+        {
+          "id": "e_kaitai_shinsho",
+          "year": 1774,
+          "title": "杉田玄白ら、『解体新書』を刊行",
+          "category": "episode",
+          "location": "江戸",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_sugita_genpaku",
+            "c_maeno_ryotaku"
+          ]
+        },
+        {
+          "id": "e_tenmei_famine",
+          "year": 1782,
+          "title": "天明の大飢饉、始まる",
+          "category": "episode",
+          "location": "東北地方を中心に全国"
+        },
+        {
+          "id": "e_asama_eruption",
+          "year": 1783,
+          "title": "浅間山、大噴火",
+          "category": "episode",
+          "location": "浅間山（信濃・上野国境）"
+        },
+        {
+          "id": "e_tenmei_uchikowashi",
+          "year": 1787,
+          "title": "天明の打ちこわし、田沼失脚",
+          "category": "politics",
+          "location": "江戸・大坂ほか全国",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_tanuma_okitsugu"
+          ]
+        },
+        {
+          "id": "e_sadanobu_kansei",
+          "year": 1787,
+          "title": "松平定信、老中就任・寛政の改革",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_matsudaira_sadanobu"
+          ]
+        },
+        {
+          "id": "e_kien_rei",
+          "year": 1789,
+          "title": "棄捐令",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_matsudaira_sadanobu"
+          ]
+        },
+        {
+          "id": "e_kansei_igaku_kin",
+          "year": 1790,
+          "title": "寛政異学の禁",
+          "category": "politics",
+          "location": "江戸・昌平坂学問所",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_matsudaira_sadanobu"
+          ]
+        },
+        {
+          "id": "e_laxman_nemuro",
+          "year": 1792,
+          "title": "ラクスマン、根室に来航",
+          "category": "politics",
+          "location": "根室",
+          "color": "#2a4a5a",
+          "characters": [
+            "c_laxman"
+          ]
+        },
+        {
+          "id": "e_kaikoku_heidan",
+          "year": 1792,
+          "title": "林子平、『海国兵談』により処罰される",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_hayashi_shihei"
+          ]
+        },
+        {
+          "id": "e_kojikiden_completed",
+          "year": 1798,
+          "title": "本居宣長、『古事記伝』完成 — 国学の大成",
+          "category": "episode",
+          "location": "伊勢・松坂",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_motoori_norinaga"
+          ]
+        },
+        {
+          "id": "e_ino_survey_begins",
+          "year": 1800,
+          "title": "伊能忠敬、蝦夷地の測量を開始",
+          "category": "episode",
+          "location": "蝦夷地",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_ino_tadataka"
+          ]
+        },
+        {
+          "id": "e_rezanov_nagasaki",
+          "year": 1804,
+          "title": "レザノフ、長崎に来航",
+          "category": "politics",
+          "location": "長崎",
+          "color": "#2a4a5a",
+          "characters": [
+            "c_rezanov"
+          ]
+        },
+        {
+          "id": "e_phaeton_incident",
+          "year": 1808,
+          "title": "フェートン号事件",
+          "category": "episode",
+          "location": "長崎"
+        },
+        {
+          "id": "e_golovnin_incident",
+          "year": 1811,
+          "title": "ゴローウニン事件",
+          "category": "episode",
+          "location": "国後島・松前",
+          "color": "#2a4a5a",
+          "characters": [
+            "c_golovnin"
+          ]
+        },
+        {
+          "id": "e_rangaku_kotohajime",
+          "year": 1815,
+          "title": "杉田玄白、『蘭学事始』を著す",
+          "category": "episode",
+          "location": "江戸",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_sugita_genpaku"
+          ]
+        },
+        {
+          "id": "e_sharaku_yakusha_e",
+          "year": 1794,
+          "title": "東洲斎写楽、役者絵を発表",
+          "category": "episode",
+          "location": "江戸",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_toshusai_sharaku"
+          ]
+        },
+        {
+          "id": "e_hizakurige",
+          "year": 1802,
+          "title": "十返舎一九、『東海道中膝栗毛』を刊行開始",
+          "category": "episode",
+          "location": "江戸",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_jippensha_ikku"
+          ]
+        },
+        {
+          "id": "e_dai_nihon_enkai_yochi_zenzu",
+          "year": 1821,
+          "title": "伊能忠敬『大日本沿海輿地全図』完成",
+          "category": "episode",
+          "location": "江戸",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_ino_tadataka"
+          ]
+        },
+        {
+          "id": "e_ikokusen_uchiharai",
+          "year": 1825,
+          "title": "異国船打払令",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_ienari"
+          ]
+        },
+        {
+          "id": "e_siebold_incident",
+          "year": 1828,
+          "title": "シーボルト事件",
+          "category": "politics",
+          "location": "長崎",
+          "color": "#b8621a",
+          "characters": [
+            "c_siebold",
+            "c_takano_choei"
+          ]
+        },
+        {
+          "id": "e_hokusai_fugaku",
+          "year": 1831,
+          "title": "葛飾北斎、『富嶽三十六景』を発表",
+          "category": "episode",
+          "location": "江戸",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_katsushika_hokusai"
+          ]
+        },
+        {
+          "id": "e_hiroshige_tokaido",
+          "year": 1833,
+          "title": "歌川広重、『東海道五十三次』を発表",
+          "category": "episode",
+          "location": "江戸",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_utagawa_hiroshige"
+          ]
+        },
+        {
+          "id": "e_tenpo_famine",
+          "year": 1833,
+          "title": "天保の大飢饉、始まる",
+          "category": "episode",
+          "location": "全国、特に東北地方"
+        },
+        {
+          "id": "e_oshio_rebellion",
+          "year": 1837,
+          "title": "大塩平八郎の乱",
+          "category": "battle",
+          "location": "大坂",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_oshio_heihachiro"
+          ]
+        },
+        {
+          "id": "e_morrison_incident",
+          "year": 1837,
+          "title": "モリソン号事件",
+          "category": "politics",
+          "location": "浦賀・鹿児島湾"
+        },
+        {
+          "id": "e_bansha_no_goku",
+          "year": 1839,
+          "title": "蛮社の獄",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_takano_choei",
+            "c_watanabe_kazan"
+          ]
+        },
+        {
+          "id": "e_opium_war_shock",
+          "year": 1840,
+          "title": "アヘン戦争の衝撃、伝わる",
+          "category": "episode",
+          "location": "清（伝聞情報として日本へ）"
+        },
+        {
+          "id": "e_bakin_hakkenden_complete",
+          "year": 1842,
+          "title": "滝沢馬琴、『南総里見八犬伝』完結",
+          "category": "episode",
+          "location": "江戸",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_takizawa_bakin"
+          ]
+        },
+        {
+          "id": "e_tenpo_reforms",
+          "year": 1841,
+          "title": "水野忠邦、天保の改革",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_mizuno_tadakuni"
+          ]
+        },
+        {
+          "id": "e_kabunakama_kaisan",
+          "year": 1841,
+          "title": "株仲間解散令",
+          "category": "politics",
+          "location": "江戸・大坂",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_mizuno_tadakuni"
+          ]
+        },
+        {
+          "id": "e_shinsui_kyuyo_rei",
+          "year": 1842,
+          "title": "薪水給与令 — 打払令の撤回",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_mizuno_tadakuni"
+          ]
+        },
+        {
+          "id": "e_mizuno_downfall",
+          "year": 1843,
+          "title": "人返し令、上知令の失敗、水野忠邦失脚",
+          "category": "politics",
+          "location": "江戸",
+          "color": "#3a5a2a",
+          "characters": [
+            "c_mizuno_tadakuni"
+          ]
+        },
+        {
+          "id": "e_dutch_king_letter",
+          "year": 1844,
+          "title": "オランダ国王の開国勧告",
+          "category": "politics",
+          "location": "江戸"
+        },
+        {
+          "id": "e_biddle_uraga",
+          "year": 1846,
+          "title": "ビッドル、浦賀に来航",
+          "category": "politics",
+          "location": "浦賀",
+          "color": "#1a2a5a",
+          "characters": [
+            "c_biddle"
+          ]
+        },
+        {
+          "id": "e_john_manjiro_return",
+          "year": 1851,
+          "title": "中浜万次郎（ジョン万次郎）、帰国",
+          "category": "episode",
+          "location": "琉球経由で薩摩・土佐",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_john_manjiro"
+          ]
+        },
+        {
+          "id": "e_perry_arrival",
+          "year": 1853,
+          "title": "ペリー、浦賀に来航",
+          "category": "politics",
+          "location": "浦賀",
+          "color": "#1a2a5a",
+          "characters": [
+            "c_matthew_perry"
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_ieyasu",
+          "name": "徳川家康",
+          "reading": "とくがわいえやす",
+          "faction": "tokugawa",
+          "field": "governance"
+        },
+        {
+          "id": "c_hidetada",
+          "name": "徳川秀忠",
+          "reading": "とくがわひでただ",
+          "faction": "tokugawa",
+          "field": "governance"
+        },
+        {
+          "id": "c_iemitsu",
+          "name": "徳川家光",
+          "reading": "とくがわいえみつ",
+          "faction": "tokugawa",
+          "field": "governance"
+        },
+        {
+          "id": "c_ietsuna",
+          "name": "徳川家綱",
+          "reading": "とくがわいえつな",
+          "faction": "tokugawa",
+          "field": "governance"
+        },
+        {
+          "id": "c_tsunayoshi",
+          "name": "徳川綱吉",
+          "reading": "とくがわつなよし",
+          "faction": "tokugawa",
+          "field": "governance"
+        },
+        {
+          "id": "c_yoshimune",
+          "name": "徳川吉宗",
+          "reading": "とくがわよしむね",
+          "faction": "tokugawa",
+          "field": "governance"
+        },
+        {
+          "id": "c_ienari",
+          "name": "徳川家斉",
+          "reading": "とくがわいえなり",
+          "faction": "tokugawa",
+          "field": "governance"
+        },
+        {
+          "id": "c_gomizunoo",
+          "name": "後水尾天皇",
+          "reading": "ごみずのおてんのう",
+          "faction": "imperial_court",
+          "field": "governance"
+        },
+        {
+          "id": "c_amakusa_shiro",
+          "name": "天草四郎",
+          "reading": "あまくさしろう",
+          "faction": "peasant",
+          "field": "military"
+        },
+        {
+          "id": "c_yui_shosetsu",
+          "name": "由井正雪",
+          "reading": "ゆいしょうせつ",
+          "faction": "other",
+          "field": "military"
+        },
+        {
+          "id": "c_shakushain",
+          "name": "シャクシャイン",
+          "reading": "シャクシャイン",
+          "faction": "ainu",
+          "field": "military"
+        },
+        {
+          "id": "c_mitsui_takatoshi",
+          "name": "三井高利",
+          "reading": "みついたかとし",
+          "faction": "merchant",
+          "field": "commerce"
+        },
+        {
+          "id": "c_konoike",
+          "name": "鴻池善右衛門（初代）",
+          "reading": "こうのいけぜんえもん",
+          "faction": "merchant",
+          "field": "commerce"
+        },
+        {
+          "id": "c_kawamura_zuiken",
+          "name": "河村瑞賢",
+          "reading": "かわむらずいけん",
+          "faction": "merchant",
+          "field": "commerce"
+        },
+        {
+          "id": "c_matsuo_basho",
+          "name": "松尾芭蕉",
+          "reading": "まつおばしょう",
+          "faction": "other",
+          "field": "arts"
+        },
+        {
+          "id": "c_ihara_saikaku",
+          "name": "井原西鶴",
+          "reading": "いはらさいかく",
+          "faction": "other",
+          "field": "arts"
+        },
+        {
+          "id": "c_chikamatsu_monzaemon",
+          "name": "近松門左衛門",
+          "reading": "ちかまつもんざえもん",
+          "faction": "other",
+          "field": "arts"
+        },
+        {
+          "id": "c_hishikawa_moronobu",
+          "name": "菱川師宣",
+          "reading": "ひしかわもろのぶ",
+          "faction": "other",
+          "field": "arts"
+        },
+        {
+          "id": "c_seki_takakazu",
+          "name": "関孝和",
+          "reading": "せきたかかず",
+          "faction": "other",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_miyazaki_yasusada",
+          "name": "宮崎安貞",
+          "reading": "みやざきやすさだ",
+          "faction": "other",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_oishi_kuranosuke",
+          "name": "大石内蔵助",
+          "reading": "おおいしくらのすけ",
+          "faction": "daimyo",
+          "field": "military"
+        },
+        {
+          "id": "c_arai_hakuseki",
+          "name": "新井白石",
+          "reading": "あらいはくせき",
+          "faction": "tokugawa",
+          "field": "administration"
+        },
+        {
+          "id": "c_ooka_tadasuke",
+          "name": "大岡忠相",
+          "reading": "おおおかただすけ",
+          "faction": "tokugawa",
+          "field": "administration"
+        },
+        {
+          "id": "c_tanuma_okitsugu",
+          "name": "田沼意次",
+          "reading": "たぬまおきつぐ",
+          "faction": "tokugawa",
+          "field": "administration"
+        },
+        {
+          "id": "c_sugita_genpaku",
+          "name": "杉田玄白",
+          "reading": "すぎたげんぱく",
+          "faction": "other",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_maeno_ryotaku",
+          "name": "前野良沢",
+          "reading": "まえのりょうたく",
+          "faction": "other",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_hiraga_gennai",
+          "name": "平賀源内",
+          "reading": "ひらがげんない",
+          "faction": "other",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_matsudaira_sadanobu",
+          "name": "松平定信",
+          "reading": "まつだいらさだのぶ",
+          "faction": "tokugawa",
+          "field": "administration"
+        },
+        {
+          "id": "c_ogyu_sorai",
+          "name": "荻生徂徠",
+          "reading": "おぎゅうそらい",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_hayashi_shihei",
+          "name": "林子平",
+          "reading": "はやししへい",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_motoori_norinaga",
+          "name": "本居宣長",
+          "reading": "もとおりのりなが",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_ino_tadataka",
+          "name": "伊能忠敬",
+          "reading": "いのうただたか",
+          "faction": "other",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_toshusai_sharaku",
+          "name": "東洲斎写楽",
+          "reading": "とうしゅうさいしゃらく",
+          "faction": "other",
+          "field": "arts"
+        },
+        {
+          "id": "c_jippensha_ikku",
+          "name": "十返舎一九",
+          "reading": "じっぺんしゃいっく",
+          "faction": "other",
+          "field": "arts"
+        },
+        {
+          "id": "c_laxman",
+          "name": "アダム・ラクスマン",
+          "reading": "アダムラクスマン",
+          "faction": "russia",
+          "field": "administration"
+        },
+        {
+          "id": "c_rezanov",
+          "name": "ニコライ・レザノフ",
+          "reading": "ニコライレザノフ",
+          "faction": "russia",
+          "field": "administration"
+        },
+        {
+          "id": "c_golovnin",
+          "name": "ヴァシリー・ゴローウニン",
+          "reading": "ヴァシリーゴローウニン",
+          "faction": "russia",
+          "field": "military"
+        },
+        {
+          "id": "c_siebold",
+          "name": "フィリップ・フランツ・フォン・シーボルト",
+          "reading": "シーボルト",
+          "faction": "netherlands",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_takano_choei",
+          "name": "高野長英",
+          "reading": "たかのちょうえい",
+          "faction": "other",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_watanabe_kazan",
+          "name": "渡辺崋山",
+          "reading": "わたなべかざん",
+          "faction": "daimyo",
+          "field": "arts"
+        },
+        {
+          "id": "c_oshio_heihachiro",
+          "name": "大塩平八郎",
+          "reading": "おおしおへいはちろう",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_katsushika_hokusai",
+          "name": "葛飾北斎",
+          "reading": "かつしかほくさい",
+          "faction": "other",
+          "field": "arts"
+        },
+        {
+          "id": "c_utagawa_hiroshige",
+          "name": "歌川広重",
+          "reading": "うたがわひろしげ",
+          "faction": "other",
+          "field": "arts"
+        },
+        {
+          "id": "c_takizawa_bakin",
+          "name": "滝沢馬琴",
+          "reading": "たきざわばきん",
+          "faction": "other",
+          "field": "arts"
+        },
+        {
+          "id": "c_biddle",
+          "name": "ジェームズ・ビッドル",
+          "reading": "ジェームズビッドル",
+          "faction": "usa",
+          "field": "military"
+        },
+        {
+          "id": "c_john_manjiro",
+          "name": "中浜万次郎（ジョン万次郎）",
+          "reading": "なかはままんじろう",
+          "faction": "other",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_mizuno_tadakuni",
+          "name": "水野忠邦",
+          "reading": "みずのただくに",
+          "faction": "tokugawa",
+          "field": "administration"
+        },
+        {
+          "id": "c_matthew_perry",
+          "name": "マシュー・ペリー",
+          "reading": "ましゅーぺりー",
+          "faction": "usa",
+          "field": "military"
+        }
+      ],
+      "factions": {
+        "tokugawa": {
+          "id": "tokugawa",
+          "name": "徳川家（幕府）",
+          "color": "#3a5a2a",
+          "colorLight": "#6aaa4a"
+        },
+        "imperial_court": {
+          "id": "imperial_court",
+          "name": "朝廷",
+          "color": "#5a3a6a",
+          "colorLight": "#9a6ab0"
+        },
+        "daimyo": {
+          "id": "daimyo",
+          "name": "諸藩",
+          "color": "#6a5a3a",
+          "colorLight": "#a89468"
+        },
+        "satsuma": {
+          "id": "satsuma",
+          "name": "薩摩藩",
+          "color": "#7a1a2a",
+          "colorLight": "#c0455a"
+        },
+        "choshu": {
+          "id": "choshu",
+          "name": "長州藩",
+          "color": "#2a4a1a",
+          "colorLight": "#5a8a3a"
+        },
+        "mito": {
+          "id": "mito",
+          "name": "水戸藩",
+          "color": "#2a3a6a",
+          "colorLight": "#5a70a8"
+        },
+        "aizu": {
+          "id": "aizu",
+          "name": "会津藩",
+          "color": "#4a3a5a",
+          "colorLight": "#8a6ac4"
+        },
+        "merchant": {
+          "id": "merchant",
+          "name": "町人・豪商",
+          "color": "#8a6a1a",
+          "colorLight": "#c8a858"
+        },
+        "peasant": {
+          "id": "peasant",
+          "name": "農民",
+          "color": "#4a5a2a",
+          "colorLight": "#8a9a5a"
+        },
+        "netherlands": {
+          "id": "netherlands",
+          "name": "オランダ",
+          "color": "#b8621a",
+          "colorLight": "#e0925a"
+        },
+        "portugal": {
+          "id": "portugal",
+          "name": "ポルトガル",
+          "color": "#6a1a2a",
+          "colorLight": "#a0455a"
+        },
+        "russia": {
+          "id": "russia",
+          "name": "ロシア",
+          "color": "#2a4a5a",
+          "colorLight": "#5a8aa0"
+        },
+        "britain": {
+          "id": "britain",
+          "name": "イギリス",
+          "color": "#7a1a1a",
+          "colorLight": "#b8454a"
+        },
+        "usa": {
+          "id": "usa",
+          "name": "アメリカ",
+          "color": "#1a2a5a",
+          "colorLight": "#4a5a94"
+        },
+        "qing": {
+          "id": "qing",
+          "name": "清",
+          "color": "#6a4a1a",
+          "colorLight": "#a8823a"
+        },
+        "joseon": {
+          "id": "joseon",
+          "name": "朝鮮",
+          "color": "#2a4a6a",
+          "colorLight": "#5a8ac8"
+        },
+        "ryukyu": {
+          "id": "ryukyu",
+          "name": "琉球",
+          "color": "#1a6a5a",
+          "colorLight": "#4aa090"
+        },
+        "ainu": {
+          "id": "ainu",
+          "name": "アイヌ",
+          "color": "#3a5a4a",
+          "colorLight": "#6a9a80"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#4a4a4a",
+          "colorLight": "#9a9a9a"
+        }
+      }
+    },
     "bakumatsu-ishin": {
       "events": [
         {
