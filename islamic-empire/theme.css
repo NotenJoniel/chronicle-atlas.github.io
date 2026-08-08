@@ -1,0 +1,6 @@
+/* イスラム帝国 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#0a1410;--surface:#12201a;--surface-2:#1a2e24;--surface-3:#243c30;
+  --border-subtle:rgba(184,148,74,.14);--text:#ece3da;--text-dim:#a8927f;
+  --gold:#b8944a;--gold-dim:rgba(184,148,74,.2);
+}

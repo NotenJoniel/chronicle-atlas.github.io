@@ -28,6 +28,15 @@
       "subProjectDir": "persia"
     },
     {
+      "id": "islamic-empire",
+      "name": "イスラム帝国",
+      "region": "others",
+      "startYear": 610,
+      "endYear": 1260,
+      "dataFile": "timelines/islamic-empire.json",
+      "subProjectDir": "islamic-empire"
+    },
+    {
       "id": "ancient-india",
       "name": "古代インド",
       "region": "others",
