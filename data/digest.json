@@ -3055,6 +3055,1258 @@
         }
       }
     },
+    "islamic-empire": {
+      "events": [
+        {
+          "id": "e_first_revelation",
+          "year": 610,
+          "title": "ヒラー山での最初の啓示",
+          "category": "episode",
+          "location": "ヒラー山（メッカ郊外）",
+          "color": "#2a5a3a",
+          "characters": [
+            "c_muhammad"
+          ]
+        },
+        {
+          "id": "e_public_preaching",
+          "year": 613,
+          "title": "公然の布教開始、クライシュ族の迫害",
+          "category": "episode",
+          "location": "メッカ",
+          "color": "#2a5a3a",
+          "characters": [
+            "c_muhammad",
+            "c_abu_jahl"
+          ]
+        },
+        {
+          "id": "e_year_of_sorrow",
+          "year": 619,
+          "title": "「悲しみの年」— ハディージャとアブー・ターリブの死",
+          "category": "death",
+          "location": "メッカ",
+          "color": "#2a5a3a",
+          "characters": [
+            "c_muhammad",
+            "c_khadija",
+            "c_abu_talib"
+          ]
+        },
+        {
+          "id": "e_hijra",
+          "year": 622,
+          "title": "ヒジュラ（メディナへの聖遷）",
+          "category": "politics",
+          "location": "メッカ→メディナ（ヤスリブ）",
+          "color": "#2a5a3a",
+          "characters": [
+            "c_muhammad",
+            "c_abu_bakr"
+          ]
+        },
+        {
+          "id": "e_battle_of_badr",
+          "year": 624,
+          "title": "バドルの戦い",
+          "category": "battle",
+          "location": "バドル（メディナ近郊）",
+          "color": "#2a5a3a",
+          "characters": [
+            "c_muhammad",
+            "c_abu_jahl"
+          ]
+        },
+        {
+          "id": "e_battle_of_uhud",
+          "year": 625,
+          "title": "ウフドの戦い",
+          "category": "battle",
+          "location": "ウフド山（メディナ近郊）",
+          "color": "#2a5a3a",
+          "characters": [
+            "c_muhammad",
+            "c_khalid_ibn_walid"
+          ]
+        },
+        {
+          "id": "e_battle_of_khandaq",
+          "year": 627,
+          "title": "ハンダクの戦い（塹壕の戦い）",
+          "category": "battle",
+          "location": "メディナ",
+          "color": "#2a5a3a",
+          "characters": [
+            "c_muhammad"
+          ]
+        },
+        {
+          "id": "e_treaty_hudaybiyyah",
+          "year": 628,
+          "title": "フダイビーヤの和議",
+          "category": "politics",
+          "location": "フダイビーヤ（メッカ近郊）",
+          "color": "#2a5a3a",
+          "characters": [
+            "c_muhammad"
+          ]
+        },
+        {
+          "id": "e_conquest_of_mecca",
+          "year": 630,
+          "title": "メッカ無血開城、カアバの偶像破壊",
+          "category": "politics",
+          "location": "メッカ",
+          "color": "#2a5a3a",
+          "characters": [
+            "c_muhammad"
+          ]
+        },
+        {
+          "id": "e_prophet_muhammad_death",
+          "year": 632,
+          "title": "ムハンマド、死去",
+          "category": "death",
+          "location": "メディナ",
+          "color": "#2a5a3a",
+          "characters": [
+            "c_muhammad",
+            "c_abu_bakr"
+          ]
+        },
+        {
+          "id": "e_ridda_wars",
+          "year": 632,
+          "title": "アブー・バクル即位、リッダ戦争（背教者戦争）",
+          "category": "battle",
+          "location": "アラビア半島各地",
+          "color": "#3a6a4a",
+          "characters": [
+            "c_abu_bakr",
+            "c_khalid_ibn_walid"
+          ]
+        },
+        {
+          "id": "e_umar_caliph",
+          "year": 634,
+          "title": "ウマル、カリフに即位",
+          "category": "politics",
+          "location": "メディナ",
+          "color": "#3a6a4a",
+          "characters": [
+            "c_umar",
+            "c_abu_bakr"
+          ]
+        },
+        {
+          "id": "e_battle_yarmouk",
+          "year": 636,
+          "title": "ヤルムークの戦い",
+          "category": "battle",
+          "location": "ヤルムーク川（現シリア・ヨルダン国境）",
+          "color": "#3a6a4a",
+          "characters": [
+            "c_umar",
+            "c_khalid_ibn_walid",
+            "c_heraclius"
+          ]
+        },
+        {
+          "id": "e_battle_qadisiyyah",
+          "year": 637,
+          "title": "カーディシーヤの戦い",
+          "category": "battle",
+          "location": "カーディシーヤ（現イラク）",
+          "color": "#3a6a4a",
+          "characters": [
+            "c_umar",
+            "c_yazdegerd_iii"
+          ]
+        },
+        {
+          "id": "e_jerusalem_capture",
+          "year": 638,
+          "title": "エルサレム占領",
+          "category": "politics",
+          "location": "エルサレム",
+          "color": "#3a6a4a",
+          "characters": [
+            "c_umar"
+          ]
+        },
+        {
+          "id": "e_nihavand",
+          "year": 642,
+          "title": "ニハーヴァンドの戦い — ササン朝、事実上滅亡",
+          "category": "battle",
+          "location": "ニハーヴァンド（現イラン）",
+          "color": "#3a6a4a",
+          "characters": [
+            "c_umar",
+            "c_yazdegerd_iii"
+          ]
+        },
+        {
+          "id": "e_egypt_conquest",
+          "year": 642,
+          "title": "エジプト征服、アレクサンドリア陥落",
+          "category": "battle",
+          "location": "アレクサンドリア",
+          "color": "#3a6a4a",
+          "characters": [
+            "c_amr_ibn_al_as",
+            "c_umar"
+          ]
+        },
+        {
+          "id": "e_umar_assassination_uthman",
+          "year": 644,
+          "title": "ウマル暗殺、ウスマーン即位",
+          "category": "death",
+          "location": "メディナ",
+          "color": "#3a6a4a",
+          "characters": [
+            "c_umar",
+            "c_uthman"
+          ]
+        },
+        {
+          "id": "e_quran_codification",
+          "year": 650,
+          "title": "クルアーンの正典化",
+          "category": "episode",
+          "location": "メディナ",
+          "color": "#3a6a4a",
+          "characters": [
+            "c_uthman"
+          ]
+        },
+        {
+          "id": "e_uthman_assassination_ali",
+          "year": 656,
+          "title": "ウスマーン暗殺、アリー即位",
+          "category": "death",
+          "location": "メディナ",
+          "color": "#3a6a4a",
+          "characters": [
+            "c_uthman",
+            "c_ali"
+          ]
+        },
+        {
+          "id": "e_battle_of_camel",
+          "year": 656,
+          "title": "ラクダの戦い",
+          "category": "battle",
+          "location": "バスラ（現イラク）",
+          "color": "#3a6a4a",
+          "characters": [
+            "c_ali",
+            "c_aisha"
+          ]
+        },
+        {
+          "id": "e_battle_siffin_kharijites",
+          "year": 657,
+          "title": "スィッフィーンの戦い、ハワーリジュ派の分離",
+          "category": "battle",
+          "location": "スィッフィーン（現シリア）",
+          "color": "#3a6a4a",
+          "characters": [
+            "c_ali",
+            "c_muawiya"
+          ]
+        },
+        {
+          "id": "e_ali_assassination",
+          "year": 661,
+          "title": "アリー暗殺 — スンナ派・シーア派分裂の起点",
+          "category": "death",
+          "location": "クーファ（現イラク）",
+          "color": "#3a6a4a",
+          "characters": [
+            "c_ali"
+          ]
+        },
+        {
+          "id": "e_muawiya_damascus",
+          "year": 661,
+          "title": "ムアーウィヤ、ダマスクスで即位・世襲王朝へ",
+          "category": "politics",
+          "location": "ダマスクス",
+          "color": "#7a5a1a",
+          "characters": [
+            "c_muawiya"
+          ]
+        },
+        {
+          "id": "e_karbala",
+          "year": 680,
+          "title": "カルバラーの悲劇 — フサインの殉教",
+          "category": "death",
+          "location": "カルバラー（現イラク）",
+          "color": "#2a5a3a",
+          "characters": [
+            "c_husayn"
+          ]
+        },
+        {
+          "id": "e_dome_of_rock",
+          "year": 691,
+          "title": "岩のドーム、建立",
+          "category": "episode",
+          "location": "エルサレム",
+          "color": "#7a5a1a",
+          "characters": [
+            "c_abd_al_malik"
+          ]
+        },
+        {
+          "id": "e_maghreb_conquest",
+          "year": 698,
+          "title": "カルタゴ征服、マグリブ制圧",
+          "category": "battle",
+          "location": "カルタゴ（現チュニジア）"
+        },
+        {
+          "id": "e_gibraltar_visigoth",
+          "year": 711,
+          "title": "タリク、ジブラルタル海峡を渡る — 西ゴート王国滅亡",
+          "category": "battle",
+          "location": "グアダレーテ（イベリア半島南部）",
+          "color": "#7a5a1a",
+          "characters": [
+            "c_tariq_ibn_ziyad",
+            "c_roderic"
+          ]
+        },
+        {
+          "id": "e_sindh_conquest",
+          "year": 711,
+          "title": "ムハンマド・ブン・カースィム、シンド征服",
+          "category": "battle",
+          "location": "シンド地方（現パキスタン）",
+          "color": "#7a5a1a",
+          "characters": [
+            "c_muhammad_ibn_qasim"
+          ]
+        },
+        {
+          "id": "e_constantinople_siege_2",
+          "year": 717,
+          "title": "第二次コンスタンティノープル包囲、失敗",
+          "category": "battle",
+          "location": "コンスタンティノープル"
+        },
+        {
+          "id": "e_tours_poitiers",
+          "year": 732,
+          "title": "トゥール・ポワティエ間の戦い",
+          "category": "battle",
+          "location": "トゥールとポワティエの間（現フランス）",
+          "color": "#2a3a6a",
+          "characters": [
+            "c_charles_martel"
+          ]
+        },
+        {
+          "id": "e_abbasid_revolution",
+          "year": 749,
+          "title": "アッバース革命",
+          "category": "battle",
+          "location": "ホラーサーン→イラク",
+          "color": "#1a1a1a",
+          "characters": [
+            "c_abu_muslim",
+            "c_marwan_ii"
+          ]
+        },
+        {
+          "id": "e_umayyad_fall",
+          "year": 750,
+          "title": "ザーブ河畔の戦い、ウマイヤ朝滅亡",
+          "category": "death",
+          "location": "大ザーブ川（現イラク）",
+          "color": "#7a5a1a",
+          "characters": [
+            "c_marwan_ii",
+            "c_abu_muslim"
+          ]
+        },
+        {
+          "id": "e_al_saffah_caliph",
+          "year": 750,
+          "title": "アブー・アル＝アッバース、即位",
+          "category": "politics",
+          "location": "クーファ",
+          "color": "#1a1a1a",
+          "characters": [
+            "c_al_saffah"
+          ]
+        },
+        {
+          "id": "e_talas_battle",
+          "year": 751,
+          "title": "タラス河畔の戦い",
+          "category": "battle",
+          "location": "タラス河畔（中央アジア）",
+          "color": "#1a1a1a",
+          "characters": [
+            "c_ziyad_ibn_salih"
+          ]
+        },
+        {
+          "id": "e_umayyad_cordoba",
+          "year": 756,
+          "title": "後ウマイヤ朝、コルドバに成立",
+          "category": "politics",
+          "location": "コルドバ（イベリア半島）",
+          "color": "#6a3a5a",
+          "characters": [
+            "c_abd_al_rahman_i"
+          ]
+        },
+        {
+          "id": "e_baghdad_founding",
+          "year": 762,
+          "title": "バグダード造営、「平安の都」",
+          "category": "episode",
+          "location": "バグダード",
+          "color": "#1a1a1a",
+          "characters": [
+            "c_al_mansur"
+          ]
+        },
+        {
+          "id": "e_harun_al_rashid_accession",
+          "year": 786,
+          "title": "ハールーン・アッ＝ラシード、即位・最盛期",
+          "category": "politics",
+          "location": "バグダード",
+          "color": "#1a1a1a",
+          "characters": [
+            "c_harun_al_rashid"
+          ]
+        },
+        {
+          "id": "e_charlemagne_embassy",
+          "year": 800,
+          "title": "カール大帝との使節交換",
+          "category": "episode",
+          "location": "バグダード〜アーヘン",
+          "color": "#1a1a1a",
+          "characters": [
+            "c_harun_al_rashid",
+            "c_charlemagne"
+          ]
+        },
+        {
+          "id": "e_mamun_caliph",
+          "year": 813,
+          "title": "アル＝マームーン、即位",
+          "category": "politics",
+          "location": "バグダード",
+          "color": "#1a1a1a",
+          "characters": [
+            "c_al_mamun"
+          ]
+        },
+        {
+          "id": "e_bayt_al_hikma",
+          "year": 830,
+          "title": "知恵の館（バイト・アル＝ヒクマ）— 大翻訳運動",
+          "category": "episode",
+          "location": "バグダード",
+          "color": "#1a1a1a",
+          "characters": [
+            "c_al_mamun",
+            "c_khwarizmi",
+            "c_al_kindi"
+          ]
+        },
+        {
+          "id": "e_mihna_mutazila",
+          "year": 833,
+          "title": "ミフナ（審問）とムウタズィラ派",
+          "category": "politics",
+          "location": "バグダード",
+          "color": "#1a1a1a",
+          "characters": [
+            "c_al_mamun"
+          ]
+        },
+        {
+          "id": "e_khwarizmi_algebra",
+          "year": 830,
+          "title": "フワーリズミー、代数学を体系化",
+          "category": "episode",
+          "location": "バグダード",
+          "color": "#1a1a1a",
+          "characters": [
+            "c_khwarizmi"
+          ]
+        },
+        {
+          "id": "e_al_kindi_philosophy",
+          "year": 850,
+          "title": "キンディー、ギリシア哲学とイスラーム神学の調和を試みる",
+          "category": "episode",
+          "location": "バグダード",
+          "color": "#1a1a1a",
+          "characters": [
+            "c_al_kindi"
+          ]
+        },
+        {
+          "id": "e_al_razi_medicine",
+          "year": 900,
+          "title": "ラーズィー、臨床医学の大成",
+          "category": "episode",
+          "location": "バグダード",
+          "color": "#1a1a1a",
+          "characters": [
+            "c_al_razi"
+          ]
+        },
+        {
+          "id": "e_tulunid_egypt",
+          "year": 868,
+          "title": "トゥールーン朝、エジプトで自立",
+          "category": "politics",
+          "location": "エジプト",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_ibn_tulun"
+          ]
+        },
+        {
+          "id": "e_samanid_dynasty",
+          "year": 875,
+          "title": "サーマーン朝、中央アジアで自立",
+          "category": "politics",
+          "location": "中央アジア（ブハラ）"
+        },
+        {
+          "id": "e_fatimid_founding",
+          "year": 909,
+          "title": "ファーティマ朝成立 — シーア派カリフの登場",
+          "category": "politics",
+          "location": "北アフリカ（イフリーキヤ）",
+          "color": "#1a5a5a",
+          "characters": [
+            "c_al_mahdi_billah"
+          ]
+        },
+        {
+          "id": "e_cordoba_caliphate_declared",
+          "year": 929,
+          "title": "アブド・アッラフマーン3世、カリフを称す — 三カリフ鼎立",
+          "category": "politics",
+          "location": "コルドバ",
+          "color": "#6a3a5a",
+          "characters": [
+            "c_abd_al_rahman_iii"
+          ]
+        },
+        {
+          "id": "e_buyid_baghdad",
+          "year": 945,
+          "title": "ブワイフ朝、バグダード入城 — カリフの実権喪失",
+          "category": "politics",
+          "location": "バグダード"
+        },
+        {
+          "id": "e_ghaznavid_founding",
+          "year": 962,
+          "title": "ガズナ朝成立",
+          "category": "politics",
+          "location": "ガズナ（現アフガニスタン）"
+        },
+        {
+          "id": "e_mahmud_ghazni_india",
+          "year": 1001,
+          "title": "マフムード、北インドへの遠征を開始",
+          "category": "battle",
+          "location": "北インド",
+          "color": "#5a3a2a",
+          "characters": [
+            "c_mahmud_ghazni"
+          ]
+        },
+        {
+          "id": "e_fatimid_cairo_azhar",
+          "year": 969,
+          "title": "ファーティマ朝、カイロ建設・アズハル学院設立",
+          "category": "episode",
+          "location": "カイロ"
+        },
+        {
+          "id": "e_ibn_sina_medicine",
+          "year": 1010,
+          "title": "イブン・スィーナー、『医学典範』を著す",
+          "category": "episode",
+          "location": "中央アジア〜イラン",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_ibn_sina"
+          ]
+        },
+        {
+          "id": "e_al_biruni_india",
+          "year": 1030,
+          "title": "ビールーニー、『インド誌』を著す",
+          "category": "episode",
+          "location": "北インド〜ガズナ",
+          "color": "#5a3a2a",
+          "characters": [
+            "c_al_biruni",
+            "c_mahmud_ghazni"
+          ]
+        },
+        {
+          "id": "e_seljuk_baghdad",
+          "year": 1055,
+          "title": "セルジューク朝トゥグリル・ベグ、バグダード入城 — スルタン位の成立",
+          "category": "politics",
+          "location": "バグダード",
+          "color": "#5a4a2a",
+          "characters": [
+            "c_tughril_beg"
+          ]
+        },
+        {
+          "id": "e_nizamiyya_madrasa",
+          "year": 1065,
+          "title": "ニザーミーヤ学院、設立",
+          "category": "episode",
+          "location": "バグダードほか各地",
+          "color": "#5a4a2a",
+          "characters": [
+            "c_nizam_al_mulk"
+          ]
+        },
+        {
+          "id": "e_manzikert",
+          "year": 1071,
+          "title": "マラーズギルドの戦い",
+          "category": "battle",
+          "location": "マラーズギルド（現トルコ東部）",
+          "color": "#5a4a2a",
+          "characters": [
+            "c_alp_arslan",
+            "c_romanos_iv"
+          ]
+        },
+        {
+          "id": "e_ghazali_sufism",
+          "year": 1095,
+          "title": "ガザーリー、スーフィズムを体系化",
+          "category": "episode",
+          "location": "バグダード〜各地遊学",
+          "color": "#5a4a2a",
+          "characters": [
+            "c_ghazali"
+          ]
+        },
+        {
+          "id": "e_clermont_council",
+          "year": 1095,
+          "title": "クレルモン教会会議",
+          "category": "politics",
+          "location": "クレルモン（フランス）",
+          "color": "#7a1a1a",
+          "characters": [
+            "c_urban_ii"
+          ]
+        },
+        {
+          "id": "e_jerusalem_fall_crusade",
+          "year": 1099,
+          "title": "第1回十字軍、エルサレムを占領",
+          "category": "battle",
+          "location": "エルサレム"
+        },
+        {
+          "id": "e_saladin_egypt",
+          "year": 1169,
+          "title": "サラーフ・アッディーン、エジプトの実権を掌握",
+          "category": "politics",
+          "location": "カイロ",
+          "color": "#2a4a2a",
+          "characters": [
+            "c_saladin"
+          ]
+        },
+        {
+          "id": "e_fatimid_fall_ayyubid",
+          "year": 1171,
+          "title": "ファーティマ朝滅亡、アイユーブ朝成立",
+          "category": "politics",
+          "location": "カイロ",
+          "color": "#2a4a2a",
+          "characters": [
+            "c_saladin"
+          ]
+        },
+        {
+          "id": "e_hattin_jerusalem_recapture",
+          "year": 1187,
+          "title": "ヒッティーンの戦い、エルサレム奪回",
+          "category": "battle",
+          "location": "ヒッティーン（現イスラエル北部）",
+          "color": "#2a4a2a",
+          "characters": [
+            "c_saladin"
+          ]
+        },
+        {
+          "id": "e_third_crusade",
+          "year": 1191,
+          "title": "第3回十字軍、リチャード1世との対峙",
+          "category": "battle",
+          "location": "アッコンほかレヴァント沿岸",
+          "color": "#2a4a2a",
+          "characters": [
+            "c_saladin",
+            "c_richard_i"
+          ]
+        },
+        {
+          "id": "e_ibn_rushd_death",
+          "year": 1198,
+          "title": "イブン・ルシュド（アヴェロエス）、死去",
+          "category": "death",
+          "location": "マラケシュ（現モロッコ）",
+          "color": "#2a4a2a",
+          "characters": [
+            "c_ibn_rushd"
+          ]
+        },
+        {
+          "id": "e_mamluk_founding",
+          "year": 1250,
+          "title": "マムルーク朝、成立",
+          "category": "politics",
+          "location": "カイロ"
+        },
+        {
+          "id": "e_bukhara_samarkand",
+          "year": 1220,
+          "title": "モンゴル、ホラズム・シャー朝へ侵攻・ブハラ陥落",
+          "category": "battle",
+          "location": "ブハラ／サマルカンド（中央アジア）",
+          "color": "#1a5a6a",
+          "characters": [
+            "c_muhammad_khwarazm"
+          ]
+        },
+        {
+          "id": "e_alamut_fall",
+          "year": 1256,
+          "title": "アラムート城陥落、ニザール派制圧",
+          "category": "battle",
+          "location": "アラムート（現イラン）"
+        },
+        {
+          "id": "e_baghdad_fall",
+          "year": 1258,
+          "title": "バグダード陥落、アッバース朝滅亡",
+          "category": "battle",
+          "location": "バグダード",
+          "color": "#1a1a1a",
+          "characters": [
+            "c_al_mustasim"
+          ]
+        },
+        {
+          "id": "e_maragheh_observatory",
+          "year": 1259,
+          "title": "マラーゲ天文台の設立",
+          "category": "episode",
+          "location": "マラーゲ（現イラン）"
+        },
+        {
+          "id": "e_ain_jalut",
+          "year": 1260,
+          "title": "アイン・ジャールートの戦い",
+          "category": "battle",
+          "location": "アイン・ジャールート（現パレスチナ）"
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_muhammad",
+          "name": "ムハンマド",
+          "reading": "ムハンマド",
+          "faction": "islam",
+          "field": "thought"
+        },
+        {
+          "id": "c_khadija",
+          "name": "ハディージャ",
+          "reading": "ハディージャ",
+          "faction": "islam",
+          "field": "commerce"
+        },
+        {
+          "id": "c_abu_talib",
+          "name": "アブー・ターリブ",
+          "reading": "アブーターリブ",
+          "faction": "islam",
+          "field": "other"
+        },
+        {
+          "id": "c_abu_jahl",
+          "name": "アブー・ジャフル",
+          "reading": "アブージャフル",
+          "faction": "other",
+          "field": "military"
+        },
+        {
+          "id": "c_abu_bakr",
+          "name": "アブー・バクル",
+          "reading": "アブーバクル",
+          "faction": "rashidun",
+          "field": "governance"
+        },
+        {
+          "id": "c_umar",
+          "name": "ウマル",
+          "reading": "ウマル",
+          "faction": "rashidun",
+          "field": "governance"
+        },
+        {
+          "id": "c_khalid_ibn_walid",
+          "name": "ハーリド・イブン・アル＝ワリード",
+          "reading": "ハーリドイブンアルワリード",
+          "faction": "rashidun",
+          "field": "military"
+        },
+        {
+          "id": "c_ali",
+          "name": "アリー",
+          "reading": "アリー",
+          "faction": "rashidun",
+          "field": "governance"
+        },
+        {
+          "id": "c_aisha",
+          "name": "アーイシャ",
+          "reading": "アーイシャ",
+          "faction": "islam",
+          "field": "other"
+        },
+        {
+          "id": "c_uthman",
+          "name": "ウスマーン",
+          "reading": "ウスマーン",
+          "faction": "rashidun",
+          "field": "governance"
+        },
+        {
+          "id": "c_muawiya",
+          "name": "ムアーウィヤ",
+          "reading": "ムアーウィヤ",
+          "faction": "umayyad",
+          "field": "governance"
+        },
+        {
+          "id": "c_husayn",
+          "name": "フサイン",
+          "reading": "フサイン",
+          "faction": "islam",
+          "field": "thought"
+        },
+        {
+          "id": "c_abd_al_malik",
+          "name": "アブド・アル＝マリク",
+          "reading": "アブドアルマリク",
+          "faction": "umayyad",
+          "field": "governance"
+        },
+        {
+          "id": "c_tariq_ibn_ziyad",
+          "name": "ターリク・イブン・ズィヤード",
+          "reading": "ターリクイブンズィヤード",
+          "faction": "umayyad",
+          "field": "military"
+        },
+        {
+          "id": "c_roderic",
+          "name": "ロデリック",
+          "reading": "ロデリック",
+          "faction": "visigoth",
+          "field": "governance"
+        },
+        {
+          "id": "c_muhammad_ibn_qasim",
+          "name": "ムハンマド・イブン・カースィム",
+          "reading": "ムハンマドイブンカースィム",
+          "faction": "umayyad",
+          "field": "military"
+        },
+        {
+          "id": "c_charles_martel",
+          "name": "カール・マルテル",
+          "reading": "カールマルテル",
+          "faction": "frank",
+          "field": "military"
+        },
+        {
+          "id": "c_abu_muslim",
+          "name": "アブー・ムスリム",
+          "reading": "アブームスリム",
+          "faction": "abbasid",
+          "field": "military"
+        },
+        {
+          "id": "c_marwan_ii",
+          "name": "マルワーン2世",
+          "reading": "マルワーンにせい",
+          "faction": "umayyad",
+          "field": "governance"
+        },
+        {
+          "id": "c_al_saffah",
+          "name": "アッ＝サッファーフ",
+          "reading": "アッサッファーフ",
+          "faction": "abbasid",
+          "field": "governance"
+        },
+        {
+          "id": "c_ziyad_ibn_salih",
+          "name": "ジヤード・イブン・サーリフ",
+          "reading": "ジヤード・イブン・サーリフ",
+          "faction": "abbasid",
+          "field": "military"
+        },
+        {
+          "id": "c_abd_al_rahman_i",
+          "name": "アブド・アッラフマーン1世",
+          "reading": "アブドアッラフマーンいっせい",
+          "faction": "umayyad_cordoba",
+          "field": "governance"
+        },
+        {
+          "id": "c_al_mansur",
+          "name": "アル＝マンスール",
+          "reading": "アルマンスール",
+          "faction": "abbasid",
+          "field": "governance"
+        },
+        {
+          "id": "c_harun_al_rashid",
+          "name": "ハールーン・アッ＝ラシード",
+          "reading": "ハールーンアッラシード",
+          "faction": "abbasid",
+          "field": "governance"
+        },
+        {
+          "id": "c_charlemagne",
+          "name": "カール大帝",
+          "reading": "カールたいてい",
+          "faction": "frank",
+          "field": "governance"
+        },
+        {
+          "id": "c_al_mamun",
+          "name": "アル＝マームーン",
+          "reading": "アルマームーン",
+          "faction": "abbasid",
+          "field": "governance"
+        },
+        {
+          "id": "c_khwarizmi",
+          "name": "フワーリズミー",
+          "reading": "フワーリズミー",
+          "faction": "abbasid",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_al_kindi",
+          "name": "キンディー",
+          "reading": "キンディー",
+          "faction": "abbasid",
+          "field": "thought"
+        },
+        {
+          "id": "c_al_razi",
+          "name": "ラーズィー",
+          "reading": "ラーズィー",
+          "faction": "abbasid",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_ibn_tulun",
+          "name": "イブン・トゥールーン",
+          "reading": "イブントゥールーン",
+          "faction": "other",
+          "field": "governance"
+        },
+        {
+          "id": "c_al_mahdi_billah",
+          "name": "アル＝マフディー・ビッラー",
+          "reading": "アルマフディービッラー",
+          "faction": "fatimid",
+          "field": "governance"
+        },
+        {
+          "id": "c_abd_al_rahman_iii",
+          "name": "アブド・アッラフマーン3世",
+          "reading": "アブドアッラフマーンさんせい",
+          "faction": "umayyad_cordoba",
+          "field": "governance"
+        },
+        {
+          "id": "c_ibn_sina",
+          "name": "イブン・スィーナー（アヴィセンナ）",
+          "reading": "イブンスィーナー",
+          "faction": "other",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_al_biruni",
+          "name": "ビールーニー",
+          "reading": "ビールーニー",
+          "faction": "ghaznavid",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_mahmud_ghazni",
+          "name": "マフムード（ガズナ朝）",
+          "reading": "マフムード",
+          "faction": "ghaznavid",
+          "field": "governance"
+        },
+        {
+          "id": "c_tughril_beg",
+          "name": "トゥグリル・ベグ",
+          "reading": "トゥグリルベグ",
+          "faction": "seljuk",
+          "field": "governance"
+        },
+        {
+          "id": "c_alp_arslan",
+          "name": "アルプ・アルスラーン",
+          "reading": "アルプアルスラーン",
+          "faction": "seljuk",
+          "field": "military"
+        },
+        {
+          "id": "c_romanos_iv",
+          "name": "ロマノス4世",
+          "reading": "ロマノスよんせい",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_nizam_al_mulk",
+          "name": "ニザーム・アルムルク",
+          "reading": "ニザームアルムルク",
+          "faction": "seljuk",
+          "field": "administration"
+        },
+        {
+          "id": "c_ghazali",
+          "name": "ガザーリー",
+          "reading": "ガザーリー",
+          "faction": "seljuk",
+          "field": "thought"
+        },
+        {
+          "id": "c_urban_ii",
+          "name": "ウルバヌス2世",
+          "reading": "ウルバヌスにせい",
+          "faction": "crusader",
+          "field": "governance"
+        },
+        {
+          "id": "c_saladin",
+          "name": "サラーフ・アッディーン（サラディン）",
+          "reading": "サラーフアッディーン",
+          "faction": "ayyubid",
+          "field": "governance"
+        },
+        {
+          "id": "c_richard_i",
+          "name": "リチャード1世（獅子心王）",
+          "reading": "リチャードいっせい",
+          "faction": "crusader",
+          "field": "military"
+        },
+        {
+          "id": "c_ibn_rushd",
+          "name": "イブン・ルシュド（アヴェロエス）",
+          "reading": "イブンルシュド",
+          "faction": "ayyubid",
+          "field": "thought"
+        },
+        {
+          "id": "c_yazdegerd_iii",
+          "name": "ヤズデギルド3世",
+          "reading": "ヤズデギルドさんせい",
+          "faction": "sasanid",
+          "field": "governance"
+        },
+        {
+          "id": "c_heraclius",
+          "name": "ヘラクレイオス",
+          "reading": "ヘラクレイオス",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_muhammad_khwarazm",
+          "name": "ムハンマド2世",
+          "reading": "ムハンマドにせい",
+          "faction": "khwarazm",
+          "field": "governance"
+        },
+        {
+          "id": "c_al_mustasim",
+          "name": "アル＝ムスタアスィム",
+          "reading": "アルムスタアスィム",
+          "faction": "abbasid",
+          "field": "governance"
+        },
+        {
+          "id": "c_amr_ibn_al_as",
+          "name": "アムル・イブン・アル＝アース",
+          "reading": "アムルイブンアルアース",
+          "faction": "rashidun",
+          "field": "military"
+        }
+      ],
+      "factions": {
+        "islam": {
+          "id": "islam",
+          "name": "初期共同体",
+          "color": "#2a5a3a",
+          "colorLight": "#5a9a6a"
+        },
+        "rashidun": {
+          "id": "rashidun",
+          "name": "正統カリフ",
+          "color": "#3a6a4a",
+          "colorLight": "#6aa07a"
+        },
+        "umayyad": {
+          "id": "umayyad",
+          "name": "ウマイヤ朝",
+          "color": "#7a5a1a",
+          "colorLight": "#b8944a"
+        },
+        "abbasid": {
+          "id": "abbasid",
+          "name": "アッバース朝カリフ国",
+          "color": "#1a1a1a",
+          "colorLight": "#4a4a4a"
+        },
+        "fatimid": {
+          "id": "fatimid",
+          "name": "ファーティマ朝",
+          "color": "#1a5a5a",
+          "colorLight": "#4a9494"
+        },
+        "umayyad_cordoba": {
+          "id": "umayyad_cordoba",
+          "name": "後ウマイヤ朝（コルドバ）",
+          "color": "#6a3a5a",
+          "colorLight": "#a06a90"
+        },
+        "seljuk": {
+          "id": "seljuk",
+          "name": "セルジューク朝",
+          "color": "#5a4a2a",
+          "colorLight": "#948054"
+        },
+        "ayyubid": {
+          "id": "ayyubid",
+          "name": "アイユーブ朝",
+          "color": "#2a4a2a",
+          "colorLight": "#5a8a5a"
+        },
+        "mamluk": {
+          "id": "mamluk",
+          "name": "マムルーク朝",
+          "color": "#6a5a1a",
+          "colorLight": "#a08a3a"
+        },
+        "buyid": {
+          "id": "buyid",
+          "name": "ブワイフ朝",
+          "color": "#4a3a5a",
+          "colorLight": "#84709a"
+        },
+        "ghaznavid": {
+          "id": "ghaznavid",
+          "name": "ガズナ朝",
+          "color": "#5a3a2a",
+          "colorLight": "#94684a"
+        },
+        "khwarazm": {
+          "id": "khwarazm",
+          "name": "ホラズム・シャー朝",
+          "color": "#1a5a6a",
+          "colorLight": "#4a95a8"
+        },
+        "byzantine": {
+          "id": "byzantine",
+          "name": "ビザンツ帝国",
+          "color": "#5a1a5a",
+          "colorLight": "#944a94"
+        },
+        "sasanid": {
+          "id": "sasanid",
+          "name": "ササン朝ペルシア",
+          "color": "#7a2a1a",
+          "colorLight": "#b85a3a"
+        },
+        "visigoth": {
+          "id": "visigoth",
+          "name": "西ゴート王国",
+          "color": "#4a4a2a",
+          "colorLight": "#84845a"
+        },
+        "frank": {
+          "id": "frank",
+          "name": "フランク王国",
+          "color": "#2a3a6a",
+          "colorLight": "#5a70a8"
+        },
+        "tang": {
+          "id": "tang",
+          "name": "唐",
+          "color": "#9a2a2a",
+          "colorLight": "#d85a5a"
+        },
+        "crusader": {
+          "id": "crusader",
+          "name": "十字軍国家",
+          "color": "#7a1a1a",
+          "colorLight": "#b84a4a"
+        },
+        "mongol": {
+          "id": "mongol",
+          "name": "モンゴル帝国（大ハーン家・統一期）",
+          "color": "#2a4a6a",
+          "colorLight": "#5a84ab"
+        },
+        "ilkhanate": {
+          "id": "ilkhanate",
+          "name": "イルハン国",
+          "color": "#5a1a2a",
+          "colorLight": "#95455a"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#4a4a4a",
+          "colorLight": "#9a9a9a"
+        }
+      }
+    },
     "ancient-india": {
       "events": [
         {
