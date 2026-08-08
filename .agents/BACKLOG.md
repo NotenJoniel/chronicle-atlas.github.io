@@ -559,6 +559,49 @@ data/
 
 ---
 
+## ✅ 人物モーダルのラベル統一とhistoryTrivia欠落（2026-08-08 完了）
+
+ユーザーから「人物カードの構成が時代ごとにブレている」との指摘を受けて全29本を監査した。
+
+### ✅ 対応済み：見出しラベルの不統一
+
+`charDescLabel`が「人物紹介」（12本）と「📖 人物伝」（16本）の2陣営に分かれ、`triviaLabel`も「📖 エピソード」（12本）と「📜 補足・豆知識」（16本）に分かれていた（ファイルごとの偶発的なブレではなく、時期による一貫した傾向だった）。三国時代のみ「📖 人物伝（演義）」「📜 正史評・豆知識」＋別途`historyDiffLabel`という特殊構成。
+
+**対応**: `charDescLabel`を「人物紹介」に、`triviaLabel`を「📖 エピソード・豆知識」に全29本で統一した（三国時代のみ演義準拠を明示する必要があるため「人物紹介（演義）」を維持、`historyDiffLabel`は独自機能なのでそのまま）。
+
+### ✅ 対応済み：characters[].historyTriviaの欠落
+
+`historyTrivia`（エピソード欄の中身）がキャラクター単位で1件も無い、または極端に少ないファイルが多数あった（`sengoku-japan`46/46・`three-kingdoms`91/91のように全員分埋めているファイルと対照的）。2026-08-08中に2段階に分けて全29本を監査・対応した。
+
+**第1段（自分が同日新規実装した4本、明確な抜け漏れ）**:
+- `edo-period.json`: 0/48 → 12/48
+- `islamic-empire.json`: 0/49 → 11/49
+- `ancient-india.json`: 3/30 → 7/30
+- `sui-tang.json`: 3/41 → 9/41
+
+**第2段（残る全ファイルの網羅的な再点検、ユーザー依頼）**:
+- `aegean.json`: 0/2 → 2/2
+- `ancient-egypt.json`: 0/45 → 26/45
+- `bakumatsu-ishin.json`: 0/40 → 19/40
+- `heian-court.json`: 0/31 → 13/31
+- `mesopotamia.json`: 0/31 → 15/31
+- `mongol-invasion-japan.json`: 0/29 → 12/29
+- `nanboku-cho.json`: 0/26 → 12/26
+- `persia.json`: 0/23 → 10/23
+- `asuka-nara.json`: 1/44 → 25/44
+- `hojo-rise.json`: 1/34 → 13/34
+- `spring-autumn.json`: 1/31 → 17/31
+- `genpei-war.json`: 4/40 → 27/40
+- `golden-horde.json`: 9/27 → 19/27
+- `wakoku.json`: 8/24 → 16/24
+- `mongol-empire.json`: 20/41 → 30/41
+
+いずれも全員に機械的に追記したのではなく、本当に語るに値する逸話がある人物のみ厳選した（ユーザーからの明示的な指摘：「全員エピソードが無いと駄目ということはない」）。無理に埋めると水増しになり、他の充実したエピソードの価値を薄める。カバー率が意図的にファイルごとにバラつくのはこのため。
+
+複数タイムラインで再登場する人物（例：`c_kublai`＝`mongol-empire`⇄`mongol-invasion-japan`、`c_hojo_masako`等＝`genpei-war`⇄`hojo-rise`、`c_cyrus_ii`＝`mesopotamia`⇄`persia`、`c_batu`＝`golden-horde`⇄`mongol-empire`）には、原則として同一のhistoryTrivia本文を使い回して事実の一貫性を保った。ただし片方のファイルに既にそのエピソードが本文（description）で書かれている場合は、重複を避けて別の逸話を新たに書き起こした。
+
+**副産物として発見・修正したバグ**: `golden-horde.json`と`mongol-empire.json`は他のファイルと異なり、`historyTrivia`が空の人物にも`"historyTrivia": null`という明示的なプレースホルダー行が入っていた。この2ファイルに対して単純に`Edit`で`"historyTrivia": "..."`を追記すると、直後に残った`"historyTrivia": null`と**同一キーが重複**し、JSON.parseでは後勝ち（＝`null`）になるため、追記した内容が静かに握りつぶされるバグがあった。10件ずつ発生していたが、追記後に`characters.filter(c=>c.historyTrivia).length`で検証して発覚し、重複行を除去するスクリプトで修正した。他のファイルにはこのnullプレースホルダーは存在しない（grep で確認済み）。
+
 ## 🔵 目玉機能候補
 
 ### 横串ビュー（同時代比較）
