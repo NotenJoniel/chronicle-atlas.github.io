@@ -1,5 +1,5 @@
 {
-  "version": "1.26.0",
+  "version": "1.26.1",
   "updatedAt": "2026-08-08",
-  "note": "新規タイムライン「江戸時代」を追加（1603年〜1853年、87件の出来事・48人の人物）。徳川家康の江戸開府から、いわゆる鎖国の完成、由井正雪の乱を経た文治政治への転換、元禄文化、享保・寛政・天保の三大改革、田沼時代の商業振興、化政文化の爛熟、ロシア・イギリス・アメリカの接近と内憂外患、そしてペリー来航までを7章で描く。1615年の一国一城令・武家諸法度（`e_buke_shohatto`）を`sengoku-japan`と、1853年のペリー来航（`e_perry_arrival`）を`bakumatsu-ishin`と同一事件として共有し、徳川家康（`c_ieyasu`）を`sengoku-japan`から再利用。これにより日本史パートは8本構成となり、`sengoku-japan`（1615年終点）と`bakumatsu-ishin`（1853年始点）の間にあった空白が埋まった。arts/scholarship/commerceが日本史パートで最も厚い区間となった"
+  "note": "人物モーダルの見出しラベルを全29本で統一（`charDescLabel`は「人物紹介」、`triviaLabel`は「📖 エピソード・豆知識」に統一。三国時代のみ演義準拠を明示する「人物紹介（演義）」を維持し、`historyDiffLabel`はそのまま）。あわせて`historyTrivia`が0件だった直近4本（`edo-period`・`islamic-empire`・`ancient-india`・`sui-tang`）の主要人物に、実際に語るに値する逸話がある人物のみ厳選して追記（12/48・11/49・7/30・9/41）。残る8本（`aegean`・`ancient-egypt`・`bakumatsu-ishin`・`heian-court`・`mesopotamia`・`mongol-invasion-japan`・`nanboku-cho`・`persia`）は今回のスコープ外としてBACKLOGに記録"
 }

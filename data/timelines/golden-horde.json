@@ -13,7 +13,7 @@
     "charDescLabel": "人物紹介",
     "relatedCharsLabel": "関連人物",
     "relatedEventsLabel": "関連する出来事",
-    "triviaLabel": "📖 エピソード",
+    "triviaLabel": "📖 エピソード・豆知識",
     "layoutStyle": "flat",
     "mapLayout": [
       [null, "novgorod", null],

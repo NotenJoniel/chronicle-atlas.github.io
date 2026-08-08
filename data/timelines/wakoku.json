@@ -10,10 +10,10 @@
     "mapTitleLabel": "勢力図",
     "characterTitleLabel": "別名",
     "descLabel": "📖 史実の記録",
-    "charDescLabel": "📖 人物伝",
+    "charDescLabel": "人物紹介",
     "relatedCharsLabel": "👥 関連人物（クリックで詳細）",
     "relatedEventsLabel": "📅 関連する出来事（クリックで詳細）",
-    "triviaLabel": "📜 補足・豆知識",
+    "triviaLabel": "📖 エピソード・豆知識",
     "layoutStyle": "rail",
     "mapLayout": [
       [null, "izumo", null, null],
