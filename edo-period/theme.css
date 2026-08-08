@@ -1,0 +1,6 @@
+/* 江戸時代 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#14100a;--surface:#1f1810;--surface-2:#2a2016;--surface-3:#382c1e;
+  --border-subtle:rgba(106,170,74,.14);--text:#ece3da;--text-dim:#a8927f;
+  --gold:#6aaa4a;--gold-dim:rgba(106,170,74,.2);
+}
