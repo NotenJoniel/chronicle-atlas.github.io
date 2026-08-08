@@ -1,5 +1,5 @@
 {
-  "version": "1.26.1",
+  "version": "1.27.0",
   "updatedAt": "2026-08-08",
-  "note": "人物モーダルの見出しラベルを全29本で統一（`charDescLabel`は「人物紹介」、`triviaLabel`は「📖 エピソード・豆知識」に統一。三国時代のみ演義準拠を明示する「人物紹介（演義）」を維持し、`historyDiffLabel`はそのまま）。あわせて`historyTrivia`が0件だった直近4本（`edo-period`・`islamic-empire`・`ancient-india`・`sui-tang`）の主要人物に、実際に語るに値する逸話がある人物のみ厳選して追記（12/48・11/49・7/30・9/41）。残る8本（`aegean`・`ancient-egypt`・`bakumatsu-ishin`・`heian-court`・`mesopotamia`・`mongol-invasion-japan`・`nanboku-cho`・`persia`）は今回のスコープ外としてBACKLOGに記録"
+  "note": "全29本のタイムラインを対象に人物データを再点検し、エピソードがあってもよいのに欠けていた人物へ`historyTrivia`を厳選追記（強制的に全員を埋めることはせず、語るに値する逸話がある人物のみ）。今回対象：`aegean`(2/2)・`ancient-egypt`(26/45)・`bakumatsu-ishin`(19/40)・`heian-court`(13/31)・`mesopotamia`(15/31)・`mongol-invasion-japan`(12/29)・`nanboku-cho`(12/26)・`persia`(10/23)・`asuka-nara`(25/44)・`hojo-rise`(13/34)・`spring-autumn`(17/31)・`genpei-war`(27/40)・`golden-horde`(19/27)・`wakoku`(16/24)・`mongol-empire`(30/41)。作業中、`golden-horde`と`mongol-empire`で`\"historyTrivia\": null`のプレースホルダー行と新規追記が重複キーになり値が無効化されるバグを発見・修正"
 }

@@ -559,7 +559,7 @@ data/
 
 ---
 
-## 🟡 人物モーダルのラベル統一とhistoryTrivia欠落（2026-08-08 一部対応）
+## ✅ 人物モーダルのラベル統一とhistoryTrivia欠落（2026-08-08 完了）
 
 ユーザーから「人物カードの構成が時代ごとにブレている」との指摘を受けて全29本を監査した。
 
@@ -569,31 +569,38 @@ data/
 
 **対応**: `charDescLabel`を「人物紹介」に、`triviaLabel`を「📖 エピソード・豆知識」に全29本で統一した（三国時代のみ演義準拠を明示する必要があるため「人物紹介（演義）」を維持、`historyDiffLabel`は独自機能なのでそのまま）。
 
-### 🟡 部分対応：characters[].historyTriviaがファイル丸ごと0件の問題
+### ✅ 対応済み：characters[].historyTriviaの欠落
 
-ラベルとは別に、`historyTrivia`（エピソード欄の中身）がキャラクター単位で1件も無いファイルが10本あった（`sengoku-japan`46/46・`three-kingdoms`91/91のように全員分埋めているファイルと対照的）。「たまたま無い人が多かった」のではなく、執筆時にこのカテゴリ自体が抜け落ちていたことを示唆する。
+`historyTrivia`（エピソード欄の中身）がキャラクター単位で1件も無い、または極端に少ないファイルが多数あった（`sengoku-japan`46/46・`three-kingdoms`91/91のように全員分埋めているファイルと対照的）。2026-08-08中に2段階に分けて全29本を監査・対応した。
 
-**今回対応した4本**（同日に自分が新規実装したファイル、明確な自分の抜け漏れ）:
+**第1段（自分が同日新規実装した4本、明確な抜け漏れ）**:
 - `edo-period.json`: 0/48 → 12/48
 - `islamic-empire.json`: 0/49 → 11/49
 - `ancient-india.json`: 3/30 → 7/30
 - `sui-tang.json`: 3/41 → 9/41
 
-いずれも全員に機械的に追記したのではなく、本当に語るに値する逸話がある人物のみ厳選した（ユーザーからの明示的な指摘：「全員エピソードが無いと駄目ということはない」）。無理に埋めると水増しになり、他の充実したエピソードの価値を薄める。
+**第2段（残る全ファイルの網羅的な再点検、ユーザー依頼）**:
+- `aegean.json`: 0/2 → 2/2
+- `ancient-egypt.json`: 0/45 → 26/45
+- `bakumatsu-ishin.json`: 0/40 → 19/40
+- `heian-court.json`: 0/31 → 13/31
+- `mesopotamia.json`: 0/31 → 15/31
+- `mongol-invasion-japan.json`: 0/29 → 12/29
+- `nanboku-cho.json`: 0/26 → 12/26
+- `persia.json`: 0/23 → 10/23
+- `asuka-nara.json`: 1/44 → 25/44
+- `hojo-rise.json`: 1/34 → 13/34
+- `spring-autumn.json`: 1/31 → 17/31
+- `genpei-war.json`: 4/40 → 27/40
+- `golden-horde.json`: 9/27 → 19/27
+- `wakoku.json`: 8/24 → 16/24
+- `mongol-empire.json`: 20/41 → 30/41
 
-**未対応・今後の候補（8本、いずれも0件のまま）**:
-- `aegean.json`（2人、書きようがない可能性あり）
-- `ancient-egypt.json`（45人）
-- `bakumatsu-ishin.json`（40人）
-- `heian-court.json`（31人）
-- `mesopotamia.json`（31人）
-- `mongol-invasion-japan.json`（29人）
-- `nanboku-cho.json`（26人）
-- `persia.json`（23人）
+いずれも全員に機械的に追記したのではなく、本当に語るに値する逸話がある人物のみ厳選した（ユーザーからの明示的な指摘：「全員エピソードが無いと駄目ということはない」）。無理に埋めると水増しになり、他の充実したエピソードの価値を薄める。カバー率が意図的にファイルごとにバラつくのはこのため。
 
-対応する場合も同じ基準（全員ではなく、厳選した人物のみ）を踏襲すること。`aegean`は該当する2人（ミノス・アガメムノン）ともに伝承上の人物で、有名な逸話が乏しい可能性があるため、無理に追加しないという判断もあり得る。
+複数タイムラインで再登場する人物（例：`c_kublai`＝`mongol-empire`⇄`mongol-invasion-japan`、`c_hojo_masako`等＝`genpei-war`⇄`hojo-rise`、`c_cyrus_ii`＝`mesopotamia`⇄`persia`、`c_batu`＝`golden-horde`⇄`mongol-empire`）には、原則として同一のhistoryTrivia本文を使い回して事実の一貫性を保った。ただし片方のファイルに既にそのエピソードが本文（description）で書かれている場合は、重複を避けて別の逸話を新たに書き起こした。
 
----
+**副産物として発見・修正したバグ**: `golden-horde.json`と`mongol-empire.json`は他のファイルと異なり、`historyTrivia`が空の人物にも`"historyTrivia": null`という明示的なプレースホルダー行が入っていた。この2ファイルに対して単純に`Edit`で`"historyTrivia": "..."`を追記すると、直後に残った`"historyTrivia": null`と**同一キーが重複**し、JSON.parseでは後勝ち（＝`null`）になるため、追記した内容が静かに握りつぶされるバグがあった。10件ずつ発生していたが、追記後に`characters.filter(c=>c.historyTrivia).length`で検証して発覚し、重複行を除去するスクリプトで修正した。他のファイルにはこのnullプレースホルダーは存在しない（grep で確認済み）。
 
 ## 🔵 目玉機能候補
 
