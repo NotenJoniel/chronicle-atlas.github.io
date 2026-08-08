@@ -28,6 +28,15 @@
       "subProjectDir": "persia"
     },
     {
+      "id": "ancient-india",
+      "name": "古代インド",
+      "region": "others",
+      "startYear": -2600,
+      "endYear": 550,
+      "dataFile": "timelines/ancient-india.json",
+      "subProjectDir": "ancient-india"
+    },
+    {
       "id": "spring-autumn",
       "name": "春秋時代",
       "region": "china",

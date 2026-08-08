@@ -1,0 +1,6 @@
+/* 古代インド — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#140f0a;--surface:#1f170f;--surface-2:#2a1f14;--surface-3:#382a1c;
+  --border-subtle:rgba(200,154,74,.14);--text:#ece3da;--text-dim:#a8927f;
+  --gold:#c89a4a;--gold-dim:rgba(200,154,74,.2);
+}
