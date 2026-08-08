@@ -7559,6 +7559,1001 @@
         }
       }
     },
+    "sui-tang": {
+      "events": [
+        {
+          "id": "e_sui_founding",
+          "year": 581,
+          "title": "楊堅、隋を建国",
+          "category": "politics",
+          "location": "長安",
+          "color": "#4a3a6a",
+          "characters": [
+            "c_yang_jian"
+          ]
+        },
+        {
+          "id": "e_sui_conquest_chen",
+          "year": 589,
+          "title": "隋、南朝陳を併合し中国を再統一",
+          "category": "battle",
+          "location": "建康（南朝陳の都）",
+          "color": "#4a3a6a",
+          "characters": [
+            "c_yang_jian",
+            "c_chen_shubao"
+          ]
+        },
+        {
+          "id": "e_kaihuang_rule",
+          "year": 590,
+          "title": "開皇の治 — 均田制と三省六部の整備",
+          "category": "episode",
+          "location": "長安",
+          "color": "#4a3a6a",
+          "characters": [
+            "c_yang_jian",
+            "c_gao_jiong"
+          ]
+        },
+        {
+          "id": "e_keju_created",
+          "year": 587,
+          "title": "科挙、創始される",
+          "category": "politics",
+          "location": "長安",
+          "color": "#4a3a6a",
+          "characters": [
+            "c_yang_jian"
+          ]
+        },
+        {
+          "id": "e_wendi_death",
+          "year": 604,
+          "title": "文帝、崩御・煬帝が即位",
+          "category": "death",
+          "location": "仁寿宮",
+          "color": "#4a3a6a",
+          "characters": [
+            "c_yang_jian",
+            "c_yang_guang"
+          ]
+        },
+        {
+          "id": "e_grand_canal",
+          "year": 605,
+          "title": "大運河、着工・完成",
+          "category": "episode",
+          "location": "洛陽〜江南",
+          "color": "#4a3a6a",
+          "characters": [
+            "c_yang_guang"
+          ]
+        },
+        {
+          "id": "e_kenzuishi_ono_imoko",
+          "year": 607,
+          "title": "倭国より遣隋使（小野妹子）が到来",
+          "category": "politics",
+          "location": "洛陽",
+          "color": "#5a4a12",
+          "characters": [
+            "c_umayado_no_ouji",
+            "c_ono_no_imoko",
+            "c_yang_guang"
+          ]
+        },
+        {
+          "id": "e_goguryeo_expedition_612",
+          "year": 612,
+          "title": "高句麗遠征（第一次）、薩水で大敗",
+          "category": "battle",
+          "location": "薩水（清川江）",
+          "color": "#4a3a6a",
+          "characters": [
+            "c_yang_guang",
+            "c_eulji_mundeok"
+          ]
+        },
+        {
+          "id": "e_goguryeo_expedition_613_614",
+          "year": 613,
+          "title": "高句麗遠征（第二次・第三次）も失敗",
+          "category": "battle",
+          "location": "遼東",
+          "color": "#4a3a6a",
+          "characters": [
+            "c_yang_guang"
+          ]
+        },
+        {
+          "id": "e_rebellions_erupt",
+          "year": 613,
+          "title": "各地で反乱が相次ぐ",
+          "category": "battle",
+          "location": "中国各地"
+        },
+        {
+          "id": "e_li_yuan_uprising",
+          "year": 617,
+          "title": "李淵、太原で挙兵",
+          "category": "politics",
+          "location": "太原",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_yuan"
+          ]
+        },
+        {
+          "id": "e_yangdi_death",
+          "year": 618,
+          "title": "煬帝、江都で弑逆される",
+          "category": "death",
+          "location": "江都（揚州）",
+          "color": "#4a3a6a",
+          "characters": [
+            "c_yang_guang"
+          ]
+        },
+        {
+          "id": "e_tang_founding",
+          "year": 618,
+          "title": "李淵、唐を建国（高祖）",
+          "category": "politics",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_yuan"
+          ]
+        },
+        {
+          "id": "e_xuanwumen_incident",
+          "year": 626,
+          "title": "玄武門の変",
+          "category": "battle",
+          "location": "長安・玄武門",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_shimin"
+          ]
+        },
+        {
+          "id": "e_taizong_enthronement",
+          "year": 626,
+          "title": "李世民、即位（太宗）",
+          "category": "politics",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_shimin",
+            "c_li_yuan"
+          ]
+        },
+        {
+          "id": "e_first_kentoshi",
+          "year": 630,
+          "title": "倭国より第一回遣唐使、派遣される",
+          "category": "politics",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_shimin",
+            "c_inukami_no_mitasuki"
+          ]
+        },
+        {
+          "id": "e_tujue_submission",
+          "year": 630,
+          "title": "東突厥、唐に服属",
+          "category": "battle",
+          "location": "陰山山脈（モンゴル高原南部）",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_shimin",
+            "c_illig_qaghan"
+          ]
+        },
+        {
+          "id": "e_zhenguan_rule",
+          "year": 633,
+          "title": "貞観の治 — 魏徴の諫言と太宗の治世",
+          "category": "episode",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_shimin",
+            "c_wei_zheng"
+          ]
+        },
+        {
+          "id": "e_ritsuryo_codified",
+          "year": 637,
+          "title": "貞観律令、制定",
+          "category": "politics",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_shimin"
+          ]
+        },
+        {
+          "id": "e_taizong_death",
+          "year": 649,
+          "title": "太宗、崩御",
+          "category": "death",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_shimin"
+          ]
+        },
+        {
+          "id": "e_gaozong_enthronement",
+          "year": 649,
+          "title": "李治、即位（高宗）",
+          "category": "politics",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_zhi"
+          ]
+        },
+        {
+          "id": "e_wu_zetian_empress",
+          "year": 655,
+          "title": "武則天、皇后となる",
+          "category": "politics",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_zhi",
+            "c_wu_zetian"
+          ]
+        },
+        {
+          "id": "e_baekje_fall",
+          "year": 660,
+          "title": "百済、滅亡",
+          "category": "battle",
+          "location": "泗沘（百済の都）",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_zhi",
+            "c_uija_wang"
+          ]
+        },
+        {
+          "id": "e_hakusukinoe",
+          "year": 663,
+          "title": "白村江の戦い",
+          "category": "battle",
+          "location": "白村江（錦江河口）",
+          "color": "#5a4a12",
+          "characters": [
+            "c_naka_no_oe",
+            "c_liu_rengui"
+          ]
+        },
+        {
+          "id": "e_goguryeo_fall",
+          "year": 668,
+          "title": "高句麗、滅亡",
+          "category": "battle",
+          "location": "平壌",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_zhi",
+            "c_yeon_gaesomun"
+          ]
+        },
+        {
+          "id": "e_gaozong_death",
+          "year": 683,
+          "title": "高宗、崩御",
+          "category": "death",
+          "location": "洛陽",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_zhi"
+          ]
+        },
+        {
+          "id": "e_zhou_founding",
+          "year": 690,
+          "title": "武則天、国号を「周」に改め皇帝に即位",
+          "category": "politics",
+          "location": "洛陽",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_wu_zetian"
+          ]
+        },
+        {
+          "id": "e_wu_zetian_abdication",
+          "year": 705,
+          "title": "神龍革命、武則天が退位・唐が復辟",
+          "category": "politics",
+          "location": "洛陽",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_wu_zetian"
+          ]
+        },
+        {
+          "id": "e_xuanzong_enthronement",
+          "year": 712,
+          "title": "李隆基、即位（玄宗）",
+          "category": "politics",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_longji"
+          ]
+        },
+        {
+          "id": "e_kaiyuan_rule",
+          "year": 720,
+          "title": "開元の治 — 姚崇・宋璟の改革",
+          "category": "episode",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_longji",
+            "c_yao_chong"
+          ]
+        },
+        {
+          "id": "e_kentoshi_717",
+          "year": 717,
+          "title": "遣唐使（阿倍仲麻呂・吉備真備・玄昉）、入唐",
+          "category": "politics",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_longji",
+            "c_abe_no_nakamaro",
+            "c_kibi_no_makibi",
+            "c_genbou"
+          ]
+        },
+        {
+          "id": "e_chang_an_cosmopolitan",
+          "year": 730,
+          "title": "国際都市長安 — 景教・マニ教の伝来",
+          "category": "episode",
+          "location": "長安"
+        },
+        {
+          "id": "e_li_bai_hanlin",
+          "year": 742,
+          "title": "李白、翰林供奉となる",
+          "category": "episode",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_bai"
+          ]
+        },
+        {
+          "id": "e_yang_guifei_favor",
+          "year": 745,
+          "title": "玄宗、楊貴妃を寵愛",
+          "category": "episode",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_longji",
+            "c_yang_guifei"
+          ]
+        },
+        {
+          "id": "e_talas_battle",
+          "year": 751,
+          "title": "タラス河畔の戦い",
+          "category": "battle",
+          "location": "タラス河畔（中央アジア）",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_longji",
+            "c_gao_xianzhi",
+            "c_ziyad_ibn_salih"
+          ]
+        },
+        {
+          "id": "e_ganjin_nakamaro_753",
+          "year": 753,
+          "title": "鑑真の来日と阿倍仲麻呂の遭難",
+          "category": "episode",
+          "location": "揚州→日本／中国沿岸",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_ganjin",
+            "c_abe_no_nakamaro",
+            "c_li_bai"
+          ]
+        },
+        {
+          "id": "e_an_lushan_favor",
+          "year": 750,
+          "title": "安禄山、三節度使を兼任",
+          "category": "politics",
+          "location": "范陽",
+          "color": "#5a1a1a",
+          "characters": [
+            "c_an_lushan",
+            "c_li_longji"
+          ]
+        },
+        {
+          "id": "e_an_lushan_rebellion_begins",
+          "year": 755,
+          "title": "安史の乱、勃発",
+          "category": "battle",
+          "location": "范陽",
+          "color": "#5a1a1a",
+          "characters": [
+            "c_an_lushan"
+          ]
+        },
+        {
+          "id": "e_chang_an_falls_xuanzong_flees",
+          "year": 756,
+          "title": "長安陥落、玄宗が蜀へ落ち延びる",
+          "category": "battle",
+          "location": "長安→蜀（四川）",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_longji",
+            "c_an_lushan"
+          ]
+        },
+        {
+          "id": "e_mawei_incident",
+          "year": 756,
+          "title": "馬嵬の変、楊貴妃の死",
+          "category": "death",
+          "location": "馬嵬駅",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_longji",
+            "c_yang_guifei"
+          ]
+        },
+        {
+          "id": "e_suzong_enthronement_lingwu",
+          "year": 756,
+          "title": "粛宗、霊武で即位",
+          "category": "politics",
+          "location": "霊武",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_heng"
+          ]
+        },
+        {
+          "id": "e_an_lushan_death",
+          "year": 757,
+          "title": "安禄山、息子に殺害される",
+          "category": "death",
+          "location": "洛陽",
+          "color": "#5a1a1a",
+          "characters": [
+            "c_an_lushan"
+          ]
+        },
+        {
+          "id": "e_chang_an_recaptured",
+          "year": 757,
+          "title": "郭子儀、長安・洛陽を奪還",
+          "category": "battle",
+          "location": "長安・洛陽",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_guo_ziyi"
+          ]
+        },
+        {
+          "id": "e_shi_siming_revolt",
+          "year": 759,
+          "title": "史思明、乱を継承し再挙",
+          "category": "battle",
+          "location": "河北",
+          "color": "#5a1a1a",
+          "characters": [
+            "c_shi_siming"
+          ]
+        },
+        {
+          "id": "e_rebellion_ends",
+          "year": 763,
+          "title": "史朝義、自害・安史の乱が終結",
+          "category": "death",
+          "location": "河北",
+          "color": "#5a1a1a",
+          "characters": [
+            "c_shi_chaoyi",
+            "c_guo_ziyi"
+          ]
+        },
+        {
+          "id": "e_tibet_chang_an_raid",
+          "year": 763,
+          "title": "吐蕃、長安を一時占領",
+          "category": "battle",
+          "location": "長安",
+          "color": "#6a2a3a",
+          "characters": [
+            "c_trisong_detsen"
+          ]
+        },
+        {
+          "id": "e_fanzhen_autonomy",
+          "year": 770,
+          "title": "藩鎮の割拠、常態化",
+          "category": "episode",
+          "location": "河北ほか各地",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_guo_ziyi"
+          ]
+        },
+        {
+          "id": "e_liangshui_fa",
+          "year": 780,
+          "title": "両税法、施行",
+          "category": "politics",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_yang_yan"
+          ]
+        },
+        {
+          "id": "e_niu_li_faction_struggle",
+          "year": 830,
+          "title": "牛李の党争、激化",
+          "category": "politics",
+          "location": "長安",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_deyu"
+          ]
+        },
+        {
+          "id": "e_huichang_persecution",
+          "year": 845,
+          "title": "会昌の廃仏",
+          "category": "politics",
+          "location": "長安ほか全国",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_li_yan"
+          ]
+        },
+        {
+          "id": "e_huang_chao_rebellion_begins",
+          "year": 875,
+          "title": "黄巣の乱、勃発",
+          "category": "battle",
+          "location": "山東",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_huang_chao"
+          ]
+        },
+        {
+          "id": "e_chang_an_sacked_huang_chao",
+          "year": 880,
+          "title": "黄巣、長安を占領し皇帝を称する",
+          "category": "battle",
+          "location": "長安",
+          "color": "#4a4a4a",
+          "characters": [
+            "c_huang_chao"
+          ]
+        },
+        {
+          "id": "e_zhu_wen_betrayal",
+          "year": 882,
+          "title": "朱全忠、唐に帰順",
+          "category": "politics",
+          "location": "河南",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_zhu_wen"
+          ]
+        },
+        {
+          "id": "e_kentoshi_abolished",
+          "year": 894,
+          "title": "遣唐使、実質的に廃止される",
+          "category": "politics",
+          "location": "長安（唐側の情勢）",
+          "color": "#5a4a12",
+          "characters": [
+            "c_sugawara_michizane"
+          ]
+        },
+        {
+          "id": "e_zhu_wen_dictatorship",
+          "year": 901,
+          "title": "朱全忠、唐の実権を掌握",
+          "category": "politics",
+          "location": "長安・洛陽",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_zhu_wen"
+          ]
+        },
+        {
+          "id": "e_tang_fall",
+          "year": 907,
+          "title": "朱全忠、後梁を建国・唐が滅亡",
+          "category": "politics",
+          "location": "開封",
+          "color": "#9a2a2a",
+          "characters": [
+            "c_zhu_wen"
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_yang_jian",
+          "name": "楊堅（文帝）",
+          "reading": "ようけん",
+          "faction": "sui",
+          "field": "governance"
+        },
+        {
+          "id": "c_chen_shubao",
+          "name": "陳叔宝（陳後主）",
+          "reading": "ちんしゅくほう",
+          "faction": "other",
+          "field": "other"
+        },
+        {
+          "id": "c_gao_jiong",
+          "name": "高熲",
+          "reading": "こうけい",
+          "faction": "sui",
+          "field": "administration"
+        },
+        {
+          "id": "c_yang_guang",
+          "name": "楊広（煬帝）",
+          "reading": "ようこう",
+          "faction": "sui",
+          "field": "governance"
+        },
+        {
+          "id": "c_eulji_mundeok",
+          "name": "乙支文徳",
+          "reading": "エウルチムンドク",
+          "faction": "goguryeo",
+          "field": "military"
+        },
+        {
+          "id": "c_li_yuan",
+          "name": "李淵（高祖）",
+          "reading": "りえん",
+          "faction": "tang",
+          "field": "governance"
+        },
+        {
+          "id": "c_li_shimin",
+          "name": "李世民（太宗）",
+          "reading": "りせいみん",
+          "faction": "tang",
+          "field": "governance"
+        },
+        {
+          "id": "c_inukami_no_mitasuki",
+          "name": "犬上御田鍬",
+          "reading": "いぬかみのみたすき",
+          "faction": "court",
+          "field": "administration"
+        },
+        {
+          "id": "c_illig_qaghan",
+          "name": "頡利可汗",
+          "reading": "けつりかがん",
+          "faction": "tujue",
+          "field": "governance"
+        },
+        {
+          "id": "c_wei_zheng",
+          "name": "魏徴",
+          "reading": "ぎちょう",
+          "faction": "tang",
+          "field": "administration"
+        },
+        {
+          "id": "c_li_zhi",
+          "name": "李治（高宗）",
+          "reading": "りち",
+          "faction": "tang",
+          "field": "governance"
+        },
+        {
+          "id": "c_wu_zetian",
+          "name": "武則天（則天武后）",
+          "reading": "ぶそくてん",
+          "faction": "tang",
+          "field": "governance"
+        },
+        {
+          "id": "c_uija_wang",
+          "name": "義慈王",
+          "reading": "ぎじおう",
+          "faction": "baekje",
+          "field": "governance"
+        },
+        {
+          "id": "c_liu_rengui",
+          "name": "劉仁軌",
+          "reading": "りゅうじんき",
+          "faction": "tang",
+          "field": "military"
+        },
+        {
+          "id": "c_yeon_gaesomun",
+          "name": "泉蓋蘇文",
+          "reading": "せんがいそぶん",
+          "faction": "goguryeo",
+          "field": "governance"
+        },
+        {
+          "id": "c_li_longji",
+          "name": "李隆基（玄宗）",
+          "reading": "りりゅうき",
+          "faction": "tang",
+          "field": "governance"
+        },
+        {
+          "id": "c_yao_chong",
+          "name": "姚崇",
+          "reading": "ようすう",
+          "faction": "tang",
+          "field": "administration"
+        },
+        {
+          "id": "c_abe_no_nakamaro",
+          "name": "阿倍仲麻呂",
+          "reading": "あべのなかまろ",
+          "faction": "court",
+          "field": "administration"
+        },
+        {
+          "id": "c_li_bai",
+          "name": "李白",
+          "reading": "りはく",
+          "faction": "tang",
+          "field": "arts"
+        },
+        {
+          "id": "c_gao_xianzhi",
+          "name": "高仙芝",
+          "reading": "こうせんし",
+          "faction": "tang",
+          "field": "military"
+        },
+        {
+          "id": "c_ziyad_ibn_salih",
+          "name": "ジヤード・イブン・サーリフ",
+          "reading": "ジヤード・イブン・サーリフ",
+          "faction": "abbasid",
+          "field": "military"
+        },
+        {
+          "id": "c_ganjin",
+          "name": "鑑真",
+          "reading": "がんじん",
+          "faction": "tang",
+          "field": "thought"
+        },
+        {
+          "id": "c_yang_guifei",
+          "name": "楊貴妃",
+          "reading": "ようきひ",
+          "faction": "tang",
+          "field": "other"
+        },
+        {
+          "id": "c_an_lushan",
+          "name": "安禄山",
+          "reading": "あんろくざん",
+          "faction": "yan",
+          "field": "military"
+        },
+        {
+          "id": "c_li_heng",
+          "name": "李亨（粛宗）",
+          "reading": "りきょう",
+          "faction": "tang",
+          "field": "governance"
+        },
+        {
+          "id": "c_guo_ziyi",
+          "name": "郭子儀",
+          "reading": "かくしぎ",
+          "faction": "tang",
+          "field": "military"
+        },
+        {
+          "id": "c_shi_siming",
+          "name": "史思明",
+          "reading": "しせいめい",
+          "faction": "yan",
+          "field": "military"
+        },
+        {
+          "id": "c_shi_chaoyi",
+          "name": "史朝義",
+          "reading": "しちょうぎ",
+          "faction": "yan",
+          "field": "military"
+        },
+        {
+          "id": "c_trisong_detsen",
+          "name": "ソンツェン・ガンポ",
+          "reading": "ソンツェンガンポ",
+          "faction": "tubo",
+          "field": "governance"
+        },
+        {
+          "id": "c_yang_yan",
+          "name": "楊炎",
+          "reading": "ようえん",
+          "faction": "tang",
+          "field": "administration"
+        },
+        {
+          "id": "c_li_deyu",
+          "name": "李徳裕",
+          "reading": "りとくゆう",
+          "faction": "tang",
+          "field": "administration"
+        },
+        {
+          "id": "c_li_yan",
+          "name": "李炎（武宗）",
+          "reading": "りえん",
+          "faction": "tang",
+          "field": "governance"
+        },
+        {
+          "id": "c_huang_chao",
+          "name": "黄巣",
+          "reading": "こうそう",
+          "faction": "other",
+          "field": "military"
+        },
+        {
+          "id": "c_zhu_wen",
+          "name": "朱全忠",
+          "reading": "しゅぜんちゅう",
+          "faction": "tang",
+          "field": "military"
+        },
+        {
+          "id": "c_naka_no_oe",
+          "name": "中大兄皇子（天智天皇）",
+          "reading": "なかのおおえのおうじ",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_umayado_no_ouji",
+          "name": "厩戸皇子（聖徳太子）",
+          "reading": "うまやどのおうじ",
+          "faction": "court",
+          "field": "governance"
+        },
+        {
+          "id": "c_ono_no_imoko",
+          "name": "小野妹子",
+          "reading": "おののいもこ",
+          "faction": "court",
+          "field": "administration"
+        },
+        {
+          "id": "c_kibi_no_makibi",
+          "name": "吉備真備",
+          "reading": "きびのまきび",
+          "faction": "court",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_genbou",
+          "name": "玄昉",
+          "reading": "げんぼう",
+          "faction": "court",
+          "field": "thought"
+        },
+        {
+          "id": "c_sugawara_michizane",
+          "name": "菅原道真",
+          "reading": "すがわらのみちざね",
+          "faction": "court",
+          "field": "scholarship"
+        }
+      ],
+      "factions": {
+        "sui": {
+          "id": "sui",
+          "name": "隋",
+          "color": "#4a3a6a",
+          "colorLight": "#8a72b0"
+        },
+        "tang": {
+          "id": "tang",
+          "name": "唐",
+          "color": "#9a2a2a",
+          "colorLight": "#d85a5a"
+        },
+        "yan": {
+          "id": "yan",
+          "name": "燕（安史の乱）",
+          "color": "#5a1a1a",
+          "colorLight": "#9a4a4a"
+        },
+        "goguryeo": {
+          "id": "goguryeo",
+          "name": "高句麗",
+          "color": "#1a5a3a",
+          "colorLight": "#4a9a6a"
+        },
+        "baekje": {
+          "id": "baekje",
+          "name": "百済",
+          "color": "#8a6a2a",
+          "colorLight": "#c8a858"
+        },
+        "silla": {
+          "id": "silla",
+          "name": "新羅",
+          "color": "#2a4a6a",
+          "colorLight": "#5a8ac8"
+        },
+        "court": {
+          "id": "court",
+          "name": "倭・日本",
+          "color": "#5a4a12",
+          "colorLight": "#b89a3a"
+        },
+        "tujue": {
+          "id": "tujue",
+          "name": "突厥",
+          "color": "#4a5a6a",
+          "colorLight": "#8aa0b0"
+        },
+        "uyghur": {
+          "id": "uyghur",
+          "name": "回鶻",
+          "color": "#7a6a3a",
+          "colorLight": "#b8a468"
+        },
+        "tubo": {
+          "id": "tubo",
+          "name": "吐蕃",
+          "color": "#6a2a3a",
+          "colorLight": "#a85a70"
+        },
+        "abbasid": {
+          "id": "abbasid",
+          "name": "アッバース朝",
+          "color": "#2a2a2a",
+          "colorLight": "#5a5a5a"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#4a4a4a",
+          "colorLight": "#9a9a9a"
+        }
+      }
+    },
     "wakoku": {
       "events": [
         {
