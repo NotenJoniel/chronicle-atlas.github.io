@@ -260,6 +260,15 @@
       "endYear": 1502,
       "dataFile": "timelines/golden-horde.json",
       "subProjectDir": "golden-horde"
+    },
+    {
+      "id": "byzantine-empire",
+      "name": "ビザンツ帝国",
+      "region": "europe",
+      "startYear": 330,
+      "endYear": 1453,
+      "dataFile": "timelines/byzantine-empire.json",
+      "subProjectDir": "byzantine-empire"
     }
   ]
 }
