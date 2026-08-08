@@ -1,0 +1,6 @@
+/* ビザンツ帝国 — 配色テーマ（構造CSSは shared/timeline-core.css 側） */
+:root{
+  --bg:#150c1a;--surface:#1e1226;--surface-2:#2a1a35;--surface-3:#3a2548;
+  --border-subtle:rgba(200,170,220,.12);--text:#e8dfee;--text-dim:#a08fb0;
+  --gold:#c9a13f;--gold-dim:rgba(201,161,63,.18);
+}

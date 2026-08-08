@@ -26036,6 +26036,1666 @@
           "colorLight": "#8A90A2"
         }
       }
+    },
+    "byzantine-empire": {
+      "events": [
+        {
+          "id": "e_nicaea",
+          "year": 325,
+          "title": "ニカイア公会議、アリウス派の排斥",
+          "category": "politics",
+          "location": "ニカイア",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_constantine",
+            "c_arius"
+          ]
+        },
+        {
+          "id": "e_constantinople",
+          "year": 330,
+          "title": "コンスタンティノープル遷都",
+          "category": "politics",
+          "location": "ビザンティオン（コンスタンティノープル）",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_constantine"
+          ]
+        },
+        {
+          "id": "e_constantine_death",
+          "year": 337,
+          "title": "コンスタンティヌス1世、没",
+          "category": "death",
+          "location": "ニコメディア",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_constantine"
+          ]
+        },
+        {
+          "id": "e_julian_accession",
+          "year": 361,
+          "title": "ユリアヌス即位、異教復興の試み",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_julian"
+          ]
+        },
+        {
+          "id": "e_julian_death",
+          "year": 363,
+          "title": "ユリアヌス、ペルシア遠征中に戦死",
+          "category": "death",
+          "location": "サーマッラー付近（現イラク）",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_julian"
+          ]
+        },
+        {
+          "id": "e_adrianople",
+          "year": 378,
+          "title": "アドリアノープルの戦い",
+          "category": "battle",
+          "location": "アドリアノープル（現トルコ・エディルネ）",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_valens",
+            "c_fritigern"
+          ]
+        },
+        {
+          "id": "e_thessalonica",
+          "year": 380,
+          "title": "テッサロニキ勅令、ニカイア信条の国教化",
+          "category": "politics",
+          "location": "テッサロニキ",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_theodosius"
+          ]
+        },
+        {
+          "id": "e_council_constantinople_1",
+          "year": 381,
+          "title": "第1コンスタンティノープル公会議",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_theodosius"
+          ]
+        },
+        {
+          "id": "e_division",
+          "year": 395,
+          "title": "テオドシウス1世没、帝国の東西分裂",
+          "category": "politics",
+          "location": "ミラノ",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_theodosius"
+          ]
+        },
+        {
+          "id": "e_sack_rome_410",
+          "year": 410,
+          "title": "西でローマ略奪、東は無傷",
+          "category": "episode",
+          "location": "ローマ"
+        },
+        {
+          "id": "e_theodosian_walls",
+          "year": 413,
+          "title": "テオドシウスの城壁、完成",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_theodosius_ii"
+          ]
+        },
+        {
+          "id": "e_council_ephesus",
+          "year": 431,
+          "title": "エフェソス公会議、ネストリウス派の排斥",
+          "category": "politics",
+          "location": "エフェソス",
+          "color": "#5A6072",
+          "characters": [
+            "c_nestorius",
+            "c_cyril_alexandria",
+            "c_theodosius_ii"
+          ]
+        },
+        {
+          "id": "e_council_chalcedon",
+          "year": 451,
+          "title": "カルケドン公会議、単性論の排斥",
+          "category": "politics",
+          "location": "カルケドン",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_marcian",
+            "c_pulcheria",
+            "c_dioscorus"
+          ]
+        },
+        {
+          "id": "e_fall_wre",
+          "year": 476,
+          "title": "西ローマ帝国滅亡、東帝が唯一のローマ皇帝に",
+          "category": "politics",
+          "location": "ラヴェンナ",
+          "color": "#5A6072",
+          "characters": [
+            "c_odoacer",
+            "c_zeno"
+          ]
+        },
+        {
+          "id": "e_theodoric_italy",
+          "year": 493,
+          "title": "テオドリック、イタリア王に",
+          "category": "politics",
+          "location": "ラヴェンナ",
+          "color": "#5A6072",
+          "characters": [
+            "c_theodoric_ostrogoth",
+            "c_zeno",
+            "c_odoacer"
+          ]
+        },
+        {
+          "id": "e_acacian_schism",
+          "year": 484,
+          "title": "アカキオス分裂、ローマ教会との最初の断絶",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#5A6072",
+          "characters": [
+            "c_acacius",
+            "c_zeno"
+          ]
+        },
+        {
+          "id": "e_anastasius_reforms",
+          "year": 498,
+          "title": "アナスタシウス1世の貨幣・税制改革",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_anastasius_i"
+          ]
+        },
+        {
+          "id": "e_persian_war_502",
+          "year": 502,
+          "title": "アナスタシウス戦争、ササン朝との国境紛争",
+          "category": "battle",
+          "location": "メソポタミア国境",
+          "color": "#7a2a1a",
+          "characters": [
+            "c_kavad_i",
+            "c_anastasius_i"
+          ]
+        },
+        {
+          "id": "e_justinian_accession",
+          "year": 527,
+          "title": "ユスティニアヌス1世即位",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_justinian",
+            "c_theodora"
+          ]
+        },
+        {
+          "id": "e_corpus_juris",
+          "year": 529,
+          "title": "『ローマ法大全』編纂開始、アテナイの学院閉鎖",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_justinian",
+            "c_tribonian"
+          ]
+        },
+        {
+          "id": "e_nika_riots",
+          "year": 532,
+          "title": "ニカの乱、テオドラの決断で鎮圧",
+          "category": "battle",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_justinian",
+            "c_theodora",
+            "c_belisarius"
+          ]
+        },
+        {
+          "id": "e_vandal_conquest",
+          "year": 534,
+          "title": "ヴァンダル王国征服",
+          "category": "battle",
+          "location": "北アフリカ（現チュニジア）",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_belisarius",
+            "c_gelimer",
+            "c_procopius"
+          ]
+        },
+        {
+          "id": "e_hagia_sophia",
+          "year": 537,
+          "title": "ハギア・ソフィア大聖堂、完成",
+          "category": "episode",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_justinian"
+          ]
+        },
+        {
+          "id": "e_gothic_war_ravenna",
+          "year": 540,
+          "title": "ゴート戦争、ラヴェンナ陥落",
+          "category": "battle",
+          "location": "ラヴェンナ",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_belisarius",
+            "c_procopius"
+          ]
+        },
+        {
+          "id": "e_justinian_plague",
+          "year": 542,
+          "title": "ユスティニアヌスの疫病",
+          "category": "death",
+          "location": "コンスタンティノープルほか帝国全土",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_justinian"
+          ]
+        },
+        {
+          "id": "e_silk_smuggling",
+          "year": 552,
+          "title": "養蚕技術の導入",
+          "category": "episode",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_justinian"
+          ]
+        },
+        {
+          "id": "e_gothic_war_end",
+          "year": 554,
+          "title": "ゴート戦争終結、イタリア回復も荒廃",
+          "category": "battle",
+          "location": "イタリア全土",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_narses",
+            "c_totila"
+          ]
+        },
+        {
+          "id": "e_justinian_death",
+          "year": 565,
+          "title": "ユスティニアヌス没 — 版図は最大、しかし国力は枯渇",
+          "category": "death",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_justinian"
+          ]
+        },
+        {
+          "id": "e_lombard_invasion",
+          "year": 568,
+          "title": "ランゴバルドのイタリア侵入",
+          "category": "battle",
+          "location": "イタリア北部"
+        },
+        {
+          "id": "e_persian_war_602",
+          "year": 602,
+          "title": "最後のローマ・ペルシア戦争、開戦",
+          "category": "battle",
+          "location": "帝国東方国境",
+          "color": "#7a2a1a",
+          "characters": [
+            "c_khosrow_ii"
+          ]
+        },
+        {
+          "id": "e_heraclius_accession",
+          "year": 610,
+          "title": "ヘラクレイオス即位、公用語がギリシア語へ",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_heraclius"
+          ]
+        },
+        {
+          "id": "e_jerusalem_fall_614",
+          "year": 614,
+          "title": "エルサレム陥落、聖十字架の略奪",
+          "category": "battle",
+          "location": "エルサレム",
+          "color": "#7a2a1a",
+          "characters": [
+            "c_khosrow_ii"
+          ]
+        },
+        {
+          "id": "e_avar_persian_siege",
+          "year": 626,
+          "title": "アヴァール・ペルシア連合による首都包囲",
+          "category": "battle",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_heraclius"
+          ]
+        },
+        {
+          "id": "e_battle_nineveh",
+          "year": 627,
+          "title": "ニネヴェの戦い、ペルシアに勝利",
+          "category": "battle",
+          "location": "ニネヴェ付近（現イラク）",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_heraclius",
+            "c_khosrow_ii"
+          ]
+        },
+        {
+          "id": "e_battle_yarmouk",
+          "year": 636,
+          "title": "ヤルムークの戦い、シリア喪失",
+          "category": "battle",
+          "location": "ヤルムーク川（現シリア・ヨルダン国境）",
+          "color": "#3a6a4a",
+          "characters": [
+            "c_umar",
+            "c_khalid_ibn_walid",
+            "c_heraclius"
+          ]
+        },
+        {
+          "id": "e_egypt_conquest",
+          "year": 642,
+          "title": "エジプト喪失、穀倉地帯の永久的な喪失",
+          "category": "battle",
+          "location": "アレクサンドリア",
+          "color": "#3a6a4a",
+          "characters": [
+            "c_umar"
+          ]
+        },
+        {
+          "id": "e_constantinople_siege_1",
+          "year": 674,
+          "title": "第一次コンスタンティノープル包囲、ギリシア火の初使用",
+          "category": "battle",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_constantine_iv",
+            "c_muawiya"
+          ]
+        },
+        {
+          "id": "e_council_constantinople_3",
+          "year": 681,
+          "title": "第3コンスタンティノープル公会議",
+          "category": "politics",
+          "location": "コンスタンティノープル"
+        },
+        {
+          "id": "e_maghreb_conquest",
+          "year": 698,
+          "title": "カルタゴ喪失、マグリブ制圧",
+          "category": "battle",
+          "location": "カルタゴ（現チュニジア）"
+        },
+        {
+          "id": "e_constantinople_siege_2",
+          "year": 717,
+          "title": "第二次コンスタンティノープル包囲 — ヨーロッパ史の分岐点",
+          "category": "battle",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_leo_iii",
+            "c_maslama"
+          ]
+        },
+        {
+          "id": "e_iconoclasm_edict",
+          "year": 726,
+          "title": "レオン3世、聖像破壊令（イコノクラスム）",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_leo_iii"
+          ]
+        },
+        {
+          "id": "e_battle_akroinon",
+          "year": 740,
+          "title": "アクロイノンの戦い、勝利",
+          "category": "battle",
+          "location": "アクロイノン（現トルコ中西部）",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_constantine_v"
+          ]
+        },
+        {
+          "id": "e_council_hieria",
+          "year": 754,
+          "title": "ヒエリア教会会議、聖像破壊の正当化",
+          "category": "politics",
+          "location": "ヒエリア",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_constantine_v"
+          ]
+        },
+        {
+          "id": "e_council_nicaea_2",
+          "year": 787,
+          "title": "第2ニカイア公会議、聖像崇敬の一時回復",
+          "category": "politics",
+          "location": "ニカイア",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_irene"
+          ]
+        },
+        {
+          "id": "e_charlemagne_coronation",
+          "year": 800,
+          "title": "カール大帝の戴冠 — ローマ皇帝が二人に",
+          "category": "politics",
+          "location": "ローマ",
+          "color": "#5A6072",
+          "characters": [
+            "c_charlemagne",
+            "c_irene"
+          ]
+        },
+        {
+          "id": "e_iconoclasm_restart",
+          "year": 815,
+          "title": "聖像破壊の再開",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_leo_v",
+            "c_theodore_studite"
+          ]
+        },
+        {
+          "id": "e_triumph_orthodoxy",
+          "year": 843,
+          "title": "聖像崇敬の最終的な回復 — 「正教の勝利」",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_theodora_regent"
+          ]
+        },
+        {
+          "id": "e_cyril_methodius_mission",
+          "year": 863,
+          "title": "キュリロスとメトディオス、スラヴ宣教",
+          "category": "episode",
+          "location": "モラヴィア",
+          "color": "#5A6072",
+          "characters": [
+            "c_cyril_missionary",
+            "c_methodius"
+          ]
+        },
+        {
+          "id": "e_basil_i_accession",
+          "year": 867,
+          "title": "バシレイオス1世即位、マケドニア朝",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_basil_i"
+          ]
+        },
+        {
+          "id": "e_macedonian_renaissance",
+          "year": 880,
+          "title": "「マケドニア朝ルネサンス」",
+          "category": "episode",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_basil_i"
+          ]
+        },
+        {
+          "id": "e_basilika_code",
+          "year": 888,
+          "title": "レオン6世、『バシリカ法典』を発布",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_leo_vi"
+          ]
+        },
+        {
+          "id": "e_thessalonica_sack_904",
+          "year": 904,
+          "title": "テッサロニキ略奪",
+          "category": "battle",
+          "location": "テッサロニキ",
+          "color": "#6a1a2a",
+          "characters": [
+            "c_symeon_bulgaria"
+          ]
+        },
+        {
+          "id": "e_crete_recapture",
+          "year": 961,
+          "title": "クレタ島奪回",
+          "category": "battle",
+          "location": "クレタ島",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_nikephoros_ii"
+          ]
+        },
+        {
+          "id": "e_antioch_recapture",
+          "year": 969,
+          "title": "アンティオキア奪回",
+          "category": "battle",
+          "location": "アンティオキア",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_nikephoros_ii"
+          ]
+        },
+        {
+          "id": "e_vladimir_conversion",
+          "year": 988,
+          "title": "キエフ大公ウラディーミル1世の改宗 — ロシアの正教化",
+          "category": "politics",
+          "location": "キエフ",
+          "color": "#4a1a3a",
+          "characters": [
+            "c_vladimir_i",
+            "c_basil_ii"
+          ]
+        },
+        {
+          "id": "e_kleidion",
+          "year": 1014,
+          "title": "クレイディオンの戦い",
+          "category": "battle",
+          "location": "クレイディオン峡谷",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_basil_ii",
+            "c_samuel_bulgaria"
+          ]
+        },
+        {
+          "id": "e_bulgaria_annexation",
+          "year": 1018,
+          "title": "ブルガリア併合 — バシレイオス2世、最大版図の回復",
+          "category": "politics",
+          "location": "オフリド",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_basil_ii"
+          ]
+        },
+        {
+          "id": "e_basil_ii_death",
+          "year": 1025,
+          "title": "バシレイオス2世没",
+          "category": "death",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_basil_ii"
+          ]
+        },
+        {
+          "id": "e_rus_fleet_attack",
+          "year": 1043,
+          "title": "ルーシ艦隊の襲来",
+          "category": "battle",
+          "location": "コンスタンティノープル沖"
+        },
+        {
+          "id": "e_great_schism",
+          "year": 1054,
+          "title": "東西教会の相互破門 — 大シスマ",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_michael_cerularius",
+            "c_leo_ix"
+          ]
+        },
+        {
+          "id": "e_bari_fall",
+          "year": 1071,
+          "title": "バーリ陥落、南イタリア喪失",
+          "category": "battle",
+          "location": "バーリ（南イタリア）",
+          "color": "#5A6072",
+          "characters": [
+            "c_robert_guiscard"
+          ]
+        },
+        {
+          "id": "e_manzikert",
+          "year": 1071,
+          "title": "マラーズギルドの戦い — ロマノス4世が捕虜に",
+          "category": "battle",
+          "location": "マラーズギルド（現トルコ東部）",
+          "color": "#5a4a2a",
+          "characters": [
+            "c_alp_arslan",
+            "c_romanos_iv"
+          ]
+        },
+        {
+          "id": "e_anatolia_turkification",
+          "year": 1075,
+          "title": "アナトリアの急速なトルコ化",
+          "category": "politics",
+          "location": "アナトリア全域"
+        },
+        {
+          "id": "e_alexios_accession",
+          "year": 1081,
+          "title": "アレクシオス1世コムネノス即位",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_alexios_i"
+          ]
+        },
+        {
+          "id": "e_venice_trade_privileges",
+          "year": 1082,
+          "title": "ヴェネツィアへの通商特権 — 経済的従属の起点",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_alexios_i"
+          ]
+        },
+        {
+          "id": "e_battle_levounion",
+          "year": 1091,
+          "title": "レヴニオンの戦い、ペチェネグ撃破",
+          "category": "battle",
+          "location": "レヴニオン（トラキア）",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_alexios_i"
+          ]
+        },
+        {
+          "id": "e_clermont_council",
+          "year": 1095,
+          "title": "アレクシオス1世の救援要請 → クレルモン教会会議",
+          "category": "politics",
+          "location": "クレルモン（フランス）",
+          "color": "#5A6072",
+          "characters": [
+            "c_urban_ii",
+            "c_alexios_i"
+          ]
+        },
+        {
+          "id": "e_first_crusade_antioch",
+          "year": 1098,
+          "title": "第1回十字軍、アンティオキアをめぐる不信",
+          "category": "battle",
+          "location": "アンティオキア",
+          "color": "#7a1a1a",
+          "characters": [
+            "c_bohemond",
+            "c_alexios_i"
+          ]
+        },
+        {
+          "id": "e_battle_beroia",
+          "year": 1122,
+          "title": "ベロイアの戦い",
+          "category": "battle",
+          "location": "ベロイア（現ブルガリア・スタラ・ザゴラ）"
+        },
+        {
+          "id": "e_alexiad_written",
+          "year": 1148,
+          "title": "アンナ・コムネナ、『アレクシアス』を執筆",
+          "category": "episode",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_anna_komnene",
+            "c_alexios_i"
+          ]
+        },
+        {
+          "id": "e_manuel_accession",
+          "year": 1143,
+          "title": "マヌエル1世即位、西方への野心",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_manuel_i"
+          ]
+        },
+        {
+          "id": "e_myriokephalon",
+          "year": 1176,
+          "title": "ミュリオケファロンの戦い — アナトリア回復の断念",
+          "category": "battle",
+          "location": "ミュリオケファロン（現トルコ）",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_manuel_i"
+          ]
+        },
+        {
+          "id": "e_latin_massacre",
+          "year": 1182,
+          "title": "ラテン人虐殺",
+          "category": "death",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_andronikos_i"
+          ]
+        },
+        {
+          "id": "e_andronikos_execution",
+          "year": 1185,
+          "title": "アンドロニコス1世の処刑、コムネノス朝終焉",
+          "category": "death",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_andronikos_i"
+          ]
+        },
+        {
+          "id": "e_constantinople_fall_1204",
+          "year": 1204,
+          "title": "コンスタンティノープル陥落 — 同信者による略奪",
+          "category": "battle",
+          "location": "コンスタンティノープル",
+          "color": "#1a1a6a",
+          "characters": [
+            "c_enrico_dandolo",
+            "c_alexios_iv",
+            "c_isaac_ii"
+          ]
+        },
+        {
+          "id": "e_latin_empire_founded",
+          "year": 1204,
+          "title": "ラテン帝国成立",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#8a6a1a",
+          "characters": [
+            "c_baldwin_i_latin"
+          ]
+        },
+        {
+          "id": "e_nicaea_founded",
+          "year": 1204,
+          "title": "亡命政権の分立 — ニカイア帝国、トレビゾンド帝国、エピロス専制侯国",
+          "category": "politics",
+          "location": "ニカイア",
+          "color": "#2a5a2a",
+          "characters": [
+            "c_theodore_laskaris"
+          ]
+        },
+        {
+          "id": "e_nicaea_consolidation",
+          "year": 1230,
+          "title": "ヨハネス3世ヴァタツェス、ニカイア帝国を強化",
+          "category": "politics",
+          "location": "ニカイア",
+          "color": "#2a5a2a",
+          "characters": [
+            "c_john_iii_vatatzes"
+          ]
+        },
+        {
+          "id": "e_battle_pelagonia",
+          "year": 1259,
+          "title": "ペラゴニアの戦い",
+          "category": "battle",
+          "location": "ペラゴニア（現北マケドニア）",
+          "color": "#2a5a2a",
+          "characters": [
+            "c_michael_viii"
+          ]
+        },
+        {
+          "id": "e_constantinople_recapture",
+          "year": 1261,
+          "title": "ミカエル8世パレオロゴス、コンスタンティノープル奪回",
+          "category": "politics",
+          "location": "コンスタンティノープル",
+          "color": "#2a5a2a",
+          "characters": [
+            "c_michael_viii"
+          ]
+        },
+        {
+          "id": "e_lyon_council",
+          "year": 1274,
+          "title": "リヨン公会議、教会合同の試み",
+          "category": "politics",
+          "location": "リヨン（フランス）",
+          "color": "#2a5a2a",
+          "characters": [
+            "c_michael_viii"
+          ]
+        },
+        {
+          "id": "e_sicilian_vespers",
+          "year": 1282,
+          "title": "シチリアの晩鐘",
+          "category": "episode",
+          "location": "シチリア（関連事件）"
+        },
+        {
+          "id": "e_bapheus",
+          "year": 1302,
+          "title": "バフェウスの戦い — オスマン朝の台頭",
+          "category": "battle",
+          "location": "バフェウス（現トルコ・イズミト付近）"
+        },
+        {
+          "id": "e_civil_wars_14c",
+          "year": 1341,
+          "title": "内乱の連続、国力の消耗",
+          "category": "politics",
+          "location": "コンスタンティノープルほか帝国全土"
+        },
+        {
+          "id": "e_black_death_byzantium",
+          "year": 1347,
+          "title": "黒死病の到来",
+          "category": "death",
+          "location": "コンスタンティノープルほか帝国全土"
+        },
+        {
+          "id": "e_gallipoli_ottoman",
+          "year": 1354,
+          "title": "オスマン、ガリポリを占領 — ヨーロッパ側へ",
+          "category": "politics",
+          "location": "ガリポリ半島"
+        },
+        {
+          "id": "e_kosovo",
+          "year": 1389,
+          "title": "コソヴォの戦い",
+          "category": "battle",
+          "location": "コソヴォ",
+          "color": "#1a4a2a",
+          "characters": [
+            "c_murad_i",
+            "c_lazar_serbia"
+          ]
+        },
+        {
+          "id": "e_nicopolis",
+          "year": 1396,
+          "title": "ニコポリスの戦い — 十字軍の敗北",
+          "category": "battle",
+          "location": "ニコポリス（現ブルガリア）",
+          "color": "#1a4a2a",
+          "characters": [
+            "c_bayezid_i"
+          ]
+        },
+        {
+          "id": "e_battle_ankara",
+          "year": 1402,
+          "title": "アンカラの戦い — ティムールがオスマンを破り、滅亡が半世紀延びる",
+          "category": "battle",
+          "location": "アンカラ",
+          "color": "#1a4a2a",
+          "characters": [
+            "c_bayezid_i",
+            "c_timur"
+          ]
+        },
+        {
+          "id": "e_florence_council",
+          "year": 1439,
+          "title": "フィレンツェ公会議 — 教会合同、しかし国内で拒絶",
+          "category": "politics",
+          "location": "フィレンツェ",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_john_viii"
+          ]
+        },
+        {
+          "id": "e_varna",
+          "year": 1444,
+          "title": "ヴァルナの戦い",
+          "category": "battle",
+          "location": "ヴァルナ（現ブルガリア）"
+        },
+        {
+          "id": "e_constantinople_fall_1453",
+          "year": 1453,
+          "title": "コンスタンティノープル陥落 — 1123年の帝国、終焉",
+          "category": "death",
+          "location": "コンスタンティノープル",
+          "color": "#5a1a5a",
+          "characters": [
+            "c_constantine_xi",
+            "c_mehmed_ii",
+            "c_giustiniani"
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "c_constantine",
+          "name": "コンスタンティヌス1世",
+          "reading": "コンスタンティヌスいっせい",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_julian",
+          "name": "ユリアヌス",
+          "reading": "ユリアヌス",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_valens",
+          "name": "ウァレンス",
+          "reading": "ウァレンス",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_theodosius",
+          "name": "テオドシウス1世",
+          "reading": "テオドシウス",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_arius",
+          "name": "アリウス",
+          "reading": "アリウス",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_fritigern",
+          "name": "フリティゲルン",
+          "reading": "フリティゲルン",
+          "faction": "other",
+          "field": "military"
+        },
+        {
+          "id": "c_theodosius_ii",
+          "name": "テオドシウス2世",
+          "reading": "テオドシウスにせい",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_pulcheria",
+          "name": "プルケリア",
+          "reading": "プルケリア",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_nestorius",
+          "name": "ネストリウス",
+          "reading": "ネストリウス",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_cyril_alexandria",
+          "name": "キュリロス",
+          "reading": "キュリロス",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_marcian",
+          "name": "マルキアヌス",
+          "reading": "マルキアヌス",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_dioscorus",
+          "name": "ディオスコロス",
+          "reading": "ディオスコロス",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_zeno",
+          "name": "ゼノン",
+          "reading": "ゼノン",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_acacius",
+          "name": "アカキオス",
+          "reading": "アカキオス",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_odoacer",
+          "name": "オドアケル",
+          "reading": "オドアケル",
+          "faction": "other",
+          "field": "governance"
+        },
+        {
+          "id": "c_theodoric_ostrogoth",
+          "name": "テオドリック",
+          "reading": "テオドリック",
+          "faction": "other",
+          "field": "governance"
+        },
+        {
+          "id": "c_anastasius_i",
+          "name": "アナスタシウス1世",
+          "reading": "アナスタシウス",
+          "faction": "byzantine",
+          "field": "administration"
+        },
+        {
+          "id": "c_kavad_i",
+          "name": "カワード1世",
+          "reading": "カワードいっせい",
+          "faction": "sasanid",
+          "field": "governance"
+        },
+        {
+          "id": "c_justinian",
+          "name": "ユスティニアヌス1世",
+          "reading": "ユスティニアヌス",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_theodora",
+          "name": "テオドラ",
+          "reading": "テオドラ",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_belisarius",
+          "name": "ベリサリウス",
+          "reading": "ベリサリウス",
+          "faction": "byzantine",
+          "field": "military"
+        },
+        {
+          "id": "c_narses",
+          "name": "ナルセス",
+          "reading": "ナルセス",
+          "faction": "byzantine",
+          "field": "military"
+        },
+        {
+          "id": "c_tribonian",
+          "name": "トリボニアヌス",
+          "reading": "トリボニアヌス",
+          "faction": "byzantine",
+          "field": "administration"
+        },
+        {
+          "id": "c_procopius",
+          "name": "プロコピオス",
+          "reading": "プロコピオス",
+          "faction": "byzantine",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_gelimer",
+          "name": "ゲリメル",
+          "reading": "ゲリメル",
+          "faction": "other",
+          "field": "governance"
+        },
+        {
+          "id": "c_totila",
+          "name": "トーティラ",
+          "reading": "トーティラ",
+          "faction": "other",
+          "field": "governance"
+        },
+        {
+          "id": "c_heraclius",
+          "name": "ヘラクレイオス",
+          "reading": "ヘラクレイオス",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_khosrow_ii",
+          "name": "ホスロー2世",
+          "reading": "ホスローにせい",
+          "faction": "sasanid",
+          "field": "governance"
+        },
+        {
+          "id": "c_umar",
+          "name": "ウマル",
+          "reading": "ウマル",
+          "faction": "rashidun",
+          "field": "governance"
+        },
+        {
+          "id": "c_khalid_ibn_walid",
+          "name": "ハーリド・イブン・アル＝ワリード",
+          "reading": "ハーリドイブンアルワリード",
+          "faction": "rashidun",
+          "field": "military"
+        },
+        {
+          "id": "c_constantine_iv",
+          "name": "コンスタンティノス4世",
+          "reading": "コンスタンティノスよんせい",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_muawiya",
+          "name": "ムアーウィヤ1世",
+          "reading": "ムアーウィヤいっせい",
+          "faction": "umayyad",
+          "field": "governance"
+        },
+        {
+          "id": "c_leo_iii",
+          "name": "レオン3世",
+          "reading": "レオンさんせい",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_maslama",
+          "name": "マスラマ・イブン・アブドゥルマリク",
+          "reading": "マスラマイブンアブドゥルマリク",
+          "faction": "umayyad",
+          "field": "military"
+        },
+        {
+          "id": "c_constantine_v",
+          "name": "コンスタンティノス5世",
+          "reading": "コンスタンティノスごせい",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_irene",
+          "name": "エイレーネー",
+          "reading": "エイレーネー",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_leo_v",
+          "name": "レオン5世",
+          "reading": "レオンごせい",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_theodora_regent",
+          "name": "テオドラ（摂政）",
+          "reading": "テオドラ",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_theodore_studite",
+          "name": "テオドロス・ステュディテス",
+          "reading": "テオドロスステュディテス",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_charlemagne",
+          "name": "カール大帝",
+          "reading": "カールたいてい",
+          "faction": "other",
+          "field": "governance"
+        },
+        {
+          "id": "c_cyril_missionary",
+          "name": "キュリロス（宣教師）",
+          "reading": "キュリロス",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_methodius",
+          "name": "メトディオス",
+          "reading": "メトディオス",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_basil_i",
+          "name": "バシレイオス1世",
+          "reading": "バシレイオス",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_leo_vi",
+          "name": "レオン6世",
+          "reading": "レオンろくせい",
+          "faction": "byzantine",
+          "field": "administration"
+        },
+        {
+          "id": "c_nikephoros_ii",
+          "name": "ニケフォロス2世フォカス",
+          "reading": "ニケフォロスふぉかす",
+          "faction": "byzantine",
+          "field": "military"
+        },
+        {
+          "id": "c_vladimir_i",
+          "name": "ウラディーミル1世",
+          "reading": "ウラディーミル",
+          "faction": "rus",
+          "field": "governance"
+        },
+        {
+          "id": "c_symeon_bulgaria",
+          "name": "シメオン1世",
+          "reading": "シメオンいっせい",
+          "faction": "bulgaria",
+          "field": "governance"
+        },
+        {
+          "id": "c_basil_ii",
+          "name": "バシレイオス2世",
+          "reading": "バシレイオスにせい",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_samuel_bulgaria",
+          "name": "サムイル",
+          "reading": "サムイル",
+          "faction": "bulgaria",
+          "field": "governance"
+        },
+        {
+          "id": "c_michael_cerularius",
+          "name": "ミカエル・ケルラリオス",
+          "reading": "ミカエルケルラリオス",
+          "faction": "byzantine",
+          "field": "thought"
+        },
+        {
+          "id": "c_leo_ix",
+          "name": "レオ9世",
+          "reading": "レオきゅうせい",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_romanos_iv",
+          "name": "ロマノス4世",
+          "reading": "ロマノスよんせい",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_alp_arslan",
+          "name": "アルプ・アルスラーン",
+          "reading": "アルプアルスラーン",
+          "faction": "seljuk",
+          "field": "military"
+        },
+        {
+          "id": "c_robert_guiscard",
+          "name": "ロベルト・イル・グイスカルド",
+          "reading": "ロベルトイルグイスカルド",
+          "faction": "other",
+          "field": "military"
+        },
+        {
+          "id": "c_alexios_i",
+          "name": "アレクシオス1世コムネノス",
+          "reading": "アレクシオスコムネノス",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_anna_komnene",
+          "name": "アンナ・コムネナ",
+          "reading": "アンナコムネナ",
+          "faction": "byzantine",
+          "field": "scholarship"
+        },
+        {
+          "id": "c_urban_ii",
+          "name": "ウルバヌス2世",
+          "reading": "ウルバヌスにせい",
+          "faction": "other",
+          "field": "thought"
+        },
+        {
+          "id": "c_bohemond",
+          "name": "ボエモン1世",
+          "reading": "ボエモン",
+          "faction": "crusader",
+          "field": "military"
+        },
+        {
+          "id": "c_manuel_i",
+          "name": "マヌエル1世コムネノス",
+          "reading": "マヌエルコムネノス",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_andronikos_i",
+          "name": "アンドロニコス1世コムネノス",
+          "reading": "アンドロニコスコムネノス",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_isaac_ii",
+          "name": "イサキオス2世アンゲロス",
+          "reading": "イサキオスアンゲロス",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_alexios_iv",
+          "name": "アレクシオス4世アンゲロス",
+          "reading": "アレクシオスアンゲロス",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_enrico_dandolo",
+          "name": "エンリコ・ダンドロ",
+          "reading": "エンリコダンドロ",
+          "faction": "venice",
+          "field": "governance"
+        },
+        {
+          "id": "c_baldwin_i_latin",
+          "name": "ボードゥアン1世",
+          "reading": "ボードゥアン",
+          "faction": "latin_empire",
+          "field": "governance"
+        },
+        {
+          "id": "c_theodore_laskaris",
+          "name": "テオドロス1世ラスカリス",
+          "reading": "テオドロスラスカリス",
+          "faction": "nicaea",
+          "field": "governance"
+        },
+        {
+          "id": "c_john_iii_vatatzes",
+          "name": "ヨハネス3世ヴァタツェス",
+          "reading": "ヨハネスヴァタツェス",
+          "faction": "nicaea",
+          "field": "governance"
+        },
+        {
+          "id": "c_michael_viii",
+          "name": "ミカエル8世パレオロゴス",
+          "reading": "ミカエルパレオロゴス",
+          "faction": "nicaea",
+          "field": "governance"
+        },
+        {
+          "id": "c_murad_i",
+          "name": "ムラト1世",
+          "reading": "ムラトいっせい",
+          "faction": "ottoman",
+          "field": "governance"
+        },
+        {
+          "id": "c_bayezid_i",
+          "name": "バヤズィト1世",
+          "reading": "バヤズィト",
+          "faction": "ottoman",
+          "field": "governance"
+        },
+        {
+          "id": "c_timur",
+          "name": "ティムール",
+          "reading": "ティムール",
+          "faction": "timurid",
+          "field": "governance"
+        },
+        {
+          "id": "c_lazar_serbia",
+          "name": "ラザル・フレベリャノヴィチ",
+          "reading": "ラザルフレベリャノヴィチ",
+          "faction": "other",
+          "field": "military"
+        },
+        {
+          "id": "c_john_viii",
+          "name": "ヨハネス8世パレオロゴス",
+          "reading": "ヨハネスパレオロゴス",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_constantine_xi",
+          "name": "コンスタンティノス11世",
+          "reading": "コンスタンティノス",
+          "faction": "byzantine",
+          "field": "governance"
+        },
+        {
+          "id": "c_mehmed_ii",
+          "name": "メフメト2世",
+          "reading": "メフメト",
+          "faction": "ottoman",
+          "field": "governance"
+        },
+        {
+          "id": "c_giustiniani",
+          "name": "ジョヴァンニ・ジュスティニアーニ",
+          "reading": "ジョヴァンニジュスティニアーニ",
+          "faction": "other",
+          "field": "military"
+        }
+      ],
+      "factions": {
+        "byzantine": {
+          "id": "byzantine",
+          "name": "ビザンツ帝国（ローマ帝国）",
+          "color": "#5a1a5a",
+          "colorLight": "#944a94"
+        },
+        "sasanid": {
+          "id": "sasanid",
+          "name": "ササン朝ペルシア",
+          "color": "#7a2a1a",
+          "colorLight": "#b85a3a"
+        },
+        "rashidun": {
+          "id": "rashidun",
+          "name": "正統カリフ",
+          "color": "#3a6a4a",
+          "colorLight": "#6aa07a"
+        },
+        "umayyad": {
+          "id": "umayyad",
+          "name": "ウマイヤ朝",
+          "color": "#7a5a1a",
+          "colorLight": "#b8944a"
+        },
+        "seljuk": {
+          "id": "seljuk",
+          "name": "セルジューク朝",
+          "color": "#5a4a2a",
+          "colorLight": "#948054"
+        },
+        "ottoman": {
+          "id": "ottoman",
+          "name": "オスマン帝国",
+          "color": "#1a4a2a",
+          "colorLight": "#4a8a5a"
+        },
+        "bulgaria": {
+          "id": "bulgaria",
+          "name": "ブルガリア帝国",
+          "color": "#6a1a2a",
+          "colorLight": "#a0455a"
+        },
+        "rus": {
+          "id": "rus",
+          "name": "キエフ・ルーシ",
+          "color": "#4a1a3a",
+          "colorLight": "#7a4a6a"
+        },
+        "venice": {
+          "id": "venice",
+          "name": "ヴェネツィア共和国",
+          "color": "#1a1a6a",
+          "colorLight": "#4a4aa0"
+        },
+        "crusader": {
+          "id": "crusader",
+          "name": "十字軍国家",
+          "color": "#7a1a1a",
+          "colorLight": "#b84a4a"
+        },
+        "latin_empire": {
+          "id": "latin_empire",
+          "name": "ラテン帝国",
+          "color": "#8a6a1a",
+          "colorLight": "#c0a04a"
+        },
+        "nicaea": {
+          "id": "nicaea",
+          "name": "ニカイア帝国",
+          "color": "#2a5a2a",
+          "colorLight": "#5a9a5a"
+        },
+        "avar": {
+          "id": "avar",
+          "name": "アヴァール可汗国",
+          "mapOnly": true,
+          "color": "#4a3a1a",
+          "colorLight": "#8a7040"
+        },
+        "vandal": {
+          "id": "vandal",
+          "name": "ヴァンダル王国",
+          "mapOnly": true,
+          "color": "#3a1a4a",
+          "colorLight": "#7a4a8a"
+        },
+        "ostrogoth": {
+          "id": "ostrogoth",
+          "name": "東ゴート王国",
+          "mapOnly": true,
+          "color": "#1a4a4a",
+          "colorLight": "#4a8a8a"
+        },
+        "lombard": {
+          "id": "lombard",
+          "name": "ランゴバルド王国",
+          "mapOnly": true,
+          "color": "#4a4a1a",
+          "colorLight": "#8a8a4a"
+        },
+        "norman": {
+          "id": "norman",
+          "name": "ノルマン人（南イタリア）",
+          "mapOnly": true,
+          "color": "#1a5a3a",
+          "colorLight": "#4a9a6a"
+        },
+        "serbia": {
+          "id": "serbia",
+          "name": "セルビア王国",
+          "mapOnly": true,
+          "color": "#5a2a4a",
+          "colorLight": "#9a5a8a"
+        },
+        "timurid": {
+          "id": "timurid",
+          "name": "ティムール帝国",
+          "mapOnly": true,
+          "color": "#5a1a1a",
+          "colorLight": "#8a4a4a"
+        },
+        "other": {
+          "id": "other",
+          "name": "その他",
+          "color": "#5A6072",
+          "colorLight": "#8A90A2"
+        }
+      }
     }
   }
 }
